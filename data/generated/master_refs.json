@@ -3237,6 +3237,28 @@
         "description": "[attribute=pure]퓨어 타입[/attribute] 2명의 테크닉이 43% UP"
       }
     ],
+    "live_passive_skill_effect-live_active_skill_effect_up_permil_up-120-live_skill_effect_target-character_grouping-grp-holox-2": [
+      {
+        "groupId": "live_passive_skill_effect-live_active_skill_effect_up_permil_up-120-live_skill_effect_target-character_grouping-grp-holox-2",
+        "number": 1,
+        "type": "LivePassiveSkillEffectType_LIVE_PASSIVE_SKILL_EFFECT_TYPE_LIVE_ACTIVE_SKILL_EFFECT_UP_PERMIL_UP",
+        "value": "120",
+        "liveSkillEffectTargetId": "live_skill_effect_target-character_grouping-grp-holox-2",
+        "descriptionLangId": "la-generated-live_passive_skill_effect-live_active_skill_effect_up_permil_up-120-live_skill_effect_target-character_grouping-grp-holox-2.1-description",
+        "description": "holoX2명의 스코어 서포트 효과 12%"
+      }
+    ],
+    "live_passive_skill_effect-live_active_skill_effect_up_permil_up-90-live_skill_effect_target-character_grouping-grp-holox-2": [
+      {
+        "groupId": "live_passive_skill_effect-live_active_skill_effect_up_permil_up-90-live_skill_effect_target-character_grouping-grp-holox-2",
+        "number": 1,
+        "type": "LivePassiveSkillEffectType_LIVE_PASSIVE_SKILL_EFFECT_TYPE_LIVE_ACTIVE_SKILL_EFFECT_UP_PERMIL_UP",
+        "value": "90",
+        "liveSkillEffectTargetId": "live_skill_effect_target-character_grouping-grp-holox-2",
+        "descriptionLangId": "la-generated-live_passive_skill_effect-live_active_skill_effect_up_permil_up-90-live_skill_effect_target-character_grouping-grp-holox-2.1-description",
+        "description": "holoX2명의 스코어 서포트 효과 9%"
+      }
+    ],
     "live_leader_skill_effect-all_parameter_up_permil_up-300-live_skill_effect_target-all": [
       {
         "groupId": "live_leader_skill_effect-all_parameter_up_permil_up-300-live_skill_effect_target-all",
