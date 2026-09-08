@@ -32,18 +32,20 @@ Octo catalog fallback
         ↓
 assetId-based AssetBundle candidate search / decrypt / UnityPy extraction
         ↓
-zero-missing audit + generated-data validation
+validate successful images + generated-data validation + staged path checks
         ↓
 automation/card-asset-sync
         ↓
 automated review PR
         ↓
-manual merge
+automatic merge of verified images (remaining cards are retried)
         ↓
 GitHub Pages deployment
 ```
 
-The image workflow never auto-merges.
+The image workflow automatically merges safe changes, including partial batches. A card still pending publication or failing to download does not block verified images for other cards. Anomalous output changes remain open for manual review.
+
+Master data is deployed independently after its own validation and merge. Portrait failures do not block card selection, calculation, or Master-data publication. Pages injects a new asset revision when imported portraits are deployed, allowing previously missing images to load on the next page load.
 
 ## Triggering
 
@@ -51,10 +53,14 @@ The image workflow never auto-merges.
 
 - when `main` receives a changed `data/generated/cards.json`;
 - when the asset-sync implementation itself is merged;
-- once per day at **00:45 KST** so assets can be retried when an upstream image source lags behind Master publication;
+- twice per day at **11:00 and 23:00 KST** so assets can be retried when an upstream image source lags behind Master publication;
 - by manual `workflow_dispatch`.
 
 A manual `dry_run` resolves portraits but does not push the automation branch or create a PR.
+
+Dry runs use the selected workflow ref for testing fixes before merge; publishing runs always start from current `main`.
+
+The manual `auto_merge` input defaults to `true`; set it to `false` to leave a generated PR open. After a successful image merge, Pages is dispatched if needed. A no-change audit also retries a missing or failed deployment of current `main`.
 
 ## Primary public card-art snapshot
 
@@ -90,7 +96,7 @@ The snapshot itself records the public page/image source used for each card; Dec
 If a current Master card is not yet present in the public snapshot, the pipeline falls back to the game Octo CDN through:
 
 - tool repository: `HolodoriDB/holodori-asset-tools`
-- pinned tool commit: `85b70c9b0024e91ea566dacafe8374e1c4212cf5`
+- pinned tool commit: `13f150fe9dfbd367be53e5ea1c0a4ceb258b74f2`
 
 The tool is build-time only and is never shipped to the browser or Pages artifact.
 
@@ -98,14 +104,19 @@ The fallback searches the current Octo AssetBundle catalog using Master `asset_i
 
 If the Octo catalog itself is unavailable, the sync report records the fallback error and unresolved IDs instead of losing the earlier public-snapshot result.
 
+Public manifest/API failures are also recorded per card, and missing cards can still use Octo. Public-source repair errors remain unresolved until that card is actually repaired. Each unresolved card is classified as `pending` or `error`; a public-manifest miss combined with the known Octo catalog 403 is pending, while hash/format errors remain errors. A reported pending card is unavailable through the checked sources, not proven unpublished in the game.
+
+The CLI returns 0 for a resolved run, 2 for pending cards, and 1 for actual errors. The workflow processes verified imports before reporting actual source errors as a failed run. Errors therefore remain visible without discarding successful images. Optional Octo tooling installation failures also do not block the Pillow-based public snapshot path.
+
 ## Safety properties
 
 - ★3 cards are excluded by policy.
 - Original bootstrap portraits are not overwritten by routine sync.
 - A public-snapshot portrait previously imported with the wrong square asset class may be explicitly repaired.
 - Only cards currently present in `data/generated/cards.json` are targets.
-- No partial image PR is created while a target remains unresolved.
-- `--require-complete` requires zero missing ★4/★5 portraits.
+- Verified partial image PRs are allowed; unresolved IDs must not overlap imported IDs.
+- The staged WebP path set must exactly match the successful imports, including new files and repairs.
+- `--require-complete` requires zero missing ★4/★5 portraits; routine partial synchronization records remaining cards for retry.
 - Each accepted automated output is WebP and landscape.
 - The normal generated-data validator runs after portrait import.
 - Pages/runtime retains its placeholder fallback for unexpected missing files.

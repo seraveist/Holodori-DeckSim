@@ -135,6 +135,12 @@ def evaluate_card_asset_gate(
     unresolved_count = int(report.get("unresolved_count", 0) or 0)
     after = report.get("after") or {}
     missing_after = int(after.get("missing_count", 0) or 0) if isinstance(after, dict) else 0
+    before = report.get("before") or {}
+    missing_before = int(before.get("missing_count", 0) or 0)
+    imported_ids = _ids(report.get("imported") or [], "imported portraits")
+    unresolved_ids = _ids(report.get("unresolved") or [], "unresolved portraits")
+    expected_paths = {f"assets/cards/{card_id}.webp" for card_id in imported_ids}
+    changed_paths: set[str] = set()
 
     portrait_changes = 0
     unexpected_changes = 0
@@ -153,23 +159,32 @@ def evaluate_card_asset_gate(
                 continue
             if path.startswith("assets/cards/") and path.endswith(".webp"):
                 portrait_changes += 1
+                changed_paths.add(path)
             else:
                 unexpected_changes += 1
+        if status not in ("A", "M", "D"):
+            unexpected_changes += 1
 
     metrics = {
         "imported_count": imported_count,
         "repair_count": repair_count,
         "unresolved_count": unresolved_count,
         "missing_after": missing_after,
+        "missing_before": missing_before,
         "portrait_changes": portrait_changes,
         "unexpected_changes": unexpected_changes,
         "deleted_files": deleted_files,
     }
 
-    if unresolved_count:
-        reasons.append(f"unresolved portraits remain: {unresolved_count}")
-    if missing_after:
-        reasons.append(f"selectable-card portraits are still missing: {missing_after}")
+    # Remaining cards are retried independently; they must not overlap outputs.
+    if imported_ids & unresolved_ids:
+        reasons.append("imported portraits are also reported as unresolved")
+    if len(unresolved_ids) != unresolved_count:
+        reasons.append("unresolved portrait count does not match reported ids")
+    if len(imported_ids) != imported_count:
+        reasons.append("imported portrait count does not match reported ids")
+    if missing_after > missing_before:
+        reasons.append("asset sync increased the number of missing portraits")
     if imported_count > 24:
         reasons.append(f"portrait batch is unusually large: {imported_count} (automatic limit 24)")
     if repair_count > 12:
@@ -180,9 +195,9 @@ def evaluate_card_asset_gate(
         reasons.append(f"asset sync touched {unexpected_changes} unexpected path(s)")
     if portrait_changes > 24:
         reasons.append(f"too many tracked portrait files changed: {portrait_changes} (automatic limit 24)")
-    if portrait_changes and portrait_changes != imported_count:
+    if portrait_changes != imported_count or changed_paths != expected_paths:
         reasons.append(
-            f"reported portrait count does not match changed tracked WebP files: report={imported_count}, changed={portrait_changes}"
+            f"reported portraits do not match staged WebP files: report={imported_count}, changed={portrait_changes}"
         )
 
     return GateResult(safe=not reasons, reasons=tuple(reasons), metrics=metrics)

@@ -35,11 +35,16 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    outputs:
+      has_diff: ${{ steps.diff.outputs.has_diff }}
+      safe: ${{ steps.gate.outputs.safe }}
+      pr_number: ${{ steps.sync_pr.outputs.number }}
+      head_sha: ${{ steps.sync_commit.outputs.head_sha }}
 
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ inputs.dry_run && github.ref || 'main' }}
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
@@ -268,73 +273,6 @@ jobs:
           echo "state=$state" >> "$GITHUB_OUTPUT"
           echo "number=$number" >> "$GITHUB_OUTPUT"
 
-      - name: Wait for Validate Static App
-        id: pr_validation
-        if: >-
-          steps.diff.outputs.has_diff == 'true' &&
-          inputs.dry_run != true &&
-          steps.gate.outputs.safe == 'true' &&
-          steps.sync_pr.outputs.number != '' &&
-          (github.event_name != 'workflow_dispatch' || inputs.auto_merge == true)
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ steps.sync_pr.outputs.number }}
-          EXPECTED_HEAD: ${{ steps.sync_commit.outputs.head_sha }}
-        run: |
-          actual_head="$(gh pr view "$PR_NUMBER" --json headRefOid --jq '.headRefOid')"
-          test "$actual_head" = "$EXPECTED_HEAD"
-
-          run_id=""
-          for attempt in $(seq 1 120); do
-            run_id="$(gh run list \
-              --workflow validate.yml \
-              --commit "$EXPECTED_HEAD" \
-              --event pull_request \
-              --limit 20 \
-              --json databaseId \
-              --jq '.[0].databaseId // empty')"
-            if [ -n "$run_id" ]; then
-              break
-            fi
-            if [ "$attempt" -eq 120 ]; then
-              echo "::error::Validate Static App did not start for $EXPECTED_HEAD; leaving PR #$PR_NUMBER open."
-              exit 1
-            fi
-            sleep 5
-          done
-
-          echo "Waiting for Validate Static App run $run_id on $EXPECTED_HEAD."
-          if ! gh run watch "$run_id" --exit-status; then
-            echo "::error::Validate Static App failed for $EXPECTED_HEAD; leaving PR #$PR_NUMBER open."
-            exit 1
-          fi
-
-          actual_head="$(gh pr view "$PR_NUMBER" --json headRefOid --jq '.headRefOid')"
-          test "$actual_head" = "$EXPECTED_HEAD"
-          echo "validated=true" >> "$GITHUB_OUTPUT"
-          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
-
-      - name: Auto-merge safe Master sync
-        id: auto_merge
-        if: >-
-          steps.diff.outputs.has_diff == 'true' &&
-          inputs.dry_run != true &&
-          steps.gate.outputs.safe == 'true' &&
-          steps.sync_pr.outputs.number != '' &&
-          steps.pr_validation.outputs.validated == 'true' &&
-          (github.event_name != 'workflow_dispatch' || inputs.auto_merge == true)
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ steps.sync_pr.outputs.number }}
-          EXPECTED_HEAD: ${{ steps.sync_commit.outputs.head_sha }}
-        run: |
-          actual_head="$(gh pr view "$PR_NUMBER" --json headRefOid --jq '.headRefOid')"
-          test "$actual_head" = "$EXPECTED_HEAD"
-          gh pr merge "$PR_NUMBER" --squash --match-head-commit "$EXPECTED_HEAD"
-          echo "merged=true" >> "$GITHUB_OUTPUT"
-          echo "Dispatching card-asset validation before production deployment."
-          gh workflow run sync-card-assets.yml --ref main -f deploy_on_success=true
-
       - name: Flag anomaly for administrator review
         if: steps.diff.outputs.has_diff == 'true' && steps.gate.outputs.safe == 'false'
         run: |
@@ -350,9 +288,61 @@ jobs:
             echo "- generated diff: ${{ steps.diff.outputs.has_diff || 'false' }}"
             echo "- master version: ${{ steps.sync.outputs.master_version || 'n/a' }}"
             echo "- auto-merge safe: ${{ steps.gate.outputs.safe || 'n/a' }}"
-            echo "- Validate Static App: ${{ steps.pr_validation.outputs.validated || 'n/a' }}"
-            echo "- validation run: ${{ steps.pr_validation.outputs.run_id || 'n/a' }}"
-            echo "- auto-merged: ${{ steps.auto_merge.outputs.merged || 'false' }}"
             echo "- sync PR: ${{ steps.sync_pr.outputs.number || 'not-needed' }}"
             echo "- dry run: ${{ inputs.dry_run || false }}"
           } >> "$GITHUB_STEP_SUMMARY"
+
+  validate_sync:
+    needs: sync
+    if: >-
+      needs.sync.outputs.has_diff == 'true' &&
+      inputs.dry_run != true &&
+      needs.sync.outputs.safe == 'true' &&
+      needs.sync.outputs.pr_number != '' &&
+      (github.event_name != 'workflow_dispatch' || inputs.auto_merge == true)
+    permissions:
+      contents: read
+    uses: ./.github/workflows/validate.yml
+    with:
+      checkout_ref: ${{ needs.sync.outputs.head_sha }}
+
+  merge:
+    needs: [sync, validate_sync]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Merge the validated Master commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ needs.sync.outputs.pr_number }}
+          EXPECTED_HEAD: ${{ needs.sync.outputs.head_sha }}
+        run: |
+          test "$(gh pr view "$PR_NUMBER" --json headRefOid --jq '.headRefOid')" = "$EXPECTED_HEAD"
+          gh pr merge "$PR_NUMBER" --squash --match-head-commit "$EXPECTED_HEAD"
+          test "$(gh pr view "$PR_NUMBER" --json state --jq '.state')" = "MERGED"
+          echo "Master PR #$PR_NUMBER merged after validation of $EXPECTED_HEAD." >> "$GITHUB_STEP_SUMMARY"
+
+  deploy:
+    needs: [sync, merge]
+    # No-change runs also retry a previously failed/missed deployment.
+    if: >-
+      always() && !cancelled() &&
+      inputs.dry_run != true &&
+      (github.event_name != 'workflow_dispatch' || inputs.auto_merge == true) &&
+      needs.sync.result == 'success' &&
+      (needs.merge.result == 'success' || needs.sync.outputs.has_diff != 'true')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Deploy current data independently of portraits
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/ensure-pages-deployment.py
+      - name: Deployment summary
+        run: echo "Pages dispatched for current main = ${{ steps.pages.outputs.dispatched }}. Portrait collection is independent." >> "$GITHUB_STEP_SUMMARY"

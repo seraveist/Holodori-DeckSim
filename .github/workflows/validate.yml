@@ -6,6 +6,12 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      checkout_ref:
+        description: Exact generated commit to validate before automatic merge
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -17,6 +23,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.checkout_ref || github.sha }}
+
+      - name: Verify requested sync commit
+        if: inputs.checkout_ref != ''
+        env:
+          EXPECTED_HEAD: ${{ inputs.checkout_ref }}
+        run: test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD"
 
       - uses: actions/setup-python@v5
         with:
