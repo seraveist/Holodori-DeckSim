@@ -8,11 +8,7 @@
     "ja": "fbbb04b06ede3276a6272d35d87fd7d1ce4b6ed7"
   },
   "changed_refs": [
-    "master_version",
-    "core_master_files",
-    "locale:ko",
-    "locale:en",
-    "locale:ja"
+    "forced"
   ],
   "counts": {
     "characters": 62,
