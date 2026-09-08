@@ -376,6 +376,8 @@ jobs:
             echo "- pending publication: ${{ steps.sync_assets.outputs.pending_count || '0' }}"
             echo "- actual errors: ${{ steps.sync_assets.outputs.error_count || '0' }}"
             echo "- unresolved total: ${{ steps.sync_assets.outputs.unresolved_count || '0' }}"
+            echo "- pending ids: ${{ steps.sync_assets.outputs.pending_ids || 'none' }}"
+            echo "- error ids: ${{ steps.sync_assets.outputs.error_ids || 'none' }}"
             echo "- generated diff: ${{ steps.diff.outputs.has_diff || 'false' }}"
             echo "- auto-merge safe: ${{ steps.gate.outputs.safe || 'n/a' }}"
             echo "- auto-merged: ${{ steps.auto_merge.outputs.merged || 'false' }}"
@@ -383,25 +385,3 @@ jobs:
             echo "- Pages dispatch: ${{ steps.noop_deploy.outputs.dispatched || 'false' }}"
             echo "- dry run: ${{ inputs.dry_run || false }}"
           } >> "$GITHUB_STEP_SUMMARY"
-
-          if [ -f /tmp/card-asset-sync.json ]; then
-            python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
-          import json
-          report = json.load(open('/tmp/card-asset-sync.json', encoding='utf-8'))
-          unresolved = report.get('unresolved', [])
-          if unresolved:
-              print('')
-              print('### Unresolved portraits')
-              for item in unresolved:
-                  candidates = item.get('catalog_candidates') or []
-                  attempts = item.get('attempts') or []
-                  if report.get('octo_fallback_error'):
-                      state = 'error'
-                  elif not candidates and not attempts:
-                      state = 'pending publication'
-                  else:
-                      state = 'error'
-                  reason = item.get('reason') or ('no matching catalog entry yet' if state == 'pending publication' else 'catalog entry/extraction failed')
-                  print(f"- `{item.get('id', 'unknown')}` — {state}: {reason}")
-          PY
-          fi
