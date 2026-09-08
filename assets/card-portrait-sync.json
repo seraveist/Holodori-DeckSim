@@ -126,6 +126,27 @@
       "unity_object_type": "WebP illustration",
       "width": 768
     },
+    "card-00036-5-uniq-0078-00": {
+      "asset_class": "card-illustration",
+      "asset_id": "00036-5-uniq-0078-00",
+      "height": 432,
+      "replaced_existing": false,
+      "retrieved_at": "2026-09-08",
+      "sha256": "a28c102bc0e5fae7e2f2b12e1102c4c9d8e29ca0216c85dbaa4ccede32ef601e",
+      "source_commit": "a271849eb98260d81a40635037ddbb6e932d3c17",
+      "source_height": 1284,
+      "source_manifest": "data/generated/card-art-manifest.json",
+      "source_page": "https://appmedia.jp/hololive-dreams/80234911",
+      "source_path": "apps/web/public/game/illustrations/card-00036-5-uniq-0078-00.webp",
+      "source_repository": "asciisyaez/yagoo-dori",
+      "source_sha256": "043a307da8de55c772a41fb9746abed0e3055c0c81f841810ac5e892fbb697a5",
+      "source_type": "public-card-art-snapshot",
+      "source_url": "https://appmedia.jp/wp-content/uploads/9999/07/120255_op1iz.webp",
+      "source_width": 2282,
+      "unity_object": "apps/web/public/game/illustrations/card-00036-5-uniq-0078-00.webp",
+      "unity_object_type": "WebP illustration",
+      "width": 768
+    },
     "card-03004-5-uniq-0073-00": {
       "asset_class": "card-illustration",
       "asset_id": "03004-5-uniq-0073-00",
@@ -188,14 +209,56 @@
       "unity_object": "apps/web/public/game/illustrations/card-04003-5-uniq-0072-00.webp",
       "unity_object_type": "WebP illustration",
       "width": 768
+    },
+    "card-04016-5-uniq-0079-00": {
+      "asset_class": "card-illustration",
+      "asset_id": "04016-5-uniq-0079-00",
+      "height": 432,
+      "replaced_existing": false,
+      "retrieved_at": "2026-09-08",
+      "sha256": "cdf6f85dbb7a405ba3d4f1c1fd3113eb77ceea08e9f458ed2ba1e78aa319950d",
+      "source_commit": "a271849eb98260d81a40635037ddbb6e932d3c17",
+      "source_height": 1284,
+      "source_manifest": "data/generated/card-art-manifest.json",
+      "source_page": "https://appmedia.jp/hololive-dreams/80234974",
+      "source_path": "apps/web/public/game/illustrations/card-04016-5-uniq-0079-00.webp",
+      "source_repository": "asciisyaez/yagoo-dori",
+      "source_sha256": "4ed5866a4fb830d6d28898345220b05a6dbd7d66c1e0543c26d23f5b096a89ad",
+      "source_type": "public-card-art-snapshot",
+      "source_url": "https://appmedia.jp/wp-content/uploads/9999/07/120255_cj9nu.webp",
+      "source_width": 2282,
+      "unity_object": "apps/web/public/game/illustrations/card-04016-5-uniq-0079-00.webp",
+      "unity_object_type": "WebP illustration",
+      "width": 768
+    },
+    "card-04017-5-uniq-0080-00": {
+      "asset_class": "card-illustration",
+      "asset_id": "04017-5-uniq-0080-00",
+      "height": 432,
+      "replaced_existing": false,
+      "retrieved_at": "2026-09-08",
+      "sha256": "a845c6c983d218dc5a69c10e32a70ec0076d3b0315522d894e75d0581f2dcbb0",
+      "source_commit": "a271849eb98260d81a40635037ddbb6e932d3c17",
+      "source_height": 1284,
+      "source_manifest": "data/generated/card-art-manifest.json",
+      "source_page": "https://appmedia.jp/hololive-dreams/80234977",
+      "source_path": "apps/web/public/game/illustrations/card-04017-5-uniq-0080-00.webp",
+      "source_repository": "asciisyaez/yagoo-dori",
+      "source_sha256": "31cff9b99f4066f37739ce0f1d2365d5a92d72b9fa9524c821a1a003fe862e3e",
+      "source_type": "public-card-art-snapshot",
+      "source_url": "https://appmedia.jp/wp-content/uploads/9999/07/120255_qi7h8.webp",
+      "source_width": 2282,
+      "unity_object": "apps/web/public/game/illustrations/card-04017-5-uniq-0080-00.webp",
+      "unity_object_type": "WebP illustration",
+      "width": 768
     }
   },
   "public_card_art": {
     "asset_class": "card-illustration",
-    "commit": "213c1f5fa110ee21f28b03724a86e9a4a68eeab8",
+    "commit": "a271849eb98260d81a40635037ddbb6e932d3c17",
     "manifest_path": "data/generated/card-art-manifest.json",
     "repository": "asciisyaez/yagoo-dori",
-    "retrieved_at": "2026-08-29"
+    "retrieved_at": "2026-09-08"
   },
   "version": 3
 }
