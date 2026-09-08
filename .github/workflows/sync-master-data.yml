@@ -268,6 +268,52 @@ jobs:
           echo "state=$state" >> "$GITHUB_OUTPUT"
           echo "number=$number" >> "$GITHUB_OUTPUT"
 
+      - name: Wait for Validate Static App
+        id: pr_validation
+        if: >-
+          steps.diff.outputs.has_diff == 'true' &&
+          inputs.dry_run != true &&
+          steps.gate.outputs.safe == 'true' &&
+          steps.sync_pr.outputs.number != '' &&
+          (github.event_name != 'workflow_dispatch' || inputs.auto_merge == true)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.sync_pr.outputs.number }}
+          EXPECTED_HEAD: ${{ steps.sync_commit.outputs.head_sha }}
+        run: |
+          actual_head="$(gh pr view "$PR_NUMBER" --json headRefOid --jq '.headRefOid')"
+          test "$actual_head" = "$EXPECTED_HEAD"
+
+          run_id=""
+          for attempt in $(seq 1 120); do
+            run_id="$(gh run list \
+              --workflow validate.yml \
+              --commit "$EXPECTED_HEAD" \
+              --event pull_request \
+              --limit 20 \
+              --json databaseId \
+              --jq '.[0].databaseId // empty')"
+            if [ -n "$run_id" ]; then
+              break
+            fi
+            if [ "$attempt" -eq 120 ]; then
+              echo "::error::Validate Static App did not start for $EXPECTED_HEAD; leaving PR #$PR_NUMBER open."
+              exit 1
+            fi
+            sleep 5
+          done
+
+          echo "Waiting for Validate Static App run $run_id on $EXPECTED_HEAD."
+          if ! gh run watch "$run_id" --exit-status; then
+            echo "::error::Validate Static App failed for $EXPECTED_HEAD; leaving PR #$PR_NUMBER open."
+            exit 1
+          fi
+
+          actual_head="$(gh pr view "$PR_NUMBER" --json headRefOid --jq '.headRefOid')"
+          test "$actual_head" = "$EXPECTED_HEAD"
+          echo "validated=true" >> "$GITHUB_OUTPUT"
+          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
+
       - name: Auto-merge safe Master sync
         id: auto_merge
         if: >-
@@ -275,6 +321,7 @@ jobs:
           inputs.dry_run != true &&
           steps.gate.outputs.safe == 'true' &&
           steps.sync_pr.outputs.number != '' &&
+          steps.pr_validation.outputs.validated == 'true' &&
           (github.event_name != 'workflow_dispatch' || inputs.auto_merge == true)
         env:
           GH_TOKEN: ${{ github.token }}
@@ -303,6 +350,8 @@ jobs:
             echo "- generated diff: ${{ steps.diff.outputs.has_diff || 'false' }}"
             echo "- master version: ${{ steps.sync.outputs.master_version || 'n/a' }}"
             echo "- auto-merge safe: ${{ steps.gate.outputs.safe || 'n/a' }}"
+            echo "- Validate Static App: ${{ steps.pr_validation.outputs.validated || 'n/a' }}"
+            echo "- validation run: ${{ steps.pr_validation.outputs.run_id || 'n/a' }}"
             echo "- auto-merged: ${{ steps.auto_merge.outputs.merged || 'false' }}"
             echo "- sync PR: ${{ steps.sync_pr.outputs.number || 'not-needed' }}"
             echo "- dry run: ${{ inputs.dry_run || false }}"
