@@ -57,6 +57,20 @@ def _octo_failure_result(before: dict, exc: Exception) -> dict:
     }
 
 
+def _is_pending_publication_fallback(public: dict, octo: dict) -> bool:
+    error = str(octo.get("fallback_error") or "")
+    if "403 Forbidden" not in error or "/asset/v2/pub/" not in error or "/list/" not in error:
+        return False
+
+    public_pending = {
+        str(item.get("id") or "")
+        for item in public.get("unresolved", [])
+        if item.get("reason") == "card illustration missing from public snapshot manifest"
+    }
+    octo_unresolved = {str(item.get("id") or "") for item in octo.get("unresolved", [])}
+    return bool(octo_unresolved) and octo_unresolved.issubset(public_pending)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Audit or synchronize missing rarity-4/5 Holodori card portraits"
@@ -104,6 +118,7 @@ def main() -> int:
                 "after": public["after"],
             }
 
+        pending_publication_fallback = _is_pending_publication_fallback(public, octo)
         imported = [*public["imported"], *octo["imported"]]
         result = {
             "public_source_repository": public["source_repository"],
@@ -123,7 +138,9 @@ def main() -> int:
             "unresolved": octo["unresolved"],
             "after": octo["after"],
         }
-        if octo.get("fallback_error"):
+        if pending_publication_fallback:
+            result["octo_pending_fallback"] = True
+        elif octo.get("fallback_error"):
             result["octo_fallback_error"] = octo["fallback_error"]
 
         _write_report(args.report, result)
