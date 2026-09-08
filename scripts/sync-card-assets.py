@@ -3,8 +3,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
+import holodori_decksim.card_assets as card_assets_module
 from holodori_decksim.card_assets import (
     ASSET_DIR,
     ASSET_TOOL_COMMIT,
@@ -16,6 +18,10 @@ from holodori_decksim.card_assets import (
     sync_missing_portraits,
 )
 from holodori_decksim.public_card_art import sync_public_snapshot_portraits
+
+
+ASSET_TOOL_COMMIT = os.environ.get("ASSET_TOOL_COMMIT", ASSET_TOOL_COMMIT)
+card_assets_module.ASSET_TOOL_COMMIT = ASSET_TOOL_COMMIT
 
 
 def _write_report(path: Path | None, payload: dict) -> None:
