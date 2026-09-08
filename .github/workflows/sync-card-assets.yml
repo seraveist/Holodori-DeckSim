@@ -10,6 +10,7 @@ on:
       - "src/holodori_decksim/automation_gate.py"
       - "scripts/sync-card-assets.py"
       - "scripts/check-automation-gate.py"
+      - "scripts/ensure-pages-deployment.py"
       - ".github/workflows/sync-card-assets.yml"
   workflow_dispatch:
     inputs:
@@ -22,11 +23,6 @@ on:
         description: Automatically merge a validated, non-anomalous asset PR
         required: false
         default: true
-        type: boolean
-      deploy_on_success:
-        description: Deploy Pages after a safe asset audit, including unpublished portraits still pending
-        required: false
-        default: false
         type: boolean
   schedule:
     # 11:00 and 23:00 KST every day (02:00 and 14:00 UTC).
@@ -53,7 +49,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ inputs.dry_run && github.ref || 'main' }}
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
@@ -68,7 +64,7 @@ jobs:
       - name: Install core project tooling
         run: |
           for attempt in 1 2 3; do
-            if python -m pip install --disable-pip-version-check --retries 5 --timeout 30 -e '.[test]'; then
+            if python -m pip install --disable-pip-version-check --retries 5 --timeout 30 -e '.[test]' Pillow; then
               exit 0
             fi
             echo "::warning::Core project tooling install failed (attempt ${attempt}/3)."
@@ -79,6 +75,9 @@ jobs:
           exit 1
 
       - name: Install pinned asset tooling
+        # The public snapshot only needs Pillow. A broken optional Octo install
+        # must not discard images that the primary source can already provide.
+        continue-on-error: true
         run: |
           for attempt in 1 2 3; do
             if python -m pip install --disable-pip-version-check --retries 5 --timeout 30 \
@@ -94,7 +93,7 @@ jobs:
 
       - name: Validate card asset sync helpers
         run: |
-          python -m pytest -q tests/test_card_assets.py tests/test_public_card_art.py tests/test_automation_gate.py
+          python -m pytest -q tests/test_card_assets.py tests/test_public_card_art.py tests/test_card_asset_sync.py tests/test_automation_gate.py tests/test_pages_deployment.py
           python -m py_compile \
             src/holodori_decksim/card_assets.py \
             src/holodori_decksim/public_card_art.py \
@@ -115,6 +114,8 @@ jobs:
 
       - name: Resolve, download, extract, normalize, and repair portraits
         id: sync_assets
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           set +e
           python scripts/sync-card-assets.py \
@@ -127,7 +128,7 @@ jobs:
 
           if [ ! -f /tmp/card-asset-sync.json ]; then
             echo "::error::Card asset sync exited ${sync_status} without producing a report."
-            exit "${sync_status:-1}"
+            exit 1
           fi
 
           SYNC_STATUS="$sync_status" python - <<'PY' >> "$GITHUB_OUTPUT"
@@ -136,16 +137,10 @@ jobs:
 
           report = json.load(open('/tmp/card-asset-sync.json', encoding='utf-8'))
           unresolved = list(report.get('unresolved', []))
-          fallback_error = bool(report.get('octo_fallback_error'))
-          pending = []
-          errors = []
-          for item in unresolved:
-              if fallback_error:
-                  errors.append(item)
-              elif not item.get('catalog_candidates') and not item.get('attempts'):
-                  pending.append(item)
-              else:
-                  errors.append(item)
+          pending = [item for item in unresolved if item['status'] == 'pending']
+          errors = [item for item in unresolved if item['status'] == 'error']
+          if len(pending) + len(errors) != len(unresolved):
+              raise SystemExit('Unknown unresolved portrait status')
 
           print(f"imported_count={report.get('imported_count', 0)}")
           print(f"repair_count={report.get('public_repair_count', 0)}")
@@ -158,14 +153,12 @@ jobs:
           print("error_ids=" + ",".join(item['id'] for item in errors))
 
           status = int(os.environ.get('SYNC_STATUS', '1'))
-          if errors:
-              raise SystemExit(1)
-          if status not in (0, 2):
+          if status not in (0, 1, 2) or (status == 1 and not errors):
               raise SystemExit(status or 1)
           PY
 
           if [ "$sync_status" -eq 2 ]; then
-            echo "::notice::Missing portraits are not published in the current catalog yet; keeping them pending for the next scheduled asset sync."
+            echo "::notice::Some portraits are still unavailable; publishing verified images and retrying the remaining cards on the next scheduled run."
           fi
 
       - name: Validate resolved portrait outputs
@@ -192,13 +185,14 @@ jobs:
           PY
 
       - name: Validate completed portrait set
-        if: steps.sync_assets.outputs.pending_count == '0'
+        if: steps.sync_assets.outputs.unresolved_count == '0'
         run: python scripts/sync-card-assets.py --require-complete
 
       - name: Detect asset diff
         id: diff
         run: |
-          git diff --name-status -- assets/cards assets/card-portrait-sync.json > /tmp/card-asset-diff.txt
+          git add -- assets/cards assets/card-portrait-sync.json
+          git diff --cached --name-status > /tmp/card-asset-diff.txt
           git status --porcelain -- assets/cards assets/card-portrait-sync.json
           if [ -n "$(git status --porcelain -- assets/cards assets/card-portrait-sync.json)" ]; then
             echo "has_diff=true" >> "$GITHUB_OUTPUT"
@@ -208,7 +202,6 @@ jobs:
 
       - name: Evaluate card-asset auto-merge safety
         id: gate
-        if: steps.sync_assets.outputs.pending_count == '0'
         run: |
           python scripts/check-automation-gate.py card-assets \
             --report /tmp/card-asset-sync.json \
@@ -225,7 +218,7 @@ jobs:
         if: steps.diff.outputs.has_diff == 'true' && inputs.dry_run == true
         run: |
           git status --short -- assets/cards assets/card-portrait-sync.json
-          git diff --stat -- assets/cards assets/card-portrait-sync.json
+          git diff --cached --stat -- assets/cards assets/card-portrait-sync.json
           if [ -f /tmp/card-asset-automerge-gate.json ]; then
             cat /tmp/card-asset-automerge-gate.json
           fi
@@ -235,7 +228,6 @@ jobs:
         id: asset_commit
         if: >-
           steps.diff.outputs.has_diff == 'true' &&
-          steps.sync_assets.outputs.pending_count == '0' &&
           inputs.dry_run != true
         env:
           SYNC_BRANCH: automation/card-asset-sync
@@ -252,7 +244,6 @@ jobs:
         id: asset_pr
         if: >-
           steps.diff.outputs.has_diff == 'true' &&
-          steps.sync_assets.outputs.pending_count == '0' &&
           inputs.dry_run != true
         env:
           GH_TOKEN: ${{ github.token }}
@@ -276,7 +267,7 @@ jobs:
               gate_text = f'- Status: **manual review required**\n{reasons}'
           body = f"""## Automated Holodori card portrait sync
 
-          This PR was generated from the current `main` card Master. Safe, complete portrait batches are automatically merged; anomalous batches remain open for administrator review.
+          This PR contains verified portraits for the current `main` card Master. Safe partial batches are automatically merged; remaining cards are retried independently. Anomalous output changes remain open for administrator review.
 
           - Public source: `{report.get('public_source_repository')}`@`{report.get('public_source_commit')}`
           - Public repairs: {report.get('public_repair_count', 0)}
@@ -285,6 +276,8 @@ jobs:
           - Missing before sync: {report['before']['missing_count']}
           - Imported/repaired: {report['imported_count']}
           - Missing after sync: {report['after']['missing_count']}
+          - Pending retry: {report['pending_count']}
+          - Failed cards: {report['error_count']}
 
           ### Automatic merge gate
           {gate_text}
@@ -298,7 +291,8 @@ jobs:
           - wrong-class public snapshot icons may be repaired to landscape illustrations
           - automated outputs are validated WebP within 768×768
           - public snapshot illustrations must remain landscape
-          - post-sync audit requires zero missing selectable-card portraits
+          - staged WebP paths must exactly match successful imports
+          - unresolved cards do not block verified images or Master-data deployment
           - source/output dimensions and SHA-256 provenance are recorded
           """
           Path('/tmp/card-asset-pr-body.md').write_text(
@@ -326,7 +320,6 @@ jobs:
         id: auto_merge
         if: >-
           steps.diff.outputs.has_diff == 'true' &&
-          steps.sync_assets.outputs.pending_count == '0' &&
           inputs.dry_run != true &&
           steps.gate.outputs.safe == 'true' &&
           steps.asset_pr.outputs.number != '' &&
@@ -339,31 +332,33 @@ jobs:
           actual_head="$(gh pr view "$PR_NUMBER" --json headRefOid --jq '.headRefOid')"
           test "$actual_head" = "$EXPECTED_HEAD"
           gh pr merge "$PR_NUMBER" --squash --match-head-commit "$EXPECTED_HEAD"
+          test "$(gh pr view "$PR_NUMBER" --json state --jq '.state')" = "MERGED"
           echo "merged=true" >> "$GITHUB_OUTPUT"
-          echo "Dispatching Pages for the merged portrait set."
-          gh workflow run pages.yml --ref main
 
-      - name: Deploy after safe no-op or pending asset audit
-        id: noop_deploy
+      - name: Deploy merged portraits or retry an outstanding deployment
+        id: pages
         if: >-
           inputs.dry_run != true &&
-          github.event_name == 'workflow_dispatch' &&
-          inputs.deploy_on_success == true &&
-          (steps.diff.outputs.has_diff == 'false' || steps.sync_assets.outputs.pending_count != '0')
+          (github.event_name != 'workflow_dispatch' || inputs.auto_merge == true) &&
+          (steps.auto_merge.outputs.merged == 'true' || steps.diff.outputs.has_diff == 'false')
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          gh workflow run pages.yml --ref main
-          echo "dispatched=true" >> "$GITHUB_OUTPUT"
+        run: python scripts/ensure-pages-deployment.py
 
       - name: Flag anomaly for administrator review
         if: >-
-          steps.sync_assets.outputs.pending_count == '0' &&
           steps.diff.outputs.has_diff == 'true' &&
           steps.gate.outputs.safe == 'false'
         run: |
           echo "::warning::Card asset sync completed but tripped the automatic-merge anomaly gate. PR #${{ steps.asset_pr.outputs.number }} remains open for administrator review."
           cat /tmp/card-asset-automerge-gate.json
+
+      - name: Report source failures after publishing verified portraits
+        if: steps.sync_assets.outputs.error_count != '0'
+        run: |
+          echo "::error::Some portraits failed to synchronize. Verified images have been processed; failed cards will be retried and do not block Master data."
+          cat /tmp/card-asset-sync.json
+          exit 1
 
       - name: Job summary
         if: always()
@@ -382,6 +377,6 @@ jobs:
             echo "- auto-merge safe: ${{ steps.gate.outputs.safe || 'n/a' }}"
             echo "- auto-merged: ${{ steps.auto_merge.outputs.merged || 'false' }}"
             echo "- asset PR: ${{ steps.asset_pr.outputs.number || 'not-needed' }}"
-            echo "- Pages dispatch: ${{ steps.noop_deploy.outputs.dispatched || 'false' }}"
+            echo "- Pages dispatch: ${{ steps.pages.outputs.dispatched || 'false' }}"
             echo "- dry run: ${{ inputs.dry_run || false }}"
           } >> "$GITHUB_STEP_SUMMARY"

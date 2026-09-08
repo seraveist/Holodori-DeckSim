@@ -43,12 +43,16 @@ automation/master-data-sync branch
         ↓
 automated review PR (when repository permission allows)
         ↓
-manual merge
+Validate Static App (workflow_call on the exact generated commit)
+        ↓
+automatic merge for validated, non-anomalous updates
         ↓
 GitHub Pages deployment
 ```
 
-The workflow never auto-merges upstream data.
+Validated, non-anomalous updates are automatically merged. The validation workflow is called directly with the generated commit SHA, so bot-created PR workflow approval is not required for this path. The PR head is checked again before merging. Anomalous updates remain open for manual review.
+
+Master publication does not wait for portrait synchronization. After merging, the workflow dispatches Pages for current `main`; missing portraits use the existing placeholder. Successful no-change runs also check whether current `main` has been deployed and retry a failed or missed deployment. A successful or active deployment of that commit is not duplicated.
 
 ## Workflow
 
@@ -58,6 +62,9 @@ Manual inputs:
 
 - `force`: rebuild the currently resolved snapshot even if source references are unchanged.
 - `dry_run`: run normalization and all validation without pushing the automation branch or creating/updating a PR.
+- `auto_merge` (default `true`): call full validation, merge a safe update, and ensure Pages deployment. Set `false` to leave a generated PR for manual handling.
+
+Dry runs check out the selected workflow ref so a fix branch can be tested before merge. Publishing runs always generate updates from current `main`.
 
 The automation branch is fixed as:
 
@@ -73,9 +80,9 @@ GitHub has a repository-level switch separate from workflow YAML permissions. Fo
 
 **Settings → Actions → General → Workflow permissions → Allow GitHub Actions to create and approve pull requests**
 
-The workflow still requests only the repository-scoped `contents: write` and `pull-requests: write` token permissions it needs.
+The workflow requests repository-scoped `contents: write`, `pull-requests: write`, and `actions: write` permissions. The reusable validation job is restricted to `contents: read`.
 
-If this repository switch is disabled, synchronization does **not** discard the result and does not auto-merge anything. The validated data is still pushed to `automation/master-data-sync`; the workflow records a warning and places a direct compare/PR link plus the setting path in the Actions job summary. Enabling the switch later restores automatic PR creation without changing the sync code.
+If this repository switch is disabled, PR creation fails. The generated branch remains available, but automatic merge and publication do not proceed. Enable the switch and rerun synchronization to resume the normal path.
 
 ## Core normalization
 

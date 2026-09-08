@@ -71,6 +71,30 @@ def _is_pending_publication_fallback(public: dict, octo: dict) -> bool:
     return bool(octo_unresolved) and octo_unresolved.issubset(public_pending)
 
 
+def _merge_unresolved(public: dict, octo: dict) -> list[dict]:
+    """Preserve repair/source errors, removing only IDs successfully resolved later."""
+    resolved = {item["id"] for item in [*public["imported"], *octo["imported"]]}
+    remaining = {}
+    for item in public.get("unresolved", []):
+        status = item.get("status") or (
+            "pending" if item.get("reason") == "card illustration missing from public snapshot manifest" else "error"
+        )
+        remaining[item["id"]] = {**item, "status": status}
+    for item in octo.get("unresolved", []):
+        previous = remaining.get(item["id"], {})
+        # Classify the 403 exception per card, so one bad public image cannot
+        # change the status of unrelated unpublished cards in the same batch.
+        pending_fallback = _is_pending_publication_fallback(public, {**octo, "unresolved": [item]})
+        error = previous.get("status") == "error" or (
+            bool(octo.get("fallback_error")) and not pending_fallback
+        ) or bool(item.get("catalog_candidates") or item.get("attempts"))
+        remaining[item["id"]] = {
+            **item, "status": "error" if error else "pending",
+            "public_reason": previous.get("reason"),
+        }
+    return [item for card_id, item in remaining.items() if card_id not in resolved]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Audit or synchronize missing rarity-4/5 Holodori card portraits"
@@ -120,6 +144,7 @@ def main() -> int:
 
         pending_publication_fallback = _is_pending_publication_fallback(public, octo)
         imported = [*public["imported"], *octo["imported"]]
+        unresolved = _merge_unresolved(public, octo)
         result = {
             "public_source_repository": public["source_repository"],
             "public_source_commit": public["source_commit"],
@@ -134,8 +159,10 @@ def main() -> int:
             "before": public["before"],
             "imported_count": len(imported),
             "imported": imported,
-            "unresolved_count": octo["unresolved_count"],
-            "unresolved": octo["unresolved"],
+            "unresolved_count": len(unresolved),
+            "unresolved": unresolved,
+            "pending_count": sum(item["status"] == "pending" for item in unresolved),
+            "error_count": sum(item["status"] == "error" for item in unresolved),
             "after": octo["after"],
         }
         if pending_publication_fallback:
@@ -145,7 +172,9 @@ def main() -> int:
 
         _write_report(args.report, result)
         print(json.dumps(result, ensure_ascii=False, indent=2))
-        if result["unresolved_count"]:
+        if result["error_count"]:
+            return 1
+        if result["pending_count"]:
             return 2
         if args.require_complete and result["after"]["missing_count"]:
             return 1

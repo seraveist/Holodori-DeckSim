@@ -74,6 +74,7 @@ def test_master_gate_blocks_runtime_regression():
 def test_card_gate_accepts_small_complete_batch():
     report = {
         "imported_count": 4,
+        "imported": [{"id": f"card-{index}"} for index in range(1, 5)],
         "public_repair_count": 0,
         "unresolved_count": 0,
         "after": {"missing_count": 0},
@@ -89,15 +90,57 @@ def test_card_gate_accepts_small_complete_batch():
     assert result.safe is True
 
 
-def test_card_gate_blocks_unresolved_or_deleted_assets():
+def test_card_gate_blocks_deleted_assets_even_in_partial_batch():
     report = {
         "imported_count": 1,
+        "imported": [{"id": "card-new"}],
         "public_repair_count": 0,
         "unresolved_count": 1,
+        "unresolved": [{"id": "card-pending"}],
+        "before": {"missing_count": 2},
         "after": {"missing_count": 1},
     }
     diff = ["D\tassets/cards/card-old.webp", "M\tassets/card-portrait-sync.json"]
     result = evaluate_card_asset_gate(report=report, diff_lines=diff)
     assert result.safe is False
-    assert any("unresolved" in reason for reason in result.reasons)
     assert any("delete" in reason for reason in result.reasons)
+
+
+def test_card_gate_requires_exact_output_paths_and_rejects_missing_diff():
+    report = {"imported_count": 1, "imported": [{"id": "card-new"}]}
+    for diff in ([], ["A\tassets/cards/card-other.webp"]):
+        result = evaluate_card_asset_gate(report=report, diff_lines=diff)
+        assert not result.safe
+        assert any("staged WebP" in reason for reason in result.reasons)
+
+
+def test_card_gate_accepts_staged_new_and_repaired_images(tmp_path):
+    import subprocess
+    cards = tmp_path / "assets/cards"
+    cards.mkdir(parents=True)
+    old = cards / "card-old.webp"
+    old.write_bytes(b"old")
+    def git(*args):
+        return subprocess.run(["git", "-c", f"safe.directory={tmp_path.as_posix()}", *args],
+            cwd=tmp_path, check=True, capture_output=True, text=True).stdout
+    git("init", "--quiet")
+    git("add", "assets/cards")
+    git("-c", "user.name=Test", "-c", "user.email=test@example.invalid", "commit", "--quiet", "-m", "fixture")
+    old.write_bytes(b"repaired")
+    (cards / "card-new.webp").write_bytes(b"new")
+    git("add", "--", "assets/cards")
+    diff = git("diff", "--cached", "--name-status").splitlines()
+    report = {"imported_count": 2, "public_repair_count": 1,
+        "imported": [{"id": "card-old"}, {"id": "card-new"}],
+        "before": {"missing_count": 1}, "after": {"missing_count": 0}}
+    result = evaluate_card_asset_gate(report=report, diff_lines=diff)
+    assert result.safe
+    assert result.metrics["portrait_changes"] == 2
+
+
+def test_card_gate_rejects_imported_id_also_reported_as_failed():
+    report = {"imported_count": 1, "imported": [{"id": "card-new"}],
+        "unresolved_count": 1, "unresolved": [{"id": "card-new", "status": "error"}]}
+    result = evaluate_card_asset_gate(report=report, diff_lines=["A\tassets/cards/card-new.webp"])
+    assert not result.safe
+    assert any("also reported" in reason for reason in result.reasons)

@@ -219,12 +219,13 @@ upstream 변경 감지
 → 구조/회귀/Runtime coherence 검증
 → automation/master-data-sync 브랜치
 → 자동 검토 PR
-→ 사람이 확인 후 merge
+→ 생성 커밋 전체 검증 후 안전한 변경 자동 merge
+→ 초상화와 독립적으로 Pages 배포
 ```
 
-Runtime Exact source가 새 Master의 일부 채보와 더 이상 맞지 않으면 해당 채보는 새 index에서 제외되고 Master fallback을 사용합니다. sync는 자동으로 `main`에 merge하지 않습니다. 자세한 내용은 [DATA_SYNC.md](DATA_SYNC.md)를 참고하세요.
+Runtime Exact source가 새 Master의 일부 채보와 더 이상 맞지 않으면 해당 채보는 새 index에서 제외되고 Master fallback을 사용합니다. 신규 데이터는 생성된 커밋에 대한 전체 검증과 자동 병합 기준을 통과하면 `main`에 반영하고, 초상화 결과와 독립적으로 배포합니다. 변경 없는 정기 실행에서도 미완료 배포를 다시 시도합니다. 자세한 내용은 [DATA_SYNC.md](DATA_SYNC.md)를 참고하세요.
 
-카드 portrait는 `.github/workflows/sync-card-assets.yml`에서 ★4/★5 대상만 별도로 감사합니다. 누락되거나 자동 import provenance상 잘못된 asset class가 확인되면 검증된 public card-art snapshot을 우선 사용하고, 필요한 경우 Octo/UnityPy 경로를 fallback으로 사용하여 `automation/card-asset-sync` 검토 PR을 만듭니다. 자세한 내용은 [CARD_ASSET_SYNC.md](CARD_ASSET_SYNC.md)를 참고하세요.
+카드 portrait는 `.github/workflows/sync-card-assets.yml`에서 ★4/★5 대상만 별도로 감사합니다. 매일 한국 시간 11:00·23:00에 누락된 이미지를 재시도하며, 일부만 확보돼도 검증된 항목부터 자동 반영·배포합니다. 실패한 항목은 기록에 남겨 다음 실행에서 재시도하고 데이터 사용에는 영향을 주지 않습니다. 공개 스냅샷을 우선 사용하고 필요한 경우 Octo/UnityPy를 사용합니다. 자세한 내용은 [CARD_ASSET_SYNC.md](CARD_ASSET_SYNC.md)를 참고하세요.
 
 ## 검증
 

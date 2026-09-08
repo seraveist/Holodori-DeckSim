@@ -229,12 +229,26 @@ def sync_public_snapshot_portraits(
             "after": before,
         }
 
-    commit = resolve_public_art_commit(repository, ref)
-    manifest = json.loads(
-        _request_bytes(public_art_manifest_url(commit, repository), accept="application/json").decode("utf-8")
-    )
-    indexed = index_public_art_manifest(manifest)
     targets_by_id = {target.card_id: target for target in build_targets(cards_path, assets_dir)}
+    commit = None
+    try:
+        commit = resolve_public_art_commit(repository, ref)
+        manifest = json.loads(
+            _request_bytes(public_art_manifest_url(commit, repository), accept="application/json").decode("utf-8")
+        )
+        indexed = index_public_art_manifest(manifest)
+    except Exception as exc:
+        unresolved = [
+            {"id": card_id, "asset_id": targets_by_id[card_id].asset_id,
+             "status": "error", "reason": f"Public snapshot unavailable: {type(exc).__name__}: {exc}"}
+            for card_id in sync_ids
+        ]
+        return {
+            "source_repository": repository, "source_commit": commit,
+            "before": before, "after": before, "repair_count": 0,
+            "imported_count": 0, "imported": [],
+            "unresolved_count": len(unresolved), "unresolved": unresolved,
+        }
     provenance = _load_provenance(provenance_path)
     provenance.setdefault("public_card_art", {})
     provenance["public_card_art"].update(
@@ -264,6 +278,7 @@ def sync_public_snapshot_portraits(
                     "id": card_id,
                     "asset_id": target.asset_id,
                     "reason": "card illustration missing from public snapshot manifest",
+                    "status": "pending",
                 }
             )
             continue
@@ -276,6 +291,7 @@ def sync_public_snapshot_portraits(
                     "id": card_id,
                     "asset_id": target.asset_id,
                     "reason": f"unexpected public snapshot illustration path: {local_path!r}",
+                    "status": "error",
                 }
             )
             continue
@@ -298,6 +314,7 @@ def sync_public_snapshot_portraits(
                     "id": card_id,
                     "asset_id": target.asset_id,
                     "reason": f"{type(exc).__name__}: {exc}",
+                    "status": "error",
                 }
             )
             continue
