@@ -165,7 +165,7 @@ The primary GitHub-hosted source uses standard HTTP plus Pillow validation/norma
 ```bash
 python -m pip install -e '.[test]'
 python -m pip install \
-  'git+https://github.com/HolodoriDB/holodori-asset-tools.git@85b70c9b0024e91ea566dacafe8374e1c4212cf5'
+  'git+https://github.com/HolodoriDB/holodori-asset-tools.git@13f150fe9dfbd367be53e5ea1c0a4ceb258b74f2'
 ```
 
 Then run:

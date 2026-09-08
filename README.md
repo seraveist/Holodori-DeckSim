@@ -219,7 +219,8 @@ upstream 변경 감지
 → 구조/회귀/Runtime coherence 검증
 → automation/master-data-sync 브랜치
 → 자동 검토 PR
-→ 사람이 확인 후 merge
+→ 생성 커밋 전체 검증 후 안전한 변경 자동 merge
+→ 초상화와 독립적으로 Pages 배포
 ```
 
 Runtime Exact source가 새 Master의 일부 채보와 더 이상 맞지 않으면 해당 채보는 새 index에서 제외되고 Master fallback을 사용합니다. 신규 데이터는 생성된 커밋에 대한 전체 검증과 자동 병합 기준을 통과하면 `main`에 반영하고, 초상화 결과와 독립적으로 배포합니다. 변경 없는 정기 실행에서도 미완료 배포를 다시 시도합니다. 자세한 내용은 [DATA_SYNC.md](DATA_SYNC.md)를 참고하세요.
