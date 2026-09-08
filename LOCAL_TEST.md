@@ -1,4 +1,4 @@
-# Holodori DeckSim v1.1.2 로컬 테스트
+# Holodori DeckSim 로컬 테스트
 
 이 문서는 v1.1 계열 공개 전후의 수동 회귀 테스트 기준입니다.
 
@@ -17,6 +17,11 @@ python scripts/validate-generated-data.py
 python -m pytest -q
 node scripts/test-chart-scoring.mjs
 node scripts/test-targeted-passive-support.mjs
+node scripts/test-passive-stat-rounding.mjs
+node scripts/test-passive-target-priority.mjs
+node scripts/test-support-stacking.mjs
+node scripts/test-generic-order.mjs
+node scripts/test-song-representative-order.mjs
 node scripts/test-card-preparation.mjs
 node scripts/test-simulation-targets.mjs
 node scripts/test-collision-choice.mjs
@@ -67,6 +72,10 @@ GitHub Actions와 동일한 자동 브라우저 smoke는 `node scripts/test-brow
 3. 수동 기준은 `Manual PERFECT FC`로 표시되는지 확인합니다.
 4. Manual PERFECT FC가 PERFECT 계수와 콤보 보너스를 사용하고 AUTO는 AUTO 계수·콤보 보너스 없음으로 표시되는지 확인합니다.
 
+악곡 미선택에서는 같은 리더·멤버 조합이 중복되지 않고, 공통 채보에서 잠재 점수가 가장 높은 순서 하나만 표시되어야 합니다. 상세의 `잠재 기준 추천 배치`와 `공통 채보 잠재 스코어`, 가정한 SP 5개 지점을 확인합니다. 기본 유닛스코어와 잠재 유닛스코어는 인게임 비교 기준을 유지합니다. 멤버 프리셋의 카드 포함은 유지되며 순서는 바뀔 수 있습니다. 악곡을 선택하면 해당 곡의 시간축과 계산 목표를 사용하고 공통 채보 안내는 사라져야 합니다.
+
+악곡 선택 시에도 같은 리더·멤버 5명 조합당 결과는 하나입니다. `최고 유닛 스코어`는 그 곡의 예상 평균이 최대인 순서를, `최고 잠재 스코어`는 잠재 점수가 최대인 순서를 표시합니다. 표시된 다른 지표도 해당 순서의 값이며, 서로 다른 순서의 최고 평균·최고 잠재를 한 결과에 섞지 않습니다. Exact/Master/Estimated 및 AUTO/Manual의 두 목표를 120개 순열 전수 계산과 비교하는 회귀를 포함합니다.
+
 ## 6. Local Exact / Runtime Exact
 
 ### Local Exact
@@ -88,7 +97,7 @@ GitHub Actions와 동일한 자동 브라우저 smoke는 `node scripts/test-brow
 5. 결과가 `실제 채보 노트·SP 순서 반영` 상태인지 확인합니다.
 6. 최종 5인 SP1~SP5 순서가 재최적화되는지 확인합니다.
 
-현재 snapshot에서는 Runtime Exact 호환 채보가 703 / 728이고, 25개는 Master fallback 대상입니다.
+2026-09-08 snapshot에서는 Runtime Exact 호환 채보가 699 / 796입니다. Local/Runtime Exact를 사용할 수 없는 채보는 Master fallback으로 계산합니다.
 
 ### Fail-soft fallback
 
@@ -148,7 +157,13 @@ node scripts/test-optimization-session.mjs
 node scripts/test-chart-abort.mjs
 ```
 
-## 11. 릴리스 metadata
+## 11. 1차 실측 회귀 (2026-09-08)
+
+다른 PC의 간편 재현은 `node scripts/run-scoring-validation.mjs`로 실행합니다. 추가 설치 없이 Node.js 24 이상과 저장소 데이터만 사용합니다. 분석 전체 탐색은 `--research-grid`를 붙이며, 다음 L/M/N 편성·사전 예측·관측 기록 방법은 [SCORING_HANDOFF.md](SCORING_HANDOFF.md)를 따릅니다.
+
+`node scripts/test-unit-observations.mjs`로 H 추가 후 화면 11건의 종합력과 반복 관측을 재현합니다. `--json`을 붙이면 남은 보너스 오차를 포함한 비교 결과를 JSON으로 출력합니다. 자세한 범위는 [계산식 1차 검증 기록](SCORING_VALIDATION.md)을 참고합니다. 계산 결과 상단의 추정값 안내는 악곡 선택 여부와 관계없이 한국어·영어·일본어로 표시되어야 합니다.
+
+## 12. 릴리스 metadata
 
 현재 버전은 `VERSION`, `pyproject.toml`, package `__version__`, README, CHANGELOG가 동일해야 합니다. `python -m pytest -q`의 release metadata 테스트와 `.github/workflows/release.yml`이 공개 버전 정합성을 검증합니다.
 

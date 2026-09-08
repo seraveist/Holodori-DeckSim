@@ -87,6 +87,13 @@ jobs:
           node --check scripts/build-exact-runtime-index.mjs
           node --check scripts/test-chart-scoring.mjs
           node --check scripts/test-targeted-passive-support.mjs
+          node --check scripts/test-passive-stat-rounding.mjs
+          node --check scripts/test-passive-target-priority.mjs
+          node --check scripts/test-unit-observations.mjs
+          node --check scripts/test-support-stacking.mjs
+          node --check js/order-reference.js
+          node --check scripts/test-generic-order.mjs
+          node --check scripts/test-song-representative-order.mjs
           node --check scripts/test-card-preparation.mjs
           node --check scripts/test-simulation-targets.mjs
           node --check scripts/test-collision-choice.mjs
@@ -137,6 +144,12 @@ jobs:
         run: |
           node scripts/test-chart-scoring.mjs
           node scripts/test-targeted-passive-support.mjs
+          node scripts/test-passive-stat-rounding.mjs
+          node scripts/test-passive-target-priority.mjs
+          node scripts/test-unit-observations.mjs
+          node scripts/test-support-stacking.mjs
+          node scripts/test-generic-order.mjs
+          node scripts/test-song-representative-order.mjs
           node scripts/test-card-preparation.mjs
           node scripts/test-simulation-targets.mjs
           node scripts/test-collision-choice.mjs
@@ -159,6 +172,9 @@ jobs:
           if (exactShortlistSize(700, 50) <= 10) throw new Error('Exact shortlist did not expand beyond legacy top 10');
           console.log('[validate] scoring/search/cancellation/browser regressions OK');
           NODE
+
+      - name: Reproduce portable scoring handoff
+        run: node scripts/run-scoring-validation.mjs
 
       - name: Validate simulation targets and compact header
         run: |

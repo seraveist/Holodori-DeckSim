@@ -1,0 +1,63 @@
+{
+  "format": "holodori-decksim-owned-cards",
+  "version": 1,
+  "exportedAt": "2026-09-09T00:00:00.000Z",
+  "ownedCards": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    },
+    {
+      "id": "card-00021-5-uniq-0064-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 1,
+      "potential": 0
+    }
+  ],
+  "note": "Derived portable validation subset of 11 cards, not a full personal inventory export. Kanade swimsuit is confirmed Lv.40 / awakening 0."
+}

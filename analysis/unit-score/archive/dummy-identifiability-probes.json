@@ -1,0 +1,1722 @@
+{
+  "recordedAt": "2026-09-08T15:21:54.402Z",
+  "status": "Retrospective candidate rejection and conditional bounds; not a validated whole-score model",
+  "combo": {
+    "assumptions": "H only, 200 seconds, uniform note progression, combo maintained, checked at each activation. Always-met combo needs no such note-count constraint.",
+    "searched": [
+      40,
+      1600
+    ],
+    "matchingNotes": [
+      308,
+      1600
+    ],
+    "lowerNeighbor": {
+      "notes": 307,
+      "value": 66.3
+    },
+    "firstMatch": {
+      "notes": 308,
+      "value": 67.3
+    },
+    "note": "This lower bound does not imply the game uses uniform notes, maintains combo or contains 800 notes. No upper bound was identified."
+  },
+  "spGlobal": [
+    {
+      "probabilityBoost": "relative",
+      "passive": false,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "numerator": 5308.302106250006,
+          "fixed200": 26.6,
+          "denominatorRange": {
+            "inclusiveMin": 115.90179271288223,
+            "exclusiveMax": 116.15540713894981
+          }
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "numerator": 5409.639547938873,
+          "fixed200": 27.1,
+          "denominatorRange": {
+            "inclusiveMin": 117.34576025897772,
+            "exclusiveMax": 117.60085973780158
+          }
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "numerator": 4665.241353018894,
+          "fixed200": 23.4,
+          "denominatorRange": {
+            "inclusiveMin": 116.92334218092466,
+            "exclusiveMax": 117.21711942258528
+          }
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "numerator": 4518.5623857638875,
+          "fixed200": 22.6,
+          "denominatorRange": {
+            "inclusiveMin": 118.59743794655873,
+            "exclusiveMax": 118.90953646747073
+          }
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "numerator": 4627.3299742821055,
+          "fixed200": 23.2,
+          "denominatorRange": {
+            "inclusiveMin": 119.56924998144974,
+            "exclusiveMax": 119.87901487777475
+          }
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "numerator": 4548.214610562319,
+          "fixed200": 22.8,
+          "denominatorRange": {
+            "inclusiveMin": 118.44308881672706,
+            "exclusiveMax": 118.75233970136604
+          }
+        }
+      ],
+      "commonDenominatorExists": false,
+      "intersection": {
+        "min": 119.56924998144974,
+        "max": 116.15540713894981
+      },
+      "roundingIntersections": [
+        {
+          "rounding": "ceil",
+          "min": 119.56924998144974,
+          "max": 116.15540713894981,
+          "commonDenominatorExists": false
+        },
+        {
+          "rounding": "round",
+          "min": 119.41496707824788,
+          "max": 116.02846133879794,
+          "commonDenominatorExists": false
+        },
+        {
+          "rounding": "floor",
+          "min": 119.26108181139446,
+          "max": 115.90179271288223,
+          "commonDenominatorExists": false
+        }
+      ]
+    },
+    {
+      "probabilityBoost": "relative",
+      "passive": true,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "numerator": 5332.908515000011,
+          "fixed200": 26.7,
+          "denominatorRange": {
+            "inclusiveMin": 116.43905054585177,
+            "exclusiveMax": 116.69384059080988
+          }
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "numerator": 5435.122856063874,
+          "fixed200": 27.2,
+          "denominatorRange": {
+            "inclusiveMin": 117.89854351548533,
+            "exclusiveMax": 118.15484469704073
+          }
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "numerator": 4680.855743018897,
+          "fixed200": 23.5,
+          "denominatorRange": {
+            "inclusiveMin": 117.31468027616283,
+            "exclusiveMax": 117.60944077936927
+          }
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "numerator": 4526.5398057638795,
+          "fixed200": 22.7,
+          "denominatorRange": {
+            "inclusiveMin": 118.80681904892072,
+            "exclusiveMax": 119.11946857273367
+          }
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "numerator": 4627.3299742821055,
+          "fixed200": 23.2,
+          "denominatorRange": {
+            "inclusiveMin": 119.56924998144974,
+            "exclusiveMax": 119.87901487777475
+          }
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "numerator": 4557.430355562314,
+          "fixed200": 22.8,
+          "denominatorRange": {
+            "inclusiveMin": 118.68308217610192,
+            "exclusiveMax": 118.99295967525624
+          }
+        }
+      ],
+      "commonDenominatorExists": false,
+      "intersection": {
+        "min": 119.56924998144974,
+        "max": 116.69384059080988
+      },
+      "roundingIntersections": [
+        {
+          "rounding": "ceil",
+          "min": 119.56924998144974,
+          "max": 116.69384059080988,
+          "commonDenominatorExists": false
+        },
+        {
+          "rounding": "round",
+          "min": 119.41496707824788,
+          "max": 116.56630633879806,
+          "commonDenominatorExists": false
+        },
+        {
+          "rounding": "floor",
+          "min": 119.26108181139446,
+          "max": 116.43905054585177,
+          "commonDenominatorExists": false
+        }
+      ]
+    },
+    {
+      "probabilityBoost": "absolute",
+      "passive": false,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "numerator": 5898.288499999999,
+          "fixed200": 29.5,
+          "denominatorRange": {
+            "inclusiveMin": 128.78359170305674,
+            "exclusiveMax": 129.06539387308533
+          }
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "numerator": 5938.810295197318,
+          "fixed200": 29.7,
+          "denominatorRange": {
+            "inclusiveMin": 128.8245183339982,
+            "exclusiveMax": 129.1045716347243
+          }
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "numerator": 4906.112416371886,
+          "fixed200": 24.6,
+          "denominatorRange": {
+            "inclusiveMin": 122.96021093663875,
+            "exclusiveMax": 123.2691561902484
+          }
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "numerator": 4823.191249537751,
+          "fixed200": 24.2,
+          "denominatorRange": {
+            "inclusiveMin": 126.5929461820932,
+            "exclusiveMax": 126.92608551415134
+          }
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "numerator": 4869.937705443444,
+          "fixed200": 24.4,
+          "denominatorRange": {
+            "inclusiveMin": 125.83818360318978,
+            "exclusiveMax": 126.16418926019286
+          }
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "numerator": 4858.608341855692,
+          "fixed200": 24.3,
+          "denominatorRange": {
+            "inclusiveMin": 126.52625890249197,
+            "exclusiveMax": 126.85661466986141
+          }
+        }
+      ],
+      "commonDenominatorExists": false,
+      "intersection": {
+        "min": 128.8245183339982,
+        "max": 123.2691561902484
+      },
+      "roundingIntersections": [
+        {
+          "rounding": "ceil",
+          "min": 128.8245183339982,
+          "max": 123.2691561902484,
+          "commonDenominatorExists": false
+        },
+        {
+          "rounding": "round",
+          "min": 128.6849468081759,
+          "max": 123.11448974584405,
+          "commonDenominatorExists": false
+        },
+        {
+          "rounding": "floor",
+          "min": 128.5456773852233,
+          "max": 122.96021093663875,
+          "commonDenominatorExists": false
+        }
+      ]
+    },
+    {
+      "probabilityBoost": "absolute",
+      "passive": true,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "numerator": 5943.027425000014,
+          "fixed200": 29.8,
+          "denominatorRange": {
+            "inclusiveMin": 129.76042412663787,
+            "exclusiveMax": 130.0443637855583
+          }
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "numerator": 5982.765671779258,
+          "fixed200": 30,
+          "denominatorRange": {
+            "inclusiveMin": 129.777997218639,
+            "exclusiveMax": 130.06012329954908
+          }
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "numerator": 4933.189884618436,
+          "fixed200": 24.7,
+          "denominatorRange": {
+            "inclusiveMin": 123.63884422602597,
+            "exclusiveMax": 123.94949458840291
+          }
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "numerator": 4836.786071792158,
+          "fixed200": 24.2,
+          "denominatorRange": {
+            "inclusiveMin": 126.94976566383615,
+            "exclusiveMax": 127.28384399453046
+          }
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "numerator": 4869.937705443444,
+          "fixed200": 24.4,
+          "denominatorRange": {
+            "inclusiveMin": 125.83818360318978,
+            "exclusiveMax": 126.16418926019286
+          }
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "numerator": 4874.422272161555,
+          "fixed200": 24.4,
+          "denominatorRange": {
+            "inclusiveMin": 126.93808000420717,
+            "exclusiveMax": 127.26951102249492
+          }
+        }
+      ],
+      "commonDenominatorExists": false,
+      "intersection": {
+        "min": 129.777997218639,
+        "max": 123.94949458840291
+      },
+      "roundingIntersections": [
+        {
+          "rounding": "ceil",
+          "min": 129.777997218639,
+          "max": 123.94949458840291,
+          "commonDenominatorExists": false
+        },
+        {
+          "rounding": "round",
+          "min": 129.6373926712732,
+          "max": 123.79397451991055,
+          "commonDenominatorExists": false
+        },
+        {
+          "rounding": "floor",
+          "min": 129.4970924627545,
+          "max": 123.63884422602597,
+          "commonDenominatorExists": false
+        }
+      ]
+    }
+  ],
+  "spWindowBounds": [
+    {
+      "probabilityTiming": "instant",
+      "probabilityBoost": "relative",
+      "passive": false,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "sumIndividualMaxima": 36.34312500000001,
+          "canReach": false,
+          "starts": [
+            66,
+            66,
+            67,
+            99,
+            66
+          ]
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "sumIndividualMaxima": 37.26145833333334,
+          "canReach": false,
+          "starts": [
+            35,
+            33,
+            34,
+            169,
+            34
+          ]
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "sumIndividualMaxima": 37.06998093049101,
+          "canReach": false,
+          "starts": [
+            35,
+            35,
+            34,
+            35,
+            34
+          ]
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "sumIndividualMaxima": 34.33097193877551,
+          "canReach": false,
+          "starts": [
+            179,
+            175,
+            105,
+            175,
+            105
+          ]
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "sumIndividualMaxima": 32.77451022765542,
+          "canReach": false,
+          "starts": [
+            63,
+            63,
+            84,
+            63,
+            84
+          ]
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "sumIndividualMaxima": 34.73421650165017,
+          "canReach": false,
+          "starts": [
+            175,
+            176,
+            36,
+            176,
+            36
+          ]
+        }
+      ],
+      "allCanReach": false
+    },
+    {
+      "probabilityTiming": "instant",
+      "probabilityBoost": "relative",
+      "passive": true,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "sumIndividualMaxima": 36.84463625000001,
+          "canReach": false,
+          "starts": [
+            66,
+            99,
+            99,
+            99,
+            66
+          ]
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "sumIndividualMaxima": 37.568541666666675,
+          "canReach": false,
+          "starts": [
+            33,
+            100,
+            33,
+            169,
+            100
+          ]
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "sumIndividualMaxima": 37.14291843049102,
+          "canReach": false,
+          "starts": [
+            33,
+            35,
+            33,
+            35,
+            100
+          ]
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "sumIndividualMaxima": 34.465958193043754,
+          "canReach": false,
+          "starts": [
+            105,
+            175,
+            105,
+            175,
+            105
+          ]
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "sumIndividualMaxima": 32.77451022765542,
+          "canReach": false,
+          "starts": [
+            63,
+            63,
+            84,
+            63,
+            84
+          ]
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "sumIndividualMaxima": 34.91241650165016,
+          "canReach": false,
+          "starts": [
+            175,
+            176,
+            36,
+            176,
+            36
+          ]
+        }
+      ],
+      "allCanReach": false
+    },
+    {
+      "probabilityTiming": "instant",
+      "probabilityBoost": "absolute",
+      "passive": false,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "sumIndividualMaxima": 44.414,
+          "canReach": false,
+          "starts": [
+            151,
+            150,
+            152,
+            152,
+            150
+          ]
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "sumIndividualMaxima": 42.25300000000001,
+          "canReach": false,
+          "starts": [
+            150,
+            149,
+            149,
+            169,
+            151
+          ]
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "sumIndividualMaxima": 40.25810593049101,
+          "canReach": true,
+          "starts": [
+            169,
+            35,
+            169,
+            35,
+            169
+          ]
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "sumIndividualMaxima": 37.7690752216617,
+          "canReach": false,
+          "starts": [
+            141,
+            175,
+            142,
+            175,
+            142
+          ]
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "sumIndividualMaxima": 35.9750163501044,
+          "canReach": false,
+          "starts": [
+            63,
+            63,
+            105,
+            63,
+            105
+          ]
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "sumIndividualMaxima": 40.808532178217824,
+          "canReach": true,
+          "starts": [
+            33,
+            176,
+            34,
+            176,
+            34
+          ]
+        }
+      ],
+      "allCanReach": false
+    },
+    {
+      "probabilityTiming": "instant",
+      "probabilityBoost": "absolute",
+      "passive": true,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "sumIndividualMaxima": 44.750225,
+          "canReach": false,
+          "starts": [
+            99,
+            150,
+            99,
+            152,
+            150
+          ]
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "sumIndividualMaxima": 42.54894166666668,
+          "canReach": false,
+          "starts": [
+            100,
+            149,
+            100,
+            169,
+            151
+          ]
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "sumIndividualMaxima": 40.91810593049102,
+          "canReach": true,
+          "starts": [
+            169,
+            35,
+            169,
+            35,
+            169
+          ]
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "sumIndividualMaxima": 38.089149333104025,
+          "canReach": true,
+          "starts": [
+            141,
+            175,
+            142,
+            175,
+            142
+          ]
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "sumIndividualMaxima": 35.9750163501044,
+          "canReach": false,
+          "starts": [
+            63,
+            63,
+            105,
+            63,
+            105
+          ]
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "sumIndividualMaxima": 41.305332178217824,
+          "canReach": true,
+          "starts": [
+            33,
+            176,
+            34,
+            176,
+            34
+          ]
+        }
+      ],
+      "allCanReach": false
+    },
+    {
+      "probabilityTiming": "check",
+      "probabilityBoost": "relative",
+      "passive": false,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "sumIndividualMaxima": 38.73768563829787,
+          "canReach": false,
+          "starts": [
+            66,
+            65,
+            67,
+            145,
+            65
+          ]
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "sumIndividualMaxima": 38.54491934682284,
+          "canReach": false,
+          "starts": [
+            66,
+            63,
+            63,
+            169,
+            66
+          ]
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "sumIndividualMaxima": 38.24965951033879,
+          "canReach": false,
+          "starts": [
+            132,
+            35,
+            132,
+            35,
+            132
+          ]
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "sumIndividualMaxima": 34.855919410494074,
+          "canReach": false,
+          "starts": [
+            180,
+            175,
+            181,
+            175,
+            181
+          ]
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "sumIndividualMaxima": 33.17777322404578,
+          "canReach": false,
+          "starts": [
+            63,
+            63,
+            67,
+            63,
+            67
+          ]
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "sumIndividualMaxima": 35.89398939175077,
+          "canReach": false,
+          "starts": [
+            132,
+            176,
+            132,
+            176,
+            132
+          ]
+        }
+      ],
+      "allCanReach": false
+    },
+    {
+      "probabilityTiming": "check",
+      "probabilityBoost": "relative",
+      "passive": true,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "sumIndividualMaxima": 39.161016210218406,
+          "canReach": false,
+          "starts": [
+            66,
+            65,
+            66,
+            66,
+            65
+          ]
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "sumIndividualMaxima": 39.026842787957456,
+          "canReach": false,
+          "starts": [
+            66,
+            63,
+            63,
+            169,
+            63
+          ]
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "sumIndividualMaxima": 38.598139510338804,
+          "canReach": false,
+          "starts": [
+            132,
+            35,
+            132,
+            35,
+            132
+          ]
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "sumIndividualMaxima": 34.9777120733755,
+          "canReach": false,
+          "starts": [
+            180,
+            175,
+            139,
+            175,
+            139
+          ]
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "sumIndividualMaxima": 33.17777322404578,
+          "canReach": false,
+          "starts": [
+            63,
+            63,
+            67,
+            63,
+            67
+          ]
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "sumIndividualMaxima": 36.1457669332768,
+          "canReach": false,
+          "starts": [
+            132,
+            176,
+            132,
+            176,
+            132
+          ]
+        }
+      ],
+      "allCanReach": false
+    },
+    {
+      "probabilityTiming": "check",
+      "probabilityBoost": "absolute",
+      "passive": false,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "sumIndividualMaxima": 45.65825,
+          "canReach": false,
+          "starts": [
+            147,
+            147,
+            147,
+            147,
+            147
+          ]
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "sumIndividualMaxima": 43.1392051268808,
+          "canReach": false,
+          "starts": [
+            63,
+            147,
+            63,
+            169,
+            147
+          ]
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "sumIndividualMaxima": 40.981505485273146,
+          "canReach": true,
+          "starts": [
+            165,
+            35,
+            154,
+            35,
+            165
+          ]
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "sumIndividualMaxima": 38.05364582023392,
+          "canReach": true,
+          "starts": [
+            140,
+            175,
+            140,
+            175,
+            140
+          ]
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "sumIndividualMaxima": 35.858228634960895,
+          "canReach": false,
+          "starts": [
+            63,
+            63,
+            105,
+            63,
+            105
+          ]
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "sumIndividualMaxima": 40.81183182588741,
+          "canReach": true,
+          "starts": [
+            26,
+            176,
+            35,
+            176,
+            35
+          ]
+        }
+      ],
+      "allCanReach": false
+    },
+    {
+      "probabilityTiming": "check",
+      "probabilityBoost": "absolute",
+      "passive": true,
+      "rows": [
+        {
+          "id": "A",
+          "observed": 45.8,
+          "sumIndividualMaxima": 45.768837620231636,
+          "canReach": true,
+          "starts": [
+            147,
+            147,
+            147,
+            99,
+            99
+          ]
+        },
+        {
+          "id": "C",
+          "observed": 46.1,
+          "sumIndividualMaxima": 43.81831656253498,
+          "canReach": false,
+          "starts": [
+            63,
+            63,
+            63,
+            169,
+            63
+          ]
+        },
+        {
+          "id": "D",
+          "observed": 39.9,
+          "sumIndividualMaxima": 41.86476201774869,
+          "canReach": true,
+          "starts": [
+            165,
+            35,
+            154,
+            35,
+            165
+          ]
+        },
+        {
+          "id": "E",
+          "observed": 38.1,
+          "sumIndividualMaxima": 38.49469552891528,
+          "canReach": true,
+          "starts": [
+            140,
+            175,
+            140,
+            175,
+            140
+          ]
+        },
+        {
+          "id": "G",
+          "observed": 38.7,
+          "sumIndividualMaxima": 35.858228634960895,
+          "canReach": false,
+          "starts": [
+            63,
+            63,
+            105,
+            63,
+            105
+          ]
+        },
+        {
+          "id": "H",
+          "observed": 38.4,
+          "sumIndividualMaxima": 41.41315301701421,
+          "canReach": true,
+          "starts": [
+            35,
+            176,
+            35,
+            176,
+            35
+          ]
+        }
+      ],
+      "allCanReach": false
+    }
+  ],
+  "outfitVariants": [
+    {
+      "aggregation": "weighted",
+      "mode": "none",
+      "rounding": "raw",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 42.00424770912326,
+          "display": 42.1
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 40.12991052863719,
+          "display": 40.2
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "none",
+      "rounding": "floor",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 42.00424770912326,
+          "display": 42.1
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 40.12991052863719,
+          "display": 40.2
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "none",
+      "rounding": "round",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 42.00424770912326,
+          "display": 42.1
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 40.12991052863719,
+          "display": 40.2
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "none",
+      "rounding": "ceil",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 42.00424770912326,
+          "display": 42.1
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 40.12991052863719,
+          "display": 40.2
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "rate",
+      "rounding": "raw",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 44.14039446731039,
+          "display": 44.2
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 41.683916901644736,
+          "display": 41.7
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "rate",
+      "rounding": "floor",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 44.14039446731039,
+          "display": 44.2
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 41.683916901644736,
+          "display": 41.7
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "rate",
+      "rounding": "round",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 44.14039446731039,
+          "display": 44.2
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 41.683916901644736,
+          "display": 41.7
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "rate",
+      "rounding": "ceil",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 44.14039446731039,
+          "display": 44.2
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 41.683916901644736,
+          "display": 41.7
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "cooldown",
+      "rounding": "raw",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 42.565684160931696,
+          "display": 42.6
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 42.421030208122765,
+          "display": 42.5
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "cooldown",
+      "rounding": "floor",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 42.72787076428591,
+          "display": 42.8
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 42.83311951909468,
+          "display": 42.9
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "cooldown",
+      "rounding": "round",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 42.72787076428591,
+          "display": 42.8
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 42.787719185693994,
+          "display": 42.8
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "cooldown",
+      "rounding": "ceil",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 42.00424770912326,
+          "display": 42.1
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 40.354313589861675,
+          "display": 40.4
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "both",
+      "rounding": "raw",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 44.24965039888846,
+          "display": 44.3
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 44.177960635758275,
+          "display": 44.2
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "both",
+      "rounding": "floor",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 44.62474056025924,
+          "display": 44.7
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 44.65055119620394,
+          "display": 44.7
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "both",
+      "rounding": "round",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 44.62474056025924,
+          "display": 44.7
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 44.69899905723146,
+          "display": 44.7
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "weighted",
+      "mode": "both",
+      "rounding": "ceil",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 44.14039446731039,
+          "display": 44.2
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 42.02196675519518,
+          "display": 42.1
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "none",
+      "rounding": "raw",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 38.100025391999935,
+          "display": 38.2
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 36.71061543599997,
+          "display": 36.8
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "none",
+      "rounding": "floor",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 38.100025391999935,
+          "display": 38.2
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 36.71061543599997,
+          "display": 36.8
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "none",
+      "rounding": "round",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 38.100025391999935,
+          "display": 38.2
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 36.71061543599997,
+          "display": 36.8
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "none",
+      "rounding": "ceil",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 38.100025391999935,
+          "display": 38.2
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 36.71061543599997,
+          "display": 36.8
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "rate",
+      "rounding": "raw",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 41.38648231237902,
+          "display": 41.4
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 39.63374330520818,
+          "display": 39.7
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "rate",
+      "rounding": "floor",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 41.38648231237902,
+          "display": 41.4
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 39.63374330520818,
+          "display": 39.7
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "rate",
+      "rounding": "round",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 41.38648231237902,
+          "display": 41.4
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 39.63374330520818,
+          "display": 39.7
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "rate",
+      "rounding": "ceil",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 41.38648231237902,
+          "display": 41.4
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 39.63374330520818,
+          "display": 39.7
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "cooldown",
+      "rounding": "raw",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 38.68803325199993,
+          "display": 38.7
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 38.32548785999997,
+          "display": 38.4
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "cooldown",
+      "rounding": "floor",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 38.97835867199992,
+          "display": 39
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 38.76933653999997,
+          "display": 38.8
+        }
+      ],
+      "matches": 1
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "cooldown",
+      "rounding": "round",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 38.97835867199992,
+          "display": 39
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 38.69160239999996,
+          "display": 38.7
+        }
+      ],
+      "matches": 1
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "cooldown",
+      "rounding": "ceil",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 38.100025391999935,
+          "display": 38.2
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 36.810803435999965,
+          "display": 36.9
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "both",
+      "rounding": "raw",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 41.84195956914096,
+          "display": 41.9
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 41.49131829944401,
+          "display": 41.5
+        }
+      ],
+      "matches": 1
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "both",
+      "rounding": "floor",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 42.230964279762986,
+          "display": 42.3
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 41.987391897024,
+          "display": 42
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "both",
+      "rounding": "round",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 42.230964279762986,
+          "display": 42.3
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 41.93551564239602,
+          "display": 42
+        }
+      ],
+      "matches": 0
+    },
+    {
+      "aggregation": "maximum",
+      "mode": "both",
+      "rounding": "ceil",
+      "rows": [
+        {
+          "id": "I",
+          "observed": 39,
+          "raw": 41.38648231237902,
+          "display": 41.4
+        },
+        {
+          "id": "J",
+          "observed": 41.5,
+          "raw": 39.79605370620817,
+          "display": 39.8
+        }
+      ],
+      "matches": 0
+    }
+  ]
+}

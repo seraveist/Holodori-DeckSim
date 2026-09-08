@@ -724,6 +724,13 @@
   font-size: var(--type-label);
 }
 
+.result-estimate-note {
+  margin: 0;
+  color: var(--ink-650);
+  font-size: var(--type-label);
+  line-height: 1.6;
+}
+
 .calculation-breakdown {
   margin-top: 18px;
   display: grid;

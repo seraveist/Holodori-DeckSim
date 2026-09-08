@@ -118,6 +118,12 @@ jobs:
           python -m py_compile scripts/check-automation-gate.py
           node scripts/test-chart-scoring.mjs
           node scripts/test-targeted-passive-support.mjs
+          node scripts/test-passive-stat-rounding.mjs
+          node scripts/test-passive-target-priority.mjs
+          node scripts/test-unit-observations.mjs
+          node scripts/test-support-stacking.mjs
+          node scripts/test-generic-order.mjs
+          node scripts/test-song-representative-order.mjs
           node scripts/test-card-preparation.mjs
           node scripts/test-simulation-targets.mjs
           node scripts/test-collision-choice.mjs

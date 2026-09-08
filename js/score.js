@@ -1,6 +1,6 @@
 import { buildSongContext, songKernel, timelineSongProjection } from "./chart-score.js?v=1.1.0";
 
-export const SCORE_ENGINE_VERSION = "unit-score-v0.7-ingame-breakdown + song-score-v0.4-chart-timeline";
+export const SCORE_ENGINE_VERSION = "unit-score-v0.9-passive-context + song-score-v0.4-chart-timeline";
 export const UNIT_SCORE_K = 2.037342;
 export const CALIBRATION_FIXTURES = Object.freeze([
   { power: 67629, bonus: 106.8, score: 284936 },
@@ -276,7 +276,7 @@ function addEffects(target, source) {
 }
 
 function passiveEvaluation(members) {
-  const bonusByMember = new Map(members.map((member) => [member.id, { p: 0, t: 0, s: 0 }]));
+  const bonusRatesByMember = new Map(members.map((member) => [member.id, { p: 0, t: 0, s: 0 }]));
   const supportByMember = new Map(members.map((member) => [member.id, 0]));
   const activeStates = [];
 
@@ -288,7 +288,11 @@ function passiveEvaluation(members) {
     if (!active) continue;
     const effect = passive.effect;
     const targets = eligibleTargets(effect.target, owner, members)
-      .sort((left, right) => effect.kind === "stat" ? right.stats[effect.stat] - left.stats[effect.stat] : 0)
+      // Observation C supports base-total selection for single-stat buffs.
+      // Use the same priority for support; its absolute bonus and equal-total
+      // tie behavior are not yet isolated by the in-game observations.
+      .sort((left, right) => (right.stats.p + right.stats.t + right.stats.s)
+        - (left.stats.p + left.stats.t + left.stats.s))
       .slice(0, effect.target?.count ?? 5);
     if (effect.kind === "support") {
       for (const target of targets) {
@@ -299,17 +303,22 @@ function passiveEvaluation(members) {
     for (const target of targets) {
       if (effect.kind === "selfAll" || effect.kind === "all") {
         for (const stat of ["p", "t", "s"]) {
-          bonusByMember.get(target.id)[stat] += Math.ceil(target.stats[stat] * effect.value / 100);
+          bonusRatesByMember.get(target.id)[stat] += effect.value;
         }
       } else if (effect.kind === "stat") {
-        bonusByMember.get(target.id)[effect.stat] += Math.ceil(target.stats[effect.stat] * effect.value / 100);
+        bonusRatesByMember.get(target.id)[effect.stat] += effect.value;
       }
     }
   }
 
   const bonusStats = { p: 0, t: 0, s: 0 };
-  for (const bonus of bonusByMember.values()) {
-    for (const stat of ["p", "t", "s"]) bonusStats[stat] += bonus[stat];
+  // Passive effects in the same member/stat bucket add before the game rounds
+  // up. Rounding every effect separately overcounts overlapping stat buffs.
+  for (const member of members) {
+    const rates = bonusRatesByMember.get(member.id);
+    for (const stat of ["p", "t", "s"]) {
+      bonusStats[stat] += Math.ceil(member.stats[stat] * rates[stat] / 100);
+    }
   }
   const supportPoints = [...supportByMember.values()].reduce((sum, value) => sum + value, 0) / Math.max(1, members.length);
   return {
@@ -410,30 +419,40 @@ function applyUnitSupport(details, leaderSupportPct = 0, supportByMember = {}) {
 function unitScoreBonusBreakdown(members, passive, leaderSupportPct = 0, maximize = false) {
   const special = specialAverages(members, UNIT_CONTEXT, false);
   const baseDetails = activeDetails(members, UNIT_CONTEXT, 0, maximize);
-  const activeStage = expectedMaximum(
-    applyUnitSupport(baseDetails, leaderSupportPct),
-    "coverage",
-  );
-  const passiveStage = expectedMaximum(
-    applyUnitSupport(baseDetails, leaderSupportPct, passive.supportByMember),
-    "coverage",
-  );
   const rateDetails = activeDetails(
     members,
     UNIT_CONTEXT,
     special.activationRateAveragePct,
     maximize,
   );
-  const specialRateStage = expectedMaximum(
-    applyUnitSupport(rateDetails, leaderSupportPct, passive.supportByMember),
-    "coverage",
-  );
-  const specialStage = specialRateStage * (1 + special.supportAveragePct / 100);
-  return {
-    active: round1(activeStage),
-    passive: round1(Math.max(0, passiveStage - activeStage)),
-    special: round1(Math.max(0, specialStage - passiveStage)),
+  const stagesWithSupport = (supportPct) => {
+    const activeStage = expectedMaximum(applyUnitSupport(baseDetails, supportPct), "coverage");
+    const passiveStage = expectedMaximum(
+      applyUnitSupport(baseDetails, supportPct, passive.supportByMember), "coverage",
+    );
+    // Apply additive support per member before selecting the strongest Active.
+    const specialStage = expectedMaximum(
+      applyUnitSupport(rateDetails, supportPct + special.supportAveragePct, passive.supportByMember), "coverage",
+    );
+    return {
+      active: round1(activeStage),
+      passive: round1(Math.max(0, passiveStage - activeStage)),
+      special: round1(Math.max(0, specialStage - passiveStage)),
+    };
   };
+  const base = stagesWithSupport(0);
+  if (!leaderSupportPct) return { outfit: 0, ...base };
+
+  // G/I and E/J retain Active/SP when the leader changes. E/J's Passive does
+  // change, so do not force it to the no-leader counterfactual. Evaluate its
+  // marginal gain with the leader present; outfit receives the residual.
+  // This preserves the legacy total and permits context-dependent targeting
+  // competition, but does not yet reproduce the observed E/J Passive values
+  // or resolve indirect board attribution.
+  const supported = stagesWithSupport(leaderSupportPct);
+  const total = (parts) => Object.values(parts).reduce((sum, value) => sum + value, 0);
+  const memberParts = { ...base, passive: supported.passive };
+  return { outfit: round1(total(supported) - total(memberParts)), ...memberParts };
 }
 
 function exactSameIntervalExpected(group, liveDuration) {
@@ -556,14 +575,15 @@ function staticSupportForMember(memberId, supportProfile = {}) {
     + finite(supportProfile?.passiveSupportByMember?.[memberId]);
 }
 
-function applyStaticSupport(details, supportProfile = {}) {
+function applyStaticSupport(details, supportProfile = {}, specialSupportAveragePct = 0) {
   return details.map((detail) => {
     const staticSupportPct = staticSupportForMember(detail.cardId, supportProfile);
     return {
       ...detail,
       rawScoreUpPct: detail.scoreUpPct,
       staticSupportPct,
-      scoreUpPct: detail.scoreUpPct * (1 + staticSupportPct / 100),
+      specialSupportAveragePct,
+      scoreUpPct: detail.scoreUpPct * (1 + (staticSupportPct + specialSupportAveragePct) / 100),
     };
   });
 }
@@ -571,10 +591,9 @@ function applyStaticSupport(details, supportProfile = {}) {
 function songSkillMultiplier(members, context, supportProfile = {}, maximize = false) {
   const special = specialAverages(members, context);
   const rawDetails = activeDetails(members, context, special.activationRateAveragePct, maximize);
-  const details = applyStaticSupport(rawDetails, supportProfile);
+  const details = applyStaticSupport(rawDetails, supportProfile, special.supportAveragePct);
   const active = aggregateActiveScore(details, context);
-  const supportedActive = active.correctedPct * (1 + special.supportAveragePct / 100);
-  return { skillMultiplier: 1 + supportedActive / 100, special, details, active };
+  return { skillMultiplier: 1 + active.correctedPct / 100, special, details, active };
 }
 
 function projectSong(unitScore, members, music, difficulty, supportProfile = {}, playMode = "auto", evaluationTarget = "both") {
@@ -743,7 +762,7 @@ function buildDeckComposition({ leader, members, separateRole = true, includePot
   const rateGain = Math.max(0, internalActive - internalActiveBase);
   const unitBreakdown = unitScoreBonusBreakdown(members, passive, leaderEffects.support, false);
   const scoreBonusDetail = {
-    outfit: 0,
+    outfit: unitBreakdown.outfit,
     active: unitBreakdown.active,
     board: round1(normalizedAccountBonuses.boardScoreBonusPct),
     passive: unitBreakdown.passive,
@@ -757,7 +776,7 @@ function buildDeckComposition({ leader, members, separateRole = true, includePot
   if (includePotential) {
     const potentialBreakdown = unitScoreBonusBreakdown(members, passive, leaderEffects.support, true);
     const potentialScoreBonusDetail = {
-      outfit: 0,
+      outfit: potentialBreakdown.outfit,
       active: potentialBreakdown.active,
       board: round1(normalizedAccountBonuses.boardScoreBonusPct),
       passive: potentialBreakdown.passive,

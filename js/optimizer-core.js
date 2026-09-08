@@ -15,9 +15,9 @@ export function runOptimization({
   hasExactOrder = false,
   resultCount = 5,
 }) {
-  // Keep the compatibility flag in the payload, but order optimization is now
-  // required for every selected song because limited-target passives can depend
-  // on member position even when Exact SP metadata is unavailable.
+  // Keep the compatibility flag in the payload. Every result now receives one
+  // representative order, with a common potential-score reference if no song
+  // is selected and the existing song-specific goal otherwise.
   void hasExactOrder;
 
   const songSelected = Boolean(exactMusic);

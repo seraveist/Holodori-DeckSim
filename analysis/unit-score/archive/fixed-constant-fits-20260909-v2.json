@@ -1,0 +1,1018 @@
+{
+  "recordedAt": "2026-09-08T15:37:30.856Z",
+  "revision": 2,
+  "supersedes": "fixed-constant-fits-20260909.json: omitted G/I passive categories excluded from fit statistics in this revision; coefficients are unchanged",
+  "scope": "Retrospective fits using existing observations, not new out-of-sample game validation. Inputs use the analysis-only 200-second weighted Active model; displayed board contribution is excluded but indirect board effects are not proven absent.",
+  "passive": {
+    "definition": "k * mean marginal Active support from passive; zero omitted categories are not treated as measured exact zeros",
+    "single": {
+      "coefficients": [
+        0.6254794155554882
+      ],
+      "training": {
+        "values": [
+          {
+            "id": "A",
+            "x": [
+              7.4864416666665505
+            ],
+            "y": 4,
+            "prediction": 4.68261515825685,
+            "ceilDisplay": 4.7,
+            "error": 0.6826151582568496
+          },
+          {
+            "id": "C",
+            "x": [
+              8.00104058885563
+            ],
+            "y": 4.5,
+            "prediction": 5.004486191353159,
+            "ceilDisplay": 5.1,
+            "error": 0.5044861913531591
+          },
+          {
+            "id": "D",
+            "x": [
+              5.13646416488389
+            ],
+            "y": 3.7,
+            "prediction": 3.2127526038732843,
+            "ceilDisplay": 3.3,
+            "error": -0.48724739612671586
+          },
+          {
+            "id": "E",
+            "x": [
+              2.5460737270615112
+            ],
+            "y": 2.3,
+            "prediction": 1.5925167067636177,
+            "ceilDisplay": 1.6,
+            "error": -0.7074832932363821
+          },
+          {
+            "id": "H",
+            "x": [
+              2.586677436519224
+            ],
+            "y": 2.4,
+            "prediction": 1.617913491224613,
+            "ceilDisplay": 1.7,
+            "error": -0.782086508775387
+          },
+          {
+            "id": "J",
+            "x": [
+              2.5460737270615112
+            ],
+            "y": 2.7,
+            "prediction": 1.5925167067636177,
+            "ceilDisplay": 1.6,
+            "error": -1.1074832932363825
+          }
+        ],
+        "meanAbsErrorPp": 0.7119003068308126,
+        "maxAbsErrorPp": 1.1074832932363825,
+        "ceilDisplayMatches": 0
+      },
+      "leaveOneOut": [
+        {
+          "id": "A",
+          "coefficients": [
+            0.6719136668456878
+          ],
+          "x": [
+            7.4864416666665505
+          ],
+          "y": 4,
+          "prediction": 5.030242471876264,
+          "ceilDisplay": 5.1,
+          "error": 1.0302424718762637
+        },
+        {
+          "id": "C",
+          "coefficients": [
+            0.6650187866260429
+          ],
+          "x": [
+            8.00104058885563
+          ],
+          "y": 4.5,
+          "prediction": 5.320842304146491,
+          "ceilDisplay": 5.4,
+          "error": 0.820842304146491
+        },
+        {
+          "id": "D",
+          "coefficients": [
+            0.6075668721115488
+          ],
+          "x": [
+            5.13646416488389
+          ],
+          "y": 3.7,
+          "prediction": 3.1207454663715635,
+          "ceilDisplay": 3.2,
+          "error": -0.5792545336284367
+        },
+        {
+          "id": "E",
+          "coefficients": [
+            0.6141944680107679
+          ],
+          "x": [
+            2.5460737270615112
+          ],
+          "y": 2.3,
+          "prediction": 1.563784398308738,
+          "ceilDisplay": 1.6,
+          "error": -0.7362156016912618
+        },
+        {
+          "id": "H",
+          "coefficients": [
+            0.6127889703388597
+          ],
+          "x": [
+            2.586677436519224
+          ],
+          "y": 2.4,
+          "prediction": 1.5850874029233766,
+          "ceilDisplay": 1.6,
+          "error": -0.8149125970766233
+        },
+        {
+          "id": "J",
+          "coefficients": [
+            0.6078141349894199
+          ],
+          "x": [
+            2.5460737270615112
+          ],
+          "y": 2.7,
+          "prediction": 1.547539600033181,
+          "ceilDisplay": 1.6,
+          "error": -1.1524603999668193
+        }
+      ]
+    },
+    "intervals": [
+      {
+        "mode": "ceil",
+        "ranges": [
+          {
+            "id": "A",
+            "min": 0.5209417469135952,
+            "max": 0.5342992276036874
+          },
+          {
+            "id": "C",
+            "min": 0.549928468820494,
+            "max": 0.5624268431118687
+          },
+          {
+            "id": "D",
+            "min": 0.7008712383533933,
+            "max": 0.7203398838632098
+          },
+          {
+            "id": "E",
+            "min": 0.8640755279852308,
+            "max": 0.9033516883481959
+          },
+          {
+            "id": "H",
+            "min": 0.8891715555747866,
+            "max": 0.9278311884258643
+          },
+          {
+            "id": "J",
+            "min": 1.021180169437091,
+            "max": 1.0604563298000562
+          }
+        ],
+        "min": 1.021180169437091,
+        "max": 0.5342992276036874,
+        "commonCoefficientExists": false
+      },
+      {
+        "mode": "round",
+        "ranges": [
+          {
+            "id": "A",
+            "min": 0.5276204872586413,
+            "max": 0.5409779679487334
+          },
+          {
+            "id": "C",
+            "min": 0.5561776559661814,
+            "max": 0.5686760302575562
+          },
+          {
+            "id": "D",
+            "min": 0.7106055611083016,
+            "max": 0.7300742066181181
+          },
+          {
+            "id": "E",
+            "min": 0.8837136081667134,
+            "max": 0.9229897685296783
+          },
+          {
+            "id": "H",
+            "min": 0.9085013720003255,
+            "max": 0.9471610048514031
+          },
+          {
+            "id": "J",
+            "min": 1.0408182496185738,
+            "max": 1.0800944099815386
+          }
+        ],
+        "min": 1.0408182496185738,
+        "max": 0.5409779679487334,
+        "commonCoefficientExists": false
+      },
+      {
+        "mode": "floor",
+        "ranges": [
+          {
+            "id": "A",
+            "min": 0.5342992276036874,
+            "max": 0.5476567082937795
+          },
+          {
+            "id": "C",
+            "min": 0.5624268431118687,
+            "max": 0.5749252174032436
+          },
+          {
+            "id": "D",
+            "min": 0.7203398838632098,
+            "max": 0.7398085293730263
+          },
+          {
+            "id": "E",
+            "min": 0.9033516883481959,
+            "max": 0.9426278487111609
+          },
+          {
+            "id": "H",
+            "min": 0.9278311884258643,
+            "max": 0.966490821276942
+          },
+          {
+            "id": "J",
+            "min": 1.0604563298000562,
+            "max": 1.0997324901630212
+          }
+        ],
+        "min": 1.0604563298000562,
+        "max": 0.5476567082937795,
+        "commonCoefficientExists": false
+      }
+    ],
+    "leaderInteractionDiagnostic": {
+      "definition": "k1 * passive marginal + k2 * passive marginal * leader outfit support / 100",
+      "validationLimit": "J is the only positive-passive observation with nonzero outfit support. Removing J makes the interaction coefficient unidentifiable.",
+      "coefficients": [
+        0.6078141349894199,
+        0.7544036580177271
+      ],
+      "training": {
+        "values": [
+          {
+            "id": "A",
+            "x": [
+              7.4864416666665505,
+              0
+            ],
+            "y": 4,
+            "prediction": 4.550365065773681,
+            "ceilDisplay": 4.6,
+            "error": 0.5503650657736809
+          },
+          {
+            "id": "C",
+            "x": [
+              8.00104058885563,
+              0
+            ],
+            "y": 4.5,
+            "prediction": 4.863145564530524,
+            "ceilDisplay": 4.9,
+            "error": 0.36314556453052393
+          },
+          {
+            "id": "D",
+            "x": [
+              5.13646416488389,
+              0
+            ],
+            "y": 3.7,
+            "prediction": 3.122015523283055,
+            "ceilDisplay": 3.2,
+            "error": -0.5779844767169453
+          },
+          {
+            "id": "E",
+            "x": [
+              2.5460737270615112,
+              0
+            ],
+            "y": 2.3,
+            "prediction": 1.547539600033181,
+            "ceilDisplay": 1.6,
+            "error": -0.7524603999668189
+          },
+          {
+            "id": "H",
+            "x": [
+              2.586677436519224,
+              0
+            ],
+            "y": 2.4,
+            "prediction": 1.5722191085745825,
+            "ceilDisplay": 1.6,
+            "error": -0.8277808914254174
+          },
+          {
+            "id": "J",
+            "x": [
+              2.5460737270615112,
+              1.5276442362369067
+            ],
+            "y": 2.7,
+            "prediction": 2.7,
+            "ceilDisplay": 2.7,
+            "error": 0
+          }
+        ],
+        "meanAbsErrorPp": 0.511956066402231,
+        "maxAbsErrorPp": 0.8277808914254174,
+        "ceilDisplayMatches": 1
+      }
+    }
+  },
+  "outfit": {
+    "definition": "k * raw Active mean * leader outfit support / 100",
+    "single": {
+      "coefficients": [
+        0.9788994005631177
+      ],
+      "training": {
+        "values": [
+          {
+            "id": "I",
+            "x": [
+              42.00424770912326
+            ],
+            "y": 39,
+            "prediction": 41.117932903565475,
+            "ceilDisplay": 41.2,
+            "error": 2.1179329035654746
+          },
+          {
+            "id": "J",
+            "x": [
+              40.12991052863719
+            ],
+            "y": 41.5,
+            "prediction": 39.283145361134494,
+            "ceilDisplay": 39.3,
+            "error": -2.216854638865506
+          }
+        ],
+        "meanAbsErrorPp": 2.1673937712154903,
+        "maxAbsErrorPp": 2.216854638865506,
+        "ceilDisplayMatches": 0
+      },
+      "leaveOneOut": [
+        {
+          "id": "I",
+          "coefficients": [
+            1.034141353751215
+          ],
+          "x": [
+            42.00424770912326
+          ],
+          "y": 39,
+          "prediction": 43.4383295892141,
+          "ceilDisplay": 43.5,
+          "error": 4.438329589214099
+        },
+        {
+          "id": "J",
+          "coefficients": [
+            0.9284775261319406
+          ],
+          "x": [
+            40.12991052863719
+          ],
+          "y": 41.5,
+          "prediction": 37.25972005152517,
+          "ceilDisplay": 37.3,
+          "error": -4.240279948474829
+        }
+      ]
+    },
+    "intervals": [
+      {
+        "mode": "ceil",
+        "ranges": [
+          {
+            "id": "I",
+            "min": 0.9260968145264741,
+            "max": 0.9284775261319406
+          },
+          {
+            "id": "J",
+            "min": 1.031649446874706,
+            "max": 1.034141353751215
+          }
+        ],
+        "min": 1.031649446874706,
+        "max": 0.9284775261319406,
+        "commonCoefficientExists": false
+      },
+      {
+        "mode": "round",
+        "ranges": [
+          {
+            "id": "I",
+            "min": 0.9272871703292074,
+            "max": 0.9296678819346738
+          },
+          {
+            "id": "J",
+            "min": 1.0328954003129607,
+            "max": 1.0353873071894695
+          }
+        ],
+        "min": 1.0328954003129607,
+        "max": 0.9296678819346738,
+        "commonCoefficientExists": false
+      },
+      {
+        "mode": "floor",
+        "ranges": [
+          {
+            "id": "I",
+            "min": 0.9284775261319406,
+            "max": 0.9308582377374072
+          },
+          {
+            "id": "J",
+            "min": 1.034141353751215,
+            "max": 1.036633260627724
+          }
+        ],
+        "min": 1.034141353751215,
+        "max": 0.9308582377374072,
+        "commonCoefficientExists": false
+      }
+    ],
+    "twoParameterCaution": "Only two nonzero outfit observations, both the same 60% support leader. An affine two-coefficient fit has no remaining validation data."
+  },
+  "special": {
+    "definition": "For each SP, compute its whole-window average marginal Active gain and multiply by duration; divide total by 200. Two components separate probability-only gain and support gain including probability interaction.",
+    "single": {
+      "coefficients": [
+        1.699847655505485
+      ],
+      "training": {
+        "values": [
+          {
+            "id": "A",
+            "x": [
+              26.541510531250026
+            ],
+            "y": 45.8,
+            "prediction": 45.11652445011949,
+            "ceilDisplay": 45.2,
+            "error": -0.6834755498805052
+          },
+          {
+            "id": "C",
+            "x": [
+              27.048197739694363
+            ],
+            "y": 46.1,
+            "prediction": 45.977815513468215,
+            "ceilDisplay": 46,
+            "error": -0.12218448653178626
+          },
+          {
+            "id": "D",
+            "x": [
+              23.32620676509447
+            ],
+            "y": 39.9,
+            "prediction": 39.65099788148201,
+            "ceilDisplay": 39.7,
+            "error": -0.2490021185179856
+          },
+          {
+            "id": "E",
+            "x": [
+              22.592811928819433
+            ],
+            "y": 38.1,
+            "prediction": 38.40433838848006,
+            "ceilDisplay": 38.5,
+            "error": 0.3043383884800619
+          },
+          {
+            "id": "G",
+            "x": [
+              23.136649871410526
+            ],
+            "y": 38.7,
+            "prediction": 39.32878004016846,
+            "ceilDisplay": 39.4,
+            "error": 0.6287800401684578
+          },
+          {
+            "id": "H",
+            "x": [
+              22.741073052811593
+            ],
+            "y": 38.4,
+            "prediction": 38.656359712500745,
+            "ceilDisplay": 38.7,
+            "error": 0.2563597125007462
+          }
+        ],
+        "meanAbsErrorPp": 0.3740233826799238,
+        "maxAbsErrorPp": 0.6834755498805052,
+        "ceilDisplayMatches": 0
+      },
+      "leaveOneOut": [
+        {
+          "id": "A",
+          "coefficients": [
+            1.693457043886659
+          ],
+          "x": [
+            26.541510531250026
+          ],
+          "y": 45.8,
+          "prediction": 44.946907964537296,
+          "ceilDisplay": 45,
+          "error": -0.8530920354627014
+        },
+        {
+          "id": "C",
+          "coefficients": [
+            1.6986721558156106
+          ],
+          "x": [
+            27.048197739694363
+          ],
+          "y": 46.1,
+          "prediction": 45.946020365413546,
+          "ceilDisplay": 46,
+          "error": -0.15397963458645592
+        },
+        {
+          "id": "D",
+          "coefficients": [
+            1.69791088787775
+          ],
+          "x": [
+            23.32620676509447
+          ],
+          "y": 39.9,
+          "prediction": 39.60582043934153,
+          "ceilDisplay": 39.7,
+          "error": -0.2941795606584705
+        },
+        {
+          "id": "E",
+          "coefficients": [
+            1.7021149484855582
+          ],
+          "x": [
+            22.592811928819433
+          ],
+          "y": 38.1,
+          "prediction": 38.455562912366396,
+          "ceilDisplay": 38.5,
+          "error": 0.3555629123663948
+        },
+        {
+          "id": "G",
+          "coefficients": [
+            1.7046844318387195
+          ],
+          "x": [
+            23.136649871410526
+          ],
+          "y": 38.7,
+          "prediction": 39.440686840696834,
+          "ceilDisplay": 39.5,
+          "error": 0.7406868406968314
+        },
+        {
+          "id": "H",
+          "coefficients": [
+            1.7017743149200881
+          ],
+          "x": [
+            22.741073052811593
+          ],
+          "y": 38.4,
+          "prediction": 38.70017401499613,
+          "ceilDisplay": 38.8,
+          "error": 0.3001740149961307
+        }
+      ]
+    },
+    "intervals": [
+      {
+        "mode": "ceil",
+        "ranges": [
+          {
+            "id": "A",
+            "min": 1.7218311650421225,
+            "max": 1.725598848116613
+          },
+          {
+            "id": "C",
+            "min": 1.7006678390439698,
+            "max": 1.7043649430418915
+          },
+          {
+            "id": "D",
+            "min": 1.706235411561088,
+            "max": 1.7105224352082264
+          },
+          {
+            "id": "E",
+            "min": 1.6819508841892818,
+            "max": 1.6863770707266221
+          },
+          {
+            "id": "G",
+            "min": 1.6683487114397324,
+            "max": 1.6726708583605607
+          },
+          {
+            "id": "H",
+            "min": 1.6841773433934233,
+            "max": 1.6885746732717353
+          }
+        ],
+        "min": 1.7218311650421225,
+        "max": 1.6726708583605607,
+        "commonCoefficientExists": false
+      },
+      {
+        "mode": "round",
+        "ranges": [
+          {
+            "id": "A",
+            "min": 1.7237150065793678,
+            "max": 1.727482689653858
+          },
+          {
+            "id": "C",
+            "min": 1.7025163910429308,
+            "max": 1.7062134950408523
+          },
+          {
+            "id": "D",
+            "min": 1.7083789233846574,
+            "max": 1.7126659470317955
+          },
+          {
+            "id": "E",
+            "min": 1.6841639774579522,
+            "max": 1.688590163995292
+          },
+          {
+            "id": "G",
+            "min": 1.6705097849001467,
+            "max": 1.6748319318209748
+          },
+          {
+            "id": "H",
+            "min": 1.6863760083325794,
+            "max": 1.690773338210891
+          }
+        ],
+        "min": 1.7237150065793678,
+        "max": 1.6748319318209748,
+        "commonCoefficientExists": false
+      },
+      {
+        "mode": "floor",
+        "ranges": [
+          {
+            "id": "A",
+            "min": 1.725598848116613,
+            "max": 1.7293665311911035
+          },
+          {
+            "id": "C",
+            "min": 1.7043649430418915,
+            "max": 1.7080620470398133
+          },
+          {
+            "id": "D",
+            "min": 1.7105224352082264,
+            "max": 1.714809458855365
+          },
+          {
+            "id": "E",
+            "min": 1.6863770707266221,
+            "max": 1.6908032572639624
+          },
+          {
+            "id": "G",
+            "min": 1.6726708583605607,
+            "max": 1.676993005281389
+          },
+          {
+            "id": "H",
+            "min": 1.6885746732717353,
+            "max": 1.692972003150047
+          }
+        ],
+        "min": 1.725598848116613,
+        "max": 1.676993005281389,
+        "commonCoefficientExists": false
+      }
+    ],
+    "separateSupportAndRate": {
+      "coefficients": [
+        1.6427794024588789,
+        2.8630798207807593
+      ],
+      "training": {
+        "values": [
+          {
+            "id": "A",
+            "x": [
+              24.82270209375001,
+              1.7188084375000159
+            ],
+            "y": 45.8,
+            "prediction": 45.6993094661794,
+            "ceilDisplay": 45.7,
+            "error": -0.10069053382059678
+          },
+          {
+            "id": "C",
+            "x": [
+              25.59941367719433,
+              1.4487840625000303
+            ],
+            "y": 46.1,
+            "prediction": 46.20217391793156,
+            "ceilDisplay": 46.3,
+            "error": 0.10217391793155883
+          },
+          {
+            "id": "D",
+            "x": [
+              22.48420832759445,
+              0.8419984375000178
+            ],
+            "y": 39.9,
+            "prediction": 39.34730305670179,
+            "ceilDisplay": 39.4,
+            "error": -0.5526969432982085
+          },
+          {
+            "id": "E",
+            "x": [
+              21.642443178819416,
+              0.9503687500000185
+            ],
+            "y": 38.1,
+            "prediction": 38.274741463476886,
+            "ceilDisplay": 38.3,
+            "error": 0.17474146347688446
+          },
+          {
+            "id": "G",
+            "x": [
+              22.373249871410508,
+              0.7634000000000171
+            ],
+            "y": 38.7,
+            "prediction": 38.93998919000302,
+            "ceilDisplay": 39,
+            "error": 0.23998919000301555
+          },
+          {
+            "id": "H",
+            "x": [
+              21.768707740311573,
+              0.9723653125000208
+            ],
+            "y": 38.4,
+            "prediction": 38.545144198577,
+            "ceilDisplay": 38.6,
+            "error": 0.14514419857700034
+          }
+        ],
+        "meanAbsErrorPp": 0.21923937451787742,
+        "maxAbsErrorPp": 0.5526969432982085,
+        "ceilDisplayMatches": 0
+      },
+      "leaveOneOut": [
+        {
+          "id": "A",
+          "coefficients": [
+            1.6576834069749948,
+            2.503389192079034
+          ],
+          "x": [
+            24.82270209375001,
+            1.7188084375000159
+          ],
+          "y": 45.8,
+          "prediction": 45.45102784278465,
+          "ceilDisplay": 45.5,
+          "error": -0.3489721572153499
+        },
+        {
+          "id": "C",
+          "coefficients": [
+            1.6411145867237324,
+            2.920259019579977
+          ],
+          "x": [
+            25.59941367719433,
+            1.4487840625000303
+          ],
+          "y": 46.1,
+          "prediction": 46.24239592315807,
+          "ceilDisplay": 46.3,
+          "error": 0.1423959231580696
+        },
+        {
+          "id": "D",
+          "coefficients": [
+            1.617190493260761,
+            3.2746433567095594
+          ],
+          "x": [
+            22.48420832759445,
+            0.8419984375000178
+          ],
+          "y": 39.9,
+          "prediction": 39.118492545599445,
+          "ceilDisplay": 39.2,
+          "error": -0.781507454400554
+        },
+        {
+          "id": "E",
+          "coefficients": [
+            1.646469480690283,
+            2.8165507079968286
+          ],
+          "x": [
+            21.642443178819416,
+            0.9503687500000185
+          ],
+          "y": 38.1,
+          "prediction": 38.31038395717038,
+          "ceilDisplay": 38.4,
+          "error": 0.21038395717037872
+        },
+        {
+          "id": "G",
+          "coefficients": [
+            1.6582511087889755,
+            2.601700799329945
+          ],
+          "x": [
+            22.373249871410508,
+            0.7634000000000171
+          ],
+          "y": 38.7,
+          "prediction": 39.0866047966878,
+          "ceilDisplay": 39.1,
+          "error": 0.38660479668779857
+        },
+        {
+          "id": "H",
+          "coefficients": [
+            1.645559081269364,
+            2.830267717044672
+          ],
+          "x": [
+            21.768707740311573,
+            0.9723653125000208
+          ],
+          "y": 38.4,
+          "prediction": 38.57374886271127,
+          "ceilDisplay": 38.6,
+          "error": 0.1737488627112711
+        }
+      ]
+    },
+    "twoCoefficientFeasibility": [
+      {
+        "mode": "ceil",
+        "firstCoefficientMin": 1.8263375211081134,
+        "firstCoefficientMax": 1.3155835500448732,
+        "feasibleEvenWithClosedRoundingBounds": false
+      },
+      {
+        "mode": "round",
+        "firstCoefficientMin": 1.8280602083315038,
+        "firstCoefficientMax": 1.3179314586343875,
+        "feasibleEvenWithClosedRoundingBounds": false
+      },
+      {
+        "mode": "floor",
+        "firstCoefficientMin": 1.8297828955548872,
+        "firstCoefficientMax": 1.320279367223913,
+        "feasibleEvenWithClosedRoundingBounds": false
+      }
+    ],
+    "retrospectiveACSplit": {
+      "trainedOn": [
+        "A",
+        "C"
+      ],
+      "coefficients": [
+        1.602781130403874,
+        3.499308792810526
+      ],
+      "evaluation": {
+        "values": [
+          {
+            "id": "D",
+            "x": [
+              22.48420832759445,
+              0.8419984375000178
+            ],
+            "y": 39.9,
+            "prediction": 38.98367737541457,
+            "ceilDisplay": 39,
+            "error": -0.9163226245854261
+          },
+          {
+            "id": "E",
+            "x": [
+              21.642443178819416,
+              0.9503687500000185
+            ],
+            "y": 38.1,
+            "prediction": 38.01373326613721,
+            "ceilDisplay": 38.1,
+            "error": -0.08626673386279293
+          },
+          {
+            "id": "G",
+            "x": [
+              22.373249871410508,
+              0.7634000000000171
+            ],
+            "y": 38.7,
+            "prediction": 38.530795052139275,
+            "ceilDisplay": 38.6,
+            "error": -0.16920494786072737
+          },
+          {
+            "id": "H",
+            "x": [
+              21.768707740311573,
+              0.9723653125000208
+            ],
+            "y": 38.4,
+            "prediction": 38.29308048730342,
+            "ceilDisplay": 38.3,
+            "error": -0.10691951269657807
+          }
+        ],
+        "meanAbsErrorPp": 0.3196784547513811,
+        "maxAbsErrorPp": 0.9163226245854261,
+        "ceilDisplayMatches": 1
+      }
+    }
+  },
+  "sourceHashes": {
+    "observation-A.json": "34bce10caf099a545ad6586edc0a044b50dce0bfd893566ec42be8dc492f427c",
+    "observation-B.json": "deef7b27a6f8b01228559c46e9c1573abc9fb1c4965c82293ba1c3b14628fe7d",
+    "observation-C.json": "c7ae5a7c2f9e5cedeeaab13ca3efb207dda8a6c39cb86a529012f5220b2be0c5",
+    "observation-D.json": "53e8e842ecba7327c4f726792138fd593b099c8f18f64b1c40aaafe356e324eb",
+    "observation-E.json": "142571ab7d5a959b30cad96cb5c02825af47953d203ec5dd907f88440cc2e857",
+    "observation-F.json": "c7c9a88f05f8dee6ccf0ef7b93bf43654acfda9b70937806f94e3d626c7f3ca9",
+    "observation-G.json": "01bf25ef4929a2cdcbcea5b83947b98c85d115d945e60f039f82680cf68099fb",
+    "observation-H.json": "21886477b3abe62aadbedf4ad794856ccb828f76643e20adc0824fad5d5dd8a8",
+    "observation-I.json": "6678d23739743822551e41038994be4cf60110ea8ed4ed5c80e8dfe85247e9b3",
+    "observation-J.json": "c2b6e1930cde11af8da0a3b7b2f9b894948e5e6212d92f8024f0ce88bcee22db",
+    "observation-K.json": "b603b2f0a7f4de45a7a8b172ac51b633c5d58ea25cfa0a47a8359803702f762b",
+    "dummy-model-lab.mjs": "4f6df3f57162e1bb18d7337b36105c72df1b2724412bcaa3091c3e5d5b93b953",
+    "inferred-unit-environment-20260909.json": "c8080cf20bb34781222f8c88648d7d786194fb9f4eea726bd8451c832efbd98a",
+    "../HolodoriDecks/js/score.js": "67a90121a5228d084cb77297654e896cb94a48d4455f405da55c88a8dcd22987",
+    "../HolodoriDecks/js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba"
+  }
+}

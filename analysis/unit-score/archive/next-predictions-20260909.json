@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "status": "unobserved predictions; hypotheses, not guaranteed game values",
+  "engineVersion": "unit-score-v0.9-passive-context + song-score-v0.4-chart-timeline",
+  "masterSource": {
+    "repository": "HolodoriDB/holodori-db-kor-diff",
+    "commit": "0a3836eeb516f03fc358f26a0c423ab51f109bd9",
+    "masterVersion": "e50116c3c75a4da07b27936baa10bdc1eabd71955406848104f2a0e0241ac508"
+  },
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "coefficientSource": "archive/fixed-constant-fits-20260909-v2.json (frozen; not refitted to future observations)",
+  "predictions": [
+    {
+      "id": "L",
+      "leaderId": "card-00026-5-uniq-0065-00",
+      "memberIds": [
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "requiresConfirmation": [
+        "Watame leader score-support board nodes: unknown, do not assume zero."
+      ],
+      "engine": {
+        "power": {
+          "memberParameter": 97617,
+          "outfit": 29371,
+          "board": 0,
+          "passive": 7980,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 134968,
+        "bonus": {
+          "outfit": 16.9,
+          "active": 64.4,
+          "board": 0,
+          "passive": 0,
+          "special": 40.9
+        },
+        "retainedBonus": 122.2,
+        "derivedUnitScore": 610997
+      },
+      "research": {
+        "active": {
+          "raw": 70.00707951520545,
+          "ceil": 70.1,
+          "round": 70,
+          "floor": 70
+        },
+        "passiveSingle": {
+          "raw": 0,
+          "ceil": 0,
+          "round": 0,
+          "floor": 0
+        },
+        "passiveLeaderInteraction": {
+          "raw": 0,
+          "ceil": 0,
+          "round": 0,
+          "floor": 0
+        },
+        "specialSingle": {
+          "raw": 39.32878004016846,
+          "ceil": 39.4,
+          "round": 39.3,
+          "floor": 39.3
+        },
+        "specialTwoCoefficients": {
+          "raw": 38.93998919000302,
+          "ceil": 39,
+          "round": 38.9,
+          "floor": 38.9
+        },
+        "outfitSingle": {
+          "raw": 17.132472043152283,
+          "ceil": 17.2,
+          "round": 17.1,
+          "floor": 17.1
+        },
+        "outfitScaledFromI": {
+          "raw": 16.25,
+          "ceil": 16.3,
+          "round": 16.3,
+          "floor": 16.2
+        },
+        "outfitScaledFromJ": {
+          "raw": 18.099303995505878,
+          "ceil": 18.1,
+          "round": 18.1,
+          "floor": 18
+        },
+        "inputs": {
+          "activeMean": 70.00707951520545,
+          "passiveMarginal": 0,
+          "outfitSupport": 25,
+          "supportPart": 22.373249871410508,
+          "ratePart": 0.7634000000000171
+        }
+      }
+    },
+    {
+      "id": "M",
+      "leaderId": "card-00010-5-uniq-0010-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "requiresConfirmation": [
+        "Confirm card growth and relevant board settings are unchanged from the recorded profiles."
+      ],
+      "engine": {
+        "power": {
+          "memberParameter": 102618,
+          "outfit": 0,
+          "board": 0,
+          "passive": 8172,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 110790,
+        "bonus": {
+          "outfit": 47.4,
+          "active": 72.1,
+          "board": 0,
+          "passive": 9.3,
+          "special": 52.5
+        },
+        "retainedBonus": 181.3,
+        "derivedUnitScore": 634942
+      },
+      "research": {
+        "active": {
+          "raw": 78.33466395258726,
+          "ceil": 78.4,
+          "round": 78.3,
+          "floor": 78.3
+        },
+        "passiveSingle": {
+          "raw": 5.004486191353159,
+          "ceil": 5.1,
+          "round": 5,
+          "floor": 5
+        },
+        "passiveLeaderInteraction": {
+          "raw": 8.484754137439122,
+          "ceil": 8.5,
+          "round": 8.5,
+          "floor": 8.4
+        },
+        "specialSingle": {
+          "raw": 45.977815513468215,
+          "ceil": 46,
+          "round": 46,
+          "floor": 45.9
+        },
+        "specialTwoCoefficients": {
+          "raw": 46.20217391793156,
+          "ceil": 46.3,
+          "round": 46.2,
+          "floor": 46.2
+        },
+        "outfitSingle": {
+          "raw": 46.00905335190056,
+          "ceil": 46.1,
+          "round": 46,
+          "floor": 46
+        },
+        "outfitScaledFromI": {
+          "raw": 43.63918499824507,
+          "ceil": 43.7,
+          "round": 43.6,
+          "floor": 43.6
+        },
+        "outfitScaledFromJ": {
+          "raw": 48.60546925534506,
+          "ceil": 48.7,
+          "round": 48.6,
+          "floor": 48.6
+        },
+        "inputs": {
+          "activeMean": 78.33466395258726,
+          "passiveMarginal": 8.00104058885563,
+          "outfitSupport": 60,
+          "supportPart": 25.59941367719433,
+          "ratePart": 1.4487840625000303
+        }
+      }
+    },
+    {
+      "id": "N",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "requiresConfirmation": [
+        "Confirm card growth and relevant board settings are unchanged from the recorded profiles."
+      ],
+      "engine": {
+        "power": {
+          "memberParameter": 100097,
+          "outfit": 50052,
+          "board": 0,
+          "passive": 8363,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 158512,
+        "bonus": {
+          "outfit": 0,
+          "active": 67.8,
+          "board": 0,
+          "passive": 6.4,
+          "special": 46.8
+        },
+        "retainedBonus": 121,
+        "derivedUnitScore": 713704
+      },
+      "research": {
+        "active": {
+          "raw": 72.17561339410354,
+          "ceil": 72.2,
+          "round": 72.2,
+          "floor": 72.1
+        },
+        "passiveSingle": {
+          "raw": 3.5412103908977968,
+          "ceil": 3.6,
+          "round": 3.5,
+          "floor": 3.5
+        },
+        "passiveLeaderInteraction": {
+          "raw": 3.4411967476939997,
+          "ceil": 3.5,
+          "round": 3.4,
+          "floor": 3.4
+        },
+        "specialSingle": {
+          "raw": 42.54962695760867,
+          "ceil": 42.6,
+          "round": 42.5,
+          "floor": 42.5
+        },
+        "specialTwoCoefficients": {
+          "raw": 42.84367222506555,
+          "ceil": 42.9,
+          "round": 42.8,
+          "floor": 42.8
+        },
+        "outfitSingle": {
+          "raw": 0,
+          "ceil": 0,
+          "round": 0,
+          "floor": 0
+        },
+        "outfitScaledFromI": {
+          "raw": 0,
+          "ceil": 0,
+          "round": 0,
+          "floor": 0
+        },
+        "outfitScaledFromJ": {
+          "raw": 0,
+          "ceil": 0,
+          "round": 0,
+          "floor": 0
+        },
+        "inputs": {
+          "activeMean": 72.17561339410354,
+          "passiveMarginal": 5.661593815605983,
+          "outfitSupport": 0,
+          "supportPart": 23.619860505292756,
+          "ratePart": 1.4115750000000178
+        }
+      }
+    }
+  ],
+  "recordedAt": "2026-09-08T15:49:48.353Z",
+  "observationStatus": "not yet received"
+}

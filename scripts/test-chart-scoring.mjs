@@ -80,6 +80,9 @@ function exactChart() {
       skills: [
         { slot: 1, time: 10, combo: 0 },
         { slot: 2, time: 40, combo: 10 },
+        { slot: 3, time: 48, combo: 11 },
+        { slot: 4, time: 52, combo: 11 },
+        { slot: 5, time: 56, combo: 11 },
       ],
       fever: { start: 30, end: 40 },
     },
@@ -108,7 +111,7 @@ function exactChart() {
   );
   assert.equal(context.chartAccuracy, "exact");
   assert.equal(context.notes, chart.metadata.notes.length);
-  assert.equal(context.skillTimeline.length, 2);
+  assert.equal(context.skillTimeline.length, 5);
   assert.deepEqual(context.fever, { start: 30, end: 40 });
 }
 
@@ -183,6 +186,40 @@ const genericContext = {
 }
 
 const L = leader();
+
+// A song's five SP positions affect its expected and potential live scores,
+// while the same cards retain their generic Unit/Potential Unit scores.
+{
+  const PC = member("PC", { activeScore: 100, interval: 15, duration: 10, probability: 0.5 });
+  const earlyOrder = [A, B, PC, D, E];
+  const lateOrder = [B, A, PC, D, E];
+  const generic = evaluateDeck({ leader: L, members: earlyOrder });
+  const genericLate = evaluateDeck({ leader: L, members: lateOrder });
+  const evaluateOrder = members => evaluateDeck({ leader: L, members, music: song, playMode: "manual" });
+  const early = evaluateOrder(earlyOrder);
+  const late = evaluateOrder(lateOrder);
+  assert.equal(generic.unitScore, genericLate.unitScore);
+  assert.equal(generic.potentialUnitScore, genericLate.potentialUnitScore);
+  for (const score of [early, late]) {
+    assert.equal(score.unitScore, generic.unitScore);
+    assert.equal(score.potentialUnitScore, generic.potentialUnitScore);
+    assert.equal(score.songProjection.specialWindows.length, 5);
+    assert.deepEqual(score.songProjection.specialWindows.map(w => w.start), [10, 40, 48, 52, 56]);
+    assert.ok(score.potentialRankingScore > score.rankingScore);
+  }
+  assert.deepEqual(early.songProjection.specialWindows.map(w => w.cardId), earlyOrder.map(m => m.id));
+  assert.deepEqual(late.songProjection.specialWindows.map(w => w.cardId), lateOrder.map(m => m.id));
+  assert.ok(early.rankingScore > late.rankingScore, "SP support in the dense section must improve expected score");
+  assert.ok(early.potentialRankingScore > late.potentialRankingScore, "SP support placement must also improve potential score");
+
+  const rateOnly = member("RATE", { specialSupport: 0, specialRate: 50, specialDuration: 20 });
+  const earlyRate = evaluateOrder([rateOnly, B, PC, D, E]);
+  const lateRate = evaluateOrder([B, rateOnly, PC, D, E]);
+  assert.ok(earlyRate.rankingScore > lateRate.rankingScore, "SP rate boosts act at the actual Active checks");
+  assert.equal(earlyRate.potentialRankingScore, lateRate.potentialRankingScore,
+    "Rate-only SP cannot raise an all-success potential ceiling");
+}
+
 const preparedCards = new Map([L, A, B, C, D, E].map((card) => [card.id, card]));
 const baseline = evaluateDeck({
   leader: L,
@@ -227,6 +264,18 @@ const recommendation = {
   assert.equal(optimized.members[1], "A");
   assert.deepEqual(new Set(optimized.members.slice(1)), new Set(["A", "B", "C", "D", "E"]));
   assert.ok(optimized.score.rankingScore > baseline.rankingScore);
+}
+
+// Potential optimization retains the five-SP order search too.
+{
+  const optimizedPotential = optimizeRecommendationOrders({
+    recommendation: structuredClone(recommendation), preparedCards,
+    currentMembers: ["L", "B", "A", "C", "D", "E"], lockedSlots: Array(6).fill(true),
+    music: song, difficulty: "EXPERT", playMode: "manual", simulationTarget: "potential", separateRole: true, resultCount: 1,
+  });
+  assert.equal(optimizedPotential.orderOptimization.evaluatedCount, 120);
+  assert.equal(optimizedPotential.members[1], "A");
+  assert.ok(optimizedPotential.score.potentialRankingScore > baseline.potentialRankingScore);
 }
 
 // Preset member slots are inclusion constraints, not position locks. Even when B and A

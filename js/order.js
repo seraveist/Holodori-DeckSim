@@ -1,4 +1,5 @@
 import { evaluateDeck, prepareDeckComposition } from "./score.js?v=1.1.0";
+import { ORDER_REFERENCE, ORDER_REFERENCE_MUSIC } from "./order-reference.js?v=1.1.0";
 
 const finite = (value, fallback = 0) => Number.isFinite(Number(value)) ? Number(value) : fallback;
 
@@ -11,7 +12,15 @@ function rankingValue(score, simulationTarget) {
 function compareResults(left, right) {
   return right.rankingValue - left.rankingValue
     || finite(right.score?.rankingScore) - finite(left.score?.rankingScore)
-    || finite(right.score?.unitScore) - finite(left.score?.unitScore);
+    || finite(right.score?.unitScore) - finite(left.score?.unitScore)
+    || left.members.join("|").localeCompare(right.members.join("|"));
+}
+
+function compareOrders(left, right, generic) {
+  // Generic units retain their normal ranking; only their representative order
+  // is selected by the common chart's potential score, for either search goal.
+  return (generic ? right._orderPotential - left._orderPotential : 0)
+    || compareResults(left, right);
 }
 
 function compositionKey(result) {
@@ -69,43 +78,33 @@ export function optimizeRecommendationOrders({
   separateRole = true,
   resultCount = 5,
 }) {
-  // Member presets are inclusion constraints, not positional locks. Once a song is
-  // selected, evaluate all 5! member orders because targeted passives and Exact SP
-  // slots can both make the same five-card composition order-sensitive.
+  // Member presets are inclusion constraints, not positional locks. Compare all
+  // 5! orders per composition, using a shared reference when no song is chosen.
   void currentMembers;
   void lockedSlots;
 
-  if (!recommendation?.ok || !music) {
-    if (recommendation?.ok) {
-      recommendation.results = dedupeRecommendationResults(recommendation.results).slice(0, resultCount);
-      recommendation.members = recommendation.results[0]?.members ?? recommendation.members;
-      recommendation.score = recommendation.results[0]?.score ?? recommendation.score;
-      recommendation.orderOptimization = {
-        mode: "skipped",
-        chartMode: "none",
-        evaluatedCount: 0,
-        shortlistedCount: recommendation.results.length,
-      };
-    }
-    return recommendation;
-  }
+  if (!recommendation?.ok) return recommendation;
 
+  const generic = !music;
+  const orderMusic = music ?? ORDER_REFERENCE_MUSIC;
   const exactSkills = music?._chart?.metadata?.skills;
-  const chartMode = Array.isArray(exactSkills) && exactSkills.length > 0 ? "exact" : "estimated";
+  const chartMode = generic ? "reference" : Array.isArray(exactSkills) && exactSkills.length > 0 ? "exact" : "estimated";
   let evaluatedCount = 0;
   const orderedCandidates = [];
+  const compositions = dedupeRecommendationResults(recommendation.results);
 
-  for (const result of recommendation.results) {
+  for (const result of compositions) {
     const leader = preparedCards.get(result.members[0]);
     if (!leader) continue;
     const selectedMemberIds = orderableMemberIds(result);
+    if (selectedMemberIds.length !== 5 || new Set(selectedMemberIds).size !== 5) continue;
     let best = null;
 
     for (const memberIds of permutations(selectedMemberIds)) {
       const members = memberIds.map((id) => preparedCards.get(id));
       if (members.some((member) => !member)) continue;
 
-      // Passive target selection is order-sensitive for limited-count targets.
+      // Passive target selection can be order-sensitive when target stats tie.
       // Rebuild the composition for every permutation; reusing the composition
       // prepared for the first order leaks its passive target map into later orders.
       const preparedComposition = prepareDeckComposition({ leader, members, separateRole });
@@ -114,11 +113,11 @@ export function optimizeRecommendationOrders({
       const score = evaluateDeck({
         leader,
         members,
-        music,
-        difficulty,
+        music: orderMusic,
+        difficulty: generic ? "EXPERT" : difficulty,
         playMode,
         separateRole,
-        evaluationTarget: simulationTarget,
+        evaluationTarget: generic ? "potential" : simulationTarget,
         preparedComposition,
       });
       evaluatedCount += 1;
@@ -127,10 +126,23 @@ export function optimizeRecommendationOrders({
       const candidate = {
         members: [leader.id, ...memberIds],
         score,
-        rankingValue: rankingValue(score, simulationTarget),
+        rankingValue: generic
+          ? finite(simulationTarget === "potential" ? score.potentialUnitScore : score.unitScore)
+          : rankingValue(score, simulationTarget),
+        _orderPotential: generic ? score.potentialRankingScore : null,
         _preparedComposition: preparedComposition,
+        ...(generic ? { orderEvaluation: {
+          basis: "reference",
+          referenceId: ORDER_REFERENCE.id,
+          target: "potential",
+          potentialScore: score.potentialRankingScore,
+          duration: ORDER_REFERENCE.duration,
+          noteCount: ORDER_REFERENCE.noteCount,
+          playMode,
+          specialWindows: score.songProjection.specialWindows,
+        } } : {}),
       };
-      if (!best || compareResults(candidate, best) < 0) best = candidate;
+      if (!best || compareOrders(candidate, best, generic) < 0) best = candidate;
     }
     if (best) orderedCandidates.push(best);
   }
@@ -150,7 +162,7 @@ export function optimizeRecommendationOrders({
       evaluationTarget: "both",
       preparedComposition: result._preparedComposition,
     });
-    const { _preparedComposition, ...publicResult } = result;
+    const { _preparedComposition, _orderPotential, ...publicResult } = result;
     return {
       ...publicResult,
       score,
@@ -167,8 +179,9 @@ export function optimizeRecommendationOrders({
     orderOptimization: {
       mode: "exact",
       chartMode,
+      target: generic ? "potential" : simulationTarget,
       evaluatedCount,
-      shortlistedCount: recommendation.results.length,
+      shortlistedCount: compositions.length,
     },
   };
 }

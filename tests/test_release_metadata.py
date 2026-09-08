@@ -38,7 +38,9 @@ def test_v1_release_documents_exist_and_identify_project_status() -> None:
 
 def test_readme_describes_current_engine_and_preset_semantics() -> None:
     readme = _read("README.md")
-    assert "unit-score-v0.5-potential + song-score-v0.4-chart-timeline" in readme
+    engine_version = re.search(r'export const SCORE_ENGINE_VERSION = "([^"]+)";', _read("js/score.js"))
+    assert engine_version is not None
+    assert engine_version.group(1) in readme
     assert "이 카드를 반드시 사용" in readme
     assert "5! = 120" in readme
     assert "v1.1 계산 범위와 제한" in readme
@@ -50,6 +52,7 @@ def test_readme_describes_current_engine_and_preset_semantics() -> None:
         "잠긴 멤버 슬롯을 유지한 채",
         "현재 `music.json`에는 실제 노트 타임라인이 없으므로",
         "다음 릴리스 후보: Runtime Exact",
+        "별도 순열 검색을 하지 않습니다",
     )
     for phrase in stale_phrases:
         assert phrase not in readme

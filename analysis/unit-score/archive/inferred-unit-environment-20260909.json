@@ -1,0 +1,233 @@
+{
+  "id": "unit-evaluation-environment-candidate-20260909",
+  "status": "analysis-only; incomplete full-score model",
+  "observations": {
+    "screens": 11,
+    "distinctMemberSets": 6,
+    "leaderAndMemberSets": 8,
+    "selection": "retrospective; no fresh validation data"
+  },
+  "active": {
+    "evaluationHorizonSecondsCandidate": 200,
+    "integration": "probability-weighted-normalized",
+    "canonicalExpression": "ceilToTenth(sum(t=1..200, sum(active p_i * scoreUp_i) / max(1, sum(active p_i))) / 200)",
+    "canonicalWindow": "t >= interval_i && t mod interval_i < duration_i",
+    "canonicalDisplayRounding": "ceil to 0.1 percentage point after integration",
+    "physicalTickSeconds": null,
+    "explanation": "1-second right-end samples are a convenient representation. Seven tested timing conventions, including shifted 0.1s/0.5s integration, are observationally equivalent for these integer-interval cards.",
+    "jointGridCandidates": 212688,
+    "survivingRepresentations": [
+      {
+        "duration": 200,
+        "firstImmediate": false,
+        "offset": -1,
+        "aggregation": "weighted",
+        "step": 0.1,
+        "samplePhase": 0,
+        "rounding": "ceil",
+        "raw": [
+          76.32625000000019,
+          78.33466395258786,
+          70.22788085128491,
+          66.88318421439541,
+          70.00707951520562,
+          67.21081725264379
+        ],
+        "values": [
+          76.4,
+          78.4,
+          70.3,
+          66.9,
+          70.1,
+          67.3
+        ]
+      },
+      {
+        "duration": 200,
+        "firstImmediate": false,
+        "offset": -1,
+        "aggregation": "weighted",
+        "step": 0.1,
+        "samplePhase": 0.5,
+        "rounding": "ceil",
+        "raw": [
+          76.32625000000019,
+          78.33466395258786,
+          70.22788085128491,
+          66.88318421439541,
+          70.00707951520562,
+          67.21081725264379
+        ],
+        "values": [
+          76.4,
+          78.4,
+          70.3,
+          66.9,
+          70.1,
+          67.3
+        ]
+      },
+      {
+        "duration": 200,
+        "firstImmediate": false,
+        "offset": -1,
+        "aggregation": "weighted",
+        "step": 0.5,
+        "samplePhase": 0,
+        "rounding": "ceil",
+        "raw": [
+          76.32625000000006,
+          78.33466395258738,
+          70.2278808512849,
+          66.88318421439538,
+          70.00707951520555,
+          67.2108172526436
+        ],
+        "values": [
+          76.4,
+          78.4,
+          70.3,
+          66.9,
+          70.1,
+          67.3
+        ]
+      },
+      {
+        "duration": 200,
+        "firstImmediate": false,
+        "offset": -1,
+        "aggregation": "weighted",
+        "step": 0.5,
+        "samplePhase": 0.5,
+        "rounding": "ceil",
+        "raw": [
+          76.32625000000006,
+          78.33466395258738,
+          70.2278808512849,
+          66.88318421439538,
+          70.00707951520555,
+          67.2108172526436
+        ],
+        "values": [
+          76.4,
+          78.4,
+          70.3,
+          66.9,
+          70.1,
+          67.3
+        ]
+      },
+      {
+        "duration": 200,
+        "firstImmediate": false,
+        "offset": -1,
+        "aggregation": "weighted",
+        "step": 1,
+        "samplePhase": 0,
+        "rounding": "ceil",
+        "raw": [
+          76.32624999999997,
+          78.33466395258739,
+          70.22788085128492,
+          66.88318421439536,
+          70.00707951520552,
+          67.21081725264361
+        ],
+        "values": [
+          76.4,
+          78.4,
+          70.3,
+          66.9,
+          70.1,
+          67.3
+        ]
+      },
+      {
+        "duration": 200,
+        "firstImmediate": false,
+        "offset": -1,
+        "aggregation": "weighted",
+        "step": 1,
+        "samplePhase": 0.5,
+        "rounding": "ceil",
+        "raw": [
+          76.32624999999997,
+          78.33466395258739,
+          70.22788085128492,
+          66.88318421439536,
+          70.00707951520552,
+          67.21081725264361
+        ],
+        "values": [
+          76.4,
+          78.4,
+          70.3,
+          66.9,
+          70.1,
+          67.3
+        ]
+      },
+      {
+        "duration": 200,
+        "firstImmediate": false,
+        "offset": 0,
+        "aggregation": "weighted",
+        "step": 1,
+        "samplePhase": 1,
+        "rounding": "ceil",
+        "raw": [
+          76.32624999999997,
+          78.33466395258739,
+          70.22788085128492,
+          66.88318421439536,
+          70.00707951520552,
+          67.21081725264361
+        ],
+        "values": [
+          76.4,
+          78.4,
+          70.3,
+          66.9,
+          70.1,
+          67.3
+        ]
+      }
+    ],
+    "scope": "active bonus category before displayed account additions; conditional values used for observed satisfied static/life conditions and the matched H combo alternative"
+  },
+  "noteCount": null,
+  "specialPoints": null,
+  "combo": {
+    "identifiedPolicy": null,
+    "canonicalUniformTimelineConditionalMinimumNotes": 308,
+    "assumptions": "H only, 200 seconds, uniform note progression, combo maintained, checked at each activation. Always-met combo needs no such note-count constraint.",
+    "note": "The 308 bound is conditional on the canonical unshifted 26s first check, 200s uniform notes and maintained combo. An always-met condition does not imply any note count; shifted clocks may change this bound. 800 is not identified."
+  },
+  "life": {
+    "exactValue": null,
+    "compatibleObservation": "Raden 600-life condition treated as satisfied; exact health and fluctuations not identified"
+  },
+  "special": {
+    "identifiedModel": null,
+    "equalSpacingCandidateCount": 92,
+    "rejectedWithinScope": [
+      "Tested equal-spacing single-occurrence SP grids and permutation-averaged independent-window variants",
+      "Single shared SP scaling denominator in the four tested global-gain models, under ceil/round/floor display"
+    ],
+    "limitation": "Board/outfit interactions, overlapping SP interactions, arbitrary note weights and other display-attribution rules are not excluded by these probes."
+  },
+  "supportAndBoardAttribution": {
+    "identifiedModel": null,
+    "note": "Targeted linear support under the Active kernel and tested shared board rules fail to explain E/J and I/J simultaneously."
+  },
+  "productionChanged": false,
+  "evidenceSha256": {
+    "dummy-model-lab.mjs": "4f6df3f57162e1bb18d7337b36105c72df1b2724412bcaa3091c3e5d5b93b953",
+    "probe-dummy-environment.mjs": "403cc1eb4958bc90651e23acaa4bf9b64b67e46f52d3694fb9a28891ea66e973",
+    "probe-dummy-identifiability.mjs": "9246a6ef21906928248528479bc96a3887cf772163e3878ca98d54c08ca4cb32",
+    "probe-dummy-active-joint.mjs": "f5ae2e3bb23cb72435484f3539e4ba83218eb9460914c4fdb6ea831ec9205885",
+    "dummy-environment-probes.json": "a7cb5ba571d470b09c137bb0c0a2b6b6f7ae3b911338c914e7095faceeff41fd",
+    "dummy-identifiability-probes.json": "64a35e5d5661c335ab8f24b9ec53ac36bfb996891eee6be98e31c1f3f5034211",
+    "dummy-active-joint-probes.json": "e44dc2f3742d17cbaf901159d3d382b6f00a23aa7b1beca28929eebb67f2e226"
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-09-08",
+  "masterSource": {
+    "repository": "HolodoriDB/holodori-db-kor-diff",
+    "commit": "0a3836eeb516f03fc358f26a0c423ab51f109bd9",
+    "masterVersion": "e50116c3c75a4da07b27936baa10bdc1eabd71955406848104f2a0e0241ac508"
+  },
+  "scope": "User-supplied formation-detail screenshots; no played-song or directly observed final Unit Score. Displayed account contributions are subtracted, but indirect board effects remain unresolved.",
+  "profileSource": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+  "omittedCategory": "Null is not directly observed. Visible categories sum to the displayed total; an omitted category is zero only at displayed precision.",
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    },
+    {
+      "id": "card-00021-5-uniq-0064-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 1,
+      "potential": 0
+    }
+  ],
+  "observations": [
+    {
+      "sampleId": "A",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00"
+      ],
+      "game": {
+        "unitScore": null,
+        "overallPower": 221220,
+        "scoreBonusPct": 140.1,
+        "powerDetail": {
+          "memberParameter": 112726,
+          "outfit": 56367,
+          "board": 31893,
+          "passive": 12397,
+          "memory": 6320,
+          "enhancement": 1517
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 76.4,
+          "board": 13.9,
+          "passive": 4,
+          "special": 45.8
+        }
+      },
+      "retained": {
+        "overallPower": 181490,
+        "scoreBonusPct": 126.2
+      }
+    },
+    {
+      "sampleId": "B",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0058-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "game": {
+        "unitScore": null,
+        "overallPower": 221220,
+        "scoreBonusPct": 140.1,
+        "powerDetail": {
+          "memberParameter": 112726,
+          "outfit": 56367,
+          "board": 31893,
+          "passive": 12397,
+          "memory": 6320,
+          "enhancement": 1517
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 76.4,
+          "board": 13.9,
+          "passive": 4,
+          "special": 45.8
+        }
+      },
+      "retained": {
+        "overallPower": 181490,
+        "scoreBonusPct": 126.2
+      }
+    },
+    {
+      "sampleId": "C",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "game": {
+        "unitScore": null,
+        "overallPower": 201027,
+        "scoreBonusPct": 144.2,
+        "powerDetail": {
+          "memberParameter": 102618,
+          "outfit": 51313,
+          "board": 31791,
+          "passive": 8172,
+          "memory": 5754,
+          "enhancement": 1379
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 78.4,
+          "board": 15.2,
+          "passive": 4.5,
+          "special": 46.1
+        }
+      },
+      "retained": {
+        "overallPower": 162103,
+        "scoreBonusPct": 129
+      }
+    },
+    {
+      "sampleId": "D",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "game": {
+        "unitScore": null,
+        "overallPower": 190486,
+        "scoreBonusPct": 129.5,
+        "powerDetail": {
+          "memberParameter": 97578,
+          "outfit": 48793,
+          "board": 29164,
+          "passive": 8172,
+          "memory": 5472,
+          "enhancement": 1307
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 70.3,
+          "board": 15.6,
+          "passive": 3.7,
+          "special": 39.9
+        }
+      },
+      "retained": {
+        "overallPower": 154543,
+        "scoreBonusPct": 113.9
+      }
+    },
+    {
+      "sampleId": "E",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "game": {
+        "unitScore": null,
+        "overallPower": 190278,
+        "scoreBonusPct": 124.8,
+        "powerDetail": {
+          "memberParameter": 95098,
+          "outfit": 47554,
+          "board": 27008,
+          "passive": 13978,
+          "memory": 5333,
+          "enhancement": 1307
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 66.9,
+          "board": 17.5,
+          "passive": 2.3,
+          "special": 38.1
+        }
+      },
+      "retained": {
+        "overallPower": 156630,
+        "scoreBonusPct": 107.3
+      }
+    },
+    {
+      "sampleId": "F",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-06002-5-uniq-0066-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00026-5-uniq-0065-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "game": {
+        "unitScore": null,
+        "overallPower": 190278,
+        "scoreBonusPct": 124.8,
+        "powerDetail": {
+          "memberParameter": 95098,
+          "outfit": 47554,
+          "board": 27008,
+          "passive": 13978,
+          "memory": 5333,
+          "enhancement": 1307
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 66.9,
+          "board": 17.5,
+          "passive": 2.3,
+          "special": 38.1
+        }
+      },
+      "retained": {
+        "overallPower": 156630,
+        "scoreBonusPct": 107.3
+      }
+    },
+    {
+      "sampleId": "G",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "game": {
+        "unitScore": null,
+        "overallPower": 186671,
+        "scoreBonusPct": 122.6,
+        "powerDetail": {
+          "memberParameter": 97617,
+          "outfit": 48813,
+          "board": 25506,
+          "passive": 7980,
+          "memory": 5475,
+          "enhancement": 1280
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 70.1,
+          "board": 13.8,
+          "passive": 0,
+          "special": 38.7
+        }
+      },
+      "retained": {
+        "overallPower": 154410,
+        "scoreBonusPct": 108.8
+      }
+    },
+    {
+      "sampleId": "I",
+      "leaderId": "card-00010-5-uniq-0010-00",
+      "memberIds": [
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "game": {
+        "unitScore": null,
+        "overallPower": 124451,
+        "scoreBonusPct": 157.2,
+        "powerDetail": {
+          "memberParameter": 97617,
+          "outfit": 0,
+          "board": 12537,
+          "passive": 7980,
+          "memory": 5475,
+          "enhancement": 842
+        },
+        "scoreBonusDetail": {
+          "outfit": 39,
+          "active": 70.1,
+          "board": 9.4,
+          "passive": 0,
+          "special": 38.7
+        }
+      },
+      "retained": {
+        "overallPower": 105597,
+        "scoreBonusPct": 147.8
+      }
+    },
+    {
+      "sampleId": "J",
+      "leaderId": "card-00010-5-uniq-0010-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "game": {
+        "unitScore": null,
+        "overallPower": 129350,
+        "scoreBonusPct": 159.4,
+        "powerDetail": {
+          "memberParameter": 95098,
+          "outfit": 0,
+          "board": 14065,
+          "passive": 13978,
+          "memory": 5333,
+          "enhancement": 876
+        },
+        "scoreBonusDetail": {
+          "outfit": 41.5,
+          "active": 66.9,
+          "board": 10.2,
+          "passive": 2.7,
+          "special": 38.1
+        }
+      },
+      "retained": {
+        "overallPower": 109076,
+        "scoreBonusPct": 149.2
+      }
+    },
+    {
+      "sampleId": "K",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "game": {
+        "unitScore": null,
+        "overallPower": 190278,
+        "scoreBonusPct": 124.8,
+        "powerDetail": {
+          "memberParameter": 95098,
+          "outfit": 47554,
+          "board": 27008,
+          "passive": 13978,
+          "memory": 5333,
+          "enhancement": 1307
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 66.9,
+          "board": 17.5,
+          "passive": 2.3,
+          "special": 38.1
+        }
+      },
+      "retained": {
+        "overallPower": 156630,
+        "scoreBonusPct": 107.3
+      }
+    },
+    {
+      "sampleId": "H",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "game": {
+        "unitScore": null,
+        "overallPower": 162029,
+        "scoreBonusPct": 127.7,
+        "powerDetail": {
+          "memberParameter": 79241,
+          "outfit": 39625,
+          "board": 28979,
+          "passive": 8626,
+          "memory": 4444,
+          "enhancement": 1114
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 67.3,
+          "board": 19.6,
+          "passive": 2.4,
+          "special": 38.4
+        }
+      },
+      "retained": {
+        "overallPower": 127492,
+        "scoreBonusPct": 108.1
+      },
+      "experiment": {
+        "comparison": "E/K",
+        "change": "Towa replaced by original Flare Lv.1/awakening 0; same five SP profiles",
+        "preregisteredActiveAlternatives": {
+          "conditionUnmet": 60.2,
+          "conditionMet": 67.3
+        },
+        "limitation": "Matches the condition-met alternative, but does not distinguish always-met from activation-check timing. Member board inputs change together with the Active profile."
+      }
+    }
+  ]
+}

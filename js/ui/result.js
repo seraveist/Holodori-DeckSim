@@ -20,7 +20,12 @@ const LOCAL_COPY = Object.freeze({
     memoryEffect: "메모리 효과",
     memberEnhancement: "멤버 강화 보너스",
     genericLabel: "범용 유닛 평가",
-    genericEvaluation: "인게임 유닛 스코어 기준 · 110초 범용 시간축으로 스킬 주기를 참고합니다.",
+    genericEvaluation: "범용 유닛 스코어 추정값 · 110초 범용 시간축으로 스킬 주기를 참고합니다.",
+    estimateNote: "편성 비교용 추정값입니다. 보드·메모리·멤버 강화는 미반영이며, 스킬 보너스는 인게임과 차이가 있을 수 있습니다.",
+    referenceOrder: "잠재 기준 추천 배치",
+    referencePotential: "공통 채보 잠재 스코어",
+    referenceOrderNote: (duration, notes) => `${duration}초·${notes}노트·균등 배치한 SP 5개 지점 기준입니다. 같은 조합은 잠재 점수가 가장 높은 순서 하나만 표시하며, 실제 곡의 최적 순서는 달라질 수 있습니다.`,
+    referenceSpecialTimeline: "공통 채보의 SP 배치",
     selectedSongAverage: "예상 평균 스코어",
     potentialSongScore: "잠재 스코어",
     allActiveMaximum: "모든 유효 액티브 성공 기준 잠재 스코어",
@@ -61,7 +66,12 @@ const LOCAL_COPY = Object.freeze({
     memoryEffect: "Memory Effect",
     memberEnhancement: "Member Enhancement Bonus",
     genericLabel: "Generic Unit Evaluation",
-    genericEvaluation: "Uses in-game Unit Score with a generic 110s timeline for skill-cycle reference.",
+    genericEvaluation: "Estimated Unit Score using a generic 110s timeline for skill-cycle reference.",
+    estimateNote: "Estimates for comparing decks. Board, memory and member enhancement effects are excluded; skill bonuses may differ in game.",
+    referenceOrder: "Recommended order by potential",
+    referencePotential: "Reference Chart Potential",
+    referenceOrderNote: (duration, notes) => `Uses ${duration}s, ${notes} notes and five evenly spaced SP points. Each composition shows its highest-potential order once. The best order can differ by song.`,
+    referenceSpecialTimeline: "Reference Chart SP Order",
     selectedSongAverage: "Estimated Average Score",
     potentialSongScore: "Potential Score",
     allActiveMaximum: "Potential score if all valid Active Skills succeed",
@@ -102,7 +112,12 @@ const LOCAL_COPY = Object.freeze({
     memoryEffect: "メモリー効果",
     memberEnhancement: "メンバー強化ボーナス",
     genericLabel: "汎用ユニット評価",
-    genericEvaluation: "ゲーム内ユニットスコアを基準に、110秒の汎用時間軸でスキル周期を確認します。",
+    genericEvaluation: "ユニットスコアの推定値です。110秒の汎用時間軸でスキル周期を確認します。",
+    estimateNote: "編成比較用の推定値です。ボード・メモリー・メンバー強化は未反映で、スキルボーナスはゲーム内の値と異なる場合があります。",
+    referenceOrder: "潜在スコア基準のおすすめ順序",
+    referencePotential: "共通譜面の潜在スコア",
+    referenceOrderNote: (duration, notes) => `${duration}秒・${notes}ノーツ・等間隔のSP 5地点が基準です。同じ編成は潜在スコアが最も高い順序を1つだけ表示します。実際の楽曲では最適な順序が変わる場合があります。`,
+    referenceSpecialTimeline: "共通譜面のSP配置",
     selectedSongAverage: "予想平均スコア",
     potentialSongScore: "潜在スコア",
     allActiveMaximum: "有効なアクティブがすべて成功した場合の潜在スコア",
@@ -304,7 +319,6 @@ function calculationRow(label, value, suffix = "") {
 function calculationBreakdown(score) {
   const power = score.detail?.power ?? {};
   const bonus = score.detail?.scoreBonus ?? {};
-  const activeBonus = Number(bonus.active || 0) + Number(bonus.outfit || 0);
   const rawEnhancement = Math.max(0, Number(power.enhancement) || 0);
   const displayedEnhancement = rawEnhancement <= 1 ? 0 : rawEnhancement;
   return `
@@ -323,7 +337,8 @@ function calculationBreakdown(score) {
       <article class="calculation-card">
         <header><span>${t("result.scoreBonus")}</span><strong>${formatPercent(score.scoreBonusPct)}</strong></header>
         <div class="calculation-rows">
-          ${calculationRow(t("bonus.active"), activeBonus, "%")}
+          ${calculationRow(copy().leaderOutfit, bonus.outfit ?? 0, "%")}
+          ${calculationRow(t("bonus.active"), bonus.active ?? 0, "%")}
           ${calculationRow(copy().boardEffect, bonus.board ?? 0, "%")}
           ${calculationRow(copy().passiveSkill, bonus.passive, "%")}
           ${calculationRow(t("bonus.special"), bonus.special, "%")}
@@ -332,14 +347,21 @@ function calculationBreakdown(score) {
     </div>`;
 }
 
-function specialSkillTimeline(projection) {
+function specialSkillTimeline(projection, label = copy().specialTimeline) {
   const windows = projection?.specialWindows ?? [];
   if (!windows.length) return "";
-  return `<div class="special-skill-order"><strong>${escapeHtml(copy().specialTimeline)}</strong><ol>${windows.map((window) => `<li><b>SP ${window.slot}</b><span>${escapeHtml(window.characterName)} · ${formatSeconds(window.start)}–${formatSeconds(window.end)}</span></li>`).join("")}</ol></div>`;
+  return `<div class="special-skill-order"><strong>${escapeHtml(label)}</strong><ol>${windows.map((window) => `<li><b>SP ${window.slot}</b><span>${escapeHtml(window.characterName)} · ${formatSeconds(window.start)}–${formatSeconds(window.end)}</span></li>`).join("")}</ol></div>`;
 }
 
-function songProjection(score, song, difficulty) {
+function songProjection(score, song, difficulty, orderEvaluation = null) {
   const projection = score.songProjection;
+  if (!song && orderEvaluation?.basis === "reference") {
+    return `<div class="song-projection is-generic" data-order-basis="reference">
+      <div class="song-projection-score"><span>${escapeHtml(copy().referencePotential)}</span><strong>${formatNumber(orderEvaluation.potentialScore)}</strong></div>
+      <p><b>${escapeHtml(copy().referenceOrder)}</b><span>${escapeHtml(copy().referenceOrderNote(orderEvaluation.duration, formatNumber(orderEvaluation.noteCount)))}</span></p>
+      ${specialSkillTimeline(orderEvaluation, copy().referenceSpecialTimeline)}
+    </div>`;
+  }
   if (!projection || !song) {
     return `<div class="song-projection is-generic"><strong>${escapeHtml(copy().genericLabel)}</strong><span>${escapeHtml(copy().genericEvaluation)}</span></div>`;
   }
@@ -532,7 +554,7 @@ function resultDetails(result, index, data, state, song, open) {
         </div>
       </summary>
       <div class="recommendation-result-body">
-        ${songProjection(score, song, state.difficulty)}
+        ${songProjection(score, song, state.difficulty, result.orderEvaluation)}
         <div class="result-context-row">
           <div class="result-metrics">
             ${metric(expectedLabel, expectedValue, potentialTarget ? "" : "is-concept")}
@@ -561,7 +583,7 @@ export function renderResult(data, state, recommendation = null) {
     return;
   }
 
-  container.innerHTML = results.map((result, index) => resultDetails(
+  container.innerHTML = `<p class="result-estimate-note">${escapeHtml(copy().estimateNote)}</p>` + results.map((result, index) => resultDetails(
     result,
     index,
     data,

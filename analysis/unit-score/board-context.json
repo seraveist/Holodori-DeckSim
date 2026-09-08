@@ -1,0 +1,107 @@
+{
+  "sampleId": "E",
+  "confirmedByUser": true,
+  "confirmation": "사용 중임. 이후 현재 5명과 리더의 노드 수치, 이전 편성의 노엘·후레아 수치까지 사용자가 제공함.",
+  "usesActiveTimingOrProbabilityNodes": true,
+  "confirmedAt": "2026-09-08",
+  "appliesToSamples": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "leader": {
+    "character": "이치조 리리카",
+    "activationRateUpNodesPct": [],
+    "cooldownShortenNodesPct": [],
+    "scoreSupportNodesPct": [
+      6.2,
+      4,
+      3.1
+    ],
+    "characterId": "chr-06003"
+  },
+  "members": [
+    {
+      "character": "츠노마키 와타메",
+      "characterId": "chr-00026",
+      "activationRateUpNodesPct": [
+        11.1,
+        3.7,
+        3,
+        3,
+        3.7
+      ],
+      "cooldownShortenNodesPct": [
+        4
+      ]
+    },
+    {
+      "character": "호시마치 스이세이",
+      "characterId": "chr-00018",
+      "activationRateUpNodesPct": [],
+      "cooldownShortenNodesPct": []
+    },
+    {
+      "character": "토코야미 토와",
+      "characterId": "chr-00027",
+      "activationRateUpNodesPct": [],
+      "cooldownShortenNodesPct": []
+    },
+    {
+      "character": "오토노세 카나데",
+      "characterId": "chr-06002",
+      "activationRateUpNodesPct": [
+        15,
+        5
+      ],
+      "cooldownShortenNodesPct": []
+    },
+    {
+      "character": "주우후테이 라덴",
+      "characterId": "chr-06004",
+      "activationRateUpNodesPct": [
+        6,
+        2,
+        3,
+        3
+      ],
+      "cooldownShortenNodesPct": [
+        4
+      ]
+    },
+    {
+      "character": "시로가네 노엘",
+      "characterId": "chr-00022",
+      "activationRateUpNodesPct": [
+        3.7,
+        2,
+        11.1,
+        3.7,
+        3
+      ],
+      "cooldownShortenNodesPct": [
+        4
+      ]
+    },
+    {
+      "character": "시라누이 후레아",
+      "characterId": "chr-00021",
+      "activationRateUpNodesPct": [
+        6
+      ],
+      "cooldownShortenNodesPct": []
+    }
+  ],
+  "notes": "Arrays retain user-provided displayed node values. Empty arrays mean the user reported no applicable effect. The extra Noel/Flare question explicitly requested the settings used in earlier screenshots. The owned-card JSON contains only IDs, levels and awakening. Keep excluding displayed board, memory and enhancement contributions; do not claim this is a measured board-free counterfactual.",
+  "otherLeaders": [
+    {
+      "characterId": "chr-00010",
+      "character": "나키리 아야메",
+      "scoreSupportNodesPct": [],
+      "relevantEffectsAbsentConfirmed": true
+    }
+  ],
+  "scope": "User-confirmed relevant nodes, not a complete account board export. Watame leader score-support nodes have not been confirmed."
+}

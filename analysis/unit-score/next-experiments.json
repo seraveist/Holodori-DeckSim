@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "planned; no new in-game observations received",
+  "profileSource": "../../scripts/fixtures/unit-observations-20260908.json",
+  "rules": [
+    "Use the confirmed levels and awakening values; record any growth or board changes before measurement.",
+    "Capture the formation-detail screen without selecting a song, plus formation/level evidence if available.",
+    "Keep frozen predictions; add measured values in a separate observation file.",
+    "Displayed board contributions are excluded, but indirect board effects remain unresolved."
+  ],
+  "experiments": [
+    {
+      "id": "L",
+      "purpose": "Same members as G/I; change leader to swimsuit Watame with conditional support 25%. Test scaling from Ayame support 60% without active support passives.",
+      "leaderId": "card-00026-5-uniq-0065-00",
+      "memberIds": ["card-00022-5-uniq-0063-00", "card-00018-5-uniq-0068-00", "card-00027-5-uniq-0022-00", "card-06002-5-uniq-0066-00", "card-06004-5-uniq-0060-00"],
+      "comparisons": ["G", "I"],
+      "requiresConfirmation": ["Watame leader score-support board nodes: unknown, do not assume zero."]
+    },
+    {
+      "id": "M",
+      "purpose": "Same members as C; use Ayame leader. Add a third nonzero outfit observation with a different passive/active composition.",
+      "leaderId": "card-00010-5-uniq-0010-00",
+      "memberIds": ["card-00026-5-uniq-0065-00", "card-00022-5-uniq-0063-00", "card-00021-5-uniq-0064-00", "card-06002-5-uniq-0066-00", "card-06004-5-uniq-0060-00"],
+      "comparisons": ["C", "I", "J"],
+      "requiresConfirmation": ["Confirm card growth and relevant board settings are unchanged from the recorded profiles."]
+    },
+    {
+      "id": "N",
+      "purpose": "G with Towa replaced by swimsuit Flare; third-generation pair activates Noel's SP probability condition. Test frozen SP coefficients with a new member set. Active and passive also change, so this is not a single-effect causal isolation.",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": ["card-00022-5-uniq-0063-00", "card-00018-5-uniq-0068-00", "card-00021-5-uniq-0064-00", "card-06002-5-uniq-0066-00", "card-06004-5-uniq-0060-00"],
+      "comparisons": ["G", "D"],
+      "requiresConfirmation": ["Confirm card growth and relevant board settings are unchanged from the recorded profiles."]
+    }
+  ]
+}

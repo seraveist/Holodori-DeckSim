@@ -112,6 +112,13 @@ async function waitFor(check, timeoutMs, label) {
 }
 
 function resolveChrome() {
+  if (process.env.CHROME_BIN && fs.existsSync(process.env.CHROME_BIN)) return process.env.CHROME_BIN;
+  if (process.platform === "win32") {
+    for (const folder of [process.env.PROGRAMFILES, process.env["PROGRAMFILES(X86)"], process.env.LOCALAPPDATA].filter(Boolean)) {
+      const candidate = path.join(folder, "Google", "Chrome", "Application", "chrome.exe");
+      if (fs.existsSync(candidate)) return candidate;
+    }
+  }
   for (const name of ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser"]) {
     const probe = spawnSync("bash", ["-lc", `command -v ${name}`], { encoding: "utf8" });
     if (probe.status === 0 && probe.stdout.trim()) return probe.stdout.trim();
@@ -133,8 +140,9 @@ async function terminate(child) {
 }
 
 const profileDir = await mkdtemp(path.join(tmpdir(), "holodori-browser-smoke-"));
-const server = spawn("python3", ["-m", "http.server", String(appPort), "--bind", host], {
+const server = spawn(process.env.PYTHON_BIN ?? (process.platform === "win32" ? "py" : "python3"), ["-m", "http.server", String(appPort), "--bind", host], {
   cwd: root,
+  windowsHide: true,
   stdio: ["ignore", "pipe", "pipe"],
 });
 let chrome = null;
@@ -156,7 +164,7 @@ try {
     "--remote-debugging-port=0",
     `--user-data-dir=${profileDir}`,
     "about:blank",
-  ], { stdio: ["ignore", "ignore", "pipe"] });
+  ], { windowsHide: true, stdio: ["ignore", "ignore", "pipe"] });
   chrome.stderr.setEncoding("utf8");
   chrome.stderr.on("data", (chunk) => { chromeStderr += chunk; });
 
@@ -236,6 +244,90 @@ try {
     && document.querySelectorAll(".recommendation-result-card").length === 5)`),
   30_000, "generic TOP 5 calculation did not complete");
 
+  const genericOrders = await evaluate(`([...document.querySelectorAll('.recommendation-result-card')].map(card => ({
+    reference: card.querySelector('[data-order-basis="reference"]')?.textContent,
+    slots: card.querySelectorAll('[data-order-basis="reference"] .special-skill-order li').length,
+  })))`);
+  assert.equal(genericOrders.length, 5);
+  assert.ok(genericOrders.every(row => row.reference?.includes("잠재 기준 추천 배치") && row.slots === 5),
+    "Every generic result must show its common-chart potential order and five SP slots");
+
+  // Optional screenshots also exercise the opened result at desktop/mobile sizes.
+  if (process.env.BROWSER_SMOKE_ARTIFACT_DIR) {
+    fs.mkdirSync(process.env.BROWSER_SMOKE_ARTIFACT_DIR, { recursive: true });
+    for (const [label, width] of [["desktop", 1440], ["mobile", 390]]) {
+      await command("Emulation.setDeviceMetricsOverride", { width, height: 1000, deviceScaleFactor: 1, mobile: false });
+      await evaluate(`(() => {
+        const card = document.querySelector('.recommendation-result-card');
+        card.open = true;
+        card.querySelector('[data-order-basis="reference"]').scrollIntoView({ block: 'start' });
+      })()`);
+      await evaluate(`new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))`);
+      const { data } = await command("Page.captureScreenshot", { format: "png" });
+      fs.writeFileSync(path.join(process.env.BROWSER_SMOKE_ARTIFACT_DIR, `generic-order-${label}.png`), Buffer.from(data, "base64"));
+    }
+  }
+
+  for (const simulationTarget of ["score", "potential"]) {
+    const selectedState = { ...genericState, simulationTarget, musicId: "m0049",
+      members: lockedDeckIds, lockedSlots: Array(6).fill(true) };
+    await evaluate(`localStorage.setItem(${JSON.stringify(storageKey)}, ${JSON.stringify(JSON.stringify(selectedState))}); true`);
+    await command("Page.reload", { ignoreCache: true });
+    await waitFor(() => evaluate(`document.querySelector('#music-select')?.value === 'm0049'
+      && document.querySelector('#simulation-target')?.value === ${JSON.stringify(simulationTarget)}
+      && document.querySelector('#owned-tab-count')?.textContent === '12'`), 20_000, "selected song state did not reload");
+    await evaluate(`document.querySelector('#auto-compose').click(); true`);
+    await waitFor(() => evaluate(`!document.querySelector('#auto-compose').disabled
+      && document.querySelectorAll('.recommendation-result-card').length === 1`),
+      30_000, `selected song/${simulationTarget}: a fully preset composition must produce one result`);
+    const selectedResult = await evaluate(`({
+      count: document.querySelectorAll('.recommendation-result-card').length,
+      genericReference: document.querySelectorAll('[data-order-basis="reference"]').length,
+      slots: document.querySelectorAll('.recommendation-result-card .special-skill-order li').length,
+      accuracy: document.querySelector('.song-projection-accuracy')?.textContent,
+    })`);
+    assert.equal(selectedResult.count, 1);
+    assert.equal(selectedResult.genericReference, 0, "Selected songs must not display the generic reference");
+    assert.equal(selectedResult.slots, 5);
+    assert.ok(selectedResult.accuracy?.includes("실제 채보"));
+  }
+
+  // I's support leader must render outfit separately, without adding it back
+  // into Active in the UI. These are engine values, not calibrated game values.
+  const outfitProfiles = [
+    ["card-00010-5-uniq-0010-00", 40, 0], ["card-00022-5-uniq-0063-00", 80, 1],
+    ["card-00018-5-uniq-0068-00", 60, 0], ["card-00027-5-uniq-0022-00", 70, 0],
+    ["card-06002-5-uniq-0066-00", 40, 0], ["card-06004-5-uniq-0060-00", 70, 1],
+  ];
+  const outfitIds = outfitProfiles.map(([id]) => id);
+  const outfitState = { ...genericState, members: outfitIds, lockedSlots: Array(6).fill(true),
+    ownedCardIds: outfitIds,
+    ownedCardSettings: Object.fromEntries(outfitProfiles.map(([id, level, potential]) => [id, { level, potential }])) };
+  await evaluate(`localStorage.setItem(${JSON.stringify(storageKey)}, ${JSON.stringify(JSON.stringify(outfitState))}); true`);
+  await command("Page.reload", { ignoreCache: true });
+  await waitFor(() => evaluate(`document.querySelector('#owned-tab-count')?.textContent === '6'
+    && document.querySelector('#music-select')?.value === ''`), 20_000, "outfit fixture did not reload");
+  await evaluate(`document.querySelector('#auto-compose').click(); true`);
+  await waitFor(() => evaluate(`!document.querySelector('#auto-compose').disabled
+    && document.querySelectorAll('.recommendation-result-card').length === 1`), 30_000, "outfit calculation did not complete");
+  const outfitRows = await evaluate(`([...document.querySelectorAll('.calculation-card:last-child .calculation-rows > span')]
+    .map(row => ({ label: row.querySelector('i').textContent, value: row.querySelector('b').textContent })))`);
+  assert.equal(outfitRows[0].label, "의상 스킬");
+  assert.deepEqual(outfitRows.map(row => row.value), ["40.5%", "64.4%", "0.0%", "0.0%", "40.9%"]);
+  if (process.env.BROWSER_SMOKE_ARTIFACT_DIR) {
+    for (const [label, width] of [["desktop", 1440], ["mobile", 390]]) {
+      await command("Emulation.setDeviceMetricsOverride", { width, height: 1000, deviceScaleFactor: 1, mobile: false });
+      await evaluate(`(() => {
+        const card = document.querySelector('.recommendation-result-card');
+        card.open = true;
+        card.querySelector('.calculation-breakdown').scrollIntoView({ block: 'start' });
+      })()`);
+      await evaluate(`new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))`);
+      const { data } = await command("Page.captureScreenshot", { format: "png" });
+      fs.writeFileSync(path.join(process.env.BROWSER_SMOKE_ARTIFACT_DIR, `outfit-breakdown-${label}.png`), Buffer.from(data, "base64"));
+    }
+  }
+
   const runtimeProbe = await evaluate(`(async () => {
     const module = await import('./js/chart-data.js?v=browser-smoke');
     const chartEntry = ${JSON.stringify(chartEntry)};
@@ -278,10 +370,12 @@ try {
   assert.equal(runtimeProbe.notes, noteCount);
   assert.equal(runtimeProbe.fallbackMetadata, null, "browser Runtime failure did not fall back cleanly");
 
-  console.log("browser smoke: ★4/★5 policy, generic TOP 5, browser Range/206/Content-Range/SHA Exact, and browser fallback OK");
+  console.log("browser smoke: generic TOP 5, song representative for both goals, separate outfit/Active, Runtime Exact and fallback OK");
 } finally {
   try { socket?.close(); } catch { /* ignore */ }
   await terminate(chrome);
   await terminate(server);
+  assert.equal(path.dirname(path.resolve(profileDir)), path.resolve(tmpdir()), "Delete only this test's temporary profile");
+  assert.ok(path.basename(profileDir).startsWith("holodori-browser-smoke-"));
   await rm(profileDir, { recursive: true, force: true }).catch(() => {});
 }
