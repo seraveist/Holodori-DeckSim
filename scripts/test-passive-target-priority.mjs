@@ -113,9 +113,11 @@ for (const category of ["active", "passive", "special"]) {
   assert.equal(observedI.detail.scoreBonus[category], observedG.detail.scoreBonus[category]);
 }
 assert.ok(observedI.detail.scoreBonus.outfit > 0);
-// These two values preserve the pre-split engine estimate, not a game score.
-assert.equal(observedI.scoreBonusPct, 145.8);
-assert.equal(observedI.unitScore, 528807);
+// Keep the uncalibrated outfit estimate while using the observed Active/SP.
+// The derived total is a regression value, not an observed game Unit Score.
+assert.equal(observedI.detail.scoreBonus.outfit, 40.5);
+assert.equal(observedI.scoreBonusPct, 149.3);
+assert.equal(observedI.unitScore, 536337);
 
 // Observation J keeps E's members under Ayame. Power, Active and SP remain
 // consistent with the requested experiment, but the game's Passive is 2.7%,
@@ -128,9 +130,12 @@ assert.equal(observedJ.overallPower, 109076);
 for (const category of ["active", "special"]) {
   assert.equal(observedJ.detail.scoreBonus[category], observedE.detail.scoreBonus[category]);
 }
-// Preserve the existing estimate during attribution changes only.
-assert.equal(observedJ.scoreBonusPct, 153.3);
-assert.equal(observedJ.unitScore, 562896);
+// Costume/passive attribution still uses the legacy estimate for this leader;
+// do not disguise the observed 2.7% passive as a successful absolute match.
+assert.equal(observedJ.detail.scoreBonus.outfit, 41.6);
+assert.equal(observedJ.detail.scoreBonus.passive, 3.2);
+assert.equal(observedJ.scoreBonusPct, 149.8);
+assert.equal(observedJ.unitScore, 555118);
 
 // K explicitly confirms E's composition and every displayed field after
 // restoring Ririka. Reevaluate after J so leader-specific intermediate state

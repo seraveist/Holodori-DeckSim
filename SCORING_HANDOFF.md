@@ -1,4 +1,6 @@
-# 유닛 스코어 검증 인수인계 — 2026-09-09
+# 유닛 스코어 검증 인수인계 이력 — 2026-09-09
+
+> 아래는 당시 기록입니다. 현재 상태는 [v1.2.0 검증 기록](SCORING_VALIDATION.md)과 [최신 인수인계](HANDOFF_CURRENT.md)를 따릅니다. 과거의 “서비스 공식 유지”와 “미관측”은 해당 시점에만 유효합니다.
 
 현재 PC 이전용 정리본은 [HANDOFF_CURRENT.md](HANDOFF_CURRENT.md)와 [전체 관측 목록](OBSERVATION_CATALOG_20260909.md)이다. AJ 실측 완료, AK 미측정 상태로 인계한다. 아래는 검증 시점별 이력이다.
 

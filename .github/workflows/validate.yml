@@ -147,6 +147,7 @@ jobs:
           node scripts/test-passive-stat-rounding.mjs
           node scripts/test-passive-target-priority.mjs
           node scripts/test-unit-observations.mjs
+          node scripts/test-unit-display.mjs
           node scripts/test-support-stacking.mjs
           node scripts/test-generic-order.mjs
           node scripts/test-song-representative-order.mjs
@@ -258,13 +259,7 @@ jobs:
 
       - name: Check app version and required files
         run: |
-          grep -q 'data-app-version="1.1.2"' index.html
-          grep -q 'const APP_VERSION = "1.1.2"' js/app.js
-          grep -q 'app.js?v=1.1.2' index.html
-          grep -qx '1.1.3' VERSION
-          grep -q 'version = "1.1.3"' pyproject.toml
-          grep -q '__version__ = "1.1.3"' src/holodori_decksim/__init__.py
-          grep -q '## \[1.1.3\]' CHANGELOG.md
+          node scripts/check-version.mjs
           test -f data/generated/cards.json
           test -f data/generated/characters.json
           test -f data/generated/music.json

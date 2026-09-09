@@ -1,0 +1,517 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-10",
+  "scope": "User observations collected in conversation after AZ. Predictions and observed/partial values remain distinct.",
+  "observations": {
+    "BA": {
+      "board": 11.1,
+      "active": 68.9,
+      "special": 37.5,
+      "passiveRowPresent": false,
+      "allRequestedScoresConfirmed": true,
+      "noelRate": 21.5,
+      "leaderSupport": 13.3
+    },
+    "BB": {
+      "board": 8.4,
+      "active": 68.9,
+      "special": 37.5,
+      "passiveRowPresent": false,
+      "noelRate": 17.8,
+      "leaderSupport": 10,
+      "leader55Booster": false
+    },
+    "BC": {
+      "rawReply": "10.9%임",
+      "board": 10.9,
+      "active": null,
+      "special": null,
+      "passive": null,
+      "noelRate": 17.8,
+      "leaderSupport": 13.3,
+      "requestedLeaderJudgment": false
+    },
+    "BD": {
+      "observed": true,
+      "noelRate": 17.8,
+      "leaderSupport": 9.3,
+      "requestedLeaderJudgment": false,
+      "prediction": {
+        "board": 7.9,
+        "active": 68.9,
+        "special": 37.5,
+        "passiveRowPresent": false
+      },
+      "alternativeConditionalConstantRawCorrection": [
+        8,
+        8.1
+      ],
+      "rawReply": "모두 일치함",
+      "actual": {
+        "board": 7.9,
+        "active": 68.9,
+        "special": 37.5,
+        "passiveRowPresent": false
+      }
+    },
+    "BE": {
+      "observed": true,
+      "baseline": "BC",
+      "memberReplacement": {
+        "from": "card-06002-5-uniq-0066-00",
+        "to": "card-06002-5-uniq-0058-00",
+        "level": 80,
+        "potential": 0
+      },
+      "leaderSupport": 13.3,
+      "leaderJudgment": false,
+      "noelRate": 17.8,
+      "noelFrequency": 0,
+      "kanadeRate": 0,
+      "prediction": {
+        "active": 69.4,
+        "special": 38.6,
+        "passiveRowPresent": false,
+        "board": 10.3
+      },
+      "rawReply": "일치함",
+      "actual": {
+        "active": 69.4,
+        "special": 38.6,
+        "passiveRowPresent": false,
+        "board": 10.3
+      }
+    },
+    "BF": {
+      "observed": true,
+      "fromCurrentBE": {
+        "memberReplacement": "Restore swimsuit Kanade40/0 in last slot",
+        "remove": "Noel85% booster only; preserve node switches"
+      },
+      "leaderSupport": 13.3,
+      "leaderJudgment": false,
+      "noelRate": 11,
+      "noelFrequency": 0,
+      "noel85Booster": false,
+      "kanadeRate": 0,
+      "prediction": {
+        "active": 68.9,
+        "special": 37.5,
+        "passiveRowPresent": false,
+        "board": 10.2
+      },
+      "alternatives": {
+        "neitherIntermediateQuantization": 10.1,
+        "valueOnly": 10.1,
+        "probabilityOnly": 10.1
+      },
+      "rawReply": "10.2% 나머지 일치",
+      "actual": {
+        "active": 68.9,
+        "special": 37.5,
+        "passiveRowPresent": false,
+        "board": 10.2
+      }
+    },
+    "BG": {
+      "observed": true,
+      "from": "BF",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "leaderProfile": {
+        "level": 1,
+        "potential": 0
+      },
+      "members": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "requestedChanges": [
+        "Restore Noel85% enhancement card; same ON nodes become11.1+3.7+3.0=17.8",
+        "Disable all three Ririka score-support nodes6.2+3.1+4.0; support sum0"
+      ],
+      "requestedUnchanged": {
+        "noelFrequency": 0,
+        "noelOtherRateNodesOff": [
+          3.7,
+          2
+        ],
+        "kanadeRate": 0,
+        "leaderJudgment": false,
+        "otherMemberRateAndFrequency": 0
+      },
+      "prediction": {
+        "board": 1.4,
+        "active": 68.9,
+        "special": 37.5,
+        "passiveRowPresent": false
+      },
+      "alternatives": {
+        "ceilRawIncrement": 1.5
+      },
+      "rationale": "With no score-support passives or leader support, isolates Noel activation-rate board contribution at the AX17.8% input. The 1.5 raw-increment comparator was already rejected as a universal rule; do not claim it is equally validated.",
+      "raw": {
+        "A": 68.82976325183536,
+        "BP": 70.24436399000557
+      },
+      "rawReply": "정확히 일치",
+      "actual": {
+        "board": 1.4,
+        "active": 68.9,
+        "special": 37.5,
+        "passiveRowPresent": false
+      }
+    },
+    "BH": {
+      "observed": true,
+      "from": "BG",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "leaderProfile": {
+        "level": 1,
+        "potential": 0
+      },
+      "members": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "requestedChanges": [
+        "Enable Ririka score-support6.2% and unboosted4.0% only; leave3.1%OFF. Result leader support10.2%."
+      ],
+      "requestedUnchanged": {
+        "noelRateNodesOn": [
+          11.1,
+          3.7,
+          3
+        ],
+        "noelRate": 17.8,
+        "noel85Booster": true,
+        "noelRateNodesOff": [
+          3.7,
+          2
+        ],
+        "noelFrequency": 0,
+        "kanadeRate": 0,
+        "leaderJudgment": false
+      },
+      "prediction": {
+        "board": 8.6,
+        "active": 68.9,
+        "special": 37.5,
+        "passiveRowPresent": false
+      },
+      "raw": {
+        "A": 68.82976325183536,
+        "BP": 77.42635270683967
+      },
+      "rationale": "Complement BD6.2+3.1 partial-leader-support intervention with6.2+4; check whether the AX residual also occurs with this two-node subset. Does not by itself distinguish all arithmetic candidates.",
+      "rawReply": "정확히 일치함.",
+      "actual": {
+        "board": 8.6,
+        "active": 68.9,
+        "special": 37.5,
+        "passiveRowPresent": false
+      }
+    },
+    "BI": {
+      "observed": true,
+      "from": "BH",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "leaderProfile": {
+        "level": 1,
+        "potential": 0
+      },
+      "requestedRestore": "Ririka3.1% score-support nodeON;6.2%+4.0%+3.1%=13.3%",
+      "beforeMembers": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "afterMembers": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "requestedUnchanged": {
+        "noelRate": 17.8,
+        "noelRateNodesOn": [
+          11.1,
+          3.7,
+          3
+        ],
+        "noelFrequency": 0,
+        "kanadeRate": 0,
+        "leaderJudgment": false
+      },
+      "requestedMeasurements": "Actual board score before and after swapping Noel/Suisei positions3/4; Active/SP/passive row check.",
+      "predictions": {
+        "unchangedDisplayHypothesis": {
+          "before": 10.9,
+          "after": 10.9,
+          "basis": "Prior AX/BC observations; this is an empirical invariance hypothesis, not the current numeric model."
+        },
+        "currentSelectedModel": {
+          "before": 10.8,
+          "after": 10.8
+        },
+        "unadoptedSinglePrecisionAttribution": {
+          "before": 10.9,
+          "after": 10.8,
+          "caveat": "Already fails BG; diagnostic mechanism only, not a globally validated alternative."
+        },
+        "active": 68.9,
+        "special": 37.5,
+        "passiveRowPresent": false
+      },
+      "rationale": "Tests sensitivity of the residual display step to member summation order without changing the member set or boards. Separate from actual-song SP timing/order optimization.",
+      "beforeMeasurementIsRepeat": true,
+      "rawReply": "똑같음",
+      "actual": {
+        "beforeBoard": 10.9,
+        "afterBoard": 10.9
+      },
+      "interpretation": "User confirmed unchanged board display in the requested before/after test. Other component values were not individually restated; do not count as a fresh full-component match.",
+      "active": null,
+      "special": null,
+      "passive": null
+    },
+    "BJ": {
+      "observed": true,
+      "plannedAt": "2026-09-10",
+      "from": "BI after swap",
+      "plannedInputs": {
+        "schemaVersion": 1,
+        "sampleId": "BJ",
+        "status": "planned",
+        "plannedAt": "2026-09-10",
+        "leaderId": "card-06003-3-nrml-0059-00",
+        "memberIds": [
+          "card-00021-5-uniq-0064-00",
+          "card-00027-5-uniq-0022-00",
+          "card-00018-5-uniq-0068-00",
+          "card-00022-5-uniq-0063-00",
+          "card-06002-5-uniq-0066-00"
+        ],
+        "profiles": [
+          {
+            "id": "card-06003-3-nrml-0059-00",
+            "level": 1,
+            "potential": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "level": 70,
+            "potential": 0
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "level": 80,
+            "potential": 1
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "level": 60,
+            "potential": 0
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "level": 40,
+            "potential": 0
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "level": 80,
+            "potential": 1
+          }
+        ],
+        "boardOverrides": {
+          "chr-00027": {
+            "rate": 0,
+            "cooldown": 0
+          },
+          "chr-00022": {
+            "rate": 17.8,
+            "cooldown": 0
+          },
+          "chr-00018": {
+            "rate": 0,
+            "cooldown": 0
+          },
+          "chr-06002": {
+            "rate": 0,
+            "cooldown": 0
+          },
+          "chr-00021": {
+            "rate": 6,
+            "cooldown": 0
+          }
+        },
+        "leaderSupportOverride": 13.3,
+        "leaderJudgmentRequested": false,
+        "measurementView": {
+          "planned": "Formation detail before song selection",
+          "confirmedForThisSample": false
+        }
+      },
+      "requestedChanges": [
+        "Replace Ayame40/0 in slot1 with swimsuit Flare sparks sunset80/1",
+        "Set Flare activation-rate board6%ON; keep other activation-related boards as stated"
+      ],
+      "requestedUnchanged": {
+        "noelRate": 17.8,
+        "noelRateNodesOn": [
+          11.1,
+          3.7,
+          3
+        ],
+        "noelFrequency": 0,
+        "kanadeRate": 0,
+        "leaderSupport": 13.3,
+        "leaderJudgment": false
+      },
+      "prediction": {
+        "active": 70.5,
+        "special": 40.1,
+        "passive": 4.7,
+        "board": 12.1
+      },
+      "raw": {
+        "A": 70.4440253923351,
+        "P": 75.63139358793015,
+        "B": 81.74825815113284,
+        "BP": 87.14177777772895
+      },
+      "rationale": "New five-card combination absent from the eligible catalog. Retains paired23-second Suisei/Kanade actives and Noel17.8%, activates Noel gen3 score support plus Flare happy score support with overlapping recipients. Tests generalization of passive/board allocation; not a repair or confirmation of the AX residual.",
+      "memberPassiveSupport": {
+        "Flare": 17,
+        "Noel": 9,
+        "Kanade": 8,
+        "Suisei": 0,
+        "Towa": 0
+      },
+      "actual": {
+        "active": 70.5,
+        "special": 40.1,
+        "passive": 4.7,
+        "board": 12.1
+      },
+      "observedAt": "2026-09-10",
+      "rawReply": "정확해",
+      "confirmationScope": "User confirmed all four prospectively requested score components match; no power, total unit score or gameplay score observed."
+    }
+  },
+  "assessment": {
+    "assessedAt": "2026-09-10",
+    "eligiblePassiveBoardRecords": 53,
+    "passiveBoardMatchingRecords": 52,
+    "distinctEligibleFiveCardSets": 27,
+    "spObservedInEligibleRecords": 49,
+    "spMismatches": [],
+    "unresolved": [
+      {
+        "caseFamily": "AX/BC/BI",
+        "component": "board",
+        "model": 10.8,
+        "observed": 10.9,
+        "deltaPercentagePoints": 0.1,
+        "cause": "unresolved",
+        "note": "BC board confirmation and BI order test are separate partial observations/rechecks, not extra full-component model successes."
+      }
+    ],
+    "conclusion": "Evidence supports practical approximate use within the measured pre-song formation-detail scope; the internal formula is not uniquely established. Retain the model without a case-specific adjustment. Current input toggles and order tests did not resolve AX.",
+    "limitations": [
+      "This is not a statement about all card types or actual-song gameplay scores.",
+      "Score-support costume and other excluded samples remain outside this eligible passive/board comparison.",
+      "The 0.1%p residual is observed, not proven to be rounding."
+    ],
+    "filesChanged": false
+  }
+}

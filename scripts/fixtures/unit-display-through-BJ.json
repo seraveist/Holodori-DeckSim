@@ -1,0 +1,4387 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-10",
+  "basis": {
+    "oldCatalog": "analysis/unit-score/observation-catalog-AZ-20260909.json",
+    "subsequentObservations": "analysis/unit-score/observations/BA-BJ-20260910.json",
+    "exclusions": [
+      "I",
+      "J",
+      "M: score-support costumes",
+      "U: unconfirmed leader board"
+    ],
+    "meaning": "53 paired Passive/Board observations, plus BC and BI partial board observations of the AX residual. Missing values are not inferred from forecasts."
+  },
+  "cases": [
+    {
+      "id": "A",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 1,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 76.4,
+        "special": 45.8,
+        "passive": 4,
+        "board": 13.9
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "B",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0058-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 1,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 76.4,
+        "special": 45.8,
+        "passive": 4,
+        "board": 13.9
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "C",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 1,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 78.4,
+        "special": 46.1,
+        "passive": 4.5,
+        "board": 15.2
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "D",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 1,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 70.3,
+        "special": 39.9,
+        "passive": 3.7,
+        "board": 15.6
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "E",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 1,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 66.9,
+        "special": 38.1,
+        "passive": 2.3,
+        "board": 17.5
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "F",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-06002-5-uniq-0066-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00026-5-uniq-0065-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 1,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 66.9,
+        "special": 38.1,
+        "passive": 2.3,
+        "board": 17.5
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "G",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 1,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 70.1,
+        "special": 38.7,
+        "passive": 0,
+        "board": 13.8
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "K",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 1,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 66.9,
+        "special": 38.1,
+        "passive": 2.3,
+        "board": 17.5
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "H",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 1,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 67.3,
+        "special": 38.4,
+        "passive": 2.4,
+        "board": 19.6
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "O",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00027-5-uniq-0022-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 65.6,
+        "special": 37,
+        "passive": null,
+        "board": 14.9
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "P",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 66.4,
+        "special": 37.5,
+        "passive": null,
+        "board": 16.8
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "Q",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 73.3,
+        "special": 40.5,
+        "passive": null,
+        "board": 14.9
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "R",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 73.3,
+        "special": 41.3,
+        "passive": null,
+        "board": 15.3
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "S",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 63.1,
+        "special": 34.3,
+        "passive": null,
+        "board": 13.9
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "T",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00027-5-uniq-0022-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 71.3,
+        "special": 40.9,
+        "passive": null,
+        "board": 14.8
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "V",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 69.1,
+        "special": 39.8,
+        "passive": null,
+        "board": 10.7
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "W",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 75.5,
+        "special": 43.2,
+        "passive": 1.9,
+        "board": 17.3
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "X",
+      "leaderId": "card-06002-5-uniq-0066-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 0,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 75.5,
+        "special": 43.2,
+        "passive": 1.5,
+        "board": 6.9
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "Y",
+      "leaderId": "card-06002-5-uniq-0058-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 0,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 75.5,
+        "special": 43.2,
+        "passive": 1.5,
+        "board": 6.9
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "Z",
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 0,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 75.5,
+        "special": 43.2,
+        "passive": 1.5,
+        "board": 6.9
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AA",
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 0,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 71.1,
+        "special": 42.2,
+        "passive": 0.8,
+        "board": 3.3
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AB",
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 0,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 73.7,
+        "special": 43.6,
+        "passive": 1.8,
+        "board": 5.7
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AC",
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0058-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 0,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 68.4,
+        "special": 40.7,
+        "passive": null,
+        "board": 1.5
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "AD",
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 0,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 71.3,
+        "special": 41.6,
+        "passive": null,
+        "board": 5.3
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "AE",
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 0,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 73.3,
+        "special": 41.3,
+        "passive": null,
+        "board": 4.9
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "AF",
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0058-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 0,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 71.8,
+        "special": 42.6,
+        "passive": 1,
+        "board": 2.3
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AG",
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00022-5-uniq-0063-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 0,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 74.6,
+        "special": 44.3,
+        "passive": 1.7,
+        "board": 5.3
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AH",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00022-5-uniq-0063-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 74.6,
+        "special": 44.3,
+        "passive": 2.2,
+        "board": 15.3
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AI",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 73.7,
+        "special": 43.6,
+        "passive": 2.2,
+        "board": 15.7
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AJ",
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 71.1,
+        "special": 42.2,
+        "passive": 1.5,
+        "board": 12.2
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AK",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": null,
+        "special": null,
+        "passive": 1.5,
+        "board": 12.2
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AL",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06004": {
+            "activationRatePct": 14,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 73.7,
+        "special": 43.6,
+        "passive": 2.2,
+        "board": 15.7
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AM",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00018-5-uniq-0068-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 75.2,
+        "special": 43.1,
+        "passive": 1.7,
+        "board": 9.4
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AN",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 20,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 75.2,
+        "special": 43.9,
+        "passive": 1.6,
+        "board": 10.1
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AO",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 4
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": null,
+        "special": null,
+        "passive": 1.7,
+        "board": 9.4
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AP",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 23.5,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 75.2,
+        "special": 43.9,
+        "passive": 2.3,
+        "board": 12.1
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AQ",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 21.5,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 75.2,
+        "special": 43.9,
+        "passive": 2.3,
+        "board": 12
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AR",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 75.2,
+        "special": 43.9,
+        "passive": 2.4,
+        "board": 11.8
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AS",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": null,
+        "special": null,
+        "passive": 3,
+        "board": 10.1
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AT",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 10.2,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": null,
+        "special": null,
+        "passive": 3,
+        "board": 7.7
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AW",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00018-5-uniq-0068-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-00026": {
+            "activationRatePct": 24.5,
+            "activationFrequencyPct": 4
+          }
+        }
+      },
+      "observed": {
+        "active": 74,
+        "special": 42.9,
+        "passive": 4.7,
+        "board": 11.3
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AV",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00018-5-uniq-0068-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00",
+        "card-00027-5-uniq-0022-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 64.2,
+        "special": 37.3,
+        "passive": 2.4,
+        "board": 10.3
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AX",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 68.9,
+        "special": 37.5,
+        "passive": null,
+        "board": 10.9
+      },
+      "passiveAbsent": true,
+      "knownDifference": {
+        "board": {
+          "model": 10.8,
+          "observed": 10.9
+        }
+      }
+    },
+    {
+      "id": "AY",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00018-5-uniq-0068-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-00026": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 74,
+        "special": 42.9,
+        "passive": 7,
+        "board": 12
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "AZ",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 68.9,
+        "special": 37.5,
+        "passive": null,
+        "board": 9.2
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "BA",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 21.5,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 68.9,
+        "special": 37.5,
+        "passive": null,
+        "board": 11.1
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "BB",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 10,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 68.9,
+        "special": 37.5,
+        "passive": null,
+        "board": 8.4
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "BD",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 9.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 68.9,
+        "special": 37.5,
+        "passive": null,
+        "board": 7.9
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "BE",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0058-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 69.4,
+        "special": 38.6,
+        "passive": null,
+        "board": 10.3
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "BF",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 11,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 68.9,
+        "special": 37.5,
+        "passive": null,
+        "board": 10.2
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "BG",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 0,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 68.9,
+        "special": 37.5,
+        "passive": null,
+        "board": 1.4
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "BH",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 10.2,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 68.9,
+        "special": 37.5,
+        "passive": null,
+        "board": 8.6
+      },
+      "passiveAbsent": true
+    },
+    {
+      "id": "BJ",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00021-5-uniq-0064-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00021": {
+            "activationRatePct": 6,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": 70.5,
+        "special": 40.1,
+        "passive": 4.7,
+        "board": 12.1
+      },
+      "passiveAbsent": false
+    },
+    {
+      "id": "BC",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": null,
+        "special": null,
+        "passive": null,
+        "board": 10.9
+      },
+      "passiveAbsent": false,
+      "knownDifference": {
+        "board": {
+          "model": 10.8,
+          "observed": 10.9
+        }
+      },
+      "partialObservation": true
+    },
+    {
+      "id": "BI",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "accountBonuses": {
+        "leaderBoardSupportPct": 13.3,
+        "memberBoards": {
+          "chr-00010": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00027": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-00022": {
+            "activationRatePct": 17.8,
+            "activationFrequencyPct": 0
+          },
+          "chr-00018": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          },
+          "chr-06002": {
+            "activationRatePct": 0,
+            "activationFrequencyPct": 0
+          }
+        }
+      },
+      "observed": {
+        "active": null,
+        "special": null,
+        "passive": null,
+        "board": 10.9
+      },
+      "passiveAbsent": false,
+      "knownDifference": {
+        "board": {
+          "model": 10.8,
+          "observed": 10.9
+        }
+      },
+      "partialObservation": true
+    }
+  ]
+}

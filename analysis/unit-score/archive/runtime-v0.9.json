@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "gitCommit": "bac0619",
+  "sourcePath": "js/score.js",
+  "archivedPath": "analysis/unit-score/archive/score-v0.9.js",
+  "scoreSHA256": "67a90121a5228d084cb77297654e896cb94a48d4455f405da55c88a8dcd22987",
+  "purpose": "Reproduce the original A-AZ forecasts in an isolated workspace. Current production is tested separately against the observations through BJ."
+}

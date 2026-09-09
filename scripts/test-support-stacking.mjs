@@ -16,11 +16,11 @@ const members = ["A", "B", "C", "D", "E"].map(id => member(id));
 members[0].special = { duration: 11, support: 100, activationRateUp: 0, condition: null };
 members[1].passive = { condition: null, effect: { kind: "support", value: 5, target: { kind: "all", count: 5 } } };
 const unit = evaluateDeck({ leader: leader(20), members });
-// 100% Active × (1 + 20% outfit + 5% passive + 10% average SP) = 135%.
-// Multiplying the 10% SP by the existing 125% incorrectly produces 137.5%.
-assert.deepEqual(unit.detail.scoreBonus, { outfit: 20, active: 100, board: 0, passive: 5, special: 10 });
-assert.equal(unit.scoreBonusPct, 135);
-assert.equal(unit.potentialScoreBonusPct, 135);
+// 191/200 active samples gives 95.5. SP uses ceil2(100*11/120)=9.17,
+// then ceil1(95.5*9.17/100)=8.8, independent of the legacy costume estimate.
+assert.deepEqual(unit.detail.scoreBonus, { outfit: 20, active: 95.5, board: 0, passive: 5, special: 8.8 });
+assert.equal(unit.scoreBonusPct, 129.3);
+assert.equal(unit.potentialScoreBonusPct, 129.3);
 
 const music = { id: "support-addition", playing_seconds: 110, live_score_coefficient_permil: 5 };
 const aggregate = evaluateDeck({ leader: leader(20), members, music });
@@ -42,21 +42,22 @@ const crossing = [member("A", 100), member("B", 125), ...["C", "D", "E"].map(id 
 crossing[0].passive = { condition: null, effect: { kind: "support", value: 30, target: { kind: "self", count: 1 } } };
 for (const m of crossing) m.special = { duration: 11, support: 120, activationRateUp: 0, condition: null };
 const reranked = evaluateDeck({ leader: leader(), members: crossing });
-// A: 100 × (1 + .30 + .60) = 190; B: 125 × (1 + .60) = 200.
-assert.equal(reranked.scoreBonusPct, 200);
-assert.equal(reranked.detail.scoreBonus.special, 70);
+// Formation detail uses normalized Active means; song winner selection above
+// still uses additive support on the actual song's time axis.
+assert.deepEqual(reranked.detail.scoreBonus, { outfit: 0, active: 107.5, board: 0, passive: 14.3, special: 59.2 });
+assert.equal(reranked.scoreBonusPct, 181);
 
-// Passive attribution must use the leader-supported competition. Without a
-// leader A reaches 130 and beats B's 125, adding 5. With +60% leader support,
+// Only the costume fallback retains legacy leader-supported competition.
+// In that model A reaches 130 without a leader. With +60% leader support,
 // A reaches 190 while B reaches 200, so A's passive contributes no marginal
 // gain. Freezing the no-leader passive at 5 would misattribute that gain.
 const leaderCompetition = [member("P", 100), member("Q", 125), ...["R", "S", "T"].map(id => member(id, 0))];
 leaderCompetition[0].passive = { condition: null, effect: { kind: "support", value: 30, target: { kind: "self", count: 1 } } };
 const noLeaderSupport = evaluateDeck({ leader: leader(), members: leaderCompetition });
 const withLeaderSupport = evaluateDeck({ leader: leader(60), members: leaderCompetition });
-assert.equal(noLeaderSupport.detail.scoreBonus.passive, 5);
+assert.equal(noLeaderSupport.detail.scoreBonus.passive, 14.3);
 assert.equal(withLeaderSupport.detail.scoreBonus.passive, 0);
-assert.deepEqual(withLeaderSupport.detail.scoreBonus, { outfit: 75, active: 125, board: 0, passive: 0, special: 0 });
-assert.equal(withLeaderSupport.scoreBonusPct, 200);
-assert.equal(withLeaderSupport.potentialScoreBonusPct, 200);
+assert.deepEqual(withLeaderSupport.detail.scoreBonus, { outfit: 75, active: 107.5, board: 0, passive: 0, special: 0 });
+assert.equal(withLeaderSupport.scoreBonusPct, 182.5);
+assert.equal(withLeaderSupport.potentialScoreBonusPct, 182.5);
 console.log("support stacking: additive sources, SP winner change, leader-aware Passive attribution: OK");

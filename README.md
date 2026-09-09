@@ -1,12 +1,12 @@
 # Holodori DeckSim
 
-**v1.1.3** · 홀로라이브 드림스 보유 카드 기반 6인 라이브 편성 시뮬레이터
+**v1.2.0** · 홀로라이브 드림스 보유 카드 기반 6인 라이브 편성 시뮬레이터
 
 > 비공식 팬메이드 도구입니다. COVER Corporation, hololive production 및 게임 운영 주체와 제휴·후원·공식 인증 관계가 없습니다.
 
 라이브 서비스: https://holosims.net/
 
-계산식 검증의 최신 상태는 [AT 확인 / AU 대기 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 누적44건·액티브/SP40건과 다음 계획을, `node scripts/run-scoring-validation.mjs`로 기존 회귀까지 재현합니다. [초기 인수인계와 이력](SCORING_HANDOFF.md)은 보존합니다.
+계산식 검증과 v1.2.0 반영 범위는 [최신 검증 기록](SCORING_VALIDATION.md)과 [인수인계](HANDOFF_CURRENT.md)에 정리했습니다. `node scripts/run-scoring-validation.mjs` 또는 `node verify-handoff.mjs`로 서비스 실측 회귀와 당시 엔진을 사용하는 과거 연구 재현을 함께 실행합니다.
 
 [AT 결과와 다음 대조](analysis/unit-score/reports/AT-validation-20260909.md)는 멤버 발동률·빈도 제거 기준점에서도 남는 비례/직접 차감 오차를 보존합니다. 리리카 판정 노드를 분리하는 AU를 사전 고정했으며 서비스 공식은 유지합니다.
 
@@ -96,7 +96,7 @@ SP 스킬의 효과 자체는 범용 유닛스코어에도 포함하지만, 특�
 현재 엔진 식별자:
 
 ```text
-unit-score-v0.9-passive-context + song-score-v0.4-chart-timeline
+unit-score-v1.0-verified-display + song-score-v0.4-chart-timeline
 ```
 
 주요 계산 항목:
@@ -113,7 +113,7 @@ unit-score-v0.9-passive-context + song-score-v0.4-chart-timeline
 - 대상 지정 Active Skill Effect Up의 멤버별 적용
 - 인원 제한 패시브는 단일 능력치 효과도 기본 종합력이 높은 적격 멤버부터 적용하며, 동률이면 편성 순서 사용
 - 스페셜 스킬 지속시간·스코어 효과 증가·발동률 증가
-- 동일 액티브 주기의 충돌 손실
+- 범용 상세의 200초 시간창과 동시 액티브 확률 정규화; 선택 악곡은 해당 시간축의 스킬 중첩 계산
 - 악곡 재생시간·스코어 계수
 - Master 풀콤보 노트 수
 - Manual PERFECT FC의 PERFECT 노트 계수와 콤보 보너스
@@ -121,7 +121,7 @@ unit-score-v0.9-passive-context + song-score-v0.4-chart-timeline
 
 범용 유닛 스코어는 calibration fixture 기반 경험 상수 `K = 2.037342`를 사용합니다. 따라서 아래의 Exact 표기는 **채보 시간축이 Exact라는 의미**이며 공식 클라이언트의 전체 최종 점수식을 완전 복제했다는 의미는 아닙니다.
 
-2026-09-08 1차 검증 10개 화면에 후레아 교체 편성 H를 추가하여, 현재 **화면 11건·독립 멤버 조합 6개·리더 포함 편성 8개**를 확인했습니다. 표시된 보드·메모리·강화를 제외한 종합력과 구성 항목은 전부 일치합니다. 스킬 보너스는 아직 보정 중이며, 보드 표시값을 빼도 간접 영향이 제거된 것은 아닙니다. 현재 환산 기준 대비 점수 오차는 약 −1.7%~+5.6%입니다. 이는 이 표본에서 측정한 범위로 정확도 보장이나 실제 악곡 플레이 점수의 오차 범위가 아닙니다. 비교 조건·관측값·남은 검증은 [계산식 1차 검증 기록](SCORING_VALIDATION.md)에 정리했습니다.
+2026-09-10 BJ까지 범용 배분식의 적용 대상 53건에서 패시브·보드 두 항목은 52건 일치했고, 제공된 액티브·SP는 각각 49건 모두 일치했습니다. AX의 보드 0.1%p 차이와 BC·BI 재확인은 남겨 두었습니다. 스코어 서포트 의상의 의상·패시브 배분은 기존 추정식을 유지합니다. 개인 계정 효과는 기본으로 입력되지 않으므로 실제 계정 화면과 비교할 때는 보드 조건을 맞춰야 합니다. 이는 내부 공식이나 실제 곡 점수의 완전한 검증을 뜻하지 않습니다. 수식과 적용 한계는 [검증 기록](SCORING_VALIDATION.md)을 참고하세요.
 
 ## 채보 정확도 계층
 

@@ -94,6 +94,7 @@ jobs:
           node scripts/test-passive-stat-rounding.mjs
           node scripts/test-passive-target-priority.mjs
           node scripts/test-unit-observations.mjs
+          node scripts/test-unit-display.mjs
           node scripts/test-support-stacking.mjs
           node scripts/test-generic-order.mjs
           node scripts/test-song-representative-order.mjs
@@ -116,9 +117,7 @@ jobs:
           if (scoreEngineSelfTest().maxAbsError !== 0) throw new Error('unit-score calibration fixture drift');
           if (exactShortlistSize(700, 50) <= 10) throw new Error('Exact shortlist regression');
           NODE
-          grep -q 'data-app-version="1.1.2"' index.html
-          grep -q 'const APP_VERSION = "1.1.2"' js/app.js
-          grep -q 'app.js?v=1.1.2' index.html
+          node scripts/check-version.mjs
           grep -q 'Manual PERFECT FC' index.html
           grep -q '<option value="potential">최고 잠재 스코어</option>' index.html
           if grep -q '<option value="3">★3</option>' index.html; then exit 1; fi

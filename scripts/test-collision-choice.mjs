@@ -75,10 +75,10 @@ function run({ bParameter, cParameter }) {
 }
 
 const sameParameter = run({ bParameter: 10000, cParameter: 10000 });
-assert.ok(sameParameter.members.includes("B"),
-  "unit-score Active must use independent expectation instead of penalizing B for A's same cycle");
-assert.ok(!sameParameter.members.includes("C"),
-  "a weaker different-cycle Active must not win solely by avoiding a Unit Score collision penalty");
+assert.ok(sameParameter.members.includes("C"),
+  "The calibrated normalized time-window model rewards C's additional covered windows");
+assert.ok(!sameParameter.members.includes("B"));
+assert.equal(sameParameter.score.detail.scoreBonus.active, 50.2);
 
 const parameterAdvantage = run({ bParameter: 30000, cParameter: 10000 });
 assert.ok(parameterAdvantage.members.includes("B"),
@@ -86,4 +86,5 @@ assert.ok(parameterAdvantage.members.includes("B"),
 assert.ok(!parameterAdvantage.members.includes("C"),
   "same-cycle overlap remains a song-timeline concern, not a Unit Score hard/soft penalty");
 
-console.log("unit active independent-overlap regression: OK");
+assert.equal(parameterAdvantage.score.detail.scoreBonus.active, 43.3);
+console.log("unit normalized overlap and parameter tradeoff regression: OK");

@@ -1,6 +1,7 @@
 import { buildSongContext, songKernel, timelineSongProjection } from "./chart-score.js?v=1.1.0";
+import { unitDisplayBonuses, UNIT_DISPLAY_MODEL, UNIT_DISPLAY_CONTEXT } from "./unit-score.js?v=1.2.0";
 
-export const SCORE_ENGINE_VERSION = "unit-score-v0.9-passive-context + song-score-v0.4-chart-timeline";
+export const SCORE_ENGINE_VERSION = "unit-score-v1.0-verified-display + song-score-v0.4-chart-timeline";
 export const UNIT_SCORE_K = 2.037342;
 export const CALIBRATION_FIXTURES = Object.freeze([
   { power: 67629, bonus: 106.8, score: 284936 },
@@ -416,7 +417,7 @@ function applyUnitSupport(details, leaderSupportPct = 0, supportByMember = {}) {
   }));
 }
 
-function unitScoreBonusBreakdown(members, passive, leaderSupportPct = 0, maximize = false) {
+function legacyUnitScoreBonusBreakdown(members, passive, leaderSupportPct = 0, maximize = false) {
   const special = specialAverages(members, UNIT_CONTEXT, false);
   const baseDetails = activeDetails(members, UNIT_CONTEXT, 0, maximize);
   const rateDetails = activeDetails(
@@ -453,6 +454,38 @@ function unitScoreBonusBreakdown(members, passive, leaderSupportPct = 0, maximiz
   const total = (parts) => Object.values(parts).reduce((sum, value) => sum + value, 0);
   const memberParts = { ...base, passive: supported.passive };
   return { outfit: round1(total(supported) - total(memberParts)), ...memberParts };
+}
+
+function unitDisplayConditionMet(condition, members) {
+  const state = staticConditionState(condition, members);
+  if (state !== null) return state;
+  if (condition.kind === "combo") return finite(condition.threshold) <= UNIT_DISPLAY_CONTEXT.notes;
+  if (condition.kind === "life") return finite(condition.threshold) <= 1000;
+  return false;
+}
+
+function unitScoreBonusBreakdown(members, passive, leaderSupportPct, maximize, accountBonuses) {
+  const inputs = members.map(member => {
+    const active = member.active;
+    const board = accountBonuses.memberBoards[member.characterId];
+    return {
+      probability: active.probability, interval: active.interval, duration: active.duration,
+      value: unitDisplayConditionMet(active.condition, members) ? active.conditionalScoreUp : active.baseScoreUp,
+      support: passive.supportByMember[member.id] ?? 0,
+      rate: board?.activationRatePct ?? 0,
+      frequency: board?.activationFrequencyPct ?? 0,
+      specialSupport: member.special.support, specialDuration: member.special.duration,
+      specialRate: unitDisplayConditionMet(member.special.condition, members) ? member.special.activationRateUp : 0,
+    };
+  });
+  const displayed = unitDisplayBonuses(inputs, { leaderBoardSupportPct: accountBonuses.leaderBoardSupportPct, maximize });
+  if (leaderSupportPct > 0) {
+    // Active/SP invariance is observed for score-support costumes too. Their
+    // Outfit/Passive allocation was excluded; retain those legacy estimates.
+    const legacy = legacyUnitScoreBonusBreakdown(members, passive, leaderSupportPct, maximize);
+    return { ...legacy, active: displayed.active, special: displayed.special };
+  }
+  return displayed;
 }
 
 function exactSameIntervalExpected(group, liveDuration) {
@@ -704,12 +737,18 @@ function normalizeAccountBonuses(accountBonuses = null) {
   return {
     memberEnhancementPermyriad: Math.max(0, finite(explicitPermyriad, fromPct)),
     boardScoreBonusPct: Math.max(0, finite(source?.boardScoreBonusPct)),
+    leaderBoardSupportPct: Math.max(0, finite(source?.leaderBoardSupportPct)),
+    memberBoards: Object.fromEntries(Object.entries(source?.memberBoards ?? {}).sort(([a], [b]) => a.localeCompare(b))
+      .map(([id, value]) => [id, {
+        activationRatePct: Math.max(0, finite(value?.activationRatePct)),
+        activationFrequencyPct: Math.max(0, finite(value?.activationFrequencyPct)),
+      }])),
   };
 }
 
 function accountBonusKey(accountBonuses) {
   const normalized = normalizeAccountBonuses(accountBonuses);
-  return `${normalized.memberEnhancementPermyriad}|${normalized.boardScoreBonusPct}`;
+  return JSON.stringify(normalized);
 }
 
 function buildDeckComposition({ leader, members, separateRole = true, includePotential = true, accountBonuses = null }) {
@@ -753,18 +792,19 @@ function buildDeckComposition({ leader, members, separateRole = true, includePot
   const enhancementPower = Math.max(0, overallPower - preEnhancementPower);
 
   // Unit Score detail is decomposed by mechanic category without double-counting.
-  // Same-cycle overlap correction remains an internal song/timeline concern.
+  // The legacy same-cycle loss diagnostic is separate from the new display
+  // model's normalized overlap calculation and the song's actual timeline.
   const unitSkill = skillEvaluation(members, UNIT_CONTEXT, false);
-  const active = unitSkill.active.independentPct;
-  const activeBase = unitSkill.activeBase.independentPct;
   const internalActive = unitSkill.active.correctedPct;
   const internalActiveBase = unitSkill.activeBase.correctedPct;
   const rateGain = Math.max(0, internalActive - internalActiveBase);
-  const unitBreakdown = unitScoreBonusBreakdown(members, passive, leaderEffects.support, false);
+  const unitBreakdown = unitScoreBonusBreakdown(members, passive, leaderEffects.support, false, normalizedAccountBonuses);
+  const active = unitBreakdown.active;
+  const activeBase = active;
   const scoreBonusDetail = {
     outfit: unitBreakdown.outfit,
     active: unitBreakdown.active,
-    board: round1(normalizedAccountBonuses.boardScoreBonusPct),
+    board: round1((unitBreakdown.board ?? 0) + normalizedAccountBonuses.boardScoreBonusPct),
     passive: unitBreakdown.passive,
     special: unitBreakdown.special,
   };
@@ -774,11 +814,11 @@ function buildDeckComposition({ leader, members, separateRole = true, includePot
   let potentialUnitScore = unitScore;
   let potentialScoreBonusPct = scoreBonusPct;
   if (includePotential) {
-    const potentialBreakdown = unitScoreBonusBreakdown(members, passive, leaderEffects.support, true);
+    const potentialBreakdown = unitScoreBonusBreakdown(members, passive, leaderEffects.support, true, normalizedAccountBonuses);
     const potentialScoreBonusDetail = {
       outfit: potentialBreakdown.outfit,
       active: potentialBreakdown.active,
-      board: round1(normalizedAccountBonuses.boardScoreBonusPct),
+      board: round1((potentialBreakdown.board ?? 0) + normalizedAccountBonuses.boardScoreBonusPct),
       passive: potentialBreakdown.passive,
       special: potentialBreakdown.special,
     };
@@ -788,6 +828,7 @@ function buildDeckComposition({ leader, members, separateRole = true, includePot
 
   return {
     potentialComputed: includePotential,
+    unitBonusModel: leaderEffects.support > 0 ? "legacy-score-support-costume" : UNIT_DISPLAY_MODEL,
     accountBonusKey: accountBonusKey(normalizedAccountBonuses),
     accountBonuses: normalizedAccountBonuses,
     primaryMet,
@@ -895,6 +936,7 @@ export function evaluateDeck({
       additionalCount: leader.leader.additionalCondition.length,
     },
     detail: {
+      unitBonusModel: composition.unitBonusModel,
       power: {
         memberParameter: composition.baseParameter,
         outfit: composition.leaderPower,
