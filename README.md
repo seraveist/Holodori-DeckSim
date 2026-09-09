@@ -6,9 +6,9 @@
 
 라이브 서비스: https://holosims.net/
 
-계산식 검증의 최신 상태는 [AL 확인 / AM·AN 대기 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 누적36건·액티브/SP35건과 다음 계획을, `node scripts/run-scoring-validation.mjs`로 기존 회귀까지 재현합니다. [초기 인수인계와 이력](SCORING_HANDOFF.md)은 보존합니다.
+계산식 검증의 최신 상태는 [AM·AN 실측 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 누적38건·액티브/SP37건을, `node scripts/run-scoring-validation.mjs`로 기존 회귀까지 재현합니다. [초기 인수인계와 이력](SCORING_HANDOFF.md)은 보존합니다.
 
-다음은 [AM·AN 액티브가 같은 카드 대조](analysis/unit-score/reports/AM-AN-plan-20260909.md)입니다. `node scripts/test-validation-al.mjs`로 AL 결과와 두 사전 계획을 재현합니다.
+[AM·AN 비교 결과](analysis/unit-score/reports/AM-AN-validation-20260909.md)는 기본 다섯 항목 일치와 패시브 불변 가설의 탈락을 기록합니다. `node scripts/test-validation-am-an.mjs`로 재현합니다. 서비스 계산식은 이번 연구로 바꾸지 않았습니다.
 
 ## 주요 기능
 

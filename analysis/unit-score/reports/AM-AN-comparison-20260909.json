@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AN",
+  "observationsReceived": [
+    "AM",
+    "AN"
+  ],
+  "nextUnobserved": [],
+  "rows": [
+    {
+      "sampleId": "AM",
+      "comparisons": [
+        {
+          "item": "memberParameter",
+          "predicted": 84075,
+          "observed": 84075,
+          "matches": true
+        },
+        {
+          "item": "outfitPower",
+          "predicted": 12620,
+          "observed": 12620,
+          "matches": true
+        },
+        {
+          "item": "passivePower",
+          "predicted": 7816,
+          "observed": 7816,
+          "matches": true
+        },
+        {
+          "item": "active",
+          "predicted": 75.2,
+          "observed": 75.2,
+          "matches": true
+        },
+        {
+          "item": "special",
+          "predicted": 43.1,
+          "observed": 43.1,
+          "matches": true
+        }
+      ],
+      "observedScoreRows": {
+        "outfit": null,
+        "active": 75.2,
+        "special": 43.1,
+        "passive": 1.7,
+        "board": 9.4
+      },
+      "arithmetic": {
+        "powerSum": 132590,
+        "reportedOverallPower": 132590,
+        "powerSumMatches": true,
+        "scoreRowsSum": 129.4,
+        "reportedScoreBonus": 129.4,
+        "scoreRowsSumMatches": true,
+        "retainedPower": 104511,
+        "finalUnitScore": null
+      },
+      "joint": {
+        "rawCombined": 11.04875382225525,
+        "singleCeil": 11.1,
+        "twoCeilPossibleSums": [
+          11.1,
+          11.2
+        ],
+        "reportedSum": 11.1,
+        "compatible": true,
+        "frozenPossibleDisplays": [
+          11.1,
+          11.2
+        ]
+      },
+      "allocationResearch": {
+        "Araw": 75.119294237116,
+        "Braw": 83.14778358474224,
+        "BPraw": 86.16804805937124,
+        "marginal": 3.020264474629002,
+        "differenceOfCeilPassive": 3,
+        "conditionalPassiveRawInterval": {
+          "min": 1.6487538222552498,
+          "max": 1.7,
+          "minInclusive": true,
+          "maxInclusive": true
+        },
+        "conditionalMarginalMultiplierInterval": {
+          "min": 0.545897167650451,
+          "max": 0.562864614764845,
+          "minInclusive": true,
+          "maxInclusive": true
+        }
+      }
+    },
+    {
+      "sampleId": "AN",
+      "comparisons": [
+        {
+          "item": "memberParameter",
+          "predicted": 79007,
+          "observed": 79007,
+          "matches": true
+        },
+        {
+          "item": "outfitPower",
+          "predicted": 11859,
+          "observed": 11859,
+          "matches": true
+        },
+        {
+          "item": "passivePower",
+          "predicted": 7816,
+          "observed": 7816,
+          "matches": true
+        },
+        {
+          "item": "active",
+          "predicted": 75.2,
+          "observed": 75.2,
+          "matches": true
+        },
+        {
+          "item": "special",
+          "predicted": 43.9,
+          "observed": 43.9,
+          "matches": true
+        }
+      ],
+      "observedScoreRows": {
+        "outfit": null,
+        "active": 75.2,
+        "special": 43.9,
+        "passive": 1.6,
+        "board": 10.1
+      },
+      "arithmetic": {
+        "powerSum": 128550,
+        "reportedOverallPower": 128550,
+        "powerSumMatches": true,
+        "scoreRowsSum": 130.8,
+        "reportedScoreBonus": 130.8,
+        "scoreRowsSumMatches": true,
+        "retainedPower": 98682,
+        "finalUnitScore": null
+      },
+      "joint": {
+        "rawCombined": 11.606523285102554,
+        "singleCeil": 11.7,
+        "twoCeilPossibleSums": [
+          11.7,
+          11.8
+        ],
+        "reportedSum": 11.7,
+        "compatible": true,
+        "frozenPossibleDisplays": [
+          11.7,
+          11.8
+        ]
+      },
+      "allocationResearch": {
+        "Araw": 75.119294237116,
+        "Braw": 83.76435252052087,
+        "BPraw": 86.72581752221855,
+        "marginal": 2.9614650016976753,
+        "differenceOfCeilPassive": 3,
+        "conditionalPassiveRawInterval": {
+          "min": 1.5065232851025545,
+          "max": 1.6,
+          "minInclusive": true,
+          "maxInclusive": true
+        },
+        "conditionalMarginalMultiplierInterval": {
+          "min": 0.5087087925195578,
+          "max": 0.5402731415305573,
+          "minInclusive": true,
+          "maxInclusive": true
+        }
+      }
+    }
+  ],
+  "summary": {
+    "observations": 38,
+    "distinctMemberSets": 23,
+    "activeObserved": 37,
+    "activeMatches": 37,
+    "spObserved": 37,
+    "spMatches": 37,
+    "confirmedPowerComponents": 97,
+    "positivePassiveJointCompatibility": 23,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false
+  },
+  "deltaANMinusAM": {
+    "active": 0,
+    "special": 0.8,
+    "passive": -0.1,
+    "board": 0.7,
+    "joint": 0.6,
+    "totalScoreBonus": 1.4
+  },
+  "frozenRelationshipTest": {
+    "passiveDifference": 0,
+    "kind": "Null hypothesis for a split based only on base Active/support/leader inputs. Neither individual passive value is predicted.",
+    "observedPassiveDifference": -0.1,
+    "matches": false,
+    "conclusion": "Rejected: equal base Active/support/leader inputs did not preserve displayed passive. No individual passive or board value was predicted."
+  },
+  "conditionalAllocation": {
+    "assumptions": [
+      "The existing BPraw-Araw model is the exact sum of the two raw categories.",
+      "Each category is independently rounded upward to one decimal place. Neither assumption is proved by range compatibility."
+    ],
+    "passiveRawDeltaInterval": {
+      "min": -0.19347671489744545,
+      "max": -0.04875382225524971,
+      "minInclusive": true,
+      "maxInclusive": true
+    },
+    "marginalMultiplierIntersection": {
+      "min": 0.545897167650451,
+      "max": 0.5402731415305573,
+      "empty": true
+    },
+    "conclusion": "Under both assumptions, even this pair excludes one constant multiplier of BPraw-Braw. Without the raw-sum assumption the pair alone does not exclude every multiplier."
+  },
+  "interpretation": {
+    "supported": "Both frozen baseline tables match and both frozen joint candidate sets contain the observed sums. Passive display invariance fails.",
+    "unidentified": [
+      "SP duration/support changes: Suisei12s/100 ->Kanade14s/95.",
+      "Member stats, attribute and character change; neither swapped card receives Noel support.",
+      "This is not a board-only intervention."
+    ],
+    "nextPriority": "Test allocation candidates against all recorded observations, then freeze a discriminating single-factor control. AM/AN do not identify board vs SP causation.",
+    "nextPlan": null,
+    "productionFormulaChanged": false,
+    "generalAllocationFormulaConfirmed": false
+  },
+  "provenance": {
+    "checkpoint": "analysis/unit-score/experiments/baseline-passive-AM-AN-20260909.json",
+    "checkpointSHA256": "0d9b0682ee9535d67ced1b7c3804db4c311adf066d4ae0af50f5a70a9daf2d19",
+    "parentCatalog": "analysis/unit-score/observation-catalog-AL-20260909.json",
+    "parentCatalogSHA256": "a9e50cd0d409717c2cf369769d202ca72c0819d8dbea4901a5283aacad94fe57",
+    "observations": [
+      {
+        "path": "analysis/unit-score/observations/AM-20260909.json",
+        "sha256": "3d40b19cd25eea895b95f0f6aafc68709cd3d984cecbe32c43c2be54be899e02"
+      },
+      {
+        "path": "analysis/unit-score/observations/AN-20260909.json",
+        "sha256": "a8227104f12abb974e37f787fe8fdb36d091b51d1b46a87a00561e78c65026c1"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "analysis/unit-score/observations/screenshots/AM-20260909.png",
+        "sha256": "099954926a6c50e78489b73a81962b4f2ae3fdaad3e830f529c6b0b437e82607",
+        "originalBasename": "codex-clipboard-71babc20-d15a-429b-993d-b1b8e05b107b.png",
+        "attachmentIndex": 1
+      },
+      {
+        "path": "analysis/unit-score/observations/screenshots/AN-20260909.png",
+        "sha256": "2fae36b4001bedfa5916c75d4b9eed073ad4fd404da5d66bec51693b74c4599e",
+        "originalBasename": "codex-clipboard-8a85c503-edc1-404d-8481-93368a5333da.png",
+        "attachmentIndex": 2
+      }
+    ],
+    "sourceHashes": {
+      "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+      "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+      "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+      "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+      "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+      "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+      "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+      "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+    },
+    "analysisSourceSHA256": "797568ed1e71ccf367fee120068f94d497a7dec620a11eee8c836f98b1480106",
+    "predictionsAndProductionUnchanged": true
+  }
+}

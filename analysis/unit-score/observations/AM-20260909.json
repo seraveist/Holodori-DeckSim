@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AM",
+  "observedAt": "2026-09-09",
+  "gameVersion": null,
+  "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00021-5-uniq-0017-00",
+    "card-00018-5-uniq-0068-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Frozen AM/AN plan inherited. User explicitly maps the two images to AM/AN; detail screenshots do not display card levels or board nodes.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "visible": "Unit score detail",
+    "basis": "Screenshot shows the detail panel, not the song-selection state."
+  },
+  "rawUserInput": "첨부한 이미지 순차적으로 am, an 편성 결과물임",
+  "screenshot": {
+    "path": "analysis/unit-score/observations/screenshots/AM-20260909.png",
+    "sha256": "099954926a6c50e78489b73a81962b4f2ae3fdaad3e830f529c6b0b437e82607",
+    "originalBasename": "codex-clipboard-71babc20-d15a-429b-993d-b1b8e05b107b.png",
+    "attachmentIndex": 1
+  },
+  "game": {
+    "unitScore": null,
+    "overallPower": 132590,
+    "scoreBonusPct": 129.4,
+    "powerDetail": {
+      "memberParameter": 84075,
+      "outfit": 12620,
+      "passive": 7816,
+      "board": 22458,
+      "memory": 4716,
+      "enhancement": 905
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 75.2,
+      "special": 43.1,
+      "passive": 1.7,
+      "board": 9.4
+    }
+  },
+  "scoreRowPresence": {
+    "outfit": false,
+    "active": true,
+    "special": true,
+    "passive": true,
+    "board": true
+  },
+  "categoryStatus": {
+    "totals": "Overall power and score bonus totals directly visible; final unit score not shown.",
+    "scoreOutfit": "No score-outfit row displayed. Raw value stays null; the sum of visible score rows is computed separately."
+  },
+  "boardContext": "Frozen AM/AN inputs inherited; no board changes or new board values reported in this message.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-AM-AN-20260909.json",
+  "predictionCheckpointSHA256": "0d9b0682ee9535d67ced1b7c3804db4c311adf066d4ae0af50f5a70a9daf2d19"
+}

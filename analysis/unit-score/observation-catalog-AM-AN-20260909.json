@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AN",
+  "nextUnobserved": [],
+  "extendsCatalog": "analysis/unit-score/observation-catalog-AL-20260909.json",
+  "extendsCatalogSHA256": "a9e50cd0d409717c2cf369769d202ca72c0819d8dbea4901a5283aacad94fe57",
+  "scope": "Append the two explicitly mapped AM/AN screenshots to AL36. No old observation or plan is modified. No new experiment is frozen yet.",
+  "summary": {
+    "observations": 38,
+    "distinctMemberSets": 23,
+    "activeObserved": 37,
+    "activeMatches": 37,
+    "spObserved": 37,
+    "spMatches": 37,
+    "confirmedPowerComponents": 97,
+    "positivePassiveJointCompatibility": 23,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false
+  },
+  "observations": [
+    {
+      "sampleId": "AM",
+      "sourcePath": "analysis/unit-score/observations/AM-20260909.json",
+      "sourceSHA256": "3d40b19cd25eea895b95f0f6aafc68709cd3d984cecbe32c43c2be54be899e02",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00018-5-uniq-0068-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 132590,
+        "scoreBonusPct": 129.4,
+        "powerDetail": {
+          "memberParameter": 84075,
+          "outfit": 12620,
+          "passive": 7816,
+          "board": 22458,
+          "memory": 4716,
+          "enhancement": 905
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 75.2,
+          "special": 43.1,
+          "passive": 1.7,
+          "board": 9.4
+        }
+      },
+      "rawUserInput": "첨부한 이미지 순차적으로 am, an 편성 결과물임",
+      "screenshot": {
+        "path": "analysis/unit-score/observations/screenshots/AM-20260909.png",
+        "sha256": "099954926a6c50e78489b73a81962b4f2ae3fdaad3e830f529c6b0b437e82607",
+        "originalBasename": "codex-clipboard-71babc20-d15a-429b-993d-b1b8e05b107b.png",
+        "attachmentIndex": 1
+      }
+    },
+    {
+      "sampleId": "AN",
+      "sourcePath": "analysis/unit-score/observations/AN-20260909.json",
+      "sourceSHA256": "a8227104f12abb974e37f787fe8fdb36d091b51d1b46a87a00561e78c65026c1",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 128550,
+        "scoreBonusPct": 130.8,
+        "powerDetail": {
+          "memberParameter": 79007,
+          "outfit": 11859,
+          "passive": 7816,
+          "board": 24558,
+          "memory": 4432,
+          "enhancement": 878
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 75.2,
+          "special": 43.9,
+          "passive": 1.6,
+          "board": 10.1
+        }
+      },
+      "rawUserInput": "첨부한 이미지 순차적으로 am, an 편성 결과물임",
+      "screenshot": {
+        "path": "analysis/unit-score/observations/screenshots/AN-20260909.png",
+        "sha256": "2fae36b4001bedfa5916c75d4b9eed073ad4fd404da5d66bec51693b74c4599e",
+        "originalBasename": "codex-clipboard-8a85c503-edc1-404d-8481-93368a5333da.png",
+        "attachmentIndex": 2
+      }
+    }
+  ]
+}

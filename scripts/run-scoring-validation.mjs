@@ -13,6 +13,7 @@ const tests = [
   'scripts/test-validation-ak.mjs',
   'scripts/test-validation-al-plan.mjs',
   'scripts/test-validation-al.mjs',
+  'scripts/test-validation-am-an.mjs',
 ];
 if (args.includes('--research-grid')) tests.push(...[
   'probe-dummy-active-joint.mjs', 'probe-dummy-environment.mjs', 'probe-dummy-identifiability.mjs',
