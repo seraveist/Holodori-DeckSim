@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T05:57:50.815Z",
+  "status": "planned; no AD observation received",
+  "sampleId": "AD",
+  "leaderId": "card-00018-5-uniq-0068-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00021-5-uniq-0017-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "features": {
+    "id": "AD",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-06004-5-uniq-0060-00",
+      "card-00021-5-uniq-0017-00",
+      "card-06002-5-uniq-0066-00"
+    ],
+    "Araw": 71.2179531155813,
+    "A": 71.3,
+    "W": 6280,
+    "rateSum": 120,
+    "rateDurationSum": 1200,
+    "SP": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "name": "시라누이 후레아",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "name": "오토노세 카나데",
+        "duration": 14,
+        "support": 95,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true
+      }
+    ],
+    "observedActive": null,
+    "observedSP": null,
+    "displayedActiveFlatRate": {
+      "raw": 41.59166666666666,
+      "ceil": 41.6
+    },
+    "displayedActiveDurationRate": {
+      "raw": 41.59166666666666,
+      "ceil": 41.6
+    },
+    "rawActiveFlatRate": {
+      "raw": 41.54380598408908,
+      "ceil": 41.6
+    },
+    "power": {
+      "memberParameter": 76437,
+      "outfit": 0,
+      "board": 0,
+      "passive": 12553,
+      "memory": 0,
+      "enhancement": 0
+    },
+    "retainedPower": 88990,
+    "conditions": {
+      "leaderScoreSupport": 0,
+      "leaderParameterConditionMet": false,
+      "passiveSupport": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "active": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 2,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 100
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 80
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "condition": {
+            "kind": "life",
+            "threshold": 600
+          },
+          "conditionMet": true,
+          "effectiveValue": 115
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "condition": {
+            "kind": "combo",
+            "threshold": 40
+          },
+          "conditionMet": true,
+          "effectiveValue": 100
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 100
+        }
+      ]
+    }
+  },
+  "quantized": {
+    "contributions": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 11.25,
+        "roundedSupport": 11.25,
+        "rateContribution": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "name": "시라누이 후레아",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "name": "오토노세 카나데",
+        "duration": 14,
+        "support": 95,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 11.083333333333334,
+        "roundedSupport": 11.09,
+        "rateContribution": 0
+      }
+    ],
+    "supportSum": 52.34,
+    "factor": 58.34,
+    "raw": 41.596419999999995,
+    "display": 41.6
+  },
+  "boardFeatures": {
+    "id": "AD",
+    "inputs": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "characterId": "chr-00010",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "characterId": "chr-00027",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "characterId": "chr-06004",
+        "support": 0,
+        "board": {
+          "rate": 14,
+          "cooldown": 4
+        }
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "characterId": "chr-00021",
+        "support": 0,
+        "board": {
+          "rate": 6,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "characterId": "chr-06002",
+        "support": 0,
+        "board": {
+          "rate": 20,
+          "cooldown": 0
+        }
+      }
+    ],
+    "base": 71.2179531155813,
+    "passiveOnly": 71.2179531155813,
+    "boardOnly": 76.59062946999826,
+    "both": 76.59062946999826,
+    "raw": {
+      "boardBeforePassive": 5.372676354416967,
+      "passiveAfterBoard": 0,
+      "passiveBeforeBoard": 0,
+      "boardAfterPassive": 5.372676354416967,
+      "combined": 5.372676354416967
+    },
+    "display": {
+      "boardBeforePassive": 5.4,
+      "passiveAfterBoard": 0,
+      "passiveBeforeBoard": 0,
+      "boardAfterPassive": 5.4,
+      "combined": 5.4
+    },
+    "observed": {
+      "board": null,
+      "passive": null,
+      "sum": null
+    },
+    "combinedMatches": null,
+    "effectiveActive": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "interval": 29,
+        "probability": 0.55
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "interval": 19,
+        "probability": 0.55
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "interval": 21.153846153846153,
+        "probability": 0.6270000000000001
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "interval": 26,
+        "probability": 0.5830000000000001
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "interval": 23,
+        "probability": 0.552
+      }
+    ]
+  },
+  "displayCandidates": {
+    "rawActive": 71.2179531155813,
+    "displayedActive": 71.3,
+    "rawBoardAdjustedActive": 76.59062946999826,
+    "displayedBoardAdjustedActive": 76.6,
+    "rawIncrement": 5.372676354416967,
+    "rawIncrementCeil": 5.4,
+    "rawIncrementRound": 5.4,
+    "rawIncrementFloor": 5.3,
+    "differenceOfCeilDisplays": 5.3,
+    "ceilAfterSubtractingDisplayedActive": 5.3
+  },
+  "change": "Keep AC leader and four other members. Replace regular Kanade80/0 with swimsuit Kanade40/0.",
+  "purpose": "Hold member character-board inputs fixed and retain zero score-support passive, while the changed Active profile distinguishes raw-increment rounding from the floor/difference-of-ceil-displays alternatives.",
+  "fixedBoardInputs": [
+    {
+      "characterId": "chr-00010",
+      "rate": 0,
+      "cooldown": 0
+    },
+    {
+      "characterId": "chr-00021",
+      "rate": 6,
+      "cooldown": 0
+    },
+    {
+      "characterId": "chr-00027",
+      "rate": 0,
+      "cooldown": 0
+    },
+    {
+      "characterId": "chr-06002",
+      "rate": 20,
+      "cooldown": 0
+    },
+    {
+      "characterId": "chr-06004",
+      "rate": 14,
+      "cooldown": 4
+    }
+  ],
+  "fixed": "Suisei leader, no active outfit or relevant leader boards, same five member characters and recorded timing/rate boards, no score-support passive.",
+  "hypotheses": {
+    "active": {
+      "display": 71.3,
+      "kind": "Existing board-excluded formula"
+    },
+    "special": {
+      "display": 41.6,
+      "kind": "Existing board-excluded formula"
+    },
+    "passive": {
+      "display": 0,
+      "kind": "Zero or absent passive score row expected from card effects."
+    },
+    "board": {
+      "singlePrediction": null,
+      "candidates": [
+        {
+          "display": 5.3,
+          "rules": [
+            "rawIncrementFloor",
+            "differenceOfCeilDisplays"
+          ]
+        },
+        {
+          "display": 5.4,
+          "rules": [
+            "rawIncrementRound"
+          ]
+        }
+      ],
+      "failedOldRule": {
+        "rule": "rawIncrementCeil",
+        "display": 5.4,
+        "status": "Already failed AC; preserved as reference, not an AC-surviving candidate."
+      }
+    },
+    "conditionalTotalScoreBonus": {
+      "byBoardDisplay": {
+        "5.3": 118.2,
+        "5.4": 118.3
+      },
+      "status": "Derived sums assuming only Active/board/SP categories. No unique total prediction."
+    }
+  },
+  "assumptions": "Same pre-song view and unchanged board unlocks. Swimsuit Kanade40/0 replaces regular Kanade80/0; other profiles stay fixed, including general Flare11/0. Raden life600 and Flare40combo treated as met; Ayame singer effects excluded.",
+  "limitations": "Changing the card also changes parameter-passive effects, member stats and SP, evaluated separately. AD5.3 cannot distinguish floor from difference of ceiled Active values. No final display rule is proven by one match.",
+  "interpretation": {
+    "5.3": "Supports floor/difference-of-ceil alternatives over raw-increment round for this new composition; those two remain indistinguishable.",
+    "5.4": "Supports raw-increment round over the two5.3 alternatives, conditional on the raw model. Does not undo the original AC raw-ceil failure.",
+    "other": "Record the miss and revisit the raw calculation/context rather than add a case-specific correction."
+  },
+  "requestedMeasurements": "Member parameter, passive power, Active, SP, exact board display and whether passive score is absent. Total score bonus if available.",
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "newEvidenceHashes": {
+    "analysis/unit-score/board-observations/WX-clarification-20260909.json": "76063061352c10a3bd54bbb34c166d5082c969079123ae8f778c4e16c733d32f",
+    "analysis/unit-score/board-observations/ririka-X-20260909.json": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438",
+    "analysis/unit-score/board-observations/suisei-Y-clarification-20260909.json": "b5c622f99d2a322d8b7f43e177ed2f03ab3bad4ebdae2726142cdcb28adcc12b",
+    "analysis/unit-score/board-observations/AA-member-clarification-20260909.json": "fbe5828797493d54745b95440322da282521b109ddb29d092a66875b8e7097dc"
+  },
+  "observationHashes": {
+    "analysis/unit-score/observations/Z-20260909-completed.json": "7953e134131cc90242a93e5def0a1bfde32dd3f8472d9f81911c1da5a275f655",
+    "analysis/unit-score/observations/AA-20260909.json": "fcf6fbdb4cfef6e64cef245f057b427bf4a8ad2611c456d0220688f7b63ccb65",
+    "analysis/unit-score/observations/AB-20260909.json": "d7f54005c43a8bd085c79bda8c191841fa9646007444d2053018184d28444c49",
+    "analysis/unit-score/observations/AC-20260909.json": "5436910da10be12180fbf345e11b11db18a3880f6fb5a5b3115bec28c9f9f9fe"
+  },
+  "ACCheckpointSHA256": "baee94fb242e4cead3cebcfab4b82fb285a774b2638c31afa98591ee98065e61",
+  "analysisSourceSHA256": "8e9ebc993e21040adc6ceeb1332620a0010ccc1840cb8fbdf6c2ec37d360391b",
+  "previousAnalysisSourceSHA256": "9bbdb79a047b55dd343eda8f430984ac6254ab0f013d1019c2c6ea38558dfe70",
+  "boardModelSourceSHA256": "85f3a46a917c4832a0ac9a827a614aff8e2351d03a65b4a29cb994e57eb11f86",
+  "AAComparisonSourceSHA256": "85892be042c6e54f806a0b1b0413641e7b73426266325c5b3072fec08ae26e15",
+  "modelStatus": "AC raw-increment ceil1.6 failed against1.5. Three post-AC display alternatives remain; AD predicts5.3 for floor/difference of ceiled Actives versus5.4 for raw-increment round. No single board prediction or exact formula has been selected."
+}

@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T04:36:34.563Z",
+  "status": "planned; no X observation received",
+  "sampleId": "X",
+  "leaderId": "card-06002-5-uniq-0066-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "leaderDescription": "해피 타입 2명 이상이면 전원의 퍼포먼스가 130% UP",
+  "features": {
+    "id": "X",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-06004-5-uniq-0060-00",
+      "card-00022-5-uniq-0063-00",
+      "card-00026-5-uniq-0065-00"
+    ],
+    "Araw": 75.44958333333327,
+    "A": 75.5,
+    "W": 6160,
+    "rateSum": 115,
+    "rateDurationSum": 1185,
+    "SP": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "name": "시로가네 노엘",
+        "duration": 12,
+        "support": 100,
+        "rate": 0,
+        "condition": {
+          "kind": "group",
+          "value": "grp-gen_3",
+          "count": 2
+        },
+        "conditionMet": false
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "name": "츠노마키 와타메",
+        "duration": 11,
+        "support": 110,
+        "rate": 35,
+        "condition": null,
+        "conditionMet": true
+      }
+    ],
+    "observedActive": null,
+    "observedSP": null,
+    "displayedActiveFlatRate": {
+      "raw": 43.09791666666666,
+      "ceil": 43.1
+    },
+    "displayedActiveDurationRate": {
+      "raw": 43.230041666666665,
+      "ceil": 43.3
+    },
+    "rawActiveFlatRate": {
+      "raw": 43.069137152777735,
+      "ceil": 43.1
+    },
+    "power": {
+      "memberParameter": 100252,
+      "outfit": 43945,
+      "board": 0,
+      "passive": 12584,
+      "memory": 0,
+      "enhancement": 0
+    },
+    "retainedPower": 156781,
+    "conditions": {
+      "leaderScoreSupport": 0,
+      "leaderParameterConditionMet": true,
+      "passiveSupport": [
+        0,
+        0,
+        8,
+        0,
+        8
+      ],
+      "active": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 2,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 100
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 80
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "condition": {
+            "kind": "life",
+            "threshold": 600
+          },
+          "conditionMet": true,
+          "effectiveValue": 115
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 120
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 3,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 120
+        }
+      ]
+    }
+  },
+  "quantized": {
+    "contributions": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 11.25,
+        "roundedSupport": 11.25,
+        "rateContribution": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "name": "시로가네 노엘",
+        "duration": 12,
+        "support": 100,
+        "rate": 0,
+        "condition": {
+          "kind": "group",
+          "value": "grp-gen_3",
+          "count": 2
+        },
+        "conditionMet": false,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 0
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "name": "츠노마키 와타메",
+        "duration": 11,
+        "support": 110,
+        "rate": 35,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10.083333333333334,
+        "roundedSupport": 10.09,
+        "rateContribution": 1.75
+      }
+    ],
+    "supportSum": 51.34,
+    "factor": 57.09,
+    "raw": 43.10295,
+    "display": 43.2
+  },
+  "passiveHypothesis": {
+    "display": 1.9,
+    "status": "Conditional invariance hypothesis; not a solved passive formula.",
+    "condition": "If a leader outfit that only changes member parameters does not change displayed passive when all five members and both eligible support recipients are held fixed, X passive remains 1.9."
+  },
+  "change": "Keep W five members, levels and awakenings. Change only Ririka leader 40/0 to swimsuit Kanade leader 40/0.",
+  "purpose": "Switch on a parameter-only leader outfit while holding every member skill and the two eligible Happy support recipients fixed.",
+  "assumptions": "Member-only conditions. Happy >=2 makes Kanade leader performance +130% active; no leader score support. Raden life >=600 remains assumed met. Board corrections excluded.",
+  "requestedMeasurements": "Total power and member/outfit/passive power; total score bonus and Active, SP, passive, board, and outfit score rows or absence.",
+  "interpretation": {
+    "unchangedPassive": "Supports parameter-only outfit invariance for this W member set; then narrow member-skill and support-recipient dependence before Ayame leader.",
+    "changedPassive": "Parameter-outfit/leader context still needs examination even without score-support outfit; record changed fields before adding a coefficient."
+  },
+  "limitation": "One leader swap tests this member set and this parameter-only costume. It does not establish invariance for all leaders or solve score-support costumes such as Ayame.",
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "WCheckpointSHA256": "5e6ea6dc2366d5d3b84188f75725ab55a6fd6829824c06fba56b11b25e67ce52",
+  "analysisSourceSHA256": "0049312b79356c19f6e26d4b020088dcdb002f5af0bc1a05a3580184d1859d69"
+}

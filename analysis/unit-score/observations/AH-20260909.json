@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AH",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T07:07:30.465Z",
+  "gameVersion": null,
+  "observationDateBasis": "Current conversation date; no separate measurement date supplied.",
+  "leaderId": "card-06003-5-uniq-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00021-5-uniq-0017-00",
+    "card-00022-5-uniq-0063-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Use frozen AH formation/profiles. Remaining values match confirms the four prediction-table values, not a separate growth/order audit.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Inherited W/X clarification and AH plan."
+  },
+  "rawUserInput": "홀로멤 보드 15.3%, 패시브 2.2%, 나머지 일치",
+  "confirmedByReference": {
+    "source": "Immediately preceding assistant AH prediction table",
+    "fields": {
+      "memberParameter": 86545,
+      "passivePower": 10772,
+      "active": 74.6,
+      "special": 44.3
+    },
+    "scope": "Four table values confirmed. Overall totals and outfit/other power rows were not in the table and remain unreported."
+  },
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": 86545,
+      "outfit": null,
+      "board": null,
+      "passive": 10772,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 74.6,
+      "board": 15.3,
+      "passive": 2.2,
+      "special": 44.3
+    }
+  },
+  "scoreRowPresence": {
+    "passive": true
+  },
+  "categoryStatus": {
+    "overallPower": "Unreported.",
+    "totalScoreBonus": "Unreported;136.4 is a derived sum.",
+    "outfitPower": "Unreported;0 is inferred from the planned inactive leader condition.",
+    "otherPower": "Board, memory and enhancement unreported."
+  },
+  "boardContext": "Same formation detail before song selection. Ririka40/0, Ayame40/0, Towa70/0, Raden70/1, regular Flare11/0 and Noel80/1. Keep all member board unlocks and order unchanged. Raden life600 and regular Flare combo40 assumed met as before.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-AH-20260909.json",
+  "predictionCheckpointSHA256": "360acc2692d8b5c0fce5f19907d8d0ee2cb6f4b67ab00f0410fb8426233ab524",
+  "evidence": "Board+passive17.5 fits the frozen17.4/17.5 conditional family. AG->AH board+10.0/passive+0.5 with unchanged members and inactive costumes. No individual forecast was adopted."
+}

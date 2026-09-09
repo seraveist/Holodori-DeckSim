@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "Z",
+  "kind": "additional fields for existing observation; not a new formation",
+  "receivedAt": "2026-09-09T05:16:53.287Z",
+  "rawUserInput": "z의 전체 종합력 133702 패시브 스킬 12584, 스코어보너스 127.1%임",
+  "originalObservation": "analysis/unit-score/observations/Z-20260909.json",
+  "originalObservationSHA256": "4d4f1b1a4094ca393037abdce0d2ad343cccea376e31b33de29c052e538bf081",
+  "fields": {
+    "game.overallPower": 133702,
+    "game.powerDetail.passive": 12584,
+    "game.scoreBonusPct": 127.1
+  },
+  "scope": "Passive skill 12584 is power, distinct from the previously reported passive score bonus 1.5%."
+}

@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T03:57:36.138Z",
+  "status": "planned; no V observation received",
+  "sampleId": "V",
+  "leaderId": "card-06003-5-uniq-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00018-5-uniq-0068-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-06002-5-uniq-0058-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    }
+  ],
+  "formula": "B_SP = ceil0.1(ceil0.1(A_raw) * [sum_i(duration_i * supportPct_i)/12000 + sum_i(effectiveRatePct_i)/2000])",
+  "features": {
+    "id": "V",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00018-5-uniq-0068-00",
+      "card-00027-5-uniq-0022-00",
+      "card-06004-5-uniq-0060-00",
+      "card-06002-5-uniq-0058-00"
+    ],
+    "Araw": 69.03296614381048,
+    "A": 69.1,
+    "W": 6150,
+    "rateSum": 125,
+    "rateDurationSum": 1250,
+    "SP": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00018-5-uniq-0068-00",
+        "name": "호시마치 스이세이",
+        "duration": 12,
+        "support": 100,
+        "rate": 0,
+        "condition": {
+          "kind": "group",
+          "value": "grp-gen_0",
+          "count": 2
+        },
+        "conditionMet": false
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-06002-5-uniq-0058-00",
+        "name": "오토노세 카나데",
+        "duration": 10,
+        "support": 120,
+        "rate": 45,
+        "condition": {
+          "kind": "combo",
+          "threshold": 100
+        },
+        "conditionMet": true
+      }
+    ],
+    "observedActive": null,
+    "observedSP": null,
+    "displayedActiveFlatRate": {
+      "raw": 39.732499999999995,
+      "ceil": 39.8
+    },
+    "displayedActiveDurationRate": {
+      "raw": 39.732499999999995,
+      "ceil": 39.8
+    },
+    "rawActiveFlatRate": {
+      "raw": 39.69395553269103,
+      "ceil": 39.7
+    },
+    "power": {
+      "memberParameter": 97731,
+      "outfit": 48870,
+      "board": 0,
+      "passive": 16443,
+      "memory": 0,
+      "enhancement": 0
+    },
+    "retainedPower": 163044,
+    "conditions": {
+      "leaderScoreSupport": 0,
+      "leaderParameterConditionMet": true,
+      "passiveSupport": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "active": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 2,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 100
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 100
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 80
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "condition": {
+            "kind": "life",
+            "threshold": 600
+          },
+          "conditionMet": true,
+          "effectiveValue": 115
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 75
+        }
+      ]
+    }
+  },
+  "purpose": "A new zero-score-support-passive formation introduces a 45% rate SP alongside two 40% rate SPs, testing the new formula beyond the 0/40% rates of the eight baseline measurements.",
+  "assumptions": "Regular Kanade SP combo >=100 and Raden life >=600 are assumed met. No board corrections.",
+  "validationLimit": "Active profiles also change and are evaluated separately. All positive-rate SPs still last 10s, so this cannot distinguish flat from duration-weighted rate contributions. One match does not prove the general formula.",
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "candidateBasis": "Derived retrospectively after U from existing observations. V is a future independent check.",
+  "UCheckpointSHA256": "83cff2498fc99e39d66ab1ce1de46a7ea013f17d4d67e1194313bd84b773f16f",
+  "analysisSourceSHA256": "d2bc5d311777675637f1f28a906b3b0559f7729b45442633ac216b7b5b9cfec1"
+}

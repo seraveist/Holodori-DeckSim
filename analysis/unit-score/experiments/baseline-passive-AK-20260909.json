@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T07:50:18.654Z",
+  "status": "planned; no AK observation received",
+  "sampleId": "AK",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-06002-5-uniq-0058-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "leaderProfileEvidence": "analysis/unit-score/profile-observations/ririka-3star-20260909.json",
+  "leaderProfileConfirmed": true,
+  "memberProfilesBasis": "Same as AJ planned/confirmed-by-reference formation.",
+  "features": {
+    "id": "AK",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-06004-5-uniq-0060-00",
+      "card-06002-5-uniq-0058-00",
+      "card-00026-5-uniq-0065-00"
+    ],
+    "Araw": 71.05166666666659,
+    "A": 71.1,
+    "W": 6160,
+    "rateSum": 160,
+    "rateDurationSum": 1635,
+    "SP": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-06002-5-uniq-0058-00",
+        "name": "오토노세 카나데",
+        "duration": 10,
+        "support": 120,
+        "rate": 45,
+        "condition": {
+          "kind": "combo",
+          "threshold": 100
+        },
+        "conditionMet": true
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "name": "츠노마키 와타메",
+        "duration": 11,
+        "support": 110,
+        "rate": 35,
+        "condition": null,
+        "conditionMet": true
+      }
+    ],
+    "observedActive": null,
+    "observedSP": null,
+    "displayedActiveFlatRate": {
+      "raw": 42.18599999999999,
+      "ceil": 42.2
+    },
+    "displayedActiveDurationRate": {
+      "raw": 42.310424999999995,
+      "ceil": 42.4
+    },
+    "rawActiveFlatRate": {
+      "raw": 42.15732222222217,
+      "ceil": 42.2
+    },
+    "power": {
+      "memberParameter": 100252,
+      "outfit": 15047,
+      "board": 0,
+      "passive": 22531,
+      "memory": 0,
+      "enhancement": 0
+    },
+    "retainedPower": 137830,
+    "conditions": {
+      "leaderScoreSupport": 0,
+      "leaderParameterConditionMet": true,
+      "passiveSupport": [
+        0,
+        0,
+        8,
+        0,
+        8
+      ],
+      "active": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 2,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 100
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 80
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "condition": {
+            "kind": "life",
+            "threshold": 600
+          },
+          "conditionMet": true,
+          "effectiveValue": 115
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 75
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 3,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 120
+        }
+      ]
+    }
+  },
+  "quantized": {
+    "contributions": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 11.25,
+        "roundedSupport": 11.25,
+        "rateContribution": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-06002-5-uniq-0058-00",
+        "name": "오토노세 카나데",
+        "duration": 10,
+        "support": 120,
+        "rate": 45,
+        "condition": {
+          "kind": "combo",
+          "threshold": 100
+        },
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2.25
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "name": "츠노마키 와타메",
+        "duration": 11,
+        "support": 110,
+        "rate": 35,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10.083333333333334,
+        "roundedSupport": 10.09,
+        "rateContribution": 1.75
+      }
+    ],
+    "supportSum": 51.34,
+    "factor": 59.34,
+    "raw": 42.19074,
+    "display": 42.2
+  },
+  "numericBoardFeatures": {
+    "id": "AK",
+    "excluded": false,
+    "leaderId": "card-06003-3-nrml-0059-00",
+    "leaderCharacterId": "chr-06003",
+    "leaderBoardSupport": 13.3,
+    "inputs": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "characterId": "chr-00010",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "characterId": "chr-00027",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "characterId": "chr-06004",
+        "support": 8,
+        "board": {
+          "rate": 14,
+          "cooldown": 4
+        }
+      },
+      {
+        "id": "card-06002-5-uniq-0058-00",
+        "characterId": "chr-06002",
+        "support": 0,
+        "board": {
+          "rate": 20,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "characterId": "chr-00026",
+        "support": 8,
+        "board": {
+          "rate": 24.5,
+          "cooldown": 4
+        }
+      }
+    ],
+    "support": [
+      0,
+      0,
+      8,
+      0,
+      8
+    ],
+    "hasScoreSupportPassive": true,
+    "Araw": 71.05166666666659,
+    "A": 71.1,
+    "Braw": 81.92642324745631,
+    "BPraw": 84.67589087913052,
+    "Bdisplay": 82,
+    "BPdisplay": 84.7,
+    "boardReference": 10.9,
+    "passiveMarginalReference": 2.7,
+    "observedBoard": null,
+    "observedPassive": null,
+    "boardMatches": null,
+    "boardResidual": null,
+    "joint": {
+      "rawCombined": 13.624224212463929,
+      "singleCeil": 13.7,
+      "twoCeilPossibleSums": [
+        13.7,
+        13.8
+      ],
+      "reportedSum": null,
+      "compatible": null
+    },
+    "scope": "Numeric rate/frequency boards plus Ririka unconditional support13.3 when applicable. Singer effects excluded in the planned pre-song context. No numeric judgement contribution is added; the judgement node effect on formation display remains unproven."
+  },
+  "changeFromCurrentAJ": "Replace only the leader card: Ririka5-star CEO40/0 -> Ririka3-star We are hololive!1/0. Keep all five members, profiles, order and board unlocks.",
+  "purpose": "Hold the leader character and documented board nodes fixed while changing the all-parameter costume magnitude50% to15%.",
+  "leaderCards": {
+    "AJ": {
+      "id": "card-06003-5-uniq-0059-00",
+      "name": "심야의 휴식, CEO의 한계밥",
+      "profile": {
+        "id": "card-06003-5-uniq-0059-00",
+        "level": 40,
+        "potential": 0
+      },
+      "effect": "ReGLOSS(이)가 2명 이상이면 전원의 전체 파라미터가 50% UP ",
+      "appliedParameterPct": 50
+    },
+    "AK": {
+      "id": "card-06003-3-nrml-0059-00",
+      "name": "We are hololive!",
+      "profile": {
+        "id": "card-06003-3-nrml-0059-00",
+        "level": 1,
+        "potential": 0
+      },
+      "effect": "전원의 전체 파라미터가 15% UP ",
+      "appliedParameterPct": 15
+    }
+  },
+  "fixed": {
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-06004-5-uniq-0060-00",
+      "card-06002-5-uniq-0058-00",
+      "card-00026-5-uniq-0065-00"
+    ],
+    "memberBoardInputs": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "characterId": "chr-00010",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "characterId": "chr-00027",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "characterId": "chr-06004",
+        "support": 8,
+        "board": {
+          "rate": 14,
+          "cooldown": 4
+        }
+      },
+      {
+        "id": "card-06002-5-uniq-0058-00",
+        "characterId": "chr-06002",
+        "support": 0,
+        "board": {
+          "rate": 20,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "characterId": "chr-00026",
+        "support": 8,
+        "board": {
+          "rate": 24.5,
+          "cooldown": 4
+        }
+      }
+    ],
+    "leaderCharacterId": "chr-06003",
+    "leaderBoardSupport": 13.3,
+    "passiveRecipients": [
+      "card-06004-5-uniq-0060-00",
+      "card-00026-5-uniq-0065-00"
+    ],
+    "supportPerRecipient": 8,
+    "activeSPConditionsUnchanged": true,
+    "scoreSupportCostume": 0
+  },
+  "hypotheses": {
+    "active": {
+      "display": 71.1,
+      "kind": "Existing board-excluded formula"
+    },
+    "special": {
+      "display": 42.2,
+      "kind": "Existing board-excluded formula"
+    },
+    "passive": {
+      "display": 1.5,
+      "kind": "New control hypothesis: same displayed passive as AJ if the parameter-costume magnitude/leader-card change has no score interaction. Not a general passive formula."
+    },
+    "board": {
+      "display": 12.2,
+      "kind": "Same-context invariance control paired with passive1.5; not a standalone category formula."
+    },
+    "conditionalJoint": {
+      "possibleDisplays": [
+        13.7,
+        13.8
+      ],
+      "raw": 13.624224212463929,
+      "kind": "Existing conditional raw-sum/separate-ceil model, which excludes parameter-only costume from score."
+    }
+  },
+  "parameterPowerDelta": -35084,
+  "interpretation": {
+    "bothUnchanged": "Supports score invariance under this50-to15 parameter-costume/card change; makes composition-dependent leader effects a stronger direction. It does not prove all parameter costumes or on/off changes irrelevant.",
+    "anyScoreChange": "Refutes invariance under the leader-card change; inspect costume/card dependence while member and leader-board inputs are held fixed. Do not immediately identify a unique costume formula.",
+    "limitation": "Both parameter costumes are on. Equality cannot rule out a binary activation-state interaction. A later on/off same-character control may be needed."
+  },
+  "assumptions": "Same pre-song formation detail; leader boards depend on the same Ririka character and their unlocks stay fixed. Leader member skills remain excluded as in the current model. Ayame singer nodes excluded; Raden life600 and regular Kanade combo100 assumed met.",
+  "limitations": "The leader card also has different member-role skills and growth; the model treats those skills as inactive in the leader slot. A changed score would identify dependence on this card/costume context, not by itself a unique causal node. Ririka judgement-node contribution, G0.1 residual and Ayame score-support outfit remain unresolved.",
+  "requestedMeasurements": "Member parameter, outfit power, passive power, Active, SP, and board/passive score separately. Total score bonus if available.",
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "newEvidenceHashes": {
+    "analysis/unit-score/board-observations/WX-clarification-20260909.json": "76063061352c10a3bd54bbb34c166d5082c969079123ae8f778c4e16c733d32f",
+    "analysis/unit-score/board-observations/ririka-X-20260909.json": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438",
+    "analysis/unit-score/board-observations/suisei-Y-clarification-20260909.json": "b5c622f99d2a322d8b7f43e177ed2f03ab3bad4ebdae2726142cdcb28adcc12b",
+    "analysis/unit-score/board-observations/AA-member-clarification-20260909.json": "fbe5828797493d54745b95440322da282521b109ddb29d092a66875b8e7097dc",
+    "analysis/unit-score/profile-observations/ririka-3star-20260909.json": "f212da84f484bd706ac69ba73dabf97e81873184cd24636691ca13f0e8f0e845"
+  },
+  "observationHashes": {
+    "analysis/unit-score/observations/Z-20260909-completed.json": "7953e134131cc90242a93e5def0a1bfde32dd3f8472d9f81911c1da5a275f655",
+    "analysis/unit-score/observations/AA-20260909.json": "fcf6fbdb4cfef6e64cef245f057b427bf4a8ad2611c456d0220688f7b63ccb65",
+    "analysis/unit-score/observations/AB-20260909.json": "d7f54005c43a8bd085c79bda8c191841fa9646007444d2053018184d28444c49",
+    "analysis/unit-score/observations/AC-20260909.json": "5436910da10be12180fbf345e11b11db18a3880f6fb5a5b3115bec28c9f9f9fe",
+    "analysis/unit-score/observations/AD-20260909.json": "0c49a3382f4b69b4b7fe09511da76062e50a9b8fdee2fffba5f744d52c890b25",
+    "analysis/unit-score/observations/AE-20260909.json": "6a036fcb3ae76c2311e1e46549f255cc0ed0a924598bc11a4f523041fa2d1183",
+    "analysis/unit-score/observations/AF-20260909.json": "a5cead6f5810c0f91b98ffeddcfec08b22b52951ef5a260ad6ab64b9f6255a70",
+    "analysis/unit-score/observations/AG-20260909.json": "d74453fccab994b7c92308666d08b633de10361010ee02209ba84c3ab0a53e8a",
+    "analysis/unit-score/observations/W-20260909.json": "e5b8ad2712c93c6df1ca35358409f0530663e53e77cd7c7d270ff846b2480e30",
+    "analysis/unit-score/observations/AH-20260909.json": "4a4ed67abaafb2461ae9fa9eaaeae737b763ba59611fd161539558b1a2d8f3b3",
+    "analysis/unit-score/observations/X-20260909.json": "0b72d170b8b0ccc6743266659a24f7b98f85daea886872da1865f1af890a7ef7",
+    "analysis/unit-score/observations/Y-20260909.json": "9c76651d25574208f055d82558a04dbc769b038d1b3f3fcfa2cb61ac638ad4a5",
+    "analysis/unit-score/observations/AI-20260909.json": "b7a6a91ef4730e0d1c3de3fcb51d8176a60ac5ae3ee5e0bb7a1b8cda382d4614",
+    "analysis/unit-score/observations/AJ-20260909.json": "d56abe31c4e38e8f7db9ea33361fcc79f53e605dafabbea1d24fa172b403c543"
+  },
+  "AJCheckpointSHA256": "fb326fac426e44a2bac87895ae5d95944120e473d190507e3c802b7ab759e3f6",
+  "analysisSourceSHA256": "1320d15826da5d7569ce2e62a601361656ed39a50b18bb13264eba1d328580b2",
+  "previousSourceLocks": {
+    "analysis/unit-score/compare-board-ac-20260909.mjs": "8e9ebc993e21040adc6ceeb1332620a0010ccc1840cb8fbdf6c2ec37d360391b",
+    "analysis/unit-score/compare-passive-ab-20260909.mjs": "9bbdb79a047b55dd343eda8f430984ac6254ab0f013d1019c2c6ea38558dfe70",
+    "analysis/unit-score/probe-passive-board-aa-20260909.mjs": "85f3a46a917c4832a0ac9a827a614aff8e2351d03a65b4a29cb994e57eb11f86",
+    "analysis/unit-score/compare-passive-aa-20260909.mjs": "85892be042c6e54f806a0b1b0413641e7b73426266325c5b3072fec08ae26e15",
+    "analysis/unit-score/compare-board-ad-20260909.mjs": "3b7f3b3384eb0288b53640abfafc14c412f96d57e48b349fbb252c37d1abb8e9",
+    "analysis/unit-score/compare-board-ae-20260909.mjs": "7bae9f8bfd9149995873b02227e3f657e7803f04784eaf1f852f6ce236133311",
+    "analysis/unit-score/compare-passive-af-20260909.mjs": "e33b77eee26a1d7773e94d77ff95aac4e63b704f8cb4a92d7bb29e5e2243ef98",
+    "analysis/unit-score/compare-passive-ag-20260909.mjs": "7ca36e1c358a40263576cd992cdd7b401cddf31f8f2573aef41ca3ef2a804b05",
+    "analysis/unit-score/compare-passive-ah-20260909.mjs": "d6d49ea9e59878ce78f14e15cfeff3ff273ca3e993f84f8abbd3c7032554ddfc",
+    "analysis/unit-score/compare-passive-ai-20260909.mjs": "d2fbe22880a51733b6ef9236885db94505e41fa040250a54d266141e5836a828"
+  },
+  "modelStatus": "AJ passive1.5 fails both frozen raw-conversion ranges under the assumed score independence of the parameter costume. The earlier three inactive-costume pairs remain compatible within their scope. AJ joint13.7 still fits. AK compares the same Ririka character/boards with parameter costume50% ->15%, keeping members fixed. Passive1.5 and board12.2 are new invariance hypotheses, not general category formulas. Both costumes are active; this does not isolate an activation-state interaction."
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T04:42:58.188Z",
+  "characterId": "chr-06003",
+  "character": "이치조 리리카",
+  "role": "leader",
+  "confirmedByUser": true,
+  "rawUserInput": "리리카 리더의 보드효과를 다시 명시함\n스코어 서포트 4.0%, 6.2%, 3.1%\n판정 20초마다 낮은 확률로 7초 동안 good 이상이 perfect가 된다\n악곡 가창자로 포함될 경우 전원의 스코어서포트 24.0%\n\n종합력이 아닌 스코어보너스에 영향이 갈 모든 노드의 효과임.",
+  "scope": "User says this lists all leader-board nodes that may affect score bonus, excluding power nodes. This is not a full account-board export.",
+  "scoreSupport": {
+    "displayedNodeValuesPct": [
+      4,
+      6.2,
+      3.1
+    ],
+    "arithmeticSumPct": 13.3,
+    "stackingRule": "Unverified; the arithmetic sum is not itself an observed bonus or verified multiplier."
+  },
+  "judgement": {
+    "intervalSeconds": 20,
+    "probabilityLabel": "낮은 확률",
+    "probability": null,
+    "durationSeconds": 7,
+    "from": "GOOD 이상",
+    "to": "PERFECT",
+    "evaluationEffect": "Unverified; actual judgement distribution and contribution to formation-detail bonus are unknown."
+  },
+  "singerSupport": {
+    "valuePct": 24,
+    "target": "전원",
+    "condition": "악곡 가창자로 포함될 경우",
+    "conditionMet": null,
+    "evaluationContext": "W/X song-selection context requested; do not add 24 unconditionally."
+  },
+  "provenance": {
+    "previousFile": "analysis/unit-score/board-context.json",
+    "previousFileSHA256": "913b89ea901ea1d07a1e8529b5dbe81747c54690e9199ea42095bb7be39b4555",
+    "supportNodesReconfirmed": true,
+    "judgementAndSingerNodesAbsentFromPreviousRecord": true,
+    "timing": "Newly documented here does not mean newly unlocked or changed since earlier measurements."
+  },
+  "comparisonCaveat": "W Ririka leader to X Kanade leader changes the leader character and potentially its boards as well as the costume. It is not a board-controlled costume-only experiment.",
+  "kanadeLeaderBoard": {
+    "status": "Requested; pending user details. Historical Kanade active-rate nodes 15/5 are member-board inputs, not a confirmed leader-board inventory."
+  }
+}

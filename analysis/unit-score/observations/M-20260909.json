@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "M",
+  "observedAt": "2026-09-09",
+  "gameVersion": null,
+  "predictionCheckpoint": "analysis/unit-score/archive/next-predictions-20260909.json",
+  "leaderId": "card-00010-5-uniq-0010-00",
+  "memberIds": [
+    "card-00026-5-uniq-0065-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00021-5-uniq-0064-00",
+    "card-06002-5-uniq-0066-00",
+    "card-06004-5-uniq-0060-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0064-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": true,
+  "boardContext": "보드 노드의 유지·변경 여부는 미확인. 사용자는 HOLO멤 보드 효과가 별도 항목이므로 비교에서 제외하도록 요청했다. 표시된 보드 종합력 18,770 및 보너스 12.8%를 제외하고, 발동률·발동 빈도·리더 서포트 보드 보정은 적용하지 않는다.",
+  "evidence": "사용자가 이 대화에서 직접 입력한 편성 상세 숫자와 후속 편성·성장값 확인. 이번 관측의 이미지는 제공되지 않았다.",
+  "game": {
+    "unitScore": null,
+    "overallPower": 136236,
+    "scoreBonusPct": 181.5,
+    "powerDetail": {
+      "memberParameter": 102618,
+      "outfit": null,
+      "board": 18770,
+      "passive": 8172,
+      "memory": 5754,
+      "enhancement": 922
+    },
+    "scoreBonusDetail": {
+      "outfit": 37.5,
+      "active": 78.4,
+      "board": 12.8,
+      "passive": 6.7,
+      "special": 46.1
+    }
+  },
+  "notes": "M was measured after all original archived predictions were frozen. User explicitly confirmed all six card identities and level/awakening profiles match the planned M. Omitted outfit power and unobserved direct final Unit Score remain null. Preserve old predictions and coefficients; do not refit them to this observation.",
+  "receivedAt": "2026-09-09T01:58:20.499Z",
+  "observationDateBasis": "Current exchange date; user supplied the live numbers here but did not separately specify an observation date.",
+  "profileConfirmation": {
+    "source": "User reply in this conversation",
+    "exactReply": "편성과 레벨·개화 모두 동일"
+  },
+  "rawUserInput": "종합력 136236, 멤버 파라미터 102618, 홀로멤 보드효과(종합력) 18770, 패시브스킬 8172, 메모리효과 5754, 멤버강화보너스 922\n\n스코어보너스 181.5%, 의상스킬 37.5%, 액티브 스킬 78.4%, 홀로멤보드효과(스코어보너스) 12.8%, 패시브스킬 6.7%, 스페셜스킬 46.1%",
+  "predictionCheckpointSHA256": "b3c641338c4327db4550b4970f5f2425c0694ee88934fa6005ac032cb2e1e81c"
+}

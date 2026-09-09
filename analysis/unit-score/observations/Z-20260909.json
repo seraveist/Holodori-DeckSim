@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "Z",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T05:11:48.494Z",
+  "observationDateBasis": "Current conversation date; no separate date supplied.",
+  "gameVersion": null,
+  "leaderId": "card-00018-5-uniq-0068-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Measurement supplied in response to the Z plan; planned profiles adopted. Reported member parameter matches. No separate growth confirmation.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Inherited W/X confirmation and Z plan; no separate Z view confirmation."
+  },
+  "rawUserInput": "패시브 1.5%, 홀로멤보드 6.9%, 액티브 75.5%, 스페셜 43.2%, 멤버파라미터 100252임.",
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": 100252,
+      "outfit": null,
+      "board": null,
+      "passive": null,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 75.5,
+      "board": 6.9,
+      "passive": 1.5,
+      "special": 43.2
+    }
+  },
+  "categoryStatus": {
+    "totalPower": "Not supplied.",
+    "totalScoreBonus": "Not supplied. Sum of listed score categories can be derived separately but is not a measured total.",
+    "outfitPower": "Not supplied; planned condition implies zero, which is an inference only.",
+    "passivePower": "Not supplied. Preserve the 12584 prediction separately; do not record as observed.",
+    "outfitScore": "Not supplied; do not fabricate a measured zero.",
+    "otherPower": "Board, memory and enhancement individually unreported."
+  },
+  "boardContext": "Suisei relevant leader-board effects confirmed absent before Z. This does not mean that member-board effects are absent. Preserve board-excluded Active/SP baseline calculations.",
+  "evidence": "Five directly supplied figures; no total or other power measurements.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-Z-20260909.json",
+  "predictionCheckpointSHA256": "06ba4ea6293f5e0a2bbab08ef9b6ce27a744e2dedb8548a706d59924aaa9fda8",
+  "boardEvidence": "analysis/unit-score/board-observations/suisei-Y-clarification-20260909.json"
+}

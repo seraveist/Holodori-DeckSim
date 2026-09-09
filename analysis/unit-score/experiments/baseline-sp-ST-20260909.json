@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T02:52:58.657Z",
+  "status": "planned, no S/T observations received",
+  "purpose": "Vary rate-boost SP count from the existing two to one/three while keeping score-support passives and leader support zero.",
+  "calibrationSamples": [
+    "G",
+    "O",
+    "P",
+    "Q",
+    "R"
+  ],
+  "newScaledSupport": {
+    "coefficientBounds": {
+      "min": 1.7273994693178734,
+      "max": 1.72812263326634
+    },
+    "illustrativeMidpoint": 1.7277610512921067,
+    "checks": [
+      {
+        "id": "G",
+        "raw": 38.65562971864921,
+        "ceil": 38.7,
+        "observed": 38.7
+      },
+      {
+        "id": "O",
+        "raw": 36.91950972951631,
+        "ceil": 37,
+        "observed": 37
+      },
+      {
+        "id": "P",
+        "raw": 37.40782862683272,
+        "ceil": 37.5,
+        "observed": 37.5
+      },
+      {
+        "id": "Q",
+        "raw": 40.468416997019624,
+        "ceil": 40.5,
+        "observed": 40.5
+      },
+      {
+        "id": "R",
+        "raw": 41.291358636679846,
+        "ceil": 41.3,
+        "observed": 41.3
+      }
+    ],
+    "note": "S already includes activation-rate interaction. Omitting an additional R term does not mean activation-rate boosts have no SP effect. Every calibration formation has two 40% rate SPs, so identification remains limited."
+  },
+  "coefficientRegions": [
+    {
+      "mode": "ceil",
+      "nonnegative": false,
+      "closedIntervalFeasible": true,
+      "vertices": [
+        [
+          1.7497037293781887,
+          -0.7159532857178241
+        ],
+        [
+          1.7565942668759165,
+          -0.9178968502776679
+        ],
+        [
+          1.7027868567002158,
+          0.7900500095526057
+        ],
+        [
+          1.7119114909194055,
+          0.5226309351863975
+        ]
+      ],
+      "note": "Closed rounding endpoints are conservative relaxations; boundary feasibility is not a unique exact formula."
+    },
+    {
+      "mode": "round",
+      "nonnegative": false,
+      "closedIntervalFeasible": true,
+      "vertices": [
+        [
+          1.7527955825887662,
+          -0.741070923189672
+        ],
+        [
+          1.7572603193166523,
+          -0.8719206355593382
+        ],
+        [
+          1.7058787099107957,
+          0.7649323720806788
+        ],
+        [
+          1.7125775433601436,
+          0.56860714990459
+        ]
+      ],
+      "note": "Closed rounding endpoints are conservative relaxations; boundary feasibility is not a unique exact formula."
+    },
+    {
+      "mode": "floor",
+      "nonnegative": false,
+      "closedIntervalFeasible": true,
+      "vertices": [
+        [
+          1.7558874357993484,
+          -0.7661885606615199
+        ],
+        [
+          1.7579263717573945,
+          -0.8259444208412827
+        ],
+        [
+          1.7089705631213754,
+          0.739814734608831
+        ],
+        [
+          1.7132435958008814,
+          0.6145833646227827
+        ]
+      ],
+      "note": "Closed rounding endpoints are conservative relaxations; boundary feasibility is not a unique exact formula."
+    }
+  ],
+  "nonnegativeCoefficientRegion": {
+    "mode": "ceil",
+    "nonnegative": true,
+    "closedIntervalFeasible": true,
+    "vertices": [
+      [
+        1.7027868567002158,
+        0.7900500095526057
+      ],
+      [
+        1.7119114909194055,
+        0.5226309351863975
+      ],
+      [
+        1.7273994693178734,
+        0
+      ],
+      [
+        1.72812263326634,
+        0
+      ]
+    ],
+    "note": "Closed rounding endpoints are conservative relaxations; boundary feasibility is not a unique exact formula."
+  },
+  "experiments": [
+    {
+      "sampleId": "S",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00"
+      ],
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        }
+      ],
+      "features": {
+        "id": "S",
+        "A": 63.01714226779816,
+        "activeDisplay": 63.1,
+        "S": 20.239332672088647,
+        "R": 0.37662500000000454,
+        "perSP": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "duration": 10,
+            "support": 135,
+            "activationRateUp": 0,
+            "S": 4.253657103076385,
+            "R": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "duration": 12,
+            "support": 100,
+            "activationRateUp": 0,
+            "S": 3.7810285360678892,
+            "R": 0
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "duration": 14,
+            "support": 95,
+            "activationRateUp": 0,
+            "S": 4.190639960808587,
+            "R": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "duration": 10,
+            "support": 120,
+            "activationRateUp": 40,
+            "S": 4.232978536067895,
+            "R": 0.37662500000000454
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "duration": 12,
+            "support": 100,
+            "activationRateUp": 0,
+            "S": 3.7810285360678892,
+            "R": 0
+          }
+        ],
+        "rateSPCount": 1,
+        "power": {
+          "memberParameter": 90103,
+          "outfit": 45055,
+          "board": 0,
+          "passive": 9609,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 144767,
+        "observed": null,
+        "oldSingleRaw": 35.04398731490021,
+        "oldTwoRaw": 34.327066270721815,
+        "conditions": {
+          "leaderParameterConditionMet": true,
+          "leaderScoreSupport": 0,
+          "passiveScoreSupport": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "activeConditions": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "condition": {
+                "kind": "attribute",
+                "value": 2,
+                "count": 2
+              },
+              "assumedMet": false
+            },
+            {
+              "id": "card-00018-5-uniq-0068-00",
+              "condition": null,
+              "assumedMet": true
+            },
+            {
+              "id": "card-06002-5-uniq-0066-00",
+              "condition": null,
+              "assumedMet": true
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "condition": {
+                "kind": "life",
+                "threshold": 600
+              },
+              "assumedMet": true
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "condition": null,
+              "assumedMet": true
+            }
+          ]
+        }
+      },
+      "predictions": {
+        "active": 63.1,
+        "oldSingle": {
+          "raw": 35.04398731490021,
+          "ceil": 35.1
+        },
+        "oldTwo": {
+          "raw": 34.327066270721815,
+          "ceil": 34.4
+        },
+        "newScaledSupport": {
+          "raw": 34.96873069497856,
+          "ceil": 35
+        },
+        "newTwoCoefficientRawRange": {
+          "min": 34.760822247263555,
+          "max": 35.20659283594951
+        },
+        "newNonnegativeTwoCoefficientRawRange": {
+          "min": 34.760822247263555,
+          "max": 34.9760488728433
+        }
+      },
+      "cautions": [
+        "Active profiles and parameter effects also change, and are checked separately. All score-support passives and leader score-support stay zero.",
+        "Ayame Pure >= 2 Active condition is OFF; this is deliberately evaluated at base 50%."
+      ]
+    },
+    {
+      "sampleId": "T",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00027-5-uniq-0022-00"
+      ],
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        }
+      ],
+      "features": {
+        "id": "T",
+        "A": 71.2179531155813,
+        "activeDisplay": 71.3,
+        "S": 23.066010583041262,
+        "R": 0.9720750000000158,
+        "perSP": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "duration": 10,
+            "support": 135,
+            "activationRateUp": 0,
+            "S": 4.807211835301737,
+            "R": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "duration": 12,
+            "support": 100,
+            "activationRateUp": 0,
+            "S": 4.273077186934878,
+            "R": 0
+          },
+          {
+            "id": "card-00021-5-uniq-0017-00",
+            "duration": 10,
+            "support": 120,
+            "activationRateUp": 40,
+            "S": 4.661907186934883,
+            "R": 0.3240250000000053
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "duration": 10,
+            "support": 120,
+            "activationRateUp": 40,
+            "S": 4.661907186934883,
+            "R": 0.3240250000000053
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "duration": 10,
+            "support": 120,
+            "activationRateUp": 40,
+            "S": 4.661907186934883,
+            "R": 0.3240250000000053
+          }
+        ],
+        "rateSPCount": 3,
+        "power": {
+          "memberParameter": 81505,
+          "outfit": 0,
+          "board": 0,
+          "passive": 7529,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 89034,
+        "observed": null,
+        "oldSingleRaw": 40.86108342117291,
+        "oldTwoRaw": 40.6754953995042,
+        "conditions": {
+          "leaderParameterConditionMet": false,
+          "leaderScoreSupport": 0,
+          "passiveScoreSupport": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "activeConditions": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "condition": {
+                "kind": "attribute",
+                "value": 2,
+                "count": 2
+              },
+              "assumedMet": true
+            },
+            {
+              "id": "card-00018-5-uniq-0068-00",
+              "condition": null,
+              "assumedMet": true
+            },
+            {
+              "id": "card-00021-5-uniq-0017-00",
+              "condition": {
+                "kind": "combo",
+                "threshold": 40
+              },
+              "assumedMet": true
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "condition": {
+                "kind": "life",
+                "threshold": 600
+              },
+              "assumedMet": true
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "condition": null,
+              "assumedMet": true
+            }
+          ]
+        }
+      },
+      "predictions": {
+        "active": 71.3,
+        "oldSingle": {
+          "raw": 40.86108342117291,
+          "ceil": 40.9
+        },
+        "oldTwo": {
+          "raw": 40.6754953995042,
+          "ceil": 40.7
+        },
+        "newScaledSupport": {
+          "raw": 39.85255469407023,
+          "ceil": 39.9
+        },
+        "newTwoCoefficientRawRange": {
+          "min": 39.62535736913581,
+          "max": 40.04448752034661
+        },
+        "newNonnegativeTwoCoefficientRawRange": {
+          "min": 39.84421444042593,
+          "max": 40.04448752034661
+        }
+      },
+      "cautions": [
+        "Active profiles and parameter effects also change, and are checked separately. All score-support passives and leader score-support stay zero.",
+        "General Flare 11/0. Combo >= 40 and Raden life >= 600 are assumed met."
+      ]
+    }
+  ],
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "coefficientSource": "analysis/unit-score/archive/fixed-constant-fits-20260909-v2.json",
+  "coefficientFileSHA256": "5ab2599439654b6b732477dcb56fc2c57d58fd396dca615478af721321c8f0fb",
+  "cautions": [
+    "New coefficient hypotheses were fitted after G/O/P/Q/R; they are not established game formulas. S/T are independent future tests.",
+    "Active profiles and parameter-outfit conditions also change; predictions explicitly evaluate these changes."
+  ]
+}

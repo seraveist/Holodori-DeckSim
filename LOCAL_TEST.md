@@ -159,7 +159,7 @@ node scripts/test-chart-abort.mjs
 
 ## 11. 1차 실측 회귀 (2026-09-08)
 
-다른 PC의 간편 재현은 `node scripts/run-scoring-validation.mjs`로 실행합니다. 추가 설치 없이 Node.js 24 이상과 저장소 데이터만 사용합니다. 분석 전체 탐색은 `--research-grid`를 붙이며, 다음 L/M/N 편성·사전 예측·관측 기록 방법은 [SCORING_HANDOFF.md](SCORING_HANDOFF.md)를 따릅니다.
+다른 PC의 간편 재현은 `node scripts/run-scoring-validation.mjs`로 실행합니다. 추가 설치 없이 Node.js 24 이상과 저장소 데이터만 사용합니다. 최신 AJ까지 34건 및 AK 고정 예측만 확인하려면 `node verify-handoff.mjs`를 실행합니다. 현재 진행은 [HANDOFF_CURRENT.md](HANDOFF_CURRENT.md)를 따릅니다. `--research-grid`는 초기 후보 탐색을 다시 실행하며, L/M/N 계획은 [SCORING_HANDOFF.md](SCORING_HANDOFF.md)의 이전 시점 기록입니다.
 
 `node scripts/test-unit-observations.mjs`로 H 추가 후 화면 11건의 종합력과 반복 관측을 재현합니다. `--json`을 붙이면 남은 보너스 오차를 포함한 비교 결과를 JSON으로 출력합니다. 자세한 범위는 [계산식 1차 검증 기록](SCORING_VALIDATION.md)을 참고합니다. 계산 결과 상단의 추정값 안내는 악곡 선택 여부와 관계없이 한국어·영어·일본어로 표시되어야 합니다.
 

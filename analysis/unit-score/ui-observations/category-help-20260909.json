@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "receivedAt": "2026-09-09T07:17:11.015Z",
+  "source": "User transcription of in-game category help; no direct UI/screenshot inspection performed.",
+  "rawUserInput": "잠깐만. 인게임에 각 항목에 대한 설명이 있어.\n\n종합력\n멤버 파라미터 : 편성 멤버의 합계 파라미터\n의상스킬 : 의상 스킬(파라미터 상승)의 효과량\n홀로멤 보드효과 : 홀로멤 보드(파라미터 상승)의 효과량\n패시브스킬 : 패시브스킬(파라미터 상승)의 효과량\n메모리효과 : 보유 메모리 수에 따른 보너스 효과량\n멤버강화보너스 : 멤버강화에 따른 보너스 효과량\n\n스코어보너스\n의상스킬 : 의상스킬(스코어보너스) 효과\n액티브스킬 : 액티브스킬 효과\n홀로멤보드 : 홀로멤보드(스코어보너스) 효과\n패시브스킬 : 패시브 스킬(스코어보너스) 효과\n스페셜스킬 : 스페셜 스킬 효과\n\n이 부분 참고해줘.",
+  "definitions": {
+    "overallPower": [
+      {
+        "label": "멤버 파라미터",
+        "description": "편성 멤버의 합계 파라미터"
+      },
+      {
+        "label": "의상스킬",
+        "description": "의상 스킬(파라미터 상승)의 효과량"
+      },
+      {
+        "label": "홀로멤 보드효과",
+        "description": "홀로멤 보드(파라미터 상승)의 효과량"
+      },
+      {
+        "label": "패시브스킬",
+        "description": "패시브스킬(파라미터 상승)의 효과량"
+      },
+      {
+        "label": "메모리효과",
+        "description": "보유 메모리 수에 따른 보너스 효과량"
+      },
+      {
+        "label": "멤버강화보너스",
+        "description": "멤버강화에 따른 보너스 효과량"
+      }
+    ],
+    "scoreBonus": [
+      {
+        "label": "의상스킬",
+        "description": "의상스킬(스코어보너스) 효과"
+      },
+      {
+        "label": "액티브스킬",
+        "description": "액티브스킬 효과"
+      },
+      {
+        "label": "홀로멤보드",
+        "description": "홀로멤보드(스코어보너스) 효과"
+      },
+      {
+        "label": "패시브스킬",
+        "description": "패시브 스킬(스코어보너스) 효과"
+      },
+      {
+        "label": "스페셜스킬",
+        "description": "스페셜 스킬 효과"
+      }
+    ]
+  },
+  "semanticScope": {
+    "establishedByText": [
+      "Power categories describe parameter/bonus amounts by their named source.",
+      "Score categories describe effects of their named skill/board source.",
+      "Memory effect is described as a bonus based on the number of owned memories."
+    ],
+    "notEstablishedByText": [
+      "Numeric formula, coefficients or rounding.",
+      "Independent calculation of each category with every other effect disabled.",
+      "Internal attribution order or a shared pool divided between board and passive.",
+      "Which Ririka leader node causes the AG/AH passive-display difference."
+    ]
+  },
+  "interpretationUpdate": {
+    "terminology": "Use per-source effect calculation and interactions. Prior allocation/split wording is a research accounting hypothesis, not a documented in-game process.",
+    "AG_AH": "Noel support9 and member conditions remain the same under the planned leader-only swap; the passive score-effect display changes1.7 to2.2 with costumes inactive. Preserve the observation without relabeling the0.5 as board score.",
+    "activeSP": "The current board-excluded base formulas remain empirical matches to32 observations, consistent with source labels but not proven by labels alone.",
+    "jointModel": "Board+passive combined calculations remain diagnostic compatibility checks, not proof of a shared game pool or a correct per-source formula.",
+    "AI": "The frozen post-AH displayed-passive conversion candidate remains an unvalidated empirical proposal. Category labels alone neither validate nor refute it; defer the next measurement request while incorporating the definitions."
+  }
+}

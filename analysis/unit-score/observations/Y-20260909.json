@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "Y",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T04:59:48.128Z",
+  "observationDateBasis": "Current conversation date; no separate date supplied.",
+  "gameVersion": null,
+  "leaderId": "card-06002-5-uniq-0058-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Measurement supplied in response to the Y plan; planned profiles adopted. All three power components match. No separate growth confirmation.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Y plan retains the W/X view previously confirmed by the user; no separate Y view confirmation."
+  },
+  "rawUserInput": "종합력 183991 멤버파라미터 100252 의상스킬 49934 패시브스킬 12584&#x20;\n스코어보너스 127.1%, 액티브 스킬 75.5% 패시브스킬 1.5%, 스페셜 스킬 43.2% 홀로멤보드 6.9%",
+  "normalization": "The trailing HTML space entity after 12584 is formatting; no numeric correction was made.",
+  "game": {
+    "unitScore": null,
+    "overallPower": 183991,
+    "scoreBonusPct": 127.1,
+    "powerDetail": {
+      "memberParameter": 100252,
+      "outfit": 49934,
+      "board": null,
+      "passive": 12584,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 75.5,
+      "board": 6.9,
+      "passive": 1.5,
+      "special": 43.2
+    }
+  },
+  "categoryStatus": {
+    "outfitScore": "Not supplied. Listed bonus components sum to total at display precision.",
+    "excludedPower": "Board, memory and enhancement individually unreported."
+  },
+  "boardContext": "Same Kanade character as X; relevant leader-board effects previously confirmed absent. Baseline Active/SP exclude board corrections.",
+  "evidence": "Direct user-entered figures.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-Y-20260909.json",
+  "predictionCheckpointSHA256": "4224295a7c1489fb997c20afe15c754664f202bb1477ebf3387cb4f841edafe5",
+  "boardEvidence": "analysis/unit-score/board-observations/WX-clarification-20260909.json"
+}

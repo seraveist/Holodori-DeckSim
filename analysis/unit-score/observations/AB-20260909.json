@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AB",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T05:39:40.237Z",
+  "gameVersion": null,
+  "observationDateBasis": "Current conversation date; no separate date supplied.",
+  "leaderId": "card-00018-5-uniq-0068-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00021-5-uniq-0017-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Response to the AB request; adopt the frozen formation and growth settings. Member parameter and passive power match. No separate profile confirmation.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Inherited W/X clarification and AB plan; no separate AB view confirmation."
+  },
+  "rawUserInput": "종합력 118253 멤버파라미터 84026 패시브스킬 13617 스코어보너스 124.8% 액티브스킬 73.7% 홀로멤보드 5.7% 패시브스킬 1.8% 스페셜 스킬 43.6%",
+  "game": {
+    "unitScore": null,
+    "overallPower": 118253,
+    "scoreBonusPct": 124.8,
+    "powerDetail": {
+      "memberParameter": 84026,
+      "outfit": null,
+      "board": null,
+      "passive": 13617,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 73.7,
+      "board": 5.7,
+      "passive": 1.8,
+      "special": 43.6
+    }
+  },
+  "categoryStatus": {
+    "outfitPower": "Not supplied; inactive outfit is inferred from the planned condition.",
+    "outfitScore": "Not supplied; preserve null even though the other four bonus rows sum to the reported total.",
+    "otherPower": "Board, memory and enhancement individually unreported."
+  },
+  "boardContext": "Same Suisei leader, no relevant leader-board effects. Ayame singer-conditional effects excluded under the planned pre-song view. Flare rate6/cooldown0 carried over from historical input. Baseline Active/SP exclude boards.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-AB-20260909.json",
+  "predictionCheckpointSHA256": "9950504730d33ef02b89ea6c26c058e37e768d5ee4528f8b38cc7bb2241e0504",
+  "evidence": "Direct user measurement in response to AB. Joint board+passive 5.7+1.8=7.5 differs from the frozen 7.4 prediction. Individual passive and board were not predicted."
+}

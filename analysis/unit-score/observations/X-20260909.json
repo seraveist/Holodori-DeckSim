@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "X",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T04:42:58.187Z",
+  "observationDateBasis": "Current conversation date; no separate date supplied.",
+  "gameVersion": null,
+  "leaderId": "card-06002-5-uniq-0066-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Measurement supplied in response to the X plan; planned profiles adopted. All three power components match. No separate growth confirmation.",
+  "rawUserInput": "종합력 177959 멤버파라미터 100252 의상스킬 43945 패시브스킬 12584\n스코어보너스 127.1%, 액티브스킬 75.5%, 홀로멤보드 6.9%, 패시브스킬 1.5%, 스페셜 스킬 43.2%\n\n리리카 리더의 보드효과를 다시 명시함\n스코어 서포트 4.0%, 6.2%, 3.1%\n판정 20초마다 낮은 확률로 7초 동안 good 이상이 perfect가 된다\n악곡 가창자로 포함될 경우 전원의 스코어서포트 24.0%\n\n종합력이 아닌 스코어보너스에 영향이 갈 모든 노드의 효과임.",
+  "game": {
+    "unitScore": null,
+    "overallPower": 177959,
+    "scoreBonusPct": 127.1,
+    "powerDetail": {
+      "memberParameter": 100252,
+      "outfit": 43945,
+      "board": null,
+      "passive": 12584,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 75.5,
+      "board": 6.9,
+      "passive": 1.5,
+      "special": 43.2
+    }
+  },
+  "categoryStatus": {
+    "outfitScore": "Not supplied. Listed bonus components sum to total at display precision.",
+    "excludedPower": "Board, memory and enhancement individually unreported."
+  },
+  "boardContext": "Baseline formulas continue to exclude board corrections. User supplied a Ririka leader-board reconfirmation with the X measurement; record it separately for confounding analysis.",
+  "evidence": "Direct user-entered figures.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-X-20260909.json",
+  "predictionCheckpointSHA256": "8c03f267aba90e2bafa2f6fa0f58dc81fccfc3e61c800e0fe0cfa0d911541a7e",
+  "boardEvidence": "analysis/unit-score/board-observations/ririka-X-20260909.json"
+}

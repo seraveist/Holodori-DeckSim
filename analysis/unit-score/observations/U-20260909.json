@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "U",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T03:56:17.421Z",
+  "observationDateBasis": "Current conversation date; no separate date supplied.",
+  "gameVersion": null,
+  "leaderId": "card-06004-5-uniq-0060-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00018-5-uniq-0068-00",
+    "card-06002-5-uniq-0066-00",
+    "card-00022-5-uniq-0063-00",
+    "card-06003-5-uniq-0059-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Measurement supplied in response to the U plan; planned profiles adopted. All three reported power components match. No separate growth confirmation.",
+  "rawUserInput": "종합력 1364005 멤버파라미터 82623 의상스킬 31837 패시브스킬 9283\n스코어보너스 91.4%, 액티브 스킬 59.6%, 스페셜 스킬 31.8%",
+  "corrections": [
+    {
+      "field": "game.overallPower",
+      "original": 1364005,
+      "corrected": 136405,
+      "source": "User follow-up",
+      "exactReply": "맞아 136405의 오타야"
+    }
+  ],
+  "game": {
+    "unitScore": null,
+    "overallPower": 136405,
+    "scoreBonusPct": 91.4,
+    "powerDetail": {
+      "memberParameter": 82623,
+      "outfit": 31837,
+      "board": null,
+      "passive": 9283,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 59.6,
+      "board": null,
+      "passive": null,
+      "special": 31.8
+    }
+  },
+  "categoryStatus": {
+    "boardScore": "Not separately supplied or confirmed. Reported total equals active + special at display precision; do not fabricate a measured exact zero.",
+    "outfitScore": "not supplied",
+    "passiveScore": "not supplied",
+    "excludedPower": "Board, memory and enhancement individually unreported."
+  },
+  "boardContext": "Board corrections excluded from baseline skill calculations. The user confirmed only the total-power typo; the compound question about board/category display was not answered.",
+  "evidence": "Direct user-entered figures and explicit correction of the overall-power total.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-sp-U-20260909.json",
+  "predictionCheckpointSHA256": "83cff2498fc99e39d66ab1ce1de46a7ea013f17d4d67e1194313bd84b773f16f"
+}

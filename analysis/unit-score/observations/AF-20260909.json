@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AF",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T06:45:59.720Z",
+  "gameVersion": null,
+  "observationDateBasis": "Current conversation date; no separate measurement date supplied.",
+  "leaderId": "card-00018-5-uniq-0068-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00021-5-uniq-0064-00",
+    "card-06002-5-uniq-0058-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0064-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Adopt frozen AF formation/profiles. Follow-up confirms four predicted values, not a separate growth audit.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Inherited W/X clarification and AF plan."
+  },
+  "rawUserInput": "홀로멤 2.3%, 패시브 1.0%",
+  "clarification": {
+    "question": "AF의 나머지 값도 사전예측(멤버 파라미터 102,771 · 패시브 종합력 16,443 · 액티브 71.8% · SP 42.6%)과 모두 일치하나요?",
+    "answer": "네, 모두 일치"
+  },
+  "confirmedByReference": {
+    "fields": {
+      "memberParameter": 102771,
+      "passivePower": 16443,
+      "active": 71.8,
+      "special": 42.6
+    },
+    "scope": "Four values explicitly confirmed by follow-up; totals/outfit/other breakdown rows not supplied."
+  },
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": 102771,
+      "outfit": null,
+      "board": null,
+      "passive": 16443,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 71.8,
+      "board": 2.3,
+      "passive": 1,
+      "special": 42.6
+    }
+  },
+  "scoreRowPresence": {
+    "passive": true
+  },
+  "categoryStatus": {
+    "overallPower": "Unreported.",
+    "totalScoreBonus": "Unreported;117.7 is a derived sum.",
+    "outfitPower": "Unreported;0 is a model inference from inactive leader condition.",
+    "otherPower": "Board, memory, enhancement unreported."
+  },
+  "boardContext": "Same pre-song view; no related Suisei leader boards, inactive outfit, Ayame singer effect excluded. Regular Kanade100combo and Raden life600 treated as met; Flare Happy2 condition is met. Keep existing growth and board unlocks.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-AF-20260909.json",
+  "predictionCheckpointSHA256": "35aad29a87c73bd57db01cf7e0d890c06443f86ca6336aa6c86956d5f83d8d5b",
+  "evidence": "Observed board+passive3.3 is inside the frozen conditional3.3/3.4 compatibility family. Individual board/passive predictions were null. The already-failed diagnostic split0.6/2.6 remains wrong."
+}

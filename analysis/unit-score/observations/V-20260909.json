@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "V",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T04:13:24.244Z",
+  "observationDateBasis": "Current conversation date; no separate date supplied.",
+  "gameVersion": null,
+  "leaderId": "card-06003-5-uniq-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00018-5-uniq-0068-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-06002-5-uniq-0058-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Measurement supplied in response to the V plan; planned profiles adopted. All three reported power components match. No separate growth confirmation.",
+  "rawUserInput": "종합력 192628 멤버파라미터 97731 의상스킬 48870 패시브스킬 16443\n스코어보너스 119.6% 액티브스킬 69.1%, 스페셜스킬 39.8% 홀로멤보드 10.7%",
+  "game": {
+    "unitScore": null,
+    "overallPower": 192628,
+    "scoreBonusPct": 119.6,
+    "powerDetail": {
+      "memberParameter": 97731,
+      "outfit": 48870,
+      "board": null,
+      "passive": 16443,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 69.1,
+      "board": 10.7,
+      "passive": null,
+      "special": 39.8
+    }
+  },
+  "categoryStatus": {
+    "outfitScore": "not supplied",
+    "passiveScore": "not supplied",
+    "excludedPower": "Board, memory and enhancement individually unreported.",
+    "bonusSum": "Reported active + special + board sum to total at display precision. Missing categories are not independently measured zeros."
+  },
+  "boardContext": "Board effects excluded from baseline skill calculations; reported board bonus 10.7 is stored separately.",
+  "evidence": "Direct user-entered figures.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-sp-V-20260909.json",
+  "predictionCheckpointSHA256": "f6ad0e2eba9ae7b8980298effa9808dbc3f995e97dd5e9be827ae8abc5247e02"
+}

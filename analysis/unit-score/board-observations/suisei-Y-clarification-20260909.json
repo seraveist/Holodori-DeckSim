@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T05:01:52.828Z",
+  "characterId": "chr-00018",
+  "character": "호시마치 스이세이",
+  "role": "leader",
+  "relevantLeaderBoardEffectsAbsentConfirmed": true,
+  "evidence": {
+    "question": "다음에는 의상 효과도 꺼진 상태를 비교하려 합니다. 보유한 스이세이의 리더 보드에 스코어 서포트·판정 보정·가창자 조건 효과가 있나요? 있다면 효과와 수치를 알려주세요.",
+    "answer": "관련 리더 보드 효과 없음"
+  },
+  "scope": "Score-support, judgement and singer-related LEADER BOARD effects. This does not deny the costume conditional sense +135% effect or describe power-related board nodes.",
+  "purpose": "Plan Z with the W/X/Y five members, no score-related leader-board effects and an inactive costume condition.",
+  "historicalScope": "Confirmation received after Y for the next control; not proof of every earlier board state."
+}

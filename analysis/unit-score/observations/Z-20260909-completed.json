@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "Z",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T05:11:48.494Z",
+  "observationDateBasis": "Current conversation date; no separate date supplied.",
+  "gameVersion": null,
+  "leaderId": "card-00018-5-uniq-0068-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Original Z plan adopted; reported member parameter and now supplied passive power both match. No separate growth confirmation.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Inherited W/X confirmation and Z plan; no separate Z view confirmation."
+  },
+  "rawUserInput": "패시브 1.5%, 홀로멤보드 6.9%, 액티브 75.5%, 스페셜 43.2%, 멤버파라미터 100252임.",
+  "game": {
+    "unitScore": null,
+    "overallPower": 133702,
+    "scoreBonusPct": 127.1,
+    "powerDetail": {
+      "memberParameter": 100252,
+      "outfit": null,
+      "board": null,
+      "passive": 12584,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 75.5,
+      "board": 6.9,
+      "passive": 1.5,
+      "special": 43.2
+    }
+  },
+  "categoryStatus": {
+    "totalPower": "133702 supplied in the follow-up.",
+    "totalScoreBonus": "127.1 supplied in the follow-up and agrees with the previously supplied category sum.",
+    "outfitPower": "Not supplied; planned condition implies zero, which is an inference only.",
+    "passivePower": "12584 supplied in the follow-up; matches the preserved Z prediction.",
+    "outfitScore": "Not supplied; do not fabricate a measured zero.",
+    "otherPower": "Board, memory and enhancement individually unreported."
+  },
+  "boardContext": "Suisei relevant leader-board effects confirmed absent before Z. This does not mean that member-board effects are absent. Preserve board-excluded Active/SP baseline calculations.",
+  "evidence": "Original five measurements plus the user follow-up with total power, passive power and total score bonus. Same Z observation.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-Z-20260909.json",
+  "predictionCheckpointSHA256": "06ba4ea6293f5e0a2bbab08ef9b6ce27a744e2dedb8548a706d59924aaa9fda8",
+  "boardEvidence": "analysis/unit-score/board-observations/suisei-Y-clarification-20260909.json",
+  "recordVersion": 2,
+  "originalObservation": "analysis/unit-score/observations/Z-20260909.json",
+  "originalObservationSHA256": "4d4f1b1a4094ca393037abdce0d2ad343cccea376e31b33de29c052e538bf081",
+  "updatedAt": "2026-09-09T05:16:53.287Z",
+  "supplements": [
+    {
+      "schemaVersion": 1,
+      "sampleId": "Z",
+      "kind": "additional fields for existing observation; not a new formation",
+      "receivedAt": "2026-09-09T05:16:53.287Z",
+      "rawUserInput": "z의 전체 종합력 133702 패시브 스킬 12584, 스코어보너스 127.1%임",
+      "originalObservation": "analysis/unit-score/observations/Z-20260909.json",
+      "originalObservationSHA256": "4d4f1b1a4094ca393037abdce0d2ad343cccea376e31b33de29c052e538bf081",
+      "fields": {
+        "game.overallPower": 133702,
+        "game.powerDetail.passive": 12584,
+        "game.scoreBonusPct": 127.1
+      },
+      "scope": "Passive skill 12584 is power, distinct from the previously reported passive score bonus 1.5%."
+    }
+  ]
+}

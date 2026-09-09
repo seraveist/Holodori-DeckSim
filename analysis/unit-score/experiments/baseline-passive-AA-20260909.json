@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T05:11:49.095Z",
+  "status": "planned; no AA observation received",
+  "sampleId": "AA",
+  "leaderId": "card-00018-5-uniq-0068-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-06002-5-uniq-0058-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "features": {
+    "id": "AA",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-06004-5-uniq-0060-00",
+      "card-06002-5-uniq-0058-00",
+      "card-00026-5-uniq-0065-00"
+    ],
+    "Araw": 71.05166666666659,
+    "A": 71.1,
+    "W": 6160,
+    "rateSum": 160,
+    "rateDurationSum": 1635,
+    "SP": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-06002-5-uniq-0058-00",
+        "name": "오토노세 카나데",
+        "duration": 10,
+        "support": 120,
+        "rate": 45,
+        "condition": {
+          "kind": "combo",
+          "threshold": 100
+        },
+        "conditionMet": true
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "name": "츠노마키 와타메",
+        "duration": 11,
+        "support": 110,
+        "rate": 35,
+        "condition": null,
+        "conditionMet": true
+      }
+    ],
+    "observedActive": null,
+    "observedSP": null,
+    "displayedActiveFlatRate": {
+      "raw": 42.18599999999999,
+      "ceil": 42.2
+    },
+    "displayedActiveDurationRate": {
+      "raw": 42.310424999999995,
+      "ceil": 42.4
+    },
+    "rawActiveFlatRate": {
+      "raw": 42.15732222222217,
+      "ceil": 42.2
+    },
+    "power": {
+      "memberParameter": 100252,
+      "outfit": 0,
+      "board": 0,
+      "passive": 22531,
+      "memory": 0,
+      "enhancement": 0
+    },
+    "retainedPower": 122783,
+    "conditions": {
+      "leaderScoreSupport": 0,
+      "leaderParameterConditionMet": false,
+      "passiveSupport": [
+        0,
+        0,
+        8,
+        0,
+        8
+      ],
+      "active": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 2,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 100
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 80
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "condition": {
+            "kind": "life",
+            "threshold": 600
+          },
+          "conditionMet": true,
+          "effectiveValue": 115
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 75
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 3,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 120
+        }
+      ]
+    }
+  },
+  "quantized": {
+    "contributions": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 11.25,
+        "roundedSupport": 11.25,
+        "rateContribution": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-06002-5-uniq-0058-00",
+        "name": "오토노세 카나데",
+        "duration": 10,
+        "support": 120,
+        "rate": 45,
+        "condition": {
+          "kind": "combo",
+          "threshold": 100
+        },
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2.25
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "name": "츠노마키 와타메",
+        "duration": 11,
+        "support": 110,
+        "rate": 35,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10.083333333333334,
+        "roundedSupport": 10.09,
+        "rateContribution": 1.75
+      }
+    ],
+    "supportSum": 51.34,
+    "factor": 59.34,
+    "raw": 42.19074,
+    "display": 42.2
+  },
+  "change": "Keep Z swimsuit Suisei leader and four members. Replace swimsuit Noel 80/1 with regular Kanade 80/0.",
+  "purpose": "Collect a second member-set baseline with the same leader, inactive costume, no relevant leader-board effects, and exactly the same two Happy recipients of Watame support.",
+  "fixed": "Watame passive support 8% to Watame and Raden; their Active profiles and Happy condition stay the same. No new score-support passive.",
+  "passiveHypothesis": {
+    "display": 1.5,
+    "status": "Recipient-only invariance hypothesis, not a computed passive formula.",
+    "condition": "If the passive bonus depends only on the two recipients and their skills under this fixed leader, changing an unbuffed member leaves 1.5."
+  },
+  "boardPrediction": {
+    "display": null,
+    "reason": "Member character changes from Noel to Kanade and their board inputs differ; do not carry over the 6.9 invariance prediction."
+  },
+  "assumptions": "Regular Kanade SP combo >=100 and Raden life >=600 are treated as met. Leader member skills excluded. Active/SP baseline excludes boards.",
+  "limitations": "The replaced card changes Active, SP, parameter-passive effects, and member boards. A passive change would refute recipient-only invariance, but would not identify Active alone as its cause.",
+  "interpretation": {
+    "samePassive": "A second baseline with unchanged recipients supports recipient-only invariance at display precision, but does not determine a formula.",
+    "differentPassive": "Passive depends on additional composition context; compare the changed skill, parameter-passive and board inputs before attributing the cause."
+  },
+  "requestedMeasurements": "Member parameter, Active, SP, passive score and board score; power breakdown and totals if available. Preserve absent values as unreported.",
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "newEvidenceHashes": {
+    "analysis/unit-score/board-observations/WX-clarification-20260909.json": "76063061352c10a3bd54bbb34c166d5082c969079123ae8f778c4e16c733d32f",
+    "analysis/unit-score/board-observations/ririka-X-20260909.json": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438",
+    "analysis/unit-score/board-observations/suisei-Y-clarification-20260909.json": "b5c622f99d2a322d8b7f43e177ed2f03ab3bad4ebdae2726142cdcb28adcc12b"
+  },
+  "ZCheckpointSHA256": "06ba4ea6293f5e0a2bbab08ef9b6ce27a744e2dedb8548a706d59924aaa9fda8",
+  "analysisSourceSHA256": "48cb50094a50275c23a012700c197516c67191f5c49a488cb42e6ce121cd0f90"
+}

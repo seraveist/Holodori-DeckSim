@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AE",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T06:22:42.601Z",
+  "gameVersion": null,
+  "observationDateBasis": "Current conversation date; no separate measurement date supplied.",
+  "leaderId": "card-00018-5-uniq-0068-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00022-5-uniq-0063-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Adopt frozen AE profiles. Reply confirms the immediately preceding prediction table, not a separate growth audit.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Inherited W/X clarification and AE plan."
+  },
+  "rawUserInput": "홀로멤보드 4.9% 이외 모두 일치",
+  "confirmedByReference": {
+    "source": "Immediately preceding assistant AE table in chat",
+    "fields": {
+      "memberParameter": 92663,
+      "passivePower": 11520,
+      "active": 73.3,
+      "special": 41.3,
+      "passiveScore": "notDisplayed"
+    },
+    "explicitBoard": 4.9,
+    "scope": "All match excluding the alternative board predictions confirms the four numeric entries and absent passive row. The last chat table did not contain overall totals."
+  },
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": 92663,
+      "outfit": null,
+      "board": null,
+      "passive": 11520,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 73.3,
+      "board": 4.9,
+      "passive": null,
+      "special": 41.3
+    }
+  },
+  "scoreRowPresence": {
+    "passive": false
+  },
+  "categoryStatus": {
+    "scorePassive": "Absent confirmed by reference; raw numeric null preserved.",
+    "scoreOutfit": "Not individually supplied.",
+    "outfitPower": "Not supplied; planned inactive outfit is an inference.",
+    "overallPower": "Unreported.",
+    "totalScoreBonus": "Unreported; category sum119.5 is derived only.",
+    "otherPower": "Board, memory and enhancement individually unreported."
+  },
+  "boardContext": "Suisei leader, no related leader boards, inactive outfit, pre-song Ayame singer effect excluded. Noel23.5/4 board inputs carried over from explicit prior confirmation.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-board-AE-20260909.json",
+  "predictionCheckpointSHA256": "1f37150ff21d24c10ed520943a8669ed48ccc036b3d7b86c1854a2b2ec00b6e1",
+  "evidence": "Board4.9 selects the difference-of-ceiled-Active candidate over raw-increment floor4.8. Other values and absent passive row confirmed by reference. Same member set as historical R with a different leader."
+}

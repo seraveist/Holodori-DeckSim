@@ -1,0 +1,3126 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T08:02:32.129Z",
+  "latestObserved": "AJ",
+  "nextUnobserved": "AK",
+  "scope": "Canonical index, not new observations. Original11 plus subsequent23; Z completed version counts once.",
+  "profileNotation": "level/potential",
+  "cardAliases": {
+    "card-00018-5-uniq-0068-00": "수영복 스이세이",
+    "card-06002-5-uniq-0066-00": "수영복 카나데",
+    "card-00026-5-uniq-0065-00": "수영복 와타메",
+    "card-00022-5-uniq-0063-00": "수영복 노엘",
+    "card-06004-5-uniq-0060-00": "수영복 라덴",
+    "card-06003-5-uniq-0059-00": "리리카 5성 CEO",
+    "card-06002-5-uniq-0058-00": "일반 카나데",
+    "card-00021-5-uniq-0064-00": "수영복 후레아",
+    "card-00027-5-uniq-0022-00": "토와",
+    "card-00010-5-uniq-0010-00": "아야메",
+    "card-00021-5-uniq-0017-00": "일반 후레아",
+    "card-06003-3-nrml-0059-00": "리리카 3성 We are hololive!"
+  },
+  "observations": [
+    {
+      "sampleId": "A",
+      "sourcePath": "scripts/fixtures/unit-observations-20260908.json",
+      "sourceSHA256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "initialFixtureIndex": 0,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 221220,
+        "scoreBonusPct": 140.1,
+        "powerDetail": {
+          "memberParameter": 112726,
+          "outfit": 56367,
+          "board": 31893,
+          "passive": 12397,
+          "memory": 6320,
+          "enhancement": 1517
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 76.4,
+          "board": 13.9,
+          "passive": 4,
+          "special": 45.8
+        }
+      },
+      "rawUserInput": null,
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+      "research": {
+        "active": 76.4,
+        "special": 45.8,
+        "power": {
+          "memberParameter": 112726,
+          "outfit": 56367,
+          "board": 0,
+          "passive": 12397,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 181490,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "B",
+      "sourcePath": "scripts/fixtures/unit-observations-20260908.json",
+      "sourceSHA256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "initialFixtureIndex": 1,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0058-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 221220,
+        "scoreBonusPct": 140.1,
+        "powerDetail": {
+          "memberParameter": 112726,
+          "outfit": 56367,
+          "board": 31893,
+          "passive": 12397,
+          "memory": 6320,
+          "enhancement": 1517
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 76.4,
+          "board": 13.9,
+          "passive": 4,
+          "special": 45.8
+        }
+      },
+      "rawUserInput": null,
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+      "research": {
+        "active": 76.4,
+        "special": 45.8,
+        "power": {
+          "memberParameter": 112726,
+          "outfit": 56367,
+          "board": 0,
+          "passive": 12397,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 181490,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "C",
+      "sourcePath": "scripts/fixtures/unit-observations-20260908.json",
+      "sourceSHA256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "initialFixtureIndex": 2,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 201027,
+        "scoreBonusPct": 144.2,
+        "powerDetail": {
+          "memberParameter": 102618,
+          "outfit": 51313,
+          "board": 31791,
+          "passive": 8172,
+          "memory": 5754,
+          "enhancement": 1379
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 78.4,
+          "board": 15.2,
+          "passive": 4.5,
+          "special": 46.1
+        }
+      },
+      "rawUserInput": null,
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+      "research": {
+        "active": 78.4,
+        "special": 46.1,
+        "power": {
+          "memberParameter": 102618,
+          "outfit": 51313,
+          "board": 0,
+          "passive": 8172,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 162103,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "D",
+      "sourcePath": "scripts/fixtures/unit-observations-20260908.json",
+      "sourceSHA256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "initialFixtureIndex": 3,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 190486,
+        "scoreBonusPct": 129.5,
+        "powerDetail": {
+          "memberParameter": 97578,
+          "outfit": 48793,
+          "board": 29164,
+          "passive": 8172,
+          "memory": 5472,
+          "enhancement": 1307
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 70.3,
+          "board": 15.6,
+          "passive": 3.7,
+          "special": 39.9
+        }
+      },
+      "rawUserInput": null,
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+      "research": {
+        "active": 70.3,
+        "special": 39.9,
+        "power": {
+          "memberParameter": 97578,
+          "outfit": 48793,
+          "board": 0,
+          "passive": 8172,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 154543,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "E",
+      "sourcePath": "scripts/fixtures/unit-observations-20260908.json",
+      "sourceSHA256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "initialFixtureIndex": 4,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 190278,
+        "scoreBonusPct": 124.8,
+        "powerDetail": {
+          "memberParameter": 95098,
+          "outfit": 47554,
+          "board": 27008,
+          "passive": 13978,
+          "memory": 5333,
+          "enhancement": 1307
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 66.9,
+          "board": 17.5,
+          "passive": 2.3,
+          "special": 38.1
+        }
+      },
+      "rawUserInput": null,
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+      "research": {
+        "active": 66.9,
+        "special": 38.1,
+        "power": {
+          "memberParameter": 95098,
+          "outfit": 47554,
+          "board": 0,
+          "passive": 13978,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 156630,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "F",
+      "sourcePath": "scripts/fixtures/unit-observations-20260908.json",
+      "sourceSHA256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "initialFixtureIndex": 5,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-06002-5-uniq-0066-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00026-5-uniq-0065-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 190278,
+        "scoreBonusPct": 124.8,
+        "powerDetail": {
+          "memberParameter": 95098,
+          "outfit": 47554,
+          "board": 27008,
+          "passive": 13978,
+          "memory": 5333,
+          "enhancement": 1307
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 66.9,
+          "board": 17.5,
+          "passive": 2.3,
+          "special": 38.1
+        }
+      },
+      "rawUserInput": null,
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+      "research": {
+        "active": 66.9,
+        "special": 38.1,
+        "power": {
+          "memberParameter": 95098,
+          "outfit": 47554,
+          "board": 0,
+          "passive": 13978,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 156630,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "G",
+      "sourcePath": "scripts/fixtures/unit-observations-20260908.json",
+      "sourceSHA256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "initialFixtureIndex": 6,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 186671,
+        "scoreBonusPct": 122.6,
+        "powerDetail": {
+          "memberParameter": 97617,
+          "outfit": 48813,
+          "board": 25506,
+          "passive": 7980,
+          "memory": 5475,
+          "enhancement": 1280
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 70.1,
+          "board": 13.8,
+          "passive": 0,
+          "special": 38.7
+        }
+      },
+      "rawUserInput": null,
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+      "research": {
+        "active": 70.1,
+        "special": 38.7,
+        "power": {
+          "memberParameter": 97617,
+          "outfit": 48813,
+          "board": 0,
+          "passive": 7980,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 154410,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "I",
+      "sourcePath": "scripts/fixtures/unit-observations-20260908.json",
+      "sourceSHA256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "initialFixtureIndex": 7,
+      "leaderId": "card-00010-5-uniq-0010-00",
+      "memberIds": [
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 124451,
+        "scoreBonusPct": 157.2,
+        "powerDetail": {
+          "memberParameter": 97617,
+          "outfit": 0,
+          "board": 12537,
+          "passive": 7980,
+          "memory": 5475,
+          "enhancement": 842
+        },
+        "scoreBonusDetail": {
+          "outfit": 39,
+          "active": 70.1,
+          "board": 9.4,
+          "passive": 0,
+          "special": 38.7
+        }
+      },
+      "rawUserInput": null,
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+      "research": {
+        "active": 70.1,
+        "special": 38.7,
+        "power": {
+          "memberParameter": 97617,
+          "outfit": 0,
+          "board": 0,
+          "passive": 7980,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 105597,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "J",
+      "sourcePath": "scripts/fixtures/unit-observations-20260908.json",
+      "sourceSHA256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "initialFixtureIndex": 8,
+      "leaderId": "card-00010-5-uniq-0010-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 129350,
+        "scoreBonusPct": 159.4,
+        "powerDetail": {
+          "memberParameter": 95098,
+          "outfit": 0,
+          "board": 14065,
+          "passive": 13978,
+          "memory": 5333,
+          "enhancement": 876
+        },
+        "scoreBonusDetail": {
+          "outfit": 41.5,
+          "active": 66.9,
+          "board": 10.2,
+          "passive": 2.7,
+          "special": 38.1
+        }
+      },
+      "rawUserInput": null,
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+      "research": {
+        "active": 66.9,
+        "special": 38.1,
+        "power": {
+          "memberParameter": 95098,
+          "outfit": 0,
+          "board": 0,
+          "passive": 13978,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 109076,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "K",
+      "sourcePath": "scripts/fixtures/unit-observations-20260908.json",
+      "sourceSHA256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "initialFixtureIndex": 9,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 190278,
+        "scoreBonusPct": 124.8,
+        "powerDetail": {
+          "memberParameter": 95098,
+          "outfit": 47554,
+          "board": 27008,
+          "passive": 13978,
+          "memory": 5333,
+          "enhancement": 1307
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 66.9,
+          "board": 17.5,
+          "passive": 2.3,
+          "special": 38.1
+        }
+      },
+      "rawUserInput": null,
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+      "research": {
+        "active": 66.9,
+        "special": 38.1,
+        "power": {
+          "memberParameter": 95098,
+          "outfit": 47554,
+          "board": 0,
+          "passive": 13978,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 156630,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "H",
+      "sourcePath": "scripts/fixtures/unit-observations-20260908.json",
+      "sourceSHA256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "initialFixtureIndex": 10,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 162029,
+        "scoreBonusPct": 127.7,
+        "powerDetail": {
+          "memberParameter": 79241,
+          "outfit": 39625,
+          "board": 28979,
+          "passive": 8626,
+          "memory": 4444,
+          "enhancement": 1114
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 67.3,
+          "board": 19.6,
+          "passive": 2.4,
+          "special": 38.4
+        }
+      },
+      "rawUserInput": null,
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Inventory profiles for these test cards only; swimsuit Kanade corrected to Lv.40 / awakening 0 by user confirmation. Screenshots do not display levels.",
+      "research": {
+        "active": 67.3,
+        "special": 38.4,
+        "power": {
+          "memberParameter": 79241,
+          "outfit": 39625,
+          "board": 0,
+          "passive": 8626,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 127492,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "M",
+      "sourcePath": "analysis/unit-score/observations/M-20260909.json",
+      "sourceSHA256": "603a1dafe2b7b56576cfc2503253bbf10b7416489eea014e818e85dc2fffff87",
+      "initialFixtureIndex": null,
+      "leaderId": "card-00010-5-uniq-0010-00",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 136236,
+        "scoreBonusPct": 181.5,
+        "powerDetail": {
+          "memberParameter": 102618,
+          "outfit": null,
+          "board": 18770,
+          "passive": 8172,
+          "memory": 5754,
+          "enhancement": 922
+        },
+        "scoreBonusDetail": {
+          "outfit": 37.5,
+          "active": 78.4,
+          "board": 12.8,
+          "passive": 6.7,
+          "special": 46.1
+        }
+      },
+      "rawUserInput": "종합력 136236, 멤버 파라미터 102618, 홀로멤 보드효과(종합력) 18770, 패시브스킬 8172, 메모리효과 5754, 멤버강화보너스 922\n\n스코어보너스 181.5%, 의상스킬 37.5%, 액티브 스킬 78.4%, 홀로멤보드효과(스코어보너스) 12.8%, 패시브스킬 6.7%, 스페셜스킬 46.1%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": null,
+      "research": {
+        "active": 78.4,
+        "special": 46.1,
+        "power": {
+          "memberParameter": 102618,
+          "outfit": 0,
+          "board": 0,
+          "passive": 8172,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 110790,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "O",
+      "sourcePath": "analysis/unit-score/observations/O-20260909.json",
+      "sourceSHA256": "54128775c983b64f45f463603d0af46d51441308439f5fab0767595244878c88",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00027-5-uniq-0022-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 171732,
+        "scoreBonusPct": 117.5,
+        "powerDetail": {
+          "memberParameter": 87623,
+          "outfit": 43816,
+          "board": null,
+          "passive": 11520,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 65.6,
+          "board": 14.9,
+          "passive": null,
+          "special": 37
+        }
+      },
+      "rawUserInput": "O 편성\n\n종합력 171732, 멤버 파라미터 87623, 의상스킬 43816, 패시브스킬 11520 (보드효과, 메모리, 멤버강화는 제외함)\n스코어보너스 117.5%, 액티브 스킬 65.6%, 스페셜 스킬 37.0%\n\nP편성\n\n종합력 152296, 멤버 파라미터 73877, 의상스킬 36942, 패시브스킬 11611\n스코어보너스 120.7%, 액티브스킬 66.4%, 스페셜 스킬 37.5%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": null,
+      "research": {
+        "active": 65.6,
+        "special": 37,
+        "power": {
+          "memberParameter": 87623,
+          "outfit": 43816,
+          "board": 0,
+          "passive": 11520,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 142959,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "P",
+      "sourcePath": "analysis/unit-score/observations/P-20260909.json",
+      "sourceSHA256": "facd6cccf86f59f8f5b2d037e2f39f3dea3b27402e0932270ece179755381d24",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 152296,
+        "scoreBonusPct": 120.7,
+        "powerDetail": {
+          "memberParameter": 73877,
+          "outfit": 36942,
+          "board": null,
+          "passive": 11611,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 66.4,
+          "board": 16.8,
+          "passive": null,
+          "special": 37.5
+        }
+      },
+      "rawUserInput": "O 편성\n\n종합력 171732, 멤버 파라미터 87623, 의상스킬 43816, 패시브스킬 11520 (보드효과, 메모리, 멤버강화는 제외함)\n스코어보너스 117.5%, 액티브 스킬 65.6%, 스페셜 스킬 37.0%\n\nP편성\n\n종합력 152296, 멤버 파라미터 73877, 의상스킬 36942, 패시브스킬 11611\n스코어보너스 120.7%, 액티브스킬 66.4%, 스페셜 스킬 37.5%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": null,
+      "research": {
+        "active": 66.4,
+        "special": 37.5,
+        "power": {
+          "memberParameter": 73877,
+          "outfit": 36942,
+          "board": 0,
+          "passive": 11611,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 122430,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "Q",
+      "sourcePath": "analysis/unit-score/observations/Q-20260909.json",
+      "sourceSHA256": "d9955347b51c2220b0259a271ad69dcc5f6c73797947210c6362f16d902d06e0",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 133823,
+        "scoreBonusPct": 128.7,
+        "powerDetail": {
+          "memberParameter": 97731,
+          "outfit": null,
+          "board": null,
+          "passive": 6496,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 73.3,
+          "board": 14.9,
+          "passive": null,
+          "special": 40.5
+        }
+      },
+      "rawUserInput": "Q 편성\n종합력 133823, 멤버 파라미터 97731, 패시브 스킬 6496\n스코어 보너스 128.7%, 액티브 스킬 73.3%, 스페셜 스킬 40.5%, 홀로멤보드 14.9%\n\nR편성\n종합력 182273, 멤버파라미터 92663, 의상스킬 46336, 패시브스킬 11520\n스코어보너스 129.9%, 액티브스킬 73.3%, 홀로멤 15.3%, 스페셜스킬 41.3%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "User identified the planned Q/R formations; planned profiles adopted for comparison. No separate explicit growth confirmation. All supplied power components match these profiles.",
+      "research": {
+        "active": 73.3,
+        "special": 40.5,
+        "power": {
+          "memberParameter": 97731,
+          "outfit": 0,
+          "board": 0,
+          "passive": 6496,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 104227,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "R",
+      "sourcePath": "analysis/unit-score/observations/R-20260909.json",
+      "sourceSHA256": "86532f0b7d70c7d520f31e648a90fce01822d9935968014ff7f4b228192d578d",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 182273,
+        "scoreBonusPct": 129.9,
+        "powerDetail": {
+          "memberParameter": 92663,
+          "outfit": 46336,
+          "board": null,
+          "passive": 11520,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 73.3,
+          "board": 15.3,
+          "passive": null,
+          "special": 41.3
+        }
+      },
+      "rawUserInput": "Q 편성\n종합력 133823, 멤버 파라미터 97731, 패시브 스킬 6496\n스코어 보너스 128.7%, 액티브 스킬 73.3%, 스페셜 스킬 40.5%, 홀로멤보드 14.9%\n\nR편성\n종합력 182273, 멤버파라미터 92663, 의상스킬 46336, 패시브스킬 11520\n스코어보너스 129.9%, 액티브스킬 73.3%, 홀로멤 15.3%, 스페셜스킬 41.3%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "User identified the planned Q/R formations; planned profiles adopted for comparison. No separate explicit growth confirmation. All supplied power components match these profiles.",
+      "research": {
+        "active": 73.3,
+        "special": 41.3,
+        "power": {
+          "memberParameter": 92663,
+          "outfit": 46336,
+          "board": 0,
+          "passive": 11520,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 150519,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "S",
+      "sourcePath": "analysis/unit-score/observations/S-20260909.json",
+      "sourceSHA256": "5672f302b9e94259578d2878eab558213549aa4689b0a94fd231e1090bc977fd",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 175103,
+        "scoreBonusPct": 111.3,
+        "powerDetail": {
+          "memberParameter": 90103,
+          "outfit": 45055,
+          "board": null,
+          "passive": 9609,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 63.1,
+          "board": 13.9,
+          "passive": null,
+          "special": 34.3
+        }
+      },
+      "rawUserInput": "S편성\n종합력 175103, 멤버파라미터 90103, 의상스킬 45055, 패시브스킬 9609\n스코어보너스 111.3%, 액티브스킬 63.1%, 홀로멤보드 13.9%, 스페셜스킬 34.3%\n\nT편성\n종합력 118210, 멤버파라미터 81505, 패시브스킬 7529\n스코어보너스 127%, 액티브스킬 71.3%, 홀로멤 14.8%, 스페셜스킬 40.9%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "User referred to the planned S/T formations. Planned profiles adopted without a separate explicit growth confirmation; every reported power component matches.",
+      "research": {
+        "active": 63.1,
+        "special": 34.3,
+        "power": {
+          "memberParameter": 90103,
+          "outfit": 45055,
+          "board": 0,
+          "passive": 9609,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 144767,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "T",
+      "sourcePath": "analysis/unit-score/observations/T-20260909.json",
+      "sourceSHA256": "2316ef27545ec0916109c6472f64329aaeeb82da045dace459d5b67e1df6e8f6",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00027-5-uniq-0022-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 118210,
+        "scoreBonusPct": 127,
+        "powerDetail": {
+          "memberParameter": 81505,
+          "outfit": null,
+          "board": null,
+          "passive": 7529,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 71.3,
+          "board": 14.8,
+          "passive": null,
+          "special": 40.9
+        }
+      },
+      "rawUserInput": "S편성\n종합력 175103, 멤버파라미터 90103, 의상스킬 45055, 패시브스킬 9609\n스코어보너스 111.3%, 액티브스킬 63.1%, 홀로멤보드 13.9%, 스페셜스킬 34.3%\n\nT편성\n종합력 118210, 멤버파라미터 81505, 패시브스킬 7529\n스코어보너스 127%, 액티브스킬 71.3%, 홀로멤 14.8%, 스페셜스킬 40.9%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "User referred to the planned S/T formations. Planned profiles adopted without a separate explicit growth confirmation; every reported power component matches.",
+      "research": {
+        "active": 71.3,
+        "special": 40.9,
+        "power": {
+          "memberParameter": 81505,
+          "outfit": 0,
+          "board": 0,
+          "passive": 7529,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 89034,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "U",
+      "sourcePath": "analysis/unit-score/observations/U-20260909.json",
+      "sourceSHA256": "1810ada89559ee5100fe936c19daf159d07f6932be8e97ce7e84a791d7167567",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06004-5-uniq-0060-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06003-5-uniq-0059-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 136405,
+        "scoreBonusPct": 91.4,
+        "powerDetail": {
+          "memberParameter": 82623,
+          "outfit": 31837,
+          "board": null,
+          "passive": 9283,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 59.6,
+          "board": null,
+          "passive": null,
+          "special": 31.8
+        }
+      },
+      "rawUserInput": "종합력 1364005 멤버파라미터 82623 의상스킬 31837 패시브스킬 9283\n스코어보너스 91.4%, 액티브 스킬 59.6%, 스페셜 스킬 31.8%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Measurement supplied in response to the U plan; planned profiles adopted. All three reported power components match. No separate growth confirmation.",
+      "research": {
+        "active": 59.6,
+        "special": 31.8,
+        "power": {
+          "memberParameter": 82623,
+          "outfit": 31837,
+          "board": 0,
+          "passive": 9283,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 123743,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "V",
+      "sourcePath": "analysis/unit-score/observations/V-20260909.json",
+      "sourceSHA256": "44371ebc4008a494b0a7bc689f7d3fd86da4fe63a5066805e8318ca5bffde9d6",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 192628,
+        "scoreBonusPct": 119.6,
+        "powerDetail": {
+          "memberParameter": 97731,
+          "outfit": 48870,
+          "board": null,
+          "passive": 16443,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 69.1,
+          "board": 10.7,
+          "passive": null,
+          "special": 39.8
+        }
+      },
+      "rawUserInput": "종합력 192628 멤버파라미터 97731 의상스킬 48870 패시브스킬 16443\n스코어보너스 119.6% 액티브스킬 69.1%, 스페셜스킬 39.8% 홀로멤보드 10.7%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Measurement supplied in response to the V plan; planned profiles adopted. All three reported power components match. No separate growth confirmation.",
+      "research": {
+        "active": 69.1,
+        "special": 39.8,
+        "power": {
+          "memberParameter": 97731,
+          "outfit": 48870,
+          "board": 0,
+          "passive": 16443,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 163044,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "W",
+      "sourcePath": "analysis/unit-score/observations/W-20260909.json",
+      "sourceSHA256": "e5b8ad2712c93c6df1ca35358409f0530663e53e77cd7c7d270ff846b2480e30",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 146791,
+        "scoreBonusPct": 137.9,
+        "powerDetail": {
+          "memberParameter": 100252,
+          "outfit": null,
+          "board": null,
+          "passive": 12584,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 75.5,
+          "board": 17.3,
+          "passive": 1.9,
+          "special": 43.2
+        }
+      },
+      "rawUserInput": "종합력 146791 멤버파라미터 100252 패시브스킬 12584\n스코어보너스 137.9% 액티브 스킬 75.5%, 홀로맴 17.3%, 패시브스킬 1.9%, 스페셜스킬 43.2%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Measurement supplied in response to the W plan; planned profiles adopted. Both reported power components match. No separate growth confirmation.",
+      "research": {
+        "active": 75.5,
+        "special": 43.2,
+        "power": {
+          "memberParameter": 100252,
+          "outfit": 0,
+          "board": 0,
+          "passive": 12584,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 112836,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "X",
+      "sourcePath": "analysis/unit-score/observations/X-20260909.json",
+      "sourceSHA256": "0b72d170b8b0ccc6743266659a24f7b98f85daea886872da1865f1af890a7ef7",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06002-5-uniq-0066-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 177959,
+        "scoreBonusPct": 127.1,
+        "powerDetail": {
+          "memberParameter": 100252,
+          "outfit": 43945,
+          "board": null,
+          "passive": 12584,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 75.5,
+          "board": 6.9,
+          "passive": 1.5,
+          "special": 43.2
+        }
+      },
+      "rawUserInput": "종합력 177959 멤버파라미터 100252 의상스킬 43945 패시브스킬 12584\n스코어보너스 127.1%, 액티브스킬 75.5%, 홀로멤보드 6.9%, 패시브스킬 1.5%, 스페셜 스킬 43.2%\n\n리리카 리더의 보드효과를 다시 명시함\n스코어 서포트 4.0%, 6.2%, 3.1%\n판정 20초마다 낮은 확률로 7초 동안 good 이상이 perfect가 된다\n악곡 가창자로 포함될 경우 전원의 스코어서포트 24.0%\n\n종합력이 아닌 스코어보너스에 영향이 갈 모든 노드의 효과임.",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": null,
+      "profileBasis": "Measurement supplied in response to the X plan; planned profiles adopted. All three power components match. No separate growth confirmation.",
+      "research": {
+        "active": 75.5,
+        "special": 43.2,
+        "power": {
+          "memberParameter": 100252,
+          "outfit": 43945,
+          "board": 0,
+          "passive": 12584,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 156781,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "Y",
+      "sourcePath": "analysis/unit-score/observations/Y-20260909.json",
+      "sourceSHA256": "9c76651d25574208f055d82558a04dbc769b038d1b3f3fcfa2cb61ac638ad4a5",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06002-5-uniq-0058-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 183991,
+        "scoreBonusPct": 127.1,
+        "powerDetail": {
+          "memberParameter": 100252,
+          "outfit": 49934,
+          "board": null,
+          "passive": 12584,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 75.5,
+          "board": 6.9,
+          "passive": 1.5,
+          "special": 43.2
+        }
+      },
+      "rawUserInput": "종합력 183991 멤버파라미터 100252 의상스킬 49934 패시브스킬 12584&#x20;\n스코어보너스 127.1%, 액티브 스킬 75.5% 패시브스킬 1.5%, 스페셜 스킬 43.2% 홀로멤보드 6.9%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Y plan retains the W/X view previously confirmed by the user; no separate Y view confirmation."
+      },
+      "profileBasis": "Measurement supplied in response to the Y plan; planned profiles adopted. All three power components match. No separate growth confirmation.",
+      "research": {
+        "active": 75.5,
+        "special": 43.2,
+        "power": {
+          "memberParameter": 100252,
+          "outfit": 49934,
+          "board": 0,
+          "passive": 12584,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 162770,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "Z",
+      "sourcePath": "analysis/unit-score/observations/Z-20260909-completed.json",
+      "sourceSHA256": "7953e134131cc90242a93e5def0a1bfde32dd3f8472d9f81911c1da5a275f655",
+      "initialFixtureIndex": null,
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 133702,
+        "scoreBonusPct": 127.1,
+        "powerDetail": {
+          "memberParameter": 100252,
+          "outfit": null,
+          "board": null,
+          "passive": 12584,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 75.5,
+          "board": 6.9,
+          "passive": 1.5,
+          "special": 43.2
+        }
+      },
+      "rawUserInput": "패시브 1.5%, 홀로멤보드 6.9%, 액티브 75.5%, 스페셜 43.2%, 멤버파라미터 100252임.",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Inherited W/X confirmation and Z plan; no separate Z view confirmation."
+      },
+      "profileBasis": "Original Z plan adopted; reported member parameter and now supplied passive power both match. No separate growth confirmation.",
+      "research": {
+        "active": 75.5,
+        "special": 43.2,
+        "power": {
+          "memberParameter": 100252,
+          "outfit": 0,
+          "board": 0,
+          "passive": 12584,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 112836,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "AA",
+      "sourcePath": "analysis/unit-score/observations/AA-20260909.json",
+      "sourceSHA256": "fcf6fbdb4cfef6e64cef245f057b427bf4a8ad2611c456d0220688f7b63ccb65",
+      "initialFixtureIndex": null,
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 143292,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": 100252,
+          "outfit": null,
+          "board": null,
+          "passive": 22531,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 71.1,
+          "board": 3.3,
+          "passive": 0.8,
+          "special": 42.2
+        }
+      },
+      "rawUserInput": "AA 편성\n종합력 143292 멤버파라미터 100252 패시브스킬 22531, 액티브스킬 71.1%, 홀로멤보드 3.3%, 패시브스킬 0.8%, 스페셜스킬 42.2%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Inherited W/X clarification and AA plan; no separate AA view confirmation."
+      },
+      "profileBasis": "User labeled this AA; adopt the frozen AA formation and growth settings. Member parameter and passive power match. No separate growth confirmation.",
+      "research": {
+        "active": 71.1,
+        "special": 42.2,
+        "power": {
+          "memberParameter": 100252,
+          "outfit": 0,
+          "board": 0,
+          "passive": 22531,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 122783,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "AB",
+      "sourcePath": "analysis/unit-score/observations/AB-20260909.json",
+      "sourceSHA256": "d7f54005c43a8bd085c79bda8c191841fa9646007444d2053018184d28444c49",
+      "initialFixtureIndex": null,
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 118253,
+        "scoreBonusPct": 124.8,
+        "powerDetail": {
+          "memberParameter": 84026,
+          "outfit": null,
+          "board": null,
+          "passive": 13617,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 73.7,
+          "board": 5.7,
+          "passive": 1.8,
+          "special": 43.6
+        }
+      },
+      "rawUserInput": "종합력 118253 멤버파라미터 84026 패시브스킬 13617 스코어보너스 124.8% 액티브스킬 73.7% 홀로멤보드 5.7% 패시브스킬 1.8% 스페셜 스킬 43.6%",
+      "confirmedByReference": null,
+      "scoreRowPresence": null,
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Inherited W/X clarification and AB plan; no separate AB view confirmation."
+      },
+      "profileBasis": "Response to the AB request; adopt the frozen formation and growth settings. Member parameter and passive power match. No separate profile confirmation.",
+      "research": {
+        "active": 73.7,
+        "special": 43.6,
+        "power": {
+          "memberParameter": 84026,
+          "outfit": 0,
+          "board": 0,
+          "passive": 13617,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 97643,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "AC",
+      "sourcePath": "analysis/unit-score/observations/AC-20260909.json",
+      "sourceSHA256": "5436910da10be12180fbf345e11b11db18a3880f6fb5a5b3115bec28c9f9f9fe",
+      "initialFixtureIndex": null,
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0058-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": 86545,
+          "outfit": null,
+          "board": null,
+          "passive": 17476,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 68.4,
+          "board": 1.5,
+          "passive": null,
+          "special": 40.7
+        }
+      },
+      "rawUserInput": "모두 사전예측과 동일하고 보드 1.5%, 패시브 항목없음",
+      "confirmedByReference": {
+        "source": "Immediately preceding assistant AC table in chat",
+        "fields": {
+          "memberParameter": 86545,
+          "passivePower": 17476,
+          "active": 68.4,
+          "special": 40.7
+        },
+        "exceptions": {
+          "board": 1.5,
+          "passiveScore": "notDisplayed"
+        },
+        "scope": "The last chat table did not contain overall power or total score bonus. Do not import totals from the longer saved report as user-confirmed measurements."
+      },
+      "scoreRowPresence": {
+        "passive": false
+      },
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Inherited W/X clarification and AC plan; no separate view confirmation."
+      },
+      "profileBasis": "Response to the AC measurement table; formation and growth follow the frozen plan, not a separate explicit profile confirmation.",
+      "research": {
+        "active": 68.4,
+        "special": 40.7,
+        "power": {
+          "memberParameter": 86545,
+          "outfit": 0,
+          "board": 0,
+          "passive": 17476,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 104021,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "AD",
+      "sourcePath": "analysis/unit-score/observations/AD-20260909.json",
+      "sourceSHA256": "0c49a3382f4b69b4b7fe09511da76062e50a9b8fdee2fffba5f744d52c890b25",
+      "initialFixtureIndex": null,
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": 76437,
+          "outfit": null,
+          "board": null,
+          "passive": 12553,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 71.3,
+          "board": 5.3,
+          "passive": null,
+          "special": 41.6
+        }
+      },
+      "rawUserInput": "모두 일치, 보드 5.3%",
+      "confirmedByReference": {
+        "source": "Immediately preceding assistant AD table in chat",
+        "fields": {
+          "memberParameter": 76437,
+          "passivePower": 12553,
+          "active": 71.3,
+          "special": 41.6,
+          "passiveScore": "notDisplayed"
+        },
+        "explicitBoard": 5.3,
+        "scope": "The last chat table did not include total power or total score bonus. Keep totals unreported. Interpret all match as confirming the predicted absent passive row."
+      },
+      "scoreRowPresence": {
+        "passive": false
+      },
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Inherited W/X clarification and AD plan."
+      },
+      "profileBasis": "Adopt the frozen AD formation and growth profiles. The reply confirms prediction-table measurements, not a separate growth audit.",
+      "research": {
+        "active": 71.3,
+        "special": 41.6,
+        "power": {
+          "memberParameter": 76437,
+          "outfit": 0,
+          "board": 0,
+          "passive": 12553,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 88990,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "AE",
+      "sourcePath": "analysis/unit-score/observations/AE-20260909.json",
+      "sourceSHA256": "6a036fcb3ae76c2311e1e46549f255cc0ed0a924598bc11a4f523041fa2d1183",
+      "initialFixtureIndex": null,
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": 92663,
+          "outfit": null,
+          "board": null,
+          "passive": 11520,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 73.3,
+          "board": 4.9,
+          "passive": null,
+          "special": 41.3
+        }
+      },
+      "rawUserInput": "홀로멤보드 4.9% 이외 모두 일치",
+      "confirmedByReference": {
+        "source": "Immediately preceding assistant AE table in chat",
+        "fields": {
+          "memberParameter": 92663,
+          "passivePower": 11520,
+          "active": 73.3,
+          "special": 41.3,
+          "passiveScore": "notDisplayed"
+        },
+        "explicitBoard": 4.9,
+        "scope": "All match excluding the alternative board predictions confirms the four numeric entries and absent passive row. The last chat table did not contain overall totals."
+      },
+      "scoreRowPresence": {
+        "passive": false
+      },
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Inherited W/X clarification and AE plan."
+      },
+      "profileBasis": "Adopt frozen AE profiles. Reply confirms the immediately preceding prediction table, not a separate growth audit.",
+      "research": {
+        "active": 73.3,
+        "special": 41.3,
+        "power": {
+          "memberParameter": 92663,
+          "outfit": 0,
+          "board": 0,
+          "passive": 11520,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 104183,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "AF",
+      "sourcePath": "analysis/unit-score/observations/AF-20260909.json",
+      "sourceSHA256": "a5cead6f5810c0f91b98ffeddcfec08b22b52951ef5a260ad6ab64b9f6255a70",
+      "initialFixtureIndex": null,
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0058-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": 102771,
+          "outfit": null,
+          "board": null,
+          "passive": 16443,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 71.8,
+          "board": 2.3,
+          "passive": 1,
+          "special": 42.6
+        }
+      },
+      "rawUserInput": "홀로멤 2.3%, 패시브 1.0%",
+      "confirmedByReference": {
+        "fields": {
+          "memberParameter": 102771,
+          "passivePower": 16443,
+          "active": 71.8,
+          "special": 42.6
+        },
+        "scope": "Four values explicitly confirmed by follow-up; totals/outfit/other breakdown rows not supplied."
+      },
+      "scoreRowPresence": {
+        "passive": true
+      },
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Inherited W/X clarification and AF plan."
+      },
+      "profileBasis": "Adopt frozen AF formation/profiles. Follow-up confirms four predicted values, not a separate growth audit.",
+      "research": {
+        "active": 71.8,
+        "special": 42.6,
+        "power": {
+          "memberParameter": 102771,
+          "outfit": 0,
+          "board": 0,
+          "passive": 16443,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 119214,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "AG",
+      "sourcePath": "analysis/unit-score/observations/AG-20260909.json",
+      "sourceSHA256": "d74453fccab994b7c92308666d08b633de10361010ee02209ba84c3ab0a53e8a",
+      "initialFixtureIndex": null,
+      "leaderId": "card-00018-5-uniq-0068-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00022-5-uniq-0063-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": 86545,
+          "outfit": null,
+          "board": null,
+          "passive": 10772,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 74.6,
+          "board": 5.3,
+          "passive": 1.7,
+          "special": 44.3
+        }
+      },
+      "rawUserInput": "홀로멤보드 5.3%, 패시브스킬 1.7%, 나머지 일치",
+      "confirmedByReference": {
+        "source": "Immediately preceding assistant AG prediction table",
+        "fields": {
+          "memberParameter": 86545,
+          "passivePower": 10772,
+          "active": 74.6,
+          "special": 44.3
+        },
+        "scope": "Four prediction-table values confirmed. Overall totals and outfit/other power rows were not in that table and remain unreported."
+      },
+      "scoreRowPresence": {
+        "passive": true
+      },
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Inherited W/X clarification and AG plan."
+      },
+      "profileBasis": "Use frozen AG formation/profiles. Remaining values match confirms the four prediction-table values, not a separate growth audit.",
+      "research": {
+        "active": 74.6,
+        "special": 44.3,
+        "power": {
+          "memberParameter": 86545,
+          "outfit": 0,
+          "board": 0,
+          "passive": 10772,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 97317,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "AH",
+      "sourcePath": "analysis/unit-score/observations/AH-20260909.json",
+      "sourceSHA256": "4a4ed67abaafb2461ae9fa9eaaeae737b763ba59611fd161539558b1a2d8f3b3",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00022-5-uniq-0063-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": 86545,
+          "outfit": null,
+          "board": null,
+          "passive": 10772,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 74.6,
+          "board": 15.3,
+          "passive": 2.2,
+          "special": 44.3
+        }
+      },
+      "rawUserInput": "홀로멤 보드 15.3%, 패시브 2.2%, 나머지 일치",
+      "confirmedByReference": {
+        "source": "Immediately preceding assistant AH prediction table",
+        "fields": {
+          "memberParameter": 86545,
+          "passivePower": 10772,
+          "active": 74.6,
+          "special": 44.3
+        },
+        "scope": "Four table values confirmed. Overall totals and outfit/other power rows were not in the table and remain unreported."
+      },
+      "scoreRowPresence": {
+        "passive": true
+      },
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Inherited W/X clarification and AH plan."
+      },
+      "profileBasis": "Use frozen AH formation/profiles. Remaining values match confirms the four prediction-table values, not a separate growth/order audit.",
+      "research": {
+        "active": 74.6,
+        "special": 44.3,
+        "power": {
+          "memberParameter": 86545,
+          "outfit": 0,
+          "board": 0,
+          "passive": 10772,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 97317,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "AI",
+      "sourcePath": "analysis/unit-score/observations/AI-20260909.json",
+      "sourceSHA256": "b7a6a91ef4730e0d1c3de3fcb51d8176a60ac5ae3ee5e0bb7a1b8cda382d4614",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": 84026,
+          "outfit": null,
+          "board": null,
+          "passive": 13617,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 73.7,
+          "board": 15.7,
+          "passive": 2.2,
+          "special": 43.6
+        }
+      },
+      "rawUserInput": "패시브 2.2%, 홀로멤보드 15.7%, 나머지 일치",
+      "confirmedByReference": {
+        "source": "Immediately preceding assistant AI table",
+        "fields": {
+          "memberParameter": 84026,
+          "passivePower": 13617,
+          "active": 73.7,
+          "special": 43.6
+        },
+        "scope": "Four baseline values confirmed; explicitly supplied passive/board values override their predictions. Totals and outfit/other power rows were not in the table."
+      },
+      "scoreRowPresence": {
+        "passive": true
+      },
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Inherited W/X clarification and AI plan."
+      },
+      "profileBasis": "Use frozen AI formation/profiles. Remaining values match confirms the four baseline numeric table values, not the passive/board candidates or a separate growth audit.",
+      "research": {
+        "active": 73.7,
+        "special": 43.6,
+        "power": {
+          "memberParameter": 84026,
+          "outfit": 0,
+          "board": 0,
+          "passive": 13617,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 97643,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    },
+    {
+      "sampleId": "AJ",
+      "sourcePath": "analysis/unit-score/observations/AJ-20260909.json",
+      "sourceSHA256": "d56abe31c4e38e8f7db9ea33361fcc79f53e605dafabbea1d24fa172b403c543",
+      "initialFixtureIndex": null,
+      "leaderId": "card-06003-5-uniq-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": 100252,
+          "outfit": 50131,
+          "board": null,
+          "passive": 22531,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 71.1,
+          "board": 12.2,
+          "passive": 1.5,
+          "special": 42.2
+        }
+      },
+      "rawUserInput": "홀로멤보드 12.2%, 패시브 1.5% 나머지 일치",
+      "confirmedByReference": {
+        "source": "Immediately preceding assistant AJ prediction table",
+        "fields": {
+          "memberParameter": 100252,
+          "outfitPower": 50131,
+          "passivePower": 22531,
+          "active": 71.1,
+          "special": 42.2
+        },
+        "scope": "Five baseline values confirmed; explicit passive/board values are recorded as given. Overall totals were not in the table."
+      },
+      "scoreRowPresence": {
+        "passive": true
+      },
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false,
+        "basis": "Inherited W/X clarification and AJ plan."
+      },
+      "profileBasis": "Use frozen AJ formation/profiles. Remaining values match confirms five baseline numeric rows, including outfit power, not either passive candidate range or a separate growth audit.",
+      "research": {
+        "active": 71.1,
+        "special": 42.2,
+        "power": {
+          "memberParameter": 100252,
+          "outfit": 50131,
+          "board": 0,
+          "passive": 22531,
+          "memory": 0,
+          "enhancement": 0
+        },
+        "retainedPower": 172914,
+        "activeMatches": true,
+        "specialMatches": true
+      },
+      "note": "Raw missing values are preserved; research power is a model subtotal, not measured whole-account power."
+    }
+  ]
+}

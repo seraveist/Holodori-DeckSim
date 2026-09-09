@@ -6,7 +6,7 @@
 
 라이브 서비스: https://holosims.net/
 
-계산식 검증을 다른 PC에서 이어가려면 [검증 인수인계](SCORING_HANDOFF.md)를 참고합니다. `node scripts/run-scoring-validation.mjs`로 실측 입력과 다음 편성 예측을 재현할 수 있습니다.
+계산식 검증의 최신 상태는 [AJ 완료 / AK 대기 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 누적 실측 34건과 AK 고정 예측을, `node scripts/run-scoring-validation.mjs`로 기존 계산 회귀까지 재현할 수 있습니다. [초기 인수인계와 누적 이력](SCORING_HANDOFF.md)도 보존합니다.
 
 ## 주요 기능
 

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AA",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T05:24:18.002Z",
+  "observationDateBasis": "Current conversation date; no separate date supplied.",
+  "gameVersion": null,
+  "leaderId": "card-00018-5-uniq-0068-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-06002-5-uniq-0058-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "User labeled this AA; adopt the frozen AA formation and growth settings. Member parameter and passive power match. No separate growth confirmation.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Inherited W/X clarification and AA plan; no separate AA view confirmation."
+  },
+  "rawUserInput": "AA 편성\n종합력 143292 멤버파라미터 100252 패시브스킬 22531, 액티브스킬 71.1%, 홀로멤보드 3.3%, 패시브스킬 0.8%, 스페셜스킬 42.2%",
+  "game": {
+    "unitScore": null,
+    "overallPower": 143292,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": 100252,
+      "outfit": null,
+      "board": null,
+      "passive": 22531,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 71.1,
+      "board": 3.3,
+      "passive": 0.8,
+      "special": 42.2
+    }
+  },
+  "categoryStatus": {
+    "totalScoreBonus": "Not supplied; sum of supplied bonus rows is derived, not a measured total.",
+    "outfitPower": "Not supplied; planned inactive condition implies zero as an inference only.",
+    "outfitScore": "Not supplied; do not fabricate a measured zero.",
+    "otherPower": "Board, memory and enhancement individually unreported."
+  },
+  "boardContext": "Suisei relevant leader-board effects were confirmed absent. Member-board effects remain; replacing Noel with Kanade changes recorded member rate/cooldown inputs. Active/SP research baseline still excludes boards.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-AA-20260909.json",
+  "predictionCheckpointSHA256": "6d5f23c404cd4809f47f8c99599297508764459bc9e395ec457bbe68f2b46927",
+  "evidence": "Direct user measurement in response to the AA plan; passive 0.8 refutes the frozen recipient-only 1.5 invariance hypothesis."
+}

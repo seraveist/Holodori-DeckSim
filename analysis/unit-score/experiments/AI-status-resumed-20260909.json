@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T07:25:03.731Z",
+  "sampleId": "AI",
+  "status": "Resumed; awaiting user in-game measurement.",
+  "rawUserInput": "일단 우리가 역산한 결과값들이 실제 수치와 일치하니까 공식 내용은 참고만 하면 될거같아. 패시브와 홀로멤 보드 합계까진 일치하니 대부분 항목이 거의 확정된거같아. 이제 아까 패시브 효과량 산정의 추정 계속 이어나가자",
+  "instruction": "Resume empirical passive-effect inference; keep in-game help as reference and prioritize matching measurements.",
+  "supersedes": "analysis/unit-score/experiments/AI-status-after-category-help-20260909.json",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-passive-AI-20260909.json",
+  "frozenPlanSHA256": "e2b34617f1cfb66f60e88027b7378c8188311dad4330f3564f5f13213b2aa2ff",
+  "predictionsUnchanged": true,
+  "AIObservationReceived": false,
+  "currentEvidence": {
+    "observations": 32,
+    "distinctMemberSets": 21,
+    "activeSPMatches": 32,
+    "jointPositivePassiveCompatible": 17,
+    "jointEvidence": "14 retrospective rows plus3 prospective conditional-range checks AF/AG/AH. No exact split or universal coefficient is established."
+  },
+  "nextCheck": {
+    "passive": 2.3,
+    "kind": "First prospective check of the post-AH displayed-input leader conversion family",
+    "boardConditionalCandidates": [
+      15.5,
+      15.6
+    ],
+    "combinedConditionalCandidates": [
+      17.8,
+      17.9
+    ]
+  },
+  "helpEvidence": "analysis/unit-score/ui-observations/category-help-20260909.json",
+  "helpDisposition": "Retained as semantic reference; no reason to discard successful empirical formulas or suspend the next test."
+}

@@ -1,0 +1,959 @@
+{
+  "recordedAt": "2026-09-09T03:07:46.105Z",
+  "scope": "New S/T observations compared with frozen predictions, followed by retrospective model rejection over seven zero-score-support-passive formations.",
+  "comparisons": [
+    {
+      "id": "S",
+      "retainedPower": 144767,
+      "reportedPowerComponentsMatch": true,
+      "outfitPowerZeroIsInferred": false,
+      "excludedPowerAggregate": 30336,
+      "retainedBonus": 97.4,
+      "rateSPCount": 1,
+      "active": {
+        "frozen": 63.1,
+        "observed": 63.1,
+        "matches": true
+      },
+      "special": {
+        "oldSingle": {
+          "frozenRaw": 35.04398731490021,
+          "frozenDisplay": 35.1,
+          "observed": 34.3,
+          "errorPp": 0.8,
+          "matches": false
+        },
+        "oldTwo": {
+          "frozenRaw": 34.327066270721815,
+          "frozenDisplay": 34.4,
+          "observed": 34.3,
+          "errorPp": 0.1,
+          "matches": false
+        },
+        "newScaledSupport": {
+          "frozenRaw": 34.96873069497856,
+          "frozenDisplay": 35,
+          "observed": 34.3,
+          "errorPp": 0.7,
+          "matches": false
+        }
+      },
+      "frozenTwoCoefficientFamily": {
+        "rawRange": {
+          "min": 34.760822247263555,
+          "max": 35.20659283594951
+        },
+        "observedCeilRawInterval": {
+          "lower": 34.199999999999996,
+          "upper": 34.3
+        },
+        "disjoint": true
+      }
+    },
+    {
+      "id": "T",
+      "retainedPower": 89034,
+      "reportedPowerComponentsMatch": true,
+      "outfitPowerZeroIsInferred": true,
+      "excludedPowerAggregate": 29176,
+      "retainedBonus": 112.2,
+      "rateSPCount": 3,
+      "active": {
+        "frozen": 71.3,
+        "observed": 71.3,
+        "matches": true
+      },
+      "special": {
+        "oldSingle": {
+          "frozenRaw": 40.86108342117291,
+          "frozenDisplay": 40.9,
+          "observed": 40.9,
+          "errorPp": 0,
+          "matches": true
+        },
+        "oldTwo": {
+          "frozenRaw": 40.6754953995042,
+          "frozenDisplay": 40.7,
+          "observed": 40.9,
+          "errorPp": -0.2,
+          "matches": false
+        },
+        "newScaledSupport": {
+          "frozenRaw": 39.85255469407023,
+          "frozenDisplay": 39.9,
+          "observed": 40.9,
+          "errorPp": -1,
+          "matches": false
+        }
+      },
+      "frozenTwoCoefficientFamily": {
+        "rawRange": {
+          "min": 39.62535736913581,
+          "max": 40.04448752034661
+        },
+        "observedCeilRawInterval": {
+          "lower": 40.8,
+          "upper": 40.9
+        },
+        "disjoint": true
+      }
+    }
+  ],
+  "rows": [
+    {
+      "id": "G",
+      "A": 70.00707951520545,
+      "activeDisplay": 70.1,
+      "S": 22.373249871410508,
+      "R": 0.7634000000000171,
+      "perSP": [
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "duration": 12,
+          "support": 100,
+          "activationRateUp": 0,
+          "S": 4.200424770912327,
+          "R": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "duration": 12,
+          "support": 100,
+          "activationRateUp": 0,
+          "S": 4.200424770912327,
+          "R": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.658464770912333,
+          "R": 0.38170000000000853
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "duration": 14,
+          "support": 95,
+          "activationRateUp": 0,
+          "S": 4.65547078776119,
+          "R": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.658464770912333,
+          "R": 0.38170000000000853
+        }
+      ],
+      "rateSPCount": 2,
+      "power": {
+        "memberParameter": 97617,
+        "outfit": 48813,
+        "board": 0,
+        "passive": 7980,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 154410,
+      "observed": 38.7,
+      "oldSingleRaw": 39.32878004016846,
+      "oldTwoRaw": 38.93998919000302,
+      "conditions": {
+        "leaderParameterConditionMet": true,
+        "leaderScoreSupport": 0,
+        "passiveScoreSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "activeConditions": [
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "assumedMet": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "O",
+      "A": 65.54946450356542,
+      "activeDisplay": 65.6,
+      "S": 21.36841185411955,
+      "R": 0.654900000000002,
+      "perSP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "duration": 10,
+          "support": 135,
+          "activationRateUp": 0,
+          "S": 4.424588853990661,
+          "R": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "duration": 12,
+          "support": 100,
+          "activationRateUp": 0,
+          "S": 3.932967870213925,
+          "R": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "duration": 14,
+          "support": 95,
+          "activationRateUp": 0,
+          "S": 4.359039389487102,
+          "R": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.32590787021393,
+          "R": 0.327450000000001
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.32590787021393,
+          "R": 0.327450000000001
+        }
+      ],
+      "rateSPCount": 2,
+      "power": {
+        "memberParameter": 87623,
+        "outfit": 43816,
+        "board": 0,
+        "passive": 11520,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 142959,
+      "observed": 37,
+      "oldSingleRaw": 37.43627502169127,
+      "oldTwoRaw": 36.97861783183507,
+      "conditions": {
+        "leaderParameterConditionMet": true,
+        "leaderScoreSupport": 0,
+        "passiveScoreSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "activeConditions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "assumedMet": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "P",
+      "A": 66.37465888836559,
+      "activeDisplay": 66.4,
+      "S": 21.65104289094679,
+      "R": 0.6745000000000019,
+      "perSP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "duration": 10,
+          "support": 135,
+          "activationRateUp": 0,
+          "S": 4.480289474964683,
+          "R": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "duration": 12,
+          "support": 100,
+          "activationRateUp": 0,
+          "S": 3.982479533301935,
+          "R": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "duration": 14,
+          "support": 95,
+          "activationRateUp": 0,
+          "S": 4.413914816076309,
+          "R": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.387179533301931,
+          "R": 0.33725000000000094
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.387179533301931,
+          "R": 0.33725000000000094
+        }
+      ],
+      "rateSPCount": 2,
+      "power": {
+        "memberParameter": 73877,
+        "outfit": 36942,
+        "board": 0,
+        "passive": 11611,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 122430,
+      "observed": 37.5,
+      "oldSingleRaw": 37.95002174106305,
+      "oldTwoRaw": 37.499034642117756,
+      "conditions": {
+        "leaderParameterConditionMet": true,
+        "leaderScoreSupport": 0,
+        "passiveScoreSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "activeConditions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-00021-5-uniq-0017-00",
+            "condition": {
+              "kind": "combo",
+              "threshold": 40
+            },
+            "assumedMet": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "Q",
+      "A": 73.27772900476324,
+      "activeDisplay": 73.3,
+      "S": 23.422461668964758,
+      "R": 0.7413000000000125,
+      "perSP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "duration": 10,
+          "support": 135,
+          "activationRateUp": 0,
+          "S": 4.946246707821539,
+          "R": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.841443740285815,
+          "R": 0.37065000000000625
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.841443740285815,
+          "R": 0.37065000000000625
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "duration": 12,
+          "support": 100,
+          "activationRateUp": 0,
+          "S": 4.396663740285795,
+          "R": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "duration": 12,
+          "support": 100,
+          "activationRateUp": 0,
+          "S": 4.396663740285795,
+          "R": 0
+        }
+      ],
+      "rateSPCount": 2,
+      "power": {
+        "memberParameter": 97731,
+        "outfit": 0,
+        "board": 0,
+        "passive": 6496,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 104227,
+      "observed": 40.5,
+      "oldSingleRaw": 41.074713621183065,
+      "oldTwoRaw": 40.60033865580274,
+      "conditions": {
+        "leaderParameterConditionMet": false,
+        "leaderScoreSupport": 0,
+        "passiveScoreSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "activeConditions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "assumedMet": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "R",
+      "A": 73.27772900476324,
+      "activeDisplay": 73.3,
+      "S": 23.898766907495737,
+      "R": 0.7413000000000125,
+      "perSP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "duration": 10,
+          "support": 135,
+          "activationRateUp": 0,
+          "S": 4.946246707821539,
+          "R": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.841443740285815,
+          "R": 0.37065000000000625
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.841443740285815,
+          "R": 0.37065000000000625
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "duration": 12,
+          "support": 100,
+          "activationRateUp": 0,
+          "S": 4.396663740285795,
+          "R": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "duration": 14,
+          "support": 95,
+          "activationRateUp": 0,
+          "S": 4.8729689788167745,
+          "R": 0
+        }
+      ],
+      "rateSPCount": 2,
+      "power": {
+        "memberParameter": 92663,
+        "outfit": 46336,
+        "board": 0,
+        "passive": 11520,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 150519,
+      "observed": 41.3,
+      "oldSingleRaw": 41.88435996420493,
+      "oldTwoRaw": 41.38280309094469,
+      "conditions": {
+        "leaderParameterConditionMet": true,
+        "leaderScoreSupport": 0,
+        "passiveScoreSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "activeConditions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "assumedMet": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "S",
+      "A": 63.01714226779816,
+      "activeDisplay": 63.1,
+      "S": 20.239332672088647,
+      "R": 0.37662500000000454,
+      "perSP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "duration": 10,
+          "support": 135,
+          "activationRateUp": 0,
+          "S": 4.253657103076385,
+          "R": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "duration": 12,
+          "support": 100,
+          "activationRateUp": 0,
+          "S": 3.7810285360678892,
+          "R": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "duration": 14,
+          "support": 95,
+          "activationRateUp": 0,
+          "S": 4.190639960808587,
+          "R": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.232978536067895,
+          "R": 0.37662500000000454
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "duration": 12,
+          "support": 100,
+          "activationRateUp": 0,
+          "S": 3.7810285360678892,
+          "R": 0
+        }
+      ],
+      "rateSPCount": 1,
+      "power": {
+        "memberParameter": 90103,
+        "outfit": 45055,
+        "board": 0,
+        "passive": 9609,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 144767,
+      "observed": 34.3,
+      "oldSingleRaw": 35.04398731490021,
+      "oldTwoRaw": 34.327066270721815,
+      "conditions": {
+        "leaderParameterConditionMet": true,
+        "leaderScoreSupport": 0,
+        "passiveScoreSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "activeConditions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "assumedMet": false
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "assumedMet": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "T",
+      "A": 71.2179531155813,
+      "activeDisplay": 71.3,
+      "S": 23.066010583041262,
+      "R": 0.9720750000000158,
+      "perSP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "duration": 10,
+          "support": 135,
+          "activationRateUp": 0,
+          "S": 4.807211835301737,
+          "R": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "duration": 12,
+          "support": 100,
+          "activationRateUp": 0,
+          "S": 4.273077186934878,
+          "R": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.661907186934883,
+          "R": 0.3240250000000053
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.661907186934883,
+          "R": 0.3240250000000053
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "duration": 10,
+          "support": 120,
+          "activationRateUp": 40,
+          "S": 4.661907186934883,
+          "R": 0.3240250000000053
+        }
+      ],
+      "rateSPCount": 3,
+      "power": {
+        "memberParameter": 81505,
+        "outfit": 0,
+        "board": 0,
+        "passive": 7529,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 89034,
+      "observed": 40.9,
+      "oldSingleRaw": 40.86108342117291,
+      "oldTwoRaw": 40.6754953995042,
+      "conditions": {
+        "leaderParameterConditionMet": false,
+        "leaderScoreSupport": 0,
+        "passiveScoreSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "activeConditions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "assumedMet": true
+          },
+          {
+            "id": "card-00021-5-uniq-0017-00",
+            "condition": {
+              "kind": "combo",
+              "threshold": 40
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "assumedMet": true
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "assumedMet": true
+          }
+        ]
+      }
+    }
+  ],
+  "feasibility": [
+    {
+      "mode": "ceil",
+      "supportCoefficientMinimum": 1.7027868567002158,
+      "supportCoefficientMaximum": 1.5634693848383536,
+      "minWitness": [
+        "P",
+        "G"
+      ],
+      "maxWitness": [
+        "T",
+        "G"
+      ],
+      "feasibleEvenWithUnrestrictedSignsAndClosedBounds": false
+    },
+    {
+      "mode": "round",
+      "supportCoefficientMinimum": 1.7058787099107957,
+      "supportCoefficientMaximum": 1.5659896846868373,
+      "minWitness": [
+        "P",
+        "G"
+      ],
+      "maxWitness": [
+        "T",
+        "G"
+      ],
+      "feasibleEvenWithUnrestrictedSignsAndClosedBounds": false
+    },
+    {
+      "mode": "floor",
+      "supportCoefficientMinimum": 1.7089705631213754,
+      "supportCoefficientMaximum": 1.5685099845353243,
+      "minWitness": [
+        "P",
+        "G"
+      ],
+      "maxWitness": [
+        "T",
+        "G"
+      ],
+      "feasibleEvenWithUnrestrictedSignsAndClosedBounds": false
+    }
+  ],
+  "minimalCertificate": [
+    {
+      "mode": "ceil",
+      "supportCoefficientMinimum": 1.7027868567002158,
+      "supportCoefficientMaximum": 1.5634693848383536,
+      "minWitness": [
+        "P",
+        "G"
+      ],
+      "maxWitness": [
+        "T",
+        "G"
+      ],
+      "feasibleEvenWithUnrestrictedSignsAndClosedBounds": false
+    },
+    {
+      "mode": "round",
+      "supportCoefficientMinimum": 1.7058787099107957,
+      "supportCoefficientMaximum": 1.5659896846868373,
+      "minWitness": [
+        "P",
+        "G"
+      ],
+      "maxWitness": [
+        "T",
+        "G"
+      ],
+      "feasibleEvenWithUnrestrictedSignsAndClosedBounds": false
+    },
+    {
+      "mode": "floor",
+      "supportCoefficientMinimum": 1.7089705631213754,
+      "supportCoefficientMaximum": 1.5685099845353243,
+      "minWitness": [
+        "P",
+        "G"
+      ],
+      "maxWitness": [
+        "T",
+        "G"
+      ],
+      "feasibleEvenWithUnrestrictedSignsAndClosedBounds": false
+    }
+  ],
+  "conclusion": "The frozen scaled-support candidate fails both S/T. No fixed pair of coefficients on the existing whole-window support/rate features can explain G/O/P/Q/R/S/T, even with unrestricted signs and ceil/round/floor intervals. The feature/application model itself needs revision; this does not reject every possible two-component SP formula.",
+  "limitation": "Rate-SP count, receiving Active profiles, and parameter effects change together in S/T. Residuals do not prove that count alone is the causal variable or that the error is confined to the rate term.",
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-sp-ST-20260909.json",
+  "predictionCheckpointSHA256": "40e412bbafeabedbd8904b6447aebf5e1780097338d8d07fd878bc852b942aaf",
+  "coefficientFileSHA256": "5ab2599439654b6b732477dcb56fc2c57d58fd396dca615478af721321c8f0fb",
+  "historicalPredictionsAndCoefficientsUnchanged": true
+}

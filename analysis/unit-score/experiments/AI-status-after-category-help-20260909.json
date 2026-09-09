@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T07:17:11.020Z",
+  "sampleId": "AI",
+  "status": "Measurement request deferred after user supplied category help; frozen candidate preserved.",
+  "reason": "The user asked to pause and incorporate the in-game definitions before continuing.",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-passive-AI-20260909.json",
+  "frozenPlanSHA256": "e2b34617f1cfb66f60e88027b7378c8188311dad4330f3564f5f13213b2aa2ff",
+  "evidence": "analysis/unit-score/ui-observations/category-help-20260909.json",
+  "evidenceSHA256": "cdf8dac5c3ca34638b1bd5a7088d15f42eb9ab8e955c57aae5ae2833b831b96d",
+  "predictionDisposition": "Not validated or rejected by these descriptions. No AI observation has been received. Do not count it as a test success.",
+  "nextFocus": "Respect documented per-source categories; distinguish interactions from arbitrary allocation, and distinguish empirical leader conversion from a baseline passive formula."
+}

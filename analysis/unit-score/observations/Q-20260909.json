@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "Q",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T02:52:58.487Z",
+  "observationDateBasis": "Current conversation date; no separate date supplied.",
+  "gameVersion": null,
+  "leaderId": "card-06003-5-uniq-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00018-5-uniq-0068-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "User identified the planned Q/R formations; planned profiles adopted for comparison. No separate explicit growth confirmation. All supplied power components match these profiles.",
+  "rawUserInput": "Q 편성\n종합력 133823, 멤버 파라미터 97731, 패시브 스킬 6496\n스코어 보너스 128.7%, 액티브 스킬 73.3%, 스페셜 스킬 40.5%, 홀로멤보드 14.9%\n\nR편성\n종합력 182273, 멤버파라미터 92663, 의상스킬 46336, 패시브스킬 11520\n스코어보너스 129.9%, 액티브스킬 73.3%, 홀로멤 15.3%, 스페셜스킬 41.3%",
+  "evidence": "Direct user-entered formation detail values; no screenshot supplied.",
+  "boardContext": "Board excluded from baseline skill calculations per user instruction. Displayed board bonuses preserved; individual board-power/memory/enhancement values unreported.",
+  "game": {
+    "unitScore": null,
+    "overallPower": 133823,
+    "scoreBonusPct": 128.7,
+    "powerDetail": {
+      "memberParameter": 97731,
+      "outfit": null,
+      "board": null,
+      "passive": 6496,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 73.3,
+      "board": 14.9,
+      "passive": null,
+      "special": 40.5
+    }
+  },
+  "categoryStatus": {
+    "scoreOutfit": "not supplied; the three supplied bonus categories already sum to the total",
+    "scorePassive": "not supplied; not recorded as an exact measured zero",
+    "powerOutfit": "not supplied; planned engine condition predicts zero"
+  },
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-sp-QR-20260909.json",
+  "predictionCheckpointSHA256": "41847d9c6ef07c4baa50cacfbc3480932c42b14480aceff8c4ef5ffae47b601f"
+}

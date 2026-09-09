@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T03:08:58.758Z",
+  "status": "planned; no U observation received",
+  "sampleId": "U",
+  "leaderId": "card-06004-5-uniq-0060-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00018-5-uniq-0068-00",
+    "card-06002-5-uniq-0066-00",
+    "card-00022-5-uniq-0063-00",
+    "card-06003-5-uniq-0059-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1,
+      "character": "주우후테이 라덴",
+      "card": "지혜의 불을 밝혀 예술로 인도"
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0,
+      "character": "나키리 아야메",
+      "card": "저승에서 유유자적, 자유로운 등불"
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0,
+      "character": "호시마치 스이세이",
+      "card": "여름의 일격! 물총 아르페지오"
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0,
+      "character": "오토노세 카나데",
+      "card": "바닷바람에 실어 보내는 미소의 하모니"
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1,
+      "character": "시로가네 노엘",
+      "card": "파도를 두른 귀요미 Knight"
+    },
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0,
+      "character": "이치조 리리카",
+      "card": "심야의 휴식, CEO의 한계밥"
+    }
+  ],
+  "purpose": "Measure a zero-activation-rate-SP baseline with no leader or passive score support, after the existing support/rate aggregate model failed S/T.",
+  "controls": {
+    "effectiveRateSPCount": 0,
+    "leaderScoreSupport": 0,
+    "passiveScoreSupport": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "leaderParameterEffects": {
+      "p": 0,
+      "t": 0,
+      "s": 120,
+      "support": 0
+    },
+    "ayamePurePairMet": false,
+    "suiseiGeneration0Count": 1,
+    "noelGeneration3Count": 1,
+    "note": "Raden is the leader and does not contribute her rate-boost SP. Ririka is a member with support-only SP. No life/combo-conditioned Active remains."
+  },
+  "effectiveSP": [
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "duration": 10,
+      "support": 135,
+      "activationRateUp": 0,
+      "condition": null,
+      "conditionMet": true
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "duration": 12,
+      "support": 100,
+      "activationRateUp": 0,
+      "condition": {
+        "kind": "group",
+        "value": "grp-gen_0",
+        "count": 2
+      },
+      "conditionMet": false
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "duration": 14,
+      "support": 95,
+      "activationRateUp": 0,
+      "condition": null,
+      "conditionMet": true
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "duration": 12,
+      "support": 100,
+      "activationRateUp": 0,
+      "condition": {
+        "kind": "group",
+        "value": "grp-gen_3",
+        "count": 2
+      },
+      "conditionMet": false
+    },
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "duration": 12,
+      "support": 110,
+      "activationRateUp": 0,
+      "condition": null,
+      "conditionMet": true
+    }
+  ],
+  "active": {
+    "raw": 59.5660842257695,
+    "ceil": 59.6
+  },
+  "power": {
+    "memberParameter": 82623,
+    "outfit": 31837,
+    "board": 0,
+    "passive": 9283,
+    "memory": 0,
+    "enhancement": 0
+  },
+  "retainedPower": 123743,
+  "baselineFeature": {
+    "activeMean": 59.5660842257695,
+    "sumSupportTimesDuration": 6400,
+    "wholeWindowSupportContributionDividedBy200": 19.06114695224624,
+    "rateContribution": 0
+  },
+  "specialHypotheses": {
+    "durationWeightedFamily": {
+      "formula": "B_raw = A * sum(duration * supportPct) / (100 * D)",
+      "unknown": "D is not identified; the form also requires further validation.",
+      "diagnosticD200": {
+        "raw": 19.06114695224624,
+        "ceil": 19.1
+      },
+      "diagnosticD120": {
+        "raw": 31.768578253743733,
+        "ceil": 31.8
+      },
+      "inverseIfCeil": "Given observed B, D is in [A*W/(100*B), A*W/(100*(B-0.1))) under this family."
+    }
+  },
+  "interpretation": "This is an anchor measurement, not an asserted exact SP prediction. It can test support-only aggregation without rate/support interaction. More than one pure-support composition is needed to identify general duration/support rules.",
+  "limitations": [
+    "Leader and one member exchange roles relative to S; Active profiles and parameter effects change and are evaluated separately.",
+    "Raden has a parameter-only leader outfit effect. No score-support outfit applies; this does not establish universal independence from parameter effects.",
+    "A single measured zero-rate baseline would constrain a chosen formula family, not prove its form or rounding rule."
+  ],
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "rejectedCheckpoint": "analysis/unit-score/experiments/baseline-sp-ST-20260909.json",
+  "rejectedCheckpointSHA256": "40e412bbafeabedbd8904b6447aebf5e1780097338d8d07fd878bc852b942aaf"
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AI",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T07:29:37.592Z",
+  "gameVersion": null,
+  "observationDateBasis": "Current conversation date; no separate measurement date supplied.",
+  "leaderId": "card-06003-5-uniq-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00021-5-uniq-0017-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Use frozen AI formation/profiles. Remaining values match confirms the four baseline numeric table values, not the passive/board candidates or a separate growth audit.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Inherited W/X clarification and AI plan."
+  },
+  "rawUserInput": "패시브 2.2%, 홀로멤보드 15.7%, 나머지 일치",
+  "confirmedByReference": {
+    "source": "Immediately preceding assistant AI table",
+    "fields": {
+      "memberParameter": 84026,
+      "passivePower": 13617,
+      "active": 73.7,
+      "special": 43.6
+    },
+    "scope": "Four baseline values confirmed; explicitly supplied passive/board values override their predictions. Totals and outfit/other power rows were not in the table."
+  },
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": 84026,
+      "outfit": null,
+      "board": null,
+      "passive": 13617,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 73.7,
+      "board": 15.7,
+      "passive": 2.2,
+      "special": 43.6
+    }
+  },
+  "scoreRowPresence": {
+    "passive": true
+  },
+  "categoryStatus": {
+    "overallPower": "Unreported.",
+    "totalScoreBonus": "Unreported;135.2 is derived.",
+    "outfitPower": "Unreported;0 is inferred from the planned inactive leader condition.",
+    "otherPower": "Board, memory and enhancement unreported."
+  },
+  "boardContext": "Same pre-song formation detail, existing member growth/board unlocks/order. Ririka has only Raden as RegLOSS member, so its costume condition is off. Ayame singer effects excluded; Raden life600 and regular Flare combo40 assumed met.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-AI-20260909.json",
+  "predictionCheckpointSHA256": "e2b34617f1cfb66f60e88027b7378c8188311dad4330f3564f5f13213b2aa2ff",
+  "evidence": "Passive2.2 rejects the frozen displayed-input multiplier prediction2.3. Conditional board15.5/15.6 also misses15.7 because that depended on passive2.3. Combined17.9 still fits17.8/17.9. Both frozen latent-raw alternatives allowed2.2."
+}

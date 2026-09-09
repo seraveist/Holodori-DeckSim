@@ -1,0 +1,5 @@
+# Preserve exact bytes of evidence and hash-locked research sources on every PC.
+analysis/unit-score/** -text
+scripts/fixtures/unit-observations-20260908.json -text
+# This original checkpoint contains CRLF; retain it without hiding real trailing spaces.
+analysis/unit-score/reports/ST-rate-model-diagnostics-20260909.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

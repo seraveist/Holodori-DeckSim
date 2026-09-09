@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AG",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T06:58:20.620Z",
+  "gameVersion": null,
+  "observationDateBasis": "Current conversation date; no separate measurement date supplied.",
+  "leaderId": "card-00018-5-uniq-0068-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00021-5-uniq-0017-00",
+    "card-00022-5-uniq-0063-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Use frozen AG formation/profiles. Remaining values match confirms the four prediction-table values, not a separate growth audit.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Inherited W/X clarification and AG plan."
+  },
+  "rawUserInput": "홀로멤보드 5.3%, 패시브스킬 1.7%, 나머지 일치",
+  "confirmedByReference": {
+    "source": "Immediately preceding assistant AG prediction table",
+    "fields": {
+      "memberParameter": 86545,
+      "passivePower": 10772,
+      "active": 74.6,
+      "special": 44.3
+    },
+    "scope": "Four prediction-table values confirmed. Overall totals and outfit/other power rows were not in that table and remain unreported."
+  },
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": 86545,
+      "outfit": null,
+      "board": null,
+      "passive": 10772,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 74.6,
+      "board": 5.3,
+      "passive": 1.7,
+      "special": 44.3
+    }
+  },
+  "scoreRowPresence": {
+    "passive": true
+  },
+  "categoryStatus": {
+    "overallPower": "Unreported.",
+    "totalScoreBonus": "Unreported;125.9 is a derived sum.",
+    "outfitPower": "Unreported;0 is inferred from the planned inactive leader condition.",
+    "otherPower": "Board, memory and enhancement unreported."
+  },
+  "boardContext": "Same pre-song formation detail; Suisei relevant leader boards absent and outfit condition off. Ayame singer nodes excluded. Raden life600 and regular Flare combo40 assumed met. Regular Flare11/0 confirmed in P; other growth/board unlocks unchanged.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-AG-20260909.json",
+  "predictionCheckpointSHA256": "ad26108fc215d786f6c1519e362ad98198eac4655852029ab7899926e84d5df2",
+  "evidence": "Board+passive7.0 fits the frozen conditional7.0/7.1 compatibility family. No individual board/passive forecast was adopted. The diagnostic4.0/2.9 split still fails."
+}

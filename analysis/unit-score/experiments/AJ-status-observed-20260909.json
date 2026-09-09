@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T07:50:18.668Z",
+  "sampleId": "AJ",
+  "status": "Observed and compared; both conditional raw-conversion predictions rejected.",
+  "observation": "analysis/unit-score/observations/AJ-20260909.json",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-passive-AJ-20260909.json",
+  "frozenPlanSHA256": "fb326fac426e44a2bac87895ae5d95944120e473d190507e3c802b7ab759e3f6",
+  "result": {
+    "passive": 1.5,
+    "board": 12.2,
+    "joint": 13.7,
+    "baselineFiveValuesMatch": true,
+    "rawMultiplierPredictionMatches": false,
+    "rawAddendPredictionMatches": false,
+    "jointCompatible": true
+  },
+  "next": "analysis/unit-score/experiments/baseline-passive-AK-20260909.json"
+}

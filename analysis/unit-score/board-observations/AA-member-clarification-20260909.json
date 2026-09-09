@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T05:29:39.880Z",
+  "appliesToSamples": [
+    "Z",
+    "AA"
+  ],
+  "rawQuestion": "다음 계산에서는 멤버 보드와 패시브의 상호작용도 대조하려 합니다. 아야메의 멤버 보드 중 스킬 발동률·발동 빈도·스코어 서포트 효과를 알려주세요. 또한 기존에 기록한 노엘(발동률 합 23.5%, 빈도 4%)·카나데(발동률 합 20%, 빈도 없음)에 별도 스코어 서포트나 판정 보정 효과가 있다면 함께 알려주세요. 리더 전용 효과는 제외합니다.",
+  "rawAnswer": "아야메는 가창 포함자일때만 적용되는 노란색 계열이 찍혀있음. 카나데 노엘은 그대로.",
+  "ayame": {
+    "characterId": "chr-00010",
+    "userSaysOnlySingerConditionalNodes": true,
+    "conditionalNodes": {
+      "condition": "Member is included among the song singers",
+      "effects": null,
+      "values": null,
+      "status": "Exact node effects and values were not supplied."
+    },
+    "unconditionalActivationRateUpPct": 0,
+    "unconditionalCooldownShortenPct": 0,
+    "unconditionalScoreSupportPct": 0,
+    "interpretation": "No unconditional score-related nodes, based on the response that only singer-conditional nodes are unlocked. Exclude those conditional effects in the planned pre-song-selection measurement; do not assign their unknown values."
+  },
+  "existingMembersReconfirmed": [
+    {
+      "characterId": "chr-00022",
+      "activationRateUpPct": 23.5,
+      "cooldownShortenPct": 4
+    },
+    {
+      "characterId": "chr-06002",
+      "activationRateUpPct": 20,
+      "cooldownShortenPct": 0
+    }
+  ],
+  "additionalNoelKanadeEffects": "User said unchanged in response to a question about extra support/judgement effects. No additional effects were supplied.",
+  "measurementContext": "W/X were explicitly confirmed pre-song formation detail. Z/AA inherit that planned view; this answer is not a separate explicit Z/AA screen confirmation.",
+  "originalBoardContext": "analysis/unit-score/board-context.json",
+  "originalBoardContextSHA256": "913b89ea901ea1d07a1e8529b5dbe81747c54690e9199ea42095bb7be39b4555",
+  "scope": "Supplementary evidence. Preserve original board-context, historical AA observation and checkpoint. Apply only in separately labeled board-interaction research."
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "W",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T04:32:09.716Z",
+  "observationDateBasis": "Current conversation date; no separate date supplied.",
+  "gameVersion": null,
+  "leaderId": "card-06003-5-uniq-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Measurement supplied in response to the W plan; planned profiles adopted. Both reported power components match. No separate growth confirmation.",
+  "rawUserInput": "종합력 146791 멤버파라미터 100252 패시브스킬 12584\n스코어보너스 137.9% 액티브 스킬 75.5%, 홀로맴 17.3%, 패시브스킬 1.9%, 스페셜스킬 43.2%",
+  "game": {
+    "unitScore": null,
+    "overallPower": 146791,
+    "scoreBonusPct": 137.9,
+    "powerDetail": {
+      "memberParameter": 100252,
+      "outfit": null,
+      "board": null,
+      "passive": 12584,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 75.5,
+      "board": 17.3,
+      "passive": 1.9,
+      "special": 43.2
+    }
+  },
+  "categoryStatus": {
+    "outfitPower": "Not supplied. Planned leader condition is unmet, so research retained power assumes zero outfit contribution.",
+    "outfitScore": "Not supplied; listed bonus values sum to the reported total at display precision.",
+    "excludedPower": "Board, memory and enhancement individually unreported."
+  },
+  "boardContext": "Board effects excluded from baseline skill calculations. Reported board bonus 17.3 is stored separately.",
+  "evidence": "Direct user-entered figures.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-sp-W-20260909.json",
+  "predictionCheckpointSHA256": "5e6ea6dc2366d5d3b84188f75725ab55a6fd6829824c06fba56b11b25e67ce52"
+}

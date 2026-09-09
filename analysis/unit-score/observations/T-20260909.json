@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "T",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T03:07:45.728Z",
+  "observationDateBasis": "Current conversation date; no separately supplied date.",
+  "gameVersion": null,
+  "leaderId": "card-06003-5-uniq-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00018-5-uniq-0068-00",
+    "card-00021-5-uniq-0017-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00027-5-uniq-0022-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "User referred to the planned S/T formations. Planned profiles adopted without a separate explicit growth confirmation; every reported power component matches.",
+  "rawUserInput": "S편성\n종합력 175103, 멤버파라미터 90103, 의상스킬 45055, 패시브스킬 9609\n스코어보너스 111.3%, 액티브스킬 63.1%, 홀로멤보드 13.9%, 스페셜스킬 34.3%\n\nT편성\n종합력 118210, 멤버파라미터 81505, 패시브스킬 7529\n스코어보너스 127%, 액티브스킬 71.3%, 홀로멤 14.8%, 스페셜스킬 40.9%",
+  "evidence": "User-entered formation detail numbers; no screenshot supplied.",
+  "boardContext": "Exclude board rate/cooldown/leader support from baseline calculations. Preserve reported board bonus; individual power exclusions unreported.",
+  "game": {
+    "unitScore": null,
+    "overallPower": 118210,
+    "scoreBonusPct": 127,
+    "powerDetail": {
+      "memberParameter": 81505,
+      "outfit": null,
+      "board": null,
+      "passive": 7529,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 71.3,
+      "board": 14.8,
+      "passive": null,
+      "special": 40.9
+    }
+  },
+  "categoryStatus": {
+    "scoreOutfit": "not supplied; reported three categories sum to the displayed total",
+    "scorePassive": "not supplied; not an exact measured zero",
+    "powerOutfit": "not supplied; current card conditions predict zero"
+  },
+  "notes": "Preserve planned profiles and all earlier predictions. No fitting to mark the failed predictions as successful."
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "receivedAt": "2026-09-09T07:45:10.872Z",
+  "source": "Explicit user reply in this conversation",
+  "question": "리더 보드를 그대로 두고 의상 효과량만 비교하려 합니다. 리리카 3성 「We are hololive!」(전원 파라미터 15% 상승)을 보유하고 있나요? 있다면 현재 레벨/개화를 알려주세요.",
+  "answer": "보유중, 1레벨 0개화",
+  "cardId": "card-06003-3-nrml-0059-00",
+  "characterId": "chr-06003",
+  "cardName": "We are hololive!",
+  "rarity": 3,
+  "owned": true,
+  "profile": {
+    "id": "card-06003-3-nrml-0059-00",
+    "level": 1,
+    "potential": 0
+  },
+  "scope": "Ownership and current growth confirmed. Does not independently re-confirm member profiles, all board unlocks, or future AK score values."
+}

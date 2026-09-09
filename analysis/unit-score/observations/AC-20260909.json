@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AC",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T05:52:40.137Z",
+  "gameVersion": null,
+  "observationDateBasis": "Current conversation date; no separate measurement date supplied.",
+  "leaderId": "card-00018-5-uniq-0068-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00021-5-uniq-0017-00",
+    "card-06002-5-uniq-0058-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Response to the AC measurement table; formation and growth follow the frozen plan, not a separate explicit profile confirmation.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Inherited W/X clarification and AC plan; no separate view confirmation."
+  },
+  "rawUserInput": "모두 사전예측과 동일하고 보드 1.5%, 패시브 항목없음",
+  "confirmedByReference": {
+    "source": "Immediately preceding assistant AC table in chat",
+    "fields": {
+      "memberParameter": 86545,
+      "passivePower": 17476,
+      "active": 68.4,
+      "special": 40.7
+    },
+    "exceptions": {
+      "board": 1.5,
+      "passiveScore": "notDisplayed"
+    },
+    "scope": "The last chat table did not contain overall power or total score bonus. Do not import totals from the longer saved report as user-confirmed measurements."
+  },
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": 86545,
+      "outfit": null,
+      "board": null,
+      "passive": 17476,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 68.4,
+      "board": 1.5,
+      "passive": null,
+      "special": 40.7
+    }
+  },
+  "scoreRowPresence": {
+    "passive": false
+  },
+  "categoryStatus": {
+    "scorePassive": "Not displayed, explicitly confirmed by the user. Preserve numeric null; normalize absence to zero only when comparing displayed contributions.",
+    "scoreOutfit": "Not individually supplied.",
+    "outfitPower": "Not individually supplied; planned inactive condition is an inference.",
+    "overallPower": "Unreported. Do not substitute the member+passive subtotal.",
+    "totalScoreBonus": "Not separately confirmed. Supplied/confirmed category sum110.6 is derived only.",
+    "otherPower": "Board, memory and enhancement individually unreported."
+  },
+  "boardContext": "Same Suisei leader with no related leader boards. Ayame singer-conditional effects excluded under the planned pre-song view. Known member timing/rate inputs retained. Baseline Active/SP exclude boards.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-board-AC-20260909.json",
+  "predictionCheckpointSHA256": "baee94fb242e4cead3cebcfab4b82fb285a774b2638c31afa98591ee98065e61",
+  "evidence": "Four numeric fields confirmed by reference to the preceding prediction table, board1.5 explicitly supplied, passive score row explicitly absent. Frozen board1.6 prediction fails."
+}

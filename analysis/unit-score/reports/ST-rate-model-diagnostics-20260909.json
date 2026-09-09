@@ -1,0 +1,741 @@
+{
+  "variants": [
+    {
+      "probabilityBoost": "relative",
+      "aggregation": "weighted",
+      "rows": [
+        {
+          "id": "G",
+          "y": 38.7,
+          "A": 70.00707951520545,
+          "Abase": 70.00707951520545,
+          "S": 22.373249871410508,
+          "R": 0.7634000000000171,
+          "common5over3": 38.6
+        },
+        {
+          "id": "O",
+          "y": 37,
+          "A": 65.54946450356542,
+          "Abase": 65.54946450356542,
+          "S": 21.36841185411955,
+          "R": 0.654900000000002,
+          "common5over3": 36.8
+        },
+        {
+          "id": "P",
+          "y": 37.5,
+          "A": 66.37465888836559,
+          "Abase": 66.37465888836559,
+          "S": 21.65104289094679,
+          "R": 0.6745000000000019,
+          "common5over3": 37.3
+        },
+        {
+          "id": "Q",
+          "y": 40.5,
+          "A": 73.27772900476324,
+          "Abase": 73.27772900476324,
+          "S": 23.422461668964758,
+          "R": 0.7413000000000125,
+          "common5over3": 40.3
+        },
+        {
+          "id": "R",
+          "y": 41.3,
+          "A": 73.27772900476324,
+          "Abase": 73.27772900476324,
+          "S": 23.898766907495737,
+          "R": 0.7413000000000125,
+          "common5over3": 41.1
+        },
+        {
+          "id": "S",
+          "y": 34.3,
+          "A": 63.01714226779816,
+          "Abase": 63.01714226779816,
+          "S": 20.239332672088647,
+          "R": 0.37662500000000454,
+          "common5over3": 34.4
+        },
+        {
+          "id": "T",
+          "y": 40.9,
+          "A": 71.2179531155813,
+          "Abase": 71.2179531155813,
+          "S": 23.066010583041262,
+          "R": 0.9720750000000158,
+          "common5over3": 40.1
+        }
+      ],
+      "singleCoefficient": {
+        "min": 1.697306545442377,
+        "max": 1.6637597217439855,
+        "feasible": false
+      },
+      "feasibility": [
+        {
+          "mode": "ceil",
+          "min": 1.7027868567002158,
+          "max": 1.5634693848383536,
+          "minWitness": [
+            "P",
+            "G"
+          ],
+          "maxWitness": [
+            "T",
+            "G"
+          ],
+          "feasibleWithClosedBounds": false
+        },
+        {
+          "mode": "round",
+          "min": 1.7058787099107957,
+          "max": 1.5659896846868373,
+          "minWitness": [
+            "P",
+            "G"
+          ],
+          "maxWitness": [
+            "T",
+            "G"
+          ],
+          "feasibleWithClosedBounds": false
+        },
+        {
+          "mode": "floor",
+          "min": 1.7089705631213754,
+          "max": 1.5685099845353243,
+          "minWitness": [
+            "P",
+            "G"
+          ],
+          "maxWitness": [
+            "T",
+            "G"
+          ],
+          "feasibleWithClosedBounds": false
+        }
+      ],
+      "retrospectiveLeastSquares": {
+        "coefficients": [
+          1.629539759755015,
+          3.238360560743113
+        ],
+        "rows": [
+          {
+            "id": "G",
+            "raw": 38.930264672468546,
+            "display": 39,
+            "y": 38.7
+          },
+          {
+            "id": "O",
+            "raw": 36.941479050338856,
+            "display": 37,
+            "y": 37
+          },
+          {
+            "id": "P",
+            "raw": 37.465509429180194,
+            "display": 37.5,
+            "y": 37.5
+          },
+          {
+            "id": "Q",
+            "raw": 40.56842924459479,
+            "display": 40.6,
+            "y": 40.5
+          },
+          {
+            "id": "R",
+            "raw": 41.34458756856062,
+            "display": 41.4,
+            "y": 41.3
+          },
+          {
+            "id": "S",
+            "raw": 34.20044484626705,
+            "display": 34.3,
+            "y": 34.3
+          },
+          {
+            "id": "T",
+            "raw": 40.7349106860801,
+            "display": 40.8,
+            "y": 40.9
+          }
+        ]
+      }
+    },
+    {
+      "probabilityBoost": "relative",
+      "aggregation": "maximum",
+      "rows": [
+        {
+          "id": "G",
+          "y": 38.7,
+          "A": 70.00707951520545,
+          "Abase": 63.5000423199999,
+          "S": 21.256203531212098,
+          "R": 1.494533800110093,
+          "common5over3": 38
+        },
+        {
+          "id": "O",
+          "y": 37,
+          "A": 65.54946450356542,
+          "Abase": 59.14989563999992,
+          "S": 20.17031004569587,
+          "R": 1.331035678946575,
+          "common5over3": 35.9
+        },
+        {
+          "id": "P",
+          "y": 37.5,
+          "A": 66.37465888836559,
+          "Abase": 59.08339497499989,
+          "S": 20.124112896567286,
+          "R": 1.3099390620144107,
+          "common5over3": 35.8
+        },
+        {
+          "id": "Q",
+          "y": 40.5,
+          "A": 73.27772900476324,
+          "Abase": 66.65604899999991,
+          "S": 22.413947258027978,
+          "R": 1.5976768254400155,
+          "common5over3": 40.1
+        },
+        {
+          "id": "R",
+          "y": 41.3,
+          "A": 73.27772900476324,
+          "Abase": 66.65604899999991,
+          "S": 22.84721157652799,
+          "R": 1.5976768254400155,
+          "common5over3": 40.8
+        },
+        {
+          "id": "S",
+          "y": 34.3,
+          "A": 63.01714226779816,
+          "Abase": 58.39448999999986,
+          "S": 19.201717777200003,
+          "R": 0.7215399310000116,
+          "common5over3": 33.3
+        },
+        {
+          "id": "T",
+          "y": 40.9,
+          "A": 71.2179531155813,
+          "Abase": 63.65986624999992,
+          "S": 22.252456560674972,
+          "R": 2.230873074000014,
+          "common5over3": 40.9
+        }
+      ],
+      "singleCoefficient": {
+        "min": 1.744887064390357,
+        "max": 1.6705244184628625,
+        "feasible": false
+      },
+      "feasibility": [
+        {
+          "mode": "ceil",
+          "min": 3.606763618664756,
+          "max": 0.29085495027664166,
+          "minWitness": [
+            "P",
+            "O"
+          ],
+          "maxWitness": [
+            "G",
+            "R"
+          ],
+          "feasibleWithClosedBounds": false
+        },
+        {
+          "mode": "round",
+          "min": 3.609661224994469,
+          "max": 0.26303652388443705,
+          "minWitness": [
+            "P",
+            "O"
+          ],
+          "maxWitness": [
+            "G",
+            "R"
+          ],
+          "feasibleWithClosedBounds": false
+        },
+        {
+          "mode": "floor",
+          "min": 3.612558831324143,
+          "max": 0.23521809749238573,
+          "minWitness": [
+            "P",
+            "O"
+          ],
+          "maxWitness": [
+            "G",
+            "R"
+          ],
+          "feasibleWithClosedBounds": false
+        }
+      ],
+      "retrospectiveLeastSquares": {
+        "coefficients": [
+          1.7770105024693592,
+          0.6463287599320885
+        ],
+        "rows": [
+          {
+            "id": "G",
+            "raw": 38.73845709529192,
+            "display": 38.8,
+            "y": 38.7
+          },
+          {
+            "id": "O",
+            "raw": 36.70313942906369,
+            "display": 36.8,
+            "y": 37
+          },
+          {
+            "id": "P",
+            "raw": 36.60741125961752,
+            "display": 36.7,
+            "y": 37.5
+          },
+          {
+            "id": "Q",
+            "raw": 40.86244416066889,
+            "display": 40.9,
+            "y": 40.5
+          },
+          {
+            "id": "R",
+            "raw": 41.63235940498864,
+            "display": 41.7,
+            "y": 41.3
+          },
+          {
+            "id": "S",
+            "raw": 34.588006164381724,
+            "display": 34.6,
+            "y": 34.3
+          },
+          {
+            "id": "T",
+            "raw": 40.98472644154693,
+            "display": 41,
+            "y": 40.9
+          }
+        ]
+      }
+    },
+    {
+      "probabilityBoost": "absolute",
+      "aggregation": "weighted",
+      "rows": [
+        {
+          "id": "G",
+          "y": 38.7,
+          "A": 70.00707951520545,
+          "Abase": 70.00707951520545,
+          "S": 23.03490732003235,
+          "R": 1.3147812071848748,
+          "common5over3": 40.6
+        },
+        {
+          "id": "O",
+          "y": 37,
+          "A": 65.54946450356542,
+          "Abase": 65.54946450356542,
+          "S": 21.928659644495877,
+          "R": 1.1217731586469228,
+          "common5over3": 38.5
+        },
+        {
+          "id": "P",
+          "y": 37.5,
+          "A": 66.37465888836559,
+          "Abase": 66.37465888836559,
+          "S": 22.246771339537894,
+          "R": 1.1709403738259154,
+          "common5over3": 39.1
+        },
+        {
+          "id": "Q",
+          "y": 40.5,
+          "A": 73.27772900476324,
+          "Abase": 73.27772900476324,
+          "S": 24.22328932824991,
+          "R": 1.4086563827376437,
+          "common5over3": 42.8
+        },
+        {
+          "id": "R",
+          "y": 41.3,
+          "A": 73.27772900476324,
+          "Abase": 73.27772900476324,
+          "S": 24.69959456678089,
+          "R": 1.4086563827376437,
+          "common5over3": 43.6
+        },
+        {
+          "id": "S",
+          "y": 34.3,
+          "A": 63.01714226779816,
+          "Abase": 63.01714226779816,
+          "S": 20.562546365519797,
+          "R": 0.645969744525951,
+          "common5over3": 35.4
+        },
+        {
+          "id": "T",
+          "y": 40.9,
+          "A": 71.2179531155813,
+          "Abase": 71.2179531155813,
+          "S": 24.078978302625483,
+          "R": 1.8162147663201758,
+          "common5over3": 43.2
+        }
+      ],
+      "singleCoefficient": {
+        "min": 1.6125597765795896,
+        "max": 1.5794437172607367,
+        "feasible": false
+      },
+      "feasibility": [
+        {
+          "mode": "ceil",
+          "min": 1.876005366161753,
+          "max": -2.80192468353523,
+          "minWitness": [
+            "G",
+            "Q"
+          ],
+          "maxWitness": [
+            "G",
+            "R"
+          ],
+          "feasibleWithClosedBounds": false
+        },
+        {
+          "mode": "round",
+          "min": 1.883829032398061,
+          "max": -2.980438451278374,
+          "minWitness": [
+            "G",
+            "Q"
+          ],
+          "maxWitness": [
+            "G",
+            "R"
+          ],
+          "feasibleWithClosedBounds": false
+        },
+        {
+          "mode": "floor",
+          "min": 1.8916526986343336,
+          "max": -3.158952219020167,
+          "minWitness": [
+            "G",
+            "Q"
+          ],
+          "maxWitness": [
+            "G",
+            "R"
+          ],
+          "feasibleWithClosedBounds": false
+        }
+      ],
+      "retrospectiveLeastSquares": {
+        "coefficients": [
+          1.6477462791610098,
+          0.589923431465811
+        ],
+        "rows": [
+          {
+            "id": "G",
+            "raw": 38.731303068771275,
+            "display": 38.8,
+            "y": 38.7
+          },
+          {
+            "id": "O",
+            "raw": 36.79462760728151,
+            "display": 36.8,
+            "y": 37
+          },
+          {
+            "id": "P",
+            "raw": 37.3477998614386,
+            "display": 37.4,
+            "y": 37.5
+          },
+          {
+            "id": "Q",
+            "raw": 40.74483426672519,
+            "display": 40.8,
+            "y": 40.5
+          },
+          {
+            "id": "R",
+            "raw": 41.529664451259514,
+            "display": 41.6,
+            "y": 41.3
+          },
+          {
+            "id": "S",
+            "raw": 34.26293195217483,
+            "display": 34.3,
+            "y": 34.3
+          },
+          {
+            "id": "T",
+            "raw": 40.7474745513763,
+            "display": 40.8,
+            "y": 40.9
+          }
+        ]
+      }
+    },
+    {
+      "probabilityBoost": "absolute",
+      "aggregation": "maximum",
+      "rows": [
+        {
+          "id": "G",
+          "y": 38.7,
+          "A": 70.00707951520545,
+          "Abase": 63.5000423199999,
+          "S": 22.40547057428002,
+          "R": 2.4522563360000156,
+          "common5over3": 41.5
+        },
+        {
+          "id": "O",
+          "y": 37,
+          "A": 65.54946450356542,
+          "Abase": 59.14989563999992,
+          "S": 21.172361253360023,
+          "R": 2.166078352000003,
+          "common5over3": 38.9
+        },
+        {
+          "id": "P",
+          "y": 37.5,
+          "A": 66.37465888836559,
+          "Abase": 59.08339497499989,
+          "S": 21.087004198149984,
+          "R": 2.112348480000011,
+          "common5over3": 38.7
+        },
+        {
+          "id": "Q",
+          "y": 40.5,
+          "A": 73.27772900476324,
+          "Abase": 66.65604899999991,
+          "S": 23.68031490749998,
+          "R": 2.652983200000014,
+          "common5over3": 43.9
+        },
+        {
+          "id": "R",
+          "y": 41.3,
+          "A": 73.27772900476324,
+          "Abase": 66.65604899999991,
+          "S": 24.11357922599999,
+          "R": 2.652983200000014,
+          "common5over3": 44.7
+        },
+        {
+          "id": "S",
+          "y": 34.3,
+          "A": 63.01714226779816,
+          "Abase": 58.39448999999986,
+          "S": 19.77921906000001,
+          "R": 1.2027910000000062,
+          "common5over3": 35
+        },
+        {
+          "id": "T",
+          "y": 40.9,
+          "A": 71.2179531155813,
+          "Abase": 63.65986624999992,
+          "S": 23.93500437187499,
+          "R": 3.632996250000005,
+          "common5over3": 46
+        }
+      ],
+      "singleCoefficient": {
+        "min": 1.6299677629646496,
+        "max": 1.4836041452910504,
+        "feasible": false
+      },
+      "feasibility": [
+        {
+          "mode": "ceil",
+          "min": 3.651157820274743,
+          "max": 1.67317982191664,
+          "minWitness": [
+            "G",
+            "R"
+          ],
+          "maxWitness": [
+            "P",
+            "S"
+          ],
+          "feasibleWithClosedBounds": false
+        },
+        {
+          "mode": "round",
+          "min": 3.6836737174500183,
+          "max": 1.6759499333763321,
+          "minWitness": [
+            "G",
+            "R"
+          ],
+          "maxWitness": [
+            "P",
+            "S"
+          ],
+          "feasibleWithClosedBounds": false
+        },
+        {
+          "mode": "floor",
+          "min": 3.716189614625248,
+          "max": 1.6787200448360253,
+          "minWitness": [
+            "G",
+            "R"
+          ],
+          "maxWitness": [
+            "P",
+            "S"
+          ],
+          "feasibleWithClosedBounds": false
+        }
+      ],
+      "retrospectiveLeastSquares": {
+        "coefficients": [
+          1.7768517938102737,
+          -0.43791990278998455
+        ],
+        "rows": [
+          {
+            "id": "G",
+            "raw": 38.737308724795504,
+            "display": 38.8,
+            "y": 38.7
+          },
+          {
+            "id": "O",
+            "raw": 36.67157925088856,
+            "display": 36.7,
+            "y": 37
+          },
+          {
+            "id": "P",
+            "raw": 36.5434417945474,
+            "display": 36.6,
+            "y": 37.5
+          },
+          {
+            "id": "Q",
+            "raw": 40.914615876336036,
+            "display": 41,
+            "y": 40.5
+          },
+          {
+            "id": "R",
+            "raw": 41.68446235785677,
+            "display": 41.7,
+            "y": 41.3
+          },
+          {
+            "id": "S",
+            "raw": 34.6180147491307,
+            "display": 34.7,
+            "y": 34.3
+          },
+          {
+            "id": "T",
+            "raw": 40.93799408838644,
+            "display": 41,
+            "y": 40.9
+          }
+        ]
+      }
+    }
+  ],
+  "effectExamples": [
+    [
+      "live_special_skill_effect-live_active_skill_activation_probability_up_permil_up-550",
+      [
+        {
+          "groupId": "live_special_skill_effect-live_active_skill_activation_probability_up_permil_up-550",
+          "number": 1,
+          "type": "LiveActiveSkillEffectType_LIVE_ACTIVE_SKILL_EFFECT_TYPE_LIVE_ACTIVE_SKILL_ACTIVATION_PROBABILITY_UP_PERMIL_UP",
+          "value": "550",
+          "descriptionLangId": "la-generated-live_special_skill_effect-live_active_skill_activation_probability_up_permil_up-550.1-description",
+          "description": "스킬 발동률이 55% UP"
+        }
+      ]
+    ],
+    [
+      "live_special_skill_effect-live_active_skill_activation_probability_up_permil_up-350",
+      [
+        {
+          "groupId": "live_special_skill_effect-live_active_skill_activation_probability_up_permil_up-350",
+          "number": 1,
+          "type": "LiveActiveSkillEffectType_LIVE_ACTIVE_SKILL_EFFECT_TYPE_LIVE_ACTIVE_SKILL_ACTIVATION_PROBABILITY_UP_PERMIL_UP",
+          "value": "350",
+          "descriptionLangId": "la-generated-live_special_skill_effect-live_active_skill_activation_probability_up_permil_up-350.1-description",
+          "description": "스킬 발동률이 35% UP"
+        }
+      ]
+    ],
+    [
+      "live_special_skill_effect-live_active_skill_activation_probability_up_permil_up-400",
+      [
+        {
+          "groupId": "live_special_skill_effect-live_active_skill_activation_probability_up_permil_up-400",
+          "number": 1,
+          "type": "LiveActiveSkillEffectType_LIVE_ACTIVE_SKILL_EFFECT_TYPE_LIVE_ACTIVE_SKILL_ACTIVATION_PROBABILITY_UP_PERMIL_UP",
+          "value": "400",
+          "descriptionLangId": "la-generated-live_special_skill_effect-live_active_skill_activation_probability_up_permil_up-400.1-description",
+          "description": "스킬 발동률이 40% UP"
+        }
+      ]
+    ]
+  ],
+  "specialDescriptions": [
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "special": {
+        "level": 1,
+        "duration": 10,
+        "support": 120,
+        "activationRateUp": 40,
+        "condition": null,
+        "description": "10초 동안 스코어 서포트 효과 120% 스킬 발동률이 40% UP"
+      }
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "special": {
+        "level": 1,
+        "duration": 10,
+        "support": 120,
+        "activationRateUp": 40,
+        "condition": null,
+        "description": "10초 동안 스코어 서포트 효과 120% 스킬 발동률이 40% UP"
+      }
+    }
+  ]
+}

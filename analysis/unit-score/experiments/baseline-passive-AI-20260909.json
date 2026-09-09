@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T07:14:06.343Z",
+  "status": "planned; no AI observation received",
+  "sampleId": "AI",
+  "leaderId": "card-06003-5-uniq-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00021-5-uniq-0017-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "features": {
+    "id": "AI",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-06004-5-uniq-0060-00",
+      "card-00021-5-uniq-0017-00",
+      "card-00026-5-uniq-0065-00"
+    ],
+    "Araw": 73.64333333333327,
+    "A": 73.7,
+    "W": 6160,
+    "rateSum": 155,
+    "rateDurationSum": 1585,
+    "SP": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "name": "시라누이 후레아",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "name": "츠노마키 와타메",
+        "duration": 11,
+        "support": 110,
+        "rate": 35,
+        "condition": null,
+        "conditionMet": true
+      }
+    ],
+    "observedActive": null,
+    "observedSP": null,
+    "displayedActiveFlatRate": {
+      "raw": 43.54441666666667,
+      "ceil": 43.6
+    },
+    "displayedActiveDurationRate": {
+      "raw": 43.67339166666667,
+      "ceil": 43.7
+    },
+    "rawActiveFlatRate": {
+      "raw": 43.51093611111108,
+      "ceil": 43.6
+    },
+    "power": {
+      "memberParameter": 84026,
+      "outfit": 0,
+      "board": 0,
+      "passive": 13617,
+      "memory": 0,
+      "enhancement": 0
+    },
+    "retainedPower": 97643,
+    "conditions": {
+      "leaderScoreSupport": 0,
+      "leaderParameterConditionMet": false,
+      "passiveSupport": [
+        0,
+        0,
+        8,
+        0,
+        8
+      ],
+      "active": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 2,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 100
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 80
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "condition": {
+            "kind": "life",
+            "threshold": 600
+          },
+          "conditionMet": true,
+          "effectiveValue": 115
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "condition": {
+            "kind": "combo",
+            "threshold": 40
+          },
+          "conditionMet": true,
+          "effectiveValue": 100
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 3,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 120
+        }
+      ]
+    }
+  },
+  "quantized": {
+    "contributions": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 11.25,
+        "roundedSupport": 11.25,
+        "rateContribution": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "name": "시라누이 후레아",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "name": "츠노마키 와타메",
+        "duration": 11,
+        "support": 110,
+        "rate": 35,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10.083333333333334,
+        "roundedSupport": 10.09,
+        "rateContribution": 1.75
+      }
+    ],
+    "supportSum": 51.34,
+    "factor": 59.09,
+    "raw": 43.54933,
+    "display": 43.6
+  },
+  "numericBoardFeatures": {
+    "id": "AI",
+    "excluded": false,
+    "leaderId": "card-06003-5-uniq-0059-00",
+    "leaderCharacterId": "chr-06003",
+    "leaderBoardSupport": 13.3,
+    "inputs": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "characterId": "chr-00010",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "characterId": "chr-00027",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "characterId": "chr-06004",
+        "support": 8,
+        "board": {
+          "rate": 14,
+          "cooldown": 4
+        }
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "characterId": "chr-00021",
+        "support": 0,
+        "board": {
+          "rate": 6,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "characterId": "chr-00026",
+        "support": 8,
+        "board": {
+          "rate": 24.5,
+          "cooldown": 4
+        }
+      }
+    ],
+    "support": [
+      0,
+      0,
+      8,
+      0,
+      8
+    ],
+    "hasScoreSupportPassive": true,
+    "Araw": 73.64333333333327,
+    "A": 73.7,
+    "Braw": 88.44707282197362,
+    "BPraw": 91.40009060820182,
+    "Bdisplay": 88.5,
+    "BPdisplay": 91.5,
+    "boardReference": 14.8,
+    "passiveMarginalReference": 3,
+    "observedBoard": null,
+    "observedPassive": null,
+    "boardMatches": null,
+    "boardResidual": null,
+    "joint": {
+      "rawCombined": 17.756757274868548,
+      "singleCeil": 17.8,
+      "twoCeilPossibleSums": [
+        17.8,
+        17.9
+      ],
+      "reportedSum": null,
+      "compatible": null
+    },
+    "scope": "Numeric rate/frequency boards plus Ririka unconditional support13.3 when applicable. Singer effects excluded in the planned pre-song context. No numeric judgement contribution is added; the judgement node effect on formation display remains unproven."
+  },
+  "changeFromCurrentAH": "Replace swimsuit Noel80/1 with swimsuit Watame70/1; keep Ririka40/0 leader, Ayame40/0, Towa70/0, Raden70/1 and regular Flare11/0.",
+  "controlReference": "AB",
+  "changeFromAB": "Only leader changes: swimsuit Suisei60/0 -> Ririka40/0; the same five members/profiles/boards/order.",
+  "purpose": "First new test of the post-AH leader conversion using AB measured passive1.8. Both AB and AI costumes are inactive and exactly two Happy recipients Raden/Watame receive support8.",
+  "hypotheses": {
+    "active": {
+      "display": 73.7,
+      "kind": "Existing board-excluded formula"
+    },
+    "special": {
+      "display": 43.6,
+      "kind": "Existing board-excluded formula"
+    },
+    "passive": {
+      "display": 2.3,
+      "kind": "NEW empirical leader-conversion family, fitted after AH to two pairs; zero prospective successes. Uses measured AB1.8, not a computed baseline."
+    },
+    "board": {
+      "display": null,
+      "candidates": [
+        15.5,
+        15.6
+      ],
+      "kind": "Conditional15.5/15.6 only if BOTH passive2.3 and combined17.8/17.9 families hold; no standalone board formula."
+    },
+    "conditionalJoint": {
+      "possibleDisplays": [
+        17.8,
+        17.9
+      ],
+      "raw": 17.756757274868548,
+      "kind": "Existing conditional raw-sum plus separate ceil0.1 family; judgement contribution unresolved."
+    }
+  },
+  "leaderConversion": {
+    "formula": "P_Ririka = ceil0.1(k * P_Suisei_displayed)",
+    "intervals": [
+      {
+        "baseId": "Z",
+        "leaderId": "W",
+        "basePassive": 1.5,
+        "leaderPassive": 1.9,
+        "lowerExclusive": 1.2,
+        "upperInclusive": 1.2666666666666666
+      },
+      {
+        "baseId": "AG",
+        "leaderId": "AH",
+        "basePassive": 1.7,
+        "leaderPassive": 2.2,
+        "lowerExclusive": 1.2352941176470589,
+        "upperInclusive": 1.2941176470588236
+      }
+    ],
+    "intersection": {
+      "lowerExclusive": 1.2352941176470589,
+      "upperInclusive": 1.2666666666666666
+    },
+    "inputDisplay": 1.8,
+    "outputRawInterval": {
+      "lowerExclusive": 2.223529411764706,
+      "upperInclusive": 2.28
+    },
+    "display": 2.3,
+    "status": "New post-AH empirical conversion family fitted to two leader pairs; not a baseline passive formula or a mechanistic derivation from leader support13.3.",
+    "evidence": {
+      "retrospectivePairs": [
+        [
+          "Z",
+          "W"
+        ],
+        [
+          "AG",
+          "AH"
+        ]
+      ],
+      "prospectiveSuccesses": 0
+    },
+    "plain133": [
+      {
+        "baseId": "Z",
+        "leaderId": "W",
+        "fromDisplayed": 1.7,
+        "observed": 1.9,
+        "fromLatentRawBounds": {
+          "lowerExclusive": 1.5862,
+          "upperInclusive": 1.6995
+        },
+        "possibleFromLatentRaw": [
+          1.6,
+          1.7
+        ]
+      },
+      {
+        "baseId": "AG",
+        "leaderId": "AH",
+        "fromDisplayed": 2,
+        "observed": 2.2,
+        "fromLatentRawBounds": {
+          "lowerExclusive": 1.8128,
+          "upperInclusive": 1.9261
+        },
+        "possibleFromLatentRaw": [
+          1.9,
+          2
+        ]
+      }
+    ],
+    "displayedAddIntersection": {
+      "lowerExclusive": 0.4,
+      "upperInclusive": 0.4
+    },
+    "latentAlternatives": {
+      "commonRawMultiplier": {
+        "coefficientInterval": {
+          "lowerExclusive": 1.2352941176470589,
+          "upperExclusive": 1.3571428571428572
+        },
+        "possibleAI": [
+          2.2,
+          2.3,
+          2.4,
+          2.5
+        ]
+      },
+      "commonRawAddend": {
+        "coefficientInterval": {
+          "lowerExclusive": 0.4,
+          "upperExclusive": 0.5
+        },
+        "possibleAI": [
+          2.2,
+          2.3
+        ]
+      }
+    },
+    "limitations": [
+      "The input is an already measured displayed passive value, not a computed latent passive amount.",
+      "Many coefficients in the interval fit; no single value such as1.25 or1.266 is identified.",
+      "A new2.3 match would not uniquely establish this family: latent raw additive/multiplicative alternatives can also yield2.3.",
+      "This differs from the previously rejected common scale on the board-adjusted raw passive margin; that earlier family stays rejected.",
+      "Both leader pairs change Ririka support and judgement nodes together; neither the exact node nor an internal calculation order is identified."
+    ]
+  },
+  "diagnosticOnly": {
+    "boardReferenceWithoutSupport": 14.8,
+    "cumulativeMarginalPassiveReference": 3,
+    "status": "Previously failed simple split, not adopted."
+  },
+  "interpretation": {
+    "passive2_3": "A first prospective match for the displayed-input conversion family; alternatives can also fit, so not a unique formula.",
+    "otherPassive": "Reject this common displayed-input multiplier family for the new pair, even if the combined sum still matches. Keep baseline and leader conversion separate."
+  },
+  "assumptions": "Same pre-song formation detail, existing member growth/board unlocks/order. Ririka has only Raden as RegLOSS member, so its costume condition is off. Ayame singer effects excluded; Raden life600 and regular Flare combo40 assumed met.",
+  "limitations": "AH->AI changes a member; the controlled leader comparison is AB->AI. Ririka support and judgement nodes change together across that pair. Do not infer a unique coefficient, causal node, or base passive formula from2.3. G0.1 mismatch and Ayame score-support outfit remain unresolved.",
+  "requestedMeasurements": "Member parameter, passive power, Active, SP, board and passive score separately; total score bonus if available.",
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "newEvidenceHashes": {
+    "analysis/unit-score/board-observations/WX-clarification-20260909.json": "76063061352c10a3bd54bbb34c166d5082c969079123ae8f778c4e16c733d32f",
+    "analysis/unit-score/board-observations/ririka-X-20260909.json": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438",
+    "analysis/unit-score/board-observations/suisei-Y-clarification-20260909.json": "b5c622f99d2a322d8b7f43e177ed2f03ab3bad4ebdae2726142cdcb28adcc12b",
+    "analysis/unit-score/board-observations/AA-member-clarification-20260909.json": "fbe5828797493d54745b95440322da282521b109ddb29d092a66875b8e7097dc"
+  },
+  "observationHashes": {
+    "analysis/unit-score/observations/Z-20260909-completed.json": "7953e134131cc90242a93e5def0a1bfde32dd3f8472d9f81911c1da5a275f655",
+    "analysis/unit-score/observations/AA-20260909.json": "fcf6fbdb4cfef6e64cef245f057b427bf4a8ad2611c456d0220688f7b63ccb65",
+    "analysis/unit-score/observations/AB-20260909.json": "d7f54005c43a8bd085c79bda8c191841fa9646007444d2053018184d28444c49",
+    "analysis/unit-score/observations/AC-20260909.json": "5436910da10be12180fbf345e11b11db18a3880f6fb5a5b3115bec28c9f9f9fe",
+    "analysis/unit-score/observations/AD-20260909.json": "0c49a3382f4b69b4b7fe09511da76062e50a9b8fdee2fffba5f744d52c890b25",
+    "analysis/unit-score/observations/AE-20260909.json": "6a036fcb3ae76c2311e1e46549f255cc0ed0a924598bc11a4f523041fa2d1183",
+    "analysis/unit-score/observations/AF-20260909.json": "a5cead6f5810c0f91b98ffeddcfec08b22b52951ef5a260ad6ab64b9f6255a70",
+    "analysis/unit-score/observations/AG-20260909.json": "d74453fccab994b7c92308666d08b633de10361010ee02209ba84c3ab0a53e8a",
+    "analysis/unit-score/observations/W-20260909.json": "e5b8ad2712c93c6df1ca35358409f0530663e53e77cd7c7d270ff846b2480e30",
+    "analysis/unit-score/observations/AH-20260909.json": "4a4ed67abaafb2461ae9fa9eaaeae737b763ba59611fd161539558b1a2d8f3b3"
+  },
+  "AHCheckpointSHA256": "360acc2692d8b5c0fce5f19907d8d0ee2cb6f4b67ab00f0410fb8426233ab524",
+  "analysisSourceSHA256": "d6d49ea9e59878ce78f14e15cfeff3ff273ca3e993f84f8abbd3c7032554ddfc",
+  "previousSourceLocks": {
+    "analysis/unit-score/compare-board-ac-20260909.mjs": "8e9ebc993e21040adc6ceeb1332620a0010ccc1840cb8fbdf6c2ec37d360391b",
+    "analysis/unit-score/compare-passive-ab-20260909.mjs": "9bbdb79a047b55dd343eda8f430984ac6254ab0f013d1019c2c6ea38558dfe70",
+    "analysis/unit-score/probe-passive-board-aa-20260909.mjs": "85f3a46a917c4832a0ac9a827a614aff8e2351d03a65b4a29cb994e57eb11f86",
+    "analysis/unit-score/compare-passive-aa-20260909.mjs": "85892be042c6e54f806a0b1b0413641e7b73426266325c5b3072fec08ae26e15",
+    "analysis/unit-score/compare-board-ad-20260909.mjs": "3b7f3b3384eb0288b53640abfafc14c412f96d57e48b349fbb252c37d1abb8e9",
+    "analysis/unit-score/compare-board-ae-20260909.mjs": "7bae9f8bfd9149995873b02227e3f657e7803f04784eaf1f852f6ce236133311",
+    "analysis/unit-score/compare-passive-af-20260909.mjs": "e33b77eee26a1d7773e94d77ff95aac4e63b704f8cb4a92d7bb29e5e2243ef98",
+    "analysis/unit-score/compare-passive-ag-20260909.mjs": "7ca36e1c358a40263576cd992cdd7b401cddf31f8f2573aef41ca3ef2a804b05"
+  },
+  "modelStatus": "AH board15.3/passive2.2 confirms leader-context passive+0.5 with costumes inactive. Joint17.5 fits the frozen17.4/17.5 family. AI tests a NEW displayed-passive leader-conversion family fitted to Z/W and AG/AH: measured AB1.8 maps to2.3. This is not a baseline passive formula or a unique coefficient. Board15.5/15.6 is conditional on both conversion and combined17.8/17.9 families."
+}

@@ -9,6 +9,7 @@ const tests = [
   'scripts/test-passive-target-priority.mjs', 'scripts/test-support-stacking.mjs',
   'scripts/test-generic-order.mjs', 'scripts/test-song-representative-order.mjs',
   'analysis/unit-score/probe-fixed-constants.mjs', 'scripts/test-scoring-handoff.mjs',
+  'scripts/test-validation-aj-handoff.mjs',
 ];
 if (args.includes('--research-grid')) tests.push(...[
   'probe-dummy-active-joint.mjs', 'probe-dummy-environment.mjs', 'probe-dummy-identifiability.mjs',

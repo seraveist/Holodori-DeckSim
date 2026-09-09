@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T07:36:55.237Z",
+  "sampleId": "AI",
+  "status": "Observed and compared; displayed-input multiplier rejected.",
+  "supersedes": "analysis/unit-score/experiments/AI-status-resumed-20260909.json",
+  "observation": "analysis/unit-score/observations/AI-20260909.json",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-passive-AI-20260909.json",
+  "frozenPlanSHA256": "e2b34617f1cfb66f60e88027b7378c8188311dad4330f3564f5f13213b2aa2ff",
+  "result": {
+    "passive": 2.2,
+    "board": 15.7,
+    "joint": 17.9,
+    "baselineFourValuesMatch": true,
+    "passivePrediction2_3Matches": false
+  },
+  "next": "analysis/unit-score/experiments/baseline-passive-AJ-20260909.json"
+}

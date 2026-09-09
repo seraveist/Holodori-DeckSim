@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T04:44:36.569Z",
+  "samples": [
+    "W",
+    "X"
+  ],
+  "evidence": {
+    "ririkaReconfirmation": "analysis/unit-score/board-observations/ririka-X-20260909.json",
+    "ririkaRecordSHA256": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438",
+    "clarificationReplies": [
+      {
+        "question": "X에서 사용한 카나데의 리더 보드 중 스코어보너스에 영향을 줄 수 있는 노드도 알려주세요. 스코어 서포트, 판정 보정, 가창자 조건 효과를 포함해 주세요.",
+        "answer": "카나데는 리더효과 없음."
+      },
+      {
+        "question": "W와 X 수치는 모두 악곡을 선택하지 않은 같은 편성 상세 화면에서 확인했나요? 악곡 선택 상태였다면 곡명과 리리카·카나데의 가창자 조건 충족 여부를 알려주세요.",
+        "answer": "둘 다 악곡 선택 전 편성 상세"
+      }
+    ]
+  },
+  "view": {
+    "sameFormationDetailContextConfirmed": true,
+    "beforeSongSelection": true,
+    "selectedSong": null,
+    "caveat": "Actual-song singer eligibility is not established. The treatment of conditional singer nodes by an internal formation-preview evaluation remains unverified."
+  },
+  "leaders": {
+    "W": {
+      "characterId": "chr-06003",
+      "character": "이치조 리리카",
+      "scoreSupportNodesPct": [
+        4,
+        6.2,
+        3.1
+      ],
+      "arithmeticSumPct": 13.3,
+      "judgement": {
+        "intervalSeconds": 20,
+        "probabilityLabel": "낮은 확률",
+        "probability": null,
+        "durationSeconds": 7,
+        "from": "GOOD 이상",
+        "to": "PERFECT"
+      },
+      "singerSupport": {
+        "valuePct": 24,
+        "target": "전원",
+        "condition": "악곡 가창자로 포함될 경우",
+        "actualSelectedSongConditionMet": null,
+        "appliedInBaseline": false,
+        "reason": "No selected song; not assumed always active in formation preview."
+      }
+    },
+    "X": {
+      "characterId": "chr-06002",
+      "character": "오토노세 카나데",
+      "relevantLeaderBoardEffectsAbsentConfirmed": true,
+      "confirmationScope": "Response concerns score-bonus-related LEADER BOARD effects. It does not deny the card costume performance +130% effect or previously recorded member active-rate board nodes."
+    }
+  },
+  "policy": {
+    "baselineActiveAndSP": "Keep preserved board-excluded research formulas and predictions.",
+    "passiveAnalysis": "Reopen leader-board interactions as a separate hypothesis. Do not treat subtraction of the displayed board row as proof that passive is board-independent.",
+    "noAutomaticApplication": "Do not add 13.3 or 24 to card skills or production formulas without an identified rule."
+  },
+  "interpretation": "W-to-X is a leader-context intervention with both costume and leader-board changes. The passive decrease is not uniquely attributed to either one."
+}

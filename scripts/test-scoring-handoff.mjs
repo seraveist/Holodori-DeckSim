@@ -45,4 +45,4 @@ const synthetic = { ...template, profilesConfirmed: true, observedAt: 'synthetic
 assert.equal(compareObservation(synthetic).retainedPower, 100);
 assert.equal(compareObservation(synthetic).differences.specialTwoCoefficients.rawErrorPp, null);
 assert.throws(() => compareObservation({ ...synthetic, game: { ...synthetic.game, overallPower: 111 } }), /Power components/);
-console.log('scoring handoff: portable profiles, 6 Active observations, and 3 frozen future experiments OK; unknown bonus formula remains a hypothesis');
+console.log('scoring handoff: portable profiles, 6 Active observations, and 3 initial experiment predictions preserved; unknown bonus formula remains a hypothesis');

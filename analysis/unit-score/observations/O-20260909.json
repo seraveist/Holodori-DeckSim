@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "O",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T02:39:10.340Z",
+  "observationDateBasis": "Date of this conversation; no separately supplied measurement date.",
+  "gameVersion": null,
+  "leaderId": "card-06003-5-uniq-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00018-5-uniq-0068-00",
+    "card-06002-5-uniq-0066-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00027-5-uniq-0022-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-5-uniq-0059-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": true,
+  "profileConfirmation": {
+    "source": "User response in this conversation",
+    "exactReply": "후레아 11/0, 나머지는 계획과 동일"
+  },
+  "bonusConfirmation": {
+    "source": "User response to O/P board 14.9% / 16.8% and omitted categories question",
+    "exactReply": "보드 효과는 정확한 수치임. 목록에 액티브, 보드, 스페셜만 존재함"
+  },
+  "rawUserInput": "O 편성\n\n종합력 171732, 멤버 파라미터 87623, 의상스킬 43816, 패시브스킬 11520 (보드효과, 메모리, 멤버강화는 제외함)\n스코어보너스 117.5%, 액티브 스킬 65.6%, 스페셜 스킬 37.0%\n\nP편성\n\n종합력 152296, 멤버 파라미터 73877, 의상스킬 36942, 패시브스킬 11611\n스코어보너스 120.7%, 액티브스킬 66.4%, 스페셜 스킬 37.5%",
+  "evidence": "User-entered formation detail values and explicit follow-up confirmation; no screenshot supplied.",
+  "boardContext": "Exclude board contributions and rate/cooldown/leader-board support from baseline calculations. Board bonus is confirmed; board power, memory, and enhancement components were omitted individually.",
+  "game": {
+    "unitScore": null,
+    "overallPower": 171732,
+    "scoreBonusPct": 117.5,
+    "powerDetail": {
+      "memberParameter": 87623,
+      "outfit": 43816,
+      "board": null,
+      "passive": 11520,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 65.6,
+      "board": 14.9,
+      "passive": null,
+      "special": 37
+    }
+  },
+  "categoryStatus": {
+    "scoreOutfit": "notDisplayed, user confirmed",
+    "scorePassive": "notDisplayed, user confirmed",
+    "excludedPower": "Board, memory and enhancement individually unreported. Preserve raw total and known components; do not fabricate individual amounts."
+  },
+  "notes": "Uses the planned O growth profiles."
+}

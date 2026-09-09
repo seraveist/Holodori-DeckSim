@@ -1,0 +1,2630 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T08:02:36.047Z",
+  "packageName": "HolodoriDecks-validation-AJ-handoff-20260909",
+  "latestObserved": "AJ",
+  "nextUnobserved": "AK",
+  "excludes": [
+    "MANIFEST.sha256.json (self)"
+  ],
+  "hashAlgorithm": "SHA-256",
+  "fileCount": 523,
+  "bytes": 35349599,
+  "files": [
+    {
+      "path": "HolodoriDecks/.github/workflows/pages.yml",
+      "bytes": 10703,
+      "sha256": "e774b2676520ba6c31d00184d5048f86f0eec16c188ec9d3e919be5e1a0ce00c"
+    },
+    {
+      "path": "HolodoriDecks/.github/workflows/production-smoke.yml",
+      "bytes": 1206,
+      "sha256": "6a6766bf33fe7535388205f5496872b24053f254a3270d43fb3234878afcfdad"
+    },
+    {
+      "path": "HolodoriDecks/.github/workflows/release.yml",
+      "bytes": 4595,
+      "sha256": "4c88d2a9e4aafc52aeeaf1857009e399c0b7cd4b27174d3ef4c37eec0d12c94e"
+    },
+    {
+      "path": "HolodoriDecks/.github/workflows/sync-card-assets.yml",
+      "bytes": 16856,
+      "sha256": "1de5d7a86d38efe1588a913890bd8741d319e245f7d127e9bd996044498a7e05"
+    },
+    {
+      "path": "HolodoriDecks/.github/workflows/sync-master-data.yml",
+      "bytes": 15142,
+      "sha256": "e13159330f3aaa5ae739c3ffa0a7f099cf20aba59987677aba93ff3755daef52"
+    },
+    {
+      "path": "HolodoriDecks/.github/workflows/validate.yml",
+      "bytes": 13406,
+      "sha256": "6157022c65c7a820da1706e950c1058ccfe819290c5d445c5d53c98f36db3f9f"
+    },
+    {
+      "path": "HolodoriDecks/.gitignore",
+      "bytes": 90,
+      "sha256": "e00218304b5f05424f37fd1fc4ab83ad0a0023b92456496f58448881545ac5ab"
+    },
+    {
+      "path": "HolodoriDecks/.local/scoring-validation/M.observation.json",
+      "bytes": 3053,
+      "sha256": "603a1dafe2b7b56576cfc2503253bbf10b7416489eea014e818e85dc2fffff87"
+    },
+    {
+      "path": "HolodoriDecks/.nojekyll",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "HolodoriDecks/CARD_ASSET_SYNC.md",
+      "bytes": 9029,
+      "sha256": "3b2da818b200cdd9f239659a05cd15d1b3696138bb81479d1221f4841596643c"
+    },
+    {
+      "path": "HolodoriDecks/CHANGELOG.md",
+      "bytes": 14672,
+      "sha256": "b888729f3eaa38960ba7bc2ba706bb38e846448bd7553f8fd6d0b2ccb3bf4029"
+    },
+    {
+      "path": "HolodoriDecks/DATA_SYNC.md",
+      "bytes": 6876,
+      "sha256": "314ba69dd89b0682c2971a41b4be1965fe45ab4380a0cfc62e3dc0459d3c8537"
+    },
+    {
+      "path": "HolodoriDecks/EXACT_CHART_CORPUS.md",
+      "bytes": 6463,
+      "sha256": "0475a17ccd520f1eb7d7d1e55afcc7e153f23dc51292b9335317600d40f75981"
+    },
+    {
+      "path": "HolodoriDecks/HANDOFF_CURRENT.md",
+      "bytes": 17624,
+      "sha256": "4f7319d649f12f891c79f712019bfcfc07c8d291e336fe98ec92fc981611a3bc"
+    },
+    {
+      "path": "HolodoriDecks/LICENSE",
+      "bytes": 1066,
+      "sha256": "8571efb947b66be888a658d28124edfca38aaa445a7a73cf3a8ee2f4e90839ab"
+    },
+    {
+      "path": "HolodoriDecks/LOCAL_TEST.md",
+      "bytes": 10609,
+      "sha256": "16bef105ee31df617af47f8c09300bfc2d1e36b358f056559eaf8fd27b242cde"
+    },
+    {
+      "path": "HolodoriDecks/NOTICE.md",
+      "bytes": 5491,
+      "sha256": "4e38767b0d893b54649ed7928739cacf04864c3d0580c289afac4372dc6df787"
+    },
+    {
+      "path": "HolodoriDecks/OBSERVATION_CATALOG_20260909.md",
+      "bytes": 12825,
+      "sha256": "c673b5f5af4606d24f21992a087178db6972394bea669257dd07d2510c5bc9ea"
+    },
+    {
+      "path": "HolodoriDecks/README.md",
+      "bytes": 18953,
+      "sha256": "1c9c4f8877118b3c91790a0ca4106cd7f306491cdc0226676e9a0c7559042c99"
+    },
+    {
+      "path": "HolodoriDecks/SCORING_HANDOFF.md",
+      "bytes": 29349,
+      "sha256": "e893186135ac75c5b4279544d6d2ec9c910d64c3b044ba7d28aa82b2656f3674"
+    },
+    {
+      "path": "HolodoriDecks/SCORING_VALIDATION.md",
+      "bytes": 26173,
+      "sha256": "e61ac2f44d85f24a6bb54ba3d364171f944443cac23fd3b1b8e3c72f5091859c"
+    },
+    {
+      "path": "HolodoriDecks/VERSION",
+      "bytes": 6,
+      "sha256": "5dae0c0a5ed3cdaa78704e25bb38d72c31018311e933283d06ed4f93360bfc6c"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/README.md",
+      "bytes": 21235,
+      "sha256": "a6da6b2ffc444f86448357d3120a6e988dd9865ac67806ff7dd0cb0a0d073b9e"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/archive/dummy-active-joint-probes.json",
+      "bytes": 28909,
+      "sha256": "e44dc2f3742d17cbaf901159d3d382b6f00a23aa7b1beca28929eebb67f2e226"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/archive/dummy-environment-probes.json",
+      "bytes": 176849,
+      "sha256": "a7cb5ba571d470b09c137bb0c0a2b6b6f7ae3b911338c914e7095faceeff41fd"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/archive/dummy-identifiability-probes.json",
+      "bytes": 37484,
+      "sha256": "64a35e5d5661c335ab8f24b9ec53ac36bfb996891eee6be98e31c1f3f5034211"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/archive/fixed-constant-fits-20260909-v2.json",
+      "bytes": 26962,
+      "sha256": "5ab2599439654b6b732477dcb56fc2c57d58fd396dca615478af721321c8f0fb"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/archive/inferred-unit-environment-20260909.json",
+      "bytes": 7146,
+      "sha256": "c8080cf20bb34781222f8c88648d7d786194fb9f4eea726bd8451c832efbd98a"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/archive/next-predictions-20260909.json",
+      "bytes": 10547,
+      "sha256": "b3c641338c4327db4550b4970f5f2425c0694ee88934fa6005ac032cb2e1e81c"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/board-context.json",
+      "bytes": 2782,
+      "sha256": "913b89ea901ea1d07a1e8529b5dbe81747c54690e9199ea42095bb7be39b4555"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/board-observations/AA-member-clarification-20260909.json",
+      "bytes": 2340,
+      "sha256": "fbe5828797493d54745b95440322da282521b109ddb29d092a66875b8e7097dc"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/board-observations/WX-clarification-20260909.json",
+      "bytes": 2968,
+      "sha256": "76063061352c10a3bd54bbb34c166d5082c969079123ae8f778c4e16c733d32f"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/board-observations/ririka-X-20260909.json",
+      "bytes": 2246,
+      "sha256": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/board-observations/suisei-Y-clarification-20260909.json",
+      "bytes": 964,
+      "sha256": "b5c622f99d2a322d8b7f43e177ed2f03ab3bad4ebdae2726142cdcb28adcc12b"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-baseline-sp-op.mjs",
+      "bytes": 6876,
+      "sha256": "361380733919d08282adfbf80484617be7fd412a89cc259925a826604fe23d2a"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-baseline-sp-st.mjs",
+      "bytes": 5184,
+      "sha256": "8e87528c6def6a7217384d7ad82973b26c75fac020d48c95076370265f394569"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-board-ac-20260909.mjs",
+      "bytes": 12851,
+      "sha256": "8e9ebc993e21040adc6ceeb1332620a0010ccc1840cb8fbdf6c2ec37d360391b"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-board-ad-20260909.mjs",
+      "bytes": 12315,
+      "sha256": "3b7f3b3384eb0288b53640abfafc14c412f96d57e48b349fbb252c37d1abb8e9"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-board-ae-20260909.mjs",
+      "bytes": 15617,
+      "sha256": "7bae9f8bfd9149995873b02227e3f657e7803f04784eaf1f852f6ce236133311"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-passive-aa-20260909.mjs",
+      "bytes": 12157,
+      "sha256": "85892be042c6e54f806a0b1b0413641e7b73426266325c5b3072fec08ae26e15"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-passive-ab-20260909.mjs",
+      "bytes": 12552,
+      "sha256": "9bbdb79a047b55dd343eda8f430984ac6254ab0f013d1019c2c6ea38558dfe70"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-passive-af-20260909.mjs",
+      "bytes": 12737,
+      "sha256": "e33b77eee26a1d7773e94d77ff95aac4e63b704f8cb4a92d7bb29e5e2243ef98"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-passive-ag-20260909.mjs",
+      "bytes": 11609,
+      "sha256": "7ca36e1c358a40263576cd992cdd7b401cddf31f8f2573aef41ca3ef2a804b05"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-passive-ah-20260909.mjs",
+      "bytes": 15306,
+      "sha256": "d6d49ea9e59878ce78f14e15cfeff3ff273ca3e993f84f8abbd3c7032554ddfc"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-passive-ai-20260909.mjs",
+      "bytes": 15846,
+      "sha256": "d2fbe22880a51733b6ef9236885db94505e41fa040250a54d266141e5836a828"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-passive-aj-20260909.mjs",
+      "bytes": 12153,
+      "sha256": "1320d15826da5d7569ce2e62a601361656ed39a50b18bb13264eba1d328580b2"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-passive-x-board-20260909.mjs",
+      "bytes": 10235,
+      "sha256": "39209467b8a39c29d19ff0635c8952dd85e5159fda72e049bb8d4009a5999485"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-passive-y-20260909.mjs",
+      "bytes": 7614,
+      "sha256": "c333150384c5198aae7ed803506f6cfbbd9f2704b44e69342f3cf234641a0b58"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-passive-z-20260909.mjs",
+      "bytes": 10256,
+      "sha256": "48cb50094a50275c23a012700c197516c67191f5c49a488cb42e6ce121cd0f90"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-sp-v-rounding-20260909.mjs",
+      "bytes": 8545,
+      "sha256": "49b699f0a104b2633425604efcfa0f8d2c37717c1f8148e4f688aa8e72cbfd31"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/compare-sp-w-passive-20260909.mjs",
+      "bytes": 10097,
+      "sha256": "0049312b79356c19f6e26d4b020088dcdb002f5af0bc1a05a3580184d1859d69"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/dummy-model-lab.mjs",
+      "bytes": 5319,
+      "sha256": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiment.mjs",
+      "bytes": 5052,
+      "sha256": "5f511ef11225871ebbc52e30e4eeff4588710de96d10fe401c844dbd43d4bea5"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/AI-status-after-category-help-20260909.json",
+      "bytes": 978,
+      "sha256": "ebd14e662e9b882a01650ef00d52231272b197840cd4b6d72adb05976025c473"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/AI-status-observed-20260909.json",
+      "bytes": 726,
+      "sha256": "c2cabb8f155f42faad3efc8024aa47144f3555b7d95b42e4bb23b25f89f11257"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/AI-status-resumed-20260909.json",
+      "bytes": 1732,
+      "sha256": "a90b87c004fd3dc4084eabb12d83d8f917c9d0a7db3d9693bd1086d3cf9bfcd2"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/AJ-status-observed-20260909.json",
+      "bytes": 733,
+      "sha256": "1b577c792929cca3a4a901da7a45ca4720d37b295ac6103a0c448aadabe6a49f"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-board-AC-20260909.json",
+      "bytes": 16212,
+      "sha256": "baee94fb242e4cead3cebcfab4b82fb285a774b2638c31afa98591ee98065e61"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-board-AD-20260909.json",
+      "bytes": 14487,
+      "sha256": "83c6aef77fc0611901cd226e20159119425f0eb4bd1da997b0968b296efe57df"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-board-AE-20260909.json",
+      "bytes": 19266,
+      "sha256": "1f37150ff21d24c10ed520943a8669ed48ccc036b3d7b86c1854a2b2ec00b6e1"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-passive-AA-20260909.json",
+      "bytes": 9403,
+      "sha256": "6d5f23c404cd4809f47f8c99599297508764459bc9e395ec457bbe68f2b46927"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-passive-AB-20260909.json",
+      "bytes": 14990,
+      "sha256": "9950504730d33ef02b89ea6c26c058e37e768d5ee4528f8b38cc7bb2241e0504"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-passive-AF-20260909.json",
+      "bytes": 14187,
+      "sha256": "35aad29a87c73bd57db01cf7e0d890c06443f86ca6336aa6c86956d5f83d8d5b"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-passive-AG-20260909.json",
+      "bytes": 14433,
+      "sha256": "ad26108fc215d786f6c1519e362ad98198eac4655852029ab7899926e84d5df2"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-passive-AH-20260909.json",
+      "bytes": 17657,
+      "sha256": "360acc2692d8b5c0fce5f19907d8d0ee2cb6f4b67ab00f0410fb8426233ab524"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-passive-AI-20260909.json",
+      "bytes": 18162,
+      "sha256": "e2b34617f1cfb66f60e88027b7378c8188311dad4330f3564f5f13213b2aa2ff"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-passive-AJ-20260909.json",
+      "bytes": 24244,
+      "sha256": "fb326fac426e44a2bac87895ae5d95944120e473d190507e3c802b7ab759e3f6"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-passive-AK-20260909.json",
+      "bytes": 18536,
+      "sha256": "1af1731eab5592125920482ab1e85cfdcf69128e239861b3c5bc1810e5936d5c"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-passive-X-20260909.json",
+      "bytes": 8753,
+      "sha256": "8c03f267aba90e2bafa2f6fa0f58dc81fccfc3e61c800e0fe0cfa0d911541a7e"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-passive-Y-20260909.json",
+      "bytes": 9254,
+      "sha256": "4224295a7c1489fb997c20afe15c754664f202bb1477ebf3387cb4f841edafe5"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-passive-Z-20260909.json",
+      "bytes": 10506,
+      "sha256": "06ba4ea6293f5e0a2bbab08ef9b6ce27a744e2dedb8548a706d59924aaa9fda8"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-sp-OP-20260909.json",
+      "bytes": 12692,
+      "sha256": "da1955820fd35c9c066570939c38de304ba21e22e9bf6ccd3d064677cd1ba731"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-sp-QR-20260909.json",
+      "bytes": 9370,
+      "sha256": "41847d9c6ef07c4baa50cacfbc3480932c42b14480aceff8c4ef5ffae47b601f"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-sp-ST-20260909.json",
+      "bytes": 14542,
+      "sha256": "40e412bbafeabedbd8904b6447aebf5e1780097338d8d07fd878bc852b942aaf"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-sp-U-20260909.json",
+      "bytes": 6017,
+      "sha256": "83cff2498fc99e39d66ab1ce1de46a7ea013f17d4d67e1194313bd84b773f16f"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-sp-V-20260909.json",
+      "bytes": 6111,
+      "sha256": "f6ad0e2eba9ae7b8980298effa9808dbc3f995e97dd5e9be827ae8abc5247e02"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/experiments/baseline-sp-W-20260909.json",
+      "bytes": 8151,
+      "sha256": "5e6ea6dc2366d5d3b84188f75725ab55a6fd6829824c06fba56b11b25e67ce52"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/io.mjs",
+      "bytes": 1315,
+      "sha256": "915e8b7dbb2e548d96fd298f458346e9f0a5f977c788cbce2b8d1047df4be109"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/next-experiments.json",
+      "bytes": 2362,
+      "sha256": "50155ec9100f60696a08ffc3ec5ff0884fb0568cf5aaafdfb6671c52440164f3"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observation-catalog-20260909.json",
+      "bytes": 95313,
+      "sha256": "ad6a2eae9bd593078e07af63a2a1a9c76610bcafddd25be84d2c14e7c2f6e957"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/AA-20260909.json",
+      "bytes": 2989,
+      "sha256": "fcf6fbdb4cfef6e64cef245f057b427bf4a8ad2611c456d0220688f7b63ccb65"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/AB-20260909.json",
+      "bytes": 2990,
+      "sha256": "d7f54005c43a8bd085c79bda8c191841fa9646007444d2053018184d28444c49"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/AC-20260909.json",
+      "bytes": 3681,
+      "sha256": "5436910da10be12180fbf345e11b11db18a3880f6fb5a5b3115bec28c9f9f9fe"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/AD-20260909.json",
+      "bytes": 3459,
+      "sha256": "0c49a3382f4b69b4b7fe09511da76062e50a9b8fdee2fffba5f744d52c890b25"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/AE-20260909.json",
+      "bytes": 3407,
+      "sha256": "6a036fcb3ae76c2311e1e46549f255cc0ed0a924598bc11a4f523041fa2d1183"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/AF-20260909.json",
+      "bytes": 3325,
+      "sha256": "a5cead6f5810c0f91b98ffeddcfec08b22b52951ef5a260ad6ab64b9f6255a70"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/AG-20260909.json",
+      "bytes": 3244,
+      "sha256": "d74453fccab994b7c92308666d08b633de10361010ee02209ba84c3ab0a53e8a"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/AH-20260909.json",
+      "bytes": 3231,
+      "sha256": "4a4ed67abaafb2461ae9fa9eaaeae737b763ba59611fd161539558b1a2d8f3b3"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/AI-20260909.json",
+      "bytes": 3345,
+      "sha256": "b7a6a91ef4730e0d1c3de3fcb51d8176a60ac5ae3ee5e0bb7a1b8cda382d4614"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/AJ-20260909.json",
+      "bytes": 3433,
+      "sha256": "d56abe31c4e38e8f7db9ea33361fcc79f53e605dafabbea1d24fa172b403c543"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/M-20260909.json",
+      "bytes": 3053,
+      "sha256": "603a1dafe2b7b56576cfc2503253bbf10b7416489eea014e818e85dc2fffff87"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/O-20260909.json",
+      "bytes": 2963,
+      "sha256": "54128775c983b64f45f463603d0af46d51441308439f5fab0767595244878c88"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/P-20260909.json",
+      "bytes": 3074,
+      "sha256": "facd6cccf86f59f8f5b2d037e2f39f3dea3b27402e0932270ece179755381d24"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/Q-20260909.json",
+      "bytes": 2801,
+      "sha256": "d9955347b51c2220b0259a271ad69dcc5f6c73797947210c6362f16d902d06e0"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/R-20260909.json",
+      "bytes": 2759,
+      "sha256": "86532f0b7d70c7d520f31e648a90fce01822d9935968014ff7f4b228192d578d"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/S-20260909.json",
+      "bytes": 2617,
+      "sha256": "5672f302b9e94259578d2878eab558213549aa4689b0a94fd231e1090bc977fd"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/T-20260909.json",
+      "bytes": 2656,
+      "sha256": "2316ef27545ec0916109c6472f64329aaeeb82da045dace459d5b67e1df6e8f6"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/U-20260909.json",
+      "bytes": 2856,
+      "sha256": "1810ada89559ee5100fe936c19daf159d07f6932be8e97ce7e84a791d7167567"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/V-20260909.json",
+      "bytes": 2532,
+      "sha256": "44371ebc4008a494b0a7bc689f7d3fd86da4fe63a5066805e8318ca5bffde9d6"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/W-20260909.json",
+      "bytes": 2546,
+      "sha256": "e5b8ad2712c93c6df1ca35358409f0530663e53e77cd7c7d270ff846b2480e30"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/X-20260909.json",
+      "bytes": 2925,
+      "sha256": "0b72d170b8b0ccc6743266659a24f7b98f85daea886872da1865f1af890a7ef7"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/Y-20260909.json",
+      "bytes": 2900,
+      "sha256": "9c76651d25574208f055d82558a04dbc769b038d1b3f3fcfa2cb61ac638ad4a5"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/Z-20260909-completed.json",
+      "bytes": 4120,
+      "sha256": "7953e134131cc90242a93e5def0a1bfde32dd3f8472d9f81911c1da5a275f655"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/Z-20260909.json",
+      "bytes": 3083,
+      "sha256": "4d4f1b1a4094ca393037abdce0d2ad343cccea376e31b33de29c052e538bf081"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/observations/Z-totals-supplement-20260909.json",
+      "bytes": 675,
+      "sha256": "c1a6782bccc763c794768618a25211707e4056b834a9c5a20dcf7a37ca5ed3b9"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/predict-next.mjs",
+      "bytes": 3852,
+      "sha256": "7cb7422e062fd35158f48a00ce33f1bd8ce2ac5d330b3629046905f84f6f8e7e"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/predict-passive-z-20260909.mjs",
+      "bytes": 4730,
+      "sha256": "5cd822c0f251309d1f39a233c1516e245e94df0a00b95510c4e96d26ac1d991c"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/probe-baseline-sp-20260909.mjs",
+      "bytes": 7803,
+      "sha256": "9894a9a87c9b80f4a647cd593e9b8eabe3254389e5ffd9a2c3503538b5c92af8"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/probe-dummy-active-joint.mjs",
+      "bytes": 2392,
+      "sha256": "c1ad91f1efb2a88d7704b9c5011206c66e385cb048ec7704213fb2248d9a03e1"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/probe-dummy-environment.mjs",
+      "bytes": 5030,
+      "sha256": "919c1191cca3f149e976905c13a2c55086e8d2a82c0d5e0e0aedd3d1c5cfcd61"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/probe-dummy-identifiability.mjs",
+      "bytes": 5314,
+      "sha256": "0f5dcada1b97ecc288b3263bf2e1bb18b56abc002b97da947f11f0968b702168"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/probe-fixed-constants.mjs",
+      "bytes": 7571,
+      "sha256": "6bf7ff3f79e65a160b433e5393fd6e7ba73e8972101bd7dc28c724bdeae39002"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/probe-passive-board-aa-20260909.mjs",
+      "bytes": 10031,
+      "sha256": "85f3a46a917c4832a0ac9a827a614aff8e2351d03a65b4a29cb994e57eb11f86"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/probe-sp-displayed-active-20260909.mjs",
+      "bytes": 7904,
+      "sha256": "d2bc5d311777675637f1f28a906b3b0559f7729b45442633ac216b7b5b9cfec1"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/profile-observations/ririka-3star-20260909.json",
+      "bytes": 792,
+      "sha256": "f212da84f484bd706ac69ba73dabf97e81873184cd24636691ca13f0e8f0e845"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AA-board-probe-20260909.json",
+      "bytes": 119970,
+      "sha256": "7008d8da2c8a66de9f1b88aa718fc544752ce8f2702f47e8ae777c5feaf2d0c1"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AA-comparison-20260909.json",
+      "bytes": 161160,
+      "sha256": "fbdb64d48ec1c37098c62130c8f8a9459455f0e55344e116ac187fd5764b8c41"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AA-validation-20260909.md",
+      "bytes": 9924,
+      "sha256": "28cfdbc6523d12b70fd58c64d6809b5fca1bf644647c81c2664b0dc3188a5185"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AB-comparison-20260909.json",
+      "bytes": 183151,
+      "sha256": "cd6f1dea891ad5a7c66d717ca0b185efe5068b9354c175872315ea537b368fcc"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AB-validation-20260909.md",
+      "bytes": 8328,
+      "sha256": "20f05a920b0c58adcd2b7b3787d586ccd72a2ca9573903e0b08bc4987aaceeb9"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AC-comparison-20260909.json",
+      "bytes": 197016,
+      "sha256": "3f5e50137fd555cf9802ef6d463c976e6c69fc4a61accffff38bc428af1cd555"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AC-validation-20260909.md",
+      "bytes": 7711,
+      "sha256": "6d1413f5613df14cd40f900fb158eab7a8a04d06bc6c4ef5ce54340abcac882a"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AD-comparison-20260909.json",
+      "bytes": 190645,
+      "sha256": "02833896c7f88e0118fee7705068bec5d7e77d29fedcb9337f331acc3c531b94"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AD-validation-20260909.md",
+      "bytes": 6615,
+      "sha256": "aaf85460b481239d3656c0c9d25146793a9d9e04670b46069bc04f54d34aa270"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AE-comparison-20260909.json",
+      "bytes": 316031,
+      "sha256": "f71128b91776b878b169f179163a439d6a40fb4992c81867e7977fc4c1a62936"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AE-validation-20260909.md",
+      "bytes": 8566,
+      "sha256": "8bd15e6709adf126296ee84dc031c39f80cb64fef81453a2d74bb17587c46396"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AF-comparison-20260909.json",
+      "bytes": 272331,
+      "sha256": "80779e3500f60744fa4d79f0ce8392805f87fe167146f64970174442068fa0b6"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AF-validation-20260909.md",
+      "bytes": 9054,
+      "sha256": "6917acd978c1d2c92a0fd9044f49cbdf84b5399eb3677a93ec4005f8fe5e7721"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AG-comparison-20260909.json",
+      "bytes": 280139,
+      "sha256": "bdbe141f323670b3e91269c67ef950735900d77a82979c22a9628740ff62b067"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AG-validation-20260909.md",
+      "bytes": 8265,
+      "sha256": "5b388f762723aaf6bfe0af8f0fafdbdfa1de38b7b1263c9c490b6bdb241f5b31"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AH-comparison-20260909.json",
+      "bytes": 290061,
+      "sha256": "7647d8ab44984f7012080fa2300b85c1d6d8c43bcfbf57a7d27687e36654bf2e"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AH-validation-20260909.md",
+      "bytes": 9081,
+      "sha256": "65733e0c4fb88e7e8799f8d55c62cf17ac03b6e2594774e250f2b25d926c749d"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AI-comparison-20260909.json",
+      "bytes": 310085,
+      "sha256": "98137a026ff388e6226402c99b53d7ce3d68f16e793c384be5fd02e3fe5ba8f9"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AI-validation-20260909.md",
+      "bytes": 8685,
+      "sha256": "09bee442692a9799a8a9ab264c5d040b022cb4abac85485f3486ac4fca6c837a"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AI-validation-plan-resumed-20260909.md",
+      "bytes": 2840,
+      "sha256": "20ec2597da96c61f30e683abfd4f45b370ae500009e2ea3e739727c7df1eeee4"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AJ-comparison-20260909.json",
+      "bytes": 304432,
+      "sha256": "606b78225d4d6e43b262cd0f62cefaa6591713bf0105a9b769367a0869b95ddf"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/AJ-validation-20260909.md",
+      "bytes": 7778,
+      "sha256": "fc5e91f9f4fac676c7e20695d6942256fccce0558b1d96968bf9dcbd03391c39"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/OP-comparison-20260909.json",
+      "bytes": 7136,
+      "sha256": "d1fdf65e4802dd9d6c38d5d6ebf2d79cf929d63fab4caef4b93240cbe3955459"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/OP-validation-20260909.md",
+      "bytes": 6458,
+      "sha256": "ae1e495d6fe7c4e99edb9450b1ef89e314826fe82a6f6bf679e4fac26e34bdf2"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/QR-comparison-20260909.json",
+      "bytes": 38130,
+      "sha256": "593d68d02e483c3ad4ba14a1af4d4e87f360966afaf6a23b5b7c15d18fddf234"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/QR-validation-20260909.md",
+      "bytes": 7232,
+      "sha256": "d2552b3e8dbf72d0a0a84b89fbf099840f09b83ef33baa5a002cce279b566359"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/ST-comparison-20260909.json",
+      "bytes": 25048,
+      "sha256": "cb967828bb8d13d647a60ea15d9f40afb8d6c42cb73227491216730851cc6169"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/ST-rate-model-diagnostics-20260909.json",
+      "bytes": 19172,
+      "sha256": "bc32bad85f38d1fea3af0548aa918bf3271a40adf68cea53377b4bc5f23ccfbd"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/ST-validation-20260909.md",
+      "bytes": 8208,
+      "sha256": "e9a476301d6bc76027d8eb72a27d1e99bcac14c48989ef3657971fd1d727cc19"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/U-comparison-20260909.json",
+      "bytes": 114463,
+      "sha256": "12a03143b98629b186ccdd8c97964402e4344ca72fb0e104f72526900e42b1c6"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/U-validation-20260909.md",
+      "bytes": 7653,
+      "sha256": "14f537bc2a3c9ef26540efe7baaed42fae350812c92234c6f08df2419408c32d"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/V-comparison-20260909.json",
+      "bytes": 340623,
+      "sha256": "b89b92d18fbecd65c0129448a4732930c614d9ef38a71b84873a51b4df762e46"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/V-validation-20260909.md",
+      "bytes": 7132,
+      "sha256": "6141f810c63ce1a6cf6f2c39a007b3819f8b9089f7e0cb726da2fc334f172e44"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/W-comparison-20260909.json",
+      "bytes": 139647,
+      "sha256": "685f9ab0c07595dc99394c85e0b69814a09571e96914612f54a18aec773a815a"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/W-validation-20260909.md",
+      "bytes": 7355,
+      "sha256": "b68ff673284ba86ed00c43bd1c9ebd33ce38bc8710963316a84ec8c719334094"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/X-comparison-20260909.json",
+      "bytes": 150160,
+      "sha256": "296d46c1b2c56ec70c5dd2d88a3bb07b7e5ab8e143083fbb876d97f79b1b2453"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/X-validation-20260909.md",
+      "bytes": 8806,
+      "sha256": "115e8dab038ef0de613a72f7ad007da508c7ab21a8cdf6d6a9b3afcb45ea6edf"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/Y-comparison-20260909.json",
+      "bytes": 141559,
+      "sha256": "eb9fea0f932861107fc2eac63945d139530923b02fc2216d5f9650251b67aca0"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/Y-validation-20260909.md",
+      "bytes": 7655,
+      "sha256": "ba1fd8540b77315e15b4f9946bccfc5188d6eb6ccbb3c2186ff488f5c2c4a358"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/Z-comparison-20260909.json",
+      "bytes": 155476,
+      "sha256": "20f9c375fce0e415d4dbed9025013abc15a6bf9e264e85a2bdd4592a313b09e0"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/Z-comparison-completed-20260909.json",
+      "bytes": 7937,
+      "sha256": "9d7eaeae31885e8d7fc772179b6c6c0ca07ecf5063ebae9e52b2b7a7e44f57e6"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/Z-validation-20260909.md",
+      "bytes": 8982,
+      "sha256": "89406122afcc7c745ef8ee8ee0810486250747f6f0ea4127ac899b0ad2b766be"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/category-help-interpretation-20260909.md",
+      "bytes": 3960,
+      "sha256": "5e3ca1684343153afbc06e71c2213713e37e5039bbb419fb5f06b99b02511e5d"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/dummy-environment.md",
+      "bytes": 8895,
+      "sha256": "7eefcf015fa28cd1c14920ac165d6b60dfd2e0e2d3792c08b356272b99654b64"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/reports/fixed-constants.md",
+      "bytes": 5898,
+      "sha256": "e39472144dac4abc52b137cb60ae302e632d469f25d6a1191ba5bea2ca400374"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/ui-observations/category-help-20260909.json",
+      "bytes": 4060,
+      "sha256": "cdf8dac5c3ca34638b1bd5a7088d15f42eb9ab8e955c57aae5ae2833b831b96d"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/unit-active-reference.mjs",
+      "bytes": 1987,
+      "sha256": "25b7c76a03e217e19428f61de594207c86801c807cdfc5248d0402930fd314dc"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/validation-cards.import.json",
+      "bytes": 1311,
+      "sha256": "1151226b2f9bf74e881d008c976ed56d1562773ecf6e24893fe8b0c3c552d5cd"
+    },
+    {
+      "path": "HolodoriDecks/analysis/unit-score/validation-data.mjs",
+      "bytes": 1334,
+      "sha256": "405bddf26b5292786c5f6e56bd55165c7a9e218e3941333317f5baaf8f0dc052"
+    },
+    {
+      "path": "HolodoriDecks/assets/card-portrait-sync.json",
+      "bytes": 10146,
+      "sha256": "3e465afaf9648bcc4b0c23afe7661037d7627d9035d572b9622dd6398012bca7"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00001-4-cmmn-0000-00.webp",
+      "bytes": 152502,
+      "sha256": "eb97437a2f37d5c25b9cbce49aa5952481f17ca67b17b5d3cb847f89053bd619"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00001-5-uniq-0000-00.webp",
+      "bytes": 164632,
+      "sha256": "9ec51e46d550ef999ea6f8b07a96cf4bf2bd02481ea230808c6e73027719893e"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00002-4-cmmn-0000-00.webp",
+      "bytes": 132746,
+      "sha256": "320e66a95678d47bc0ad912044e4d2a1f9483168b672ecce85f21e488bfe50b3"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00002-5-uniq-0001-00.webp",
+      "bytes": 155118,
+      "sha256": "e644a2e5d0619170b27d839400dd538d6bcac488aa0bd8460bfb68a70ebeeab3"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00004-4-cmmn-0000-00.webp",
+      "bytes": 155842,
+      "sha256": "1cf5b83746c85ce4411b797f1f76e93247d44ae2c5a166e55ba914f6037cbe4d"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00004-5-uniq-0005-00.webp",
+      "bytes": 135858,
+      "sha256": "c8ddde45f556db1aafd4955e8329891eb516ad409fc0a61b6d5bf9550d7450a5"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00005-4-cmmn-0000-00.webp",
+      "bytes": 143856,
+      "sha256": "1c74473a662a09ad7910b8a8d38bb33c354a81b13c11afc7c9a750a7fb83a6c6"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00005-5-uniq-0006-00.webp",
+      "bytes": 158764,
+      "sha256": "501aa2cb5fa486243c8e77f31232ecddaf0d84a4dd6a05b1a72f5a050c91e264"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00006-4-cmmn-0000-00.webp",
+      "bytes": 146484,
+      "sha256": "e7d6eda6da60436666b9a5413bbc13c455fb02a87207c056ded58c6dd473ab81"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00006-5-uniq-0007-00.webp",
+      "bytes": 163864,
+      "sha256": "5c4b3c0e0e8846f6db53099b072ba690e56eaf6c7d6805d19dc749d87a973c26"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00006-5-uniq-0074-00.webp",
+      "bytes": 87282,
+      "sha256": "4a17b3ee5c068f959aa30308352de7d858c6c93479a5be85cd398fd2f7dd4108"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00007-4-cmmn-0000-00.webp",
+      "bytes": 138542,
+      "sha256": "9d16fa388f8213fd558c1ec82a4355fb7361a5f8d4c9d59065de772fb3709f17"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00007-5-uniq-0008-00.webp",
+      "bytes": 166330,
+      "sha256": "935953053efe3201405be81a2e3223a6899e419f0d757bb201f0a914623b81d5"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00010-4-cmmn-0000-00.webp",
+      "bytes": 169776,
+      "sha256": "ac77d471fe126ce68c15392dde330e6ab75fd4d1fa2e4791c8dcb1cd7a4c5bab"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00010-5-uniq-0010-00.webp",
+      "bytes": 160330,
+      "sha256": "391737003e38f2ed6f71ddca7199b259b2b3ce20017f26ec57df36950f282ca2"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00010-5-uniq-0069-00.webp",
+      "bytes": 81272,
+      "sha256": "cffab41fc66679f5813483bdf49373eec490ba377c8d5cc2af14794afa93b65f"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00011-4-cmmn-0000-00.webp",
+      "bytes": 159574,
+      "sha256": "aeb47856a99f9f1aeba72be4ae3e885112e2a41fa7453461c96877c0d82c8dbe"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00011-5-uniq-0011-00.webp",
+      "bytes": 123408,
+      "sha256": "0993052e6a39fcdaa8f5ec98c860ccd145b535f9ec7a2f5c0deb1f4baa9fa716"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00012-4-cmmn-0000-00.webp",
+      "bytes": 145762,
+      "sha256": "fcc53dd18b27261fdc4b74b47f11d5b9abb185abcdf91b033f3191aefec287de"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00012-5-uniq-0012-00.webp",
+      "bytes": 133896,
+      "sha256": "b4abec081b457f2a76d0f0b23cf21e4810d430a556068ff1376296c7d27ca0de"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00012-5-uniq-0062-00.webp",
+      "bytes": 164200,
+      "sha256": "30ddfd284e8bc9e287ae4bde6d8beb53ca6487a230b3c06ac98e17fb391fd192"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00013-4-cmmn-0000-00.webp",
+      "bytes": 147080,
+      "sha256": "22bfc11765f6bf7f2ad146b214a72377ecf4b7d2f3383d480f85bed73454730a"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00013-5-uniq-0002-00.webp",
+      "bytes": 142532,
+      "sha256": "b2f50c3631259d1adb5cb4f73d897d81c9ea3e1eba1def3fa06e68b7fab00519"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00014-4-cmmn-0000-00.webp",
+      "bytes": 166966,
+      "sha256": "fa3759431e65de511aa0e88949e2806375e1a17c365f3d0e74ae9d61a9f21d61"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00014-5-uniq-0013-00.webp",
+      "bytes": 127498,
+      "sha256": "7b9482443dde9a34e27ed80dac53d34276d03617420e13085916d3209fa1a39b"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00014-5-uniq-0075-00.webp",
+      "bytes": 79882,
+      "sha256": "4a13c733413b72c5a16c52bd1b8727e2bdb46fd7bde43a4beaedf39b06b49330"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00015-4-cmmn-0000-00.webp",
+      "bytes": 117518,
+      "sha256": "2915092eed2338041f79bb148a7f422e65e039323d2ff44cc05db760bb92c5bd"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00015-5-uniq-0003-00.webp",
+      "bytes": 132410,
+      "sha256": "222a655949f3d95d554fb1c6239e9ba4aa74310de2d0907d03a2ac83bcc617ed"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00015-5-uniq-0067-00.webp",
+      "bytes": 326136,
+      "sha256": "47a1e7ea15f022738238caa29cde5312444a2e65429c621c4aa6f0496ce93218"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00016-4-cmmn-0000-00.webp",
+      "bytes": 146334,
+      "sha256": "5dd2843fd8bfb4fd1de260325a809550e4bd44e3963511d75e17573a0f5879c8"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00016-5-uniq-0014-00.webp",
+      "bytes": 132276,
+      "sha256": "9843fe26813231880b4a1979e2122d81a30c007c6913c13ee2416a5c7f8db745"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00016-5-uniq-0076-00.webp",
+      "bytes": 71560,
+      "sha256": "5d7b44232aa1a587f166080815d60da844fc0de2d50b7b2620761aefda1056c3"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00017-4-cmmn-0000-00.webp",
+      "bytes": 154138,
+      "sha256": "382a2f353821f009c145d0c5a4e6234bb6d37aafa184f7cf5918431987cf5207"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00017-5-uniq-0015-00.webp",
+      "bytes": 152858,
+      "sha256": "9204d1ae930e63ab054749ea86507430eef2f7305ede66423d16d3a0200d804e"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00017-5-uniq-0077-00.webp",
+      "bytes": 100342,
+      "sha256": "d02576d673604ad064ab46087e58b4e1e7148c3093614358d602fe3b1758d13d"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00018-4-cmmn-0000-00.webp",
+      "bytes": 156544,
+      "sha256": "bd1743bbddd803aa999651257ab002b89a2113f905a278c62eceecc486be507f"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00018-5-uniq-0004-00.webp",
+      "bytes": 139610,
+      "sha256": "a973701cde57ccc8d8101885990deb0b31eea8fe0488d3216bdadef9b8bacb20"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00018-5-uniq-0068-00.webp",
+      "bytes": 300404,
+      "sha256": "72bd472694097aa7118d4f9e5a4ddf6ee78feb3e56b8ea1879d2264d7477a54e"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00019-4-cmmn-0000-00.webp",
+      "bytes": 164352,
+      "sha256": "2fd258cc222fd72ca12a41d3f492c0d6082547092c07744de0e9eb7db35d01a2"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00019-5-uniq-0016-00.webp",
+      "bytes": 150036,
+      "sha256": "17bd3f9610fb087d5aa0a2ddb226ad37dfce32911ef0d4945623b76ae455e04a"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00021-4-cmmn-0000-00.webp",
+      "bytes": 129798,
+      "sha256": "5caaf1ada84c70a7eeec47210e943783bb337803c5b36daa0351070f068bfc49"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00021-5-uniq-0017-00.webp",
+      "bytes": 128834,
+      "sha256": "8fc117b5524a3206a696c6e600f220f8ce2c69ff7c6cebc3ab72c17e5e84343d"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00021-5-uniq-0064-00.webp",
+      "bytes": 156336,
+      "sha256": "9fea833f6f440ef5390f6abc2e679b45b35ff21d50f11c13401f7b7ecdded063"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00022-4-cmmn-0000-00.webp",
+      "bytes": 174852,
+      "sha256": "2effc834a86561f6182638c203bd3859a4530df79a0a6cfc405b93fe1e013a09"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00022-5-uniq-0018-00.webp",
+      "bytes": 149390,
+      "sha256": "0d98b44227d92362ff397e48fb8353e30a4f92e6af44685632347ea8cfb41dd0"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00022-5-uniq-0063-00.webp",
+      "bytes": 125076,
+      "sha256": "3d43e59b10bc753d475aa2cccc566f29363140a99f422f0b22037a76f2c469ca"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00023-4-cmmn-0000-00.webp",
+      "bytes": 152306,
+      "sha256": "6fca4c6ead97d4f700b79ca0872802b0ece54814a017f69b6d37dfefc98bdb74"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00023-5-uniq-0019-00.webp",
+      "bytes": 172434,
+      "sha256": "03a6f989242a0b48197472721afaa884191147d671d18178139fa966ca33c549"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00026-4-cmmn-0000-00.webp",
+      "bytes": 177564,
+      "sha256": "ce33b1e90435bd803fdbaeaf9c5466d211b1660cb8ac167469c1e47b4cf328c5"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00026-5-uniq-0021-00.webp",
+      "bytes": 143020,
+      "sha256": "d8df214bc1a0721f71a79d4a372cecc34a1b47c9e2f1c23cd966b2387cf2c6e9"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00026-5-uniq-0065-00.webp",
+      "bytes": 129046,
+      "sha256": "fa3556d8aa4d32a2abc11de0ec026c871c51b791ca8147c9c18b3c4d4e812dbe"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00027-4-cmmn-0000-00.webp",
+      "bytes": 161350,
+      "sha256": "f007b00c082150ff201f6845a95e3a675cda1ec67fdfc41630461ed942b284e1"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00027-5-uniq-0022-00.webp",
+      "bytes": 153314,
+      "sha256": "57825b0b91112aca2907e20065ceaaf5d661d71a3e95343546ed7e4cc599509c"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00028-4-cmmn-0000-00.webp",
+      "bytes": 142928,
+      "sha256": "52caf95eb4eb0add03ab895021fd0945d45f7ead4f258b4f25f6ad345ffaeab4"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00028-5-uniq-0023-00.webp",
+      "bytes": 134620,
+      "sha256": "bd0267da130673cc1b5ccf524042a3f62fc24ed95ede966a79c81a0e10747429"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00028-5-uniq-0070-00.webp",
+      "bytes": 73274,
+      "sha256": "78733b47fb7b740e4cad5c8f322614cca79032279b1b0f51829d6ca5d24fa5ef"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00030-4-cmmn-0000-00.webp",
+      "bytes": 142880,
+      "sha256": "b44690ac65dee2dfffbd7dccc90b4e4c0924dd8ae4fda2f2e12eedd3bd2c6f3e"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00030-5-uniq-0024-00.webp",
+      "bytes": 164036,
+      "sha256": "04a15caf725f7b01e59c3388d588bb54bf83e100fd7e09913c1894a9c82beaeb"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00031-4-cmmn-0000-00.webp",
+      "bytes": 157790,
+      "sha256": "4fa0e291b3b103dd01a97bb656cec2dec27ba0dce99534c746050a17c65fae0a"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00031-5-uniq-0025-00.webp",
+      "bytes": 163524,
+      "sha256": "e98ae193f8ce5a285a103f31df96143d0be4aebba2608e8946a49e268d6a9e2e"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00032-4-cmmn-0000-00.webp",
+      "bytes": 117108,
+      "sha256": "fcf5827c6f44a0b467e15547d97c9ca36c7d631a97f3c2425c85835c1efdf17e"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00032-5-uniq-0026-00.webp",
+      "bytes": 117478,
+      "sha256": "85c4016b509c1a49347047b22ae75b93b6e551242528cd6f5277cf7ad76b4cf5"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00034-4-cmmn-0000-00.webp",
+      "bytes": 148348,
+      "sha256": "063aae825a358fc563d7fbc4d9fea63fb25c56fcca98e2d79ba33437bede560b"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00034-5-uniq-0027-00.webp",
+      "bytes": 183222,
+      "sha256": "f10590218dd1fb846a6184b68b1f29330b42de81bb790d7f2d4ff768a18b2080"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00035-4-cmmn-0000-00.webp",
+      "bytes": 135416,
+      "sha256": "e983cb6140dc9536d83f1247f019b1d67e8c77f7328e93bc7b74f6bb571e093d"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00035-5-uniq-0028-00.webp",
+      "bytes": 119514,
+      "sha256": "e6b361fe875b84b01e4c76806db33d93ec87b8984fc2ff3fa2e693b6d73e85dd"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00036-4-cmmn-0000-00.webp",
+      "bytes": 145456,
+      "sha256": "1824f8080608eebe052ff82280e871cc75c5bbb8da97c2e5e2068501b8b7cd15"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00036-5-uniq-0029-00.webp",
+      "bytes": 120504,
+      "sha256": "74a8fb2d6d62d717fe5e139e63e87d5d47f588c4644f1d3fbcb2a2a8404a0d23"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00037-4-cmmn-0000-00.webp",
+      "bytes": 143248,
+      "sha256": "6fecf285b4c7b7e7e828a51940d955dfd5e1cb9a3f27742413a973598aa1ca97"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00037-5-uniq-0030-00.webp",
+      "bytes": 158786,
+      "sha256": "7a43102fc322e5684b3d6b39aaaaf709eed58d5f8fa946606fde46d8107b56f4"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00039-4-cmmn-0000-00.webp",
+      "bytes": 141544,
+      "sha256": "503a0597cda8cc898aaf5078b5a3d1b2b00f600305a30fdaf270dcf957fabd38"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-00039-5-uniq-0032-00.webp",
+      "bytes": 149998,
+      "sha256": "7b9b08d80a3d6afaf5cd5f14603b5349a06bfa206f83f35dcf74a07599d706ef"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03001-4-cmmn-0000-00.webp",
+      "bytes": 157090,
+      "sha256": "43b8163e2a27bc13152b608632f8c9f37c4c8468a226a60e00dd392ebd3fa741"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03001-5-uniq-0033-00.webp",
+      "bytes": 112450,
+      "sha256": "22fdb1b6d67b9e0824962503866a3ecaae5a80443ea9a2c553dd460ca7cdfd27"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03002-4-cmmn-0000-00.webp",
+      "bytes": 153688,
+      "sha256": "31e74105654e1127e44b087bf49aeb2fea0431af543933c5b6379445ed5941b3"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03002-5-uniq-0034-00.webp",
+      "bytes": 148652,
+      "sha256": "b2975e419ea77266f8988ccb9edcb8d6bbf4cc7a83b61adfea0aba40570106a6"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03003-4-cmmn-0000-00.webp",
+      "bytes": 155242,
+      "sha256": "f3569ffd2780ed759650e34e6c0696d9a1d35141724d54baaf7499157e22a497"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03003-5-uniq-0035-00.webp",
+      "bytes": 125144,
+      "sha256": "4c2bce2e92c37122a31fbffc222e03baafd7a8a10f7205fdf49697154e973b97"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03004-4-cmmn-0000-00.webp",
+      "bytes": 153138,
+      "sha256": "cbe058a5541a5a2ef9a271ef27a1b9a2e6d4d567313f827f8a7d2ec933f34988"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03004-5-uniq-0036-00.webp",
+      "bytes": 186678,
+      "sha256": "a07633acc53e2ffa96036b122334c980e7c0a245166c65a9e51aa1ec2e0a889e"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03004-5-uniq-0073-00.webp",
+      "bytes": 90798,
+      "sha256": "413fd6466908211a0f7c462a3f2eb5456415748093282c54d37a05d0c75e1b75"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03005-4-cmmn-0000-00.webp",
+      "bytes": 139974,
+      "sha256": "5c424d3b7a38638c4154a5e3185e738d8b1f61676a311c29e1ab5b0edc73aa53"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03005-5-uniq-0037-00.webp",
+      "bytes": 114786,
+      "sha256": "7b0dceca000d3ff7c710a778f3b4f1571346a482036fdf194438ab447ef4f2db"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03006-4-cmmn-0000-00.webp",
+      "bytes": 211550,
+      "sha256": "98b4b8a37c25c37467bf024c800a0897dc351e60060a831562eaafc049974bee"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03006-5-uniq-0038-00.webp",
+      "bytes": 161072,
+      "sha256": "2e615b69d07dd284f0fcc10c67d16c9b70510f24b1260c56e21bc476291eee7b"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03007-4-cmmn-0000-00.webp",
+      "bytes": 173530,
+      "sha256": "e5f6d1d722641e4fee2b0d7b6a581ea870fc55b9ea6e7978d24771d062c7a80c"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03007-5-uniq-0039-00.webp",
+      "bytes": 131960,
+      "sha256": "9abbbfb9e125cd1c1b4cf85ee1d1898be95478bdad573b40eb58357ded6aa377"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03008-4-cmmn-0000-00.webp",
+      "bytes": 168656,
+      "sha256": "0952c811ffb0962abccc6770b6b04aa4b9690d1a3f6d5ce5b23d499e98ab0a5d"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03008-5-uniq-0040-00.webp",
+      "bytes": 134730,
+      "sha256": "66f9bcfcd4d20fe769a6a9794a4466b121d734e19eb51fe5cd682365238d4267"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03009-4-cmmn-0000-00.webp",
+      "bytes": 164862,
+      "sha256": "582659ce608efd89c38e520c49706d9ee8ff88bf91a967aa88511c29af397879"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-03009-5-uniq-0041-00.webp",
+      "bytes": 165626,
+      "sha256": "228f0819a58d756a41a99d684687125ea97e601f3fb5ef964a827be652433d94"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04001-4-cmmn-0000-00.webp",
+      "bytes": 137538,
+      "sha256": "832ee9a462e352477d58c566b7336f0f06165934f9ea4781f9ccb71cc6646da7"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04001-5-uniq-0042-00.webp",
+      "bytes": 148376,
+      "sha256": "9d00c12bb0a0c8470a445f22e08aa35d8686befd4d132e9404d96fb9156bff40"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04001-5-uniq-0071-00.webp",
+      "bytes": 69498,
+      "sha256": "08ff7016be1eb6e09cbc62bddc803709dba707a729d3f811e5ec10ff9cbdf5cf"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04002-4-cmmn-0000-00.webp",
+      "bytes": 141520,
+      "sha256": "46dceef6cbe5ee9a0db797fcf2203e8941be6cb4be73bcb4521f5eccbc8548a0"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04002-5-uniq-0043-00.webp",
+      "bytes": 160800,
+      "sha256": "36a99a557a6189d96a7509da6524080fd21ac5eaa5dcb4a9780c62eaed89cb1b"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04003-4-cmmn-0000-00.webp",
+      "bytes": 160200,
+      "sha256": "3b6e1970b636b77cc77dce23b5112e57fe31ce4bf3c5b2e856455e23cdad2092"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04003-5-uniq-0044-00.webp",
+      "bytes": 133658,
+      "sha256": "0883c6f75c2380b54e3cede129b404772aeee3e028de2c2c6bbc6327fb2271f2"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04003-5-uniq-0072-00.webp",
+      "bytes": 69946,
+      "sha256": "825953d2dac7b53f83f1aae0e3b697cad460062fc3093a1d4006074292c2518a"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04007-4-cmmn-0000-00.webp",
+      "bytes": 169096,
+      "sha256": "b6af360f4cf644aeb1abecfa19782e131285582446abcdbf420bbb3abd0d6d83"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04007-5-uniq-0047-00.webp",
+      "bytes": 168928,
+      "sha256": "184defd309cbae544bf17ba74f57708834af884fa7014d7a0e5016663289284a"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04010-4-cmmn-0000-00.webp",
+      "bytes": 213048,
+      "sha256": "952545269fc91f92117b03486b9382aba43657f50db9458c0ae98a0f047568e9"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04010-5-uniq-0049-00.webp",
+      "bytes": 129530,
+      "sha256": "3c103d2133769fd05414590f6e7dfc584fcee812f776308b45f545854df8631c"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04012-4-cmmn-0000-00.webp",
+      "bytes": 184748,
+      "sha256": "d4b544b03b90ebd060aef4e44f706529a98208887d5e86e570f25584379075bb"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04012-5-uniq-0051-00.webp",
+      "bytes": 154354,
+      "sha256": "12f8d60cacb1417f7aa8a5c70dd704d4e5095fa19cd917d18a1446c287ee7d22"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04013-4-cmmn-0000-00.webp",
+      "bytes": 145172,
+      "sha256": "68d390d1b63772b8bcfc2590680b1af53335d173c98598065349e5160291aed6"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04013-5-uniq-0052-00.webp",
+      "bytes": 110118,
+      "sha256": "b38711fbda28d7f7c433e6ba6c34dbc59b0ffb72509c0c24480d6d55bdf8d5ed"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04014-4-cmmn-0000-00.webp",
+      "bytes": 185134,
+      "sha256": "2cf040d417a9158d194f2e592d5388523c8c5687f1510c9d7ca457be44b6fe98"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04014-5-uniq-0053-00.webp",
+      "bytes": 183574,
+      "sha256": "5ebb6235b016fd980c858abae41ab750a223b7a40d3967732aaec17186167900"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04015-4-cmmn-0000-00.webp",
+      "bytes": 198142,
+      "sha256": "e5375f366622693b708e096b91729498b2dbd5a23097fbc9bdcc089023391dda"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04015-5-uniq-0054-00.webp",
+      "bytes": 159468,
+      "sha256": "3a4fef9a00f4ab93344c4cd4e2a41d0464dde19faa1cf40048385b720e70e56d"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04016-4-cmmn-0000-00.webp",
+      "bytes": 133344,
+      "sha256": "240b5f1004906f0d8408a7b0e3237314fd83a67e2e3ccebe1eba7644c0ea0103"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04016-5-uniq-0055-00.webp",
+      "bytes": 152580,
+      "sha256": "5a9a9a597b46cd8ec3a9c8609f367b140254c3d4d26099c7578843bbeb5d1f40"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04017-4-cmmn-0000-00.webp",
+      "bytes": 119050,
+      "sha256": "772a9697f755e5b8333a699567533a8dba23627c9ae500e8b624f0d50de3f56e"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-04017-5-uniq-0056-00.webp",
+      "bytes": 124926,
+      "sha256": "43067e21cf14dd6885cb0a76c535194b5eda0bad27d5c6c207d302375b775a86"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-06002-4-cmmn-0000-00.webp",
+      "bytes": 159792,
+      "sha256": "9391acdc427b917930a4ef6dced60a498681ec0e452bd296d321cfe5970f4fd1"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-06002-5-uniq-0058-00.webp",
+      "bytes": 151790,
+      "sha256": "3cf32b869e462d9b883b12ee514671f320713a83d3215ce82fd9bb88d7e9104f"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-06002-5-uniq-0066-00.webp",
+      "bytes": 144322,
+      "sha256": "86d9d858b1e5a80eda51cd800ec1c0d9c12e0083cb6aaa1de1edc95e56ebb35c"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-06003-4-cmmn-0000-00.webp",
+      "bytes": 159590,
+      "sha256": "8ca66a7cf1309d5a4cd70a35bbaef0630a40cb0c48a9ea003e25a842ba5ce3b2"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-06003-5-uniq-0059-00.webp",
+      "bytes": 144596,
+      "sha256": "d9acf2e56a9ce05d4962ffb3acc09d743067f67c1264ab34296f8a5b8869446a"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-06004-4-cmmn-0000-00.webp",
+      "bytes": 151278,
+      "sha256": "752dcc94a959f00859f6a4e6f75d1709fcedbf40f52923553d1cd9e865838569"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-06004-5-uniq-0060-00.webp",
+      "bytes": 123188,
+      "sha256": "ca87a56d9168ada0c3303b442750b0becacd2e9db4baf8be6a7b995481a72f75"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-06005-4-cmmn-0000-00.webp",
+      "bytes": 141850,
+      "sha256": "69bf85189abcd7d9d75ae7676ec133a98e2b5c7333131803c32c877ab061d211"
+    },
+    {
+      "path": "HolodoriDecks/assets/cards/card-06005-5-uniq-0061-00.webp",
+      "bytes": 116706,
+      "sha256": "68fa5f5719c323d405fbe5a38ebbe1b2d157901f77d0612d83455e06c3157818"
+    },
+    {
+      "path": "HolodoriDecks/assets/ui/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "HolodoriDecks/assets/ui/card-placeholder.svg",
+      "bytes": 887,
+      "sha256": "fed5aa055d21420337ef01f49d8e083ae7a45867da75c69aca16a17343b5e823"
+    },
+    {
+      "path": "HolodoriDecks/assets/ui/manifest.json",
+      "bytes": 628,
+      "sha256": "8991d689a364b74b7d7949b77dfba60a92477fe29b2a6589dfc1edc3793bd839"
+    },
+    {
+      "path": "HolodoriDecks/assets/ui/rank-a.svg",
+      "bytes": 395,
+      "sha256": "7ddbd26de64527eca6df2242624f29d9c96c25f0078d15868fa8a2fd2b87bd65"
+    },
+    {
+      "path": "HolodoriDecks/assets/ui/rank-b.svg",
+      "bytes": 395,
+      "sha256": "c20e9cf1e9d2cfb57e2fa9dfb4798e16b9e6f76cc1b61d9e601b0245334e2754"
+    },
+    {
+      "path": "HolodoriDecks/assets/ui/rank-c.svg",
+      "bytes": 395,
+      "sha256": "9585610ded9cd0356b5031e2e4afe9cf44c2fddffb2e615aee59a20aef1e7bc8"
+    },
+    {
+      "path": "HolodoriDecks/assets/ui/rank-d.svg",
+      "bytes": 395,
+      "sha256": "c602d719daa5fc52b59bcf224b2c619aa17972b0efae7836b760530e9d0437cf"
+    },
+    {
+      "path": "HolodoriDecks/assets/ui/rank-s.svg",
+      "bytes": 542,
+      "sha256": "673ed59f778d14e8232257e875e69d7823a1f045ef146650668c883cc8dd5117"
+    },
+    {
+      "path": "HolodoriDecks/assets/ui/type-cute.svg",
+      "bytes": 439,
+      "sha256": "88444c1ab308a5513261df8934829a50411376e6b9077aecaecda55ca3aa89d4"
+    },
+    {
+      "path": "HolodoriDecks/assets/ui/type-happy.svg",
+      "bytes": 375,
+      "sha256": "a22401b92eb69e1ff9665abdfb81182bb3f62bf77b180de16e06790237dbdc05"
+    },
+    {
+      "path": "HolodoriDecks/assets/ui/type-pure.svg",
+      "bytes": 407,
+      "sha256": "1c1e7695e775051a8843a860f6686fd85650cbe86d430ae9707b1c9c8a6dca38"
+    },
+    {
+      "path": "HolodoriDecks/css/base.css",
+      "bytes": 4816,
+      "sha256": "e4607711f6835832c16d46ff269397eba8c9c8b6380ddb88a646ca82ad2879b0"
+    },
+    {
+      "path": "HolodoriDecks/css/chart-timeline.css",
+      "bytes": 870,
+      "sha256": "58199fa9480004426243c6a386ffc130a75265f6c756d26c1ff6a44329eea862"
+    },
+    {
+      "path": "HolodoriDecks/css/components.css",
+      "bytes": 26493,
+      "sha256": "ca35e5c73e93eaea0f8a54f587783a19c40c96bc6e6ca722f7aa2064190d16f4"
+    },
+    {
+      "path": "HolodoriDecks/css/modal.css",
+      "bytes": 7243,
+      "sha256": "28849164b3c4b08cd33c3735cc9a66cf5e3efcadfd93306dfe2fe03b95619242"
+    },
+    {
+      "path": "HolodoriDecks/css/music.css",
+      "bytes": 3353,
+      "sha256": "424284f3dee5bba69fb3da19124c8e20832eac5040985671dc2e4969ee0cd880"
+    },
+    {
+      "path": "HolodoriDecks/css/owned.css",
+      "bytes": 7080,
+      "sha256": "9cea63c7462878d52f716dc7ed7726bdda150370b90faacec053eac1e681495b"
+    },
+    {
+      "path": "HolodoriDecks/css/responsive.css",
+      "bytes": 6180,
+      "sha256": "a2cf834e2eef825f18304b6bf220fb23dab7cfd97888460d086a5ea23592c0e3"
+    },
+    {
+      "path": "HolodoriDecks/css/theme.css",
+      "bytes": 1937,
+      "sha256": "43273fa7d14881fdf2e110af5c2f1dea8012470c0cd24221c580b31808348e56"
+    },
+    {
+      "path": "HolodoriDecks/css/tokens.css",
+      "bytes": 1648,
+      "sha256": "e52f945156a7909f0ee04c7638c316e2d9bb02dd8a6e87bd58860442d46dbb6d"
+    },
+    {
+      "path": "HolodoriDecks/css/tweaks.css",
+      "bytes": 4671,
+      "sha256": "4c4289acf66b2ebd84b617dd213291bc9887a5712de8e9234cefc6c4b1f76b8c"
+    },
+    {
+      "path": "HolodoriDecks/css/typography.css",
+      "bytes": 4814,
+      "sha256": "94c3922b3222e78dce2ea1c1dd5cd517c9a78f275612dfdd1ff5d39331bb6487"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/cards.json",
+      "bytes": 4313989,
+      "sha256": "f645be886dd9b15d44ef91247093f0061f89b7a0d4d3f45069fc3f2f3f9b0393"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/characters.json",
+      "bytes": 15591,
+      "sha256": "9080678cddccda9d54afdf585d13fb3e5eee50d96979d63aadbc95bc4de2e2b3"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/chart-index.json",
+      "bytes": 294531,
+      "sha256": "4dd55e664ee52799b447d17bfbad826f109530ce6d86791dc75d7fa71564e605"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/charts/m0049-EXPERT.json",
+      "bytes": 34654,
+      "sha256": "a1ca679df7ad0b6dfa638ea2199bc0e4a4c7851a1ce546d4c33edfd7eabddf14"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/exact-runtime-index.json",
+      "bytes": 283197,
+      "sha256": "2d703fce04bca402477494fa2b9977e8e8d6c3aa6aaf57c23eb11f26ae307c4e"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/i18n/en.json",
+      "bytes": 421718,
+      "sha256": "fdfdeef0f84d51677fd96cc327d077eadc2a222aee7531eb5507c22c07304727"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/i18n/ja.json",
+      "bytes": 430041,
+      "sha256": "5783103c0d69fc690a56fe1b7b3f2710537d5afc2eed7a2b1ba17a2e06a0ad17"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/i18n/ko.json",
+      "bytes": 423810,
+      "sha256": "caa204a397d40280fb12294b41d9981f3fbf36b792d2469d87c3e99b546120a8"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/i18n/manifest.json",
+      "bytes": 975,
+      "sha256": "cd41d9166eb1b86493af22d82fadfc80f3252a40aba5c10ad9e208b0a7d8c3dc"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/live-score-rules.json",
+      "bytes": 1298,
+      "sha256": "5cc2c22dc314bf64729602de23f86e7b88cde0c39d592581d40cfc5c85013f35"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/manifest.json",
+      "bytes": 852,
+      "sha256": "c5a1a8e30d7a70395e91952c88111972bff692b2113b02336c2714084c40791d"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/master_refs.json",
+      "bytes": 270410,
+      "sha256": "a220ef9070432df81af7a8a220a61206d9bfbeb5ff838dd8f26d766047b36d57"
+    },
+    {
+      "path": "HolodoriDecks/data/generated/music.json",
+      "bytes": 175953,
+      "sha256": "882cd77b2e9acf5204b3ec455a3d1fda4e12e1ad03e556e4f51ced00dfc820cd"
+    },
+    {
+      "path": "HolodoriDecks/data/sync_state.json",
+      "bytes": 498,
+      "sha256": "be6031c559afe6d4d0c15824e39b691324cb90671a7ff3fb399bb4abaa8569f3"
+    },
+    {
+      "path": "HolodoriDecks/data/upstream.json",
+      "bytes": 4009,
+      "sha256": "3e8605782a58b5ace42f366132fa7d22f09b9809e3e859ff8deeb962e33e4653"
+    },
+    {
+      "path": "HolodoriDecks/index.html",
+      "bytes": 16053,
+      "sha256": "396067dd65ada36964bacff7dc8f580e3639d2f1085c4d518d8fc1ca4a07925a"
+    },
+    {
+      "path": "HolodoriDecks/js/app.js",
+      "bytes": 14387,
+      "sha256": "95ea38c669773beedb5836a63fb7e7e7dae4d298fd275f00e9db4f565dcd462b"
+    },
+    {
+      "path": "HolodoriDecks/js/card-prepare.js",
+      "bytes": 12598,
+      "sha256": "2881eb129366690401d69bb4478be05bfba85fdad0e5bd965adf5f9b01d5efc8"
+    },
+    {
+      "path": "HolodoriDecks/js/chart-data.js",
+      "bytes": 9849,
+      "sha256": "c9b745314d5f238cbbbe03f3bb4069768343b2e3633e87f5805fe5244b2e460b"
+    },
+    {
+      "path": "HolodoriDecks/js/chart-score.js",
+      "bytes": 15717,
+      "sha256": "69567a01067090d97cbe1c4b250ef3dcf74a0044623a95cad92930545e06cb35"
+    },
+    {
+      "path": "HolodoriDecks/js/data.js",
+      "bytes": 3019,
+      "sha256": "989bcf32c530927ba006bddb8997710d1094821efafc68a190e93cfccb6cb7a3"
+    },
+    {
+      "path": "HolodoriDecks/js/i18n.js",
+      "bytes": 38450,
+      "sha256": "01994234bb19f394951566bb9f259aa26ce0ec2b0374d79ace0244c122a0f7ed"
+    },
+    {
+      "path": "HolodoriDecks/js/leader-support.js",
+      "bytes": 4304,
+      "sha256": "b256350608bfb191136e98aa63ead839b55a57801a2ede54fa91075ba313dbfb"
+    },
+    {
+      "path": "HolodoriDecks/js/optimization-session.js",
+      "bytes": 1003,
+      "sha256": "8635238a5d009476ec9dea3dfb2779456a5312d5b5d367566c8c5e7cbfefe961"
+    },
+    {
+      "path": "HolodoriDecks/js/optimizer-client.js",
+      "bytes": 1621,
+      "sha256": "ad5578d9f924cc0049c391c00643a8e8f35822dea8da81613864b19e77d59e21"
+    },
+    {
+      "path": "HolodoriDecks/js/optimizer-core.js",
+      "bytes": 1612,
+      "sha256": "ddc139a4cfda19de1189458889a41e8912fbc62a13ffba32fedbdd8037aa50a8"
+    },
+    {
+      "path": "HolodoriDecks/js/optimizer-worker.js",
+      "bytes": 367,
+      "sha256": "4808afb96aa741a4cbdddb56fceb1daf960cd14952b612c15959ddd337b765d9"
+    },
+    {
+      "path": "HolodoriDecks/js/order-reference.js",
+      "bytes": 1052,
+      "sha256": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba"
+    },
+    {
+      "path": "HolodoriDecks/js/order.js",
+      "bytes": 6477,
+      "sha256": "e23e46525163221bf7ac725b0fce4cb77e5c58967f0cb4ec0f1d5da3c59c7da9"
+    },
+    {
+      "path": "HolodoriDecks/js/recommend.js",
+      "bytes": 23763,
+      "sha256": "c53d418580399f30f63591e271d07397ddb39586a8ba061e3f17cb37f9c69cf0"
+    },
+    {
+      "path": "HolodoriDecks/js/score.js",
+      "bytes": 39770,
+      "sha256": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99"
+    },
+    {
+      "path": "HolodoriDecks/js/skill-support.js",
+      "bytes": 19716,
+      "sha256": "9ca956b3a3dea6f7954640ed4dd00faf63c1e5f09a1c11952e0cbbd6303edc14"
+    },
+    {
+      "path": "HolodoriDecks/js/state.js",
+      "bytes": 4030,
+      "sha256": "cd37e713e9ecda987372fb905becd3a76e3e2e37fa68f19fdbbd5f587d5ddc46"
+    },
+    {
+      "path": "HolodoriDecks/js/theme.js",
+      "bytes": 1660,
+      "sha256": "65ff24093e67567a32f27d6db8dd8cb2f465cb718f2bb0f71603cccc6d684ab4"
+    },
+    {
+      "path": "HolodoriDecks/js/ui/card-detail.js",
+      "bytes": 6370,
+      "sha256": "87dda886cac0f425dfd54d76c2b4e41d874af97f3566395edb7c8535bb9d95a6"
+    },
+    {
+      "path": "HolodoriDecks/js/ui/cards.js",
+      "bytes": 5111,
+      "sha256": "411a1e14e84d4b3d129d4b2899017decc3b7f7c4eee6a816314b575c929f3a03"
+    },
+    {
+      "path": "HolodoriDecks/js/ui/dom.js",
+      "bytes": 254,
+      "sha256": "c1c98f597fa3f1516915d52839207f110c0c60f2b953b1475c40fee4d6e926c1"
+    },
+    {
+      "path": "HolodoriDecks/js/ui/member.js",
+      "bytes": 3286,
+      "sha256": "7bdc1eb34e880e6b179e61038c3367229c1091aba4bcd68786f79a3324e66081"
+    },
+    {
+      "path": "HolodoriDecks/js/ui/modal.js",
+      "bytes": 7990,
+      "sha256": "39c0ec055c2c15673ba8a2b9d8ba07bb3f40ff41232ed0f6a22b64c44f457fdb"
+    },
+    {
+      "path": "HolodoriDecks/js/ui/music.js",
+      "bytes": 11869,
+      "sha256": "8c832e34d76b9512499061a3abd0e060daa853ae2a1f52fe263038c7db7ea162"
+    },
+    {
+      "path": "HolodoriDecks/js/ui/owned.js",
+      "bytes": 14585,
+      "sha256": "3d3bac12f41293eb0eafa50cbf940857eed2b7d58675f145c1ae3bf04ca1f7c2"
+    },
+    {
+      "path": "HolodoriDecks/js/ui/result.js",
+      "bytes": 32155,
+      "sha256": "30008ce884c0a56b84a188c29ed568b484f90527a763add1732243f85c76bd98"
+    },
+    {
+      "path": "HolodoriDecks/js/ui/target.js",
+      "bytes": 2032,
+      "sha256": "9fd84af78f0919bfb354a2aa9abf77ee61ec0c2f39942b6137d0a319c67848b4"
+    },
+    {
+      "path": "HolodoriDecks/pyproject.toml",
+      "bytes": 871,
+      "sha256": "81cbd4da17c36c3390942d5b1c8dd0e98f0f75720219143b03dc3195512e3d21"
+    },
+    {
+      "path": "HolodoriDecks/scripts/build-chart-index.mjs",
+      "bytes": 7189,
+      "sha256": "eadc91442b6d87b1653da0e936ad8b0ecb4d3f4a5b00c7ae6620564aa7b047e0"
+    },
+    {
+      "path": "HolodoriDecks/scripts/build-exact-runtime-index.mjs",
+      "bytes": 10087,
+      "sha256": "a553afe267ea28c24d04f26831a5a8f39abd0d3ce961dc448fc08ed98f4f7410"
+    },
+    {
+      "path": "HolodoriDecks/scripts/build-i18n.mjs",
+      "bytes": 7782,
+      "sha256": "7e415d24deb5fef1c68f091297f8bdc9b91a974fd391d5e9cc2c80e1bdcb722d"
+    },
+    {
+      "path": "HolodoriDecks/scripts/build-music-search.py",
+      "bytes": 844,
+      "sha256": "8be06bd9c3185f5dcb770b2349ec512d355ebe121108d936c580b58ab5ef8a83"
+    },
+    {
+      "path": "HolodoriDecks/scripts/check-automation-gate.py",
+      "bytes": 3066,
+      "sha256": "15955be5e8b1335830943054115110b48c99f67e7e5610da7bcac4ff8dc7a3b2"
+    },
+    {
+      "path": "HolodoriDecks/scripts/ensure-pages-deployment.py",
+      "bytes": 2275,
+      "sha256": "c024d2f9194efbed42bf12f27aa24f5c27292d50e2ddadb55d60e339054eeac0"
+    },
+    {
+      "path": "HolodoriDecks/scripts/fixtures/unit-observations-20260908.json",
+      "bytes": 12036,
+      "sha256": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8"
+    },
+    {
+      "path": "HolodoriDecks/scripts/import-chart-timeline-corpus.mjs",
+      "bytes": 15349,
+      "sha256": "8ac2320d67f19867f586f67196ce3e6d123a4fa9bc95367e0022d21877cca290"
+    },
+    {
+      "path": "HolodoriDecks/scripts/ingest-chart-metadata.py",
+      "bytes": 4472,
+      "sha256": "af7f423e0f779c81fb06cde381b44218efe012b0e723927ec8f3f0291f129d56"
+    },
+    {
+      "path": "HolodoriDecks/scripts/rewrite-pages-revisions.py",
+      "bytes": 4838,
+      "sha256": "d22d29ef94ae3c33ebcb5e37d065148032a4bb9b555d2ee4ebfec48295ce8376"
+    },
+    {
+      "path": "HolodoriDecks/scripts/run-scoring-validation.mjs",
+      "bytes": 1963,
+      "sha256": "de4ccc44a3cd07f01c28c0aeb10c2b70e69e37b774e9c8823c75afb0d58bfd36"
+    },
+    {
+      "path": "HolodoriDecks/scripts/sync-card-assets.py",
+      "bytes": 7718,
+      "sha256": "0f3a0c24c2ccd9f7dd207d4c1338ece293f1e509cbfc814ecb6586493fcf8f48"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-beam-search.mjs",
+      "bytes": 15199,
+      "sha256": "8907f7066befe7e8d40012541a80e0a5bd4ffff23e9dffec9920b0fb6bdffb60"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-browser-smoke-core.mjs",
+      "bytes": 18051,
+      "sha256": "8926c22079e75f2764ebd84adde0cd8b07be324c8f016f92fe9b86ede6c83343"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-browser-smoke.mjs",
+      "bytes": 85,
+      "sha256": "4c1ca93516530347dd44055808b3b1da059bbd6572e6b3cd3d7b82bede5b419d"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-card-preparation.mjs",
+      "bytes": 10644,
+      "sha256": "619f14155c531d1d80a805865722bf7dcb006c248bbfc03c5a96f3e2ee80b423"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-chart-abort.mjs",
+      "bytes": 1589,
+      "sha256": "716724ec0770e42a53f5c1e979ddc94d1886b4ae261535b4546a43ce3d33ce76"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-chart-scoring.mjs",
+      "bytes": 11140,
+      "sha256": "0a92d8ed1080651269085e96dbcdf81b09cfe74c34e2f9795e12b9ba80df7959"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-collision-choice.mjs",
+      "bytes": 2909,
+      "sha256": "f1a898113878e257ee14aff9fa2a68c5a0d1ad2c7305b66647b3ccca68b6b58b"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-exact-global-search.mjs",
+      "bytes": 3963,
+      "sha256": "060a5845d9dd79b7e9a7e8814df850b3d2bcc19787c0dd7f3307965f6b9f766d"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-exact-pruning.mjs",
+      "bytes": 4663,
+      "sha256": "420418d8e908e83a912f9b7bef60c61788521f56e69f926e2b4bf1f1c020b8d5"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-exact-runtime-source.mjs",
+      "bytes": 4683,
+      "sha256": "6310056b7f52d58986b6b8dca10f3b610d16fd8fece178acae5969f9e5bf5825"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-generic-order.mjs",
+      "bytes": 6081,
+      "sha256": "2d39753cac728ce9fd0c1c04f00218fb69a27893c5842c1402f9a1c0ba02d820"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-m0049-exact-real.mjs",
+      "bytes": 6239,
+      "sha256": "990645563ae131999ca68aef1d47256ffc04d5e0eada8e028333d6ae0af7119a"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-music-search.mjs",
+      "bytes": 1396,
+      "sha256": "2a33867d4f3338df7aff8768fb10d5c507749243d8017cc94a3439408fb2073b"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-optimization-session.mjs",
+      "bytes": 1279,
+      "sha256": "bfe5b401ecad984b5c0858a9b1962fd40c8c1127da45712e7252850d4fecf598"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-optimizer-client.mjs",
+      "bytes": 3190,
+      "sha256": "315c462de533b26ea9ac5f8527ef7fbf9952ac48d2813f1125324ae1be8c1cbf"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-passive-stat-rounding.mjs",
+      "bytes": 2423,
+      "sha256": "4e757de8e73e45f000d5cb05cdf4cdb2d9e7a3cc66caf2c3ac0775ccc8da1d5f"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-passive-target-priority.mjs",
+      "bytes": 9909,
+      "sha256": "27765f06cbfaaa7f9a486d5a2dd3c173bfd2c27888ca55f33fe76ca50bce49ce"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-production-smoke.mjs",
+      "bytes": 4345,
+      "sha256": "fdeeb0438f33817efbf5ee492354e96412480733fca40e6e9f5aaea604e90ed3"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-research-reproduction.mjs",
+      "bytes": 1668,
+      "sha256": "f4287d982b572d39bdbfe0774035d5a3f3044dffdfad226ace9f79133ceaae85"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-scoring-handoff.mjs",
+      "bytes": 3529,
+      "sha256": "2dbfdc546a8d555d2ffc76489fe42a3d98c10a3fad0812115fa60a620e74f913"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-simulation-targets.mjs",
+      "bytes": 3626,
+      "sha256": "6b155b15586ae932ed2956dd7c6d718a527810623960b2e0dfd65bb6f0194d61"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-song-representative-order.mjs",
+      "bytes": 6414,
+      "sha256": "53b54bdcc28c48114f24a8f4dc2317c5e5ba7dee14f6e0c42f7c5c9c987e9745"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-song-search-real-data.mjs",
+      "bytes": 10020,
+      "sha256": "3ec0247c4348d8f15d5135a62b8a5220358a3f1f7dd8817c48b2db41c69633e6"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-support-stacking.mjs",
+      "bytes": 4335,
+      "sha256": "cd2be4ceb9d74a3f73b69b476ec4fbeed246478dc0e9771e6e67cc1e326759b0"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-targeted-passive-support.mjs",
+      "bytes": 2965,
+      "sha256": "fd60b00b9256f201259ce203573d46ba312df961df686b50e6b4cef9ff61ae6d"
+    },
+    {
+      "path": "HolodoriDecks/scripts/test-unit-observations.mjs",
+      "bytes": 4503,
+      "sha256": "1a5b8b5d9e009ad6f061da54584dee490296f06055cfde5a1febb2c3a8ca4a4e"
+    },
+    {
+      "path": "HolodoriDecks/scripts/validate-generated-data.py",
+      "bytes": 9283,
+      "sha256": "372540c2c81b5634bf2a84aaa4084df715be1ab48f0c2015b8dc8a2d5adaef65"
+    },
+    {
+      "path": "HolodoriDecks/src/holodori_decksim/__init__.py",
+      "bytes": 81,
+      "sha256": "c8e7347c70a6ac94a9a2bfa256743a9cb31f2b900a411e3243d550b132a457a9"
+    },
+    {
+      "path": "HolodoriDecks/src/holodori_decksim/automation_gate.py",
+      "bytes": 8672,
+      "sha256": "b237857722b2d7d2fba63f8aabc9fcc8bbd7b96d285b2d37626745d2588bac54"
+    },
+    {
+      "path": "HolodoriDecks/src/holodori_decksim/card_assets.py",
+      "bytes": 13215,
+      "sha256": "81df5ef8618d91fbcecac11a8d32ad306844f5029156aefbc6d241dcbba51c48"
+    },
+    {
+      "path": "HolodoriDecks/src/holodori_decksim/music_search.py",
+      "bytes": 4425,
+      "sha256": "9cde9c49cf3e89a6e6749275fcf3236fdfc6412ac20f07e83f9dd267e6675355"
+    },
+    {
+      "path": "HolodoriDecks/src/holodori_decksim/public_card_art.py",
+      "bytes": 13539,
+      "sha256": "5c81d50db93f3b14332d076546470a695dd590bc2fbd70da0e337eb34d4561ee"
+    },
+    {
+      "path": "HolodoriDecks/src/holodori_decksim/sources.py",
+      "bytes": 1529,
+      "sha256": "73cf301c5c52e77ca95f498f73503e4976781c9a4478d490fa9db9681a0d7da7"
+    },
+    {
+      "path": "HolodoriDecks/src/holodori_decksim/sync.py",
+      "bytes": 22924,
+      "sha256": "6729ad25bf34712c01fcb92bafe412bee290c657e1f30924cbd71d49edf76c40"
+    },
+    {
+      "path": "HolodoriDecks/styles.css",
+      "bytes": 416,
+      "sha256": "4fb548632c971972fcb52d91e65be71a67232cc899247cd27f4f78ccd494fbc6"
+    },
+    {
+      "path": "HolodoriDecks/tests/test_automation_gate.py",
+      "bytes": 5736,
+      "sha256": "7a50f6b30b3d5fdfea121899996e918105a188c7a34039d465a3a4eebdd62b65"
+    },
+    {
+      "path": "HolodoriDecks/tests/test_card_asset_sync.py",
+      "bytes": 6516,
+      "sha256": "85d080feee165f2103ec944a19c2f0fc3598f389738688623a5c847581237d6d"
+    },
+    {
+      "path": "HolodoriDecks/tests/test_card_assets.py",
+      "bytes": 2743,
+      "sha256": "ed712d1fea2b34593378a70ab74c7adb3a3bf2abe8cd6a8be8a20d6127be35f0"
+    },
+    {
+      "path": "HolodoriDecks/tests/test_music_search.py",
+      "bytes": 1998,
+      "sha256": "66129e8322858ead10d6c96b07a7f3389552b4f15a0de83e0b43516c931c28f8"
+    },
+    {
+      "path": "HolodoriDecks/tests/test_pages_deployment.py",
+      "bytes": 1569,
+      "sha256": "be8e3e76af7e33098afcb63b2e3655558ef7b7f8dd480c3512c3ae5bffe5e407"
+    },
+    {
+      "path": "HolodoriDecks/tests/test_pages_revision_rewrite.py",
+      "bytes": 2929,
+      "sha256": "807060945208cedf8c768576e3e7df82605bc208fc8ca730c2f0fb4430c811f4"
+    },
+    {
+      "path": "HolodoriDecks/tests/test_public_card_art.py",
+      "bytes": 3471,
+      "sha256": "02f3a3f4e76ac7414ed5cbd776f9b8f81cde53d8e28916c27978bdacf3ea5087"
+    },
+    {
+      "path": "HolodoriDecks/tests/test_release_metadata.py",
+      "bytes": 2618,
+      "sha256": "270b8d47fb6a64a1bb76007187904c00fbe6d620c4685b94f321c0e40222bdd8"
+    },
+    {
+      "path": "HolodoriDecks/tests/test_sync.py",
+      "bytes": 3469,
+      "sha256": "a241d72f13574260d1347b258e04ecab158738097ebeac01c36b9a07db248320"
+    },
+    {
+      "path": "HolodoriDecks/tests/test_sync_workflows.py",
+      "bytes": 3619,
+      "sha256": "705997163819467d22316c665d907ad1b6e2ee9f04eeb3d80cf9e936574cdad8"
+    },
+    {
+      "path": "NEXT_PC_PROMPT.md",
+      "bytes": 1279,
+      "sha256": "bf9d3e27887383a4248c18cb7fd8482b868a568fcbe8f306b63176bddc55e793"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 1959,
+      "sha256": "e61b56a762b078029ed488027522442abb1a3d536877fb0fea1bc488d2c57eb5"
+    },
+    {
+      "path": "provenance/changes-since-import.json",
+      "bytes": 8882,
+      "sha256": "91b599dade967191f65bf2c5d49da103fef969d6639f5eb7edd84a07ea26952a"
+    },
+    {
+      "path": "provenance/initial-sync-manifest.json",
+      "bytes": 51002,
+      "sha256": "26a381f5c4aa9a37e388adb9d6415d2ad0520b802aeef8438849849df86e440d"
+    },
+    {
+      "path": "session-records/AA-board-probe-20260909.json",
+      "bytes": 119970,
+      "sha256": "7008d8da2c8a66de9f1b88aa718fc544752ce8f2702f47e8ae777c5feaf2d0c1"
+    },
+    {
+      "path": "session-records/AA-comparison-20260909.json",
+      "bytes": 161160,
+      "sha256": "fbdb64d48ec1c37098c62130c8f8a9459455f0e55344e116ac187fd5764b8c41"
+    },
+    {
+      "path": "session-records/AA-member-board-context-20260909.json",
+      "bytes": 2340,
+      "sha256": "fbe5828797493d54745b95440322da282521b109ddb29d092a66875b8e7097dc"
+    },
+    {
+      "path": "session-records/AA-observation-20260909.json",
+      "bytes": 2989,
+      "sha256": "fcf6fbdb4cfef6e64cef245f057b427bf4a8ad2611c456d0220688f7b63ccb65"
+    },
+    {
+      "path": "session-records/AA-validation-20260909.md",
+      "bytes": 9924,
+      "sha256": "28cfdbc6523d12b70fd58c64d6809b5fca1bf644647c81c2664b0dc3188a5185"
+    },
+    {
+      "path": "session-records/AB-comparison-20260909.json",
+      "bytes": 183151,
+      "sha256": "cd6f1dea891ad5a7c66d717ca0b185efe5068b9354c175872315ea537b368fcc"
+    },
+    {
+      "path": "session-records/AB-observation-20260909.json",
+      "bytes": 2990,
+      "sha256": "d7f54005c43a8bd085c79bda8c191841fa9646007444d2053018184d28444c49"
+    },
+    {
+      "path": "session-records/AB-validation-20260909.md",
+      "bytes": 8328,
+      "sha256": "20f05a920b0c58adcd2b7b3787d586ccd72a2ca9573903e0b08bc4987aaceeb9"
+    },
+    {
+      "path": "session-records/AC-comparison-20260909.json",
+      "bytes": 197016,
+      "sha256": "3f5e50137fd555cf9802ef6d463c976e6c69fc4a61accffff38bc428af1cd555"
+    },
+    {
+      "path": "session-records/AC-observation-20260909.json",
+      "bytes": 3681,
+      "sha256": "5436910da10be12180fbf345e11b11db18a3880f6fb5a5b3115bec28c9f9f9fe"
+    },
+    {
+      "path": "session-records/AC-validation-20260909.md",
+      "bytes": 7711,
+      "sha256": "6d1413f5613df14cd40f900fb158eab7a8a04d06bc6c4ef5ce54340abcac882a"
+    },
+    {
+      "path": "session-records/AD-comparison-20260909.json",
+      "bytes": 190645,
+      "sha256": "02833896c7f88e0118fee7705068bec5d7e77d29fedcb9337f331acc3c531b94"
+    },
+    {
+      "path": "session-records/AD-observation-20260909.json",
+      "bytes": 3459,
+      "sha256": "0c49a3382f4b69b4b7fe09511da76062e50a9b8fdee2fffba5f744d52c890b25"
+    },
+    {
+      "path": "session-records/AD-validation-20260909.md",
+      "bytes": 6615,
+      "sha256": "aaf85460b481239d3656c0c9d25146793a9d9e04670b46069bc04f54d34aa270"
+    },
+    {
+      "path": "session-records/AE-comparison-20260909.json",
+      "bytes": 316031,
+      "sha256": "f71128b91776b878b169f179163a439d6a40fb4992c81867e7977fc4c1a62936"
+    },
+    {
+      "path": "session-records/AE-observation-20260909.json",
+      "bytes": 3407,
+      "sha256": "6a036fcb3ae76c2311e1e46549f255cc0ed0a924598bc11a4f523041fa2d1183"
+    },
+    {
+      "path": "session-records/AE-validation-20260909.md",
+      "bytes": 8566,
+      "sha256": "8bd15e6709adf126296ee84dc031c39f80cb64fef81453a2d74bb17587c46396"
+    },
+    {
+      "path": "session-records/AF-20260909.json",
+      "bytes": 3325,
+      "sha256": "a5cead6f5810c0f91b98ffeddcfec08b22b52951ef5a260ad6ab64b9f6255a70"
+    },
+    {
+      "path": "session-records/AF-comparison-20260909.json",
+      "bytes": 272331,
+      "sha256": "80779e3500f60744fa4d79f0ce8392805f87fe167146f64970174442068fa0b6"
+    },
+    {
+      "path": "session-records/AF-validation-20260909.md",
+      "bytes": 9054,
+      "sha256": "6917acd978c1d2c92a0fd9044f49cbdf84b5399eb3677a93ec4005f8fe5e7721"
+    },
+    {
+      "path": "session-records/AG-20260909.json",
+      "bytes": 3244,
+      "sha256": "d74453fccab994b7c92308666d08b633de10361010ee02209ba84c3ab0a53e8a"
+    },
+    {
+      "path": "session-records/AG-comparison-20260909.json",
+      "bytes": 280139,
+      "sha256": "bdbe141f323670b3e91269c67ef950735900d77a82979c22a9628740ff62b067"
+    },
+    {
+      "path": "session-records/AG-validation-20260909.md",
+      "bytes": 8265,
+      "sha256": "5b388f762723aaf6bfe0af8f0fafdbdfa1de38b7b1263c9c490b6bdb241f5b31"
+    },
+    {
+      "path": "session-records/AH-20260909.json",
+      "bytes": 3231,
+      "sha256": "4a4ed67abaafb2461ae9fa9eaaeae737b763ba59611fd161539558b1a2d8f3b3"
+    },
+    {
+      "path": "session-records/AH-comparison-20260909.json",
+      "bytes": 290061,
+      "sha256": "7647d8ab44984f7012080fa2300b85c1d6d8c43bcfbf57a7d27687e36654bf2e"
+    },
+    {
+      "path": "session-records/AH-validation-20260909.md",
+      "bytes": 9081,
+      "sha256": "65733e0c4fb88e7e8799f8d55c62cf17ac03b6e2594774e250f2b25d926c749d"
+    },
+    {
+      "path": "session-records/AI-20260909.json",
+      "bytes": 3345,
+      "sha256": "b7a6a91ef4730e0d1c3de3fcb51d8176a60ac5ae3ee5e0bb7a1b8cda382d4614"
+    },
+    {
+      "path": "session-records/AI-comparison-20260909.json",
+      "bytes": 310085,
+      "sha256": "98137a026ff388e6226402c99b53d7ce3d68f16e793c384be5fd02e3fe5ba8f9"
+    },
+    {
+      "path": "session-records/AI-validation-20260909.md",
+      "bytes": 8685,
+      "sha256": "09bee442692a9799a8a9ab264c5d040b022cb4abac85485f3486ac4fca6c837a"
+    },
+    {
+      "path": "session-records/AI-validation-plan-resumed-20260909.md",
+      "bytes": 2840,
+      "sha256": "20ec2597da96c61f30e683abfd4f45b370ae500009e2ea3e739727c7df1eeee4"
+    },
+    {
+      "path": "session-records/AJ-20260909.json",
+      "bytes": 3433,
+      "sha256": "d56abe31c4e38e8f7db9ea33361fcc79f53e605dafabbea1d24fa172b403c543"
+    },
+    {
+      "path": "session-records/AJ-comparison-20260909.json",
+      "bytes": 304432,
+      "sha256": "606b78225d4d6e43b262cd0f62cefaa6591713bf0105a9b769367a0869b95ddf"
+    },
+    {
+      "path": "session-records/AJ-validation-20260909.md",
+      "bytes": 7778,
+      "sha256": "fc5e91f9f4fac676c7e20695d6942256fccce0558b1d96968bf9dcbd03391c39"
+    },
+    {
+      "path": "session-records/HolodoriDecks-handoff-summary-20260909.md",
+      "bytes": 17624,
+      "sha256": "4f7319d649f12f891c79f712019bfcfc07c8d291e336fe98ec92fc981611a3bc"
+    },
+    {
+      "path": "session-records/M-comparison-20260909.json",
+      "bytes": 11631,
+      "sha256": "46c3c2933b9d43f0e28c77f4408092c6bf6a861eba2adf91d3a009b9aa7f7b09"
+    },
+    {
+      "path": "session-records/M-observation-20260909.json",
+      "bytes": 3053,
+      "sha256": "603a1dafe2b7b56576cfc2503253bbf10b7416489eea014e818e85dc2fffff87"
+    },
+    {
+      "path": "session-records/M-validation-20260909.md",
+      "bytes": 5588,
+      "sha256": "9c4f73d2189b2db2ae5bcb3051390235b84b6313cbd49158f2abaf161f26f008"
+    },
+    {
+      "path": "session-records/OBSERVATION_CATALOG_20260909.md",
+      "bytes": 12825,
+      "sha256": "c673b5f5af4606d24f21992a087178db6972394bea669257dd07d2510c5bc9ea"
+    },
+    {
+      "path": "session-records/OP-comparison-20260909.json",
+      "bytes": 7136,
+      "sha256": "d1fdf65e4802dd9d6c38d5d6ebf2d79cf929d63fab4caef4b93240cbe3955459"
+    },
+    {
+      "path": "session-records/OP-observations-20260909.json",
+      "bytes": 6386,
+      "sha256": "5d9fcc74d5038538403fc1ed4e3c9d6f156a002a17add16a79a6d6ddef0ef4f0"
+    },
+    {
+      "path": "session-records/OP-validation-20260909.md",
+      "bytes": 6458,
+      "sha256": "ae1e495d6fe7c4e99edb9450b1ef89e314826fe82a6f6bf679e4fac26e34bdf2"
+    },
+    {
+      "path": "session-records/QR-comparison-20260909.json",
+      "bytes": 38130,
+      "sha256": "593d68d02e483c3ad4ba14a1af4d4e87f360966afaf6a23b5b7c15d18fddf234"
+    },
+    {
+      "path": "session-records/QR-observations-20260909.json",
+      "bytes": 5885,
+      "sha256": "40f98533b67639d080d21e00f0b41bcfbfee9e0d03d2e02ba895da43a70ef66e"
+    },
+    {
+      "path": "session-records/QR-validation-20260909.md",
+      "bytes": 7232,
+      "sha256": "d2552b3e8dbf72d0a0a84b89fbf099840f09b83ef33baa5a002cce279b566359"
+    },
+    {
+      "path": "session-records/Ririka-board-reconfirmation-20260909.json",
+      "bytes": 2246,
+      "sha256": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438"
+    },
+    {
+      "path": "session-records/SCORING_HANDOFF.md",
+      "bytes": 29349,
+      "sha256": "e893186135ac75c5b4279544d6d2ec9c910d64c3b044ba7d28aa82b2656f3674"
+    },
+    {
+      "path": "session-records/SCORING_VALIDATION.md",
+      "bytes": 26173,
+      "sha256": "e61ac2f44d85f24a6bb54ba3d364171f944443cac23fd3b1b8e3c72f5091859c"
+    },
+    {
+      "path": "session-records/ST-comparison-20260909.json",
+      "bytes": 25048,
+      "sha256": "cb967828bb8d13d647a60ea15d9f40afb8d6c42cb73227491216730851cc6169"
+    },
+    {
+      "path": "session-records/ST-observations-20260909.json",
+      "bytes": 5594,
+      "sha256": "8ca8b0cddc5f06692cbddcb1924a307227dda603c143962e71c1f00315976a81"
+    },
+    {
+      "path": "session-records/ST-validation-20260909.md",
+      "bytes": 8208,
+      "sha256": "e9a476301d6bc76027d8eb72a27d1e99bcac14c48989ef3657971fd1d727cc19"
+    },
+    {
+      "path": "session-records/Suisei-leader-board-20260909.json",
+      "bytes": 964,
+      "sha256": "b5c622f99d2a322d8b7f43e177ed2f03ab3bad4ebdae2726142cdcb28adcc12b"
+    },
+    {
+      "path": "session-records/U-comparison-20260909.json",
+      "bytes": 114463,
+      "sha256": "12a03143b98629b186ccdd8c97964402e4344ca72fb0e104f72526900e42b1c6"
+    },
+    {
+      "path": "session-records/U-observation-20260909.json",
+      "bytes": 2856,
+      "sha256": "1810ada89559ee5100fe936c19daf159d07f6932be8e97ce7e84a791d7167567"
+    },
+    {
+      "path": "session-records/U-validation-20260909.md",
+      "bytes": 7653,
+      "sha256": "14f537bc2a3c9ef26540efe7baaed42fae350812c92234c6f08df2419408c32d"
+    },
+    {
+      "path": "session-records/V-comparison-20260909.json",
+      "bytes": 340623,
+      "sha256": "b89b92d18fbecd65c0129448a4732930c614d9ef38a71b84873a51b4df762e46"
+    },
+    {
+      "path": "session-records/V-observation-20260909.json",
+      "bytes": 2532,
+      "sha256": "44371ebc4008a494b0a7bc689f7d3fd86da4fe63a5066805e8318ca5bffde9d6"
+    },
+    {
+      "path": "session-records/V-validation-20260909.md",
+      "bytes": 7132,
+      "sha256": "6141f810c63ce1a6cf6f2c39a007b3819f8b9089f7e0cb726da2fc334f172e44"
+    },
+    {
+      "path": "session-records/W-comparison-20260909.json",
+      "bytes": 139647,
+      "sha256": "685f9ab0c07595dc99394c85e0b69814a09571e96914612f54a18aec773a815a"
+    },
+    {
+      "path": "session-records/W-observation-20260909.json",
+      "bytes": 2546,
+      "sha256": "e5b8ad2712c93c6df1ca35358409f0530663e53e77cd7c7d270ff846b2480e30"
+    },
+    {
+      "path": "session-records/W-validation-20260909.md",
+      "bytes": 7355,
+      "sha256": "b68ff673284ba86ed00c43bd1c9ebd33ce38bc8710963316a84ec8c719334094"
+    },
+    {
+      "path": "session-records/WX-board-context-20260909.json",
+      "bytes": 2968,
+      "sha256": "76063061352c10a3bd54bbb34c166d5082c969079123ae8f778c4e16c733d32f"
+    },
+    {
+      "path": "session-records/X-comparison-20260909.json",
+      "bytes": 150160,
+      "sha256": "296d46c1b2c56ec70c5dd2d88a3bb07b7e5ab8e143083fbb876d97f79b1b2453"
+    },
+    {
+      "path": "session-records/X-observation-20260909.json",
+      "bytes": 2925,
+      "sha256": "0b72d170b8b0ccc6743266659a24f7b98f85daea886872da1865f1af890a7ef7"
+    },
+    {
+      "path": "session-records/X-validation-20260909.md",
+      "bytes": 8806,
+      "sha256": "115e8dab038ef0de613a72f7ad007da508c7ab21a8cdf6d6a9b3afcb45ea6edf"
+    },
+    {
+      "path": "session-records/Y-comparison-20260909.json",
+      "bytes": 141559,
+      "sha256": "eb9fea0f932861107fc2eac63945d139530923b02fc2216d5f9650251b67aca0"
+    },
+    {
+      "path": "session-records/Y-observation-20260909.json",
+      "bytes": 2900,
+      "sha256": "9c76651d25574208f055d82558a04dbc769b038d1b3f3fcfa2cb61ac638ad4a5"
+    },
+    {
+      "path": "session-records/Y-validation-20260909.md",
+      "bytes": 7655,
+      "sha256": "ba1fd8540b77315e15b4f9946bccfc5188d6eb6ccbb3c2186ff488f5c2c4a358"
+    },
+    {
+      "path": "session-records/Z-comparison-20260909.json",
+      "bytes": 155476,
+      "sha256": "20f9c375fce0e415d4dbed9025013abc15a6bf9e264e85a2bdd4592a313b09e0"
+    },
+    {
+      "path": "session-records/Z-comparison-completed-20260909.json",
+      "bytes": 7937,
+      "sha256": "9d7eaeae31885e8d7fc772179b6c6c0ca07ecf5063ebae9e52b2b7a7e44f57e6"
+    },
+    {
+      "path": "session-records/Z-observation-20260909.json",
+      "bytes": 3083,
+      "sha256": "4d4f1b1a4094ca393037abdce0d2ad343cccea376e31b33de29c052e538bf081"
+    },
+    {
+      "path": "session-records/Z-observation-completed-20260909.json",
+      "bytes": 4120,
+      "sha256": "7953e134131cc90242a93e5def0a1bfde32dd3f8472d9f81911c1da5a275f655"
+    },
+    {
+      "path": "session-records/Z-validation-20260909.md",
+      "bytes": 8982,
+      "sha256": "89406122afcc7c745ef8ee8ee0810486250747f6f0ea4127ac899b0ad2b766be"
+    },
+    {
+      "path": "session-records/baseline-board-AC-20260909.json",
+      "bytes": 16212,
+      "sha256": "baee94fb242e4cead3cebcfab4b82fb285a774b2638c31afa98591ee98065e61"
+    },
+    {
+      "path": "session-records/baseline-board-AD-20260909.json",
+      "bytes": 14487,
+      "sha256": "83c6aef77fc0611901cd226e20159119425f0eb4bd1da997b0968b296efe57df"
+    },
+    {
+      "path": "session-records/baseline-board-AE-20260909.json",
+      "bytes": 19266,
+      "sha256": "1f37150ff21d24c10ed520943a8669ed48ccc036b3d7b86c1854a2b2ec00b6e1"
+    },
+    {
+      "path": "session-records/baseline-passive-AA-20260909.json",
+      "bytes": 9403,
+      "sha256": "6d5f23c404cd4809f47f8c99599297508764459bc9e395ec457bbe68f2b46927"
+    },
+    {
+      "path": "session-records/baseline-passive-AB-20260909.json",
+      "bytes": 14990,
+      "sha256": "9950504730d33ef02b89ea6c26c058e37e768d5ee4528f8b38cc7bb2241e0504"
+    },
+    {
+      "path": "session-records/baseline-passive-AF-20260909.json",
+      "bytes": 14187,
+      "sha256": "35aad29a87c73bd57db01cf7e0d890c06443f86ca6336aa6c86956d5f83d8d5b"
+    },
+    {
+      "path": "session-records/baseline-passive-AG-20260909.json",
+      "bytes": 14433,
+      "sha256": "ad26108fc215d786f6c1519e362ad98198eac4655852029ab7899926e84d5df2"
+    },
+    {
+      "path": "session-records/baseline-passive-AH-20260909.json",
+      "bytes": 17657,
+      "sha256": "360acc2692d8b5c0fce5f19907d8d0ee2cb6f4b67ab00f0410fb8426233ab524"
+    },
+    {
+      "path": "session-records/baseline-passive-AI-20260909.json",
+      "bytes": 18162,
+      "sha256": "e2b34617f1cfb66f60e88027b7378c8188311dad4330f3564f5f13213b2aa2ff"
+    },
+    {
+      "path": "session-records/baseline-passive-AJ-20260909.json",
+      "bytes": 24244,
+      "sha256": "fb326fac426e44a2bac87895ae5d95944120e473d190507e3c802b7ab759e3f6"
+    },
+    {
+      "path": "session-records/baseline-passive-AK-20260909.json",
+      "bytes": 18536,
+      "sha256": "1af1731eab5592125920482ab1e85cfdcf69128e239861b3c5bc1810e5936d5c"
+    },
+    {
+      "path": "session-records/baseline-passive-X-20260909.json",
+      "bytes": 8753,
+      "sha256": "8c03f267aba90e2bafa2f6fa0f58dc81fccfc3e61c800e0fe0cfa0d911541a7e"
+    },
+    {
+      "path": "session-records/baseline-passive-Y-20260909.json",
+      "bytes": 9254,
+      "sha256": "4224295a7c1489fb997c20afe15c754664f202bb1477ebf3387cb4f841edafe5"
+    },
+    {
+      "path": "session-records/baseline-passive-Z-20260909.json",
+      "bytes": 10506,
+      "sha256": "06ba4ea6293f5e0a2bbab08ef9b6ce27a744e2dedb8548a706d59924aaa9fda8"
+    },
+    {
+      "path": "session-records/baseline-sp-OP-20260909.json",
+      "bytes": 12692,
+      "sha256": "da1955820fd35c9c066570939c38de304ba21e22e9bf6ccd3d064677cd1ba731"
+    },
+    {
+      "path": "session-records/baseline-sp-QR-20260909.json",
+      "bytes": 9370,
+      "sha256": "41847d9c6ef07c4baa50cacfbc3480932c42b14480aceff8c4ef5ffae47b601f"
+    },
+    {
+      "path": "session-records/baseline-sp-ST-20260909.json",
+      "bytes": 14542,
+      "sha256": "40e412bbafeabedbd8904b6447aebf5e1780097338d8d07fd878bc852b942aaf"
+    },
+    {
+      "path": "session-records/baseline-sp-U-20260909.json",
+      "bytes": 6017,
+      "sha256": "83cff2498fc99e39d66ab1ce1de46a7ea013f17d4d67e1194313bd84b773f16f"
+    },
+    {
+      "path": "session-records/baseline-sp-V-20260909.json",
+      "bytes": 6111,
+      "sha256": "f6ad0e2eba9ae7b8980298effa9808dbc3f995e97dd5e9be827ae8abc5247e02"
+    },
+    {
+      "path": "session-records/baseline-sp-W-20260909.json",
+      "bytes": 8151,
+      "sha256": "5e6ea6dc2366d5d3b84188f75725ab55a6fd6829824c06fba56b11b25e67ce52"
+    },
+    {
+      "path": "session-records/baseline-validation-plan-20260909.md",
+      "bytes": 4155,
+      "sha256": "86139a3ccb354c56625ecb08dc612992c38dc3e68e195b8e0788b52eff796cea"
+    },
+    {
+      "path": "session-records/board-audit-20260909.json",
+      "bytes": 2213,
+      "sha256": "51d0a9253a1e84e5ad2e2a3c1e53facdbb336244d3be534cf2b94dae9bf55d12"
+    },
+    {
+      "path": "session-records/board-audit-20260909.md",
+      "bytes": 8159,
+      "sha256": "8315b5a2b0296a4170f688fd8487aabecfea7023687061143bf75735f17be737"
+    },
+    {
+      "path": "session-records/board-input-provenance-20260909.json",
+      "bytes": 2208,
+      "sha256": "4c1b9ccf4ce254a8c3927332e977111737e86ed143a74875d49ad022feae93a8"
+    },
+    {
+      "path": "session-records/board-input-record-20260908.json",
+      "bytes": 2782,
+      "sha256": "913b89ea901ea1d07a1e8529b5dbe81747c54690e9199ea42095bb7be39b4555"
+    },
+    {
+      "path": "session-records/category-help-20260909.json",
+      "bytes": 4060,
+      "sha256": "cdf8dac5c3ca34638b1bd5a7088d15f42eb9ab8e955c57aae5ae2833b831b96d"
+    },
+    {
+      "path": "session-records/category-help-interpretation-20260909.md",
+      "bytes": 3960,
+      "sha256": "5e3ca1684343153afbc06e71c2213713e37e5039bbb419fb5f06b99b02511e5d"
+    },
+    {
+      "path": "session-records/noel-g-analysis-20260909.md",
+      "bytes": 5425,
+      "sha256": "7f410ec9d348b7f4615914896114220c3a684e0cf83621dce0bfc4159fe53b89"
+    },
+    {
+      "path": "session-records/passive-outfit-leader-20260909.json",
+      "bytes": 9425,
+      "sha256": "0514ea80d5cd0e92f23afac022e61275ccc054e2af617df621d9695088851566"
+    },
+    {
+      "path": "session-records/passive-outfit-leader-20260909.md",
+      "bytes": 5562,
+      "sha256": "e983cd54fd9d0210c33e89515eee52d09e07093d68f4b9755d5c98f2c1510a61"
+    },
+    {
+      "path": "session-records/project-sync-20260909.md",
+      "bytes": 6492,
+      "sha256": "fe8f39ff063b70210cac08413baf9b136b0a2325695c6a432a1a3cab61b49ba9"
+    },
+    {
+      "path": "session-records/sp-outfit-analysis-20260909.json",
+      "bytes": 6301,
+      "sha256": "ee98cca5989ff35cf6fcdca95031efd94232791aa76d90adeb82943e60fd451b"
+    },
+    {
+      "path": "session-records/sp-outfit-analysis-20260909.md",
+      "bytes": 6566,
+      "sha256": "34362adefc251be4f87af9f4ba745bbcd0e75ad51c6621bf69235a4965ab9bd2"
+    },
+    {
+      "path": "session-records/unit-score-README.md",
+      "bytes": 21235,
+      "sha256": "a6da6b2ffc444f86448357d3120a6e988dd9865ac67806ff7dd0cb0a0d073b9e"
+    },
+    {
+      "path": "verify-handoff.mjs",
+      "bytes": 3621,
+      "sha256": "a35325fc49e704fbdeba95530dcc6f15b421c3bbdda65fcaa1fc6c7325fa800f"
+    }
+  ]
+}

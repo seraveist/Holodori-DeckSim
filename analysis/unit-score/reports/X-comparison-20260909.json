@@ -1,0 +1,5403 @@
+{
+  "recordedAt": "2026-09-09T04:46:50.739Z",
+  "scope": "X frozen-prediction comparison and W/X leader-board confounding audit, with a same-character costume control Y. Research only.",
+  "X": {
+    "observation": {
+      "schemaVersion": 1,
+      "sampleId": "X",
+      "observedAt": "2026-09-09",
+      "receivedAt": "2026-09-09T04:42:58.187Z",
+      "observationDateBasis": "Current conversation date; no separate date supplied.",
+      "gameVersion": null,
+      "leaderId": "card-06002-5-uniq-0066-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "profilesConfirmed": false,
+      "profileBasis": "Measurement supplied in response to the X plan; planned profiles adopted. All three power components match. No separate growth confirmation.",
+      "rawUserInput": "종합력 177959 멤버파라미터 100252 의상스킬 43945 패시브스킬 12584\n스코어보너스 127.1%, 액티브스킬 75.5%, 홀로멤보드 6.9%, 패시브스킬 1.5%, 스페셜 스킬 43.2%\n\n리리카 리더의 보드효과를 다시 명시함\n스코어 서포트 4.0%, 6.2%, 3.1%\n판정 20초마다 낮은 확률로 7초 동안 good 이상이 perfect가 된다\n악곡 가창자로 포함될 경우 전원의 스코어서포트 24.0%\n\n종합력이 아닌 스코어보너스에 영향이 갈 모든 노드의 효과임.",
+      "game": {
+        "unitScore": null,
+        "overallPower": 177959,
+        "scoreBonusPct": 127.1,
+        "powerDetail": {
+          "memberParameter": 100252,
+          "outfit": 43945,
+          "board": null,
+          "passive": 12584,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 75.5,
+          "board": 6.9,
+          "passive": 1.5,
+          "special": 43.2
+        }
+      },
+      "categoryStatus": {
+        "outfitScore": "Not supplied. Listed bonus components sum to total at display precision.",
+        "excludedPower": "Board, memory and enhancement individually unreported."
+      },
+      "boardContext": "Baseline formulas continue to exclude board corrections. User supplied a Ririka leader-board reconfirmation with the X measurement; record it separately for confounding analysis.",
+      "evidence": "Direct user-entered figures.",
+      "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-X-20260909.json",
+      "predictionCheckpointSHA256": "8c03f267aba90e2bafa2f6fa0f58dc81fccfc3e61c800e0fe0cfa0d911541a7e",
+      "boardEvidence": "analysis/unit-score/board-observations/ririka-X-20260909.json"
+    },
+    "comparisons": [
+      {
+        "item": "memberParameter",
+        "predicted": 100252,
+        "observed": 100252,
+        "matches": true
+      },
+      {
+        "item": "outfit",
+        "predicted": 43945,
+        "observed": 43945,
+        "matches": true
+      },
+      {
+        "item": "passive",
+        "predicted": 12584,
+        "observed": 12584,
+        "matches": true
+      },
+      {
+        "item": "retainedPower",
+        "predicted": 156781,
+        "observed": 156781,
+        "matches": true
+      },
+      {
+        "item": "active",
+        "predicted": 75.5,
+        "observed": 75.5,
+        "matches": true
+      },
+      {
+        "item": "special",
+        "predicted": 43.2,
+        "observed": 43.2,
+        "matches": true
+      }
+    ],
+    "passiveComparison": {
+      "hypothesis": {
+        "display": 1.9,
+        "status": "Conditional invariance hypothesis; not a solved passive formula.",
+        "condition": "If a leader outfit that only changes member parameters does not change displayed passive when all five members and both eligible support recipients are held fixed, X passive remains 1.9."
+      },
+      "predicted": 1.9,
+      "observed": 1.5,
+      "matches": false,
+      "errorPredictedMinusObserved": 0.4
+    },
+    "retainedPower": 156781,
+    "excludedPowerAggregate": 21178,
+    "knownBonusSum": 127.1,
+    "retainedBonus": 120.2,
+    "historicalCheckpointSHA256": "8c03f267aba90e2bafa2f6fa0f58dc81fccfc3e61c800e0fe0cfa0d911541a7e",
+    "predictionHistoryUnchanged": true
+  },
+  "WX": {
+    "before": {
+      "unitScore": null,
+      "overallPower": 146791,
+      "scoreBonusPct": 137.9,
+      "powerDetail": {
+        "memberParameter": 100252,
+        "outfit": null,
+        "board": null,
+        "passive": 12584,
+        "memory": null,
+        "enhancement": null
+      },
+      "scoreBonusDetail": {
+        "outfit": null,
+        "active": 75.5,
+        "board": 17.3,
+        "passive": 1.9,
+        "special": 43.2
+      }
+    },
+    "after": {
+      "unitScore": null,
+      "overallPower": 177959,
+      "scoreBonusPct": 127.1,
+      "powerDetail": {
+        "memberParameter": 100252,
+        "outfit": 43945,
+        "board": null,
+        "passive": 12584,
+        "memory": null,
+        "enhancement": null
+      },
+      "scoreBonusDetail": {
+        "outfit": null,
+        "active": 75.5,
+        "board": 6.9,
+        "passive": 1.5,
+        "special": 43.2
+      }
+    },
+    "deltas": {
+      "active": 0,
+      "special": 0,
+      "board": -10.4,
+      "passive": -0.4,
+      "total": -10.8,
+      "afterSubtractingDisplayedBoard": -0.4
+    },
+    "fixed": {
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "memberProfiles": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "active": 75.5,
+      "special": 43.2,
+      "passiveSupportByMember": [
+        0,
+        0,
+        8,
+        0,
+        8
+      ]
+    },
+    "changed": {
+      "leaderCharacter": "Ririka -> Kanade",
+      "parameterOutfit": "Inactive -> all-member performance +130%",
+      "leaderBoard": "Ririka score support 13.3 plus judgement/conditional singer nodes -> Kanade relevant leader-board effects absent"
+    },
+    "correction": "The earlier X plan described a parameter-only costume intervention but changed the leader character too. It did not control character-board effects. The 0.4 passive decrease must not be attributed uniquely to the costume.",
+    "conclusion": "The planned passive-invariance prediction failed. A leader-board interaction and a parameter-outfit interaction remain competing explanations; displayed board subtraction alone does not distinguish them."
+  },
+  "boardAudit": {
+    "context": {
+      "schemaVersion": 1,
+      "recordedAt": "2026-09-09T04:44:36.569Z",
+      "samples": [
+        "W",
+        "X"
+      ],
+      "evidence": {
+        "ririkaReconfirmation": "analysis/unit-score/board-observations/ririka-X-20260909.json",
+        "ririkaRecordSHA256": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438",
+        "clarificationReplies": [
+          {
+            "question": "X에서 사용한 카나데의 리더 보드 중 스코어보너스에 영향을 줄 수 있는 노드도 알려주세요. 스코어 서포트, 판정 보정, 가창자 조건 효과를 포함해 주세요.",
+            "answer": "카나데는 리더효과 없음."
+          },
+          {
+            "question": "W와 X 수치는 모두 악곡을 선택하지 않은 같은 편성 상세 화면에서 확인했나요? 악곡 선택 상태였다면 곡명과 리리카·카나데의 가창자 조건 충족 여부를 알려주세요.",
+            "answer": "둘 다 악곡 선택 전 편성 상세"
+          }
+        ]
+      },
+      "view": {
+        "sameFormationDetailContextConfirmed": true,
+        "beforeSongSelection": true,
+        "selectedSong": null,
+        "caveat": "Actual-song singer eligibility is not established. The treatment of conditional singer nodes by an internal formation-preview evaluation remains unverified."
+      },
+      "leaders": {
+        "W": {
+          "characterId": "chr-06003",
+          "character": "이치조 리리카",
+          "scoreSupportNodesPct": [
+            4,
+            6.2,
+            3.1
+          ],
+          "arithmeticSumPct": 13.3,
+          "judgement": {
+            "intervalSeconds": 20,
+            "probabilityLabel": "낮은 확률",
+            "probability": null,
+            "durationSeconds": 7,
+            "from": "GOOD 이상",
+            "to": "PERFECT"
+          },
+          "singerSupport": {
+            "valuePct": 24,
+            "target": "전원",
+            "condition": "악곡 가창자로 포함될 경우",
+            "actualSelectedSongConditionMet": null,
+            "appliedInBaseline": false,
+            "reason": "No selected song; not assumed always active in formation preview."
+          }
+        },
+        "X": {
+          "characterId": "chr-06002",
+          "character": "오토노세 카나데",
+          "relevantLeaderBoardEffectsAbsentConfirmed": true,
+          "confirmationScope": "Response concerns score-bonus-related LEADER BOARD effects. It does not deny the card costume performance +130% effect or previously recorded member active-rate board nodes."
+        }
+      },
+      "policy": {
+        "baselineActiveAndSP": "Keep preserved board-excluded research formulas and predictions.",
+        "passiveAnalysis": "Reopen leader-board interactions as a separate hypothesis. Do not treat subtraction of the displayed board row as proof that passive is board-independent.",
+        "noAutomaticApplication": "Do not add 13.3 or 24 to card skills or production formulas without an identified rule."
+      },
+      "interpretation": "W-to-X is a leader-context intervention with both costume and leader-board changes. The passive decrease is not uniquely attributed to either one."
+    },
+    "ririkaRecord": {
+      "schemaVersion": 1,
+      "recordedAt": "2026-09-09T04:42:58.188Z",
+      "characterId": "chr-06003",
+      "character": "이치조 리리카",
+      "role": "leader",
+      "confirmedByUser": true,
+      "rawUserInput": "리리카 리더의 보드효과를 다시 명시함\n스코어 서포트 4.0%, 6.2%, 3.1%\n판정 20초마다 낮은 확률로 7초 동안 good 이상이 perfect가 된다\n악곡 가창자로 포함될 경우 전원의 스코어서포트 24.0%\n\n종합력이 아닌 스코어보너스에 영향이 갈 모든 노드의 효과임.",
+      "scope": "User says this lists all leader-board nodes that may affect score bonus, excluding power nodes. This is not a full account-board export.",
+      "scoreSupport": {
+        "displayedNodeValuesPct": [
+          4,
+          6.2,
+          3.1
+        ],
+        "arithmeticSumPct": 13.3,
+        "stackingRule": "Unverified; the arithmetic sum is not itself an observed bonus or verified multiplier."
+      },
+      "judgement": {
+        "intervalSeconds": 20,
+        "probabilityLabel": "낮은 확률",
+        "probability": null,
+        "durationSeconds": 7,
+        "from": "GOOD 이상",
+        "to": "PERFECT",
+        "evaluationEffect": "Unverified; actual judgement distribution and contribution to formation-detail bonus are unknown."
+      },
+      "singerSupport": {
+        "valuePct": 24,
+        "target": "전원",
+        "condition": "악곡 가창자로 포함될 경우",
+        "conditionMet": null,
+        "evaluationContext": "W/X song-selection context requested; do not add 24 unconditionally."
+      },
+      "provenance": {
+        "previousFile": "analysis/unit-score/board-context.json",
+        "previousFileSHA256": "913b89ea901ea1d07a1e8529b5dbe81747c54690e9199ea42095bb7be39b4555",
+        "supportNodesReconfirmed": true,
+        "judgementAndSingerNodesAbsentFromPreviousRecord": true,
+        "timing": "Newly documented here does not mean newly unlocked or changed since earlier measurements."
+      },
+      "comparisonCaveat": "W Ririka leader to X Kanade leader changes the leader character and potentially its boards as well as the costume. It is not a board-controlled costume-only experiment.",
+      "kanadeLeaderBoard": {
+        "status": "Requested; pending user details. Historical Kanade active-rate nodes 15/5 are member-board inputs, not a confirmed leader-board inventory."
+      }
+    },
+    "historicalSupportReconfirmed": true,
+    "newlyDocumentedFields": [
+      "Judgement: 20 seconds, low probability, 7-second GOOD-or-better to PERFECT conversion",
+      "Conditional all-member singer support 24%"
+    ],
+    "baselineHandling": "Preserve board-excluded Active/SP formulas; use leader-board interactions as separately identified passive hypotheses. Do not silently modify past predictions or production calculations.",
+    "numericalLimits": [
+      "13.3 is the arithmetic sum of three node inputs, not a directly observed +13.3 pp bonus.",
+      "The measured board-row difference is 10.4 pp; do not identify it directly with the 13.3% input.",
+      "No song is selected. Do not apply the conditional 24% unconditionally or presume how a hidden preview evaluates singer conditions.",
+      "Low probability is not a measured numeric probability. Judgement contribution cannot be computed exactly from the supplied phrase."
+    ]
+  },
+  "summary": {
+    "observations": 22,
+    "distinctMemberSets": 15,
+    "activeMatches": 22,
+    "refinedSPMatches": 22,
+    "refinedSPEvidence": {
+      "retrospectiveAtDiscovery": 20,
+      "newMemberDiscriminatingMatch": "W",
+      "additionalSameMemberLeaderCheck": "X"
+    },
+    "passive": "Unresolved; the X 1.9 invariance hypothesis is retained as a failed prediction."
+  },
+  "rows": [
+    {
+      "id": "A",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00"
+      ],
+      "Araw": 76.32624999999996,
+      "A": 76.4,
+      "W": 6010,
+      "rateSum": 195,
+      "rateDurationSum": 2135,
+      "SP": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 40,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "name": "오토노세 카나데",
+          "duration": 10,
+          "support": 120,
+          "rate": 45,
+          "condition": {
+            "kind": "combo",
+            "threshold": 100
+          },
+          "conditionMet": true
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "name": "시라누이 후레아",
+          "duration": 12,
+          "support": 100,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 76.4,
+      "observedSP": 45.8,
+      "displayedActiveFlatRate": {
+        "raw": 45.71266666666667,
+        "ceil": 45.8
+      },
+      "displayedActiveDurationRate": {
+        "raw": 46.419366666666676,
+        "ceil": 46.5
+      },
+      "rawActiveFlatRate": {
+        "raw": 45.66853958333331,
+        "ceil": 45.7
+      },
+      "power": {
+        "memberParameter": 112726,
+        "outfit": 56367,
+        "board": 0,
+        "passive": 12397,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 181490,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          16,
+          9,
+          0,
+          0,
+          25
+        ],
+        "active": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-06002-5-uniq-0058-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 75
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 125
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 40,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06002-5-uniq-0058-00",
+            "name": "오토노세 카나데",
+            "duration": 10,
+            "support": 120,
+            "rate": 45,
+            "condition": {
+              "kind": "combo",
+              "threshold": 100
+            },
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2.25
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "name": "시라누이 후레아",
+            "duration": 12,
+            "support": 100,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 1.75
+          }
+        ],
+        "supportSum": 50.09,
+        "factor": 59.84,
+        "raw": 45.717760000000006,
+        "display": 45.8
+      }
+    },
+    {
+      "id": "B",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0058-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "Araw": 76.32624999999996,
+      "A": 76.4,
+      "W": 6010,
+      "rateSum": 195,
+      "rateDurationSum": 2135,
+      "SP": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 40,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": true
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "name": "시라누이 후레아",
+          "duration": 12,
+          "support": 100,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "name": "오토노세 카나데",
+          "duration": 10,
+          "support": 120,
+          "rate": 45,
+          "condition": {
+            "kind": "combo",
+            "threshold": 100
+          },
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 76.4,
+      "observedSP": 45.8,
+      "displayedActiveFlatRate": {
+        "raw": 45.71266666666667,
+        "ceil": 45.8
+      },
+      "displayedActiveDurationRate": {
+        "raw": 46.419366666666676,
+        "ceil": 46.5
+      },
+      "rawActiveFlatRate": {
+        "raw": 45.66853958333331,
+        "ceil": 45.7
+      },
+      "power": {
+        "memberParameter": 112726,
+        "outfit": 56367,
+        "board": 0,
+        "passive": 12397,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 181490,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          16,
+          9,
+          25,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 125
+          },
+          {
+            "id": "card-06002-5-uniq-0058-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 75
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 40,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "name": "시라누이 후레아",
+            "duration": 12,
+            "support": 100,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-06002-5-uniq-0058-00",
+            "name": "오토노세 카나데",
+            "duration": 10,
+            "support": 120,
+            "rate": 45,
+            "condition": {
+              "kind": "combo",
+              "threshold": 100
+            },
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2.25
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 50.09,
+        "factor": 59.84,
+        "raw": 45.717760000000006,
+        "display": 45.8
+      }
+    },
+    {
+      "id": "C",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "Araw": 78.33466395258726,
+      "A": 78.4,
+      "W": 6140,
+      "rateSum": 150,
+      "rateDurationSum": 1685,
+      "SP": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 40,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": true
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "name": "시라누이 후레아",
+          "duration": 12,
+          "support": 100,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 78.4,
+      "observedSP": 46.1,
+      "displayedActiveFlatRate": {
+        "raw": 45.99466666666667,
+        "ceil": 46
+      },
+      "displayedActiveDurationRate": {
+        "raw": 46.719866666666675,
+        "ceil": 46.8
+      },
+      "rawActiveFlatRate": {
+        "raw": 45.95633618551786,
+        "ceil": 46
+      },
+      "power": {
+        "memberParameter": 102618,
+        "outfit": 51313,
+        "board": 0,
+        "passive": 8172,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 162103,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          16,
+          9,
+          25,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 125
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 40,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "name": "시라누이 후레아",
+            "duration": 12,
+            "support": 100,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 51.18,
+        "factor": 58.68,
+        "raw": 46.005120000000005,
+        "display": 46.1
+      }
+    },
+    {
+      "id": "D",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "Araw": 70.22788085128487,
+      "A": 70.3,
+      "W": 6140,
+      "rateSum": 110,
+      "rateDurationSum": 1205,
+      "SP": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "name": "시라누이 후레아",
+          "duration": 12,
+          "support": 100,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 70.3,
+      "observedSP": 39.9,
+      "displayedActiveFlatRate": {
+        "raw": 39.83666666666667,
+        "ceil": 39.9
+      },
+      "displayedActiveDurationRate": {
+        "raw": 40.20574166666667,
+        "ceil": 40.3
+      },
+      "rawActiveFlatRate": {
+        "raw": 39.79579914906143,
+        "ceil": 39.8
+      },
+      "power": {
+        "memberParameter": 97578,
+        "outfit": 48793,
+        "board": 0,
+        "passive": 8172,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 154543,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          16,
+          0,
+          16,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 125
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "name": "시라누이 후레아",
+            "duration": 12,
+            "support": 100,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 51.18,
+        "factor": 56.68,
+        "raw": 39.846039999999995,
+        "display": 39.9
+      }
+    },
+    {
+      "id": "E",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "Araw": 66.88318421439531,
+      "A": 66.9,
+      "W": 6140,
+      "rateSum": 115,
+      "rateDurationSum": 1185,
+      "SP": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 66.9,
+      "observedSP": 38.1,
+      "displayedActiveFlatRate": {
+        "raw": 38.07725000000001,
+        "ceil": 38.1
+      },
+      "displayedActiveDurationRate": {
+        "raw": 38.194325000000006,
+        "ceil": 38.2
+      },
+      "rawActiveFlatRate": {
+        "raw": 38.06767901536,
+        "ceil": 38.1
+      },
+      "power": {
+        "memberParameter": 95098,
+        "outfit": 47554,
+        "board": 0,
+        "passive": 13978,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 156630,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          8,
+          0,
+          0,
+          0,
+          8
+        ],
+        "active": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 51.18,
+        "factor": 56.93,
+        "raw": 38.08617,
+        "display": 38.1
+      }
+    },
+    {
+      "id": "F",
+      "memberIds": [
+        "card-06002-5-uniq-0066-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00026-5-uniq-0065-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "Araw": 66.88318421439531,
+      "A": 66.9,
+      "W": 6140,
+      "rateSum": 115,
+      "rateDurationSum": 1185,
+      "SP": [
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 66.9,
+      "observedSP": 38.1,
+      "displayedActiveFlatRate": {
+        "raw": 38.07725000000001,
+        "ceil": 38.1
+      },
+      "displayedActiveDurationRate": {
+        "raw": 38.194325000000006,
+        "ceil": 38.2
+      },
+      "rawActiveFlatRate": {
+        "raw": 38.06767901536,
+        "ceil": 38.1
+      },
+      "power": {
+        "memberParameter": 95098,
+        "outfit": 47554,
+        "board": 0,
+        "passive": 13978,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 156630,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          0,
+          0,
+          0,
+          8,
+          8
+        ],
+        "active": [
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 51.18,
+        "factor": 56.93,
+        "raw": 38.08617,
+        "display": 38.1
+      }
+    },
+    {
+      "id": "G",
+      "memberIds": [
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "Araw": 70.00707951520545,
+      "A": 70.1,
+      "W": 6130,
+      "rateSum": 80,
+      "rateDurationSum": 800,
+      "SP": [
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 70.1,
+      "observedSP": 38.7,
+      "displayedActiveFlatRate": {
+        "raw": 38.613416666666666,
+        "ceil": 38.7
+      },
+      "displayedActiveDurationRate": {
+        "raw": 38.613416666666666,
+        "ceil": 38.7
+      },
+      "rawActiveFlatRate": {
+        "raw": 38.562232966292335,
+        "ceil": 38.6
+      },
+      "power": {
+        "memberParameter": 97617,
+        "outfit": 48813,
+        "board": 0,
+        "passive": 7980,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 154410,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 51.09,
+        "factor": 55.09,
+        "raw": 38.618089999999995,
+        "display": 38.7
+      }
+    },
+    {
+      "id": "I",
+      "memberIds": [
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "Araw": 70.00707951520545,
+      "A": 70.1,
+      "W": 6130,
+      "rateSum": 80,
+      "rateDurationSum": 800,
+      "SP": [
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 70.1,
+      "observedSP": 38.7,
+      "displayedActiveFlatRate": {
+        "raw": 38.613416666666666,
+        "ceil": 38.7
+      },
+      "displayedActiveDurationRate": {
+        "raw": 38.613416666666666,
+        "ceil": 38.7
+      },
+      "rawActiveFlatRate": {
+        "raw": 38.562232966292335,
+        "ceil": 38.6
+      },
+      "power": {
+        "memberParameter": 97617,
+        "outfit": 0,
+        "board": 0,
+        "passive": 7980,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 105597,
+      "conditions": {
+        "leaderScoreSupport": 60,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 51.09,
+        "factor": 55.09,
+        "raw": 38.618089999999995,
+        "display": 38.7
+      }
+    },
+    {
+      "id": "J",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "Araw": 66.88318421439531,
+      "A": 66.9,
+      "W": 6140,
+      "rateSum": 115,
+      "rateDurationSum": 1185,
+      "SP": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 66.9,
+      "observedSP": 38.1,
+      "displayedActiveFlatRate": {
+        "raw": 38.07725000000001,
+        "ceil": 38.1
+      },
+      "displayedActiveDurationRate": {
+        "raw": 38.194325000000006,
+        "ceil": 38.2
+      },
+      "rawActiveFlatRate": {
+        "raw": 38.06767901536,
+        "ceil": 38.1
+      },
+      "power": {
+        "memberParameter": 95098,
+        "outfit": 0,
+        "board": 0,
+        "passive": 13978,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 109076,
+      "conditions": {
+        "leaderScoreSupport": 60,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          8,
+          0,
+          0,
+          0,
+          8
+        ],
+        "active": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 51.18,
+        "factor": 56.93,
+        "raw": 38.08617,
+        "display": 38.1
+      }
+    },
+    {
+      "id": "K",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "Araw": 66.88318421439531,
+      "A": 66.9,
+      "W": 6140,
+      "rateSum": 115,
+      "rateDurationSum": 1185,
+      "SP": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 66.9,
+      "observedSP": 38.1,
+      "displayedActiveFlatRate": {
+        "raw": 38.07725000000001,
+        "ceil": 38.1
+      },
+      "displayedActiveDurationRate": {
+        "raw": 38.194325000000006,
+        "ceil": 38.2
+      },
+      "rawActiveFlatRate": {
+        "raw": 38.06767901536,
+        "ceil": 38.1
+      },
+      "power": {
+        "memberParameter": 95098,
+        "outfit": 47554,
+        "board": 0,
+        "passive": 13978,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 156630,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          8,
+          0,
+          0,
+          0,
+          8
+        ],
+        "active": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 51.18,
+        "factor": 56.93,
+        "raw": 38.08617,
+        "display": 38.1
+      }
+    },
+    {
+      "id": "H",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "Araw": 67.21081725264357,
+      "A": 67.3,
+      "W": 6140,
+      "rateSum": 115,
+      "rateDurationSum": 1185,
+      "SP": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "name": "시라누이 후레아",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 67.3,
+      "observedSP": 38.4,
+      "displayedActiveFlatRate": {
+        "raw": 38.30491666666667,
+        "ceil": 38.4
+      },
+      "displayedActiveDurationRate": {
+        "raw": 38.42269166666667,
+        "ceil": 38.5
+      },
+      "rawActiveFlatRate": {
+        "raw": 38.254156819629635,
+        "ceil": 38.3
+      },
+      "power": {
+        "memberParameter": 79241,
+        "outfit": 39625,
+        "board": 0,
+        "passive": 8626,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 127492,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          8,
+          0,
+          0,
+          0,
+          8
+        ],
+        "active": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00021-5-uniq-0017-00",
+            "condition": {
+              "kind": "combo",
+              "threshold": 40
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00021-5-uniq-0017-00",
+            "name": "시라누이 후레아",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 51.18,
+        "factor": 56.93,
+        "raw": 38.313889999999994,
+        "display": 38.4
+      }
+    },
+    {
+      "id": "M",
+      "memberIds": [
+        "card-00026-5-uniq-0065-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0064-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00"
+      ],
+      "Araw": 78.33466395258726,
+      "A": 78.4,
+      "W": 6140,
+      "rateSum": 150,
+      "rateDurationSum": 1685,
+      "SP": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 40,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": true
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "name": "시라누이 후레아",
+          "duration": 12,
+          "support": 100,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 78.4,
+      "observedSP": 46.1,
+      "displayedActiveFlatRate": {
+        "raw": 45.99466666666667,
+        "ceil": 46
+      },
+      "displayedActiveDurationRate": {
+        "raw": 46.719866666666675,
+        "ceil": 46.8
+      },
+      "rawActiveFlatRate": {
+        "raw": 45.95633618551786,
+        "ceil": 46
+      },
+      "power": {
+        "memberParameter": 102618,
+        "outfit": 0,
+        "board": 0,
+        "passive": 8172,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 110790,
+      "conditions": {
+        "leaderScoreSupport": 60,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          16,
+          9,
+          25,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 125
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 40,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "name": "시라누이 후레아",
+            "duration": 12,
+            "support": 100,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 1.75
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 51.18,
+        "factor": 58.68,
+        "raw": 46.005120000000005,
+        "display": 46.1
+      }
+    },
+    {
+      "id": "O",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00027-5-uniq-0022-00"
+      ],
+      "Araw": 65.54946450356542,
+      "A": 65.6,
+      "W": 6280,
+      "rateSum": 80,
+      "rateDurationSum": 800,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 65.6,
+      "observedSP": 37,
+      "displayedActiveFlatRate": {
+        "raw": 36.95466666666667,
+        "ceil": 37
+      },
+      "displayedActiveDurationRate": {
+        "raw": 36.95466666666667,
+        "ceil": 37
+      },
+      "rawActiveFlatRate": {
+        "raw": 36.92619833700852,
+        "ceil": 37
+      },
+      "power": {
+        "memberParameter": 87623,
+        "outfit": 43816,
+        "board": 0,
+        "passive": 11520,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 142959,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "name": "나키리 아야메",
+            "duration": 10,
+            "support": 135,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.25,
+            "roundedSupport": 11.25,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 52.34,
+        "factor": 56.34,
+        "raw": 36.95904,
+        "display": 37
+      }
+    },
+    {
+      "id": "P",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00"
+      ],
+      "Araw": 66.37465888836559,
+      "A": 66.4,
+      "W": 6280,
+      "rateSum": 80,
+      "rateDurationSum": 800,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "name": "시라누이 후레아",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 66.4,
+      "observedSP": 37.5,
+      "displayedActiveFlatRate": {
+        "raw": 37.40533333333334,
+        "ceil": 37.5
+      },
+      "displayedActiveDurationRate": {
+        "raw": 37.40533333333334,
+        "ceil": 37.5
+      },
+      "rawActiveFlatRate": {
+        "raw": 37.391057840445946,
+        "ceil": 37.4
+      },
+      "power": {
+        "memberParameter": 73877,
+        "outfit": 36942,
+        "board": 0,
+        "passive": 11611,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 122430,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-00021-5-uniq-0017-00",
+            "condition": {
+              "kind": "combo",
+              "threshold": 40
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "name": "나키리 아야메",
+            "duration": 10,
+            "support": 135,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.25,
+            "roundedSupport": 11.25,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00021-5-uniq-0017-00",
+            "name": "시라누이 후레아",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 52.34,
+        "factor": 56.34,
+        "raw": 37.409760000000006,
+        "display": 37.5
+      }
+    },
+    {
+      "id": "Q",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00"
+      ],
+      "Araw": 73.27772900476324,
+      "A": 73.3,
+      "W": 6150,
+      "rateSum": 80,
+      "rateDurationSum": 800,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        }
+      ],
+      "observedActive": 73.3,
+      "observedSP": 40.5,
+      "displayedActiveFlatRate": {
+        "raw": 40.49825,
+        "ceil": 40.5
+      },
+      "displayedActiveDurationRate": {
+        "raw": 40.49825,
+        "ceil": 40.5
+      },
+      "rawActiveFlatRate": {
+        "raw": 40.48594527513169,
+        "ceil": 40.5
+      },
+      "power": {
+        "memberParameter": 97731,
+        "outfit": 0,
+        "board": 0,
+        "passive": 6496,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 104227,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": false,
+        "passiveSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "name": "나키리 아야메",
+            "duration": 10,
+            "support": 135,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.25,
+            "roundedSupport": 11.25,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          }
+        ],
+        "supportSum": 51.25,
+        "factor": 55.25,
+        "raw": 40.49825,
+        "display": 40.5
+      }
+    },
+    {
+      "id": "R",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "Araw": 73.27772900476324,
+      "A": 73.3,
+      "W": 6280,
+      "rateSum": 80,
+      "rateDurationSum": 800,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 73.3,
+      "observedSP": 41.3,
+      "displayedActiveFlatRate": {
+        "raw": 41.29233333333333,
+        "ceil": 41.3
+      },
+      "displayedActiveDurationRate": {
+        "raw": 41.29233333333333,
+        "ceil": 41.3
+      },
+      "rawActiveFlatRate": {
+        "raw": 41.279787339349966,
+        "ceil": 41.3
+      },
+      "power": {
+        "memberParameter": 92663,
+        "outfit": 46336,
+        "board": 0,
+        "passive": 11520,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 150519,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "name": "나키리 아야메",
+            "duration": 10,
+            "support": 135,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.25,
+            "roundedSupport": 11.25,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          }
+        ],
+        "supportSum": 52.34,
+        "factor": 56.34,
+        "raw": 41.297219999999996,
+        "display": 41.3
+      }
+    },
+    {
+      "id": "S",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00"
+      ],
+      "Araw": 63.01714226779816,
+      "A": 63.1,
+      "W": 6280,
+      "rateSum": 40,
+      "rateDurationSum": 400,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": false
+        }
+      ],
+      "observedActive": 63.1,
+      "observedSP": 34.3,
+      "displayedActiveFlatRate": {
+        "raw": 34.284333333333336,
+        "ceil": 34.3
+      },
+      "displayedActiveDurationRate": {
+        "raw": 34.284333333333336,
+        "ceil": 34.3
+      },
+      "rawActiveFlatRate": {
+        "raw": 34.23931396550366,
+        "ceil": 34.3
+      },
+      "power": {
+        "memberParameter": 90103,
+        "outfit": 45055,
+        "board": 0,
+        "passive": 9609,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 144767,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": false,
+            "effectiveValue": 50
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "name": "나키리 아야메",
+            "duration": 10,
+            "support": 135,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.25,
+            "roundedSupport": 11.25,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          }
+        ],
+        "supportSum": 52.34,
+        "factor": 54.34,
+        "raw": 34.288540000000005,
+        "display": 34.3
+      }
+    },
+    {
+      "id": "T",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00027-5-uniq-0022-00"
+      ],
+      "Araw": 71.2179531155813,
+      "A": 71.3,
+      "W": 6150,
+      "rateSum": 120,
+      "rateDurationSum": 1200,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "name": "시라누이 후레아",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 71.3,
+      "observedSP": 40.9,
+      "displayedActiveFlatRate": {
+        "raw": 40.81925,
+        "ceil": 40.9
+      },
+      "displayedActiveDurationRate": {
+        "raw": 40.81925,
+        "ceil": 40.9
+      },
+      "rawActiveFlatRate": {
+        "raw": 40.77227815867029,
+        "ceil": 40.8
+      },
+      "power": {
+        "memberParameter": 81505,
+        "outfit": 0,
+        "board": 0,
+        "passive": 7529,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 89034,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": false,
+        "passiveSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00021-5-uniq-0017-00",
+            "condition": {
+              "kind": "combo",
+              "threshold": 40
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "name": "나키리 아야메",
+            "duration": 10,
+            "support": 135,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.25,
+            "roundedSupport": 11.25,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00021-5-uniq-0017-00",
+            "name": "시라누이 후레아",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          }
+        ],
+        "supportSum": 51.25,
+        "factor": 57.25,
+        "raw": 40.81925,
+        "display": 40.9
+      }
+    },
+    {
+      "id": "U",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06003-5-uniq-0059-00"
+      ],
+      "Araw": 59.5660842257695,
+      "A": 59.6,
+      "W": 6400,
+      "rateSum": 0,
+      "rateDurationSum": 0,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "오토노세 카나데",
+          "duration": 14,
+          "support": 95,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-06003-5-uniq-0059-00",
+          "name": "이치조 리리카",
+          "duration": 12,
+          "support": 110,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 59.6,
+      "observedSP": 31.8,
+      "displayedActiveFlatRate": {
+        "raw": 31.786666666666665,
+        "ceil": 31.8
+      },
+      "displayedActiveDurationRate": {
+        "raw": 31.786666666666665,
+        "ceil": 31.8
+      },
+      "rawActiveFlatRate": {
+        "raw": 31.768578253743733,
+        "ceil": 31.8
+      },
+      "power": {
+        "memberParameter": 82623,
+        "outfit": 31837,
+        "board": 0,
+        "passive": 9283,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 123743,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": false,
+            "effectiveValue": 50
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-06003-5-uniq-0059-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 90
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "name": "나키리 아야메",
+            "duration": 10,
+            "support": 135,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.25,
+            "roundedSupport": 11.25,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "name": "오토노세 카나데",
+            "duration": 14,
+            "support": 95,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.083333333333334,
+            "roundedSupport": 11.09,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-06003-5-uniq-0059-00",
+            "name": "이치조 리리카",
+            "duration": 12,
+            "support": 110,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11,
+            "roundedSupport": 11,
+            "rateContribution": 0
+          }
+        ],
+        "supportSum": 53.34,
+        "factor": 53.34,
+        "raw": 31.790640000000003,
+        "display": 31.8
+      }
+    },
+    {
+      "id": "V",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00018-5-uniq-0068-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00"
+      ],
+      "Araw": 69.03296614381048,
+      "A": 69.1,
+      "W": 6150,
+      "rateSum": 125,
+      "rateDurationSum": 1250,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "호시마치 스이세이",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_0",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "name": "오토노세 카나데",
+          "duration": 10,
+          "support": 120,
+          "rate": 45,
+          "condition": {
+            "kind": "combo",
+            "threshold": 100
+          },
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 69.1,
+      "observedSP": 39.8,
+      "displayedActiveFlatRate": {
+        "raw": 39.732499999999995,
+        "ceil": 39.8
+      },
+      "displayedActiveDurationRate": {
+        "raw": 39.732499999999995,
+        "ceil": 39.8
+      },
+      "rawActiveFlatRate": {
+        "raw": 39.69395553269103,
+        "ceil": 39.7
+      },
+      "power": {
+        "memberParameter": 97731,
+        "outfit": 48870,
+        "board": 0,
+        "passive": 16443,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 163044,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-06002-5-uniq-0058-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 75
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "name": "나키리 아야메",
+            "duration": 10,
+            "support": 135,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.25,
+            "roundedSupport": 11.25,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "name": "호시마치 스이세이",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_0",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06002-5-uniq-0058-00",
+            "name": "오토노세 카나데",
+            "duration": 10,
+            "support": 120,
+            "rate": 45,
+            "condition": {
+              "kind": "combo",
+              "threshold": 100
+            },
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2.25
+          }
+        ],
+        "supportSum": 51.25,
+        "factor": 57.5,
+        "raw": 39.732499999999995,
+        "display": 39.8
+      }
+    },
+    {
+      "id": "W",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "Araw": 75.44958333333327,
+      "A": 75.5,
+      "W": 6160,
+      "rateSum": 115,
+      "rateDurationSum": 1185,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 75.5,
+      "observedSP": 43.2,
+      "displayedActiveFlatRate": {
+        "raw": 43.09791666666666,
+        "ceil": 43.1
+      },
+      "displayedActiveDurationRate": {
+        "raw": 43.230041666666665,
+        "ceil": 43.3
+      },
+      "rawActiveFlatRate": {
+        "raw": 43.069137152777735,
+        "ceil": 43.1
+      },
+      "power": {
+        "memberParameter": 100252,
+        "outfit": 0,
+        "board": 0,
+        "passive": 12584,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 112836,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": false,
+        "passiveSupport": [
+          0,
+          0,
+          8,
+          0,
+          8
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "name": "나키리 아야메",
+            "duration": 10,
+            "support": 135,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.25,
+            "roundedSupport": 11.25,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          }
+        ],
+        "supportSum": 51.34,
+        "factor": 57.09,
+        "raw": 43.10295,
+        "display": 43.2
+      }
+    },
+    {
+      "id": "X",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "Araw": 75.44958333333327,
+      "A": 75.5,
+      "W": 6160,
+      "rateSum": 115,
+      "rateDurationSum": 1185,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": 75.5,
+      "observedSP": 43.2,
+      "displayedActiveFlatRate": {
+        "raw": 43.09791666666666,
+        "ceil": 43.1
+      },
+      "displayedActiveDurationRate": {
+        "raw": 43.230041666666665,
+        "ceil": 43.3
+      },
+      "rawActiveFlatRate": {
+        "raw": 43.069137152777735,
+        "ceil": 43.1
+      },
+      "power": {
+        "memberParameter": 100252,
+        "outfit": 43945,
+        "board": 0,
+        "passive": 12584,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 156781,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          0,
+          0,
+          8,
+          0,
+          8
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          }
+        ]
+      },
+      "quantized": {
+        "contributions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "name": "나키리 아야메",
+            "duration": 10,
+            "support": 135,
+            "rate": 0,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 11.25,
+            "roundedSupport": 11.25,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "name": "토코야미 토와",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "name": "주우후테이 라덴",
+            "duration": 10,
+            "support": 120,
+            "rate": 40,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 2
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "name": "시로가네 노엘",
+            "duration": 12,
+            "support": 100,
+            "rate": 0,
+            "condition": {
+              "kind": "group",
+              "value": "grp-gen_3",
+              "count": 2
+            },
+            "conditionMet": false,
+            "rawSupport": 10,
+            "roundedSupport": 10,
+            "rateContribution": 0
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "name": "츠노마키 와타메",
+            "duration": 11,
+            "support": 110,
+            "rate": 35,
+            "condition": null,
+            "conditionMet": true,
+            "rawSupport": 10.083333333333334,
+            "roundedSupport": 10.09,
+            "rateContribution": 1.75
+          }
+        ],
+        "supportSum": 51.34,
+        "factor": 57.09,
+        "raw": 43.10295,
+        "display": 43.2
+      }
+    }
+  ],
+  "next": {
+    "sampleId": "Y",
+    "leaderId": "card-06002-5-uniq-0058-00",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-06004-5-uniq-0060-00",
+      "card-00022-5-uniq-0063-00",
+      "card-00026-5-uniq-0065-00"
+    ],
+    "profiles": [
+      {
+        "id": "card-06002-5-uniq-0058-00",
+        "level": 80,
+        "potential": 0
+      },
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "level": 40,
+        "potential": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "level": 70,
+        "potential": 0
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "level": 70,
+        "potential": 1
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "level": 80,
+        "potential": 1
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "level": 70,
+        "potential": 1
+      }
+    ],
+    "features": {
+      "id": "Y",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "Araw": 75.44958333333327,
+      "A": 75.5,
+      "W": 6160,
+      "rateSum": 115,
+      "rateDurationSum": 1185,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": false
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": null,
+      "observedSP": null,
+      "displayedActiveFlatRate": {
+        "raw": 43.09791666666666,
+        "ceil": 43.1
+      },
+      "displayedActiveDurationRate": {
+        "raw": 43.230041666666665,
+        "ceil": 43.3
+      },
+      "rawActiveFlatRate": {
+        "raw": 43.069137152777735,
+        "ceil": 43.1
+      },
+      "power": {
+        "memberParameter": 100252,
+        "outfit": 49934,
+        "board": 0,
+        "passive": 12584,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 162770,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": true,
+        "passiveSupport": [
+          0,
+          0,
+          8,
+          0,
+          8
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          }
+        ]
+      }
+    },
+    "quantized": {
+      "contributions": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true,
+          "rawSupport": 11.25,
+          "roundedSupport": 11.25,
+          "rateContribution": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true,
+          "rawSupport": 10,
+          "roundedSupport": 10,
+          "rateContribution": 2
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true,
+          "rawSupport": 10,
+          "roundedSupport": 10,
+          "rateContribution": 2
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "시로가네 노엘",
+          "duration": 12,
+          "support": 100,
+          "rate": 0,
+          "condition": {
+            "kind": "group",
+            "value": "grp-gen_3",
+            "count": 2
+          },
+          "conditionMet": false,
+          "rawSupport": 10,
+          "roundedSupport": 10,
+          "rateContribution": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true,
+          "rawSupport": 10.083333333333334,
+          "roundedSupport": 10.09,
+          "rateContribution": 1.75
+        }
+      ],
+      "supportSum": 51.34,
+      "factor": 57.09,
+      "raw": 43.10295,
+      "display": 43.2
+    },
+    "leaderDescription": "퓨어 타입 2명 이상이면 전원의 센스가 130% UP",
+    "change": "X: change leader from swimsuit Kanade 40/0 to regular Kanade 80/0. Keep the same five members, their growth, and the pre-song-selection formation view.",
+    "control": "Same Kanade character, user-confirmed absence of relevant leader-board effects. Both costumes are parameter-only; performance +130% changes to sense +130%.",
+    "assumptions": "Pure >=2 (Ayame and Towa) activates the regular Kanade costume. Leader member skills are excluded. Raden life >=600 stays assumed met. No board corrections added.",
+    "hypotheses": {
+      "passive": {
+        "display": 1.5,
+        "status": "Unsolved-formula invariance hypothesis: fixed members and leader character, only parameter outfit stat changes."
+      },
+      "displayedBoard": {
+        "display": 6.9,
+        "status": "Observed-X invariance hypothesis for unchanged character boards and member set, not a computed board formula."
+      }
+    },
+    "interpretation": {
+      "samePassive": "Supports passive invariance under this performance-to-sense costume swap; raises the priority of leader-board/leader-character differences for W/X but does not prove them.",
+      "differentPassive": "Shows passive still changes in a same-character costume comparison with no relevant leader-board effects; examine parameter distribution or costume-dependent display attribution."
+    },
+    "limitations": "Both costumes still have a parameter effect. This does not by itself test zero parameter outfit versus nonzero, establish universal invariance, or prove that Ririka boards caused exactly +0.4.",
+    "requestedMeasurements": "Total power and member/outfit/passive power; total score bonus plus Active, SP, passive, board, and outfit score row or absence."
+  },
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "newEvidenceHashes": {
+    "analysis/unit-score/board-observations/WX-clarification-20260909.json": "76063061352c10a3bd54bbb34c166d5082c969079123ae8f778c4e16c733d32f",
+    "analysis/unit-score/board-observations/ririka-X-20260909.json": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438"
+  }
+}

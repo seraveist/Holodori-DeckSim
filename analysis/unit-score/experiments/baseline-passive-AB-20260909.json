@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T05:33:30.568Z",
+  "status": "planned; no AB observation received",
+  "sampleId": "AB",
+  "leaderId": "card-00018-5-uniq-0068-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00021-5-uniq-0017-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "features": {
+    "id": "AB",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-06004-5-uniq-0060-00",
+      "card-00021-5-uniq-0017-00",
+      "card-00026-5-uniq-0065-00"
+    ],
+    "Araw": 73.64333333333327,
+    "A": 73.7,
+    "W": 6160,
+    "rateSum": 155,
+    "rateDurationSum": 1585,
+    "SP": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "name": "시라누이 후레아",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "name": "츠노마키 와타메",
+        "duration": 11,
+        "support": 110,
+        "rate": 35,
+        "condition": null,
+        "conditionMet": true
+      }
+    ],
+    "observedActive": null,
+    "observedSP": null,
+    "displayedActiveFlatRate": {
+      "raw": 43.54441666666667,
+      "ceil": 43.6
+    },
+    "displayedActiveDurationRate": {
+      "raw": 43.67339166666667,
+      "ceil": 43.7
+    },
+    "rawActiveFlatRate": {
+      "raw": 43.51093611111108,
+      "ceil": 43.6
+    },
+    "power": {
+      "memberParameter": 84026,
+      "outfit": 0,
+      "board": 0,
+      "passive": 13617,
+      "memory": 0,
+      "enhancement": 0
+    },
+    "retainedPower": 97643,
+    "conditions": {
+      "leaderScoreSupport": 0,
+      "leaderParameterConditionMet": false,
+      "passiveSupport": [
+        0,
+        0,
+        8,
+        0,
+        8
+      ],
+      "active": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 2,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 100
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "condition": null,
+          "conditionMet": true,
+          "effectiveValue": 80
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "condition": {
+            "kind": "life",
+            "threshold": 600
+          },
+          "conditionMet": true,
+          "effectiveValue": 115
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "condition": {
+            "kind": "combo",
+            "threshold": 40
+          },
+          "conditionMet": true,
+          "effectiveValue": 100
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "condition": {
+            "kind": "attribute",
+            "value": 3,
+            "count": 2
+          },
+          "conditionMet": true,
+          "effectiveValue": 120
+        }
+      ]
+    }
+  },
+  "quantized": {
+    "contributions": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "name": "나키리 아야메",
+        "duration": 10,
+        "support": 135,
+        "rate": 0,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 11.25,
+        "roundedSupport": 11.25,
+        "rateContribution": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "name": "토코야미 토와",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "name": "주우후테이 라덴",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "name": "시라누이 후레아",
+        "duration": 10,
+        "support": 120,
+        "rate": 40,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10,
+        "roundedSupport": 10,
+        "rateContribution": 2
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "name": "츠노마키 와타메",
+        "duration": 11,
+        "support": 110,
+        "rate": 35,
+        "condition": null,
+        "conditionMet": true,
+        "rawSupport": 10.083333333333334,
+        "roundedSupport": 10.09,
+        "rateContribution": 1.75
+      }
+    ],
+    "supportSum": 51.34,
+    "factor": 59.09,
+    "raw": 43.54933,
+    "display": 43.6
+  },
+  "joint": {
+    "id": "AB",
+    "inputs": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "characterId": "chr-00010",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "characterId": "chr-00027",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "characterId": "chr-06004",
+        "support": 8,
+        "board": {
+          "rate": 14,
+          "cooldown": 4
+        }
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "characterId": "chr-00021",
+        "support": 0,
+        "board": {
+          "rate": 6,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "characterId": "chr-00026",
+        "support": 8,
+        "board": {
+          "rate": 24.5,
+          "cooldown": 4
+        }
+      }
+    ],
+    "base": 73.64333333333327,
+    "passiveOnly": 76.2010666666666,
+    "boardOnly": 78.06449498850276,
+    "both": 81.017512774731,
+    "raw": {
+      "boardBeforePassive": 4.421161655169485,
+      "passiveAfterBoard": 2.9530177862282443,
+      "passiveBeforeBoard": 2.5577333333333314,
+      "boardAfterPassive": 4.816446108064397,
+      "combined": 7.374179441397729
+    },
+    "display": {
+      "boardBeforePassive": 4.5,
+      "passiveAfterBoard": 3,
+      "passiveBeforeBoard": 2.6,
+      "boardAfterPassive": 4.9,
+      "combined": 7.4
+    },
+    "observed": {
+      "board": null,
+      "passive": null,
+      "sum": null
+    },
+    "combinedMatches": null,
+    "effectiveActive": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "interval": 29,
+        "probability": 0.55
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "interval": 19,
+        "probability": 0.55
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "interval": 21.153846153846153,
+        "probability": 0.6270000000000001
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "interval": 26,
+        "probability": 0.5830000000000001
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "interval": 33.65384615384615,
+        "probability": 0.6847500000000001
+      }
+    ]
+  },
+  "alternatives": [
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "raw"
+      },
+      "combinedDisplay": 8
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "floor"
+      },
+      "combinedDisplay": 9.2
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "round"
+      },
+      "combinedDisplay": 7.7
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "ceil"
+      },
+      "combinedDisplay": 5
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "divide",
+        "cooldownRounding": "raw"
+      },
+      "combinedDisplay": 7.4
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "divide",
+        "cooldownRounding": "floor"
+      },
+      "combinedDisplay": 9.2
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "divide",
+        "cooldownRounding": "round"
+      },
+      "combinedDisplay": 7.7
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "divide",
+        "cooldownRounding": "ceil"
+      },
+      "combinedDisplay": 5
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "raw"
+      },
+      "combinedDisplay": 9.7
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "floor"
+      },
+      "combinedDisplay": 11.2
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "round"
+      },
+      "combinedDisplay": 9.5
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "ceil"
+      },
+      "combinedDisplay": 6.6
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "divide",
+        "cooldownRounding": "raw"
+      },
+      "combinedDisplay": 9.2
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "divide",
+        "cooldownRounding": "floor"
+      },
+      "combinedDisplay": 11.2
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "divide",
+        "cooldownRounding": "round"
+      },
+      "combinedDisplay": 9.5
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "divide",
+        "cooldownRounding": "ceil"
+      },
+      "combinedDisplay": 6.6
+    }
+  ],
+  "change": "From AA keep Suisei leader and Ayame, Towa, Raden, swimsuit Watame; replace regular Kanade 80/0 with regular Flare 11/0.",
+  "purpose": "A third composition tests the combined candidate without fitting to its measurement. Exactly the same two Happy support recipients remain.",
+  "hypotheses": {
+    "active": {
+      "display": 73.7,
+      "kind": "Existing research formula"
+    },
+    "special": {
+      "display": 43.6,
+      "kind": "Existing research formula"
+    },
+    "boardPlusPassive": {
+      "display": 7.4,
+      "kind": "New post-AA combined candidate; zero independent successes before AB"
+    },
+    "passive": {
+      "display": null,
+      "kind": "No individual formula"
+    },
+    "board": {
+      "display": null,
+      "kind": "No individual formula"
+    }
+  },
+  "assumptions": "Same pre-song view; Ayame singer effect excluded; Flare combo >=40 and Raden life >=600 treated as met. General Flare 11/0 was confirmed in P. Flare recorded member board rate6/cooldown0 carries forward. No changes to growth or board unlocks.",
+  "limitations": "Several skills and member boards change, so a match validates only the combined prediction for another composition. It does not identify the cause of the Z-to-AA passive change or distinguish every timing rule.",
+  "requestedMeasurements": "Active, SP, passive score and board score separately; member parameter and passive power for formation verification. Total score bonus if available; preserve omitted rows as unreported.",
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "newEvidenceHashes": {
+    "analysis/unit-score/board-observations/WX-clarification-20260909.json": "76063061352c10a3bd54bbb34c166d5082c969079123ae8f778c4e16c733d32f",
+    "analysis/unit-score/board-observations/ririka-X-20260909.json": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438",
+    "analysis/unit-score/board-observations/suisei-Y-clarification-20260909.json": "b5c622f99d2a322d8b7f43e177ed2f03ab3bad4ebdae2726142cdcb28adcc12b",
+    "analysis/unit-score/board-observations/AA-member-clarification-20260909.json": "fbe5828797493d54745b95440322da282521b109ddb29d092a66875b8e7097dc"
+  },
+  "observationHashes": {
+    "analysis/unit-score/observations/Z-20260909-completed.json": "7953e134131cc90242a93e5def0a1bfde32dd3f8472d9f81911c1da5a275f655",
+    "analysis/unit-score/observations/AA-20260909.json": "fcf6fbdb4cfef6e64cef245f057b427bf4a8ad2611c456d0220688f7b63ccb65"
+  },
+  "analysisSourceSHA256": "85f3a46a917c4832a0ac9a827a614aff8e2351d03a65b4a29cb994e57eb11f86",
+  "comparisonSourceSHA256": "85892be042c6e54f806a0b1b0413641e7b73426266325c5b3072fec08ae26e15",
+  "AACheckpointSHA256": "6d5f23c404cd4809f47f8c99599297508764459bc9e395ec457bbe68f2b46927",
+  "modelDiscovery": "The joint board-plus-passive candidate was selected after seeing Z and AA. AB is its first independent planned test. No individual passive or board display is predicted."
+}

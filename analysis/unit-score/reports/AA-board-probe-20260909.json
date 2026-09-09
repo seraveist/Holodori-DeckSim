@@ -1,0 +1,4183 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-09T05:33:30.564Z",
+  "scope": "Post-AA exploratory model selection for the SUM of board and passive categories, plus a frozen new-member AB test. No individual passive formula is established.",
+  "evidence": {
+    "path": "analysis/unit-score/board-observations/AA-member-clarification-20260909.json",
+    "SHA256": "fbe5828797493d54745b95440322da282521b109ddb29d092a66875b8e7097dc",
+    "interpretation": "Ayame only has singer-conditional nodes. Exclude them under the planned pre-song-selection context. Noel/Kanade existing timing/rate inputs are unchanged. Conditional node values remain unknown."
+  },
+  "formula": {
+    "base": "Unmodified 200-second weighted Active raw.",
+    "adjustedProbability": "min(1, baseProbability * (1 + memberBoardRatePct/100))",
+    "adjustedInterval": "baseInterval / (1 + memberBoardFrequencyPct/100), without rounding the interval",
+    "passiveSupport": "Multiply each recipient Active score-up value by (1 + passiveSupportPct/100).",
+    "combined": "ceil0.1(integrate(board-adjusted Active with passive support) - integrate(base Active))",
+    "limitations": "This compares a one-rounded modeled increment with the sum of two separately displayed categories. It does not determine their internal rounding or allocation, nor prove the internal 200-second duration."
+  },
+  "variants": [
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "raw"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 80.4987964723189,
+          "both": 83.40394957781322,
+          "raw": {
+            "boardBeforePassive": 5.049213138985635,
+            "passiveAfterBoard": 2.905153105494321,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 5.400399577813218,
+            "combined": 7.9543662444799565
+          },
+          "display": {
+            "boardBeforePassive": 5.1,
+            "passiveAfterBoard": 3,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 5.5,
+            "combined": 8
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21.119999999999997,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20.16,
+              "probability": 0.67925
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33.6,
+              "probability": 0.6847500000000001
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 72.2722613118018,
+          "both": 75.01923565639376,
+          "raw": {
+            "boardBeforePassive": 1.2205946451352077,
+            "passiveAfterBoard": 2.746974344591962,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 1.4495689897270836,
+            "combined": 3.9675689897271695
+          },
+          "display": {
+            "boardBeforePassive": 1.3,
+            "passiveAfterBoard": 2.8,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 1.5,
+            "combined": 4
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21.119999999999997,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.66
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33.6,
+              "probability": 0.6847500000000001
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "floor"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 81.2546183892792,
+          "both": 84.24331427318887,
+          "raw": {
+            "boardBeforePassive": 5.805035055945936,
+            "passiveAfterBoard": 2.9886958839096707,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 6.239764273188868,
+            "combined": 8.793730939855607
+          },
+          "display": {
+            "boardBeforePassive": 5.9,
+            "passiveAfterBoard": 3,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 6.3,
+            "combined": 8.8
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20,
+              "probability": 0.67925
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33,
+              "probability": 0.6847500000000001
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 73.46570871470998,
+          "both": 76.28531721631873,
+          "raw": {
+            "boardBeforePassive": 2.4140420480433846,
+            "passiveAfterBoard": 2.819608501608755,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 2.7156505496520538,
+            "combined": 5.23365054965214
+          },
+          "display": {
+            "boardBeforePassive": 2.5,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 2.8,
+            "combined": 5.3
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.66
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33,
+              "probability": 0.6847500000000001
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "round"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 79.61339268839741,
+          "both": 82.50587316149537,
+          "raw": {
+            "boardBeforePassive": 4.163809355064146,
+            "passiveAfterBoard": 2.8924804730979616,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 4.502323161495369,
+            "combined": 7.056289828162107
+          },
+          "display": {
+            "boardBeforePassive": 4.2,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 4.6,
+            "combined": 7.1
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20,
+              "probability": 0.67925
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.6847500000000001
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 72.606032672627,
+          "both": 75.36448192040903,
+          "raw": {
+            "boardBeforePassive": 1.5543660059604036,
+            "passiveAfterBoard": 2.758449247782039,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 1.7948152537423567,
+            "combined": 4.312815253742443
+          },
+          "display": {
+            "boardBeforePassive": 1.6,
+            "passiveAfterBoard": 2.8,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 1.8,
+            "combined": 4.4
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.66
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.6847500000000001
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "ceil"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 77.99313428509817,
+          "both": 80.72548861927886,
+          "raw": {
+            "boardBeforePassive": 2.5435509517648995,
+            "passiveAfterBoard": 2.732354334180698,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 2.721938619278859,
+            "combined": 5.275905285945598
+          },
+          "display": {
+            "boardBeforePassive": 2.6,
+            "passiveAfterBoard": 2.8,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 2.8,
+            "combined": 5.3
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 22,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 21,
+              "probability": 0.67925
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.6847500000000001
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 72.23428142932976,
+          "both": 74.9114209599573,
+          "raw": {
+            "boardBeforePassive": 1.1826147626631638,
+            "passiveAfterBoard": 2.6771395306275423,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 1.3417542932906201,
+            "combined": 3.859754293290706
+          },
+          "display": {
+            "boardBeforePassive": 1.2,
+            "passiveAfterBoard": 2.7,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 1.4,
+            "combined": 3.9
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 22,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.66
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.6847500000000001
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "divide",
+        "cooldownRounding": "raw"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 80.8639045168607,
+          "both": 83.76678007633558,
+          "raw": {
+            "boardBeforePassive": 5.414321183527434,
+            "passiveAfterBoard": 2.9028755594748787,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 5.763230076335574,
+            "combined": 8.317196743002313
+          },
+          "display": {
+            "boardBeforePassive": 5.5,
+            "passiveAfterBoard": 3,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 5.8,
+            "combined": 8.4
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": true,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21.153846153846153,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20.19230769230769,
+              "probability": 0.67925
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33.65384615384615,
+              "probability": 0.6847500000000001
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 72.30928795009396,
+          "both": 75.05875558176817,
+          "raw": {
+            "boardBeforePassive": 1.257621283427369,
+            "passiveAfterBoard": 2.7494676316742073,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 1.4890889151014903,
+            "combined": 4.007088915101576
+          },
+          "display": {
+            "boardBeforePassive": 1.3,
+            "passiveAfterBoard": 2.8,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 1.5,
+            "combined": 4.1
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": true,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21.153846153846153,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.66
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33.65384615384615,
+              "probability": 0.6847500000000001
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 2,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "divide",
+        "cooldownRounding": "floor"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 81.2546183892792,
+          "both": 84.24331427318887,
+          "raw": {
+            "boardBeforePassive": 5.805035055945936,
+            "passiveAfterBoard": 2.9886958839096707,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 6.239764273188868,
+            "combined": 8.793730939855607
+          },
+          "display": {
+            "boardBeforePassive": 5.9,
+            "passiveAfterBoard": 3,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 6.3,
+            "combined": 8.8
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20,
+              "probability": 0.67925
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33,
+              "probability": 0.6847500000000001
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 73.46570871470998,
+          "both": 76.28531721631873,
+          "raw": {
+            "boardBeforePassive": 2.4140420480433846,
+            "passiveAfterBoard": 2.819608501608755,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 2.7156505496520538,
+            "combined": 5.23365054965214
+          },
+          "display": {
+            "boardBeforePassive": 2.5,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 2.8,
+            "combined": 5.3
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.66
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33,
+              "probability": 0.6847500000000001
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "divide",
+        "cooldownRounding": "round"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 79.61339268839741,
+          "both": 82.50587316149537,
+          "raw": {
+            "boardBeforePassive": 4.163809355064146,
+            "passiveAfterBoard": 2.8924804730979616,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 4.502323161495369,
+            "combined": 7.056289828162107
+          },
+          "display": {
+            "boardBeforePassive": 4.2,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 4.6,
+            "combined": 7.1
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20,
+              "probability": 0.67925
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.6847500000000001
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 72.606032672627,
+          "both": 75.36448192040903,
+          "raw": {
+            "boardBeforePassive": 1.5543660059604036,
+            "passiveAfterBoard": 2.758449247782039,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 1.7948152537423567,
+            "combined": 4.312815253742443
+          },
+          "display": {
+            "boardBeforePassive": 1.6,
+            "passiveAfterBoard": 2.8,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 1.8,
+            "combined": 4.4
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.66
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.6847500000000001
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "relative",
+        "cooldownMode": "divide",
+        "cooldownRounding": "ceil"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 77.99313428509817,
+          "both": 80.72548861927886,
+          "raw": {
+            "boardBeforePassive": 2.5435509517648995,
+            "passiveAfterBoard": 2.732354334180698,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 2.721938619278859,
+            "combined": 5.275905285945598
+          },
+          "display": {
+            "boardBeforePassive": 2.6,
+            "passiveAfterBoard": 2.8,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 2.8,
+            "combined": 5.3
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 22,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 21,
+              "probability": 0.67925
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.6847500000000001
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 72.23428142932976,
+          "both": 74.9114209599573,
+          "raw": {
+            "boardBeforePassive": 1.1826147626631638,
+            "passiveAfterBoard": 2.6771395306275423,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 1.3417542932906201,
+            "combined": 3.859754293290706
+          },
+          "display": {
+            "boardBeforePassive": 1.2,
+            "passiveAfterBoard": 2.7,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 1.4,
+            "combined": 3.9
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 22,
+              "probability": 0.6270000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.66
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.6847500000000001
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "raw"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 82.43179681023562,
+          "both": 85.46663135326808,
+          "raw": {
+            "boardBeforePassive": 6.982213476902359,
+            "passiveAfterBoard": 3.03483454303246,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 7.46308135326808,
+            "combined": 10.017048019934819
+          },
+          "display": {
+            "boardBeforePassive": 7,
+            "passiveAfterBoard": 3.1,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 7.5,
+            "combined": 10.1
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21.119999999999997,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20.16,
+              "probability": 0.785
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33.6,
+              "probability": 0.795
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 73.71725573305017,
+          "both": 76.59873714136944,
+          "raw": {
+            "boardBeforePassive": 2.665589066383575,
+            "passiveAfterBoard": 2.8814814083192744,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 3.0290704747027632,
+            "combined": 5.547070474702849
+          },
+          "display": {
+            "boardBeforePassive": 2.7,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 3.1,
+            "combined": 5.6
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21.119999999999997,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.75
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33.6,
+              "probability": 0.795
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "floor"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 83.21216792862448,
+          "both": 86.34694394957513,
+          "raw": {
+            "boardBeforePassive": 7.762584595291216,
+            "passiveAfterBoard": 3.134776020950653,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 8.34339394957513,
+            "combined": 10.897360616241869
+          },
+          "display": {
+            "boardBeforePassive": 7.8,
+            "passiveAfterBoard": 3.2,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 8.4,
+            "combined": 10.9
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20,
+              "probability": 0.785
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33,
+              "probability": 0.795
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 74.69133309849697,
+          "both": 77.6384348296345,
+          "raw": {
+            "boardBeforePassive": 3.6396664318303777,
+            "passiveAfterBoard": 2.9471017311375363,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 4.068768162967828,
+            "combined": 6.586768162967914
+          },
+          "display": {
+            "boardBeforePassive": 3.7,
+            "passiveAfterBoard": 3,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 4.1,
+            "combined": 6.6
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.75
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33,
+              "probability": 0.795
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "round"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 81.60374268916334,
+          "both": 84.63754573045561,
+          "raw": {
+            "boardBeforePassive": 6.154159355830075,
+            "passiveAfterBoard": 3.0338030412922734,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 6.633995730455609,
+            "combined": 9.187962397122348
+          },
+          "display": {
+            "boardBeforePassive": 6.2,
+            "passiveAfterBoard": 3.1,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 6.7,
+            "combined": 9.2
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20,
+              "probability": 0.785
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.795
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 74.00452502455137,
+          "both": 76.89739396550237,
+          "raw": {
+            "boardBeforePassive": 2.9528583578847787,
+            "passiveAfterBoard": 2.892868940951004,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 3.327727298835697,
+            "combined": 5.845727298835783
+          },
+          "display": {
+            "boardBeforePassive": 3,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 3.4,
+            "combined": 5.9
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.75
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.795
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "multiply",
+        "cooldownRounding": "ceil"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 79.99260089161584,
+          "both": 82.8631757929057,
+          "raw": {
+            "boardBeforePassive": 4.543017558282571,
+            "passiveAfterBoard": 2.8705749012898565,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 4.859625792905689,
+            "combined": 7.413592459572428
+          },
+          "display": {
+            "boardBeforePassive": 4.6,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 4.9,
+            "combined": 7.5
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 22,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 21,
+              "probability": 0.785
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.795
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 73.68187398237012,
+          "both": 76.49222604034135,
+          "raw": {
+            "boardBeforePassive": 2.6302073157035295,
+            "passiveAfterBoard": 2.8103520579712296,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 2.922559373674673,
+            "combined": 5.440559373674759
+          },
+          "display": {
+            "boardBeforePassive": 2.7,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 3,
+            "combined": 5.5
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 22,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.75
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.795
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "divide",
+        "cooldownRounding": "raw"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 82.89303690127034,
+          "both": 85.92978534568634,
+          "raw": {
+            "boardBeforePassive": 7.44345356793707,
+            "passiveAfterBoard": 3.0367484444160056,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 7.926235345686337,
+            "combined": 10.480202012353075
+          },
+          "display": {
+            "boardBeforePassive": 7.5,
+            "passiveAfterBoard": 3.1,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 8,
+            "combined": 10.5
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21.153846153846153,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20.19230769230769,
+              "probability": 0.785
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33.65384615384615,
+              "probability": 0.795
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 73.79304851629357,
+          "both": 76.67852991982879,
+          "raw": {
+            "boardBeforePassive": 2.7413818496269755,
+            "passiveAfterBoard": 2.8854814035352234,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 3.108863253162113,
+            "combined": 5.626863253162199
+          },
+          "display": {
+            "boardBeforePassive": 2.8,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 3.2,
+            "combined": 5.7
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21.153846153846153,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.75
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33.65384615384615,
+              "probability": 0.795
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "divide",
+        "cooldownRounding": "floor"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 83.21216792862448,
+          "both": 86.34694394957513,
+          "raw": {
+            "boardBeforePassive": 7.762584595291216,
+            "passiveAfterBoard": 3.134776020950653,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 8.34339394957513,
+            "combined": 10.897360616241869
+          },
+          "display": {
+            "boardBeforePassive": 7.8,
+            "passiveAfterBoard": 3.2,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 8.4,
+            "combined": 10.9
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20,
+              "probability": 0.785
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33,
+              "probability": 0.795
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 74.69133309849697,
+          "both": 77.6384348296345,
+          "raw": {
+            "boardBeforePassive": 3.6396664318303777,
+            "passiveAfterBoard": 2.9471017311375363,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 4.068768162967828,
+            "combined": 6.586768162967914
+          },
+          "display": {
+            "boardBeforePassive": 3.7,
+            "passiveAfterBoard": 3,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 4.1,
+            "combined": 6.6
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.75
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 33,
+              "probability": 0.795
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "divide",
+        "cooldownRounding": "round"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 81.60374268916334,
+          "both": 84.63754573045561,
+          "raw": {
+            "boardBeforePassive": 6.154159355830075,
+            "passiveAfterBoard": 3.0338030412922734,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 6.633995730455609,
+            "combined": 9.187962397122348
+          },
+          "display": {
+            "boardBeforePassive": 6.2,
+            "passiveAfterBoard": 3.1,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 6.7,
+            "combined": 9.2
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 20,
+              "probability": 0.785
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.795
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 74.00452502455137,
+          "both": 76.89739396550237,
+          "raw": {
+            "boardBeforePassive": 2.9528583578847787,
+            "passiveAfterBoard": 2.892868940951004,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 3.327727298835697,
+            "combined": 5.845727298835783
+          },
+          "display": {
+            "boardBeforePassive": 3,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 3.4,
+            "combined": 5.9
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 21,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.75
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.795
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    },
+    {
+      "config": {
+        "probabilityBoost": "absolute",
+        "cooldownMode": "divide",
+        "cooldownRounding": "ceil"
+      },
+      "rows": [
+        {
+          "id": "Z",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "characterId": "chr-00022",
+              "support": 0,
+              "board": {
+                "rate": 23.5,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 75.44958333333327,
+          "passiveOnly": 78.00355,
+          "boardOnly": 79.99260089161584,
+          "both": 82.8631757929057,
+          "raw": {
+            "boardBeforePassive": 4.543017558282571,
+            "passiveAfterBoard": 2.8705749012898565,
+            "passiveBeforeBoard": 2.5539666666667387,
+            "boardAfterPassive": 4.859625792905689,
+            "combined": 7.413592459572428
+          },
+          "display": {
+            "boardBeforePassive": 4.6,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 4.9,
+            "combined": 7.5
+          },
+          "observed": {
+            "board": 6.9,
+            "passive": 1.5,
+            "sum": 8.4
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 22,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-00022-5-uniq-0063-00",
+              "interval": 21,
+              "probability": 0.785
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.795
+            }
+          ]
+        },
+        {
+          "id": "AA",
+          "inputs": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "characterId": "chr-00010",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "characterId": "chr-00027",
+              "support": 0,
+              "board": {
+                "rate": 0,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "characterId": "chr-06004",
+              "support": 8,
+              "board": {
+                "rate": 14,
+                "cooldown": 4
+              }
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "characterId": "chr-06002",
+              "support": 0,
+              "board": {
+                "rate": 20,
+                "cooldown": 0
+              }
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "characterId": "chr-00026",
+              "support": 8,
+              "board": {
+                "rate": 24.5,
+                "cooldown": 4
+              }
+            }
+          ],
+          "base": 71.05166666666659,
+          "passiveOnly": 73.56966666666668,
+          "boardOnly": 73.68187398237012,
+          "both": 76.49222604034135,
+          "raw": {
+            "boardBeforePassive": 2.6302073157035295,
+            "passiveAfterBoard": 2.8103520579712296,
+            "passiveBeforeBoard": 2.518000000000086,
+            "boardAfterPassive": 2.922559373674673,
+            "combined": 5.440559373674759
+          },
+          "display": {
+            "boardBeforePassive": 2.7,
+            "passiveAfterBoard": 2.9,
+            "passiveBeforeBoard": 2.6,
+            "boardAfterPassive": 3,
+            "combined": 5.5
+          },
+          "observed": {
+            "board": 3.3,
+            "passive": 0.8,
+            "sum": 4.1
+          },
+          "combinedMatches": false,
+          "effectiveActive": [
+            {
+              "id": "card-00010-5-uniq-0010-00",
+              "interval": 29,
+              "probability": 0.55
+            },
+            {
+              "id": "card-00027-5-uniq-0022-00",
+              "interval": 19,
+              "probability": 0.55
+            },
+            {
+              "id": "card-06004-5-uniq-0060-00",
+              "interval": 22,
+              "probability": 0.6900000000000001
+            },
+            {
+              "id": "card-06002-5-uniq-0058-00",
+              "interval": 27,
+              "probability": 0.75
+            },
+            {
+              "id": "card-00026-5-uniq-0065-00",
+              "interval": 34,
+              "probability": 0.795
+            }
+          ]
+        }
+      ],
+      "combinedMatches": 0,
+      "individualMatches": 0
+    }
+  ],
+  "preferred": {
+    "config": {
+      "probabilityBoost": "relative",
+      "cooldownMode": "divide",
+      "cooldownRounding": "raw"
+    },
+    "rows": [
+      {
+        "id": "Z",
+        "inputs": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "characterId": "chr-00010",
+            "support": 0,
+            "board": {
+              "rate": 0,
+              "cooldown": 0
+            }
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "characterId": "chr-00027",
+            "support": 0,
+            "board": {
+              "rate": 0,
+              "cooldown": 0
+            }
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "characterId": "chr-06004",
+            "support": 8,
+            "board": {
+              "rate": 14,
+              "cooldown": 4
+            }
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "characterId": "chr-00022",
+            "support": 0,
+            "board": {
+              "rate": 23.5,
+              "cooldown": 4
+            }
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "characterId": "chr-00026",
+            "support": 8,
+            "board": {
+              "rate": 24.5,
+              "cooldown": 4
+            }
+          }
+        ],
+        "base": 75.44958333333327,
+        "passiveOnly": 78.00355,
+        "boardOnly": 80.8639045168607,
+        "both": 83.76678007633558,
+        "raw": {
+          "boardBeforePassive": 5.414321183527434,
+          "passiveAfterBoard": 2.9028755594748787,
+          "passiveBeforeBoard": 2.5539666666667387,
+          "boardAfterPassive": 5.763230076335574,
+          "combined": 8.317196743002313
+        },
+        "display": {
+          "boardBeforePassive": 5.5,
+          "passiveAfterBoard": 3,
+          "passiveBeforeBoard": 2.6,
+          "boardAfterPassive": 5.8,
+          "combined": 8.4
+        },
+        "observed": {
+          "board": 6.9,
+          "passive": 1.5,
+          "sum": 8.4
+        },
+        "combinedMatches": true,
+        "effectiveActive": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "interval": 29,
+            "probability": 0.55
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "interval": 19,
+            "probability": 0.55
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "interval": 21.153846153846153,
+            "probability": 0.6270000000000001
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "interval": 20.19230769230769,
+            "probability": 0.67925
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "interval": 33.65384615384615,
+            "probability": 0.6847500000000001
+          }
+        ]
+      },
+      {
+        "id": "AA",
+        "inputs": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "characterId": "chr-00010",
+            "support": 0,
+            "board": {
+              "rate": 0,
+              "cooldown": 0
+            }
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "characterId": "chr-00027",
+            "support": 0,
+            "board": {
+              "rate": 0,
+              "cooldown": 0
+            }
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "characterId": "chr-06004",
+            "support": 8,
+            "board": {
+              "rate": 14,
+              "cooldown": 4
+            }
+          },
+          {
+            "id": "card-06002-5-uniq-0058-00",
+            "characterId": "chr-06002",
+            "support": 0,
+            "board": {
+              "rate": 20,
+              "cooldown": 0
+            }
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "characterId": "chr-00026",
+            "support": 8,
+            "board": {
+              "rate": 24.5,
+              "cooldown": 4
+            }
+          }
+        ],
+        "base": 71.05166666666659,
+        "passiveOnly": 73.56966666666668,
+        "boardOnly": 72.30928795009396,
+        "both": 75.05875558176817,
+        "raw": {
+          "boardBeforePassive": 1.257621283427369,
+          "passiveAfterBoard": 2.7494676316742073,
+          "passiveBeforeBoard": 2.518000000000086,
+          "boardAfterPassive": 1.4890889151014903,
+          "combined": 4.007088915101576
+        },
+        "display": {
+          "boardBeforePassive": 1.3,
+          "passiveAfterBoard": 2.8,
+          "passiveBeforeBoard": 2.6,
+          "boardAfterPassive": 1.5,
+          "combined": 4.1
+        },
+        "observed": {
+          "board": 3.3,
+          "passive": 0.8,
+          "sum": 4.1
+        },
+        "combinedMatches": true,
+        "effectiveActive": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "interval": 29,
+            "probability": 0.55
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "interval": 19,
+            "probability": 0.55
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "interval": 21.153846153846153,
+            "probability": 0.6270000000000001
+          },
+          {
+            "id": "card-06002-5-uniq-0058-00",
+            "interval": 27,
+            "probability": 0.66
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "interval": 33.65384615384615,
+            "probability": 0.6847500000000001
+          }
+        ]
+      }
+    ],
+    "combinedMatches": 2,
+    "individualMatches": 0
+  },
+  "interpretation": {
+    "retrospective": true,
+    "samplesAtDiscovery": 2,
+    "distinctMemberSets": 2,
+    "independentPredictionSuccesses": 0,
+    "conclusion": "The relative-probability, frequency-divisor, unrounded-interval candidate is the sole tested variant matching combined Z 8.4 and AA 4.1. Both individual category predictions remain wrong.",
+    "individualFailure": "Marginal board/passive attribution predicts Z 5.5/3.0 and AA 1.3/2.8 rather than measured 6.9/1.5 and 3.3/0.8.",
+    "caution": "Matching a total cannot validate a category split. Many untested formulas may also fit two observations. Do not infer a board-to-passive multiplier or transfer a per-case residual."
+  },
+  "next": {
+    "sampleId": "AB",
+    "leaderId": "card-00018-5-uniq-0068-00",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-06004-5-uniq-0060-00",
+      "card-00021-5-uniq-0017-00",
+      "card-00026-5-uniq-0065-00"
+    ],
+    "profiles": [
+      {
+        "id": "card-00018-5-uniq-0068-00",
+        "level": 60,
+        "potential": 0
+      },
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "level": 40,
+        "potential": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "level": 70,
+        "potential": 0
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "level": 70,
+        "potential": 1
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "level": 11,
+        "potential": 0
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "level": 70,
+        "potential": 1
+      }
+    ],
+    "features": {
+      "id": "AB",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "Araw": 73.64333333333327,
+      "A": 73.7,
+      "W": 6160,
+      "rateSum": 155,
+      "rateDurationSum": 1585,
+      "SP": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "name": "시라누이 후레아",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true
+        }
+      ],
+      "observedActive": null,
+      "observedSP": null,
+      "displayedActiveFlatRate": {
+        "raw": 43.54441666666667,
+        "ceil": 43.6
+      },
+      "displayedActiveDurationRate": {
+        "raw": 43.67339166666667,
+        "ceil": 43.7
+      },
+      "rawActiveFlatRate": {
+        "raw": 43.51093611111108,
+        "ceil": 43.6
+      },
+      "power": {
+        "memberParameter": 84026,
+        "outfit": 0,
+        "board": 0,
+        "passive": 13617,
+        "memory": 0,
+        "enhancement": 0
+      },
+      "retainedPower": 97643,
+      "conditions": {
+        "leaderScoreSupport": 0,
+        "leaderParameterConditionMet": false,
+        "passiveSupport": [
+          0,
+          0,
+          8,
+          0,
+          8
+        ],
+        "active": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-06004-5-uniq-0060-00",
+            "condition": {
+              "kind": "life",
+              "threshold": 600
+            },
+            "conditionMet": true,
+            "effectiveValue": 115
+          },
+          {
+            "id": "card-00021-5-uniq-0017-00",
+            "condition": {
+              "kind": "combo",
+              "threshold": 40
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          }
+        ]
+      }
+    },
+    "quantized": {
+      "contributions": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "나키리 아야메",
+          "duration": 10,
+          "support": 135,
+          "rate": 0,
+          "condition": null,
+          "conditionMet": true,
+          "rawSupport": 11.25,
+          "roundedSupport": 11.25,
+          "rateContribution": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "토코야미 토와",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true,
+          "rawSupport": 10,
+          "roundedSupport": 10,
+          "rateContribution": 2
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "name": "주우후테이 라덴",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true,
+          "rawSupport": 10,
+          "roundedSupport": 10,
+          "rateContribution": 2
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "name": "시라누이 후레아",
+          "duration": 10,
+          "support": 120,
+          "rate": 40,
+          "condition": null,
+          "conditionMet": true,
+          "rawSupport": 10,
+          "roundedSupport": 10,
+          "rateContribution": 2
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "츠노마키 와타메",
+          "duration": 11,
+          "support": 110,
+          "rate": 35,
+          "condition": null,
+          "conditionMet": true,
+          "rawSupport": 10.083333333333334,
+          "roundedSupport": 10.09,
+          "rateContribution": 1.75
+        }
+      ],
+      "supportSum": 51.34,
+      "factor": 59.09,
+      "raw": 43.54933,
+      "display": 43.6
+    },
+    "joint": {
+      "id": "AB",
+      "inputs": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "characterId": "chr-00010",
+          "support": 0,
+          "board": {
+            "rate": 0,
+            "cooldown": 0
+          }
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "characterId": "chr-00027",
+          "support": 0,
+          "board": {
+            "rate": 0,
+            "cooldown": 0
+          }
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "characterId": "chr-06004",
+          "support": 8,
+          "board": {
+            "rate": 14,
+            "cooldown": 4
+          }
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "characterId": "chr-00021",
+          "support": 0,
+          "board": {
+            "rate": 6,
+            "cooldown": 0
+          }
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "characterId": "chr-00026",
+          "support": 8,
+          "board": {
+            "rate": 24.5,
+            "cooldown": 4
+          }
+        }
+      ],
+      "base": 73.64333333333327,
+      "passiveOnly": 76.2010666666666,
+      "boardOnly": 78.06449498850276,
+      "both": 81.017512774731,
+      "raw": {
+        "boardBeforePassive": 4.421161655169485,
+        "passiveAfterBoard": 2.9530177862282443,
+        "passiveBeforeBoard": 2.5577333333333314,
+        "boardAfterPassive": 4.816446108064397,
+        "combined": 7.374179441397729
+      },
+      "display": {
+        "boardBeforePassive": 4.5,
+        "passiveAfterBoard": 3,
+        "passiveBeforeBoard": 2.6,
+        "boardAfterPassive": 4.9,
+        "combined": 7.4
+      },
+      "observed": {
+        "board": null,
+        "passive": null,
+        "sum": null
+      },
+      "combinedMatches": null,
+      "effectiveActive": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "interval": 29,
+          "probability": 0.55
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "interval": 19,
+          "probability": 0.55
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "interval": 21.153846153846153,
+          "probability": 0.6270000000000001
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "interval": 26,
+          "probability": 0.5830000000000001
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "interval": 33.65384615384615,
+          "probability": 0.6847500000000001
+        }
+      ]
+    },
+    "alternatives": [
+      {
+        "config": {
+          "probabilityBoost": "relative",
+          "cooldownMode": "multiply",
+          "cooldownRounding": "raw"
+        },
+        "combinedDisplay": 8
+      },
+      {
+        "config": {
+          "probabilityBoost": "relative",
+          "cooldownMode": "multiply",
+          "cooldownRounding": "floor"
+        },
+        "combinedDisplay": 9.2
+      },
+      {
+        "config": {
+          "probabilityBoost": "relative",
+          "cooldownMode": "multiply",
+          "cooldownRounding": "round"
+        },
+        "combinedDisplay": 7.7
+      },
+      {
+        "config": {
+          "probabilityBoost": "relative",
+          "cooldownMode": "multiply",
+          "cooldownRounding": "ceil"
+        },
+        "combinedDisplay": 5
+      },
+      {
+        "config": {
+          "probabilityBoost": "relative",
+          "cooldownMode": "divide",
+          "cooldownRounding": "raw"
+        },
+        "combinedDisplay": 7.4
+      },
+      {
+        "config": {
+          "probabilityBoost": "relative",
+          "cooldownMode": "divide",
+          "cooldownRounding": "floor"
+        },
+        "combinedDisplay": 9.2
+      },
+      {
+        "config": {
+          "probabilityBoost": "relative",
+          "cooldownMode": "divide",
+          "cooldownRounding": "round"
+        },
+        "combinedDisplay": 7.7
+      },
+      {
+        "config": {
+          "probabilityBoost": "relative",
+          "cooldownMode": "divide",
+          "cooldownRounding": "ceil"
+        },
+        "combinedDisplay": 5
+      },
+      {
+        "config": {
+          "probabilityBoost": "absolute",
+          "cooldownMode": "multiply",
+          "cooldownRounding": "raw"
+        },
+        "combinedDisplay": 9.7
+      },
+      {
+        "config": {
+          "probabilityBoost": "absolute",
+          "cooldownMode": "multiply",
+          "cooldownRounding": "floor"
+        },
+        "combinedDisplay": 11.2
+      },
+      {
+        "config": {
+          "probabilityBoost": "absolute",
+          "cooldownMode": "multiply",
+          "cooldownRounding": "round"
+        },
+        "combinedDisplay": 9.5
+      },
+      {
+        "config": {
+          "probabilityBoost": "absolute",
+          "cooldownMode": "multiply",
+          "cooldownRounding": "ceil"
+        },
+        "combinedDisplay": 6.6
+      },
+      {
+        "config": {
+          "probabilityBoost": "absolute",
+          "cooldownMode": "divide",
+          "cooldownRounding": "raw"
+        },
+        "combinedDisplay": 9.2
+      },
+      {
+        "config": {
+          "probabilityBoost": "absolute",
+          "cooldownMode": "divide",
+          "cooldownRounding": "floor"
+        },
+        "combinedDisplay": 11.2
+      },
+      {
+        "config": {
+          "probabilityBoost": "absolute",
+          "cooldownMode": "divide",
+          "cooldownRounding": "round"
+        },
+        "combinedDisplay": 9.5
+      },
+      {
+        "config": {
+          "probabilityBoost": "absolute",
+          "cooldownMode": "divide",
+          "cooldownRounding": "ceil"
+        },
+        "combinedDisplay": 6.6
+      }
+    ],
+    "change": "From AA keep Suisei leader and Ayame, Towa, Raden, swimsuit Watame; replace regular Kanade 80/0 with regular Flare 11/0.",
+    "purpose": "A third composition tests the combined candidate without fitting to its measurement. Exactly the same two Happy support recipients remain.",
+    "hypotheses": {
+      "active": {
+        "display": 73.7,
+        "kind": "Existing research formula"
+      },
+      "special": {
+        "display": 43.6,
+        "kind": "Existing research formula"
+      },
+      "boardPlusPassive": {
+        "display": 7.4,
+        "kind": "New post-AA combined candidate; zero independent successes before AB"
+      },
+      "passive": {
+        "display": null,
+        "kind": "No individual formula"
+      },
+      "board": {
+        "display": null,
+        "kind": "No individual formula"
+      }
+    },
+    "assumptions": "Same pre-song view; Ayame singer effect excluded; Flare combo >=40 and Raden life >=600 treated as met. General Flare 11/0 was confirmed in P. Flare recorded member board rate6/cooldown0 carries forward. No changes to growth or board unlocks.",
+    "limitations": "Several skills and member boards change, so a match validates only the combined prediction for another composition. It does not identify the cause of the Z-to-AA passive change or distinguish every timing rule.",
+    "requestedMeasurements": "Active, SP, passive score and board score separately; member parameter and passive power for formation verification. Total score bonus if available; preserve omitted rows as unreported."
+  },
+  "sourceHashes": {
+    "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+    "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+    "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+    "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+    "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+    "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+    "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+    "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+  },
+  "newEvidenceHashes": {
+    "analysis/unit-score/board-observations/WX-clarification-20260909.json": "76063061352c10a3bd54bbb34c166d5082c969079123ae8f778c4e16c733d32f",
+    "analysis/unit-score/board-observations/ririka-X-20260909.json": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438",
+    "analysis/unit-score/board-observations/suisei-Y-clarification-20260909.json": "b5c622f99d2a322d8b7f43e177ed2f03ab3bad4ebdae2726142cdcb28adcc12b",
+    "analysis/unit-score/board-observations/AA-member-clarification-20260909.json": "fbe5828797493d54745b95440322da282521b109ddb29d092a66875b8e7097dc"
+  },
+  "observationHashes": {
+    "analysis/unit-score/observations/Z-20260909-completed.json": "7953e134131cc90242a93e5def0a1bfde32dd3f8472d9f81911c1da5a275f655",
+    "analysis/unit-score/observations/AA-20260909.json": "fcf6fbdb4cfef6e64cef245f057b427bf4a8ad2611c456d0220688f7b63ccb65"
+  },
+  "AAComparisonSourceSHA256": "85892be042c6e54f806a0b1b0413641e7b73426266325c5b3072fec08ae26e15",
+  "AACheckpointSHA256": "6d5f23c404cd4809f47f8c99599297508764459bc9e395ec457bbe68f2b46927"
+}

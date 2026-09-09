@@ -1,0 +1,55 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+import {compareAJAndPlanAK} from './HolodoriDecks/analysis/unit-score/compare-passive-aj-20260909.mjs';
+import {sourceLock} from './HolodoriDecks/analysis/unit-score/io.mjs';
+
+const root=fileURLToPath(new URL('.',import.meta.url));
+const hash=buffer=>crypto.createHash('sha256').update(buffer).digest('hex');
+const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
+const manifest=read('MANIFEST.sha256.json');
+const walk=(dir,prefix='')=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>{
+ assert.ok(!e.isSymbolicLink(),'Symlink is outside this snapshot format');
+ const rel=prefix+e.name;
+ return e.isDirectory()?walk(path.join(dir,e.name),rel+'/'):[rel];
+});
+for(const entry of manifest.files){
+ assert.ok(!path.isAbsolute(entry.path)&&!entry.path.split('/').includes('..'));
+ const bytes=fs.readFileSync(path.join(root,entry.path));
+ assert.equal(bytes.length,entry.bytes,`Length mismatch: ${entry.path}`);
+ assert.equal(hash(bytes),entry.sha256,`SHA-256 mismatch: ${entry.path}`);
+}
+const actual=walk(root).filter(p=>p!=='MANIFEST.sha256.json').sort();
+assert.deepEqual(actual,manifest.files.map(f=>f.path).sort(),'Snapshot file inventory changed');
+const projectPrefix='HolodoriDecks/';
+const projectHash=p=>hash(fs.readFileSync(path.join(root,projectPrefix,p)));
+const plan=read(projectPrefix+'analysis/unit-score/experiments/baseline-passive-AK-20260909.json');
+assert.deepEqual(sourceLock(),plan.sourceHashes);
+for(const [p,h] of Object.entries({...plan.newEvidenceHashes,...plan.observationHashes,...plan.previousSourceLocks}))assert.equal(projectHash(p),h,p);
+assert.equal(projectHash('analysis/unit-score/compare-passive-aj-20260909.mjs'),plan.analysisSourceSHA256);
+assert.equal(projectHash('analysis/unit-score/experiments/baseline-passive-AJ-20260909.json'),plan.AJCheckpointSHA256);
+const result=compareAJAndPlanAK();
+assert.deepEqual(result.next.features.power,plan.features.power);
+assert.deepEqual(result.next.profiles,plan.profiles);
+assert.deepEqual(result.next.hypotheses,plan.hypotheses);
+assert.equal(result.candidateComparisons.filter(c=>c.matches).length,0);
+assert.equal(result.summary.observations,34);
+const catalog=read(projectPrefix+'analysis/unit-score/observation-catalog-20260909.json');
+assert.equal(catalog.observations.length,34);
+assert.deepEqual(catalog.observations.map(o=>o.sampleId),result.rows.map(r=>r.id));
+for(const row of catalog.observations){
+ const f=result.rows.find(r=>r.id===row.sampleId);
+ assert.equal(row.rawGame.scoreBonusDetail.active,f.A);
+ assert.equal(row.rawGame.scoreBonusDetail.special,f.quantized.display);
+ assert.deepEqual(row.memberIds,f.memberIds);
+}
+console.log(JSON.stringify({status:'PASS',latestObserved:'AJ',nextUnobserved:'AK',filesVerified:manifest.files.length,
+ bytesVerified:manifest.files.reduce((s,f)=>s+f.bytes,0),activeMatches:result.summary.activeMatches,
+ spMatches:result.summary.refinedSPMatches,observations:34,distinctMemberSets:21,
+ positivePassiveJointCompatibility:result.extensionAudit.positivePassive.jointCompatible,
+ individualPassiveFormulaConfirmed:false,AJBothFrozenCandidatesStillFail:true,
+ AK:{memberParameter:plan.features.power.memberParameter,outfitPower:plan.features.power.outfit,passivePower:plan.features.power.passive,
+ active:plan.features.A,special:plan.quantized.display,passiveInvarianceHypothesis:plan.hypotheses.passive.display,
+ boardInvarianceHypothesis:plan.hypotheses.board.display},node:process.version},null,2));
