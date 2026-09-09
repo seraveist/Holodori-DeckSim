@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AW",
+  "observation": {
+    "schemaVersion": 1,
+    "sampleId": "AW",
+    "observedAt": "2026-09-09",
+    "gameVersion": null,
+    "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+    "leaderId": "card-06003-3-nrml-0059-00",
+    "memberIds": [
+      "card-00018-5-uniq-0068-00",
+      "card-00022-5-uniq-0063-00",
+      "card-06002-5-uniq-0058-00",
+      "card-00021-5-uniq-0064-00",
+      "card-00026-5-uniq-0065-00"
+    ],
+    "profiles": [
+      {
+        "id": "card-06003-3-nrml-0059-00",
+        "level": 1,
+        "potential": 0
+      },
+      {
+        "id": "card-00018-5-uniq-0068-00",
+        "level": 60,
+        "potential": 0
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "level": 80,
+        "potential": 1
+      },
+      {
+        "id": "card-06002-5-uniq-0058-00",
+        "level": 80,
+        "potential": 0
+      },
+      {
+        "id": "card-00021-5-uniq-0064-00",
+        "level": 80,
+        "potential": 1
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "level": 70,
+        "potential": 1
+      }
+    ],
+    "profilesConfirmed": false,
+    "profileBasis": "Inherited from AW setup; no independent level or node screenshot provided.",
+    "boardOverrides": {
+      "chr-00018": {
+        "rate": 0,
+        "cooldown": 0
+      },
+      "chr-00022": {
+        "rate": 17.8,
+        "cooldown": 0
+      },
+      "chr-06002": {
+        "rate": 0,
+        "cooldown": 0
+      },
+      "chr-00021": {
+        "rate": 6,
+        "cooldown": 0
+      },
+      "chr-00026": {
+        "rate": 24.5,
+        "cooldown": 4
+      }
+    },
+    "leaderSupportOverride": 13.3,
+    "leaderJudgmentRequested": true,
+    "rawUserInput": "일단 AW는 모두 일치하는걸 확인했어. 다음으로 와타메의 보드만 끄고 다시 알려줄께.",
+    "screenshot": null,
+    "confirmationScope": "User confirms all-match after the user-facing table listing passive4.7,board11.3,active74.0,SP42.9. Power values only in the linked document are not inferred confirmed.",
+    "game": {
+      "unitScore": null,
+      "overallPower": null,
+      "scoreBonusPct": null,
+      "powerDetail": {
+        "memberParameter": null,
+        "outfit": null,
+        "passive": null,
+        "board": null,
+        "memory": null,
+        "enhancement": null
+      },
+      "scoreBonusDetail": {
+        "outfit": null,
+        "active": 74,
+        "special": 42.9,
+        "passive": 4.7,
+        "board": 11.3
+      }
+    },
+    "scoreRowPresence": {
+      "outfit": null,
+      "active": true,
+      "special": true,
+      "passive": true,
+      "board": true
+    },
+    "measurementView": {
+      "planned": "Formation detail before song selection",
+      "confirmedForThisSample": false
+    },
+    "boardContext": "AW setup after clarification: Watame rate24.5/frequency4,Noel rate17.8/frequency0,Kanade rate0,Flare rate6,Ririka support13.3 and judgment ON. Input states are procedure-derived; future Watame-OFF proposal is not counted as an observation.",
+    "predictionCheckpoint": "analysis/unit-score/experiments/baseline-challenges-AV-AX-20260909.json",
+    "predictionCheckpointSHA256": "e30e696b8c6da1b9422931eb94aeef17bbae9afb244a470cdd978d030e339b89"
+  },
+  "comparisons": [
+    {
+      "key": "passive",
+      "predicted": 4.7,
+      "observed": 4.7,
+      "matches": true
+    },
+    {
+      "key": "board",
+      "predicted": 11.3,
+      "observed": 11.3,
+      "matches": true
+    },
+    {
+      "key": "active",
+      "predicted": 74,
+      "observed": 74,
+      "matches": true
+    },
+    {
+      "key": "special",
+      "predicted": 42.9,
+      "observed": 42.9,
+      "matches": true
+    }
+  ],
+  "selectedCandidate": {
+    "passive": 4.7,
+    "board": 11.3,
+    "pairMatches": true,
+    "retrospectivePairsThroughAT": 40,
+    "prospectivePairs": {
+      "measured": 1,
+      "matches": 1,
+      "ids": [
+        "AW"
+      ]
+    }
+  },
+  "alternatives": [
+    {
+      "name": "previous endpoints only",
+      "engine": {},
+      "passive": 4.7,
+      "board": 11.2,
+      "rawBP": 89.77990862699913,
+      "passiveMatches": true,
+      "boardMatches": false
+    },
+    {
+      "name": "value rounding only",
+      "engine": {
+        "stage": "value",
+        "digits": 1,
+        "mode": "ceil"
+      },
+      "passive": 4.7,
+      "board": 11.2,
+      "rawBP": 89.798362867067,
+      "passiveMatches": true,
+      "boardMatches": false
+    },
+    {
+      "name": "denominator rounding only",
+      "engine": {
+        "stage": "denominator",
+        "digits": 3,
+        "mode": "floor"
+      },
+      "passive": 4.7,
+      "board": 11.3,
+      "rawBP": 89.80889201651136,
+      "passiveMatches": true,
+      "boardMatches": true
+    }
+  ],
+  "joint": {
+    "raw": 15.829450027912927,
+    "possibleDisplays": [
+      15.9,
+      16
+    ],
+    "observed": 16,
+    "compatible": true
+  },
+  "summary": {
+    "observations": 45,
+    "distinctMemberSets": 24,
+    "activeObserved": 41,
+    "activeMatches": 41,
+    "spObserved": 41,
+    "spMatches": 41,
+    "confirmedPowerComponents": 106,
+    "positivePassiveJointCompatibility": 30,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN",
+      "AO",
+      "AP",
+      "AQ",
+      "AR",
+      "AS",
+      "AT",
+      "AW"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false,
+    "AOActiveSPUnreported": true,
+    "ASActiveSPUnreported": true,
+    "ATActiveSPUnreported": true,
+    "AWPowerUnreported": true,
+    "expandedCandidateProspectivePairs": 1,
+    "expandedCandidateProspectiveMatches": 1
+  },
+  "interpretation": {
+    "newIndependentMemberSet": true,
+    "scope": "AW all-match reply confirms the four numeric score rows in the most recent user-facing forecast table. No power rows or totals were newly confirmed.",
+    "history": "The plan and forecast were presented before the reply; Git packaging occurs after this reply. AW was measured before AV; do not infer AV, AX or AU measurements.",
+    "limitations": [
+      "Card/node settings are inherited from the stated procedure, not separately audited in an image.",
+      "The denominator-only alternative also matches AW, so this one success does not identify a unique internal formula."
+    ],
+    "productionFormulaChanged": false
+  },
+  "provenance": {
+    "observationPath": "analysis/unit-score/observations/AW-20260909.json",
+    "observationSHA256": "f48f9b92e50d72e1f7503ff24ce2205cce076c6a36d6629dc13b808f9306ab67",
+    "checkpoint": "analysis/unit-score/experiments/baseline-challenges-AV-AX-20260909.json",
+    "checkpointSHA256": "e30e696b8c6da1b9422931eb94aeef17bbae9afb244a470cdd978d030e339b89",
+    "previousCatalog": "analysis/unit-score/observation-catalog-AT-20260909.json",
+    "previousCatalogSHA256": "ca0ec4bc1ca6bd549e48135cff0a55b292c98d0f9edd1a17efc0af5e00b6f7f0",
+    "analysisSourceSHA256": "2bd0a30e22e424069c359f85d60b2d30fb625cb638a3f35c39ea9d8c7a356c63",
+    "modelSourceSHA256": "3d48cdc50d03d891bb2f651167d9256030a9e29fe9624b509e01cec5a19d46eb",
+    "kernelSourceSHA256": "9c89a944de0b3645a65bdba44bf991d100cd60a7961c4ef88b42e8b50a0e503a"
+  }
+}

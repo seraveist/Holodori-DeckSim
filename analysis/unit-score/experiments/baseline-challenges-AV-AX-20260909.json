@@ -1,0 +1,778 @@
+{
+  "schemaVersion": 1,
+  "status": "Prospective planned controls; no new game observations",
+  "observedThrough": "AT",
+  "previousObservations": 44,
+  "futureSampleIds": [
+    "AV",
+    "AW",
+    "AX"
+  ],
+  "plans": [
+    {
+      "sampleId": "AV",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00018-5-uniq-0068-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00",
+        "card-00027-5-uniq-0022-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        }
+      ],
+      "boardOverrides": {
+        "chr-00018": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00022": {
+          "rate": 17.8,
+          "cooldown": 0
+        },
+        "chr-06002": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00021": {
+          "rate": 6,
+          "cooldown": 0
+        },
+        "chr-00027": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      "status": "Planned; no measurement received",
+      "observationsReceived": [],
+      "leaderSupportNodesPct": [
+        6.2,
+        4,
+        3.1
+      ],
+      "leaderSupportPct": 13.3,
+      "leaderJudgmentEnabled": true,
+      "measurementView": "Formation detail before song selection",
+      "leader": {
+        "id": "card-06003-3-nrml-0059-00",
+        "name": "We are hololive!",
+        "character": "이치조 리리카",
+        "level": 1,
+        "potential": 0
+      },
+      "members": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "여름의 일격! 물총 아르페지오",
+          "character": "호시마치 스이세이",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "파도를 두른 귀요미 Knight",
+          "character": "시로가네 노엘",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "name": "퍼레이드로 미소를 전달",
+          "character": "오토노세 카나데",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "name": "sparks sunset",
+          "character": "시라누이 후레아",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "끝날 기미가 안 보이는 편안한 밤놀이",
+          "character": "토코야미 토와",
+          "level": 70,
+          "potential": 0
+        }
+      ],
+      "purpose": "A new positive-passive formation where both selected precision sites are necessary among the tracked alternatives: selected board10.3 versus old/value-only/denominator-only10.2.",
+      "changes": "From AR replace Ayame with swimsuit Suisei, regular Flare with swimsuit Flare, and swimsuit Kanade with regular Kanade. Keep Towa and swimsuit Noel. Use the explicit listed order.",
+      "prediction": {
+        "memberParameter": 110295,
+        "outfitPower": 16553,
+        "passivePower": 3243,
+        "active": 64.2,
+        "special": 37.3,
+        "passive": 2.4,
+        "board": 10.3
+      },
+      "alternatives": [
+        {
+          "name": "previous endpoints only",
+          "engine": {},
+          "passive": 2.4,
+          "board": 10.2,
+          "rawBP": 76.67531690700685
+        },
+        {
+          "name": "value rounding only",
+          "engine": {
+            "stage": "value",
+            "digits": 1,
+            "mode": "ceil"
+          },
+          "passive": 2.4,
+          "board": 10.2,
+          "rawBP": 76.69871697443044
+        },
+        {
+          "name": "denominator rounding only",
+          "engine": {
+            "stage": "denominator",
+            "digits": 3,
+            "mode": "floor"
+          },
+          "passive": 2.4,
+          "board": 10.2,
+          "rawBP": 76.69409899726438
+        }
+      ],
+      "diagnostic": {
+        "rawBP": 76.70007796724124,
+        "roundedIncrement": 12.6,
+        "supportByMember": {
+          "card-00018-5-uniq-0068-00": 0,
+          "card-00022-5-uniq-0063-00": 9,
+          "card-06002-5-uniq-0058-00": 0,
+          "card-00021-5-uniq-0064-00": 17,
+          "card-00027-5-uniq-0022-00": 0
+        },
+        "activeConditions": [
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-06002-5-uniq-0058-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 75
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": false,
+            "effectiveValue": 60
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          }
+        ],
+        "passiveScoreRowExpected": true,
+        "nearBoundaryNote": "These cases are deliberately selected near display boundaries. Reconfirm all card levels and board values on a mismatch; do not correct the formula per case."
+      },
+      "requestedMeasurements": [
+        "passive score (or row absent)",
+        "board score",
+        "active score",
+        "SP score",
+        "member parameter",
+        "outfit power",
+        "passive power"
+      ],
+      "unpredicted": [
+        "board/memory/enhancement power",
+        "overall power total",
+        "total score bonus with unmodeled rows",
+        "final unit score",
+        "played-song score"
+      ]
+    },
+    {
+      "sampleId": "AW",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00018-5-uniq-0068-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "boardOverrides": {
+        "chr-00018": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00022": {
+          "rate": 17.8,
+          "cooldown": 0
+        },
+        "chr-06002": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00021": {
+          "rate": 6,
+          "cooldown": 0
+        },
+        "chr-00026": {
+          "rate": 24.5,
+          "cooldown": 4
+        }
+      },
+      "status": "Planned; no measurement received",
+      "observationsReceived": [],
+      "leaderSupportNodesPct": [
+        6.2,
+        4,
+        3.1
+      ],
+      "leaderSupportPct": 13.3,
+      "leaderJudgmentEnabled": true,
+      "measurementView": "Formation detail before song selection",
+      "leader": {
+        "id": "card-06003-3-nrml-0059-00",
+        "name": "We are hololive!",
+        "character": "이치조 리리카",
+        "level": 1,
+        "potential": 0
+      },
+      "members": [
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "여름의 일격! 물총 아르페지오",
+          "character": "호시마치 스이세이",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "파도를 두른 귀요미 Knight",
+          "character": "시로가네 노엘",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "name": "퍼레이드로 미소를 전달",
+          "character": "오토노세 카나데",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "name": "sparks sunset",
+          "character": "시라누이 후레아",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "name": "한여름의 복슬복슬 플로트 타임",
+          "character": "츠노마키 와타메",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "purpose": "Replace only AV Towa with swimsuit Watame, adding another support source and frequency4% under the documented character boards. Tests larger overlapping passive totals and different timed overlaps.",
+      "changes": "From AV replace slot5 Towa70/0 with swimsuit Watame70/1. Keep the other four cards and their board settings.",
+      "prediction": {
+        "memberParameter": 110256,
+        "outfitPower": 16546,
+        "passivePower": 3243,
+        "active": 74,
+        "special": 42.9,
+        "passive": 4.7,
+        "board": 11.3
+      },
+      "alternatives": [
+        {
+          "name": "previous endpoints only",
+          "engine": {},
+          "passive": 4.7,
+          "board": 11.2,
+          "rawBP": 89.77990862699913
+        },
+        {
+          "name": "value rounding only",
+          "engine": {
+            "stage": "value",
+            "digits": 1,
+            "mode": "ceil"
+          },
+          "passive": 4.7,
+          "board": 11.2,
+          "rawBP": 89.798362867067
+        },
+        {
+          "name": "denominator rounding only",
+          "engine": {
+            "stage": "denominator",
+            "digits": 3,
+            "mode": "floor"
+          },
+          "passive": 4.7,
+          "board": 11.3,
+          "rawBP": 89.80889201651136
+        }
+      ],
+      "diagnostic": {
+        "rawBP": 89.8015642678807,
+        "roundedIncrement": 15.9,
+        "supportByMember": {
+          "card-00018-5-uniq-0068-00": 0,
+          "card-00022-5-uniq-0063-00": 9,
+          "card-06002-5-uniq-0058-00": 0,
+          "card-00021-5-uniq-0064-00": 25,
+          "card-00026-5-uniq-0065-00": 16
+        },
+        "activeConditions": [
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-06002-5-uniq-0058-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 75
+          },
+          {
+            "id": "card-00021-5-uniq-0064-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 125
+          },
+          {
+            "id": "card-00026-5-uniq-0065-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 3,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 120
+          }
+        ],
+        "passiveScoreRowExpected": true,
+        "nearBoundaryNote": "These cases are deliberately selected near display boundaries. Reconfirm all card levels and board values on a mismatch; do not correct the formula per case."
+      },
+      "requestedMeasurements": [
+        "passive score (or row absent)",
+        "board score",
+        "active score",
+        "SP score",
+        "member parameter",
+        "outfit power",
+        "passive power"
+      ],
+      "unpredicted": [
+        "board/memory/enhancement power",
+        "overall power total",
+        "total score bonus with unmodeled rows",
+        "final unit score",
+        "played-song score"
+      ]
+    },
+    {
+      "sampleId": "AX",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "boardOverrides": {
+        "chr-00010": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00027": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00022": {
+          "rate": 17.8,
+          "cooldown": 0
+        },
+        "chr-00018": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-06002": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      "status": "Planned; no measurement received",
+      "observationsReceived": [],
+      "leaderSupportNodesPct": [
+        6.2,
+        4,
+        3.1
+      ],
+      "leaderSupportPct": 13.3,
+      "leaderJudgmentEnabled": true,
+      "measurementView": "Formation detail before song selection",
+      "leader": {
+        "id": "card-06003-3-nrml-0059-00",
+        "name": "We are hololive!",
+        "character": "이치조 리리카",
+        "level": 1,
+        "potential": 0
+      },
+      "members": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "name": "저승에서 유유자적, 자유로운 등불",
+          "character": "나키리 아야메",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "name": "끝날 기미가 안 보이는 편안한 밤놀이",
+          "character": "토코야미 토와",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "name": "파도를 두른 귀요미 Knight",
+          "character": "시로가네 노엘",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "name": "여름의 일격! 물총 아르페지오",
+          "character": "호시마치 스이세이",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "name": "바닷바람에 실어 보내는 미소의 하모니",
+          "character": "오토노세 카나데",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "purpose": "New zero-score-support-passive formation. Tests whether the same rounded increment continues to yield board10.8 with a zero passive allocation. The prior endpoint-only model gives10.7.",
+      "changes": "From the recorded AR card set replace regular Flare11/0 with swimsuit Suisei60/0. Retain swimsuit Kanade40/0, not the regular Kanade80/0 used in AV/AW.",
+      "prediction": {
+        "memberParameter": 90193,
+        "outfitPower": 13537,
+        "passivePower": 3540,
+        "active": 68.9,
+        "special": 37.5,
+        "passive": 0,
+        "board": 10.8
+      },
+      "alternatives": [
+        {
+          "name": "previous endpoints only",
+          "engine": {},
+          "passive": 0,
+          "board": 10.7,
+          "rawBP": 79.58524890995362
+        },
+        {
+          "name": "value rounding only",
+          "engine": {
+            "stage": "value",
+            "digits": 1,
+            "mode": "ceil"
+          },
+          "passive": 0,
+          "board": 10.8,
+          "rawBP": 79.60257761501379
+        },
+        {
+          "name": "denominator rounding only",
+          "engine": {
+            "stage": "denominator",
+            "digits": 3,
+            "mode": "floor"
+          },
+          "passive": 0,
+          "board": 10.8,
+          "rawBP": 79.60194055120425
+        }
+      ],
+      "diagnostic": {
+        "rawBP": 79.60419362653994,
+        "roundedIncrement": 10.8,
+        "supportByMember": {
+          "card-00010-5-uniq-0010-00": 0,
+          "card-00027-5-uniq-0022-00": 0,
+          "card-00022-5-uniq-0063-00": 0,
+          "card-00018-5-uniq-0068-00": 0,
+          "card-06002-5-uniq-0066-00": 0
+        },
+        "activeConditions": [
+          {
+            "id": "card-00010-5-uniq-0010-00",
+            "condition": {
+              "kind": "attribute",
+              "value": 2,
+              "count": 2
+            },
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-00027-5-uniq-0022-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 80
+          },
+          {
+            "id": "card-00022-5-uniq-0063-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 120
+          },
+          {
+            "id": "card-00018-5-uniq-0068-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          },
+          {
+            "id": "card-06002-5-uniq-0066-00",
+            "condition": null,
+            "conditionMet": true,
+            "effectiveValue": 100
+          }
+        ],
+        "passiveScoreRowExpected": false,
+        "nearBoundaryNote": "These cases are deliberately selected near display boundaries. Reconfirm all card levels and board values on a mismatch; do not correct the formula per case."
+      },
+      "requestedMeasurements": [
+        "passive score (or row absent)",
+        "board score",
+        "active score",
+        "SP score",
+        "member parameter",
+        "outfit power",
+        "passive power"
+      ],
+      "unpredicted": [
+        "board/memory/enhancement power",
+        "overall power total",
+        "total score bonus with unmodeled rows",
+        "final unit score",
+        "played-song score"
+      ]
+    }
+  ],
+  "selectedEngine": {
+    "sites": [
+      {
+        "stage": "value",
+        "digits": 1,
+        "mode": "ceil"
+      },
+      {
+        "stage": "probabilityPercent",
+        "digits": 1,
+        "mode": "ceil"
+      }
+    ]
+  },
+  "formulaCommit": "23827b5",
+  "formulaStatus": "Frozen 40-case retrospective candidate; do not fit these future outcomes before grading.",
+  "selection": {
+    "approach": "Enumerated distinct-character five-card combinations in the documented validation subset at AR-compatible Noel/Kanade settings. Omitted the23 previously observed member sets.",
+    "newSetsExamined": 124,
+    "choice": "AV separates both-site rounding from every tracked alternative; AW adds support overlap with one card replacement; AX tests zero passive with one replacement from AR.",
+    "limitations": "This is a documented validation subset, not the whole original personal inventory. Predictions were used to choose informative cases; no future outcome was available."
+  },
+  "execution": {
+    "firstRequested": "AV",
+    "later": [
+      "AW",
+      "AX"
+    ],
+    "AU": "Still unobserved; existing judgment OFF plan preserved but not executed by this request.",
+    "noelOnRateNodesPct": [
+      11.1,
+      3.7,
+      3
+    ],
+    "noelOffRateNodesPct": [
+      3.7,
+      2
+    ],
+    "noelFrequencyOffPct": 4,
+    "kanadeOffRateNodesPct": [
+      15,
+      5
+    ],
+    "flareOnRateNodesPct": [
+      6
+    ],
+    "watameForAW": {
+      "rateNodesPct": [
+        11.1,
+        3.7,
+        3,
+        3,
+        3.7
+      ],
+      "sumPct": 24.5,
+      "frequencyPct": 4
+    },
+    "judgment": "Keep the Ririka judgment node ON as requested in AR. If AU was executed separately, restore it before AV/AW/AX.",
+    "dependencies": "If a target board state cannot be reached without changing other score-relevant nodes, report that before counting the control. Do not spend growth resources to match a profile; report a profile difference.",
+    "rawInput": "Store each new user reply separately. Grade against these predictions; leave unreported values null. An absent passive score row may be normalized to0 for comparison without inventing a numeric observation."
+  },
+  "provenance": {
+    "catalog": "analysis/unit-score/observation-catalog-AT-20260909.json",
+    "catalogSHA256": "ca0ec4bc1ca6bd549e48135cff0a55b292c98d0f9edd1a17efc0af5e00b6f7f0",
+    "subsetPath": "analysis/unit-score/validation-cards.import.json",
+    "subsetSHA256": "1151226b2f9bf74e881d008c976ed56d1562773ecf6e24893fe8b0c3c552d5cd",
+    "arPath": "analysis/unit-score/observations/AR-20260909.json",
+    "arSHA256": "69785d90a2bd51fa5d1506968aefca7aed15dd4bc567db747f8ec0afae3116ae",
+    "boardPath": "analysis/unit-score/board-context.json",
+    "boardSHA256": "913b89ea901ea1d07a1e8529b5dbe81747c54690e9199ea42095bb7be39b4555",
+    "sourceHashes": {
+      "analysis/unit-score/probe-expanded-at-20260909.mjs": "3d48cdc50d03d891bb2f651167d9256030a9e29fe9624b509e01cec5a19d46eb",
+      "analysis/unit-score/expanded-kernel-at-20260909.mjs": "9c89a944de0b3645a65bdba44bf991d100cd60a7961c4ef88b42e8b50a0e503a",
+      "analysis/unit-score/reports/expanded-AT-20260909.json": "8da0eea99b20b74f1eaa3492296ae75e50059ea251dd22a48f9813b55d9a895e",
+      "analysis/unit-score/probe-proportional-allocation-20260909.mjs": "a6bafb96442a7a29c20ddb0e4136ebca956c6606fb1f0c722c27d22132e14deb",
+      "analysis/unit-score/probe-sp-displayed-active-20260909.mjs": "d2bc5d311777675637f1f28a906b3b0559f7729b45442633ac216b7b5b9cfec1",
+      "analysis/unit-score/compare-sp-v-rounding-20260909.mjs": "49b699f0a104b2633425604efcfa0f8d2c37717c1f8148e4f688aa8e72cbfd31",
+      "analysis/unit-score/board-observations/noel-node-dependency-20260909.json": "a2e0ffeb97be6e1003e8e276cbb3a9f641aeed51a33db0aea08f86d90d8903b6",
+      "analysis/unit-score/board-observations/ririka-X-20260909.json": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438"
+    },
+    "analysisSourceSHA256": "d26de8fcac8dacf24b30aae89ae1e53c7fec0c3fb30ef72eaa414f213466776a"
+  },
+  "productionFormulaChanged": false
+}

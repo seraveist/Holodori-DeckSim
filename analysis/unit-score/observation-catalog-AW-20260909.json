@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AW",
+  "extendsCatalog": "analysis/unit-score/observation-catalog-AT-20260909.json",
+  "extendsCatalogSHA256": "ca0ec4bc1ca6bd549e48135cff0a55b292c98d0f9edd1a17efc0af5e00b6f7f0",
+  "summary": {
+    "observations": 45,
+    "distinctMemberSets": 24,
+    "activeObserved": 41,
+    "activeMatches": 41,
+    "spObserved": 41,
+    "spMatches": 41,
+    "confirmedPowerComponents": 106,
+    "positivePassiveJointCompatibility": 30,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN",
+      "AO",
+      "AP",
+      "AQ",
+      "AR",
+      "AS",
+      "AT",
+      "AW"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false,
+    "AOActiveSPUnreported": true,
+    "ASActiveSPUnreported": true,
+    "ATActiveSPUnreported": true,
+    "AWPowerUnreported": true,
+    "expandedCandidateProspectivePairs": 1,
+    "expandedCandidateProspectiveMatches": 1
+  },
+  "scope": "Append AW four-score confirmation only. AV/AX/AU/AY remain unobserved.",
+  "observations": [
+    {
+      "sampleId": "AW",
+      "sourcePath": "analysis/unit-score/observations/AW-20260909.json",
+      "sourceSHA256": "f48f9b92e50d72e1f7503ff24ce2205cce076c6a36d6629dc13b808f9306ab67",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00018-5-uniq-0068-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "boardOverrides": {
+        "chr-00018": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00022": {
+          "rate": 17.8,
+          "cooldown": 0
+        },
+        "chr-06002": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00021": {
+          "rate": 6,
+          "cooldown": 0
+        },
+        "chr-00026": {
+          "rate": 24.5,
+          "cooldown": 4
+        }
+      },
+      "leaderSupportOverride": 13.3,
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": null,
+          "outfit": null,
+          "passive": null,
+          "board": null,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 74,
+          "special": 42.9,
+          "passive": 4.7,
+          "board": 11.3
+        }
+      },
+      "rawUserInput": "일단 AW는 모두 일치하는걸 확인했어. 다음으로 와타메의 보드만 끄고 다시 알려줄께."
+    }
+  ]
+}

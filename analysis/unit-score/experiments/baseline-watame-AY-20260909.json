@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AY",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00018-5-uniq-0068-00",
+    "card-00022-5-uniq-0063-00",
+    "card-06002-5-uniq-0058-00",
+    "card-00021-5-uniq-0064-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    },
+    {
+      "id": "card-00021-5-uniq-0064-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "boardOverrides": {
+    "chr-00018": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 17.8,
+      "cooldown": 0
+    },
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00021": {
+      "rate": 6,
+      "cooldown": 0
+    },
+    "chr-00026": {
+      "rate": 0,
+      "cooldown": 0
+    }
+  },
+  "status": "Planned; no AY measurement received",
+  "observationsReceived": [],
+  "origin": "User confirmed AW and proposed turning off only Watame boards next.",
+  "userRequest": "일단 AW는 모두 일치하는걸 확인했어. 다음으로 와타메의 보드만 끄고 다시 알려줄께.",
+  "scopeInterpretation": "Only the previously specified Watame activation-rate and frequency nodes are meant here. Whether the user instead resets the full tree or changes extra effects must be recorded with the result.",
+  "intervention": "Keep AW cards/profiles and all other character boards unchanged. Turn OFF Watame rate11.1%,3.7%,3%,3%,3.7% (total24.5%) and frequency4%. Do not reset unrelated board nodes.",
+  "leaderSupportPct": 13.3,
+  "leaderSupportNodesPct": [
+    6.2,
+    4,
+    3.1
+  ],
+  "leaderJudgmentEnabled": true,
+  "measurementView": "Formation detail before song selection",
+  "prediction": {
+    "active": 74,
+    "special": 42.9,
+    "passive": 7,
+    "board": 12
+  },
+  "diagnostic": {
+    "rawBP": 92.85073613572399,
+    "rawA": 73.9504585990862,
+    "roundedIncrement": 18.9,
+    "AWReference": {
+      "active": 74,
+      "special": 42.9,
+      "passive": 4.7,
+      "board": 11.3
+    },
+    "expectedDisplayedJointChange": "4.7+11.3=16.0 to7.0+12.0=19.0. The fixed-window model predicts an increase when these timing nodes turn off; this is a falsifiable forecast, not a claimed improvement in played-song score."
+  },
+  "requestedMeasurements": [
+    "passive score",
+    "board score",
+    "active score",
+    "SP score",
+    "any additional board effects disabled"
+  ],
+  "unpredicted": [
+    "board/memory/enhancement power",
+    "overall totals",
+    "final unit score",
+    "played-song score"
+  ],
+  "provenance": {
+    "baseline": "analysis/unit-score/experiments/baseline-challenges-AV-AX-20260909.json",
+    "baselineSHA256": "e30e696b8c6da1b9422931eb94aeef17bbae9afb244a470cdd978d030e339b89",
+    "analysisSourceSHA256": "4cfd499c2b9522503b268496edb44764ca08d32f80680fb90652a4163166b107",
+    "expandedSourceSHA256": "3d48cdc50d03d891bb2f651167d9256030a9e29fe9624b509e01cec5a19d46eb",
+    "kernelSourceSHA256": "9c89a944de0b3645a65bdba44bf991d100cd60a7961c4ef88b42e8b50a0e503a"
+  },
+  "productionFormulaChanged": false
+}

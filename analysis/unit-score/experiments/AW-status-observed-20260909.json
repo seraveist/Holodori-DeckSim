@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AW",
+  "status": "Observed: four forecast score rows confirmed; first prospective success of expanded candidate",
+  "observationPath": "analysis/unit-score/observations/AW-20260909.json",
+  "observationSHA256": "f48f9b92e50d72e1f7503ff24ce2205cce076c6a36d6629dc13b808f9306ab67",
+  "report": "analysis/unit-score/reports/AW-comparison-20260909.json",
+  "reportSHA256": "e151eda20278efa05fa6b580b354b2608db0dcce30adbd54ffaee98edff22532",
+  "catalog": "analysis/unit-score/observation-catalog-AW-20260909.json",
+  "catalogSHA256": "ab674118c0839206e88797617b4271ac8c7ff99b7a1385a946dcfb417f7b20e5",
+  "nextUnobserved": "AY",
+  "otherUnobserved": [
+    "AV",
+    "AX",
+    "AU"
+  ]
+}

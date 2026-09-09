@@ -1,10 +1,16 @@
-# HolodoriDecks 타 PC 인수인계 — 확장 후보40건 재현 / AU 대기
+# HolodoriDecks 타 PC 인수인계 — AW 사전 검증 성공 / AY 대기
 
-기준일: 2026-09-09. **스킬 효과량과 발동률을 각각0.1 단위로 먼저 올리는 새 공통 후보가 비교 가능한40건의 패시브·보드 표시값을 사후 재현했다.** 인게임 내부식 확정이나 새 실측40건을 뜻하지 않는다. AU는 미관측이며 서비스 계산식은 변경하지 않았다. 과거 요청·가설은 기록이며 새 사용자 지시가 아니다.
+기준일: 2026-09-09. **스킬 효과량·발동률 중간 올림 후보가 기존40건 사후 재현에 이어 새 AW 편성의 네 스코어 항목을 사전 예측했다.** 독립 실측 성공은AW1건이다. 다음은 와타메 발동 관련 보드를 끄는AY이며, AV·AX·AU는 미관측이다. 서비스 계산식은 변경하지 않았다. 과거 요청·가설은 기록이며 새 사용자 지시가 아니다.
 
 ## 바로 이어갈 지점
 
-최신 요청은 “검사식을 좀 더 확장해보면 어때?”다. [확장 탐색 결과](analysis/unit-score/reports/expanded-AT-20260909.md)를 우선 읽는다. 양의 패시브29/29와 무패시브 보드11/11를 함께 재현하는 후보를 찾았다. 단일 중간 처리·배분 설정31,698개, 그 결과를 보고 고른 두 중간 처리의 결합180개를 비교했다. 알려진 G와 AR까지 모형 선택에 사용했으므로 전부 사후 재현이다. 새 식의 독립 실측 성공은0건이다.
+최신 답변은 **“일단 AW는 모두 일치하는걸 확인했어. 다음으로 와타메의 보드만 끄고 다시 알려줄께.”**다. [AW 확인과 AY 계획](analysis/unit-score/reports/AW-validation-20260909.md)을 우선 읽는다. AW의 액티브74.0/SP42.9/패시브4.7/보드11.3 네 행을 확인했고 종합력·총합은null로 남겼다. 누적45건·24개 멤버 조합, 액티브/SP41/41, 종합력 확인106개다.
+
+**AY는 아직 미관측이다.** AW 그대로 와타메 발동률24.5%와 빈도4%만OFF인 조건으로 액티브74.0/SP42.9/패시브7.0/보드12.0을 사전에 고정했다. 노엘17.8%/빈도0%, 카나데0%, 후레아6%, 리리카13.3%·판정ON은 유지한다. 전체 보드 초기화로 다른 효과도 바뀌면 추가 변경을 기록해야 한다. `node scripts/test-validation-aw.mjs`로 AW와AY 계획을 재현한다.
+
+AV·AW·AX 예측은 [세 편성 검증표](analysis/unit-score/reports/challenges-AV-AX-20260909.md)에 고정했다. AV를 먼저 요청했지만 실제로 AW가 먼저 확인됐다. AV·AX·AU를 실행된 것으로 추정하지 않는다.
+
+이전 “검사식을 좀 더 확장해보면 어때?” 요청의 [확장 탐색 결과](analysis/unit-score/reports/expanded-AT-20260909.md)는 고정 이력이다. 양의 패시브29/29와 무패시브 보드11/11을 사후 재현했다. 단일 처리·배분 설정31,698개와 적응적으로 고른 두 처리의 결합180개를 비교했다. 알려진 G와 AR도 모형 선택에 사용했으므로 이40건은 AW 사전 성공과 구분한다.
 
 직전 사용자 답변은 AR 재확인 **“11.8%에 패시브 2.4가 맞아”**다. 편성·노드 요청을 다시 제시한 후 두 행을 확인했으며 별도 카드·노드 화면이나 새로운 측정 절차는 제공되지 않았다. [AR 재확인과 이전 반올림 비교](analysis/unit-score/reports/AR-reconfirmation-20260909.md)에 기록했다. 원본 AR과44건 집계는 유지한다. 이전1,098개 탐색은28/29로 AR 보드가 틀렸으며, 이 실패도 그대로 보존한다. 새 후보는 그 이전보다 앞선 발동확률·효과량 연산을 바꾼다.
 
@@ -21,6 +27,8 @@ AR 설정으로 되돌려 재측정했다면 AU 전에 노엘·후레아·카나
 새 후보는 판정 기여를 별도 수치로 넣지 않으므로 AU를P3.0/B10.1로 예측한다. 이 예측은 `experiments/AU-expanded-candidate-20260909.json`에 별도 고정했다. 실제P3.0/B10.0이면 새 모형의 판정 기여 생략도 재검토한다. 기존 AU 계획을 덮어쓰지 않는다.
 
 ## 확인 범위와 미해결
+
+최신 확인은 AW 추가 후45건이다. 아래44건·23조합과40/40 수치는 AT까지의 고정 연구 기준이다. AW의 첫 사전 성공이 분모 버림 대안과도 일치하므로 개별 내부식을 유일하게 확정하지 않는다.
 
 누적44건·23개 멤버 조합, 액티브/SP는 제공된40건에서40/40, 기본 종합력 세부106개, 양의 패시브 원시 합계 후보 호환29건(사후14+후속15)이다. AK·AO·AS·AT는 두 스코어 행만 확인한 부분 관측이다.
 
@@ -156,9 +164,9 @@ Git의 `validation/unit-score-handoff-20260909` 브랜치를 내려받고 프로
 node verify-handoff.mjs
 ```
 
-이 명령은 최초 고정 연구143개와 후속 원문·소스·보고서·계획·스크린샷의 해시 및 수치 재현을 검사한다. 최신 집계는44건·멤버 조합23개·액티브/SP40/40·기본 종합력 세부106개·양의 패시브 합계 후보 호환29건이다. AU는 관측에 넣지 않는다.
+이 명령은 최초 고정 연구143개와 후속 원문·소스·보고서·계획·스크린샷의 해시 및 수치 재현을 검사한다. 최신 집계는45건·멤버 조합24개·액티브/SP41/41·기본 종합력 세부106개·양의 패시브 합계 후보 호환30건이다. 새 후보는 기존40건 사후 재현과AW1건 사전 성공으로 구분한다. AV·AX·AU·AY는 관측에 넣지 않는다.
 
-최신40건 확장 후보와 정수 연산 교차 검사는 `node scripts/test-validation-expanded-at.mjs`로 재현한다. AR 재확인과이전29건 반올림 탐색은 `node scripts/test-validation-ar-reconfirmation.mjs`로 재현한다. AT와 미관측 AU 계획은 `node scripts/test-validation-at.mjs`로 재현한다. AS는 `node scripts/test-validation-as.mjs`를 사용한다. 과거 관측·계획 검사도 보존한다.
+최신 AW 확인과 AY 예측은 `node scripts/test-validation-aw.mjs`로 재현한다. 세 편성의 원래 사전 예측은 `node scripts/test-validation-challenges-av-ax.mjs`, AT까지40건 확장 후보와 정수 연산 교차 검사는 `node scripts/test-validation-expanded-at.mjs`로 재현한다. AR 재확인과이전29건 반올림 탐색은 `node scripts/test-validation-ar-reconfirmation.mjs`로 재현한다. AT와 미관측 AU 계획은 `node scripts/test-validation-at.mjs`로 재현한다. 과거 관측·계획 검사도 보존한다.
 
 기존 서비스 계산의 회귀와 초기 연구 탐색까지 함께 재현하려면 다음을 실행한다.
 
@@ -179,6 +187,9 @@ AK 실측은 기존 `baseline-passive-AK-20260909.json`을 수정하지 않고 �
 | 위치 | 내용 |
 |---|---|
 | `HANDOFF_CURRENT.md` | 이 문서 — 현재 상태의 우선 진입점 |
+| `analysis/unit-score/reports/AW-validation-20260909.md` | 최신 AW 사전 성공과 AY 보드OFF 예측 |
+| `analysis/unit-score/observation-catalog-AW-20260909.json` | 최신45건 관측 목록 |
+| `analysis/unit-score/experiments/baseline-watame-AY-20260909.json` | 와타메 발동률·빈도OFF의 미관측 사전 예측 |
 | `analysis/unit-score/reports/expanded-AT-20260909.md` | 새 중간 정밀도 후보40건 사후 재현과 한계 |
 | `analysis/unit-score/experiments/AU-expanded-candidate-20260909.json` | 새 후보의 미관측 AU 사전 예측 |
 | `analysis/unit-score/reports/AT-validation-20260909.md` | AS/AT 비교와 AU 판정 노드 계획 |
