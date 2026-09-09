@@ -26,6 +26,7 @@ const tests = [
   'scripts/test-validation-at-plan.mjs',
   'scripts/test-validation-at.mjs',
   'scripts/test-validation-ar-reconfirmation.mjs',
+  'scripts/test-validation-expanded-at.mjs',
 ];
 if (args.includes('--research-grid')) tests.push(...[
   'probe-dummy-active-joint.mjs', 'probe-dummy-environment.mjs', 'probe-dummy-identifiability.mjs',

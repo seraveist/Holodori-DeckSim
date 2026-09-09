@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AU",
+  "status": "Planned: no AU measurement received",
+  "observationsReceived": [],
+  "originalPlan": "analysis/unit-score/experiments/baseline-judgment-AU-20260909.json",
+  "originalPlanSHA256": "9f3e6503326122c449e7c6294ca14691853385081007b687fea1616bb8d39c9d",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00021-5-uniq-0017-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "boardOverrides": {
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00021": {
+      "rate": 0,
+      "cooldown": 0
+    }
+  },
+  "leaderSupportOverride": 13.3,
+  "leaderJudgmentEnabled": false,
+  "intervention": "All member activation-rate/frequency boards OFF. Ririka support6.2%+4%+3.1%=13.3% ON. Disable only the judgment-conversion node. Compare with AS. AR-restored settings must first return to these member timing inputs.",
+  "engine": {
+    "sites": [
+      {
+        "stage": "value",
+        "digits": 1,
+        "mode": "ceil"
+      },
+      {
+        "stage": "probabilityPercent",
+        "digits": 1,
+        "mode": "ceil"
+      }
+    ]
+  },
+  "prediction": {
+    "passive": 3,
+    "board": 10.1,
+    "active": 75.2,
+    "special": 43.9
+  },
+  "interpretation": "The expanded candidate assigns no separate numeric judgment contribution and predicts no change from AS. AU3.0/10.0 would contradict that omission. The old AU alternatives are preserved; no measurement is fabricated.",
+  "provenance": {
+    "source": "analysis/unit-score/probe-expanded-at-20260909.mjs",
+    "sourceSHA256": "3d48cdc50d03d891bb2f651167d9256030a9e29fe9624b509e01cec5a19d46eb",
+    "kernelSHA256": "9c89a944de0b3645a65bdba44bf991d100cd60a7961c4ef88b42e8b50a0e503a",
+    "reportSHA256": "8da0eea99b20b74f1eaa3492296ae75e50059ea251dd22a48f9813b55d9a895e"
+  },
+  "productionFormulaChanged": false
+}
