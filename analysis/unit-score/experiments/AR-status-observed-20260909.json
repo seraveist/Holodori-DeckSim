@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AR",
+  "revision": 2,
+  "status": "Observed; rounded-increment board prediction failed; raw fractional comparator matches.",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-rounded-AR-revised-20260909.json",
+  "frozenPlanSHA256": "1d69486a18eb12ec7c292ece4ced070bddebd0ab5973316aabbd8562e2220e94",
+  "observation": "analysis/unit-score/observations/AR-20260909.json",
+  "observationSHA256": "69785d90a2bd51fa5d1506968aefca7aed15dd4bc567db747f8ec0afae3116ae",
+  "screenshot": "analysis/unit-score/observations/screenshots/AR-20260909.png",
+  "screenshotSHA256": "4e4e8f080da2974852818c7d72f1a3bec723d1756ae3789a0219870bdbebe8ce",
+  "report": "analysis/unit-score/reports/AR-comparison-20260909.json",
+  "reportSHA256": "5396c01189be7b89dc6f54e8ca6eb69210e455f6f28d2b1ecd7a615b863b11be",
+  "catalog": "analysis/unit-score/observation-catalog-AR-20260909.json",
+  "catalogSHA256": "db63be865ed91aa4276261118dcab9bec9302a11d264ec90c2a0871ac837af02",
+  "analysisSource": "analysis/unit-score/compare-ar-20260909.mjs",
+  "analysisSourceSHA256": "f601d68e7eb218581db04f349ac047d38f4eee49845fda1ba6d077a85c7dde4c",
+  "result": {
+    "passive": 2.4,
+    "board": 11.8,
+    "joint": 14.2,
+    "roundedPairMatches": false,
+    "rawFractionalPairMatches": true,
+    "structuralRejection": {
+      "modeledRoundedIncrement": 14,
+      "maximumTwoCeilDisplaySum": 14.1,
+      "observedDisplaySum": 14.2,
+      "impossibleAtAnyAllocationRatio": true,
+      "proof": "For nonnegative x+y=14.0, both0.1-ceil values sum to14.0 or14.1. Observed2.4+11.8=14.2 therefore rejects this rounded increment regardless of the split ratio. The conclusion uses the requested board inputs."
+    }
+  }
+}

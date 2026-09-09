@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AR",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00021-5-uniq-0017-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "boardOverrides": {
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 17.8,
+      "cooldown": 0
+    }
+  },
+  "revision": 2,
+  "status": "Revised plan; no AR measurement received",
+  "observationsReceived": [],
+  "intervention": "From AQ disable only the single Noel3.7% rate node that can be disabled without other effects. Retain the other3.7%,11.1%,3%=17.8%. Noel2% and frequency4% remain OFF. Kanade15%/5% remain OFF; Flare6% and all Ririka leader nodes remain unchanged.",
+  "baselineValues": {
+    "memberParameter": 79007,
+    "outfitPower": 11859,
+    "passivePower": 7816,
+    "active": 75.2,
+    "special": 43.9
+  },
+  "hypotheses": {
+    "roundedFractional": {
+      "passive": 2.4,
+      "board": 11.7,
+      "roundedIncrement": 14
+    },
+    "rawFractional": {
+      "passive": 2.4,
+      "board": 11.8
+    },
+    "predictedVisibleScoreTotal": 133.2
+  },
+  "features": {
+    "id": "AR",
+    "raw": 14.067175156955898,
+    "Araw": 75.119294237116,
+    "Braw": 86.03053074746505,
+    "BPraw": 89.18646939407189,
+    "observedPassive": null,
+    "observedBoard": null,
+    "features": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "p": 0.55,
+        "d": 10,
+        "I": 29,
+        "v": 100,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 6
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "p": 0.55,
+        "d": 8,
+        "I": 19,
+        "v": 80,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 10
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "p": 0.55,
+        "d": 7,
+        "I": 21,
+        "v": 120,
+        "s": 9,
+        "r": 17.8,
+        "f": 0,
+        "L": 13.3,
+        "count": 9
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "p": 0.55,
+        "d": 9,
+        "I": 26,
+        "v": 100,
+        "s": 9,
+        "r": 6,
+        "f": 0,
+        "L": 13.3,
+        "count": 7
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "p": 0.46,
+        "d": 8,
+        "I": 23,
+        "v": 100,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 8
+      }
+    ]
+  },
+  "prediction": {
+    "id": "AR",
+    "passiveWeight": 73869.23076923078,
+    "boardWeight": 366071.83586206904,
+    "rawPassive": 2.350699466835485,
+    "rawBoard": 11.649300533164515,
+    "passive": 2.4,
+    "board": 11.7,
+    "observedPassive": null,
+    "observedBoard": null,
+    "passiveMatches": null,
+    "boardMatches": null,
+    "roundedIncrement": 14
+  },
+  "revisionReason": "User reported node dependency before any AR score measurement. Original two-node-only control is infeasible; the one-node revision still separates the rounded and raw fractional models.",
+  "independentStatus": "First prospective test for the new rounded formula. The constraint response supplies no outcome and is not a validation observation.",
+  "requestedMeasurements": "Passive/board score, Active/SP if visible, and any extra node effects that changed.",
+  "provenance": {
+    "originalPlan": "analysis/unit-score/experiments/baseline-rounded-AR-20260909.json",
+    "originalPlanSHA256": "0e424e81c32c691550ea66c480af17325e9fcd120ef78607af608456d6738154",
+    "constraintPath": "analysis/unit-score/board-observations/noel-node-dependency-20260909.json",
+    "constraintSHA256": "a2e0ffeb97be6e1003e8e276cbb3a9f641aeed51a33db0aea08f86d90d8903b6",
+    "observationPath": "analysis/unit-score/observations/AQ-20260909.json",
+    "observationSHA256": "9ddf9311a67bbb8514dec817f57bf32604704bbc1551a0945ed6a0975d2829a6",
+    "probeReport": "analysis/unit-score/reports/rounded-allocation-AQ-20260909.json",
+    "probeReportSHA256": "8c0fea76046add22578a491c20765b9f8b0d3eaf2d236d7d8057f7c27f848743",
+    "sourceHashes": {
+      "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+      "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+      "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+      "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+      "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+      "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+      "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+      "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+    },
+    "probeSourceSHA256": "50dba8c55ac7301023c6b6fe0f2b39b6a936f874e2f0c87016d17c06ec982ffc",
+    "analysisSourceSHA256": "c4654499575dd25cca256c7ee4232a49d46f12cf3f31116d953d4d68dee939da",
+    "productionFormulaChanged": false
+  }
+}

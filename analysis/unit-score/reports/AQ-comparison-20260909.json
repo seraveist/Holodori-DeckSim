@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AQ",
+  "observation": {
+    "schemaVersion": 1,
+    "sampleId": "AQ",
+    "observedAt": "2026-09-09",
+    "gameVersion": null,
+    "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+    "leaderId": "card-06003-3-nrml-0059-00",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-00022-5-uniq-0063-00",
+      "card-00021-5-uniq-0017-00",
+      "card-06002-5-uniq-0066-00"
+    ],
+    "profiles": [
+      {
+        "id": "card-06003-3-nrml-0059-00",
+        "level": 1,
+        "potential": 0
+      },
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "level": 40,
+        "potential": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "level": 70,
+        "potential": 0
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "level": 80,
+        "potential": 1
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "level": 11,
+        "potential": 0
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "level": 40,
+        "potential": 0
+      }
+    ],
+    "profilesConfirmed": false,
+    "profileBasis": "Frozen AQ plan inherited. The image-only message follows the pending AQ request; the detail panel does not show card profiles or node states.",
+    "measurementView": {
+      "planned": "Formation detail before song selection",
+      "confirmedForThisSample": false,
+      "visible": "Unit score detail",
+      "basis": "Screenshot shows the detail panel, not the song-selection state."
+    },
+    "rawUserInput": "[Image attachment; no accompanying text]",
+    "screenshot": {
+      "path": "analysis/unit-score/observations/screenshots/AQ-20260909.png",
+      "sha256": "6b2ce77dc6270bcb533a205f4425bbb01cacdbb8e0ba66e28b97d5fb316f685d",
+      "originalBasename": "codex-clipboard-98228efc-537b-4607-9b27-ad5658c48849.png",
+      "attachmentIndex": 1
+    },
+    "game": {
+      "unitScore": null,
+      "overallPower": 127795,
+      "scoreBonusPct": 133.4,
+      "powerDetail": {
+        "memberParameter": 79007,
+        "outfit": 11859,
+        "passive": 7816,
+        "board": 23808,
+        "memory": 4432,
+        "enhancement": 873
+      },
+      "scoreBonusDetail": {
+        "outfit": null,
+        "active": 75.2,
+        "special": 43.9,
+        "passive": 2.3,
+        "board": 12
+      }
+    },
+    "scoreRowPresence": {
+      "outfit": false,
+      "active": true,
+      "special": true,
+      "passive": true,
+      "board": true
+    },
+    "categoryStatus": {
+      "totals": "Overall power and score bonus totals directly visible; final unit score not shown.",
+      "scoreOutfit": "No score-outfit row displayed. Raw value stays null; the sum of visible score rows is computed separately."
+    },
+    "boardContext": "AQ requested Noel activation-rate2% additionally OFF, leaving rate21.5%; Noel frequency4% and Kanade15%/5% stay OFF, Flare6% and Ririka leader nodes unchanged. Inherited controls, not audited from the detail screenshot.",
+    "predictionCheckpoint": "analysis/unit-score/experiments/baseline-rate-AQ-20260909.json",
+    "predictionCheckpointSHA256": "cd879cc649595bbf5dfbccb5ab0490aaa73240fd1433f5cdb703974d0de5f3a3",
+    "boardOverrides": {
+      "chr-06002": {
+        "rate": 0,
+        "cooldown": 0
+      },
+      "chr-00022": {
+        "rate": 21.5,
+        "cooldown": 0
+      }
+    },
+    "sampleIdentification": "Contextual mapping to the pending AQ experiment; the message does not explicitly name AQ."
+  },
+  "baselineComparisons": [
+    {
+      "key": "memberParameter",
+      "predicted": 79007,
+      "observed": 79007,
+      "matches": true
+    },
+    {
+      "key": "outfitPower",
+      "predicted": 11859,
+      "observed": 11859,
+      "matches": true
+    },
+    {
+      "key": "passivePower",
+      "predicted": 7816,
+      "observed": 7816,
+      "matches": true
+    },
+    {
+      "key": "active",
+      "predicted": 75.2,
+      "observed": 75.2,
+      "matches": true
+    },
+    {
+      "key": "special",
+      "predicted": 43.9,
+      "observed": 43.9,
+      "matches": true
+    }
+  ],
+  "features": {
+    "id": "AQ",
+    "raw": 14.252983164870841,
+    "Araw": 75.119294237116,
+    "Braw": 86.19091477861731,
+    "BPraw": 89.37227740198684,
+    "observedPassive": 2.3,
+    "observedBoard": 12,
+    "features": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "p": 0.55,
+        "d": 10,
+        "I": 29,
+        "v": 100,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 6
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "p": 0.55,
+        "d": 8,
+        "I": 19,
+        "v": 80,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 10
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "p": 0.55,
+        "d": 7,
+        "I": 21,
+        "v": 120,
+        "s": 9,
+        "r": 21.5,
+        "f": 0,
+        "L": 13.3,
+        "count": 9
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "p": 0.55,
+        "d": 9,
+        "I": 26,
+        "v": 100,
+        "s": 9,
+        "r": 6,
+        "f": 0,
+        "L": 13.3,
+        "count": 7
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "p": 0.46,
+        "d": 8,
+        "I": 23,
+        "v": 100,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 8
+      }
+    ]
+  },
+  "frozenHypotheses": {
+    "finite200": {
+      "id": "AQ",
+      "passiveWeight": 68607,
+      "boardWeight": 356088.9710000001,
+      "rawPassive": 2.3024810282278225,
+      "rawBoard": 11.950502136643019,
+      "passive": 2.4,
+      "board": 12,
+      "observedPassive": 2.3,
+      "observedBoard": 12,
+      "passiveMatches": false,
+      "boardMatches": true,
+      "pairMatches": false
+    },
+    "fractionalCount": {
+      "id": "AQ",
+      "passiveWeight": 73869.23076923078,
+      "boardWeight": 384517.0758620691,
+      "rawPassive": 2.296876864174444,
+      "rawBoard": 11.956106300696398,
+      "passive": 2.3,
+      "board": 12,
+      "observedPassive": 2.3,
+      "observedBoard": 12,
+      "passiveMatches": true,
+      "boardMatches": true,
+      "pairMatches": true
+    }
+  },
+  "joint": {
+    "raw": 14.252983164870841,
+    "possibleDisplays": [
+      14.3,
+      14.4
+    ],
+    "observed": 14.3,
+    "compatible": true
+  },
+  "arithmetic": {
+    "visiblePowerSum": 127795,
+    "reportedPower": 127795,
+    "visibleScoreSum": 133.4,
+    "reportedScore": 133.4
+  },
+  "summary": {
+    "observations": 41,
+    "distinctMemberSets": 23,
+    "activeObserved": 39,
+    "activeMatches": 39,
+    "spObserved": 39,
+    "spMatches": 39,
+    "confirmedPowerComponents": 103,
+    "positivePassiveJointCompatibility": 26,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN",
+      "AO",
+      "AP",
+      "AQ"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false,
+    "AOActiveSPUnreported": true
+  },
+  "interpretation": {
+    "finite200PredictionRejected": true,
+    "fractionalAlternativeMatchesThisControl": true,
+    "oldFormulaProspectivePairs": {
+      "matched": 1,
+      "measured": 2,
+      "success": [
+        "AP"
+      ],
+      "failure": [
+        "AQ"
+      ]
+    },
+    "caveats": [
+      "Cards, growth and node changes inherit the AQ request; this detail image does not audit them.",
+      "One alternative match does not establish a general formula. The rejected finite prediction remains frozen.",
+      "The AQ plan and question preceded the image; its Git checkpoint commit occurred after receipt.",
+      "Overall power arithmetic is checked, but board/memory/enhancement are not predicted. Final unit score remains unreported."
+    ],
+    "productionFormulaChanged": false
+  },
+  "provenance": {
+    "checkpoint": "analysis/unit-score/experiments/baseline-rate-AQ-20260909.json",
+    "checkpointSHA256": "cd879cc649595bbf5dfbccb5ab0490aaa73240fd1433f5cdb703974d0de5f3a3",
+    "observationPath": "analysis/unit-score/observations/AQ-20260909.json",
+    "observationSHA256": "9ddf9311a67bbb8514dec817f57bf32604704bbc1551a0945ed6a0975d2829a6",
+    "previousReport": "analysis/unit-score/reports/AP-comparison-20260909.json",
+    "previousReportSHA256": "35ad1aef4f709d1e2a021b74e41b55db4b2897b0cc7a4676859f4c09c6204c79",
+    "analysisSourceSHA256": "b879504bf3d336b89f847596db881719305cfdceea704cb39c0a771aeb4b59a3",
+    "sourceHashes": {
+      "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+      "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+      "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+      "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+      "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+      "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+      "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+      "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+    }
+  }
+}

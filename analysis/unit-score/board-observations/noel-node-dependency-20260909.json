@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-09-09",
+  "source": "User answer to initial AR request",
+  "rawUserInput": "3.7 한개만 끄는건 가능한데 두개는 불가능해. 두개를 다 끄려면 3.0%도 하나 더 같이 꺼져야해. 노드 위치상 어쩔수없어 어떻게 할까?",
+  "characterId": "chr-00022",
+  "confirmedConstraint": "One3.7% activation-rate node can be disabled on its own. Disabling both3.7% nodes requires also disabling a3.0% node.",
+  "initialARExecuted": false,
+  "scoreMeasurement": null,
+  "interpretation": "Revise prospective AR to one3.7% node OFF from AQ. Do not treat this constraint answer as a score observation or change AQ inputs."
+}

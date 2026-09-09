@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AQ",
+  "status": "Observed; finite200 passive prediction failed. Fractional raw alternative matches this control.",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-rate-AQ-20260909.json",
+  "frozenPlanSHA256": "cd879cc649595bbf5dfbccb5ab0490aaa73240fd1433f5cdb703974d0de5f3a3",
+  "observation": "analysis/unit-score/observations/AQ-20260909.json",
+  "observationSHA256": "9ddf9311a67bbb8514dec817f57bf32604704bbc1551a0945ed6a0975d2829a6",
+  "screenshot": "analysis/unit-score/observations/screenshots/AQ-20260909.png",
+  "screenshotSHA256": "6b2ce77dc6270bcb533a205f4425bbb01cacdbb8e0ba66e28b97d5fb316f685d",
+  "report": "analysis/unit-score/reports/AQ-comparison-20260909.json",
+  "reportSHA256": "435d839fef4dc507688d0d203d49ccaee5eaf58bdba657e2746cf9079d7d866c",
+  "catalog": "analysis/unit-score/observation-catalog-AQ-20260909.json",
+  "catalogSHA256": "32902184fbab71678537f604b9b8e3f7d39b087dd31592f4a877dc0c0f1bb856",
+  "analysisSource": "analysis/unit-score/compare-aq-20260909.mjs",
+  "analysisSourceSHA256": "b879504bf3d336b89f847596db881719305cfdceea704cb39c0a771aeb4b59a3",
+  "result": {
+    "passive": 2.3,
+    "board": 12,
+    "finite200PairMatches": false,
+    "fractionalPairMatches": true
+  }
+}

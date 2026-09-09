@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AR",
+  "observedAt": "2026-09-09",
+  "gameVersion": null,
+  "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00021-5-uniq-0017-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Revised AR plan inherited. Image-only response to revised one-node control; detail panel does not audit profiles or nodes.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "visible": "Unit score detail",
+    "basis": "Screenshot shows the detail panel, not the song-selection state."
+  },
+  "rawUserInput": "[Image attachment; no accompanying text]",
+  "screenshot": {
+    "path": "analysis/unit-score/observations/screenshots/AR-20260909.png",
+    "sha256": "4e4e8f080da2974852818c7d72f1a3bec723d1756ae3789a0219870bdbebe8ce",
+    "originalBasename": "codex-clipboard-933a4c6e-4c5c-4af3-af34-e0d76cdbd743.png",
+    "attachmentIndex": 1
+  },
+  "game": {
+    "unitScore": null,
+    "overallPower": 127795,
+    "scoreBonusPct": 133.3,
+    "powerDetail": {
+      "memberParameter": 79007,
+      "outfit": 11859,
+      "passive": 7816,
+      "board": 23808,
+      "memory": 4432,
+      "enhancement": 873
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 75.2,
+      "special": 43.9,
+      "passive": 2.4,
+      "board": 11.8
+    }
+  },
+  "scoreRowPresence": {
+    "outfit": false,
+    "active": true,
+    "special": true,
+    "passive": true,
+    "board": true
+  },
+  "categoryStatus": {
+    "totals": "Overall power and score bonus totals directly visible; final unit score not shown.",
+    "scoreOutfit": "No score-outfit row displayed. Raw value stays null; the sum of visible score rows is computed separately."
+  },
+  "boardContext": "From AQ only the independently removable Noel3.7% rate node OFF, leaving17.8%. Noel2%/frequency4% and Kanade15%/5% remain OFF. Remaining Noel3.7%/11.1%/3%, Flare6% and Ririka nodes retained by request.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-rounded-AR-revised-20260909.json",
+  "predictionCheckpointSHA256": "1d69486a18eb12ec7c292ece4ced070bddebd0ab5973316aabbd8562e2220e94",
+  "boardOverrides": {
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 17.8,
+      "cooldown": 0
+    }
+  },
+  "sampleIdentification": "Contextual mapping to AR revision2; initial infeasible two-node request was not executed or counted."
+}

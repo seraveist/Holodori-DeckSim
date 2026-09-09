@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AS",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00021-5-uniq-0017-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "boardOverrides": {
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00021": {
+      "rate": 0,
+      "cooldown": 0
+    }
+  },
+  "status": "Planned; no AS measurement received",
+  "observationsReceived": [],
+  "intervention": "Keep revised AR cards and profiles. Disable all remaining Noel rate nodes3.7%,11.1%,3.0% and Flare rate6%. Kanade rates and Noel frequency stay OFF. Retain all Ririka leader nodes and all unrelated effects. Report any dependency-driven additional changes.",
+  "baselineValues": {
+    "memberParameter": 79007,
+    "outfitPower": 11859,
+    "passivePower": 7816,
+    "active": 75.2,
+    "special": 43.9
+  },
+  "hypotheses": {
+    "rawProportional": {
+      "passive": 3,
+      "board": 10.1
+    },
+    "directMarginal": {
+      "passive": 3,
+      "board": 10
+    },
+    "joint": {
+      "raw": 12.982024309162568,
+      "possibleDisplays": [
+        13,
+        13.1
+      ]
+    }
+  },
+  "features": {
+    "id": "AS",
+    "raw": 12.982024309162568,
+    "Araw": 75.119294237116,
+    "Braw": 85.11016037065262,
+    "BPraw": 88.10131854627856,
+    "observedPassive": null,
+    "observedBoard": null,
+    "features": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "p": 0.55,
+        "d": 10,
+        "I": 29,
+        "v": 100,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 6
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "p": 0.55,
+        "d": 8,
+        "I": 19,
+        "v": 80,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 10
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "p": 0.55,
+        "d": 7,
+        "I": 21,
+        "v": 120,
+        "s": 9,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 9
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "p": 0.55,
+        "d": 9,
+        "I": 26,
+        "v": 100,
+        "s": 9,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 7
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "p": 0.46,
+        "d": 8,
+        "I": 23,
+        "v": 100,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 8
+      }
+    ]
+  },
+  "prediction": {
+    "id": "AS",
+    "passiveWeight": 73869.23076923078,
+    "boardWeight": 251450.58355437667,
+    "rawPassive": 2.947782788881617,
+    "rawBoard": 10.03424152028095,
+    "passive": 3,
+    "board": 10.1,
+    "observedPassive": null,
+    "observedBoard": null,
+    "passiveMatches": null,
+    "boardMatches": null
+  },
+  "purpose": "Remove member timing-board inputs entirely; compare attribution when the only modeled numeric board effect is uniform leader support13.3%. This removes ambiguity from fractional timing-board node values and their cycle overlap. Ririka judgment and other unmodeled effects are not claimed removed.",
+  "decisions": {
+    "passive30board101": "Supports proportional attribution against this direct-marginal baseline, not a general formula.",
+    "passive30board100": "Supports direct-marginal baseline at this control; reassess attribution when member timing is present.",
+    "other": "Preserve result and inspect node scope and unmodeled leader effects; do not refit a duration."
+  },
+  "requestedMeasurements": "Passive and board score, Active/SP when visible, and any other effects disabled by node dependencies. Do not count missing values as matches.",
+  "provenance": {
+    "observationPath": "analysis/unit-score/observations/AR-20260909.json",
+    "observationSHA256": "69785d90a2bd51fa5d1506968aefca7aed15dd4bc567db747f8ec0afae3116ae",
+    "precedingReport": "analysis/unit-score/reports/AR-comparison-20260909.json",
+    "precedingReportSHA256": "5396c01189be7b89dc6f54e8ca6eb69210e455f6f28d2b1ecd7a615b863b11be",
+    "sourceHashes": {
+      "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+      "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+      "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+      "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+      "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+      "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+      "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+      "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+    },
+    "featureSourceSHA256": "a6bafb96442a7a29c20ddb0e4136ebca956c6606fb1f0c722c27d22132e14deb",
+    "analysisSourceSHA256": "36dcdac2e113f5d65b590381cfb0bf9741701c594bf25885cb5f1395aeac0ac1",
+    "productionFormulaChanged": false
+  }
+}
