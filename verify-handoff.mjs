@@ -3,5 +3,8 @@
 import { verifyAJHandoff } from './scripts/test-validation-aj-handoff.mjs';
 import { verifyAK } from './scripts/test-validation-ak.mjs';
 import { verifyALPlan } from './scripts/test-validation-al-plan.mjs';
+import { verifyAL } from './scripts/test-validation-al.mjs';
 const previous = verifyAJHandoff();
-console.log(JSON.stringify({ ...verifyAK(), nextUnobserved: 'AL', upcomingPlan: verifyALPlan(), preservedAJCheckpoint: previous }, null, 2));
+verifyAK();
+verifyALPlan();
+console.log(JSON.stringify({ ...verifyAL(), preservedAJCheckpoint: previous }, null, 2));

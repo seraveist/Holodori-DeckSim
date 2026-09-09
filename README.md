@@ -6,9 +6,9 @@
 
 라이브 서비스: https://holosims.net/
 
-계산식 검증의 최신 상태는 [AK 패시브·보드 확인 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 AK 부분 관측 포함 35건과 고정 예측을, `node scripts/run-scoring-validation.mjs`로 기존 계산 회귀까지 재현할 수 있습니다. 액티브·SP 확인값은 기존 34건이며 [초기 인수인계와 누적 이력](SCORING_HANDOFF.md)도 보존합니다.
+계산식 검증의 최신 상태는 [AL 확인 / AM·AN 대기 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 누적36건·액티브/SP35건과 다음 계획을, `node scripts/run-scoring-validation.mjs`로 기존 회귀까지 재현합니다. [초기 인수인계와 이력](SCORING_HANDOFF.md)은 보존합니다.
 
-다음은 [AL 의상 활성 여부 대조](analysis/unit-score/reports/AL-plan-20260909.md)입니다. AI의 다섯 멤버를 고정한 리리카 리더 카드 교체이며, 사전 예측 재현은 `node scripts/test-validation-al-plan.mjs`입니다.
+다음은 [AM·AN 액티브가 같은 카드 대조](analysis/unit-score/reports/AM-AN-plan-20260909.md)입니다. `node scripts/test-validation-al.mjs`로 AL 결과와 두 사전 계획을 재현합니다.
 
 ## 주요 기능
 

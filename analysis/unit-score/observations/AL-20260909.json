@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AL",
+  "observedAt": "2026-09-09",
+  "receivedAt": "2026-09-09T09:38:26.934Z",
+  "gameVersion": null,
+  "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00021-5-uniq-0017-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Frozen AL plan inherited; all match confirms the numeric prediction table, not a separate level or board audit.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "basis": "Inherited AL plan."
+  },
+  "rawUserInput": "전부 일치함",
+  "confirmedByReference": {
+    "source": "Immediately preceding AL prediction table",
+    "checkpoint": "analysis/unit-score/experiments/baseline-passive-AL-20260909.json",
+    "checkpointSHA256": "d40eeba4dc742ad490e92a3a6834d575ca0001ac9f32d91eead4e2ce27683972",
+    "fields": {
+      "memberParameter": 84026,
+      "outfitPower": 12613,
+      "passivePower": 13617,
+      "active": 73.7,
+      "special": 43.6,
+      "passive": 2.2,
+      "board": 15.7
+    },
+    "scope": "Seven numeric categories confirmed. Combined17.9 is derived from the two confirmed score rows; the range17.8/17.9 does not create another measurement. Full power/bonus/unit-score totals were not supplied."
+  },
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": 84026,
+      "outfit": 12613,
+      "passive": 13617,
+      "board": null,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 73.7,
+      "special": 43.6,
+      "passive": 2.2,
+      "board": 15.7
+    }
+  },
+  "scoreRowPresence": {
+    "passive": true,
+    "board": true
+  },
+  "categoryStatus": {
+    "totals": "Unreported;110256 power subtotal and135.2 sum of confirmed score categories are derived only.",
+    "otherPower": "Board/memory/enhancement unreported.",
+    "scoreOutfit": "Unreported; parameter-only costume is not a score-support costume."
+  },
+  "boardContext": "Same documented member/leader boards and pre-song context as frozen AL plan, not separately re-audited in this reply.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-AL-20260909.json",
+  "predictionCheckpointSHA256": "d40eeba4dc742ad490e92a3a6834d575ca0001ac9f32d91eead4e2ce27683972"
+}

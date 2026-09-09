@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AL",
+  "status": "Seven numeric rows confirmed by reference",
+  "recordedAt": "2026-09-09T09:38:29.809Z",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-passive-AL-20260909.json",
+  "frozenPlanSHA256": "d40eeba4dc742ad490e92a3a6834d575ca0001ac9f32d91eead4e2ce27683972",
+  "observation": "analysis/unit-score/observations/AL-20260909.json",
+  "observationSHA256": "4a58bbec3a88f05d824c74965a79960bd68f49263770bbdf6d7961748b4566f5",
+  "report": "analysis/unit-score/reports/AL-comparison-20260909.json",
+  "reportSHA256": "9fd0adc672ce973b154787da69297710df250ae32c6abb0a11581d27ea6ac291",
+  "catalog": "analysis/unit-score/observation-catalog-AL-20260909.json",
+  "catalogSHA256": "a9e50cd0d409717c2cf369769d202ca72c0819d8dbea4901a5283aacad94fe57",
+  "nextPlan": "analysis/unit-score/experiments/baseline-passive-AM-AN-20260909.json",
+  "nextPlanSHA256": "0d9b0682ee9535d67ced1b7c3804db4c311adf066d4ae0af50f5a70a9daf2d19",
+  "analysisSource": "analysis/unit-score/compare-al-plan-am-an-20260909.mjs",
+  "analysisSourceSHA256": "2823662070770b33c80f40948c95901c49b18cf9b88bec05356b4bb75dabd2cf",
+  "result": {
+    "passive": 2.2,
+    "board": 15.7,
+    "derivedJoint": 17.9,
+    "baselineFiveValuesMatch": true,
+    "individualAllocationFormulaConfirmed": false
+  }
+}

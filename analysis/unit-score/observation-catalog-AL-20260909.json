@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AL",
+  "nextUnobserved": [
+    "AM",
+    "AN"
+  ],
+  "extendsCatalog": "analysis/unit-score/observation-catalog-AK-20260909.json",
+  "extendsCatalogSHA256": "0292647b38f2003ab8a9dc23f22310cf9b6187c9d329af34d9c6d21406596876",
+  "scope": "Append AL once to the recursive AJ34+AK1 catalog. AM/AN are unmeasured plans. AK missing values stay missing.",
+  "summary": {
+    "observations": 36,
+    "distinctMemberSets": 21,
+    "activeObserved": 35,
+    "activeMatches": 35,
+    "spObserved": 35,
+    "spMatches": 35,
+    "confirmedPowerComponents": 91,
+    "positivePassiveJointCompatibility": 21,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false
+  },
+  "observations": [
+    {
+      "sampleId": "AL",
+      "sourcePath": "analysis/unit-score/observations/AL-20260909.json",
+      "sourceSHA256": "4a58bbec3a88f05d824c74965a79960bd68f49263770bbdf6d7961748b4566f5",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-00021-5-uniq-0017-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": 84026,
+          "outfit": 12613,
+          "passive": 13617,
+          "board": null,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 73.7,
+          "special": 43.6,
+          "passive": 2.2,
+          "board": 15.7
+        }
+      },
+      "rawUserInput": "전부 일치함",
+      "confirmedByReference": {
+        "source": "Immediately preceding AL prediction table",
+        "checkpoint": "analysis/unit-score/experiments/baseline-passive-AL-20260909.json",
+        "checkpointSHA256": "d40eeba4dc742ad490e92a3a6834d575ca0001ac9f32d91eead4e2ce27683972",
+        "fields": {
+          "memberParameter": 84026,
+          "outfitPower": 12613,
+          "passivePower": 13617,
+          "active": 73.7,
+          "special": 43.6,
+          "passive": 2.2,
+          "board": 15.7
+        },
+        "scope": "Seven numeric categories confirmed. Combined17.9 is derived from the two confirmed score rows; the range17.8/17.9 does not create another measurement. Full power/bonus/unit-score totals were not supplied."
+      }
+    }
+  ]
+}
