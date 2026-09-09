@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AT",
+  "observedAt": "2026-09-09",
+  "gameVersion": null,
+  "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00021-5-uniq-0017-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "AT request inherited; only two score numbers supplied.",
+  "boardOverrides": {
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00021": {
+      "rate": 0,
+      "cooldown": 0
+    }
+  },
+  "rawUserInput": "3.0%/ 7.7%",
+  "screenshot": null,
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": null,
+      "outfit": null,
+      "passive": null,
+      "board": null,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": null,
+      "special": null,
+      "passive": 3,
+      "board": 7.7
+    }
+  },
+  "scoreRowPresence": {
+    "outfit": null,
+    "active": null,
+    "special": null,
+    "passive": true,
+    "board": true
+  },
+  "boardContext": "AS member timing boards remainOFF; requested only Ririka score-support3.1% OFF while6.2% and4% remain. Node states and collateral effects inherited, not separately audited.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false
+  },
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-leader-AT-20260909.json",
+  "predictionCheckpointSHA256": "b2996afa61059d49368b86ffad57300ed30f6e820b4e164cf63ee2ea58ed64a2",
+  "leaderSupportOverride": 10.2
+}

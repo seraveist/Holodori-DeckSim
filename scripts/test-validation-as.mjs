@@ -1,0 +1,31 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { compareAS } from '../analysis/unit-score/compare-as-20260909.mjs';
+import { collectCatalog } from '../analysis/unit-score/compare-am-an-20260909.mjs';
+const root = new URL('../', import.meta.url);
+const read = p => JSON.parse(fs.readFileSync(new URL(p, root), 'utf8'));
+const hash = p => crypto.createHash('sha256').update(fs.readFileSync(new URL(p, root))).digest('hex');
+export function verifyAS() {
+  const state = read('analysis/unit-score/experiments/AS-status-observed-20260909.json');
+  for (const k of ['frozenPlan', 'observation', 'report', 'catalog', 'analysisSource']) assert.equal(hash(state[k]), state[`${k}SHA256`]);
+  const r = compareAS(); assert.deepEqual(r, read(state.report));
+  assert.equal(r.comparisons.rawProportional.matches, true);
+  assert.equal(r.comparisons.directMarginal.matches, false);
+  assert.equal(r.joint.observed, 13.1); assert.ok(r.joint.compatible);
+  const entries = collectCatalog(state.catalog);
+  assert.equal(entries.length, 43); assert.equal(new Set(entries.map(o => o.sampleId)).size, 43);
+  assert.equal(new Set(entries.map(o => [...o.memberIds].sort().join(','))).size, 23);
+  for (const k of ['active', 'special']) assert.equal(entries.filter(o => o.rawGame.scoreBonusDetail[k] != null).length, 40);
+  const as = entries.find(o => o.sampleId === 'AS'); assert.deepEqual(as.rawGame, r.observation.game);
+  assert.ok(r.features.features.every(m => m.r === 0 && m.f === 0 && m.L === 13.3));
+  for (const v of Object.values(as.rawGame.powerDetail)) assert.equal(v, null);
+  for (const k of ['unitScore', 'overallPower', 'scoreBonusPct']) assert.equal(as.rawGame[k], null);
+  assert.equal(as.rawGame.scoreBonusDetail.active, null); assert.equal(as.rawGame.scoreBonusDetail.special, null);
+  assert.equal(r.summary.confirmedPowerComponents, 106); assert.equal(r.summary.positivePassiveJointCompatibility, 28);
+  assert.equal(r.interpretation.productionFormulaChanged, false);
+  return { status: 'PASS', latestObserved: 'AS', ...r.summary, AS: { passive: 3, board: 10.1, directMarginal: 'REJECTED_IN_THIS_CONTROL' } };
+}
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) console.log(JSON.stringify(verifyAS(), null, 2));

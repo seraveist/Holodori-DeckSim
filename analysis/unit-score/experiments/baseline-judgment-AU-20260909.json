@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AU",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00021-5-uniq-0017-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "boardOverrides": {
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00021": {
+      "rate": 0,
+      "cooldown": 0
+    }
+  },
+  "leaderSupportOverride": 13.3,
+  "leaderJudgmentEnabled": false,
+  "status": "Planned; no AU measurement received",
+  "observationsReceived": [],
+  "intervention": "Restore Ririka score-support3.1% from AT, returning6.2%+4%+3.1%=13.3% as in AS. Disable only Ririka judgment conversion: every20s, low chance,7s GOOD-or-better to PERFECT. Keep all member timing boards OFF and all other effects unchanged. If the judgment node cannot be disabled independently, report dependencies first.",
+  "baselineValues": {
+    "memberParameter": 79007,
+    "outfitPower": 11859,
+    "passivePower": 7816,
+    "active": 75.2,
+    "special": 43.9
+  },
+  "hypotheses": {
+    "judgmentExplainsASExtraBoard": {
+      "passive": 3,
+      "board": 10,
+      "status": "Conditional prediction: if the omitted judgment effect explains AS surplus over exact displayed-input direct marginal, removing it returns board10.0."
+    },
+    "unchangedAfterJudgmentOff": {
+      "passive": 3,
+      "board": 10.1,
+      "status": "No displayed change from AS; rejects the proposed visible judgment explanation in this control, but does not uniquely prove hidden precision or zero raw effect."
+    }
+  },
+  "purpose": "Compare AU with AS at identical numeric support and member timing inputs, isolating the previously unmodeled judgment node. The AT-to-AU two-node change restores the AS baseline before the single-effect comparison.",
+  "requestedMeasurements": "Passive and board rows plus Active/SP when visible. Confirm any dependency or extra effect that must change.",
+  "provenance": {
+    "baselinePath": "analysis/unit-score/observations/AS-20260909.json",
+    "baselineSHA256": "7d24cfc0498b812af4f1c73825bae3627c619419e6019e65b20d3a814579ae1a",
+    "predecessorPath": "analysis/unit-score/observations/AT-20260909.json",
+    "predecessorSHA256": "2e23f4d728644f31d9e335cd7250a9aeb5d73fd7312711914eac4abe689971c5",
+    "boardRecord": "analysis/unit-score/board-observations/ririka-X-20260909.json",
+    "boardRecordSHA256": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438",
+    "reportPath": "analysis/unit-score/reports/AT-comparison-20260909.json",
+    "reportSHA256": "8ba87d583b12885f0ea24757aecd9cc26f1e90c98e2e2cd0b084452a61ef9bef",
+    "analysisSourceSHA256": "217094b768ecc5779ec1e7761e71f7576534be0756a3ee99be7f43ab57c3ef68",
+    "productionFormulaChanged": false
+  }
+}

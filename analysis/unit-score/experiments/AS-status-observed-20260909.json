@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AS",
+  "status": "Two rows observed; raw proportional matches, direct marginal fails.",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-no-timing-AS-20260909.json",
+  "frozenPlanSHA256": "a06ec50209d69e65125a4db1c695fb0d431da9fa1e53d1d6ab94749f2c129333",
+  "observation": "analysis/unit-score/observations/AS-20260909.json",
+  "observationSHA256": "7d24cfc0498b812af4f1c73825bae3627c619419e6019e65b20d3a814579ae1a",
+  "report": "analysis/unit-score/reports/AS-comparison-20260909.json",
+  "reportSHA256": "e4f033a0e41a8c4a2c6d83dcd4f5ffdbfb34f046542060dcbdf2a40b083a2891",
+  "catalog": "analysis/unit-score/observation-catalog-AS-20260909.json",
+  "catalogSHA256": "baceca68f9a681939277bfd1efcb4a144101143383df5ef8db12e56bd1fe5696",
+  "analysisSource": "analysis/unit-score/compare-as-20260909.mjs",
+  "analysisSourceSHA256": "e6100527c958927afed4a16e89786692243d51696a7ae060cc508a32ab681b2b"
+}

@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AS",
+  "observation": {
+    "schemaVersion": 1,
+    "sampleId": "AS",
+    "observedAt": "2026-09-09",
+    "gameVersion": null,
+    "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+    "leaderId": "card-06003-3-nrml-0059-00",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-00022-5-uniq-0063-00",
+      "card-00021-5-uniq-0017-00",
+      "card-06002-5-uniq-0066-00"
+    ],
+    "profiles": [
+      {
+        "id": "card-06003-3-nrml-0059-00",
+        "level": 1,
+        "potential": 0
+      },
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "level": 40,
+        "potential": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "level": 70,
+        "potential": 0
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "level": 80,
+        "potential": 1
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "level": 11,
+        "potential": 0
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "level": 40,
+        "potential": 0
+      }
+    ],
+    "profilesConfirmed": false,
+    "profileBasis": "AS request inherited; only two score rows supplied.",
+    "boardOverrides": {
+      "chr-06002": {
+        "rate": 0,
+        "cooldown": 0
+      },
+      "chr-00022": {
+        "rate": 0,
+        "cooldown": 0
+      },
+      "chr-00021": {
+        "rate": 0,
+        "cooldown": 0
+      }
+    },
+    "rawUserInput": "홀로멤 노드 10.1%, 패시브 3.0%",
+    "screenshot": null,
+    "game": {
+      "unitScore": null,
+      "overallPower": null,
+      "scoreBonusPct": null,
+      "powerDetail": {
+        "memberParameter": null,
+        "outfit": null,
+        "passive": null,
+        "board": null,
+        "memory": null,
+        "enhancement": null
+      },
+      "scoreBonusDetail": {
+        "outfit": null,
+        "active": null,
+        "special": null,
+        "passive": 3,
+        "board": 10.1
+      }
+    },
+    "scoreRowPresence": {
+      "outfit": null,
+      "active": null,
+      "special": null,
+      "passive": true,
+      "board": true
+    },
+    "boardContext": "Requested all remaining Noel/Flare rate nodes OFF, continuing Kanade rate and Noel frequencyOFF. Ririka leader and other effects retained by request. No separate collateral-effect answer or node audit supplied.",
+    "measurementView": {
+      "planned": "Formation detail before song selection",
+      "confirmedForThisSample": false
+    },
+    "predictionCheckpoint": "analysis/unit-score/experiments/baseline-no-timing-AS-20260909.json",
+    "predictionCheckpointSHA256": "a06ec50209d69e65125a4db1c695fb0d431da9fa1e53d1d6ab94749f2c129333"
+  },
+  "features": {
+    "id": "AS",
+    "raw": 12.982024309162568,
+    "Araw": 75.119294237116,
+    "Braw": 85.11016037065262,
+    "BPraw": 88.10131854627856,
+    "observedPassive": 3,
+    "observedBoard": 10.1,
+    "features": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "p": 0.55,
+        "d": 10,
+        "I": 29,
+        "v": 100,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 6
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "p": 0.55,
+        "d": 8,
+        "I": 19,
+        "v": 80,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 10
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "p": 0.55,
+        "d": 7,
+        "I": 21,
+        "v": 120,
+        "s": 9,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 9
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "p": 0.55,
+        "d": 9,
+        "I": 26,
+        "v": 100,
+        "s": 9,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 7
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "p": 0.46,
+        "d": 8,
+        "I": 23,
+        "v": 100,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 8
+      }
+    ]
+  },
+  "prediction": {
+    "id": "AS",
+    "passiveWeight": 73869.23076923078,
+    "boardWeight": 251450.58355437667,
+    "rawPassive": 2.947782788881617,
+    "rawBoard": 10.03424152028095,
+    "passive": 3,
+    "board": 10.1,
+    "observedPassive": 3,
+    "observedBoard": 10.1,
+    "passiveMatches": true,
+    "boardMatches": true
+  },
+  "comparisons": {
+    "rawProportional": {
+      "expected": {
+        "passive": 3,
+        "board": 10.1
+      },
+      "matches": true
+    },
+    "directMarginal": {
+      "expected": {
+        "passive": 3,
+        "board": 10
+      },
+      "matches": false
+    }
+  },
+  "joint": {
+    "raw": 12.982024309162568,
+    "possibleDisplays": [
+      13,
+      13.1
+    ],
+    "observed": 13.1,
+    "compatible": true
+  },
+  "summary": {
+    "observations": 43,
+    "distinctMemberSets": 23,
+    "activeObserved": 40,
+    "activeMatches": 40,
+    "spObserved": 40,
+    "spMatches": 40,
+    "confirmedPowerComponents": 106,
+    "positivePassiveJointCompatibility": 28,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN",
+      "AO",
+      "AP",
+      "AQ",
+      "AR",
+      "AS"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false,
+    "AOActiveSPUnreported": true,
+    "ASActiveSPUnreported": true
+  },
+  "interpretation": {
+    "supported": "Under the requested zero member timing-board baseline, passive3.0/board10.1 supports the frozen proportional prediction and rejects direct marginal board10.0. Member timing effects alone cannot explain the attribution difference in this control.",
+    "caveats": [
+      "Only two numbers were supplied. Active/SP, power and totals remain unreported.",
+      "Zero member timing and unchanged Ririka/other effects inherit the request; no independent node audit or answer about collateral effects was supplied.",
+      "Five historical raw-fractional discrepancies remain; this is a scoped control result, not a complete formula.",
+      "Ririka judgment and other unmodeled effects are not claimed absent."
+    ],
+    "productionFormulaChanged": false
+  },
+  "provenance": {
+    "checkpoint": "analysis/unit-score/experiments/baseline-no-timing-AS-20260909.json",
+    "checkpointSHA256": "a06ec50209d69e65125a4db1c695fb0d431da9fa1e53d1d6ab94749f2c129333",
+    "observationPath": "analysis/unit-score/observations/AS-20260909.json",
+    "observationSHA256": "7d24cfc0498b812af4f1c73825bae3627c619419e6019e65b20d3a814579ae1a",
+    "previousReport": "analysis/unit-score/reports/AR-comparison-20260909.json",
+    "previousReportSHA256": "5396c01189be7b89dc6f54e8ca6eb69210e455f6f28d2b1ecd7a615b863b11be",
+    "analysisSourceSHA256": "e6100527c958927afed4a16e89786692243d51696a7ae060cc508a32ab681b2b",
+    "sourceHashes": {
+      "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+      "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+      "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+      "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+      "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+      "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+      "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+      "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+    }
+  }
+}

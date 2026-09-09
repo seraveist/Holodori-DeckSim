@@ -6,9 +6,9 @@
 
 라이브 서비스: https://holosims.net/
 
-계산식 검증의 최신 상태는 [AR 확인 / AS 대기 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 누적42건·액티브/SP40건과 다음 계획을, `node scripts/run-scoring-validation.mjs`로 기존 회귀까지 재현합니다. [초기 인수인계와 이력](SCORING_HANDOFF.md)은 보존합니다.
+계산식 검증의 최신 상태는 [AT 확인 / AU 대기 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 누적44건·액티브/SP40건과 다음 계획을, `node scripts/run-scoring-validation.mjs`로 기존 회귀까지 재현합니다. [초기 인수인계와 이력](SCORING_HANDOFF.md)은 보존합니다.
 
-[AR 결과와 다음 대조](analysis/unit-score/reports/AR-validation-20260909.md)는26/26건을 사후 재현했던 중간 올림식의 독립 예측 실패를 기록합니다. 서비스 공식은 유지하고, 멤버 발동률·빈도를 제거한 AS 기준점을 요청했습니다.
+[AT 결과와 다음 대조](analysis/unit-score/reports/AT-validation-20260909.md)는 멤버 발동률·빈도 제거 기준점에서도 남는 비례/직접 차감 오차를 보존합니다. 리리카 판정 노드를 분리하는 AU를 사전 고정했으며 서비스 공식은 유지합니다.
 
 ## 주요 기능
 

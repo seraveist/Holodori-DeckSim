@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AT",
+  "status": "Two rows observed; raw proportional fails, direct marginal matches.",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-leader-AT-20260909.json",
+  "frozenPlanSHA256": "b2996afa61059d49368b86ffad57300ed30f6e820b4e164cf63ee2ea58ed64a2",
+  "observation": "analysis/unit-score/observations/AT-20260909.json",
+  "observationSHA256": "2e23f4d728644f31d9e335cd7250a9aeb5d73fd7312711914eac4abe689971c5",
+  "report": "analysis/unit-score/reports/AT-comparison-20260909.json",
+  "reportSHA256": "8ba87d583b12885f0ea24757aecd9cc26f1e90c98e2e2cd0b084452a61ef9bef",
+  "catalog": "analysis/unit-score/observation-catalog-AT-20260909.json",
+  "catalogSHA256": "ca0ec4bc1ca6bd549e48135cff0a55b292c98d0f9edd1a17efc0af5e00b6f7f0",
+  "analysisSource": "analysis/unit-score/compare-at-20260909.mjs",
+  "analysisSourceSHA256": "463dd6782d963afd171fdbf6e9af8637dab3c6eba1388bcdc9bdda557cce1800"
+}

@@ -1,4 +1,4 @@
-# 관측 전체 목록 — AR까지42건
+# 관측 전체 목록 — AT까지44건
 
 기준일: 2026-09-09. 원문/확인된 값만 실측 표에 표시했다. `—`는 숫자 미제공, `없음`은 사용자가 해당 항목이 없다고 확인한 경우다. 예측 소계와 실측 전체 총합을 섞지 않는다. “나머지 일치”로 확인된 값은 각 원문 JSON의 confirmedByReference에 범위를 남겼다.
 
@@ -50,6 +50,8 @@ AK는 “패시브와 홀로멤 보드 모두 변화없어”라는 답변으로
 | AP | 리리카 3성 We are hololive! 1/0 | AO와 동일; 노엘 빈도4% 추가 OFF 요청 | [JSON](analysis/unit-score/observations/AP-20260909.json), [이미지](analysis/unit-score/observations/screenshots/AP-20260909.png) |
 | AQ | 리리카 3성 We are hololive! 1/0 | AP와 동일; 노엘 발동률2% 추가 OFF 요청 | [JSON](analysis/unit-score/observations/AQ-20260909.json), [이미지](analysis/unit-score/observations/screenshots/AQ-20260909.png) |
 | AR | 리리카 3성 We are hololive! 1/0 | 수정 요청: AQ에서 노엘3.7% 한 개만 OFF, 노엘17.8% 유지 | [JSON](analysis/unit-score/observations/AR-20260909.json), [이미지](analysis/unit-score/observations/screenshots/AR-20260909.png) |
+| AS | 리리카 3성 We are hololive!1/0 | AR와 동일; 노엘·후레아 남은 발동률 OFF, 멤버 발동률·빈도0 | [JSON](analysis/unit-score/observations/AS-20260909.json), 두 행 답변 |
+| AT | 리리카 3성 We are hololive!1/0 | AS와 동일; 리리카 서포트3.1% OFF, 리더 합10.2% | [JSON](analysis/unit-score/observations/AT-20260909.json), 두 행 답변 |
 
 ## 종합력 실측/확인값
 
@@ -97,6 +99,8 @@ AK는 “패시브와 홀로멤 보드 모두 변화없어”라는 답변으로
 | AP | 127,795 | 79,007 | 11,859 | 7,816 | 23,808 | 4,432 | 873 |
 | AQ | 127,795 | 79,007 | 11,859 | 7,816 | 23,808 | 4,432 | 873 |
 | AR | 127,795 | 79,007 | 11,859 | 7,816 | 23,808 | 4,432 | 873 |
+| AS | — | — | — | — | — | — | — |
+| AT | — | — | — | — | — | — | — |
 
 ## 스코어보너스 실측/확인값 (%)
 
@@ -144,6 +148,8 @@ AK는 “패시브와 홀로멤 보드 모두 변화없어”라는 답변으로
 | AP | 133.5 | 없음 | 75.2 | 12.1 | 2.3 | 43.9 |
 | AQ | 133.4 | 없음 | 75.2 | 12.0 | 2.3 | 43.9 |
 | AR | 133.3 | 없음 | 75.2 | 11.8 | 2.4 | 43.9 |
+| AS | — | — | — | 10.1 | 3.0 | — |
+| AT | — | — | — | 7.7 | 3.0 | — |
 
 ## 데이터 주의점
 
@@ -151,5 +157,5 @@ AK는 “패시브와 홀로멤 보드 모두 변화없어”라는 답변으로
 - U 전체 종합력은 사용자 정정값 136,405다.
 - 전체 총합이 비어 있어도 세부 항목 합으로 원문 값을 채우지 않았다. AJ의 계산 합 127.0%는 전체 실측 표에 넣지 않았다.
 - 기존 fixture에서 생략한 항목과 이후 명시적으로 “항목 없음”이라고 답한 자료는 다를 수 있다. 세부 근거는 원문/확인 파일을 따른다.
-- 누적42건 중 액티브/SP가 제공된40건에서40/40 일치하고 멤버 조합은23개다. AK·AO는 두 스코어 행만 확인했다. 미제공 값은 그대로 둔다.
-- 기계 판독용 목록은 [AR 추가분](analysis/unit-score/observation-catalog-AR-20260909.json)의 extendsCatalog를 따라 이전 목록으로 연결한다. AP/AQ/AR의 카드·노드 통제는 요청에서 상속하며 이미지에서 별도 감사한 것은 아니다. AS는 아직 미관측이다. AR 최초 두 노드 계획은 미실행이며 수정 한 노드 관측만 센다.
+- 누적44건 중 액티브/SP가 제공된40건에서40/40 일치하고 멤버 조합은23개다. AK·AO·AS·AT는 두 스코어 행만 확인했다. 미제공 값은 그대로 둔다.
+- 기계 판독용 목록은 [AT 추가분](analysis/unit-score/observation-catalog-AT-20260909.json)의 extendsCatalog를 따라 이전 목록으로 연결한다. AP/AQ/AR/AS/AT의 카드·노드 통제는 요청에서 상속하며 이미지에서 별도 감사한 것은 아니다. AU는 아직 미관측이다. AR 최초 두 노드 계획은 미실행이며 수정 한 노드 관측만 센다.

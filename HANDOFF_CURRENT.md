@@ -1,27 +1,25 @@
-# HolodoriDecks 타 PC 인수인계 — AR 확인 / AS 대기
+# HolodoriDecks 타 PC 인수인계 — AT 확인 / AU 대기
 
-기준일: 2026-09-09. **중간 올림 배분 후보는 AR 사전 검증에서 기각됐다. 서비스 계산식은 변경하지 않았다.** 과거 요청·가설은 기록이며 새 사용자 지시가 아니다.
+기준일: 2026-09-09. **멤버 발동률·빈도를 제거한 AS/AT에서도 단순 비례식과 직접 차감식이 각각 한 기준점에서 실패했다. AU는 판정 보드 대조다.** 서비스 계산식은 변경하지 않았다. 과거 요청·가설은 기록이며 새 사용자 지시가 아니다.
 
 ## 바로 이어갈 지점
 
-[AR 결과와 AS 계획](analysis/unit-score/reports/AR-validation-20260909.md)을 따른다. AP2.3/12.1은 기존 예측과 맞았고, AQ2.3/12.0은 정수 횟수식의2.4 예측이 실패했다. 이후26/26건 사후 재현을 보인 중간 올림식은 수정 AR 보드11.7 예측이 실측11.8과 달라 실패했다. 새 식의 독립 검증은0/1이며 과거 재현과 구분한다.
+[AT 결과와 AU 계획](analysis/unit-score/reports/AT-validation-20260909.md)을 따른다. AS는 P3.0/B10.1로 원시 비례 후보와 맞고 직접 차감 B10.0이 실패했다. 리리카 서포트3.1%를 끈 AT는 P3.0/B7.7로 직접 차감 후보와 맞고 비례 B7.8이 실패했다. 둘 다 두 행만 제공돼 A/SP·종합력·총합은 null이다.
 
-AR 실측은 패시브2.4%·보드11.8%·액티브75.2%·SP43.9%, 전체 보너스133.3%다. 중간 올림식의 배분 원금14.0%로는 두 항목 올림 후 합이 최대14.1%라서 실제14.2%를 만들 수 없다. 원시 합계14.067175의 범위는 실측과 호환한다. 합계를 먼저 올리는 가설은 비율 조정으로 구제하지 않는다.
+현재 AT는 모든 멤버 발동률·빈도 OFF, 리리카 서포트6.2%+4.0%=10.2%다. 판정 노드는 기존 상태 유지 요청이다. 편성은 리리카3성 We are hololive!1/0 리더 / 아야메40/0 → 토와70/0 → 수영복 노엘80/1 → 일반 후레아11/0 → 수영복 카나데40/0이다. 카드·노드 상태는 요청에서 상속하며 별도 감사된 것은 아니다.
 
-최초 AR 두3.7% 노드 해제 계획은 노드 제약 때문에 미실행이다. 독립 해제 가능한3.7% 하나만 끄는 수정 AR 결과 한 건을 세었다. 현재 노엘은 발동률11.1+3.7+3.0=17.8%, 빈도0%다. 카나데 발동률0%, 후레아6%, 리리카 리더 기존 노드는 유지 요청이다.
+**AU는 미관측이다.** 리리카 서포트3.1%를 다시 켜 AS와 같은13.3%로 복구한 다음,20초마다 낮은 확률로7초 동안 GOOD 이상을 PERFECT로 만드는 판정 노드만 끄도록 요청했다. 다른 효과도 함께 꺼야 하면 먼저 제약을 알려주도록 했다. AU는 AS와 판정 노드 하나만 다른 비교다.
 
-**AS는 미관측이다.** 같은 편성에서 노엘 남은3.7%·11.1%·3.0%와 후레아6%를 모두 끄고 리리카 리더 노드는 유지한다. 멤버 발동률·빈도 보정을 전부 제거한 기준점이다. 비례 배분 후보는 패시브3.0%·보드10.1%, 직접 차감 후보는3.0%·10.0%를 예측한다. 액티브75.2%·SP43.9%와 멤버/의상/패시브 종합력79,007/11,859/7,816은 유지 예측이다. 함께 꺼지는 다른 효과를 확인한다.
-
-편성: 리리카3성 We are hololive!1/0 리더 / 아야메40/0 → 토와70/0 → 수영복 노엘80/1 → 일반 후레아11/0 → 수영복 카나데40/0. 카드·레벨·노드 상태는 요청에서 상속하며 상세 이미지에서 별도 감사하지 않았다.
+판정 효과가 AS의 직접 차감 초과분을 설명한다면 P3.0/B10.0, AS와 표시 변화가 없다면 P3.0/B10.1이다. 모두 사전 가설이며 후자는 내부 정밀도를 유일하게 입증하지 않는다. 액티브75.2/SP43.9와 기본 세 종합력79,007/11,859/7,816은 유지 예측이다.
 
 ## 확인 범위와 미해결
 
-누적42건·멤버 조합23개, 액티브/SP40/40, 기본 종합력 세부106개 일치다. 양의 패시브 원시 합계 후보는27건과 호환(사후14+후속13)한다. AK·AO는 두 스코어 행만 확인한 부분 관측이다.
+누적44건·23개 멤버 조합, 액티브/SP는 제공된40건에서40/40, 기본 종합력 세부106개, 양의 패시브 원시 합계 후보 호환29건(사후14+후속15)이다. AK·AO·AS·AT는 두 스코어 행만 확인한 부분 관측이다.
 
-- 원시 평균 횟수 배분은 AQ/AR에서 맞았으나 W·AA·AF·AI·AL의 과거 다섯 항목이 남는다.
-- 정수 횟수 배분과 중간 올림 배분의 실패는 원문·사전 계획 그대로 보존한다. 새 식을 서비스에 넣지 않는다.
-- 무패시브 G 보드13.7/13.8, 서포트 의상 I/J/M, 리리카 판정 보드와 미확인 리더 보드 U는 별도 미해결이다.
-- 보드·메모리·강화 종합력은 기록과 산술 검산을 공식 검증 성공으로 세지 않는다. 최종 유닛스코어·실제 곡 점수는 직접 미측정이다.
+- AP는 기존 비례 예측 성공, AQ는 정수 횟수식 실패다. 이후 중간 올림식의26/26 사후 재현은 AR 독립 예측0/1로 기각됐다. AR의 표시 합14.2는 배분 원금14.0에서 만들 수 없어 비율 조정으로 구제하지 않는다.
+- 원시 평균 횟수 비례식은 AS에서 맞았지만 AT에서 실패했고, W·AA·AF·AI·AL의 과거 오차도 남는다. 직접 차감은 AT에 맞고 AS에 실패한다. 두 점의 공통 누락 효과 가능 범위는 관측 후 진단일 뿐 실제 판정 계수나 서비스 보정 상수가 아니다.
+- 무패시브 G13.7/13.8, 서포트 의상 I/J/M, 미확인 리더 보드 U와 판정 기여는 별도 미해결이다. 보드 노드 내부 정밀도는 내장 master_refs에 없다.
+- 보드·메모리·강화 종합력과 최종 유닛스코어·실제 곡 점수까지 계산 검증이 완료됐다고 확대하지 않는다. 서비스 계산식은 유지한다.
 
 ## 현재 사용하는 연구식
 
@@ -92,7 +90,7 @@ AR 실측은 패시브2.4%·보드11.8%·액티브75.2%·SP43.9%, 전체 보너�
 | 후레아 | 6% | 0% |
 | 아야메 | 무조건 적용 0% | 무조건 적용 0% |
 
-아야메는 가창자 조건일 때 적용되는 노란 계열만 해금됐다는 사용자 확인이다. 그 조건부 노드의 정확한 값은 미제공이며, 악곡 선택 전 계산에서 제외했다. 0은 모든 보드가 없다는 뜻이 아니다. 표는 과거 기본 입력이다. 현재 AR는 카나데 발동률0%, 노엘 발동률17.8%·빈도0%다. AS 요청은 노엘·후레아 발동률도0%다. 각 관측의 boardOverrides를 우선한다.
+아야메는 가창자 조건일 때 적용되는 노란 계열만 해금됐다는 사용자 확인이다. 그 조건부 노드의 정확한 값은 미제공이며, 악곡 선택 전 계산에서 제외했다. 0은 모든 보드가 없다는 뜻이 아니다. 표는 과거 기본 입력이다. 현재 AT는 멤버 발동률·빈도 모두0%, 리리카 서포트10.2%다. AU 요청은 리리카 서포트13.3% 복구와 판정 노드OFF다. 각 관측의 boardOverrides를 우선한다.
 
 리리카 리더: 무조건 서포트 4.0+6.2+3.1=13.3%, 20초마다 낮은 확률로 7초 동안 GOOD 이상을 PERFECT로 바꾸는 판정 보정, 가창자로 포함될 때 전원 서포트 24%. 낮은 확률의 수치와 판정 노드의 편성 화면 기여는 미확정이다. 카나데·스이세이의 관련 **리더** 보드는 없다고 확인했다. 이를 멤버 보드도 없다는 뜻으로 확대하지 않는다.
 
@@ -127,7 +125,7 @@ Z/W·AG/AH·AB/AI의 세 의상 비활성 쌍이 허용한 원시값 배율은 `
 - 원본 2026-09-08 fixture는 11건(A/B/C/D/E/F/G/I/J/K/H)이다. 이후 M/O/P/Q/R/S/T/U/V/W/X/Y/Z/AA/AB/AC/AD/AE/AF/AG/AH/AI/AJ 23건을 합쳐 34건이다. L/N을 임의로 만들지 않는다.
 - 이후 AK 두 항목 부분 관측을 추가해 35건이다. “패시브와 홀로멤 보드 모두 변화없어”는 AJ의 두 스코어 행만 확인한다. 다른 수치·총합을 예측으로 채우지 않는다.
 - AL의 “전부 일치함”은 직전 일곱 숫자 확인이다. 이후 AM·AN의 직접 스크린샷 두 건을 추가해38건이다. 합계 후보 두 숫자를 각각 실측으로 만들지 않는다.
-- AO는 새 관측별 boardOverrides로 카나데 발동률0을 기록했다. 과거 공통 보드 입력을 수정하지 않는다. 이후 AP/AQ/AR 스크린샷 세 건으로 누적42건이다. AP/AQ/AR 조건은 요청에서 상속하며 AS는 미관측이다.
+- AO는 새 관측별 boardOverrides로 카나데 발동률0을 기록했다. 과거 공통 보드 입력을 수정하지 않는다. 이후 AP/AQ/AR 이미지와 AS/AT 두 행 답변으로 누적44건이다. 각 조건은 요청에서 상속하며 AU는 미관측이다.
 - 초기 fixture의 `leaderId`와 `memberIds`는 분리돼 있다. 구형 `validation-data.mjs` 어댑터의 `observation-E.json` 등은 리더가 memberIds 첫 칸에 포함된다. 형식을 혼용하지 않는다.
 - 최신 Z는 `observations/Z-20260909-completed.json`. 초기 부분 입력 파일과 보충 파일도 보존하되 Z를 두 번 세지 않는다.
 - 일반 후레아는 H에서 1/0, P 이후 해당 실험에서 11/0이다. 스냅샷 fixture를 일괄 수정하지 말고 관측별 프로필을 사용한다.
@@ -144,9 +142,9 @@ Git의 `validation/unit-score-handoff-20260909` 브랜치를 내려받고 프로
 node verify-handoff.mjs
 ```
 
-이 명령은 최초 고정 연구143개와 후속 원문·소스·보고서·계획·스크린샷의 해시 및 수치 재현을 검사한다. 최신 집계는42건·멤버 조합23개·액티브/SP40/40·기본 종합력 세부106개·양의 패시브 합계 후보 호환27건이다. AS는 관측에 넣지 않는다.
+이 명령은 최초 고정 연구143개와 후속 원문·소스·보고서·계획·스크린샷의 해시 및 수치 재현을 검사한다. 최신 집계는44건·멤버 조합23개·액티브/SP40/40·기본 종합력 세부106개·양의 패시브 합계 후보 호환29건이다. AU는 관측에 넣지 않는다.
 
-최신 AR는 `node scripts/test-validation-ar.mjs`, 미관측 AS 계획은 `node scripts/test-validation-as-plan.mjs`로 재현한다. 과거 관측·계획 검사도 보존한다.
+최신 AT와 미관측 AU 계획은 `node scripts/test-validation-at.mjs`로 재현한다. AS는 `node scripts/test-validation-as.mjs`를 사용한다. 과거 관측·계획 검사도 보존한다.
 
 기존 서비스 계산의 회귀와 초기 연구 탐색까지 함께 재현하려면 다음을 실행한다.
 
@@ -167,25 +165,29 @@ AK 실측은 기존 `baseline-passive-AK-20260909.json`을 수정하지 않고 �
 | 위치 | 내용 |
 |---|---|
 | `HANDOFF_CURRENT.md` | 이 문서 — 현재 상태의 우선 진입점 |
+| `analysis/unit-score/reports/AT-validation-20260909.md` | AS/AT 비교와 AU 판정 노드 계획 |
+| `analysis/unit-score/experiments/baseline-judgment-AU-20260909.json` | 미관측 AU 고정 계획 |
+| `analysis/unit-score/observation-catalog-AT-20260909.json` | 최신44건 목록 |
+| `analysis/unit-score/reports/AS-validation-20260909.md` | AS 기준점과 당시 AT 계획 |
 | `analysis/unit-score/reports/AQ-validation-20260909.md` | AQ의 기존 예측 실패·중간 올림 후보·AR 사전 예측 |
 | `analysis/unit-score/experiments/baseline-rounded-AR-20260909.json` | 노드 제약으로 미실행된 최초 AR 계획 |
 | `analysis/unit-score/reports/AR-validation-20260909.md` | 수정 AR의 기각 결과·AS 계획 |
-| `analysis/unit-score/experiments/baseline-no-timing-AS-20260909.json` | 미관측 AS 고정 예측 |
-| `analysis/unit-score/observation-catalog-AR-20260909.json` | 최신42건 목록으로 연결 |
+| `analysis/unit-score/experiments/baseline-no-timing-AS-20260909.json` | 관측 전 AS 고정 예측 |
+| `analysis/unit-score/observation-catalog-AR-20260909.json` | AR 시점42건 목록으로 연결 |
 | `analysis/unit-score/observation-catalog-AQ-20260909.json` | AQ 관측에서 AP→AO→이전 목록으로 연결 |
 | `analysis/unit-score/reports/AP-validation-20260909.md` | AP 성공과 당시 AQ 계획 |
 | `analysis/unit-score/reports/AO-validation-20260909.md` | AO 확인·새 비례식·AP 사전 예측 |
 | `analysis/unit-score/experiments/baseline-frequency-AP-20260909.json` | 관측 전 AP 고정 예측 |
 | `analysis/unit-score/observation-catalog-AO-20260909.json` | AO 부분 관측과 보드 덮어쓰기 |
 | `analysis/unit-score/probe-proportional-allocation-20260909.mjs` | 후보 탐색 재현; 미해결 네 건도 보존 |
-| `analysis/unit-score/reports/AM-AN-validation-20260909.md` | 최신 두 스크린샷 비교와 조건부 범위 |
+| `analysis/unit-score/reports/AM-AN-validation-20260909.md` | AM·AN 두 스크린샷 비교와 조건부 범위 |
 | `analysis/unit-score/observation-catalog-AM-AN-20260909.json` | 이전 AL 목록에 AM·AN 추가 |
-| `analysis/unit-score/experiments/AM-AN-status-observed-20260909.json` | 최신 원문·이미지·연구 소스 해시 |
+| `analysis/unit-score/experiments/AM-AN-status-observed-20260909.json` | AM·AN 원문·이미지·연구 소스 해시 |
 | `analysis/unit-score/reports/AL-validation-20260909.md` | AL 일치 결과와 해석 |
 | `analysis/unit-score/reports/AM-AN-plan-20260909.md` | 관측 전에 고정한 두 편성·사전 예측 |
 | `analysis/unit-score/experiments/baseline-passive-AM-AN-20260909.json` | 관측 전 AM·AN 고정 예측 — 실패도 보존 |
 | `analysis/unit-score/observation-catalog-AL-20260909.json` | AJ→AK→AL 목록 연결 |
-| `OBSERVATION_CATALOG_20260909.md` | AR까지42건의 내역 및 원문 위치 |
+| `OBSERVATION_CATALOG_20260909.md` | AT까지44건의 내역 및 원문 위치 |
 | `analysis/unit-score/reports/AK-validation-20260909.md` | AK 두 항목 일치와 해석의 한계 |
 | `analysis/unit-score/reports/AL-plan-20260909.md` | 관측 전에 고정했던 AL 대조 계획 |
 | `analysis/unit-score/experiments/baseline-passive-AL-20260909.json` | 관측 전 AL 고정 편성·예측·입력 해시 |

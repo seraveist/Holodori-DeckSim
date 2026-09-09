@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AS",
+  "observedAt": "2026-09-09",
+  "gameVersion": null,
+  "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00021-5-uniq-0017-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "AS request inherited; only two score rows supplied.",
+  "boardOverrides": {
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00021": {
+      "rate": 0,
+      "cooldown": 0
+    }
+  },
+  "rawUserInput": "홀로멤 노드 10.1%, 패시브 3.0%",
+  "screenshot": null,
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": null,
+      "outfit": null,
+      "passive": null,
+      "board": null,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": null,
+      "special": null,
+      "passive": 3,
+      "board": 10.1
+    }
+  },
+  "scoreRowPresence": {
+    "outfit": null,
+    "active": null,
+    "special": null,
+    "passive": true,
+    "board": true
+  },
+  "boardContext": "Requested all remaining Noel/Flare rate nodes OFF, continuing Kanade rate and Noel frequencyOFF. Ririka leader and other effects retained by request. No separate collateral-effect answer or node audit supplied.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false
+  },
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-no-timing-AS-20260909.json",
+  "predictionCheckpointSHA256": "a06ec50209d69e65125a4db1c695fb0d431da9fa1e53d1d6ab94749f2c129333"
+}
