@@ -29,6 +29,8 @@ const tests = [
   'scripts/test-validation-expanded-at.mjs',
   'scripts/test-validation-challenges-av-ax.mjs',
   'scripts/test-validation-aw.mjs',
+  'scripts/test-validation-av-ax-ay.mjs',
+  'scripts/test-validation-az.mjs',
 ];
 if (args.includes('--research-grid')) tests.push(...[
   'probe-dummy-active-joint.mjs', 'probe-dummy-environment.mjs', 'probe-dummy-identifiability.mjs',

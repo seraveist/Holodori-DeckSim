@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AZ",
+  "report": "analysis/unit-score/reports/AZ-comparison-20260909.json",
+  "reportSHA256": "aa7a1419dfb9ec0ca675a9dd4156b8b86535f19997d94aae5e80fd6dae8f6558",
+  "catalog": "analysis/unit-score/observation-catalog-AZ-20260909.json",
+  "catalogSHA256": "d5def515efd219e659ae083bde8dd59caf383c7da4ab0bb9240af19f28757c61",
+  "observationPath": "analysis/unit-score/observations/AZ-20260909.json",
+  "observationSHA256": "de460584f62ebfd5a41b454cfbef9a0a2869127622b3989fb3b802d64b3c14db",
+  "unobserved": [
+    "AU"
+  ],
+  "productionFormulaChanged": false
+}

@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AZ",
+  "observedAt": "2026-09-09",
+  "gameVersion": null,
+  "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00018-5-uniq-0068-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Inherited from AZ setup, same AX cards/levels; no independent card-level screenshot supplied.",
+  "boardOverrides": {
+    "chr-00010": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00027": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00018": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    }
+  },
+  "leaderSupportOverride": 13.3,
+  "leaderJudgmentRequested": true,
+  "rawUserInput": "모두 일치함.",
+  "screenshot": null,
+  "confirmationScope": "All-match response to the frozen AZ forecast confirms active68.9/SP37.5, absent passive row and board9.2. No new power/totals confirmed.",
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": null,
+      "outfit": null,
+      "passive": null,
+      "board": null,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 68.9,
+      "special": 37.5,
+      "passive": null,
+      "board": 9.2
+    }
+  },
+  "scoreRowPresence": {
+    "outfit": null,
+    "active": true,
+    "special": true,
+    "passive": false,
+    "board": true
+  },
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false
+  },
+  "boardContext": "Keep AX composition/levels and pre-song view. Disable only all remaining Noel activation-rate nodes11.1/3.7/3.0; Noel frequency remainsOFF. Kanade timing remainsOFF. Ririka support6.2/4/3.1 and judgment node remainON. Do not reset whole boards; report connected extra effects if needed.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-noel-off-AZ-20260909.json",
+  "predictionCheckpointSHA256": "9174577c6d520a997c9e8fc73e1abb57f2c6d2495fd41dc8ac00e8c036acc631",
+  "boardInputsConfirmedByUser": false,
+  "initialReply": {
+    "rawUserInput": "모두 일치함.",
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 68.9,
+      "special": 37.5,
+      "passive": null,
+      "board": 9.2
+    }
+  },
+  "followUpConfirmation": null
+}

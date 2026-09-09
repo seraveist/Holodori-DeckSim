@@ -1,0 +1,1194 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": [
+    "AV",
+    "AX",
+    "AY"
+  ],
+  "observations": [
+    {
+      "schemaVersion": 1,
+      "sampleId": "AV",
+      "observedAt": "2026-09-09",
+      "gameVersion": null,
+      "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00018-5-uniq-0068-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00",
+        "card-00027-5-uniq-0022-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        }
+      ],
+      "profilesConfirmed": false,
+      "profileBasis": "Inherited from frozen AV setup; no independent card-level screenshot supplied.",
+      "boardOverrides": {
+        "chr-00018": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00022": {
+          "rate": 17.8,
+          "cooldown": 0
+        },
+        "chr-06002": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00021": {
+          "rate": 6,
+          "cooldown": 0
+        },
+        "chr-00027": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      "leaderSupportOverride": 13.3,
+      "leaderJudgmentRequested": true,
+      "rawUserInput": "AV 전부 일치. AX 패시브 없음, 보드스코어 10.9%. AY 전부 일치",
+      "screenshot": null,
+      "confirmationScope": "All-match reply confirms the four numeric score rows in the user-facing forecast table. No power or totals confirmed.",
+      "game": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": null,
+          "outfit": null,
+          "passive": null,
+          "board": null,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 64.2,
+          "special": 37.3,
+          "passive": 2.4,
+          "board": 10.3
+        }
+      },
+      "scoreRowPresence": {
+        "outfit": null,
+        "active": true,
+        "special": true,
+        "passive": true,
+        "board": true
+      },
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false
+      },
+      "boardContext": "Noel17.8/frequency0,Kanade0,Flare6,Ririka support13.3/judgment ON, inherited from AV procedure.",
+      "predictionCheckpoint": "analysis/unit-score/experiments/baseline-challenges-AV-AX-20260909.json",
+      "predictionCheckpointSHA256": "e30e696b8c6da1b9422931eb94aeef17bbae9afb244a470cdd978d030e339b89",
+      "boardInputsConfirmedByUser": false,
+      "initialReply": {
+        "rawUserInput": "AV 전부 일치. AX 패시브 없음, 보드스코어 10.9%. AY 전부 일치",
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 64.2,
+          "special": 37.3,
+          "passive": 2.4,
+          "board": 10.3
+        }
+      },
+      "followUpConfirmation": null
+    },
+    {
+      "schemaVersion": 1,
+      "sampleId": "AX",
+      "observedAt": "2026-09-09",
+      "gameVersion": null,
+      "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "profilesConfirmed": false,
+      "profileBasis": "Inherited from frozen AX setup; no independent card-level screenshot supplied.",
+      "boardOverrides": {
+        "chr-00010": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00027": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00022": {
+          "rate": 17.8,
+          "cooldown": 0
+        },
+        "chr-00018": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-06002": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      "leaderSupportOverride": 13.3,
+      "leaderJudgmentRequested": true,
+      "rawUserInput": "AV 전부 일치. AX 패시브 없음, 보드스코어 10.9%. AY 전부 일치",
+      "screenshot": null,
+      "confirmationScope": "Initial reply confirms absent passive row and board10.9. Follow-up explicitly confirms active68.9/SP37.5 and requested board settings. No power or totals confirmed.",
+      "game": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": null,
+          "outfit": null,
+          "passive": null,
+          "board": null,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 68.9,
+          "special": 37.5,
+          "passive": null,
+          "board": 10.9
+        }
+      },
+      "scoreRowPresence": {
+        "outfit": null,
+        "active": true,
+        "special": true,
+        "passive": false,
+        "board": true
+      },
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false
+      },
+      "boardContext": "Noel17.8/frequency0,Kanade0,Ririka13.3/judgment ON explicitly confirmed in follow-up.",
+      "predictionCheckpoint": "analysis/unit-score/experiments/baseline-challenges-AV-AX-20260909.json",
+      "predictionCheckpointSHA256": "e30e696b8c6da1b9422931eb94aeef17bbae9afb244a470cdd978d030e339b89",
+      "boardInputsConfirmedByUser": true,
+      "initialReply": {
+        "rawUserInput": "AV 전부 일치. AX 패시브 없음, 보드스코어 10.9%. AY 전부 일치",
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": null,
+          "special": null,
+          "passive": null,
+          "board": 10.9
+        }
+      },
+      "followUpConfirmation": {
+        "question": "AX의 0.1%p 차이를 분리하려고 입력만 확인할게요. 당시 액티브 68.9%·SP 37.5%도 일치했나요? 노엘 발동률은 11.1%+3.7%+3.0%=17.8%만 ON·빈도 OFF, 카나데 발동률 15%·5% OFF, 리리카 서포트 합13.3%·판정 노드 ON이었는지도 함께 알려주세요.",
+        "rawUserInput": "액티브, SP는 일치함. 나머지 보드 맞음.",
+        "confirms": {
+          "active": 68.9,
+          "special": 37.5,
+          "noelRate": 17.8,
+          "noelFrequency": 0,
+          "kanadeRate": 0,
+          "leaderSupport": 13.3,
+          "leaderJudgment": true
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "sampleId": "AY",
+      "observedAt": "2026-09-09",
+      "gameVersion": null,
+      "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00018-5-uniq-0068-00",
+        "card-00022-5-uniq-0063-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00021-5-uniq-0064-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "profilesConfirmed": false,
+      "profileBasis": "Inherited from frozen AY setup; no independent card-level screenshot supplied.",
+      "boardOverrides": {
+        "chr-00018": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00022": {
+          "rate": 17.8,
+          "cooldown": 0
+        },
+        "chr-06002": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00021": {
+          "rate": 6,
+          "cooldown": 0
+        },
+        "chr-00026": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      "leaderSupportOverride": 13.3,
+      "leaderJudgmentRequested": true,
+      "rawUserInput": "AV 전부 일치. AX 패시브 없음, 보드스코어 10.9%. AY 전부 일치",
+      "screenshot": null,
+      "confirmationScope": "All-match reply confirms the four numeric score rows in the user-facing forecast table. No power or totals confirmed.",
+      "game": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": null,
+          "outfit": null,
+          "passive": null,
+          "board": null,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 74,
+          "special": 42.9,
+          "passive": 7,
+          "board": 12
+        }
+      },
+      "scoreRowPresence": {
+        "outfit": null,
+        "active": true,
+        "special": true,
+        "passive": true,
+        "board": true
+      },
+      "measurementView": {
+        "planned": "Formation detail before song selection",
+        "confirmedForThisSample": false
+      },
+      "boardContext": "Same AW composition and boards except Watame rate24.5/frequency4 disabled; Noel17.8/frequency0,Kanade0,Flare6,Ririka13.3/judgment ON maintained by procedure.",
+      "predictionCheckpoint": "analysis/unit-score/experiments/baseline-watame-AY-20260909.json",
+      "predictionCheckpointSHA256": "98ec5344adda17ac17ea02c3094ab650754536d9a083c163884900c1c3ecd8ff",
+      "boardInputsConfirmedByUser": false,
+      "initialReply": {
+        "rawUserInput": "AV 전부 일치. AX 패시브 없음, 보드스코어 10.9%. AY 전부 일치",
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 74,
+          "special": 42.9,
+          "passive": 7,
+          "board": 12
+        }
+      },
+      "followUpConfirmation": null
+    }
+  ],
+  "results": [
+    {
+      "sampleId": "AV",
+      "comparisons": [
+        {
+          "key": "active",
+          "predicted": 64.2,
+          "rawObserved": 64.2,
+          "observed": 64.2,
+          "normalizedAbsentRow": false,
+          "matches": true
+        },
+        {
+          "key": "special",
+          "predicted": 37.3,
+          "rawObserved": 37.3,
+          "observed": 37.3,
+          "normalizedAbsentRow": false,
+          "matches": true
+        },
+        {
+          "key": "passive",
+          "predicted": 2.4,
+          "rawObserved": 2.4,
+          "observed": 2.4,
+          "normalizedAbsentRow": false,
+          "matches": true
+        },
+        {
+          "key": "board",
+          "predicted": 10.3,
+          "rawObserved": 10.3,
+          "observed": 10.3,
+          "normalizedAbsentRow": false,
+          "matches": true
+        }
+      ],
+      "selected": {
+        "id": "AV",
+        "passive": 2.4,
+        "board": 10.3,
+        "active": 64.2,
+        "observedPassive": 2.4,
+        "observedBoard": 10.3,
+        "observedActive": 64.2,
+        "passiveMatches": true,
+        "boardMatches": true,
+        "activeMatches": true,
+        "zeroPassive": false,
+        "rawPassiveWasAbsent": false,
+        "sums": {
+          "A": 64.11317308444292,
+          "P": 66.85609279780871,
+          "B": 73.78216173824482,
+          "BP": 76.70007796724124
+        },
+        "roundedIncrement": 12.6
+      },
+      "pairMatches": true,
+      "joint": {
+        "raw": 12.562143822563925,
+        "observed": 12.7,
+        "possibleDisplays": [
+          12.6,
+          12.7
+        ],
+        "compatible": true
+      }
+    },
+    {
+      "sampleId": "AX",
+      "comparisons": [
+        {
+          "key": "active",
+          "predicted": 68.9,
+          "rawObserved": 68.9,
+          "observed": 68.9,
+          "normalizedAbsentRow": false,
+          "matches": true
+        },
+        {
+          "key": "special",
+          "predicted": 37.5,
+          "rawObserved": 37.5,
+          "observed": 37.5,
+          "normalizedAbsentRow": false,
+          "matches": true
+        },
+        {
+          "key": "passive",
+          "predicted": 0,
+          "rawObserved": null,
+          "observed": 0,
+          "normalizedAbsentRow": true,
+          "matches": true
+        },
+        {
+          "key": "board",
+          "predicted": 10.8,
+          "rawObserved": 10.9,
+          "observed": 10.9,
+          "normalizedAbsentRow": false,
+          "matches": false
+        }
+      ],
+      "selected": {
+        "id": "AX",
+        "passive": 0,
+        "board": 10.8,
+        "active": 68.9,
+        "observedPassive": null,
+        "observedBoard": 10.9,
+        "observedActive": 68.9,
+        "passiveMatches": true,
+        "boardMatches": false,
+        "activeMatches": true,
+        "zeroPassive": true,
+        "rawPassiveWasAbsent": true,
+        "sums": {
+          "A": 68.82976325183536,
+          "P": 68.82976325183536,
+          "B": 79.60419362653994,
+          "BP": 79.60419362653994
+        },
+        "roundedIncrement": 10.8
+      },
+      "pairMatches": false,
+      "joint": {
+        "raw": 10.75548565811826,
+        "observed": null,
+        "possibleDisplays": [
+          10.8,
+          10.9
+        ],
+        "compatible": null
+      }
+    },
+    {
+      "sampleId": "AY",
+      "comparisons": [
+        {
+          "key": "active",
+          "predicted": 74,
+          "rawObserved": 74,
+          "observed": 74,
+          "normalizedAbsentRow": false,
+          "matches": true
+        },
+        {
+          "key": "special",
+          "predicted": 42.9,
+          "rawObserved": 42.9,
+          "observed": 42.9,
+          "normalizedAbsentRow": false,
+          "matches": true
+        },
+        {
+          "key": "passive",
+          "predicted": 7,
+          "rawObserved": 7,
+          "observed": 7,
+          "normalizedAbsentRow": false,
+          "matches": true
+        },
+        {
+          "key": "board",
+          "predicted": 12,
+          "rawObserved": 12,
+          "observed": 12,
+          "normalizedAbsentRow": false,
+          "matches": true
+        }
+      ],
+      "selected": {
+        "id": "AY",
+        "passive": 7,
+        "board": 12,
+        "active": 74,
+        "observedPassive": 7,
+        "observedBoard": 12,
+        "observedActive": 74,
+        "passiveMatches": true,
+        "boardMatches": true,
+        "activeMatches": true,
+        "zeroPassive": false,
+        "rawPassiveWasAbsent": false,
+        "sums": {
+          "A": 73.9504585990862,
+          "P": 81.6777517422084,
+          "B": 84.96751203015444,
+          "BP": 92.85073613572399
+        },
+        "roundedIncrement": 18.9
+      },
+      "pairMatches": true,
+      "joint": {
+        "raw": 18.880366673318818,
+        "observed": 19,
+        "possibleDisplays": [
+          18.9,
+          19
+        ],
+        "compatible": true
+      }
+    }
+  ],
+  "summary": {
+    "observations": 48,
+    "distinctMemberSets": 26,
+    "activeObserved": 44,
+    "activeMatches": 44,
+    "spObserved": 44,
+    "spMatches": 44,
+    "confirmedPowerComponents": 106,
+    "positivePassiveJointCompatibility": 32,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN",
+      "AO",
+      "AP",
+      "AQ",
+      "AR",
+      "AS",
+      "AT",
+      "AW",
+      "AV",
+      "AY"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false,
+    "AOActiveSPUnreported": true,
+    "ASActiveSPUnreported": true,
+    "ATActiveSPUnreported": true,
+    "AWPowerUnreported": true,
+    "expandedCandidateProspectivePairs": 4,
+    "expandedCandidateProspectiveMatches": 3,
+    "AXActiveSPConfirmedInFollowUp": true,
+    "AVAXAYPowerUnreported": true
+  },
+  "selectedCandidate": {
+    "retrospective": {
+      "through": "AT",
+      "pairs": 40,
+      "matches": 40
+    },
+    "prospective": {
+      "ids": [
+        "AW",
+        "AV",
+        "AX",
+        "AY"
+      ],
+      "pairs": 4,
+      "matches": 3,
+      "failures": [
+        "AX"
+      ],
+      "distinctMemberSets": 3
+    },
+    "combinedEligiblePairs": 44,
+    "combinedMatches": 43,
+    "promotedToProduction": false
+  },
+  "diagnostics": {
+    "postObservationOnly": true,
+    "roundingAudit": {
+      "settings": 12,
+      "eligiblePairs": 44,
+      "variants": [
+        {
+          "config": {
+            "endpoints": {
+              "board": "ceil",
+              "active": "ceil"
+            }
+          },
+          "matches": 43,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.8,
+            "matches": false
+          },
+          "failures": [
+            "AX"
+          ]
+        },
+        {
+          "config": {
+            "endpoints": {
+              "board": "ceil",
+              "active": "floor"
+            }
+          },
+          "matches": 1,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.9,
+            "matches": true
+          },
+          "failures": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "K",
+            "H",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+            "AA",
+            "AB",
+            "AC",
+            "AD",
+            "AE",
+            "AF",
+            "AG",
+            "AH",
+            "AI",
+            "AJ",
+            "AK",
+            "AL",
+            "AM",
+            "AN",
+            "AO",
+            "AP",
+            "AQ",
+            "AR",
+            "AS",
+            "AT",
+            "AW",
+            "AV",
+            "AY"
+          ]
+        },
+        {
+          "config": {
+            "endpoints": {
+              "board": "ceil",
+              "active": "round"
+            }
+          },
+          "matches": 15,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.9,
+            "matches": true
+          },
+          "failures": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "G",
+            "H",
+            "O",
+            "S",
+            "T",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+            "AB",
+            "AC",
+            "AD",
+            "AF",
+            "AI",
+            "AL",
+            "AM",
+            "AN",
+            "AO",
+            "AP",
+            "AQ",
+            "AR",
+            "AS",
+            "AT",
+            "AV"
+          ]
+        },
+        {
+          "config": {
+            "endpoints": {
+              "board": "floor",
+              "active": "ceil"
+            }
+          },
+          "matches": 0,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.7,
+            "matches": false
+          },
+          "failures": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "K",
+            "H",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+            "AA",
+            "AB",
+            "AC",
+            "AD",
+            "AE",
+            "AF",
+            "AG",
+            "AH",
+            "AI",
+            "AJ",
+            "AK",
+            "AL",
+            "AM",
+            "AN",
+            "AO",
+            "AP",
+            "AQ",
+            "AR",
+            "AS",
+            "AT",
+            "AW",
+            "AV",
+            "AX",
+            "AY"
+          ]
+        },
+        {
+          "config": {
+            "endpoints": {
+              "board": "floor",
+              "active": "floor"
+            }
+          },
+          "matches": 43,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.8,
+            "matches": false
+          },
+          "failures": [
+            "AX"
+          ]
+        },
+        {
+          "config": {
+            "endpoints": {
+              "board": "floor",
+              "active": "round"
+            }
+          },
+          "matches": 29,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.8,
+            "matches": false
+          },
+          "failures": [
+            "E",
+            "F",
+            "K",
+            "P",
+            "Q",
+            "R",
+            "AA",
+            "AE",
+            "AG",
+            "AH",
+            "AJ",
+            "AK",
+            "AW",
+            "AX",
+            "AY"
+          ]
+        },
+        {
+          "config": {
+            "endpoints": {
+              "board": "round",
+              "active": "ceil"
+            }
+          },
+          "matches": 25,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.7,
+            "matches": false
+          },
+          "failures": [
+            "A",
+            "B",
+            "D",
+            "G",
+            "O",
+            "P",
+            "Q",
+            "V",
+            "AB",
+            "AC",
+            "AH",
+            "AI",
+            "AL",
+            "AN",
+            "AR",
+            "AS",
+            "AW",
+            "AV",
+            "AX"
+          ]
+        },
+        {
+          "config": {
+            "endpoints": {
+              "board": "round",
+              "active": "floor"
+            }
+          },
+          "matches": 18,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.8,
+            "matches": false
+          },
+          "failures": [
+            "C",
+            "E",
+            "F",
+            "K",
+            "H",
+            "R",
+            "S",
+            "T",
+            "W",
+            "X",
+            "Y",
+            "Z",
+            "AA",
+            "AD",
+            "AE",
+            "AF",
+            "AG",
+            "AJ",
+            "AK",
+            "AM",
+            "AO",
+            "AP",
+            "AQ",
+            "AT",
+            "AX",
+            "AY"
+          ]
+        },
+        {
+          "config": {
+            "endpoints": {
+              "board": "round",
+              "active": "round"
+            }
+          },
+          "matches": 24,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.8,
+            "matches": false
+          },
+          "failures": [
+            "C",
+            "H",
+            "P",
+            "Q",
+            "S",
+            "T",
+            "W",
+            "X",
+            "Y",
+            "Z",
+            "AD",
+            "AF",
+            "AH",
+            "AM",
+            "AO",
+            "AP",
+            "AQ",
+            "AT",
+            "AW",
+            "AX"
+          ]
+        },
+        {
+          "config": {
+            "delta": "ceil"
+          },
+          "matches": 14,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.8,
+            "matches": false
+          },
+          "failures": [
+            "A",
+            "B",
+            "C",
+            "E",
+            "F",
+            "K",
+            "H",
+            "R",
+            "S",
+            "T",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+            "AA",
+            "AC",
+            "AD",
+            "AF",
+            "AG",
+            "AJ",
+            "AK",
+            "AM",
+            "AN",
+            "AO",
+            "AP",
+            "AQ",
+            "AT",
+            "AX",
+            "AY"
+          ]
+        },
+        {
+          "config": {
+            "delta": "floor"
+          },
+          "matches": 29,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.7,
+            "matches": false
+          },
+          "failures": [
+            "D",
+            "G",
+            "O",
+            "P",
+            "Q",
+            "AB",
+            "AE",
+            "AH",
+            "AI",
+            "AL",
+            "AR",
+            "AS",
+            "AW",
+            "AV",
+            "AX"
+          ]
+        },
+        {
+          "config": {
+            "delta": "round"
+          },
+          "matches": 30,
+          "AX": {
+            "id": "AX",
+            "passive": 0,
+            "board": 10.8,
+            "matches": false
+          },
+          "failures": [
+            "C",
+            "H",
+            "P",
+            "Q",
+            "S",
+            "T",
+            "AD",
+            "AF",
+            "AM",
+            "AO",
+            "AP",
+            "AQ",
+            "AT",
+            "AX"
+          ]
+        }
+      ]
+    },
+    "AX": {
+      "noScoreSupportPassive": true,
+      "rawActive": 68.82976325183536,
+      "rawBoardApplied": 79.60419362653994,
+      "rawDifference": 10.774430374704579,
+      "boardAppliedIncreaseNeededWithFixedActiveEndpoint": 0.09580637346006426,
+      "inputSensitivity": [
+        {
+          "noelRate": 17.8,
+          "noelFrequency": 0,
+          "kanadeRate": 0,
+          "passive": 0,
+          "board": 10.8
+        },
+        {
+          "noelRate": 21.5,
+          "noelFrequency": 0,
+          "kanadeRate": 0,
+          "passive": 0,
+          "board": 11.1
+        },
+        {
+          "noelRate": 23.5,
+          "noelFrequency": 0,
+          "kanadeRate": 0,
+          "passive": 0,
+          "board": 11.3
+        },
+        {
+          "noelRate": 17.8,
+          "noelFrequency": 4,
+          "kanadeRate": 0,
+          "passive": 0,
+          "board": 7.4
+        },
+        {
+          "noelRate": 17.8,
+          "noelFrequency": 0,
+          "kanadeRate": 20,
+          "passive": 0,
+          "board": 12
+        },
+        {
+          "noelRate": 0,
+          "noelFrequency": 0,
+          "kanadeRate": 0,
+          "passive": 0,
+          "board": 9.2
+        }
+      ],
+      "interpretation": "No positive-passive allocation is present. These input alternatives are diagnostics, not inferred corrections. The user subsequently confirmed the prescribed boards and active/SP; no independent card-level audit was supplied. Final-rounding checks keep the frozen intermediate engine and weights fixed; they are not an exhaustive search of game formulas."
+    }
+  },
+  "interpretation": {
+    "confirmationScope": "AV/AY confirm four score rows. AX initial reply confirms absent passive row and board10.9; follow-up confirms active68.9/SP37.5 and board settings. No new power rows, score totals or played-song results.",
+    "timingEvidence": "AW-to-AY predicted passive+board display16.0 to19.0 when Watame timing boards are disabled; both endpoints confirmed. This supports timing-overlap modeling, not improvement to actual song scores.",
+    "exactFormulaConfirmed": false,
+    "unobserved": [
+      "AU"
+    ],
+    "next": "Isolate a board contribution using the AX zero-passive composition; freeze any next prediction before requesting measurement."
+  },
+  "provenance": {
+    "previousCatalog": "analysis/unit-score/observation-catalog-AW-20260909.json",
+    "previousCatalogSHA256": "ab674118c0839206e88797617b4271ac8c7ff99b7a1385a946dcfb417f7b20e5",
+    "observations": {
+      "analysis/unit-score/observations/AV-20260909.json": "38ca4f81e485ff735bb0d10756ddd8aa99b74e23b1f6b602d8ef505d4718a5df",
+      "analysis/unit-score/observations/AX-20260909.json": "38baf2b7505a0023d3dbe50d78186ed7b8e8cc34a120e48fabadb1197daeae7c",
+      "analysis/unit-score/observations/AY-20260909.json": "1db30be2cd07db7de7743f9a9d7558d31921b701d6f8e11801560c5bb360de89"
+    },
+    "analysisSourceSHA256": "884459e82f7459b7bfba61379a835a418d108810223b6bc24e7b6ba0d0e65859",
+    "modelSourceSHA256": "3d48cdc50d03d891bb2f651167d9256030a9e29fe9624b509e01cec5a19d46eb",
+    "kernelSourceSHA256": "9c89a944de0b3645a65bdba44bf991d100cd60a7961c4ef88b42e8b50a0e503a"
+  }
+}

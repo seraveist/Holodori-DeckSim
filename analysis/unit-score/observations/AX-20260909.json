@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AX",
+  "observedAt": "2026-09-09",
+  "gameVersion": null,
+  "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00018-5-uniq-0068-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Inherited from frozen AX setup; no independent card-level screenshot supplied.",
+  "boardOverrides": {
+    "chr-00010": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00027": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 17.8,
+      "cooldown": 0
+    },
+    "chr-00018": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    }
+  },
+  "leaderSupportOverride": 13.3,
+  "leaderJudgmentRequested": true,
+  "rawUserInput": "AV 전부 일치. AX 패시브 없음, 보드스코어 10.9%. AY 전부 일치",
+  "screenshot": null,
+  "confirmationScope": "Initial reply confirms absent passive row and board10.9. Follow-up explicitly confirms active68.9/SP37.5 and requested board settings. No power or totals confirmed.",
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": null,
+      "outfit": null,
+      "passive": null,
+      "board": null,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 68.9,
+      "special": 37.5,
+      "passive": null,
+      "board": 10.9
+    }
+  },
+  "scoreRowPresence": {
+    "outfit": null,
+    "active": true,
+    "special": true,
+    "passive": false,
+    "board": true
+  },
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false
+  },
+  "boardContext": "Noel17.8/frequency0,Kanade0,Ririka13.3/judgment ON explicitly confirmed in follow-up.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-challenges-AV-AX-20260909.json",
+  "predictionCheckpointSHA256": "e30e696b8c6da1b9422931eb94aeef17bbae9afb244a470cdd978d030e339b89",
+  "boardInputsConfirmedByUser": true,
+  "initialReply": {
+    "rawUserInput": "AV 전부 일치. AX 패시브 없음, 보드스코어 10.9%. AY 전부 일치",
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": null,
+      "special": null,
+      "passive": null,
+      "board": 10.9
+    }
+  },
+  "followUpConfirmation": {
+    "question": "AX의 0.1%p 차이를 분리하려고 입력만 확인할게요. 당시 액티브 68.9%·SP 37.5%도 일치했나요? 노엘 발동률은 11.1%+3.7%+3.0%=17.8%만 ON·빈도 OFF, 카나데 발동률 15%·5% OFF, 리리카 서포트 합13.3%·판정 노드 ON이었는지도 함께 알려주세요.",
+    "rawUserInput": "액티브, SP는 일치함. 나머지 보드 맞음.",
+    "confirms": {
+      "active": 68.9,
+      "special": 37.5,
+      "noelRate": 17.8,
+      "noelFrequency": 0,
+      "kanadeRate": 0,
+      "leaderSupport": 13.3,
+      "leaderJudgment": true
+    }
+  }
+}

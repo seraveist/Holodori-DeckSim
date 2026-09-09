@@ -20,6 +20,8 @@ import { verifyARReconfirmation } from './scripts/test-validation-ar-reconfirmat
 import { verifyExpandedAT } from './scripts/test-validation-expanded-at.mjs';
 import { verifyChallengePlans } from './scripts/test-validation-challenges-av-ax.mjs';
 import { verifyAW } from './scripts/test-validation-aw.mjs';
+import { verifyAVAXAY } from './scripts/test-validation-av-ax-ay.mjs';
+import { verifyAZ } from './scripts/test-validation-az.mjs';
 const previous = verifyAJHandoff();
 verifyAK();
 verifyALPlan();
@@ -36,4 +38,4 @@ verifyASPlan();
 verifyAS();
 verifyATPlan();
 const historicalAT = verifyAT();
-console.log(JSON.stringify({ ...verifyAW(), historicalAT, reconfirmation: verifyARReconfirmation(), expandedCandidateRetrospective: verifyExpandedAT(), frozenChallengePlans: verifyChallengePlans(), preservedAUPlan: verifyAUPlan(), preservedAJCheckpoint: previous }, null, 2));
+console.log(JSON.stringify({ ...verifyAZ(), historicalAVAXAY: verifyAVAXAY(), historicalAW: verifyAW(), historicalAT, reconfirmation: verifyARReconfirmation(), expandedCandidateRetrospective: verifyExpandedAT(), frozenChallengePlans: verifyChallengePlans(), preservedAUPlan: verifyAUPlan(), preservedAJCheckpoint: previous }, null, 2));

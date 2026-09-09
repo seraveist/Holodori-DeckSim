@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AZ",
+  "extendsCatalog": "analysis/unit-score/observation-catalog-AY-20260909.json",
+  "extendsCatalogSHA256": "878074b0b7d406d5c32788186b65a611c6bc230492f723c80076702b4b59f080",
+  "summary": {
+    "observations": 49,
+    "distinctMemberSets": 26,
+    "activeObserved": 45,
+    "activeMatches": 45,
+    "spObserved": 45,
+    "spMatches": 45,
+    "confirmedPowerComponents": 106,
+    "positivePassiveJointCompatibility": 32,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN",
+      "AO",
+      "AP",
+      "AQ",
+      "AR",
+      "AS",
+      "AT",
+      "AW",
+      "AV",
+      "AY"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false,
+    "AOActiveSPUnreported": true,
+    "ASActiveSPUnreported": true,
+    "ATActiveSPUnreported": true,
+    "AWPowerUnreported": true,
+    "expandedCandidateProspectivePairs": 5,
+    "expandedCandidateProspectiveMatches": 4,
+    "AXActiveSPConfirmedInFollowUp": true,
+    "AVAXAYPowerUnreported": true,
+    "AZPowerUnreported": true
+  },
+  "scope": "Append AZ four-score confirmation, passive absent. No new power/totals.",
+  "observations": [
+    {
+      "sampleId": "AZ",
+      "sourcePath": "analysis/unit-score/observations/AZ-20260909.json",
+      "sourceSHA256": "de460584f62ebfd5a41b454cfbef9a0a2869127622b3989fb3b802d64b3c14db",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00018-5-uniq-0068-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "level": 60,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "boardOverrides": {
+        "chr-00010": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00027": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00022": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00018": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-06002": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      "leaderSupportOverride": 13.3,
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": null,
+          "outfit": null,
+          "passive": null,
+          "board": null,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 68.9,
+          "special": 37.5,
+          "passive": null,
+          "board": 9.2
+        }
+      },
+      "rawUserInput": "모두 일치함."
+    }
+  ]
+}

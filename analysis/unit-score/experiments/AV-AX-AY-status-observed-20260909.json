@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": [
+    "AV",
+    "AX",
+    "AY"
+  ],
+  "report": "analysis/unit-score/reports/AV-AX-AY-comparison-20260909.json",
+  "reportSHA256": "8767b986db2f9e81a2e15eeebe9bd5565e5c8473c448d5b58d0c96b3595536a7",
+  "catalog": "analysis/unit-score/observation-catalog-AY-20260909.json",
+  "catalogSHA256": "878074b0b7d406d5c32788186b65a611c6bc230492f723c80076702b4b59f080",
+  "observationHashes": {
+    "analysis/unit-score/observations/AV-20260909.json": "38ca4f81e485ff735bb0d10756ddd8aa99b74e23b1f6b602d8ef505d4718a5df",
+    "analysis/unit-score/observations/AX-20260909.json": "38baf2b7505a0023d3dbe50d78186ed7b8e8cc34a120e48fabadb1197daeae7c",
+    "analysis/unit-score/observations/AY-20260909.json": "1db30be2cd07db7de7743f9a9d7558d31921b701d6f8e11801560c5bb360de89"
+  },
+  "nextPlan": "analysis/unit-score/experiments/baseline-noel-off-AZ-20260909.json",
+  "nextPlanSHA256": "9174577c6d520a997c9e8fc73e1abb57f2c6d2495fd41dc8ac00e8c036acc631",
+  "unobserved": [
+    "AU",
+    "AZ"
+  ],
+  "productionFormulaChanged": false
+}

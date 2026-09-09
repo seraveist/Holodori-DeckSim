@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AY",
+  "observedAt": "2026-09-09",
+  "gameVersion": null,
+  "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00018-5-uniq-0068-00",
+    "card-00022-5-uniq-0063-00",
+    "card-06002-5-uniq-0058-00",
+    "card-00021-5-uniq-0064-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00018-5-uniq-0068-00",
+      "level": 60,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-06002-5-uniq-0058-00",
+      "level": 80,
+      "potential": 0
+    },
+    {
+      "id": "card-00021-5-uniq-0064-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Inherited from frozen AY setup; no independent card-level screenshot supplied.",
+  "boardOverrides": {
+    "chr-00018": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 17.8,
+      "cooldown": 0
+    },
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00021": {
+      "rate": 6,
+      "cooldown": 0
+    },
+    "chr-00026": {
+      "rate": 0,
+      "cooldown": 0
+    }
+  },
+  "leaderSupportOverride": 13.3,
+  "leaderJudgmentRequested": true,
+  "rawUserInput": "AV 전부 일치. AX 패시브 없음, 보드스코어 10.9%. AY 전부 일치",
+  "screenshot": null,
+  "confirmationScope": "All-match reply confirms the four numeric score rows in the user-facing forecast table. No power or totals confirmed.",
+  "game": {
+    "unitScore": null,
+    "overallPower": null,
+    "scoreBonusPct": null,
+    "powerDetail": {
+      "memberParameter": null,
+      "outfit": null,
+      "passive": null,
+      "board": null,
+      "memory": null,
+      "enhancement": null
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 74,
+      "special": 42.9,
+      "passive": 7,
+      "board": 12
+    }
+  },
+  "scoreRowPresence": {
+    "outfit": null,
+    "active": true,
+    "special": true,
+    "passive": true,
+    "board": true
+  },
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false
+  },
+  "boardContext": "Same AW composition and boards except Watame rate24.5/frequency4 disabled; Noel17.8/frequency0,Kanade0,Flare6,Ririka13.3/judgment ON maintained by procedure.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-watame-AY-20260909.json",
+  "predictionCheckpointSHA256": "98ec5344adda17ac17ea02c3094ab650754536d9a083c163884900c1c3ecd8ff",
+  "boardInputsConfirmedByUser": false,
+  "initialReply": {
+    "rawUserInput": "AV 전부 일치. AX 패시브 없음, 보드스코어 10.9%. AY 전부 일치",
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 74,
+      "special": 42.9,
+      "passive": 7,
+      "board": 12
+    }
+  },
+  "followUpConfirmation": null
+}

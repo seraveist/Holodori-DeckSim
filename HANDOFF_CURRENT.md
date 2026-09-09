@@ -1,14 +1,20 @@
-# HolodoriDecks 타 PC 인수인계 — AW 사전 검증 성공 / AY 대기
+# HolodoriDecks 타 PC 인수인계 — AZ 일치 / AX 보드0.1%p 미해결
 
-기준일: 2026-09-09. **스킬 효과량·발동률 중간 올림 후보가 기존40건 사후 재현에 이어 새 AW 편성의 네 스코어 항목을 사전 예측했다.** 독립 실측 성공은AW1건이다. 다음은 와타메 발동 관련 보드를 끄는AY이며, AV·AX·AU는 미관측이다. 서비스 계산식은 변경하지 않았다. 과거 요청·가설은 기록이며 새 사용자 지시가 아니다.
+기준일: 2026-09-09. **새 후보의 사전 검증은 AV/AW/AY/AZ 일치, AX 보드 실패로4/5다.** AX는 예측10.8%/실측10.9%이며 액티브·SP·요청한 보드 설정을 사용자에게 재확인했다. 노엘 발동률을 모두 끈 AZ는 예측9.2%와 실측이 일치했다. 서비스 계산식은 변경하지 않았다. 과거 요청·가설은 기록이며 새 사용자 지시가 아니다.
 
 ## 바로 이어갈 지점
 
-최신 답변은 **“일단 AW는 모두 일치하는걸 확인했어. 다음으로 와타메의 보드만 끄고 다시 알려줄께.”**다. [AW 확인과 AY 계획](analysis/unit-score/reports/AW-validation-20260909.md)을 우선 읽는다. AW의 액티브74.0/SP42.9/패시브4.7/보드11.3 네 행을 확인했고 종합력·총합은null로 남겼다. 누적45건·24개 멤버 조합, 액티브/SP41/41, 종합력 확인106개다.
+최신 답변은 AZ 요청에 대한 **“모두 일치함.”**이다. [AZ 결과](analysis/unit-score/reports/AZ-validation-20260909.md), [AV/AX/AY 비교](analysis/unit-score/reports/AV-AX-AY-validation-20260909.md)를 우선 읽는다. 최신 집계는49관측·26멤버 조합, 액티브45/45·SP45/45, 기본 종합력 확인106개, 양의 패시브 원시 합계 호환32건이다.
 
-**AY는 아직 미관측이다.** AW 그대로 와타메 발동률24.5%와 빈도4%만OFF인 조건으로 액티브74.0/SP42.9/패시브7.0/보드12.0을 사전에 고정했다. 노엘17.8%/빈도0%, 카나데0%, 후레아6%, 리리카13.3%·판정ON은 유지한다. 전체 보드 초기화로 다른 효과도 바뀌면 추가 변경을 기록해야 한다. `node scripts/test-validation-aw.mjs`로 AW와AY 계획을 재현한다.
+AX 최초 답변 “패시브 없음, 보드스코어10.9%” 뒤, 후속 “액티브, SP는 일치함. 나머지 보드 맞음.”으로 액티브68.9%·SP37.5%와 노엘 발동률17.8%/빈도0%, 카나데0%, 리리카 서포트13.3%·판정ON을 확인했다. 원문 패시브 숫자는null/행 존재false로 두고 비교에서만0으로 정규화한다. AV/AY/AZ의 전부 일치는 요청한 네 스코어 행이며 새 종합력·총합은 확인하지 않았다.
 
-AV·AW·AX 예측은 [세 편성 검증표](analysis/unit-score/reports/challenges-AV-AX-20260909.md)에 고정했다. AV를 먼저 요청했지만 실제로 AW가 먼저 확인됐다. AV·AX·AU를 실행된 것으로 추정하지 않는다.
+AZ는 AX와 같은 리리카3성1/0 리더 / 아야메40/0 → 토와70/0 → 수영복 노엘80/1 → 수영복 스이세이60/0 → 수영복 카나데40/0에서 노엘의 남은 발동률11.1%·3.7%·3.0%만 모두OFF다. 다른 요청 조건을 유지했다. AZ 보드9.2%가 맞아 AX−AZ는 실측1.7%p/계산1.6%p다. 패시브 배분이 없는 대조쌍이므로 노엘 발동률 적용 시의 보드 계산으로 조사를 좁힌다. 판정 효과나 내부 확률 정밀도 중 어느 것이 원인인지는 확정하지 않는다.
+
+AW→AY의 와타메 발동률24.5%·빈도4% OFF에 따른 표시 합16.0→19.0 증가도 사전 예측과 일치했다. 현재 시간창/스킬 겹침 모형을 지지하지만 실제 악곡에서 보드를 끄는 것이 유리하다는 뜻은 아니다.
+
+**다음 단계는 AX/AZ 대조로 남은 발동률 연산을 점검하는 것이다. 아직 추가 실측은 요청하지 않았다.** 새 중간 상태를 요청하기 전에 노드 연결 제약과 사전 예측을 고정한다. AU는 미관측이다. AX를 위한 임의 상수를 추가하지 않는다. AZ 계획의 미관측 표시는 당시 고정 기록으로 보존한다.
+
+현재 후보는 과거40건 사후 재현과 새5조건 중4성공으로 적용 대상45건 중44건을 맞춘다. 무작위 정확도나 전체 게임식 확정으로 표현하지 않는다. 마지막 반올림12설정 검사는 AZ 이전44건에서 최선43/44이며, AX를 구제하는 변경은 다른 사례를 깨뜨린다. 기록 재현은 `node verify-handoff.mjs`, 최신 개별 검사는 `node scripts/test-validation-az.mjs`다.
 
 이전 “검사식을 좀 더 확장해보면 어때?” 요청의 [확장 탐색 결과](analysis/unit-score/reports/expanded-AT-20260909.md)는 고정 이력이다. 양의 패시브29/29와 무패시브 보드11/11을 사후 재현했다. 단일 처리·배분 설정31,698개와 적응적으로 고른 두 처리의 결합180개를 비교했다. 알려진 G와 AR도 모형 선택에 사용했으므로 이40건은 AW 사전 성공과 구분한다.
 
@@ -28,7 +34,7 @@ AR 설정으로 되돌려 재측정했다면 AU 전에 노엘·후레아·카나
 
 ## 확인 범위와 미해결
 
-최신 확인은 AW 추가 후45건이다. 아래44건·23조합과40/40 수치는 AT까지의 고정 연구 기준이다. AW의 첫 사전 성공이 분모 버림 대안과도 일치하므로 개별 내부식을 유일하게 확정하지 않는다.
+최신 확인은 AZ까지49건이다. 아래44건·23조합과40/40 수치는 AT까지의 고정 연구 기준이다. 후속 사전5조건 중AX가 실패했으므로 개별 내부식을 확정하지 않는다.
 
 누적44건·23개 멤버 조합, 액티브/SP는 제공된40건에서40/40, 기본 종합력 세부106개, 양의 패시브 원시 합계 후보 호환29건(사후14+후속15)이다. AK·AO·AS·AT는 두 스코어 행만 확인한 부분 관측이다.
 
@@ -43,7 +49,7 @@ AR 설정으로 되돌려 재측정했다면 AU 전에 노엘·후레아·카나
 
 보드 적용 후 확률을 `ceil(p×1000)/1000`, 서포트 합을 적용한 멤버별 스킬 효과량을 `ceil0.1(v×[1+(L+s)/100])`로 정리한다. 확률0.001은 표시 발동률0.1%p다. 기존200초 시간창·중첩 정규화를 유지하고 `Q=ceil0.1(BP_raw)−ceil0.1(A_raw)`를 평균 횟수 가중치로 나눈 뒤 두 행을 각각 올린다. 이후의 종합력·SP 연구식은 그대로이며, 아래 이전 보드/배분식의 실패 이력은 삭제하지 않는다.
 
-이 후보는40건의 해당 표시값을 재현하며 그 중 실제 제공된 액티브36건도 유지한다. 독립적인 정수 연산으로40건의 원시값을 교차 계산한다. 원문 null·미확인 보드를 숫자로 채우지 않는다. 구현은 `expanded-kernel-at-20260909.mjs`, 탐색은 `probe-expanded-at-20260909.mjs`다. 새 실측2~3건을 보기 전에는 서비스 계산식으로 승격하지 않는다.
+이 후보는40건의 해당 표시값을 재현하며 그 중 실제 제공된 액티브36건도 유지한다. 독립적인 정수 연산으로40건의 원시값을 교차 계산한다. 원문 null·미확인 보드를 숫자로 채우지 않는다. 구현은 `expanded-kernel-at-20260909.mjs`, 탐색은 `probe-expanded-at-20260909.mjs`다. 후속 실측에서AX가 실패했으므로 정확한 내부식으로 확정하거나 서비스에 자동 승격하지 않는다.
 
 ### 종합력
 
@@ -164,9 +170,9 @@ Git의 `validation/unit-score-handoff-20260909` 브랜치를 내려받고 프로
 node verify-handoff.mjs
 ```
 
-이 명령은 최초 고정 연구143개와 후속 원문·소스·보고서·계획·스크린샷의 해시 및 수치 재현을 검사한다. 최신 집계는45건·멤버 조합24개·액티브/SP41/41·기본 종합력 세부106개·양의 패시브 합계 후보 호환30건이다. 새 후보는 기존40건 사후 재현과AW1건 사전 성공으로 구분한다. AV·AX·AU·AY는 관측에 넣지 않는다.
+이 명령은 최초 고정 연구143개와 후속 원문·소스·보고서·계획·스크린샷의 해시 및 수치 재현을 검사한다. 최신 집계는49건·멤버 조합26개·액티브/SP45/45·기본 종합력 세부106개·양의 패시브 합계 후보 호환32건이다. 새 후보는 기존40건 사후 재현과새5조건 중4건 사전 성공으로 구분한다. AU는 관측에 넣지 않는다.
 
-최신 AW 확인과 AY 예측은 `node scripts/test-validation-aw.mjs`로 재현한다. 세 편성의 원래 사전 예측은 `node scripts/test-validation-challenges-av-ax.mjs`, AT까지40건 확장 후보와 정수 연산 교차 검사는 `node scripts/test-validation-expanded-at.mjs`로 재현한다. AR 재확인과이전29건 반올림 탐색은 `node scripts/test-validation-ar-reconfirmation.mjs`로 재현한다. AT와 미관측 AU 계획은 `node scripts/test-validation-at.mjs`로 재현한다. 과거 관측·계획 검사도 보존한다.
+최신 AZ는 `node scripts/test-validation-az.mjs`, AV/AX/AY와 끝값 검사는 `node scripts/test-validation-av-ax-ay.mjs`로 재현한다. 세 편성의 원래 사전 예측은 `node scripts/test-validation-challenges-av-ax.mjs`, AT까지40건 확장 후보와 정수 연산 교차 검사는 `node scripts/test-validation-expanded-at.mjs`로 재현한다. AR 재확인과이전29건 반올림 탐색은 `node scripts/test-validation-ar-reconfirmation.mjs`로 재현한다. AT와 미관측 AU 계획은 `node scripts/test-validation-at.mjs`로 재현한다. 과거 관측·계획 검사도 보존한다.
 
 기존 서비스 계산의 회귀와 초기 연구 탐색까지 함께 재현하려면 다음을 실행한다.
 
@@ -187,14 +193,17 @@ AK 실측은 기존 `baseline-passive-AK-20260909.json`을 수정하지 않고 �
 | 위치 | 내용 |
 |---|---|
 | `HANDOFF_CURRENT.md` | 이 문서 — 현재 상태의 우선 진입점 |
-| `analysis/unit-score/reports/AW-validation-20260909.md` | 최신 AW 사전 성공과 AY 보드OFF 예측 |
-| `analysis/unit-score/observation-catalog-AW-20260909.json` | 최신45건 관측 목록 |
-| `analysis/unit-score/experiments/baseline-watame-AY-20260909.json` | 와타메 발동률·빈도OFF의 미관측 사전 예측 |
+| `analysis/unit-score/reports/AZ-validation-20260909.md` | 최신 AZ 일치와 AX/AZ 발동률 대조 |
+| `analysis/unit-score/observation-catalog-AZ-20260909.json` | 최신49건 관측 목록 |
+| `analysis/unit-score/reports/AV-AX-AY-validation-20260909.md` | AV/AY 성공·AX 실패와 끝값 반올림 검사 |
+| `analysis/unit-score/reports/AW-validation-20260909.md` | AW 시점의 성공과 당시 AY 예측 |
+| `analysis/unit-score/observation-catalog-AW-20260909.json` | AW 당시45건 관측 목록 |
+| `analysis/unit-score/experiments/baseline-watame-AY-20260909.json` | 관측 전 고정한 와타메 발동률·빈도OFF 예측 |
 | `analysis/unit-score/reports/expanded-AT-20260909.md` | 새 중간 정밀도 후보40건 사후 재현과 한계 |
 | `analysis/unit-score/experiments/AU-expanded-candidate-20260909.json` | 새 후보의 미관측 AU 사전 예측 |
 | `analysis/unit-score/reports/AT-validation-20260909.md` | AS/AT 비교와 AU 판정 노드 계획 |
 | `analysis/unit-score/experiments/baseline-judgment-AU-20260909.json` | 미관측 AU 고정 계획 |
-| `analysis/unit-score/observation-catalog-AT-20260909.json` | 최신44건 목록 |
+| `analysis/unit-score/observation-catalog-AT-20260909.json` | AT 당시44건 목록 |
 | `analysis/unit-score/reports/AS-validation-20260909.md` | AS 기준점과 당시 AT 계획 |
 | `analysis/unit-score/reports/AQ-validation-20260909.md` | AQ의 기존 예측 실패·중간 올림 후보·AR 사전 예측 |
 | `analysis/unit-score/experiments/baseline-rounded-AR-20260909.json` | 노드 제약으로 미실행된 최초 AR 계획 |
