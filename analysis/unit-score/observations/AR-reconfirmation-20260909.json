@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AR",
+  "recordKind": "User reconfirmation of existing score rows",
+  "recordedAt": "2026-09-09",
+  "rawUserInput": "11.8%에 패시브 2.4가 맞아",
+  "originalObservation": "analysis/unit-score/observations/AR-20260909.json",
+  "originalObservationSHA256": "69785d90a2bd51fa5d1506968aefca7aed15dd4bc567db747f8ec0afae3116ae",
+  "confirmedScoreBonusDetail": { "board": 11.8, "passive": 2.4 },
+  "context": {
+    "request": "AR formation recheck after the rounding audit left AR as its sole mismatch.",
+    "leader": "Ririka3star We are hololive! level1/potential0",
+    "membersInOrder": ["Ayame40/0", "Towa70/0", "swimsuit Noel80/1", "regular Flare11/0", "swimsuit Kanade40/0"],
+    "noelRateNodesOn": [11.1, 3.7, 3.0],
+    "noelRateNodesOff": [3.7, 2.0],
+    "noelFrequencyOff": 4.0,
+    "kanadeRateNodesOff": [15.0, 5.0],
+    "flareRateNodeOn": 6.0,
+    "ririkaSupportNodesOn": [6.2, 4.0, 3.1],
+    "ririkaJudgmentRequested": "Existing judgment node retained ON",
+    "viewRequested": "Formation detail before song selection"
+  },
+  "scope": {
+    "countsAsNewSample": false,
+    "originalObservationChanged": false,
+    "otherScoreRowsReconfirmed": false,
+    "profilesAndNodesSeparatelyAudited": false,
+    "newRemeasurementExplicitlyReported": false,
+    "interpretation": "The user reconfirmed the two numeric rows after the complete AR setup was restated. No correction was supplied. Do not infer a new screenshot, a separately audited node inventory, or AU execution."
+  }
+}
