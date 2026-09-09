@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AL",
+  "status": "Planned; no AL measurement received",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-06004-5-uniq-0060-00",
+    "card-00021-5-uniq-0017-00",
+    "card-00026-5-uniq-0065-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-06004-5-uniq-0060-00",
+      "level": 70,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-00026-5-uniq-0065-00",
+      "level": 70,
+      "potential": 1
+    }
+  ],
+  "comparisonBase": "AI",
+  "convenienceStartingPoint": "AK",
+  "changedSlotsFromAK": [
+    {
+      "slot": 4,
+      "from": "card-06002-5-uniq-0058-00",
+      "to": "card-00021-5-uniq-0017-00"
+    }
+  ],
+  "purpose": "Compare AI inactive five-star Ririka parameter costume with the always-active three-star Ririka costume; keep the five members, skill conditions, support recipients and recorded leader/member boards fixed.",
+  "sourceContext": {
+    "latestObserved": "AK",
+    "observations": 35,
+    "activeAndSPMeasured": 34,
+    "caution": "AK confirmed passive and board only. AI supplies the baseline numeric rows; do not treat AK baseline predictions as observations."
+  },
+  "control": {
+    "AILeader": {
+      "id": "card-06003-5-uniq-0059-00",
+      "profile": {
+        "id": "card-06003-5-uniq-0059-00",
+        "level": 40,
+        "potential": 0
+      },
+      "parameterCostumeActive": false,
+      "modeledPower": 0
+    },
+    "ALLeader": {
+      "id": "card-06003-3-nrml-0059-00",
+      "profile": {
+        "id": "card-06003-3-nrml-0059-00",
+        "level": 1,
+        "potential": 0
+      },
+      "parameterCostumeActive": true,
+      "appliedParameterPct": 15
+    },
+    "leaderCharacterId": "chr-06003",
+    "leaderBoardSupport": 13.3,
+    "memberInputs": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "characterId": "chr-00010",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "characterId": "chr-00027",
+        "support": 0,
+        "board": {
+          "rate": 0,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "characterId": "chr-06004",
+        "support": 8,
+        "board": {
+          "rate": 14,
+          "cooldown": 4
+        }
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "characterId": "chr-00021",
+        "support": 0,
+        "board": {
+          "rate": 6,
+          "cooldown": 0
+        }
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "characterId": "chr-00026",
+        "support": 8,
+        "board": {
+          "rate": 24.5,
+          "cooldown": 4
+        }
+      }
+    ],
+    "activeAndSPUnchanged": true,
+    "supportRecipientsUnchanged": true
+  },
+  "baselineValues": {
+    "memberParameter": 84026,
+    "outfitPower": 12613,
+    "passivePower": 13617,
+    "active": 73.7,
+    "special": 43.6
+  },
+  "predictedPowerSubtotal": 110256,
+  "hypotheses": {
+    "passive": {
+      "display": 2.2,
+      "kind": "Same-context invariance under leader-card/costume activation change. Not a general passive formula."
+    },
+    "board": {
+      "display": 15.7,
+      "kind": "Paired invariance control, not an individual category formula."
+    },
+    "conditionalJoint": {
+      "raw": 17.756757274868548,
+      "possibleDisplays": [
+        17.8,
+        17.9
+      ],
+      "kind": "Existing combined raw model plus separate ceiling; not a single exact displayed total."
+    }
+  },
+  "decisions": {
+    "bothUnchanged": "Supports display independence from this parameter-costume activation/card change. Combine with AK magnitude control; next separate member-board competition from SP/costume effects.",
+    "splitChangesButSumCompatible": "Rejects this split-invariance hypothesis while preserving conditional combined compatibility. Identifies leader-card/costume context dependence, not a unique causal formula.",
+    "sumOutsideRange": "Challenges the combined model or an assumed input as well as the split. Preserve failure and check input identity before revising.",
+    "baselineMismatch": "Check member growth and formation first; reported AI power costume was null, whereas AL12613 is a new prediction.",
+    "missingValues": "Record only explicitly supplied rows; do not turn absent rows into predicted numbers."
+  },
+  "limits": [
+    "Leader card, its level, and its member-role skills also differ; the existing model excludes those skills in the leader slot. The intervention is not a literal costume switch.",
+    "Both member-role boards and Ririka score/judgement board unlocks must remain unchanged. Formation view before song selection is inherited from the earlier plan.",
+    "Displayed equality only constrains0.1% precision; it does not prove equality of unrounded internals or independence for every costume.",
+    "A success tests invariance, not a formula for allocating the combined raw increment."
+  ],
+  "requestedMeasurements": [
+    "passive score",
+    "Holomember board score",
+    "member parameter",
+    "outfit power",
+    "passive power",
+    "Active",
+    "SP"
+  ],
+  "requestPriority": "Passive and board first. Five baseline values or a detail screenshot help confirm the planned control. Total score bonus optional.",
+  "followUpDesign": {
+    "status": "Candidate direction only; no new experiment number or measurement request frozen",
+    "description": "With Ririka3-star leader and Ayame/Towa/regular Flare/Noel fixed, compare swimsuit Suisei60/0 against swimsuit Kanade40/0 as the fifth member.",
+    "advantage": "Same23s/46%/8s/100% Active, unchanged Noel9% recipients(Noel/Flare), no additional score-support passive, but documented member rate board0% vs20%.",
+    "remainingConfounders": "SP and stats/character differ. A change would not by itself prove a board-only cause; inspect SP contribution hypotheses too."
+  },
+  "provenance": {
+    "sourceHashes": {
+      "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+      "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+      "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+      "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+      "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+      "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+      "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+      "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+    },
+    "inputs": {
+      "analysis/unit-score/observations/AI-20260909.json": "b7a6a91ef4730e0d1c3de3fcb51d8176a60ac5ae3ee5e0bb7a1b8cda382d4614",
+      "analysis/unit-score/observations/AK-20260909.json": "b93f9a59fa093b10c9f3e30b893f529e4107008a694859aacaa5495c7625f963",
+      "analysis/unit-score/experiments/AK-status-observed-20260909.json": "30ac2f22defbe21cef64e40b44fdd203347493dda916519aff67c74a904a142d",
+      "analysis/unit-score/experiments/baseline-passive-AK-20260909.json": "1af1731eab5592125920482ab1e85cfdcf69128e239861b3c5bc1810e5936d5c",
+      "analysis/unit-score/board-context.json": "913b89ea901ea1d07a1e8529b5dbe81747c54690e9199ea42095bb7be39b4555",
+      "analysis/unit-score/board-observations/ririka-X-20260909.json": "92fbb1f61228bdb561959d75a47ec22bd7341b6a2001cc2ae7b16b6536980438",
+      "analysis/unit-score/board-observations/AA-member-clarification-20260909.json": "fbe5828797493d54745b95440322da282521b109ddb29d092a66875b8e7097dc",
+      "analysis/unit-score/profile-observations/ririka-3star-20260909.json": "f212da84f484bd706ac69ba73dabf97e81873184cd24636691ca13f0e8f0e845"
+    },
+    "analysisSourceSHA256": "e6c48df386f9b96caf443c56121cffd53ec1bebcf0b2774818eeb5052f06285f",
+    "predictionsAndProductionUnchanged": true
+  }
+}

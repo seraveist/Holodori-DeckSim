@@ -11,6 +11,7 @@ const tests = [
   'analysis/unit-score/probe-fixed-constants.mjs', 'scripts/test-scoring-handoff.mjs',
   'scripts/test-validation-aj-handoff.mjs',
   'scripts/test-validation-ak.mjs',
+  'scripts/test-validation-al-plan.mjs',
 ];
 if (args.includes('--research-grid')) tests.push(...[
   'probe-dummy-active-joint.mjs', 'probe-dummy-environment.mjs', 'probe-dummy-identifiability.mjs',
