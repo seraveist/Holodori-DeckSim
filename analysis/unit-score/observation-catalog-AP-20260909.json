@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AP",
+  "extendsCatalog": "analysis/unit-score/observation-catalog-AO-20260909.json",
+  "extendsCatalogSHA256": "3f7549bf90bd5b316851abb8a93c2740de5e01cd5e8aae82745712c4bde98b81",
+  "summary": {
+    "observations": 40,
+    "distinctMemberSets": 23,
+    "activeObserved": 38,
+    "activeMatches": 38,
+    "spObserved": 38,
+    "spMatches": 38,
+    "confirmedPowerComponents": 100,
+    "positivePassiveJointCompatibility": 25,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN",
+      "AO",
+      "AP"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false,
+    "AOActiveSPUnreported": true
+  },
+  "allocationEvidence": {
+    "retrospectiveThrough": "AO",
+    "retrospectivePairs": 20,
+    "retrospectiveObservations": 24,
+    "prospectiveObservations": 1,
+    "prospectivePairs": 1,
+    "combinedPairs": 21,
+    "combinedObservations": 25,
+    "combinedPassiveMatches": 23,
+    "combinedBoardMatches": 23,
+    "historicalFailures": [
+      "W",
+      "AA",
+      "AF",
+      "AH"
+    ],
+    "generalFormulaConfirmed": false
+  },
+  "scope": "Append AP screenshot and explicit inherited board overrides. Prior observations and predictions remain frozen.",
+  "observations": [
+    {
+      "sampleId": "AP",
+      "sourcePath": "analysis/unit-score/observations/AP-20260909.json",
+      "sourceSHA256": "165513839d3d8435426235fc1b55c700436afa4a4850f9d0c12193d833b90e6c",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-00022-5-uniq-0063-00",
+        "card-00021-5-uniq-0017-00",
+        "card-06002-5-uniq-0066-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "level": 80,
+          "potential": 1
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "level": 11,
+          "potential": 0
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "level": 40,
+          "potential": 0
+        }
+      ],
+      "boardOverrides": {
+        "chr-06002": {
+          "rate": 0,
+          "cooldown": 0
+        },
+        "chr-00022": {
+          "rate": 23.5,
+          "cooldown": 0
+        }
+      },
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": 127795,
+        "scoreBonusPct": 133.5,
+        "powerDetail": {
+          "memberParameter": 79007,
+          "outfit": 11859,
+          "passive": 7816,
+          "board": 23808,
+          "memory": 4432,
+          "enhancement": 873
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": 75.2,
+          "special": 43.9,
+          "passive": 2.3,
+          "board": 12.1
+        }
+      },
+      "rawUserInput": "[Image attachment; no accompanying text]"
+    }
+  ]
+}

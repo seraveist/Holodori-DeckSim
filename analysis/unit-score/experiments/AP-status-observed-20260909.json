@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AP",
+  "status": "Observed; seven frozen component predictions match. General allocation formula remains unconfirmed.",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-frequency-AP-20260909.json",
+  "frozenPlanSHA256": "26147f0dccda34828c81a057005b856bd750ca4ea33b44cb0d93462650aebce3",
+  "observation": "analysis/unit-score/observations/AP-20260909.json",
+  "observationSHA256": "165513839d3d8435426235fc1b55c700436afa4a4850f9d0c12193d833b90e6c",
+  "screenshot": "analysis/unit-score/observations/screenshots/AP-20260909.png",
+  "screenshotSHA256": "8a8101624e93a6368460bcc934399e2c2a287d80e93d8eaf89ebefa8dda5546e",
+  "report": "analysis/unit-score/reports/AP-comparison-20260909.json",
+  "reportSHA256": "35ad1aef4f709d1e2a021b74e41b55db4b2897b0cc7a4676859f4c09c6204c79",
+  "catalog": "analysis/unit-score/observation-catalog-AP-20260909.json",
+  "catalogSHA256": "1c511dfadfd9c767e05b6d954296baeefb938fdb00d16ac81ec1410d043e447d",
+  "analysisSource": "analysis/unit-score/compare-ap-20260909.mjs",
+  "analysisSourceSHA256": "2bb292f34a4120a07c40d48ccc85ccd42664c9a9d6b48d7a98115fa68b04ae17",
+  "result": {
+    "passive": 2.3,
+    "board": 12.1,
+    "joint": 14.4,
+    "prospectiveAllocationPairs": "1/1",
+    "historicalFailures": [
+      "W",
+      "AA",
+      "AF",
+      "AH"
+    ],
+    "generalFormulaConfirmed": false
+  }
+}

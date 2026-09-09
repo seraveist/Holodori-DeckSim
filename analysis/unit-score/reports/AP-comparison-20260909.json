@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AP",
+  "observation": {
+    "schemaVersion": 1,
+    "sampleId": "AP",
+    "observedAt": "2026-09-09",
+    "gameVersion": null,
+    "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+    "leaderId": "card-06003-3-nrml-0059-00",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-00022-5-uniq-0063-00",
+      "card-00021-5-uniq-0017-00",
+      "card-06002-5-uniq-0066-00"
+    ],
+    "profiles": [
+      {
+        "id": "card-06003-3-nrml-0059-00",
+        "level": 1,
+        "potential": 0
+      },
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "level": 40,
+        "potential": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "level": 70,
+        "potential": 0
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "level": 80,
+        "potential": 1
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "level": 11,
+        "potential": 0
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "level": 40,
+        "potential": 0
+      }
+    ],
+    "profilesConfirmed": false,
+    "profileBasis": "Frozen AP plan inherited. The image is supplied in response to the pending AP experiment and clarification; the detail panel does not display cards, levels or nodes.",
+    "measurementView": {
+      "planned": "Formation detail before song selection",
+      "confirmedForThisSample": false,
+      "visible": "Unit score detail",
+      "basis": "Screenshot shows the detail panel, not the song-selection state."
+    },
+    "rawUserInput": "[Image attachment; no accompanying text]",
+    "screenshot": {
+      "path": "analysis/unit-score/observations/screenshots/AP-20260909.png",
+      "sha256": "8a8101624e93a6368460bcc934399e2c2a287d80e93d8eaf89ebefa8dda5546e",
+      "originalBasename": "codex-clipboard-3e341b0c-7851-4a58-ba2e-b3705d5f7ba7.png",
+      "attachmentIndex": 1
+    },
+    "game": {
+      "unitScore": null,
+      "overallPower": 127795,
+      "scoreBonusPct": 133.5,
+      "powerDetail": {
+        "memberParameter": 79007,
+        "outfit": 11859,
+        "passive": 7816,
+        "board": 23808,
+        "memory": 4432,
+        "enhancement": 873
+      },
+      "scoreBonusDetail": {
+        "outfit": null,
+        "active": 75.2,
+        "special": 43.9,
+        "passive": 2.3,
+        "board": 12.1
+      }
+    },
+    "scoreRowPresence": {
+      "outfit": false,
+      "active": true,
+      "special": true,
+      "passive": true,
+      "board": true
+    },
+    "categoryStatus": {
+      "totals": "Overall power and score bonus totals directly visible; final unit score not shown.",
+      "scoreOutfit": "No score-outfit row displayed. Raw value stays null; the sum of visible score rows is computed separately."
+    },
+    "boardContext": "AP requested Kanade activation-rate15%/5% OFF and Noel frequency4% OFF, retaining Noel rate23.5%, Flare6% and Ririka leader nodes. The preceding clarification repeated both Kanade nodes OFF. These are inherited controls, not separately visible or audited in the screenshot.",
+    "predictionCheckpoint": "analysis/unit-score/experiments/baseline-frequency-AP-20260909.json",
+    "predictionCheckpointSHA256": "26147f0dccda34828c81a057005b856bd750ca4ea33b44cb0d93462650aebce3",
+    "boardOverrides": {
+      "chr-06002": {
+        "rate": 0,
+        "cooldown": 0
+      },
+      "chr-00022": {
+        "rate": 23.5,
+        "cooldown": 0
+      }
+    },
+    "sampleIdentification": "Contextual mapping to the pending AP experiment; AP is not explicitly written in the image-only message."
+  },
+  "comparisons": [
+    {
+      "key": "memberParameter",
+      "predicted": 79007,
+      "observed": 79007,
+      "matches": true
+    },
+    {
+      "key": "outfitPower",
+      "predicted": 11859,
+      "observed": 11859,
+      "matches": true
+    },
+    {
+      "key": "passivePower",
+      "predicted": 7816,
+      "observed": 7816,
+      "matches": true
+    },
+    {
+      "key": "active",
+      "predicted": 75.2,
+      "observed": 75.2,
+      "matches": true
+    },
+    {
+      "key": "special",
+      "predicted": 43.9,
+      "observed": 43.9,
+      "matches": true
+    },
+    {
+      "key": "passive",
+      "predicted": 2.3,
+      "observed": 2.3,
+      "matches": true
+    },
+    {
+      "key": "board",
+      "predicted": 12.1,
+      "observed": 12.1,
+      "matches": true
+    }
+  ],
+  "features": {
+    "id": "AP",
+    "raw": 14.35238061807064,
+    "Araw": 75.119294237116,
+    "Braw": 86.27679682896903,
+    "BPraw": 89.47167485518663,
+    "observedPassive": 2.3,
+    "observedBoard": 12.1,
+    "features": [
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "p": 0.55,
+        "d": 10,
+        "I": 29,
+        "v": 100,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 6
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "p": 0.55,
+        "d": 8,
+        "I": 19,
+        "v": 80,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 10
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "p": 0.55,
+        "d": 7,
+        "I": 21,
+        "v": 120,
+        "s": 9,
+        "r": 23.5,
+        "f": 0,
+        "L": 13.3,
+        "count": 9
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "p": 0.55,
+        "d": 9,
+        "I": 26,
+        "v": 100,
+        "s": 9,
+        "r": 6,
+        "f": 0,
+        "L": 13.3,
+        "count": 7
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "p": 0.46,
+        "d": 8,
+        "I": 23,
+        "v": 100,
+        "s": 0,
+        "r": 0,
+        "f": 0,
+        "L": 13.3,
+        "count": 8
+      }
+    ]
+  },
+  "prediction": {
+    "id": "AP",
+    "passiveWeight": 68607,
+    "boardWeight": 365510.99900000007,
+    "rawPassive": 2.268216888800255,
+    "rawBoard": 12.084163729270385,
+    "passive": 2.3,
+    "board": 12.1,
+    "observedPassive": 2.3,
+    "observedBoard": 12.1,
+    "passiveMatches": true,
+    "boardMatches": true
+  },
+  "joint": {
+    "raw": 14.35238061807064,
+    "possibleDisplays": [
+      14.4,
+      14.5
+    ],
+    "observed": 14.4,
+    "compatible": true
+  },
+  "arithmetic": {
+    "visiblePowerSum": 127795,
+    "reportedPower": 127795,
+    "powerMatches": true,
+    "visibleScoreSum": 133.5,
+    "reportedScore": 133.5,
+    "scoreMatches": true,
+    "AOtoAP": {
+      "passive": 0.6,
+      "board": 2.7,
+      "joint": 3.3
+    }
+  },
+  "summary": {
+    "observations": 40,
+    "distinctMemberSets": 23,
+    "activeObserved": 38,
+    "activeMatches": 38,
+    "spObserved": 38,
+    "spMatches": 38,
+    "confirmedPowerComponents": 100,
+    "positivePassiveJointCompatibility": 25,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN",
+      "AO",
+      "AP"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false,
+    "AOActiveSPUnreported": true
+  },
+  "allocationEvidence": {
+    "retrospectiveThrough": "AO",
+    "retrospectivePairs": 20,
+    "retrospectiveObservations": 24,
+    "prospectiveObservations": 1,
+    "prospectivePairs": 1,
+    "combinedPairs": 21,
+    "combinedObservations": 25,
+    "combinedPassiveMatches": 23,
+    "combinedBoardMatches": 23,
+    "historicalFailures": [
+      "W",
+      "AA",
+      "AF",
+      "AH"
+    ],
+    "generalFormulaConfirmed": false
+  },
+  "interpretation": {
+    "supported": "AP is the first prospective success for the proportional allocation selected after AO. Under the requested controls, disabling Noel frequency increases the combined display11.1->14.4, as the existing200-second overlap model predicted.",
+    "caveats": [
+      "The screenshot supplies all displayed numbers, but cards, growth, node states and pre-song context inherit the AP request; they are not visible in the detail panel.",
+      "The plan and question preceded this image. Its Git checkpoint was committed after the image arrived; Git commit time is not the prospective evidence.",
+      "Power board23808, memory4432 and enhancement873 are recorded, not predicted or counted as formula validation.",
+      "Four historical0.1-point category failures remain. This does not identify a unique internal duration or generalize to actual-song scores."
+    ],
+    "productionFormulaChanged": false
+  },
+  "provenance": {
+    "checkpoint": "analysis/unit-score/experiments/baseline-frequency-AP-20260909.json",
+    "checkpointSHA256": "26147f0dccda34828c81a057005b856bd750ca4ea33b44cb0d93462650aebce3",
+    "observationPath": "analysis/unit-score/observations/AP-20260909.json",
+    "observationSHA256": "165513839d3d8435426235fc1b55c700436afa4a4850f9d0c12193d833b90e6c",
+    "analysisSourceSHA256": "2bb292f34a4120a07c40d48ccc85ccd42664c9a9d6b48d7a98115fa68b04ae17",
+    "sourceHashes": {
+      "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+      "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+      "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+      "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+      "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+      "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+      "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+      "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+    },
+    "probeSourceSHA256": "a6bafb96442a7a29c20ddb0e4136ebca956c6606fb1f0c722c27d22132e14deb",
+    "predictionsAndProductionUnchanged": true
+  }
+}

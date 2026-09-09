@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AP",
+  "observedAt": "2026-09-09",
+  "gameVersion": null,
+  "observationDateBasis": "Conversation date; no separate measurement date supplied.",
+  "leaderId": "card-06003-3-nrml-0059-00",
+  "memberIds": [
+    "card-00010-5-uniq-0010-00",
+    "card-00027-5-uniq-0022-00",
+    "card-00022-5-uniq-0063-00",
+    "card-00021-5-uniq-0017-00",
+    "card-06002-5-uniq-0066-00"
+  ],
+  "profiles": [
+    {
+      "id": "card-06003-3-nrml-0059-00",
+      "level": 1,
+      "potential": 0
+    },
+    {
+      "id": "card-00010-5-uniq-0010-00",
+      "level": 40,
+      "potential": 0
+    },
+    {
+      "id": "card-00027-5-uniq-0022-00",
+      "level": 70,
+      "potential": 0
+    },
+    {
+      "id": "card-00022-5-uniq-0063-00",
+      "level": 80,
+      "potential": 1
+    },
+    {
+      "id": "card-00021-5-uniq-0017-00",
+      "level": 11,
+      "potential": 0
+    },
+    {
+      "id": "card-06002-5-uniq-0066-00",
+      "level": 40,
+      "potential": 0
+    }
+  ],
+  "profilesConfirmed": false,
+  "profileBasis": "Frozen AP plan inherited. The image is supplied in response to the pending AP experiment and clarification; the detail panel does not display cards, levels or nodes.",
+  "measurementView": {
+    "planned": "Formation detail before song selection",
+    "confirmedForThisSample": false,
+    "visible": "Unit score detail",
+    "basis": "Screenshot shows the detail panel, not the song-selection state."
+  },
+  "rawUserInput": "[Image attachment; no accompanying text]",
+  "screenshot": {
+    "path": "analysis/unit-score/observations/screenshots/AP-20260909.png",
+    "sha256": "8a8101624e93a6368460bcc934399e2c2a287d80e93d8eaf89ebefa8dda5546e",
+    "originalBasename": "codex-clipboard-3e341b0c-7851-4a58-ba2e-b3705d5f7ba7.png",
+    "attachmentIndex": 1
+  },
+  "game": {
+    "unitScore": null,
+    "overallPower": 127795,
+    "scoreBonusPct": 133.5,
+    "powerDetail": {
+      "memberParameter": 79007,
+      "outfit": 11859,
+      "passive": 7816,
+      "board": 23808,
+      "memory": 4432,
+      "enhancement": 873
+    },
+    "scoreBonusDetail": {
+      "outfit": null,
+      "active": 75.2,
+      "special": 43.9,
+      "passive": 2.3,
+      "board": 12.1
+    }
+  },
+  "scoreRowPresence": {
+    "outfit": false,
+    "active": true,
+    "special": true,
+    "passive": true,
+    "board": true
+  },
+  "categoryStatus": {
+    "totals": "Overall power and score bonus totals directly visible; final unit score not shown.",
+    "scoreOutfit": "No score-outfit row displayed. Raw value stays null; the sum of visible score rows is computed separately."
+  },
+  "boardContext": "AP requested Kanade activation-rate15%/5% OFF and Noel frequency4% OFF, retaining Noel rate23.5%, Flare6% and Ririka leader nodes. The preceding clarification repeated both Kanade nodes OFF. These are inherited controls, not separately visible or audited in the screenshot.",
+  "predictionCheckpoint": "analysis/unit-score/experiments/baseline-frequency-AP-20260909.json",
+  "predictionCheckpointSHA256": "26147f0dccda34828c81a057005b856bd750ca4ea33b44cb0d93462650aebce3",
+  "boardOverrides": {
+    "chr-06002": {
+      "rate": 0,
+      "cooldown": 0
+    },
+    "chr-00022": {
+      "rate": 23.5,
+      "cooldown": 0
+    }
+  },
+  "sampleIdentification": "Contextual mapping to the pending AP experiment; AP is not explicitly written in the image-only message."
+}
