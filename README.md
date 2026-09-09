@@ -6,9 +6,9 @@
 
 라이브 서비스: https://holosims.net/
 
-계산식 검증의 최신 상태는 [AM·AN 실측 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 누적38건·액티브/SP37건을, `node scripts/run-scoring-validation.mjs`로 기존 회귀까지 재현합니다. [초기 인수인계와 이력](SCORING_HANDOFF.md)은 보존합니다.
+계산식 검증의 최신 상태는 [AO 확인 / AP 대기 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 누적39건·액티브/SP37건과 다음 계획을, `node scripts/run-scoring-validation.mjs`로 기존 회귀까지 재현합니다. [초기 인수인계와 이력](SCORING_HANDOFF.md)은 보존합니다.
 
-[AM·AN 비교 결과](analysis/unit-score/reports/AM-AN-validation-20260909.md)는 기본 다섯 항목 일치와 패시브 불변 가설의 탈락을 기록합니다. `node scripts/test-validation-am-an.mjs`로 재현합니다. 서비스 계산식은 이번 연구로 바꾸지 않았습니다.
+[AO와 새 배분 후보](analysis/unit-score/reports/AO-validation-20260909.md)는 카나데 발동률 보드의 간접 영향을 확인하고 노엘 빈도 대조 AP를 사전 고정합니다. 새 비례식은24건 중20건의 두 항목을 사후 재현하며 네 건이 미해결입니다. 서비스 계산식은 변경하지 않았습니다.
 
 ## 주요 기능
 

@@ -1,0 +1,2614 @@
+{
+  "schemaVersion": 1,
+  "observedThrough": "AO",
+  "catalog": "analysis/unit-score/observation-catalog-AO-20260909.json",
+  "observations": 39,
+  "eligibleObservations": 24,
+  "scope": "Exploratory proportional allocation for positive score-support passives and previously documented numeric boards. Production untouched.",
+  "formula": {
+    "weight": "w_i = p_i * effectiveValue_i * duration_i * floor(200 / interval_i), using base Active inputs.",
+    "passiveWeight": "PW = sum(w_i * passiveSupportPct_i)",
+    "boardWeight": "BW = sum(w_i * 100 * [(1+memberRatePct_i/100)*(1+memberFrequencyPct_i/100)*(1+leaderSupportPct/100)-1])",
+    "joint": "S = existing normalized 200-second BPraw - Araw, using board-adjusted timing/probability and additive support.",
+    "allocation": "Passive = ceil0.1(S * PW/(PW+BW)); Board = ceil0.1(S * BW/(PW+BW)).",
+    "interpretation": "Divide the modeled total increment by nominal standalone buff weights. This is an attribution hypothesis, not evidence the game literally implements these intermediate weights."
+  },
+  "selected": {
+    "weight": "expectedWindowEffect",
+    "board": "multiplicative",
+    "passive": "plain",
+    "duration": 200,
+    "countMode": "floor"
+  },
+  "summary": {
+    "config": {
+      "weight": "expectedWindowEffect",
+      "board": "multiplicative",
+      "passive": "plain",
+      "duration": 200,
+      "countMode": "floor"
+    },
+    "matches": 20,
+    "passiveMatches": 22,
+    "boardMatches": 22,
+    "failures": [
+      "W",
+      "AA",
+      "AF",
+      "AH"
+    ]
+  },
+  "values": [
+    {
+      "id": "A",
+      "passiveWeight": 214219.5,
+      "boardWeight": 746345.9374800002,
+      "rawPassive": 3.9669235214912373,
+      "rawBoard": 13.82085783301166,
+      "passive": 4,
+      "board": 13.9,
+      "observedPassive": 4,
+      "observedBoard": 13.9,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "B",
+      "passiveWeight": 214219.5,
+      "boardWeight": 746345.9374800002,
+      "rawPassive": 3.9669235214912373,
+      "rawBoard": 13.82085783301166,
+      "passive": 4,
+      "board": 13.9,
+      "observedPassive": 4,
+      "observedBoard": 13.9,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "C",
+      "passiveWeight": 214219.5,
+      "boardWeight": 727610.7774800002,
+      "rawPassive": 4.464888736257892,
+      "rawBoard": 15.16529151057817,
+      "passive": 4.5,
+      "board": 15.2,
+      "observedPassive": 4.5,
+      "observedBoard": 15.2,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "D",
+      "passiveWeight": 135960,
+      "boardWeight": 577483.3393200003,
+      "rawPassive": 3.6539705885898264,
+      "rawBoard": 15.52005837949338,
+      "passive": 3.7,
+      "board": 15.6,
+      "observedPassive": 3.7,
+      "observedBoard": 15.6,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "E",
+      "passiveWeight": 68112,
+      "boardWeight": 533104.6643200002,
+      "rawPassive": 2.2299130786542607,
+      "rawBoard": 17.453269075328254,
+      "passive": 2.3,
+      "board": 17.5,
+      "observedPassive": 2.3,
+      "observedBoard": 17.5,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "F",
+      "passiveWeight": 68112,
+      "boardWeight": 533104.6643200001,
+      "rawPassive": 2.229913078654261,
+      "rawBoard": 17.453269075328254,
+      "passive": 2.3,
+      "board": 17.5,
+      "observedPassive": 2.3,
+      "observedBoard": 17.5,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "K",
+      "passiveWeight": 68112,
+      "boardWeight": 533104.6643200002,
+      "rawPassive": 2.2299130786542607,
+      "rawBoard": 17.453269075328254,
+      "passive": 2.3,
+      "board": 17.5,
+      "observedPassive": 2.3,
+      "observedBoard": 17.5,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "H",
+      "passiveWeight": 68112,
+      "boardWeight": 555928.2343200003,
+      "rawPassive": 2.3974606997101016,
+      "rawBoard": 19.568007012588517,
+      "passive": 2.4,
+      "board": 19.6,
+      "observedPassive": 2.4,
+      "observedBoard": 19.6,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "W",
+      "passiveWeight": 68112,
+      "boardWeight": 621255.8624800001,
+      "rawPassive": 1.8843910144842844,
+      "rawBoard": 17.18770502926058,
+      "passive": 1.9,
+      "board": 17.2,
+      "observedPassive": 1.9,
+      "observedBoard": 17.3,
+      "passiveMatches": true,
+      "boardMatches": false
+    },
+    {
+      "id": "X",
+      "passiveWeight": 68112,
+      "boardWeight": 319516.5600000002,
+      "rawPassive": 1.4614529552708222,
+      "rawBoard": 6.855743787731491,
+      "passive": 1.5,
+      "board": 6.9,
+      "observedPassive": 1.5,
+      "observedBoard": 6.9,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "Y",
+      "passiveWeight": 68112,
+      "boardWeight": 319516.5600000002,
+      "rawPassive": 1.4614529552708222,
+      "rawBoard": 6.855743787731491,
+      "passive": 1.5,
+      "board": 6.9,
+      "observedPassive": 1.5,
+      "observedBoard": 6.9,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "Z",
+      "passiveWeight": 68112,
+      "boardWeight": 319516.5600000002,
+      "rawPassive": 1.4614529552708222,
+      "rawBoard": 6.855743787731491,
+      "passive": 1.5,
+      "board": 6.9,
+      "observedPassive": 1.5,
+      "observedBoard": 6.9,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "AA",
+      "passiveWeight": 68112,
+      "boardWeight": 270563.04000000015,
+      "rawPassive": 0.8058782252905277,
+      "rawBoard": 3.201210689811049,
+      "passive": 0.9,
+      "board": 3.3,
+      "observedPassive": 0.8,
+      "observedBoard": 3.3,
+      "passiveMatches": false,
+      "boardMatches": true
+    },
+    {
+      "id": "AB",
+      "passiveWeight": 68112,
+      "boardWeight": 222053.0400000002,
+      "rawPassive": 1.730980789803216,
+      "rawBoard": 5.643198651594513,
+      "passive": 1.8,
+      "board": 5.7,
+      "observedPassive": 1.8,
+      "observedBoard": 5.7,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "AF",
+      "passiveWeight": 72732,
+      "boardWeight": 181047.2400000001,
+      "rawPassive": 0.9352766258711327,
+      "rawBoard": 2.328125883386697,
+      "passive": 1,
+      "board": 2.4,
+      "observedPassive": 1,
+      "observedBoard": 2.3,
+      "passiveMatches": true,
+      "boardMatches": false
+    },
+    {
+      "id": "AG",
+      "passiveWeight": 68607,
+      "boardWeight": 223565.76000000013,
+      "rawPassive": 1.6221592333888994,
+      "rawBoard": 5.286038769420131,
+      "passive": 1.7,
+      "board": 5.3,
+      "observedPassive": 1.7,
+      "observedBoard": 5.3,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "AH",
+      "passiveWeight": 68607,
+      "boardWeight": 505960.1060800002,
+      "rawPassive": 2.0719435344546735,
+      "rawBoard": 15.280084692297537,
+      "passive": 2.1,
+      "board": 15.3,
+      "observedPassive": 2.2,
+      "observedBoard": 15.3,
+      "passiveMatches": false,
+      "boardMatches": true
+    },
+    {
+      "id": "AI",
+      "passiveWeight": 68112,
+      "boardWeight": 501612.7943200002,
+      "rawPassive": 2.1228639925165864,
+      "rawBoard": 15.633893282351961,
+      "passive": 2.2,
+      "board": 15.7,
+      "observedPassive": 2.2,
+      "observedBoard": 15.7,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "AJ",
+      "passiveWeight": 68112,
+      "boardWeight": 556574.6243200002,
+      "rawPassive": 1.485501887557596,
+      "rawBoard": 12.138722324906333,
+      "passive": 1.5,
+      "board": 12.2,
+      "observedPassive": 1.5,
+      "observedBoard": 12.2,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "AK",
+      "passiveWeight": 68112,
+      "boardWeight": 556574.6243200002,
+      "rawPassive": 1.485501887557596,
+      "rawBoard": 12.138722324906333,
+      "passive": 1.5,
+      "board": 12.2,
+      "observedPassive": 1.5,
+      "observedBoard": 12.2,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "AL",
+      "passiveWeight": 68112,
+      "boardWeight": 501612.7943200002,
+      "rawPassive": 2.1228639925165864,
+      "rawBoard": 15.633893282351961,
+      "passive": 2.2,
+      "board": 15.7,
+      "observedPassive": 2.2,
+      "observedBoard": 15.7,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "AM",
+      "passiveWeight": 68607,
+      "boardWeight": 388783.40816000005,
+      "rawPassive": 1.6572753603051111,
+      "rawBoard": 9.39147846195014,
+      "passive": 1.7,
+      "board": 9.4,
+      "observedPassive": 1.7,
+      "observedBoard": 9.4,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "AN",
+      "passiveWeight": 68607,
+      "boardWeight": 455494.44816,
+      "rawPassive": 1.5193408562724222,
+      "rawBoard": 10.087182428830133,
+      "passive": 1.6,
+      "board": 10.1,
+      "observedPassive": 1.6,
+      "observedBoard": 10.1,
+      "passiveMatches": true,
+      "boardMatches": true
+    },
+    {
+      "id": "AO",
+      "passiveWeight": 68607,
+      "boardWeight": 388783.40816000005,
+      "rawPassive": 1.6572753603051111,
+      "rawBoard": 9.39147846195014,
+      "passive": 1.7,
+      "board": 9.4,
+      "observedPassive": 1.7,
+      "observedBoard": 9.4,
+      "passiveMatches": true,
+      "boardMatches": true
+    }
+  ],
+  "featureRows": [
+    {
+      "id": "A",
+      "raw": 17.787781354502897,
+      "Araw": 76.32624999999996,
+      "Braw": 87.16363614085851,
+      "BPraw": 94.11403135450286,
+      "observedPassive": 4,
+      "observedBoard": 13.9,
+      "features": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 16,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 9,
+          "r": 23.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 0,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 27,
+          "v": 75,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 13.3,
+          "count": 7
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "p": 0.55,
+          "d": 11,
+          "I": 33,
+          "v": 125,
+          "s": 25,
+          "r": 6,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "raw": 17.787781354502897,
+      "Araw": 76.32624999999996,
+      "Braw": 87.16363614085851,
+      "BPraw": 94.11403135450286,
+      "observedPassive": 4,
+      "observedBoard": 13.9,
+      "features": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 16,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 9,
+          "r": 23.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "p": 0.55,
+          "d": 11,
+          "I": 33,
+          "v": 125,
+          "s": 25,
+          "r": 6,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 27,
+          "v": 75,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 13.3,
+          "count": 7
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 0,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "raw": 19.630180246836062,
+      "Araw": 78.33466395258726,
+      "Braw": 90.52866598342554,
+      "BPraw": 97.96484419942333,
+      "observedPassive": 4.5,
+      "observedBoard": 15.2,
+      "features": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 16,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 9,
+          "r": 23.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "p": 0.55,
+          "d": 11,
+          "I": 33,
+          "v": 125,
+          "s": 25,
+          "r": 6,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 0,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "raw": 19.174028968083206,
+      "Araw": 70.22788085128487,
+      "Braw": 84.55093008660161,
+      "BPraw": 89.40190981936807,
+      "observedPassive": 3.7,
+      "observedBoard": 15.6,
+      "features": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 16,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "p": 0.55,
+          "d": 11,
+          "I": 33,
+          "v": 125,
+          "s": 16,
+          "r": 6,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 0,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "raw": 19.683182153982514,
+      "Araw": 66.88318421439531,
+      "Braw": 83.56725880783522,
+      "BPraw": 86.56636636837783,
+      "observedPassive": 2.3,
+      "observedBoard": 17.5,
+      "features": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "raw": 19.683182153982514,
+      "Araw": 66.88318421439531,
+      "Braw": 83.56725880783522,
+      "BPraw": 86.56636636837783,
+      "observedPassive": 2.3,
+      "observedBoard": 17.5,
+      "features": [
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": "K",
+      "raw": 19.683182153982514,
+      "Araw": 66.88318421439531,
+      "Braw": 83.56725880783522,
+      "BPraw": 86.56636636837783,
+      "observedPassive": 2.3,
+      "observedBoard": 17.5,
+      "features": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "raw": 21.96546771229862,
+      "Araw": 67.21081725264357,
+      "Braw": 86.06490742762959,
+      "BPraw": 89.17628496494218,
+      "observedPassive": 2.4,
+      "observedBoard": 19.6,
+      "features": [
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "p": 0.55,
+          "d": 9,
+          "I": 26,
+          "v": 100,
+          "s": 0,
+          "r": 6,
+          "f": 0,
+          "L": 13.3,
+          "count": 7
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": "W",
+      "raw": 19.072096043744864,
+      "Araw": 75.44958333333327,
+      "Braw": 91.61880381760328,
+      "BPraw": 94.52167937707813,
+      "observedPassive": 1.9,
+      "observedBoard": 17.3,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 0,
+          "r": 23.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "X",
+      "raw": 8.317196743002313,
+      "Araw": 75.44958333333327,
+      "Braw": 80.8639045168607,
+      "BPraw": 83.76678007633558,
+      "observedPassive": 1.5,
+      "observedBoard": 6.9,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 0,
+          "count": 9
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 0,
+          "r": 23.5,
+          "f": 4,
+          "L": 0,
+          "count": 9
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 0,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "Y",
+      "raw": 8.317196743002313,
+      "Araw": 75.44958333333327,
+      "Braw": 80.8639045168607,
+      "BPraw": 83.76678007633558,
+      "observedPassive": 1.5,
+      "observedBoard": 6.9,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 0,
+          "count": 9
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 0,
+          "r": 23.5,
+          "f": 4,
+          "L": 0,
+          "count": 9
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 0,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "Z",
+      "raw": 8.317196743002313,
+      "Araw": 75.44958333333327,
+      "Braw": 80.8639045168607,
+      "BPraw": 83.76678007633558,
+      "observedPassive": 1.5,
+      "observedBoard": 6.9,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 0,
+          "count": 9
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 0,
+          "r": 23.5,
+          "f": 4,
+          "L": 0,
+          "count": 9
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 0,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "AA",
+      "raw": 4.007088915101576,
+      "Araw": 71.05166666666659,
+      "Braw": 72.30928795009396,
+      "BPraw": 75.05875558176817,
+      "observedPassive": 0.8,
+      "observedBoard": 3.3,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 0,
+          "count": 9
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 27,
+          "v": 75,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 0,
+          "count": 7
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 0,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "AB",
+      "raw": 7.374179441397729,
+      "Araw": 73.64333333333327,
+      "Braw": 78.06449498850276,
+      "BPraw": 81.017512774731,
+      "observedPassive": 1.8,
+      "observedBoard": 5.7,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 0,
+          "count": 9
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "p": 0.55,
+          "d": 9,
+          "I": 26,
+          "v": 100,
+          "s": 0,
+          "r": 6,
+          "f": 0,
+          "L": 0,
+          "count": 7
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 0,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "AF",
+      "raw": 3.26340250925783,
+      "Araw": 71.72666666666666,
+      "Braw": 72.31288651765999,
+      "BPraw": 74.99006917592449,
+      "observedPassive": 1,
+      "observedBoard": 2.3,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 0,
+          "count": 9
+        },
+        {
+          "id": "card-00021-5-uniq-0064-00",
+          "p": 0.55,
+          "d": 11,
+          "I": 33,
+          "v": 125,
+          "s": 8,
+          "r": 6,
+          "f": 0,
+          "L": 0,
+          "count": 6
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 27,
+          "v": 75,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 0,
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": "AG",
+      "raw": 6.90819800280903,
+      "Araw": 74.56083333333325,
+      "Braw": 78.52503927776787,
+      "BPraw": 81.46903133614228,
+      "observedPassive": 1.7,
+      "observedBoard": 5.3,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 0,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 0,
+          "r": 14,
+          "f": 4,
+          "L": 0,
+          "count": 9
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "p": 0.55,
+          "d": 9,
+          "I": 26,
+          "v": 100,
+          "s": 9,
+          "r": 6,
+          "f": 0,
+          "L": 0,
+          "count": 7
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 9,
+          "r": 23.5,
+          "f": 4,
+          "L": 0,
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": "AH",
+      "raw": 17.35202822675221,
+      "Araw": 74.56083333333325,
+      "Braw": 88.96886950171111,
+      "BPraw": 91.91286156008546,
+      "observedPassive": 2.2,
+      "observedBoard": 15.3,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 0,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "p": 0.55,
+          "d": 9,
+          "I": 26,
+          "v": 100,
+          "s": 9,
+          "r": 6,
+          "f": 0,
+          "L": 13.3,
+          "count": 7
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 9,
+          "r": 23.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": "AI",
+      "raw": 17.756757274868548,
+      "Araw": 73.64333333333327,
+      "Braw": 88.44707282197362,
+      "BPraw": 91.40009060820182,
+      "observedPassive": 2.2,
+      "observedBoard": 15.7,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "p": 0.55,
+          "d": 9,
+          "I": 26,
+          "v": 100,
+          "s": 0,
+          "r": 6,
+          "f": 0,
+          "L": 13.3,
+          "count": 7
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "AJ",
+      "raw": 13.624224212463929,
+      "Araw": 71.05166666666659,
+      "Braw": 81.92642324745631,
+      "BPraw": 84.67589087913052,
+      "observedPassive": 1.5,
+      "observedBoard": 12.2,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 27,
+          "v": 75,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 13.3,
+          "count": 7
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "AK",
+      "raw": 13.624224212463929,
+      "Araw": 71.05166666666659,
+      "Braw": 81.92642324745631,
+      "BPraw": 84.67589087913052,
+      "observedPassive": 1.5,
+      "observedBoard": 12.2,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 27,
+          "v": 75,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 13.3,
+          "count": 7
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "AL",
+      "raw": 17.756757274868548,
+      "Araw": 73.64333333333327,
+      "Braw": 88.44707282197362,
+      "BPraw": 91.40009060820182,
+      "observedPassive": 2.2,
+      "observedBoard": 15.7,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 22,
+          "v": 115,
+          "s": 8,
+          "r": 14,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "p": 0.55,
+          "d": 9,
+          "I": 26,
+          "v": 100,
+          "s": 0,
+          "r": 6,
+          "f": 0,
+          "L": 13.3,
+          "count": 7
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "p": 0.55,
+          "d": 12,
+          "I": 35,
+          "v": 120,
+          "s": 8,
+          "r": 24.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "AM",
+      "raw": 11.04875382225525,
+      "Araw": 75.119294237116,
+      "Braw": 83.14778358474224,
+      "BPraw": 86.16804805937124,
+      "observedPassive": 1.7,
+      "observedBoard": 9.4,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 9,
+          "r": 23.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "p": 0.55,
+          "d": 9,
+          "I": 26,
+          "v": 100,
+          "s": 9,
+          "r": 6,
+          "f": 0,
+          "L": 13.3,
+          "count": 7
+        },
+        {
+          "id": "card-00018-5-uniq-0068-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "AN",
+      "raw": 11.606523285102554,
+      "Araw": 75.119294237116,
+      "Braw": 83.76435252052087,
+      "BPraw": 86.72581752221855,
+      "observedPassive": 1.6,
+      "observedBoard": 10.1,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 9,
+          "r": 23.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "p": 0.55,
+          "d": 9,
+          "I": 26,
+          "v": 100,
+          "s": 9,
+          "r": 6,
+          "f": 0,
+          "L": 13.3,
+          "count": 7
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 20,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "AO",
+      "raw": 11.04875382225525,
+      "Araw": 75.119294237116,
+      "Braw": 83.14778358474224,
+      "BPraw": 86.16804805937124,
+      "observedPassive": 1.7,
+      "observedBoard": 9.4,
+      "features": [
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "p": 0.55,
+          "d": 10,
+          "I": 29,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 6
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "p": 0.55,
+          "d": 8,
+          "I": 19,
+          "v": 80,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 10
+        },
+        {
+          "id": "card-00022-5-uniq-0063-00",
+          "p": 0.55,
+          "d": 7,
+          "I": 21,
+          "v": 120,
+          "s": 9,
+          "r": 23.5,
+          "f": 4,
+          "L": 13.3,
+          "count": 9
+        },
+        {
+          "id": "card-00021-5-uniq-0017-00",
+          "p": 0.55,
+          "d": 9,
+          "I": 26,
+          "v": 100,
+          "s": 9,
+          "r": 6,
+          "f": 0,
+          "L": 13.3,
+          "count": 7
+        },
+        {
+          "id": "card-06002-5-uniq-0066-00",
+          "p": 0.46,
+          "d": 8,
+          "I": 23,
+          "v": 100,
+          "s": 0,
+          "r": 0,
+          "f": 0,
+          "L": 13.3,
+          "count": 8
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "G",
+      "reason": "No score-support passive; handled by the existing zero-passive research, including unresolved G."
+    },
+    {
+      "id": "I",
+      "reason": "Score-support costume needs a separate model."
+    },
+    {
+      "id": "J",
+      "reason": "Score-support costume needs a separate model."
+    },
+    {
+      "id": "M",
+      "reason": "Score-support costume needs a separate model."
+    },
+    {
+      "id": "O",
+      "reason": "No score-support passive; handled by the existing zero-passive research, including unresolved G."
+    },
+    {
+      "id": "P",
+      "reason": "No score-support passive; handled by the existing zero-passive research, including unresolved G."
+    },
+    {
+      "id": "Q",
+      "reason": "No score-support passive; handled by the existing zero-passive research, including unresolved G."
+    },
+    {
+      "id": "R",
+      "reason": "No score-support passive; handled by the existing zero-passive research, including unresolved G."
+    },
+    {
+      "id": "S",
+      "reason": "No score-support passive; handled by the existing zero-passive research, including unresolved G."
+    },
+    {
+      "id": "T",
+      "reason": "No score-support passive; handled by the existing zero-passive research, including unresolved G."
+    },
+    {
+      "id": "U",
+      "reason": "Leader board inputs outside confirmed scope."
+    },
+    {
+      "id": "V",
+      "reason": "No score-support passive; handled by the existing zero-passive research, including unresolved G."
+    },
+    {
+      "id": "AC",
+      "reason": "No score-support passive; handled by the existing zero-passive research, including unresolved G."
+    },
+    {
+      "id": "AD",
+      "reason": "No score-support passive; handled by the existing zero-passive research, including unresolved G."
+    },
+    {
+      "id": "AE",
+      "reason": "No score-support passive; handled by the existing zero-passive research, including unresolved G."
+    }
+  ],
+  "search": {
+    "coefficientFamilies": 168,
+    "weightNames": [
+      "equal",
+      "probability",
+      "duration",
+      "value",
+      "frequency",
+      "uptime",
+      "probabilityDuration",
+      "expectedUptime",
+      "expectedEffect",
+      "effectTime",
+      "count",
+      "expectedCount",
+      "eventTime",
+      "expectedWindowEffect"
+    ],
+    "boardForms": [
+      "additive",
+      "multiplicative",
+      "timingProduct"
+    ],
+    "passiveForms": [
+      "plain",
+      "afterTiming",
+      "afterLeader",
+      "afterAll"
+    ],
+    "topVariants": [
+      {
+        "config": {
+          "weight": "expectedWindowEffect",
+          "board": "multiplicative",
+          "passive": "plain"
+        },
+        "matches": 20,
+        "passiveMatches": 22,
+        "boardMatches": 22,
+        "failures": [
+          "W",
+          "AA",
+          "AF",
+          "AH"
+        ]
+      },
+      {
+        "config": {
+          "weight": "expectedEffect",
+          "board": "multiplicative",
+          "passive": "plain"
+        },
+        "matches": 19,
+        "passiveMatches": 21,
+        "boardMatches": 22,
+        "failures": [
+          "W",
+          "AA",
+          "AF",
+          "AI",
+          "AL"
+        ]
+      },
+      {
+        "config": {
+          "weight": "probability",
+          "board": "additive",
+          "passive": "plain"
+        },
+        "matches": 14,
+        "passiveMatches": 14,
+        "boardMatches": 16,
+        "failures": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "W",
+          "AF",
+          "AG",
+          "AH",
+          "AM",
+          "AO"
+        ]
+      },
+      {
+        "config": {
+          "weight": "equal",
+          "board": "additive",
+          "passive": "plain"
+        },
+        "matches": 12,
+        "passiveMatches": 12,
+        "boardMatches": 13,
+        "failures": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "K",
+          "H",
+          "W",
+          "AF",
+          "AG",
+          "AH"
+        ]
+      },
+      {
+        "config": {
+          "weight": "effectTime",
+          "board": "multiplicative",
+          "passive": "plain"
+        },
+        "matches": 12,
+        "passiveMatches": 13,
+        "boardMatches": 12,
+        "failures": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "W",
+          "X",
+          "Y",
+          "Z",
+          "AB",
+          "AG",
+          "AH",
+          "AN"
+        ]
+      },
+      {
+        "config": {
+          "weight": "uptime",
+          "board": "multiplicative",
+          "passive": "afterLeader"
+        },
+        "matches": 11,
+        "passiveMatches": 13,
+        "boardMatches": 17,
+        "failures": [
+          "C",
+          "E",
+          "F",
+          "K",
+          "W",
+          "AB",
+          "AF",
+          "AG",
+          "AH",
+          "AI",
+          "AL",
+          "AM",
+          "AO"
+        ]
+      },
+      {
+        "config": {
+          "weight": "eventTime",
+          "board": "additive",
+          "passive": "plain"
+        },
+        "matches": 11,
+        "passiveMatches": 12,
+        "boardMatches": 15,
+        "failures": [
+          "A",
+          "B",
+          "C",
+          "H",
+          "W",
+          "X",
+          "Y",
+          "Z",
+          "AF",
+          "AG",
+          "AH",
+          "AJ",
+          "AK"
+        ]
+      },
+      {
+        "config": {
+          "weight": "value",
+          "board": "multiplicative",
+          "passive": "plain"
+        },
+        "matches": 11,
+        "passiveMatches": 13,
+        "boardMatches": 12,
+        "failures": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "K",
+          "H",
+          "AA",
+          "AH",
+          "AJ",
+          "AK",
+          "AN"
+        ]
+      },
+      {
+        "config": {
+          "weight": "value",
+          "board": "timingProduct",
+          "passive": "plain"
+        },
+        "matches": 11,
+        "passiveMatches": 11,
+        "boardMatches": 13,
+        "failures": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "W",
+          "AA",
+          "AH",
+          "AI",
+          "AJ",
+          "AK",
+          "AL",
+          "AM",
+          "AO"
+        ]
+      },
+      {
+        "config": {
+          "weight": "eventTime",
+          "board": "timingProduct",
+          "passive": "plain"
+        },
+        "matches": 10,
+        "passiveMatches": 11,
+        "boardMatches": 16,
+        "failures": [
+          "A",
+          "B",
+          "C",
+          "E",
+          "F",
+          "K",
+          "H",
+          "W",
+          "AF",
+          "AH",
+          "AI",
+          "AJ",
+          "AK",
+          "AL"
+        ]
+      }
+    ],
+    "perfectVariants": [],
+    "freeTiming": {
+      "from": 30,
+      "to": 600,
+      "modes": [
+        "floor",
+        "ceil",
+        "fractional"
+      ],
+      "attempts": 1713,
+      "topCandidates": [
+        {
+          "config": {
+            "weight": "expectedWindowEffect",
+            "board": "multiplicative",
+            "passive": "plain",
+            "duration": 405,
+            "countMode": "floor"
+          },
+          "matches": 23,
+          "passiveMatches": 24,
+          "boardMatches": 23,
+          "failures": [
+            "AF"
+          ]
+        },
+        {
+          "config": {
+            "weight": "expectedWindowEffect",
+            "board": "multiplicative",
+            "passive": "plain",
+            "duration": 567,
+            "countMode": "floor"
+          },
+          "matches": 22,
+          "passiveMatches": 24,
+          "boardMatches": 22,
+          "failures": [
+            "D",
+            "AF"
+          ]
+        },
+        {
+          "config": {
+            "weight": "expectedWindowEffect",
+            "board": "multiplicative",
+            "passive": "plain",
+            "duration": 568,
+            "countMode": "floor"
+          },
+          "matches": 22,
+          "passiveMatches": 24,
+          "boardMatches": 22,
+          "failures": [
+            "D",
+            "AF"
+          ]
+        },
+        {
+          "config": {
+            "weight": "expectedWindowEffect",
+            "board": "multiplicative",
+            "passive": "plain",
+            "duration": 569,
+            "countMode": "floor"
+          },
+          "matches": 22,
+          "passiveMatches": 24,
+          "boardMatches": 22,
+          "failures": [
+            "D",
+            "AF"
+          ]
+        },
+        {
+          "config": {
+            "weight": "expectedWindowEffect",
+            "board": "multiplicative",
+            "passive": "plain",
+            "duration": 399,
+            "countMode": "floor"
+          },
+          "matches": 22,
+          "passiveMatches": 23,
+          "boardMatches": 22,
+          "failures": [
+            "AA",
+            "AF"
+          ]
+        },
+        {
+          "config": {
+            "weight": "expectedWindowEffect",
+            "board": "multiplicative",
+            "passive": "plain",
+            "duration": 400,
+            "countMode": "floor"
+          },
+          "matches": 22,
+          "passiveMatches": 23,
+          "boardMatches": 22,
+          "failures": [
+            "AA",
+            "AF"
+          ]
+        },
+        {
+          "config": {
+            "weight": "expectedWindowEffect",
+            "board": "multiplicative",
+            "passive": "plain",
+            "duration": 401,
+            "countMode": "floor"
+          },
+          "matches": 22,
+          "passiveMatches": 23,
+          "boardMatches": 22,
+          "failures": [
+            "AA",
+            "AF"
+          ]
+        },
+        {
+          "config": {
+            "weight": "expectedWindowEffect",
+            "board": "multiplicative",
+            "passive": "plain",
+            "duration": 402,
+            "countMode": "floor"
+          },
+          "matches": 22,
+          "passiveMatches": 23,
+          "boardMatches": 22,
+          "failures": [
+            "AA",
+            "AF"
+          ]
+        },
+        {
+          "config": {
+            "weight": "expectedWindowEffect",
+            "board": "multiplicative",
+            "passive": "plain",
+            "duration": 403,
+            "countMode": "floor"
+          },
+          "matches": 22,
+          "passiveMatches": 23,
+          "boardMatches": 22,
+          "failures": [
+            "AA",
+            "AF"
+          ]
+        },
+        {
+          "config": {
+            "weight": "expectedWindowEffect",
+            "board": "multiplicative",
+            "passive": "plain",
+            "duration": 404,
+            "countMode": "floor"
+          },
+          "matches": 22,
+          "passiveMatches": 23,
+          "boardMatches": 22,
+          "failures": [
+            "AA",
+            "AF"
+          ]
+        }
+      ],
+      "perfectCandidates": [],
+      "decision": "Do not adopt a fitted duration such as405. Even the best searched duration fails an observation; arbitrary timing search is diagnostic, not independent validation."
+    }
+  },
+  "evidence": {
+    "allMatchesRetrospective": true,
+    "independentPredictions": 0,
+    "AO": "AO timing-equivalence was frozen earlier, but the proportional formula was developed after AO arrived; it is not an independent success for this formula.",
+    "limitations": [
+      "Four remaining category discrepancies are failures, not accepted rounding tolerance.",
+      "No zero-passive, score-support-costume, unknown-board-leader or played-song generalization is established.",
+      "No per-card fitted constants were introduced. Existing Active duration200 is reused as a hypothesis; its internal game meaning is unproved."
+    ]
+  },
+  "provenance": {
+    "catalogSHA256": "3f7549bf90bd5b316851abb8a93c2740de5e01cd5e8aae82745712c4bde98b81",
+    "observationHashes": {
+      "scripts/fixtures/unit-observations-20260908.json": "553847e08ffd9f378cbe2ab00250bcb80fb6a33ec9507c6b233a050e8791f1c8",
+      "analysis/unit-score/observations/M-20260909.json": "603a1dafe2b7b56576cfc2503253bbf10b7416489eea014e818e85dc2fffff87",
+      "analysis/unit-score/observations/O-20260909.json": "54128775c983b64f45f463603d0af46d51441308439f5fab0767595244878c88",
+      "analysis/unit-score/observations/P-20260909.json": "facd6cccf86f59f8f5b2d037e2f39f3dea3b27402e0932270ece179755381d24",
+      "analysis/unit-score/observations/Q-20260909.json": "d9955347b51c2220b0259a271ad69dcc5f6c73797947210c6362f16d902d06e0",
+      "analysis/unit-score/observations/R-20260909.json": "86532f0b7d70c7d520f31e648a90fce01822d9935968014ff7f4b228192d578d",
+      "analysis/unit-score/observations/S-20260909.json": "5672f302b9e94259578d2878eab558213549aa4689b0a94fd231e1090bc977fd",
+      "analysis/unit-score/observations/T-20260909.json": "2316ef27545ec0916109c6472f64329aaeeb82da045dace459d5b67e1df6e8f6",
+      "analysis/unit-score/observations/U-20260909.json": "1810ada89559ee5100fe936c19daf159d07f6932be8e97ce7e84a791d7167567",
+      "analysis/unit-score/observations/V-20260909.json": "44371ebc4008a494b0a7bc689f7d3fd86da4fe63a5066805e8318ca5bffde9d6",
+      "analysis/unit-score/observations/W-20260909.json": "e5b8ad2712c93c6df1ca35358409f0530663e53e77cd7c7d270ff846b2480e30",
+      "analysis/unit-score/observations/X-20260909.json": "0b72d170b8b0ccc6743266659a24f7b98f85daea886872da1865f1af890a7ef7",
+      "analysis/unit-score/observations/Y-20260909.json": "9c76651d25574208f055d82558a04dbc769b038d1b3f3fcfa2cb61ac638ad4a5",
+      "analysis/unit-score/observations/Z-20260909-completed.json": "7953e134131cc90242a93e5def0a1bfde32dd3f8472d9f81911c1da5a275f655",
+      "analysis/unit-score/observations/AA-20260909.json": "fcf6fbdb4cfef6e64cef245f057b427bf4a8ad2611c456d0220688f7b63ccb65",
+      "analysis/unit-score/observations/AB-20260909.json": "d7f54005c43a8bd085c79bda8c191841fa9646007444d2053018184d28444c49",
+      "analysis/unit-score/observations/AC-20260909.json": "5436910da10be12180fbf345e11b11db18a3880f6fb5a5b3115bec28c9f9f9fe",
+      "analysis/unit-score/observations/AD-20260909.json": "0c49a3382f4b69b4b7fe09511da76062e50a9b8fdee2fffba5f744d52c890b25",
+      "analysis/unit-score/observations/AE-20260909.json": "6a036fcb3ae76c2311e1e46549f255cc0ed0a924598bc11a4f523041fa2d1183",
+      "analysis/unit-score/observations/AF-20260909.json": "a5cead6f5810c0f91b98ffeddcfec08b22b52951ef5a260ad6ab64b9f6255a70",
+      "analysis/unit-score/observations/AG-20260909.json": "d74453fccab994b7c92308666d08b633de10361010ee02209ba84c3ab0a53e8a",
+      "analysis/unit-score/observations/AH-20260909.json": "4a4ed67abaafb2461ae9fa9eaaeae737b763ba59611fd161539558b1a2d8f3b3",
+      "analysis/unit-score/observations/AI-20260909.json": "b7a6a91ef4730e0d1c3de3fcb51d8176a60ac5ae3ee5e0bb7a1b8cda382d4614",
+      "analysis/unit-score/observations/AJ-20260909.json": "d56abe31c4e38e8f7db9ea33361fcc79f53e605dafabbea1d24fa172b403c543",
+      "analysis/unit-score/observations/AK-20260909.json": "b93f9a59fa093b10c9f3e30b893f529e4107008a694859aacaa5495c7625f963",
+      "analysis/unit-score/observations/AL-20260909.json": "4a58bbec3a88f05d824c74965a79960bd68f49263770bbdf6d7961748b4566f5",
+      "analysis/unit-score/observations/AM-20260909.json": "3d40b19cd25eea895b95f0f6aafc68709cd3d984cecbe32c43c2be54be899e02",
+      "analysis/unit-score/observations/AN-20260909.json": "a8227104f12abb974e37f787fe8fdb36d091b51d1b46a87a00561e78c65026c1",
+      "analysis/unit-score/observations/AO-20260909.json": "16858e361c04e249fb0fba25965347c9d7b22d48e8740d7d1b5bf28afb8ca2cf"
+    },
+    "sourceHashes": {
+      "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+      "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+      "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+      "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+      "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+      "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+      "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+      "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+    },
+    "analysisSourceSHA256": "a6bafb96442a7a29c20ddb0e4136ebca956c6606fb1f0c722c27d22132e14deb",
+    "interventionSourceSHA256": "f1f0a7425095a42548dddb56ce9c5d45e7d4a853672554c72471a9aaedbecbae"
+  }
+}

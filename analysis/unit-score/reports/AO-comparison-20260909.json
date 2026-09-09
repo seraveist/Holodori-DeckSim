@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AO",
+  "observation": {
+    "schemaVersion": 1,
+    "sampleId": "AO",
+    "observedAt": "2026-09-09",
+    "gameVersion": null,
+    "leaderId": "card-06003-3-nrml-0059-00",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-00022-5-uniq-0063-00",
+      "card-00021-5-uniq-0017-00",
+      "card-06002-5-uniq-0066-00"
+    ],
+    "profiles": [
+      {
+        "id": "card-06003-3-nrml-0059-00",
+        "level": 1,
+        "potential": 0
+      },
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "level": 40,
+        "potential": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "level": 70,
+        "potential": 0
+      },
+      {
+        "id": "card-00022-5-uniq-0063-00",
+        "level": 80,
+        "potential": 1
+      },
+      {
+        "id": "card-00021-5-uniq-0017-00",
+        "level": 11,
+        "potential": 0
+      },
+      {
+        "id": "card-06002-5-uniq-0066-00",
+        "level": 40,
+        "potential": 0
+      }
+    ],
+    "boardOverrides": {
+      "chr-06002": {
+        "rate": 0,
+        "cooldown": 0
+      }
+    },
+    "profilesConfirmed": false,
+    "profileBasis": "Requested AO control inherited. The reply supplies two score values, not a separate growth/board audit.",
+    "rawUserInput": "보드 9.4 패시브 1.7",
+    "game": {
+      "unitScore": null,
+      "overallPower": null,
+      "scoreBonusPct": null,
+      "powerDetail": {
+        "memberParameter": null,
+        "outfit": null,
+        "passive": null,
+        "board": null,
+        "memory": null,
+        "enhancement": null
+      },
+      "scoreBonusDetail": {
+        "outfit": null,
+        "active": null,
+        "special": null,
+        "passive": 1.7,
+        "board": 9.4
+      }
+    },
+    "scoreRowPresence": {
+      "passive": true,
+      "board": true
+    },
+    "boardContext": "Requested only Kanade rate15% and5% disabled from AN. Other nodes, cards and SP held fixed by the plan; no additional change reported.",
+    "measurementView": {
+      "planned": "Same pre-song detail context",
+      "confirmedForThisSample": false
+    },
+    "predictionCheckpoint": "analysis/unit-score/experiments/baseline-board-AO-20260909.json",
+    "predictionCheckpointSHA256": "bc9ae1d6ab809692e1f914aae079e26acc1af1eec58db8c691faa4e47f5ccb27"
+  },
+  "comparisons": [
+    {
+      "hypothesis": "timingBoardExplainsAMANDifference",
+      "expected": {
+        "passive": 1.7,
+        "board": 9.4,
+        "kind": "Conditional equivalence to measured AM when attribution depends on adjusted Active, support and leader inputs. Not a general formula."
+      },
+      "observed": {
+        "passive": 1.7,
+        "board": 9.4
+      },
+      "matches": true
+    },
+    {
+      "hypothesis": "invarianceToThisTimingBoard",
+      "expectedPassive": 1.6,
+      "observedPassive": 1.7,
+      "matches": false
+    },
+    {
+      "hypothesis": "conditionalJoint",
+      "possibleDisplays": [
+        11.1,
+        11.2
+      ],
+      "observed": 11.1,
+      "compatible": true
+    }
+  ],
+  "arithmetic": {
+    "reportedSum": null,
+    "derivedJoint": 11.1,
+    "ANtoAO": {
+      "passive": 0.1,
+      "board": -0.7,
+      "joint": -0.6
+    },
+    "note": "Only passive and board score rows were supplied; all totals, Active/SP and power rows remain unreported."
+  },
+  "summary": {
+    "observations": 39,
+    "distinctMemberSets": 23,
+    "activeObserved": 37,
+    "activeMatches": 37,
+    "spObserved": 37,
+    "spMatches": 37,
+    "confirmedPowerComponents": 97,
+    "positivePassiveJointCompatibility": 24,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN",
+      "AO"
+    ],
+    "AKActiveSPUnreported": true,
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false,
+    "AOActiveSPUnreported": true
+  },
+  "interpretation": {
+    "supported": "Under the requested unchanged-card/SP/other-board controls, disabling Kanade rate15+5 changes displayed passive1.6->1.7 and board10.1->9.4. This demonstrates a timing-board effect on the split in this control.",
+    "caveats": [
+      "Controls are inherited from the requested experiment, not separately audited in the two-number answer.",
+      "Agreement with AM does not prove all SP independence or a general allocation formula.",
+      "Unreported baseline values are not counted as new matches."
+    ],
+    "productionFormulaChanged": false,
+    "allocationFormulaConfirmed": false
+  },
+  "provenance": {
+    "checkpoint": "analysis/unit-score/experiments/baseline-board-AO-20260909.json",
+    "checkpointSHA256": "bc9ae1d6ab809692e1f914aae079e26acc1af1eec58db8c691faa4e47f5ccb27",
+    "observationPath": "analysis/unit-score/observations/AO-20260909.json",
+    "observationSHA256": "16858e361c04e249fb0fba25965347c9d7b22d48e8740d7d1b5bf28afb8ca2cf",
+    "analysisSourceSHA256": "32b68603127a998268b416e47e708aa424442526237cfb6dbf8655e16e3de19f",
+    "sourceHashes": {
+      "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+      "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+      "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+      "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+      "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+      "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+      "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+      "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+    },
+    "predictionsAndProductionUnchanged": true
+  }
+}

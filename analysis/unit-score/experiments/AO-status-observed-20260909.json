@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AO",
+  "status": "Passive and board confirmed; baseline values unreported",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-board-AO-20260909.json",
+  "frozenPlanSHA256": "bc9ae1d6ab809692e1f914aae079e26acc1af1eec58db8c691faa4e47f5ccb27",
+  "observation": "analysis/unit-score/observations/AO-20260909.json",
+  "observationSHA256": "16858e361c04e249fb0fba25965347c9d7b22d48e8740d7d1b5bf28afb8ca2cf",
+  "report": "analysis/unit-score/reports/AO-comparison-20260909.json",
+  "reportSHA256": "7fca13de2fa7e29569b9e14411544ea2a736a746bda2c8ef8e8c98ff15eabe92",
+  "catalog": "analysis/unit-score/observation-catalog-AO-20260909.json",
+  "catalogSHA256": "3f7549bf90bd5b316851abb8a93c2740de5e01cd5e8aae82745712c4bde98b81",
+  "analysisSource": "analysis/unit-score/compare-ao-20260909.mjs",
+  "analysisSourceSHA256": "32b68603127a998268b416e47e708aa424442526237cfb6dbf8655e16e3de19f",
+  "result": {
+    "passive": 1.7,
+    "board": 9.4,
+    "joint": 11.1,
+    "timingEquivalenceMatches": true,
+    "passiveInvarianceMatches": false,
+    "generalFormulaConfirmed": false
+  }
+}

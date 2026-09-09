@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "recordedDate": "2026-09-09",
+  "question": "추가 실험을 설계하려고 확인합니다. 이미 해금한 홀로멤 보드의 발동률·발동빈도 효과를 비용 없이 잠시 끄거나 적용 해제할 수 있나요?",
+  "rawUserInput": "비용 없이 해제 가능",
+  "costFreeDeactivationAvailable": true,
+  "scope": "Availability confirmed; no board has yet been reported as deactivated and no new score observation is implied. Individual UI operations and prerequisites were not described."
+}

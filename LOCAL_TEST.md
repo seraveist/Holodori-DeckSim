@@ -159,7 +159,7 @@ node scripts/test-chart-abort.mjs
 
 ## 11. 1차 실측 회귀 (2026-09-08)
 
-다른 PC에서는 Node.js24 이상으로 `node scripts/run-scoring-validation.mjs`를 실행합니다. `node verify-handoff.mjs`는 AN까지38건·액티브/SP37/37과 두 스크린샷·고정 계획·패시브 불변 가설의 실패를 확인합니다. 최신 결과만은 `node scripts/test-validation-am-an.mjs`로 재현합니다. AK는 여전히 두 스코어 항목만 확인된 관측입니다. 최신 진행은 [HANDOFF_CURRENT.md](HANDOFF_CURRENT.md), 과거 계획은 [SCORING_HANDOFF.md](SCORING_HANDOFF.md)를 따릅니다. `--research-grid`는 초기 후보 탐색을 재실행합니다.
+다른 PC에서는 Node.js24 이상으로 `node scripts/run-scoring-validation.mjs`를 실행합니다. `node verify-handoff.mjs`는 AO까지39건·액티브/SP37/37과 미관측 AP 계획을 확인합니다. 최신 비교는 `node scripts/test-validation-ao.mjs`, 배분 후보와 사전 예측은 `node scripts/test-validation-ap-plan.mjs`로 재현합니다. AK·AO의 미제공 값과 새 배분식의 네 과거 오차를 보존합니다. 최신 진행은 [HANDOFF_CURRENT.md](HANDOFF_CURRENT.md)를 따릅니다. `--research-grid`는 초기 후보 탐색을 재실행합니다.
 
 `node scripts/test-unit-observations.mjs`로 H 추가 후 화면 11건의 종합력과 반복 관측을 재현합니다. `--json`을 붙이면 남은 보너스 오차를 포함한 비교 결과를 JSON으로 출력합니다. 자세한 범위는 [계산식 1차 검증 기록](SCORING_VALIDATION.md)을 참고합니다. 계산 결과 상단의 추정값 안내는 악곡 선택 여부와 관계없이 한국어·영어·일본어로 표시되어야 합니다.
 
