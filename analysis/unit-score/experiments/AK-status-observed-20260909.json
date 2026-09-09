@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AK",
+  "recordedAt": "2026-09-09T09:14:03.633Z",
+  "status": "Two score categories observed; remaining values unreported",
+  "frozenPlan": "analysis/unit-score/experiments/baseline-passive-AK-20260909.json",
+  "frozenPlanSHA256": "1af1731eab5592125920482ab1e85cfdcf69128e239861b3c5bc1810e5936d5c",
+  "observation": "analysis/unit-score/observations/AK-20260909.json",
+  "observationSHA256": "b93f9a59fa093b10c9f3e30b893f529e4107008a694859aacaa5495c7625f963",
+  "analysisSource": "analysis/unit-score/compare-passive-ak-20260909.mjs",
+  "analysisSourceSHA256": "577165ca58d33fb69876b5450eb3eda0d0cfccb74b827b1242c2f0938ec82694",
+  "report": "analysis/unit-score/reports/AK-comparison-20260909.json",
+  "reportSHA256": "a935ca185d7b38f5057d49679a4191ac5ce6893025ab0de86ea9d3bead51c16c",
+  "catalog": "analysis/unit-score/observation-catalog-AK-20260909.json",
+  "catalogSHA256": "0292647b38f2003ab8a9dc23f22310cf9b6187c9d329af34d9c6d21406596876",
+  "result": {
+    "passive": 1.5,
+    "board": 12.2,
+    "derivedJoint": 13.7,
+    "invarianceMatches": true,
+    "jointCompatible": true,
+    "baselineFiveValuesMatch": null,
+    "baselineFiveValuesStatus": "Not reported",
+    "individualPassiveFormulaConfirmed": false
+  },
+  "next": null
+}

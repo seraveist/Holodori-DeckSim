@@ -6,7 +6,7 @@
 
 라이브 서비스: https://holosims.net/
 
-계산식 검증의 최신 상태는 [AJ 완료 / AK 대기 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 누적 실측 34건과 AK 고정 예측을, `node scripts/run-scoring-validation.mjs`로 기존 계산 회귀까지 재현할 수 있습니다. [초기 인수인계와 누적 이력](SCORING_HANDOFF.md)도 보존합니다.
+계산식 검증의 최신 상태는 [AK 패시브·보드 확인 인수인계](HANDOFF_CURRENT.md)입니다. `node verify-handoff.mjs`로 AK 부분 관측 포함 35건과 고정 예측을, `node scripts/run-scoring-validation.mjs`로 기존 계산 회귀까지 재현할 수 있습니다. 액티브·SP 확인값은 기존 34건이며 [초기 인수인계와 누적 이력](SCORING_HANDOFF.md)도 보존합니다.
 
 ## 주요 기능
 

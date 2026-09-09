@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "sampleId": "AK",
+  "status": "Two score categories observed; remaining values unreported",
+  "observation": {
+    "schemaVersion": 1,
+    "sampleId": "AK",
+    "observedAt": "2026-09-09",
+    "receivedAt": "2026-09-09T09:14:02.486Z",
+    "gameVersion": null,
+    "observationDateBasis": "Current conversation date; no separate measurement date supplied.",
+    "leaderId": "card-06003-3-nrml-0059-00",
+    "memberIds": [
+      "card-00010-5-uniq-0010-00",
+      "card-00027-5-uniq-0022-00",
+      "card-06004-5-uniq-0060-00",
+      "card-06002-5-uniq-0058-00",
+      "card-00026-5-uniq-0065-00"
+    ],
+    "profiles": [
+      {
+        "id": "card-06003-3-nrml-0059-00",
+        "level": 1,
+        "potential": 0
+      },
+      {
+        "id": "card-00010-5-uniq-0010-00",
+        "level": 40,
+        "potential": 0
+      },
+      {
+        "id": "card-00027-5-uniq-0022-00",
+        "level": 70,
+        "potential": 0
+      },
+      {
+        "id": "card-06004-5-uniq-0060-00",
+        "level": 70,
+        "potential": 1
+      },
+      {
+        "id": "card-06002-5-uniq-0058-00",
+        "level": 80,
+        "potential": 0
+      },
+      {
+        "id": "card-00026-5-uniq-0065-00",
+        "level": 70,
+        "potential": 1
+      }
+    ],
+    "profilesConfirmed": false,
+    "profileBasis": "Frozen AK plan inherited. Leader ownership/Lv1/p0 was previously confirmed; this reply does not separately audit growth or board unlocks.",
+    "measurementView": {
+      "planned": "Formation detail before song selection",
+      "confirmedForThisSample": false,
+      "basis": "Inherited AK plan."
+    },
+    "rawUserInput": "ak 검증은 패시브와 홀로멤 보드 모두 변화없어",
+    "confirmedByReference": {
+      "source": "analysis/unit-score/observations/AJ-20260909.json",
+      "sourceSHA256": "d56abe31c4e38e8f7db9ea33361fcc79f53e605dafabbea1d24fa172b403c543",
+      "fields": {
+        "passive": 1.5,
+        "board": 12.2
+      },
+      "scope": "Unchanged relative to AJ confirms only passive and Holomember board score rows. No remaining-values confirmation was supplied."
+    },
+    "game": {
+      "unitScore": null,
+      "overallPower": null,
+      "scoreBonusPct": null,
+      "powerDetail": {
+        "memberParameter": null,
+        "outfit": null,
+        "board": null,
+        "passive": null,
+        "memory": null,
+        "enhancement": null
+      },
+      "scoreBonusDetail": {
+        "outfit": null,
+        "active": null,
+        "board": 12.2,
+        "passive": 1.5,
+        "special": null
+      }
+    },
+    "scoreRowPresence": {
+      "passive": true,
+      "board": true
+    },
+    "categoryStatus": {
+      "scorePassiveAndBoard": "Confirmed unchanged by reference to AJ; not independently typed numerical values.",
+      "otherValues": "Unreported. Do not infer power, Active, SP, outfit score, or totals from the frozen predictions.",
+      "totalScoreBonus": "13.7 is the derived passive+board sum, not the total score bonus."
+    },
+    "boardContext": "Frozen AK plan: same five members/order/unlocks and same Ririka character, replacing only leader card; not a new independent board audit.",
+    "predictionCheckpoint": "analysis/unit-score/experiments/baseline-passive-AK-20260909.json",
+    "predictionCheckpointSHA256": "1af1731eab5592125920482ab1e85cfdcf69128e239861b3c5bc1810e5936d5c"
+  },
+  "comparisons": [
+    {
+      "item": "passive",
+      "predicted": 1.5,
+      "observed": 1.5,
+      "deltaFromAJ": 0,
+      "matches": true
+    },
+    {
+      "item": "board",
+      "predicted": 12.2,
+      "observed": 12.2,
+      "deltaFromAJ": 0,
+      "matches": true
+    }
+  ],
+  "jointComparison": {
+    "derivedSum": 13.7,
+    "frozenPossibleDisplays": [
+      13.7,
+      13.8
+    ],
+    "compatible": true,
+    "status": "Sum of two confirmed displayed categories, not a reported total score bonus."
+  },
+  "unconfirmedPredictions": {
+    "memberParameter": 100252,
+    "outfitPower": 15047,
+    "passivePower": 22531,
+    "retainedPower": 137830,
+    "active": 71.1,
+    "special": 42.2
+  },
+  "diagnosticOnly": {
+    "individualBoardReference": 10.9,
+    "individualBoardMatches": false,
+    "jointRaw": 13.624224212463929,
+    "status": "The standalone board formula remains rejected."
+  },
+  "summary": {
+    "observations": 35,
+    "distinctMemberSets": 21,
+    "activeObserved": 34,
+    "activeMatches": 34,
+    "spObserved": 34,
+    "spMatches": 34,
+    "AKActiveSPUnreported": true,
+    "newConfirmedScoreCategories": 2,
+    "positivePassiveJointCompatibility": 20,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK"
+    ],
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false
+  },
+  "interpretation": {
+    "supported": "Displayed passive1.5 and board12.2 are invariant in this same-member/same-character Ririka leader-card control, with planned parameter costume50% ->15%.",
+    "limitations": "Equality is at displayed0.1% precision. Both costumes are active. No proof of universal costume independence, binary on/off independence, hidden unrounded equality, or a general passive formula.",
+    "nextDirection": "Investigate composition-dependent leader/board interactions; if considering an active/inactive costume control, establish an available same-character control first. No new experiment or numeric prediction is frozen here."
+  },
+  "provenance": {
+    "checkpoint": "analysis/unit-score/experiments/baseline-passive-AK-20260909.json",
+    "checkpointSHA256": "1af1731eab5592125920482ab1e85cfdcf69128e239861b3c5bc1810e5936d5c",
+    "observationPath": "analysis/unit-score/observations/AK-20260909.json",
+    "observationSHA256": "b93f9a59fa093b10c9f3e30b893f529e4107008a694859aacaa5495c7625f963",
+    "AJObservationSHA256": "d56abe31c4e38e8f7db9ea33361fcc79f53e605dafabbea1d24fa172b403c543",
+    "analysisSourceSHA256": "577165ca58d33fb69876b5450eb3eda0d0cfccb74b827b1242c2f0938ec82694",
+    "sourceHashes": {
+      "scripts/fixtures/unit-observations-20260908.json": "711be8569b6924f9a8beffbf9f4816deccc9237d8a856cf211596db4326089b0",
+      "analysis/unit-score/board-context.json": "404584e38342304287b0cc90905e877fd651a98edaa19ab2a28a53a69bb9aeb3",
+      "data/generated/cards.json": "b619053cbba6783af702bd6b44290ccfed12fc67a827b8bd7e6d3a9fa26bb4cf",
+      "data/generated/characters.json": "2db21bc79b67fc3883c36858219bdf53a061def531e58a3da48a959d8a44b19c",
+      "data/generated/master_refs.json": "7f3c1fe1d729f5a7cb7e39c616af79bde177f47d7eb154b25c283d84343d38c3",
+      "js/score.js": "dcda5cfa46415658cc42a8e77bf31ba27f5dbd1f75220e2339f934b256a39c99",
+      "js/order-reference.js": "e831dd56c2d13662e15b64c10cdebe21b69dc95cc4d64426db66c1b050fc78ba",
+      "analysis/unit-score/dummy-model-lab.mjs": "357efe93b2bea1409cd2d7fdf193a59f01b47cc85aa03ab4d43509d952782e19"
+    },
+    "predictionsAndProductionUnchanged": true
+  }
+}

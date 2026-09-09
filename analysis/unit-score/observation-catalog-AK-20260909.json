@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "latestObserved": "AK",
+  "observationStatus": "Partial: passive and board only",
+  "nextUnobserved": null,
+  "extendsCatalog": "analysis/unit-score/observation-catalog-20260909.json",
+  "extendsCatalogSHA256": "ad6a2eae9bd593078e07af63a2a1a9c76610bcafddd25be84d2c14e7c2f6e957",
+  "scope": "Append this one observation to the frozen AJ catalog. Do not duplicate previous34 or fill missing AK values.",
+  "summary": {
+    "observations": 35,
+    "distinctMemberSets": 21,
+    "activeObserved": 34,
+    "activeMatches": 34,
+    "spObserved": 34,
+    "spMatches": 34,
+    "AKActiveSPUnreported": true,
+    "newConfirmedScoreCategories": 2,
+    "positivePassiveJointCompatibility": 20,
+    "retrospectiveJointChecks": 14,
+    "prospectiveJointChecks": [
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK"
+    ],
+    "individualPassiveFormulaConfirmed": false,
+    "individualBoardFormulaConfirmed": false
+  },
+  "observations": [
+    {
+      "sampleId": "AK",
+      "sourcePath": "analysis/unit-score/observations/AK-20260909.json",
+      "sourceSHA256": "b93f9a59fa093b10c9f3e30b893f529e4107008a694859aacaa5495c7625f963",
+      "leaderId": "card-06003-3-nrml-0059-00",
+      "memberIds": [
+        "card-00010-5-uniq-0010-00",
+        "card-00027-5-uniq-0022-00",
+        "card-06004-5-uniq-0060-00",
+        "card-06002-5-uniq-0058-00",
+        "card-00026-5-uniq-0065-00"
+      ],
+      "profiles": [
+        {
+          "id": "card-06003-3-nrml-0059-00",
+          "level": 1,
+          "potential": 0
+        },
+        {
+          "id": "card-00010-5-uniq-0010-00",
+          "level": 40,
+          "potential": 0
+        },
+        {
+          "id": "card-00027-5-uniq-0022-00",
+          "level": 70,
+          "potential": 0
+        },
+        {
+          "id": "card-06004-5-uniq-0060-00",
+          "level": 70,
+          "potential": 1
+        },
+        {
+          "id": "card-06002-5-uniq-0058-00",
+          "level": 80,
+          "potential": 0
+        },
+        {
+          "id": "card-00026-5-uniq-0065-00",
+          "level": 70,
+          "potential": 1
+        }
+      ],
+      "rawGame": {
+        "unitScore": null,
+        "overallPower": null,
+        "scoreBonusPct": null,
+        "powerDetail": {
+          "memberParameter": null,
+          "outfit": null,
+          "board": null,
+          "passive": null,
+          "memory": null,
+          "enhancement": null
+        },
+        "scoreBonusDetail": {
+          "outfit": null,
+          "active": null,
+          "board": 12.2,
+          "passive": 1.5,
+          "special": null
+        }
+      },
+      "rawUserInput": "ak 검증은 패시브와 홀로멤 보드 모두 변화없어",
+      "confirmedByReference": {
+        "source": "analysis/unit-score/observations/AJ-20260909.json",
+        "sourceSHA256": "d56abe31c4e38e8f7db9ea33361fcc79f53e605dafabbea1d24fa172b403c543",
+        "fields": {
+          "passive": 1.5,
+          "board": 12.2
+        },
+        "scope": "Unchanged relative to AJ confirms only passive and Holomember board score rows. No remaining-values confirmation was supplied."
+      },
+      "research": {
+        "memberParameter": 100252,
+        "outfitPower": 15047,
+        "passivePower": 22531,
+        "retainedPower": 137830,
+        "active": 71.1,
+        "special": 42.2,
+        "activeMatches": null,
+        "specialMatches": null,
+        "note": "Predictions only; none of these five baseline values was confirmed in the AK reply."
+      }
+    }
+  ]
+}
